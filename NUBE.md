@@ -20,3 +20,7 @@ Para guardar inmediatamente: `python3 scripts/cloud_sync.py --once`. Para usarlo
 En un ordenador nuevo, entra con la misma cuenta en ChatGPT, elige Trabajar en > Nube y este entorno, y continúa el mismo chat. Para un chat nuevo, partir del main actualizado. Usa un solo chat de edición a la vez por proyecto; los cambios simultáneos se conservan, pero pueden necesitar conciliación.
 
 Fuera de Cloud, un checkout local solo se guarda automáticamente mientras el proceso está activo y tiene acceso a Internet. Las fuentes ZIP de ChatGPT no se actualizan con los cambios del repositorio.
+
+## Contexto anterior
+
+Leer CONTEXTO-RECUPERADO.txt para retomar las decisiones y el trabajo de las conversaciones recuperadas. Es un archivo histórico; las instrucciones actuales están en AGENTS.md y en el chat activo.
