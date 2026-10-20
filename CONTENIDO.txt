@@ -1,0 +1,63 @@
+VIRUTA — AMPLIAR LOS CAMINOS
+
+Cada camino es independiente y se recorre hacia abajo, con una división visible
+entre mundos. Cada mundo contiene diez lecciones y un examen de diez preguntas.
+Se necesitan ocho aciertos para abrir el siguiente mundo de ese mismo camino.
+Los tres primeros puntos están disponibles desde el principio: no hace falta
+completar Acciones para empezar ETFs o Cripto.
+
+ESTRUCTURA ACTUAL
+Acciones: 100 lecciones y 10 exámenes.
+ETFs: 50 lecciones y 5 exámenes.
+Cripto: 50 lecciones y 5 exámenes.
+Total: 200 lecciones y 20 exámenes. Los exámenes son casillas adicionales.
+
+FUENTES DE CONTENIDO
+src/content/stocks-base.json: los primeros 50 puntos y cinco exámenes originales.
+src/content/stocks-extension.json: puntos 51–100 y exámenes 6–10 de Acciones.
+src/content/etfs.json: el recorrido completo actual de ETFs.
+src/content/crypto.json: el recorrido completo actual de Cripto.
+
+Cada archivo contiene lecciones, exámenes, mundos, fuentes y vocabulario.
+Las fuentes de cada camino aparecen en Biblioteca > Fuentes. Los ejemplos
+numéricos y las empresas, fondos y tokens de las historias son ficticios.
+Las explicaciones introducen las palabras necesarias antes de los ejercicios.
+La forma de aprender combina cuatro explicaciones y cuatro retos por lección:
+decidir, seleccionar varias conclusiones, relacionar, ordenar y calcular.
+Tablas, esquemas y comparaciones de escenarios acompañan las ideas.
+
+GENERACIÓN
+  node scripts/build-course.mjs
+
+El generador valida y compone los cuatro archivos dentro de index.html para
+distribuir el mismo contenido en web y Android, también sin conexión.
+Los pasos previos a dev/build lo ejecutan automáticamente. El script de
+compilación Android también lo ejecuta. No editar a mano los grandes bloques
+JSON de index.html: volverán a generarse.
+
+IDENTIDAD Y PROGRESO
+Los números que ve una persona empiezan en 1 en cada camino. Sus identificadores
+internos son estables: Acciones 0–99, ETFs 100–149 y Cripto 150–199.
+Exámenes: Acciones 0–9, ETFs 10–14 y Cripto 15–19.
+Los primeros 50 puntos y cinco exámenes no se han cambiado ni renumerado.
+El progreso antiguo se interpreta como progreso de Acciones.
+
+No renumerar identificadores al ampliar un camino: las cuentas los utilizan
+para recordar logros y respuestas. Una ampliación posterior deberá ampliar
+la asignación y el motor de bloques conservando los identificadores existentes,
+además de los límites y pruebas de src/progress.js y src/content-validation.js.
+No insertar nuevas lecciones desplazando ETFs o Cripto.
+
+El progreso guarda la selección de camino y borradores independientes de
+lecciones y exámenes. Los documentos de Firestore usan schemaVersion 2.
+Las reglas admiten migrar desde 1 y bloquean volver de 2 a 1: una app antigua
+no puede sobrescribir el progreso de los nuevos recorridos.
+
+AMPLIACIONES DIDÁCTICAS
+Avanzar de lo sencillo a lo complejo sin cerrar artificialmente el curso.
+Mantener una historia, ejemplos propios y lenguaje adulto accesible.
+Definir cualquier concepto nuevo antes de pedir una decisión sobre él.
+Los exámenes deben comprobar cada una de las diez lecciones con situaciones
+nuevas, sin copiar literalmente los ejercicios de práctica.
+Revisar cálculos, supuestos, unidades, redondeos, fuentes y ambigüedades.
+Ejecutar las pruebas de contenido y progreso antes de compilar y publicar.

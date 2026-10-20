@@ -1,0 +1,4223 @@
+{
+  "revision": "cases-2026-10",
+  "cases": [
+    {
+      "id": "etfs-v2-1",
+      "track": "etfs",
+      "world": 95,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        950,
+        951,
+        952,
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959
+      ],
+      "learningGoals": [
+        "Distinguir la participación del fondo de las acciones que contiene.",
+        "Relacionar el peso de una inversión con su efecto en el conjunto."
+      ],
+      "title": "Vanguard All-World: una compra, muchas empresas",
+      "company": "Vanguard FTSE All-World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Descubre qué posees al comprar una participación y cómo te afectan las empresas de dentro. Los importes son simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "globe",
+        "color": "#387e86"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: FTSE All-World UCITS ETF, objetivo y documentación",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El fondo es el puente",
+          "body": "Vanguard FTSE All-World UCITS ETF busca seguir un índice de empresas grandes y medianas de mercados desarrollados y emergentes. Al comprar una participación, compras una parte del fondo; no aparece una acción de cada empresa en tu cuenta. Para entenderlo, reduciremos la cartera a tres empresas ficticias. La gestora organiza las inversiones del fondo, pero el dinero sigue expuesto a lo que les ocurra a esas inversiones. Un nombre conocido no convierte la participación en un depósito.",
+          "takeaway": "Tu participación reúne inversiones; no elimina sus riesgos.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Esquema simplificado, no cartera real",
+            "items": [
+              "Tu participación",
+              "Fondo gestionado por Vanguard",
+              "Acciones de muchas empresas"
+            ]
+          },
+          "explore": {
+            "prompt": "¿Qué cambia según lo que compras?",
+            "options": [
+              {
+                "label": "Una acción",
+                "title": "Dependes de una empresa",
+                "body": "Si esa empresa pierde valor, no hay otras inversiones dentro de esa acción que compensen la caída."
+              },
+              {
+                "label": "Una participación",
+                "title": "Dependes de una cartera",
+                "body": "El resultado combina las inversiones del fondo. Varias empresas pueden caer a la vez."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Cada pieza tiene su función",
+          "body": "Relaciona cada situación con lo que representa.",
+          "pairs": [
+            {
+              "left": "Lo que aparece en tu cuenta tras comprar el ETF",
+              "right": "Una participación del fondo"
+            },
+            {
+              "left": "Los negocios cuyas acciones posee el fondo",
+              "right": "Las inversiones de la cartera"
+            },
+            {
+              "left": "Quien aplica la política de inversión del fondo",
+              "right": "La gestora"
+            }
+          ],
+          "explanation": "La participación es tu parte del fondo, la cartera reúne sus inversiones y la gestora se ocupa de aplicarlas. No son tres nombres para el mismo elemento.",
+          "hint": "Piensa en qué posees tú, qué posee el fondo y quién lo gestiona.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Esquema simplificado, no cartera real",
+            "items": [
+              "Tu participación",
+              "Fondo gestionado por Vanguard",
+              "Acciones de muchas empresas"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "No todas las empresas pesan igual",
+          "body": "El peso de una empresa es la parte del dinero del fondo invertida en ella. En nuestra simulación, una cartera de 1.000 € tiene 500 € en Norte, 300 € en Sur y 200 € en Este. Si solo cambia el valor de Norte, calculas su subida o caída sobre esos 500 €, no sobre los 1.000 € completos. Después incorporas ese cambio al total. Así ves por qué dos empresas con movimientos idénticos pueden influir de manera distinta.",
+          "takeaway": "La influencia depende del dinero invertido en cada empresa.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Cartera ficticia de 1.000 €",
+            "labels": [
+              "Norte",
+              "Sur",
+              "Este"
+            ],
+            "values": [
+              500,
+              300,
+              200
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Una subida dentro de la cartera",
+          "body": "En esa cartera ficticia, Norte sube un 10% y las otras dos empresas no cambian. Sin costes ni aportaciones, ¿cuánto vale ahora toda la cartera?",
+          "answer": 1050,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "Norte pasa de 500 a 550 €. Las otras inversiones siguen sumando 500 €. El conjunto vale 1.050 €, una subida del 5%, no del 10%.",
+          "hint": "Calcula primero el cambio de Norte y luego suma las tres inversiones.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Cartera ficticia de 1.000 €",
+            "labels": [
+              "Norte",
+              "Sur",
+              "Este"
+            ],
+            "values": [
+              500,
+              300,
+              200
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Explicarlo antes de comprar",
+          "body": "Una explicación útil de un ETF debe decir en qué invierte y qué puede hacer perder dinero. Decir únicamente que es global deja preguntas abiertas: puede ser global y contener solo acciones, sin bonos ni efectivo para tus necesidades próximas. Nuestro fondo de referencia pertenece al mundo de las acciones. La variedad de empresas reduce la dependencia de una sola, pero una caída general de las bolsas puede afectar al conjunto. Comprender esa diferencia ayuda más que memorizar su nombre completo.",
+          "takeaway": "Diversificar entre empresas no equivale a tener todos los tipos de inversión."
+        },
+        {
+          "type": "multi",
+          "title": "Dos conclusiones que sí se sostienen",
+          "body": "Una persona afirma: «Con una participación de este fondo ya tengo una inversión global». ¿Qué dos aclaraciones completan bien esa frase?",
+          "options": [
+            {
+              "text": "Sigo expuesto a que bajen las acciones de la cartera."
+            },
+            {
+              "text": "Al tener muchas empresas, mi valor solo puede subir."
+            },
+            {
+              "text": "No tengo necesariamente bonos por comprar un ETF de acciones."
+            },
+            {
+              "text": "La gestora me debe devolver el importe que pagué."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "El fondo ofrece exposición a varias empresas, pero no elimina las caídas ni se convierte en una cartera con bonos. Tampoco promete devolver el precio pagado.",
+          "hint": "Distingue repartir entre empresas de eliminar el riesgo o añadir otros activos."
+        }
+      ],
+      "takeaway": "Antes de valorar un ETF, explica qué contiene, qué posees tú y de dónde puede venir una pérdida."
+    },
+    {
+      "id": "etfs-v2-2",
+      "track": "etfs",
+      "world": 96,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969
+      ],
+      "learningGoals": [
+        "Calcular un resultado que incluya valor final y pagos recibidos.",
+        "Distinguir reinversión, costes y poder de compra."
+      ],
+      "title": "All-World: ¿dónde acabó el dividendo?",
+      "company": "Vanguard FTSE All-World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Compara acumulación y distribución sin confundir un pago con una ganancia extra. Resultados e importes simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "coins",
+        "color": "#aa7840"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: FTSE All-World UCITS ETF, objetivo y documentación",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating"
+        },
+        {
+          "title": "Vanguard: FTSE All-World, clase de distribución",
+          "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9505/vanguard-ftse-all-world-ucits-etf-usd-distributing"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Dos destinos para los ingresos",
+          "body": "Vanguard ofrece clases de acumulación y de distribución de su FTSE All-World UCITS ETF. En una clase de acumulación, los ingresos permanecen invertidos dentro del fondo. En una de distribución, se pagan a los inversores. El pago no aparece de la nada: sale del patrimonio del fondo. Para compararlas, mira conjuntamente lo que sigue invertido y lo que has cobrado. En los ejemplos de este caso ignoramos impuestos y movimientos durante el instante del reparto, para aislar esa diferencia.",
+          "takeaway": "Un pago cambia dónde está el dinero; por sí solo no crea riqueza.",
+          "figure": {
+            "kind": "table",
+            "caption": "Dos destinos posibles de los ingresos",
+            "headers": [
+              "Clase",
+              "Destino"
+            ],
+            "rows": [
+              [
+                "Acumulación",
+                "Permanecen invertidos dentro del fondo"
+              ],
+              [
+                "Distribución",
+                "Se pagan al inversor"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Sigue 4 € de ingresos en una simulación",
+            "options": [
+              {
+                "label": "Se reinvierten",
+                "title": "Continúan en la cartera",
+                "body": "Los 4 € siguen expuestos a las inversiones. No aparecen como efectivo en tu cuenta."
+              },
+              {
+                "label": "Se distribuyen",
+                "title": "Pasan a tu efectivo",
+                "body": "Tienes 4 € fuera del fondo. Para mantenerlos invertidos tendrías que reinvertirlos."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Detecta la ganancia duplicada",
+          "body": "Una participación ficticia vale 100 € justo antes de repartir 4 €. Sin otros cambios, pasa a valer 96 € y recibes 4 € en efectivo. ¿Qué descripción es correcta?",
+          "options": [
+            {
+              "text": "He ganado un 4% porque he recibido 4 €."
+            },
+            {
+              "text": "Sigo teniendo 100 € en conjunto: 96 € invertidos y 4 € en efectivo."
+            },
+            {
+              "text": "He perdido 4 € porque la participación vale menos."
+            }
+          ],
+          "answer": 1,
+          "explanation": "96 + 4 = 100 €. Contar el pago como una ganancia adicional sin considerar la salida del dinero del fondo duplica el mismo importe.",
+          "hint": "Suma el valor de la participación y el efectivo recibido.",
+          "figure": {
+            "kind": "table",
+            "caption": "Dos destinos posibles de los ingresos",
+            "headers": [
+              "Clase",
+              "Destino"
+            ],
+            "rows": [
+              [
+                "Acumulación",
+                "Permanecen invertidos dentro del fondo"
+              ],
+              [
+                "Distribución",
+                "Se pagan al inversor"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El resultado incluye ambas partes",
+          "body": "Para medir una inversión sin aportaciones adicionales, resta el desembolso inicial al valor final de las participaciones más los pagos recibidos. Si quieres un porcentaje, divide esa ganancia o pérdida entre el importe inicial. Usa pagos netos de los costes que decidas incluir y sé coherente. Nuestra simulación separa una comisión de compra: es dinero que salió de tu bolsillo aunque nunca llegara al fondo. Por eso no basta con comparar dos precios publicados en una pantalla.",
+          "takeaway": "Cuenta todo el dinero que salió y todo el valor que conservas.",
+          "figure": {
+            "kind": "table",
+            "caption": "Ejercicio simulado, sin impuestos",
+            "headers": [
+              "Concepto",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Compra de participaciones",
+                "200 €"
+              ],
+              [
+                "Comisión de compra",
+                "2 €"
+              ],
+              [
+                "Valor final",
+                "210 €"
+              ],
+              [
+                "Pagos recibidos",
+                "6 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Reconstruye el resultado",
+          "body": "Pagaste 200 € por participaciones y 2 € de comisión. Ahora valen 210 € y has cobrado 6 €, que conservas en efectivo. Sin vender ni pagar otros costes, ¿cuál es tu ganancia total en euros?",
+          "answer": 14,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "Conservas 210 + 6 = 216 €. Desembolsaste 200 + 2 = 202 €. La diferencia es 14 €.",
+          "hint": "No olvides que la comisión también salió de tu bolsillo.",
+          "figure": {
+            "kind": "table",
+            "caption": "Ejercicio simulado, sin impuestos",
+            "headers": [
+              "Concepto",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Compra de participaciones",
+                "200 €"
+              ],
+              [
+                "Comisión de compra",
+                "2 €"
+              ],
+              [
+                "Valor final",
+                "210 €"
+              ],
+              [
+                "Pagos recibidos",
+                "6 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Ganar euros y ganar capacidad de compra",
+          "body": "La inflación describe cuánto suben, en conjunto, los precios de lo que compras. Una ganancia en euros puede quedarse corta si tus gastos suben más. Para una comparación sencilla, imagina una cesta que costaba 100 € y ahora cuesta 105 €. Tu inversión también empezó en 100 €, pero terminó en 103 €. Tienes más euros y, aun así, no puedes pagar la misma cesta. La acumulación facilita reinvertir; no garantiza superar la inflación ni recuperar pronto una caída.",
+          "takeaway": "Separa el resultado en euros del cambio en tu poder de compra."
+        },
+        {
+          "type": "multi",
+          "title": "Qué demuestra la comparación",
+          "body": "En la simulación anterior, la inversión pasa de 100 a 103 € y la cesta de 100 a 105 €. Selecciona las dos conclusiones justificadas.",
+          "options": [
+            {
+              "text": "Una clase de acumulación habría asegurado superar los 105 €."
+            },
+            {
+              "text": "Hay una ganancia de 3 € en la inversión."
+            },
+            {
+              "text": "El poder de compra respecto a esa cesta ha aumentado."
+            },
+            {
+              "text": "El dinero final no alcanza para comprar esa misma cesta."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La inversión gana 3 €, pero la cesta sube 5 €. El destino de los ingresos no garantiza una rentabilidad que compense la inflación.",
+          "hint": "Compara primero los euros y después lo que se puede comprar con ellos."
+        }
+      ],
+      "takeaway": "Compara valor y pagos juntos, resta los costes y distingue los euros ganados del poder de compra."
+    },
+    {
+      "id": "etfs-v2-3",
+      "track": "etfs",
+      "world": 97,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        970,
+        971,
+        972,
+        973,
+        974,
+        975,
+        976,
+        977,
+        978,
+        979
+      ],
+      "learningGoals": [
+        "Distinguir la selección de empresas de su ponderación.",
+        "Interpretar el efecto del igual peso y del reequilibrio."
+      ],
+      "title": "Invesco RSP: las mismas empresas, otros pesos",
+      "company": "Invesco S&P 500 Equal Weight ETF (RSP)",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Comprueba por qué cambiar las reglas del índice puede cambiar el resultado. Miniíndices y rentabilidades simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "scale",
+        "color": "#677bb0"
+      },
+      "sources": [
+        {
+          "title": "Invesco: S&P 500 Equal Weight ETF (RSP)",
+          "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?productId=RSP"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La lista no cuenta toda la historia",
+          "body": "Invesco RSP sigue la versión de igual peso del S&P 500. La idea relevante es sencilla: puede incluir las mismas empresas que otro índice y repartir el dinero de otra manera. Ponderar significa decidir qué parte corresponde a cada empresa. Para practicar, usaremos solo cuatro empresas inventadas. En el índice por tamaño, la mayor ocupa la mitad. En el de igual peso, cada una empieza con una cuarta parte. Ninguna regla indica de antemano cuál ganará más.",
+          "takeaway": "Mismas empresas no significa misma exposición.",
+          "figure": {
+            "kind": "table",
+            "caption": "Dos miniíndices ficticios al comenzar",
+            "headers": [
+              "Empresa",
+              "Por tamaño",
+              "Igual peso"
+            ],
+            "rows": [
+              [
+                "A",
+                "50%",
+                "25%"
+              ],
+              [
+                "B",
+                "20%",
+                "25%"
+              ],
+              [
+                "C",
+                "20%",
+                "25%"
+              ],
+              [
+                "D",
+                "10%",
+                "25%"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mira qué inversión domina",
+            "options": [
+              {
+                "label": "Por tamaño",
+                "title": "A tiene más influencia",
+                "body": "Un movimiento de A afecta al 50% del dinero de nuestro miniíndice."
+              },
+              {
+                "label": "Igual peso",
+                "title": "El punto de partida es simétrico",
+                "body": "Cada empresa afecta al 25% al empezar. Los pesos cambiarán si sus precios evolucionan de forma distinta."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Una empresa marca la diferencia",
+          "body": "En ambos miniíndices inviertes 1.000 €. Solo A sube un 20%; B, C y D no cambian. ¿Cuántos euros más gana el índice por tamaño que el de igual peso?",
+          "answer": 50,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "Por tamaño hay 500 € en A y gana 100 €. Con igual peso hay 250 € en A y gana 50 €. La diferencia es 50 €.",
+          "hint": "Aplica la subida únicamente al dinero colocado en A en cada índice.",
+          "figure": {
+            "kind": "table",
+            "caption": "Dos miniíndices ficticios al comenzar",
+            "headers": [
+              "Empresa",
+              "Por tamaño",
+              "Igual peso"
+            ],
+            "rows": [
+              [
+                "A",
+                "50%",
+                "25%"
+              ],
+              [
+                "B",
+                "20%",
+                "25%"
+              ],
+              [
+                "C",
+                "20%",
+                "25%"
+              ],
+              [
+                "D",
+                "10%",
+                "25%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Igual al revisar, no en cada instante",
+          "body": "Si una empresa sube más que las demás, acaba representando una parte mayor de la cartera aunque comenzaran con pesos iguales. Reequilibrar consiste en ajustar las posiciones para volver al reparto previsto. RSP utiliza revisiones trimestrales para este ajuste. Nuestro ejemplo no reproduce su cartera: si cuatro posiciones pasan de valer 100 € cada una a 160, 100, 100 y 100 €, el reparto deja de ser igual. Recuperarlo requiere reducir la posición que más se ha alejado y aumentar otras.",
+          "takeaway": "Los movimientos de precios separan los pesos entre dos revisiones.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Cuatro posiciones ficticias antes de revisar",
+            "labels": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "values": [
+              160,
+              100,
+              100,
+              100
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "order",
+          "title": "Reconstruye una revisión con sentido",
+          "body": "Ordena estas tareas para volver al igual peso sin añadir dinero. El cálculo se hace antes de cursar las operaciones.",
+          "items": [
+            "Ajustar las posiciones hacia el objetivo calculado.",
+            "Sumar el valor actual de las cuatro posiciones.",
+            "Dividir el total entre cuatro para fijar el valor objetivo."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "explanation": "Primero necesitas el total, después el objetivo por empresa y por último las operaciones. Usar los importes iniciales ignoraría el cambio de valor.",
+          "hint": "No puedes conocer el objetivo por empresa sin conocer el total actual.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Cuatro posiciones ficticias antes de revisar",
+            "labels": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "values": [
+              160,
+              100,
+              100,
+              100
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Las reglas también deciden qué entra",
+          "body": "Un índice contiene reglas para seleccionar empresas, repartir pesos y revisar la composición. Son decisiones distintas. Añadir una empresa que cumple los requisitos no es lo mismo que aumentar el peso de una que ya estaba. Al comparar ETFs, conviene separar esas preguntas: qué universo de empresas consideran, cómo asignan el dinero y cuándo actualizan las posiciones. En el caso de RSP, la diferencia que estudiamos está en la ponderación; no debes deducir que se convierte en un fondo de pequeñas empresas por dar más peso a las menores del grupo.",
+          "takeaway": "Comprueba selección, pesos y revisiones por separado."
+        },
+        {
+          "type": "match",
+          "title": "Identifica la regla que ha cambiado",
+          "body": "Relaciona cada cambio de un índice ficticio con la decisión correspondiente.",
+          "pairs": [
+            {
+              "left": "Empieza a admitir empresas de otro país",
+              "right": "Selección del universo"
+            },
+            {
+              "left": "Las empresas grandes dejan de recibir más dinero que las demás",
+              "right": "Ponderación"
+            },
+            {
+              "left": "El ajuste pasa de anual a trimestral",
+              "right": "Frecuencia de revisión"
+            }
+          ],
+          "explanation": "La primera regla cambia quién puede entrar; la segunda cambia cuánto pesa cada empresa; la tercera cambia cuándo se revisa.",
+          "hint": "Pregunta si cambia quién participa, cuánto recibe o cuándo se actualiza."
+        }
+      ],
+      "takeaway": "Lee las reglas del índice: dos carteras con las mismas empresas pueden comportarse de forma distinta."
+    },
+    {
+      "id": "etfs-v2-4",
+      "track": "etfs",
+      "world": 98,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989
+      ],
+      "learningGoals": [
+        "Identificar una clase mediante su ISIN y distinguirlo del ticker.",
+        "Elegir la documentación adecuada y comprobar sus fechas."
+      ],
+      "title": "iShares World: encontrar el fondo correcto",
+      "company": "iShares Core MSCI World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Resuelve dudas de identidad, documentos y fechas antes de confiar en una ficha. Los extractos de práctica son simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "file-search",
+        "color": "#467f96"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core MSCI World, estructura, identificador y mercados",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una misma clase puede tener varios nombres cortos",
+          "body": "La ficha de iShares Core MSCI World muestra la clase con ISIN IE00B4L5Y983 negociándose en distintas bolsas, con códigos como EUNL o IWDA. El ISIN identifica la clase; el ticker es su nombre corto en un mercado concreto. Por eso dos tickers diferentes no prueban que sean dos inversiones distintas. Primero comprueba el ISIN. Después mira la bolsa y la moneda de negociación, porque pueden cambiar los costes de la operación aunque la clase del fondo sea la misma.",
+          "takeaway": "Busca la identidad de la clase antes de comparar sus nombres cortos.",
+          "figure": {
+            "kind": "table",
+            "caption": "Datos de identificación de la ficha oficial, consultados en octubre de 2026",
+            "headers": [
+              "Mercado",
+              "Ticker",
+              "ISIN"
+            ],
+            "rows": [
+              [
+                "Xetra",
+                "EUNL",
+                "IE00B4L5Y983"
+              ],
+              [
+                "Euronext Amsterdam",
+                "IWDA",
+                "IE00B4L5Y983"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Dos pistas, distinto alcance",
+            "options": [
+              {
+                "label": "Mismo ticker",
+                "title": "No basta por sí solo",
+                "body": "Un nombre corto debe leerse junto con la bolsa. No es un identificador mundial único."
+              },
+              {
+                "label": "Mismo ISIN",
+                "title": "La misma clase identificada",
+                "body": "Todavía hay que revisar en qué mercado se compra y qué costes aplica el intermediario."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "¿Has encontrado dos fondos distintos?",
+          "body": "Dos resultados de búsqueda muestran EUNL e IWDA, ambos con ISIN IE00B4L5Y983. Quieres comparar la inversión que contienen. ¿Cuál es el siguiente paso razonable?",
+          "options": [
+            {
+              "text": "Elegir el ticker más corto porque será más fácil de vender."
+            },
+            {
+              "text": "Tratarlos como dos carteras diferentes porque cambia el ticker."
+            },
+            {
+              "text": "Reconocer la misma clase y comparar mercado, moneda y costes de compra."
+            }
+          ],
+          "answer": 2,
+          "explanation": "El ISIN coincide. La diferencia observada está en cómo se negocia esa clase, no demuestra una cartera subyacente distinta.",
+          "hint": "Usa el identificador que se mantiene entre bolsas.",
+          "figure": {
+            "kind": "table",
+            "caption": "Datos de identificación de la ficha oficial, consultados en octubre de 2026",
+            "headers": [
+              "Mercado",
+              "Ticker",
+              "ISIN"
+            ],
+            "rows": [
+              [
+                "Xetra",
+                "EUNL",
+                "IE00B4L5Y983"
+              ],
+              [
+                "Euronext Amsterdam",
+                "IWDA",
+                "IE00B4L5Y983"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Cada documento responde una pregunta",
+          "body": "La ficha resume el fondo, pero no sustituye todos sus documentos. El documento de datos fundamentales, conocido como KID, presenta de forma breve el producto, sus riesgos y costes. El folleto explica las reglas con más detalle. Una lista de posiciones muestra en qué está invertido el dinero en una fecha concreta; unas pocas posiciones destacadas no muestran toda la cartera. Si tu duda es cuánto hay en una empresa, busca el listado completo y su fecha, no una frase comercial.",
+          "takeaway": "Elige el documento según la pregunta, no según cuál sea más corto.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Ruta de consulta según la duda",
+            "items": [
+              "Identidad: ISIN de la clase",
+              "Resumen: documento de datos fundamentales",
+              "Detalle: folleto y posiciones fechadas"
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Localiza la respuesta",
+          "body": "Relaciona cada duda con el documento más directo para empezar.",
+          "pairs": [
+            {
+              "left": "Quiero una visión breve de los riesgos y costes",
+              "right": "Documento de datos fundamentales"
+            },
+            {
+              "left": "Quiero conocer todas las empresas incluidas a una fecha",
+              "right": "Listado completo de posiciones"
+            },
+            {
+              "left": "Quiero leer las reglas detalladas de la inversión",
+              "right": "Folleto del fondo"
+            }
+          ],
+          "explanation": "El KID orienta, el listado revela posiciones y el folleto desarrolla las reglas. Una selección de diez empresas no reemplaza una lista completa.",
+          "hint": "El documento adecuado depende de si necesitas resumen, composición o reglas.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Ruta de consulta según la duda",
+            "items": [
+              "Identidad: ISIN de la clase",
+              "Resumen: documento de datos fundamentales",
+              "Detalle: folleto y posiciones fechadas"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Una comparación necesita la misma fecha",
+          "body": "Las carteras cambian y los informes no siempre se publican el mismo día. En la tabla simulada, una empresa pesa un 4% al cierre de marzo y un 5% al cierre de septiembre. Esa diferencia no demuestra un error: describe momentos distintos. Tampoco permite saber si hubo compras, ventas o movimientos de precios sin más información. Para comparar dos fondos hoy, intenta usar posiciones de fechas próximas y anota cualquier desfase. Una fecha reciente de descarga no convierte en recientes los datos que contiene el archivo.",
+          "takeaway": "Distingue la fecha del dato de la fecha en que abres el documento.",
+          "figure": {
+            "kind": "table",
+            "caption": "Informes ficticios de una misma cartera",
+            "headers": [
+              "Informe",
+              "Fecha de posiciones",
+              "Peso de Empresa A"
+            ],
+            "rows": [
+              [
+                "Archivo antiguo descargado hoy",
+                "31 de marzo",
+                "4%"
+              ],
+              [
+                "Ficha nueva",
+                "30 de septiembre",
+                "5%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Evita conclusiones precipitadas",
+          "body": "A partir de esos informes ficticios, selecciona las dos afirmaciones que puedes sostener.",
+          "options": [
+            {
+              "text": "La gestora necesariamente compró más acciones de A."
+            },
+            {
+              "text": "Descargar hoy el archivo de marzo actualiza sus posiciones."
+            },
+            {
+              "text": "Hace falta más información para separar compras de cambios de precio."
+            },
+            {
+              "text": "Los dos porcentajes corresponden a fechas diferentes."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "Los documentos pueden ser correctos y reflejar fechas distintas. Un peso mayor no prueba por sí solo una compra; también puede cambiar por la evolución de los precios.",
+          "hint": "Comprueba qué se observa directamente y qué causa todavía no conoces.",
+          "figure": {
+            "kind": "table",
+            "caption": "Informes ficticios de una misma cartera",
+            "headers": [
+              "Informe",
+              "Fecha de posiciones",
+              "Peso de Empresa A"
+            ],
+            "rows": [
+              [
+                "Archivo antiguo descargado hoy",
+                "31 de marzo",
+                "4%"
+              ],
+              [
+                "Ficha nueva",
+                "30 de septiembre",
+                "5%"
+              ]
+            ]
+          }
+        }
+      ],
+      "takeaway": "Identifica la clase, abre el documento que resuelve tu duda y comprueba a qué fecha pertenecen sus datos."
+    },
+    {
+      "id": "etfs-v2-5",
+      "track": "etfs",
+      "world": 99,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999
+      ],
+      "learningGoals": [
+        "Distinguir seguir un índice de poseer exactamente cada componente.",
+        "Relacionar el préstamo de valores con ingresos, garantías y riesgo."
+      ],
+      "title": "Dentro de iShares World: seguir sin copiar todo",
+      "company": "iShares Core MSCI World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Analiza una réplica optimizada y un préstamo de valores con una cartera reducida. Todos los importes son de práctica.",
+      "minutes": 9,
+      "cover": {
+        "icon": "layers",
+        "color": "#507d75"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core MSCI World, estructura, identificador y mercados",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una muestra puede buscar el mismo resultado",
+          "body": "La documentación de iShares Core MSCI World describe una estructura física y una metodología optimizada. Física significa que el fondo posee inversiones; optimizada indica que puede seleccionar una cartera que busque reproducir el comportamiento del índice sin copiar cada posición exactamente. Para probar la idea, imagina un índice ficticio con empresas de salud y tecnología. Una muestra que conserva aproximadamente sus pesos puede parecerse más al índice que otra formada únicamente por sus empresas tecnológicas favoritas, aunque ambas tengan el mismo número de títulos.",
+          "takeaway": "Una muestra se juzga por la exposición que conserva, no solo por cuántos títulos incluye.",
+          "figure": {
+            "kind": "table",
+            "caption": "Comparación ficticia de exposiciones",
+            "headers": [
+              "Cartera",
+              "Salud",
+              "Tecnología"
+            ],
+            "rows": [
+              [
+                "Índice",
+                "40%",
+                "60%"
+              ],
+              [
+                "Muestra A",
+                "39%",
+                "61%"
+              ],
+              [
+                "Muestra B",
+                "10%",
+                "90%"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Compara el criterio de selección",
+            "options": [
+              {
+                "label": "Muestra representativa",
+                "title": "Conserva rasgos del índice",
+                "body": "Intenta aproximar los pesos y riesgos que explican el comportamiento del conjunto."
+              },
+              {
+                "label": "Lista de favoritas",
+                "title": "Concentra una preferencia",
+                "body": "Elegir solo el sector preferido cambia el riesgo aunque todas sus empresas pertenezcan al índice."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Escoge la muestra mejor justificada",
+          "body": "Solo conoces los pesos de salud y tecnología de la tabla. ¿Qué afirmación es la más prudente?",
+          "options": [
+            {
+              "text": "A se aproxima más en esos pesos, aunque falta revisar otros riesgos."
+            },
+            {
+              "text": "A tendrá exactamente la misma rentabilidad que el índice."
+            },
+            {
+              "text": "B es mejor réplica porque concentra más en un sector."
+            }
+          ],
+          "answer": 0,
+          "explanation": "A se acerca a 40/60 en esta dimensión. Eso no prueba una réplica perfecta: aún faltan empresas, países, costes y otros detalles.",
+          "hint": "Elige una conclusión limitada a la información disponible.",
+          "figure": {
+            "kind": "table",
+            "caption": "Comparación ficticia de exposiciones",
+            "headers": [
+              "Cartera",
+              "Salud",
+              "Tecnología"
+            ],
+            "rows": [
+              [
+                "Índice",
+                "40%",
+                "60%"
+              ],
+              [
+                "Muestra A",
+                "39%",
+                "61%"
+              ],
+              [
+                "Muestra B",
+                "10%",
+                "90%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Prestar añade ingresos y una obligación de devolución",
+          "body": "La ficha de este fondo también describe el préstamo de valores. El fondo presta temporalmente inversiones a otra entidad, que paga una cantidad por usarlas y debe devolverlas. Esa entidad entrega garantías: activos que sirven de respaldo si incumple. No se trata de regalar las inversiones ni de venderlas definitivamente. El ingreso puede ayudar a compensar gastos, pero las garantías también cambian de valor. Por eso importa tanto cuánto se cobra como qué ocurre si el préstamo no se devuelve.",
+          "takeaway": "El ingreso del préstamo viene acompañado de una obligación y un riesgo.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Mecanismo simplificado de un préstamo",
+            "items": [
+              "El fondo entrega valores temporalmente",
+              "El prestatario entrega garantías y paga una cantidad",
+              "El prestatario debe devolver los valores"
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Reconoce las tres piezas",
+          "body": "Relaciona cada elemento de un préstamo ficticio con su función.",
+          "pairs": [
+            {
+              "left": "Cantidad pagada por usar temporalmente las acciones",
+              "right": "Ingreso por el préstamo"
+            },
+            {
+              "left": "Activos entregados como respaldo",
+              "right": "Garantías"
+            },
+            {
+              "left": "Entidad que recibe las acciones y debe devolverlas",
+              "right": "Prestatario"
+            }
+          ],
+          "explanation": "Las garantías no son el pago del préstamo. Respaldan una obligación, mientras que la cantidad cobrada remunera la cesión temporal.",
+          "hint": "Separa quién recibe las acciones, qué paga y qué deja como respaldo.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Mecanismo simplificado de un préstamo",
+            "items": [
+              "El fondo entrega valores temporalmente",
+              "El prestatario entrega garantías y paga una cantidad",
+              "El prestatario debe devolver los valores"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El respaldo puede quedarse corto",
+          "body": "En una simulación, un fondo ha prestado acciones que ahora costaría recomprar por 110 €. El prestatario incumple y las garantías disponibles valen 104 €. Para medir la parte no cubierta, compara el coste actual de recuperar las acciones con el valor actual del respaldo. No uses el valor del día en que se firmó el préstamo. Puede haber otras recuperaciones o costes, pero no los suponemos en este ejercicio. El ejemplo muestra por qué una garantía reduce un riesgo sin borrarlo.",
+          "takeaway": "Compara valores actuales y no confundas garantía con protección total.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Simulación en el momento del incumplimiento",
+            "labels": [
+              "Recomprar acciones",
+              "Garantías disponibles"
+            ],
+            "values": [
+              110,
+              104
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Calcula lo que falta",
+          "body": "Con acciones que cuesta 110 € recuperar y garantías realizables por 104 €, ¿qué importe queda sin cubrir antes de otros costes o recuperaciones?",
+          "answer": 6,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "110 − 104 = 6 €. El respaldo cubre gran parte de la obligación, pero no alcanza para recomprar todas las acciones.",
+          "hint": "Resta el respaldo disponible al coste actual de reponer las acciones.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Simulación en el momento del incumplimiento",
+            "labels": [
+              "Recomprar acciones",
+              "Garantías disponibles"
+            ],
+            "values": [
+              110,
+              104
+            ],
+            "unit": "€"
+          }
+        }
+      ],
+      "takeaway": "La forma de seguir el índice importa: entiende qué posee el fondo y qué riesgos añaden sus operaciones."
+    },
+    {
+      "id": "etfs-v2-6",
+      "track": "etfs",
+      "world": 100,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009
+      ],
+      "learningGoals": [
+        "Separar costes internos del fondo y costes de la operación.",
+        "Comparar el seguimiento del índice con datos homogéneos."
+      ],
+      "title": "Vanguard: el coste que sí afecta a tu resultado",
+      "company": "Vanguard FTSE All-World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Investiga una comparación de costes sin restar dos veces lo mismo. Las tarifas y rentabilidades son simuladas, no las del fondo.",
+      "minutes": 9,
+      "cover": {
+        "icon": "receipt",
+        "color": "#a87947"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: FTSE All-World UCITS ETF, objetivo y documentación",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating"
+        },
+        {
+          "title": "Vanguard: qué afecta al seguimiento del índice",
+          "url": "https://www.vanguard.co.uk/content/uk-aem/gb/en/professional/vanguard-365/investment-knowledge/etf-knowledge/what-affects-index-tracking"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El porcentaje anual no es toda la factura",
+          "body": "Vanguard explica en su material sobre ETFs que la comisión del fondo no recoge todos los costes de una inversión. Usaremos su All-World como referencia de un fondo indexado, pero las tarifas de este caso son inventadas. Una comisión de compra sale de tu cuenta al operar. Los gastos internos del fondo reducen su patrimonio progresivamente. Comparar alternativas requiere convertir esos costes a euros y considerar cuánto dinero inviertes, cuánto tiempo lo mantienes y cuántas compras haces.",
+          "takeaway": "Un coste fijo y uno porcentual pesan de forma distinta según el importe.",
+          "figure": {
+            "kind": "table",
+            "caption": "Tarifas ficticias para una compra y un año; capital constante",
+            "headers": [
+              "Alternativa",
+              "Gasto anual del fondo",
+              "Compra"
+            ],
+            "rows": [
+              [
+                "A",
+                "0,10%",
+                "5 €"
+              ],
+              [
+                "B",
+                "0,20%",
+                "0 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "¿Qué cambia al invertir más?",
+            "options": [
+              {
+                "label": "Importe pequeño",
+                "title": "El coste fijo pesa mucho",
+                "body": "Pagar 5 € para invertir 100 € consume el 5% del importe antes de que la inversión cambie de valor."
+              },
+              {
+                "label": "Importe mayor",
+                "title": "El porcentaje cobra importancia",
+                "body": "Sobre 10.000 €, cada 0,10% son 10 € al año. El gasto porcentual crece con el capital."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Compara en euros",
+          "body": "En las tarifas ficticias, inviertes 1.000 € durante un año sin cambios de valor. A cuesta el 0,10% anual más 5 € de compra; B, el 0,20% anual sin comisión de compra. ¿Cuántos euros más cuesta A que B?",
+          "answer": 4,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "A cuesta 1 + 5 = 6 €. B cuesta 2 €. La diferencia es 4 €; el porcentaje anual menor no compensa aquí el coste inicial.",
+          "hint": "Convierte primero cada porcentaje en euros y añade el coste de compra.",
+          "figure": {
+            "kind": "table",
+            "caption": "Tarifas ficticias para una compra y un año; capital constante",
+            "headers": [
+              "Alternativa",
+              "Gasto anual del fondo",
+              "Compra"
+            ],
+            "rows": [
+              [
+                "A",
+                "0,10%",
+                "5 €"
+              ],
+              [
+                "B",
+                "0,20%",
+                "0 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El resultado publicado ya incorpora ciertos gastos",
+          "body": "La diferencia de seguimiento compara la rentabilidad del fondo con la de su índice durante el mismo periodo. Si el índice gana un 6% y el fondo un 5,8%, la diferencia es de menos 0,2 puntos porcentuales. Esa rentabilidad del fondo ya refleja los gastos que se han descontado dentro de él. Restar otra vez su comisión anual duplicaría ese coste. En cambio, la comisión de tu intermediario no tiene por qué estar incluida: depende de cómo realizaste tú la operación.",
+          "takeaway": "Distingue el resultado del fondo del resultado de tu cuenta.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Rentabilidades simuladas, misma moneda y periodo",
+            "labels": [
+              "Índice",
+              "Fondo"
+            ],
+            "values": [
+              6,
+              5.8
+            ],
+            "unit": "%"
+          }
+        },
+        {
+          "type": "multi",
+          "title": "No descuentes dos veces",
+          "body": "En la simulación del índice al 6% y el fondo al 5,8%, selecciona las dos decisiones correctas.",
+          "options": [
+            {
+              "text": "Usar −0,2 puntos como diferencia fondo menos índice."
+            },
+            {
+              "text": "Considerar aparte una comisión de compra que hayas pagado al intermediario."
+            },
+            {
+              "text": "Sumar el 6% del índice al 5,8% del fondo."
+            },
+            {
+              "text": "Restar de nuevo el gasto interno anual al 5,8%."
+            }
+          ],
+          "answers": [
+            0,
+            1
+          ],
+          "explanation": "La diferencia es 5,8 − 6 = −0,2 puntos. El gasto interno ya afecta a la rentabilidad del fondo; tu coste de operar requiere un cálculo separado.",
+          "hint": "Piensa qué gastos ya han salido del patrimonio del fondo.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Rentabilidades simuladas, misma moneda y periodo",
+            "labels": [
+              "Índice",
+              "Fondo"
+            ],
+            "values": [
+              6,
+              5.8
+            ],
+            "unit": "%"
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Una media puede ocultar un seguimiento irregular",
+          "body": "Dos fondos pueden quedarse, de media, una cantidad parecida por detrás de su índice y hacerlo de forma muy distinta. Uno puede mantener una diferencia pequeña y estable; otro separarse mucho unos años y compensarlo otros. El error de seguimiento describe esa variabilidad, no una segunda factura que debas sumar. Nuestra tabla ficticia permite verlo sin fórmulas estadísticas. Para elegir qué investigar, observa tanto la distancia media como la regularidad, siempre con la misma moneda, fechas y tratamiento de los ingresos.",
+          "takeaway": "Distancia media y regularidad responden preguntas diferentes.",
+          "figure": {
+            "kind": "table",
+            "caption": "Diferencias simuladas frente al mismo índice, en puntos porcentuales",
+            "headers": [
+              "Fondo",
+              "Año 1",
+              "Año 2",
+              "Año 3"
+            ],
+            "rows": [
+              [
+                "C",
+                "−0,2",
+                "−0,2",
+                "−0,2"
+              ],
+              [
+                "D",
+                "−1,2",
+                "+0,8",
+                "−0,2"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Busca la réplica más regular",
+          "body": "Los fondos C y D de la tabla tienen una diferencia media de −0,2 puntos. Si quieres investigar cuál se ha apartado de forma más estable del índice, ¿qué conclusión respaldan los datos?",
+          "options": [
+            {
+              "text": "D tiene menor coste porque un año supera al índice."
+            },
+            {
+              "text": "Ambos tuvieron necesariamente idénticos gastos internos."
+            },
+            {
+              "text": "C ha sido más regular en esos tres años."
+            }
+          ],
+          "answer": 2,
+          "explanation": "C repite la misma distancia. D presenta oscilaciones mayores. La tabla no desglosa gastos ni demuestra qué sucederá después.",
+          "hint": "No compares solo la media: mira cuánto cambian las diferencias entre años.",
+          "figure": {
+            "kind": "table",
+            "caption": "Diferencias simuladas frente al mismo índice, en puntos porcentuales",
+            "headers": [
+              "Fondo",
+              "Año 1",
+              "Año 2",
+              "Año 3"
+            ],
+            "rows": [
+              [
+                "C",
+                "−0,2",
+                "−0,2",
+                "−0,2"
+              ],
+              [
+                "D",
+                "−1,2",
+                "+0,8",
+                "−0,2"
+              ]
+            ]
+          }
+        }
+      ],
+      "takeaway": "Pon los costes en euros y compara el seguimiento sin duplicar descuentos ni mezclar periodos."
+    },
+    {
+      "id": "etfs-v2-7",
+      "track": "etfs",
+      "world": 101,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019
+      ],
+      "learningGoals": [
+        "Relacionar precios comprador y vendedor con la operación deseada.",
+        "Interpretar una orden limitada y su ejecución parcial."
+      ],
+      "title": "Una orden para comprar iShares World",
+      "company": "iShares Core MSCI World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Practica una compra limitada, una ejecución parcial y la revisión del justificante. Pantallas y precios completamente simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "mouse-pointer-2",
+        "color": "#4f89a4"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core MSCI World, estructura, identificador y mercados",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+        },
+        {
+          "title": "Vanguard: órdenes y buenas prácticas al negociar ETFs",
+          "url": "https://www.vanguard.co.uk/professional/vanguard-365/investment-knowledge/etf-knowledge/what-are-some-of-the-best-practices-for-trading-ETFs"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Antes de pulsar comprar",
+          "body": "Imagina que has identificado la clase de iShares World que quieres estudiar y abres una pantalla de compra simulada. El precio vendedor es lo que alguien pide por venderte participaciones; el comprador es lo que alguien ofrece si tú vendes. Una orden a mercado intenta ejecutarse con los precios disponibles. Una orden limitada establece un máximo al comprar o un mínimo al vender. Ese límite protege el precio, pero puede dejar la orden pendiente si no encuentra suficientes participaciones compatibles.",
+          "takeaway": "Una orden limitada fija una condición; no promete que la operación se complete.",
+          "figure": {
+            "kind": "table",
+            "caption": "Pantalla ficticia del ejercicio",
+            "headers": [
+              "Dato",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Mejor precio comprador",
+                "49,80 €"
+              ],
+              [
+                "Mejor precio vendedor",
+                "50,20 €"
+              ],
+              [
+                "Límite de compra que decides",
+                "50,00 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Compara dos instrucciones",
+            "options": [
+              {
+                "label": "A mercado",
+                "title": "Prioridad: intentar ejecutar",
+                "body": "Si cambia la oferta disponible, también puede cambiar el precio al que compras."
+              },
+              {
+                "label": "Con límite",
+                "title": "Prioridad: respetar tu máximo",
+                "body": "Si nadie vende por tu máximo o menos, no se ejecuta la compra."
+              }
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Prepara una compra revisable",
+          "body": "Ordena las acciones antes de enviar una orden limitada. La confirmación final se hace cuando todos sus datos están visibles.",
+          "items": [
+            "Revisar importe, costes y límite en la confirmación.",
+            "Identificar clase, mercado y moneda.",
+            "Introducir la cantidad y el precio máximo de compra."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "explanation": "Primero aseguras qué estás comprando, después indicas las condiciones y finalmente revisas todo antes de confirmar.",
+          "hint": "La revisión final necesita una orden ya rellenada.",
+          "figure": {
+            "kind": "table",
+            "caption": "Pantalla ficticia del ejercicio",
+            "headers": [
+              "Dato",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Mejor precio comprador",
+                "49,80 €"
+              ],
+              [
+                "Mejor precio vendedor",
+                "50,20 €"
+              ],
+              [
+                "Límite de compra que decides",
+                "50,00 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Puede ejecutarse solo una parte",
+          "body": "Una orden de diez participaciones no obliga a que aparezca un vendedor de diez al precio que has fijado. En nuestra simulación, la compra tiene un límite de 50 €. Se venden cuatro participaciones a 49 € y tres a 50 €; el resto se ofrece a 51 €. Solo las primeras siete cumplen tu condición. El coste de las participaciones ejecutadas se obtiene sumando cada cantidad por su precio. La parte pendiente conserva su límite mientras la orden siga vigente.",
+          "takeaway": "Calcula sobre lo ejecutado y distingue lo que todavía está pendiente.",
+          "figure": {
+            "kind": "table",
+            "caption": "Ofertas ficticias disponibles al llegar tu orden",
+            "headers": [
+              "Participaciones",
+              "Precio por participación"
+            ],
+            "rows": [
+              [
+                4,
+                "49 €"
+              ],
+              [
+                3,
+                "50 €"
+              ],
+              [
+                6,
+                "51 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cuánto se ha invertido de verdad",
+          "body": "Tu orden limitada a 50 € compra 4 participaciones a 49 € y 3 a 50 €. Las demás siguen pendientes. Sin comisiones, ¿cuánto dinero se ha utilizado?",
+          "answer": 346,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "4 × 49 + 3 × 50 = 196 + 150 = 346 €. No multiplicas las diez solicitadas porque solo se han comprado siete.",
+          "hint": "Suma el importe de cada ejecución, no el de toda la orden solicitada.",
+          "figure": {
+            "kind": "table",
+            "caption": "Ofertas ficticias disponibles al llegar tu orden",
+            "headers": [
+              "Participaciones",
+              "Precio por participación"
+            ],
+            "rows": [
+              [
+                4,
+                "49 €"
+              ],
+              [
+                3,
+                "50 €"
+              ],
+              [
+                6,
+                "51 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El justificante cierra la comprobación",
+          "body": "Después de operar, revisa el justificante del intermediario: cantidad ejecutada, precios, comisiones y estado de lo pendiente. Que hayas pulsado comprar no significa que poseas ya toda la cantidad solicitada. Tampoco debes interpretar una ejecución parcial como un error automático. En este ejemplo, mantener el límite de 50 € explica por qué las ofertas a 51 € no se aceptaron. Si decides cambiar la orden, estarías dando una instrucción nueva con un coste potencial distinto; no es una corrección obligatoria.",
+          "takeaway": "Confirma lo ocurrido, no lo que esperabas que ocurriera."
+        },
+        {
+          "type": "choice",
+          "title": "La orden sigue pendiente",
+          "body": "Tras comprar siete de las diez participaciones, solo quedan ofertas a 51 €. Tu límite sigue en 50 €. ¿Qué interpretación es correcta?",
+          "options": [
+            {
+              "text": "Las siete ya compradas se devolverán por no completar diez."
+            },
+            {
+              "text": "Las tres restantes se comprarán a 51 € automáticamente."
+            },
+            {
+              "text": "La parte pendiente no puede comprar a 51 € mientras mantenga ese límite."
+            }
+          ],
+          "answer": 2,
+          "explanation": "El límite impide pagar más de 50 €. La ejecución parcial no anula por sí misma lo ya comprado ni autoriza superar el máximo.",
+          "hint": "Distingue una orden pendiente de una autorización para pagar más."
+        }
+      ],
+      "takeaway": "Revisa identidad, precio y cantidad; después comprueba las ejecuciones y los costes reales de tu orden."
+    },
+    {
+      "id": "etfs-v2-8",
+      "track": "etfs",
+      "world": 102,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1020,
+        1021,
+        1022,
+        1023,
+        1024,
+        1025,
+        1026,
+        1027,
+        1028,
+        1029
+      ],
+      "learningGoals": [
+        "Distinguir precio de mercado y valor liquidativo.",
+        "Explicar la creación de participaciones y los límites de la liquidez."
+      ],
+      "title": "iShares: cuando precio y valor se separan",
+      "company": "iShares Core MSCI World UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Investiga una prima de mercado y cómo se crean participaciones. Los valores y condiciones de negociación son ficticios.",
+      "minutes": 9,
+      "cover": {
+        "icon": "arrow-left-right",
+        "color": "#498a91"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core MSCI World, estructura, identificador y mercados",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+        },
+        {
+          "title": "BlackRock: participantes autorizados y creadores de mercado",
+          "url": "https://www.blackrock.com/au/insights/ishares/authorised-participants-and-market-makers"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Dos cifras que responden cosas distintas",
+          "body": "El valor liquidativo divide el patrimonio neto del fondo entre sus participaciones. El precio de mercado es lo que se negocia en bolsa. En un ETF pueden diferir. Usaremos iShares World para situar la explicación, con cifras inventadas: una participación tiene un valor liquidativo estimado de 100 € y se ofrece por 102 €. Esa diferencia se llama prima. Antes de compararlos, comprueba que ambos valores se refieran a momentos compatibles; un dato de ayer puede no reflejar las noticias de hoy.",
+          "takeaway": "Una diferencia solo es informativa si las cifras se pueden comparar.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Mismo instante en la simulación",
+            "labels": [
+              "Valor liquidativo estimado",
+              "Precio vendedor"
+            ],
+            "values": [
+              100,
+              102
+            ],
+            "unit": "€"
+          },
+          "explore": {
+            "prompt": "Qué cambia al mover la fecha",
+            "options": [
+              {
+                "label": "Datos simultáneos",
+                "title": "La comparación tiene sentido",
+                "body": "En nuestro ejemplo controlado, 100 € y 102 € describen el mismo instante."
+              },
+              {
+                "label": "Dato desactualizado",
+                "title": "La diferencia puede engañar",
+                "body": "Comparar un valor liquidativo antiguo con un precio nuevo mezcla momentos y puede exagerar la aparente prima."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una prima que quizá no lo sea",
+          "body": "Ves un precio de hoy de 102 € y un valor liquidativo de ayer de 100 €. Entre ambos momentos han subido las inversiones del fondo. ¿Qué deberías concluir?",
+          "options": [
+            {
+              "text": "El ETF está exactamente un 2% por encima de su valor actual."
+            },
+            {
+              "text": "Falta una valoración comparable en el tiempo para medir la prima actual."
+            },
+            {
+              "text": "El intermediario ha añadido obligatoriamente 2 € de comisión."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Los dos importes no describen el mismo momento. El movimiento de las inversiones puede explicar parte o toda la diferencia.",
+          "hint": "Antes de hacer la división, revisa las fechas.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Momentos distintos en esta simulación",
+            "labels": [
+              "Valor liquidativo de ayer (cierre)",
+              "Precio vendedor de hoy (10:00)"
+            ],
+            "values": [
+              100,
+              102
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El puente entre cartera y participaciones",
+          "body": "BlackRock describe el papel de los participantes autorizados: entidades que pueden crear o reembolsar grandes bloques de participaciones directamente con el fondo. En una creación simplificada, entregan la cesta exigida y reciben nuevas participaciones. Esto puede aumentar la oferta cuando la demanda es fuerte y ayudar a acercar precio y valor. Un pequeño inversor normalmente negocia en bolsa a través de su intermediario. El mecanismo no obliga a que cualquier operación se ejecute instantáneamente al valor liquidativo exacto.",
+          "takeaway": "La creación ayuda a conectar el precio con la cartera, pero no fija cada operación.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Creación simplificada de participaciones",
+            "items": [
+              "Participante autorizado aporta la cesta requerida",
+              "El fondo emite un bloque de participaciones",
+              "Las participaciones pueden ofrecerse en bolsa"
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Mide una prima comparable",
+          "body": "Ahora sí: en el mismo instante simulado, el valor liquidativo por participación es 100 € y el precio vendedor es 102 €. ¿Qué prima porcentual supone pagar 102 € respecto a 100 €?",
+          "answer": 2,
+          "unit": "%",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "La diferencia es 2 €. Dividir 2 entre 100 y multiplicar por 100 da una prima del 2%.",
+          "hint": "Usa el valor liquidativo como base de la comparación.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Creación simplificada de participaciones",
+            "items": [
+              "Participante autorizado aporta la cesta requerida",
+              "El fondo emite un bloque de participaciones",
+              "Las participaciones pueden ofrecerse en bolsa"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Poca negociación visible no cuenta toda la liquidez",
+          "body": "La liquidez es la facilidad para comprar o vender una cantidad sin provocar un cambio importante en el precio. En un ETF no depende únicamente del número de operaciones visibles en pantalla. También importa poder negociar las inversiones que hay dentro y que funcionen los participantes que conectan ambos mercados. Si los activos subyacentes están cerrados o cuesta valorarlos, las ofertas pueden separarse y hacerse más pequeñas. En una situación así, una orden grande necesita más atención que una compra reducida, aunque ambas sean del mismo fondo.",
+          "takeaway": "Mira la cantidad, los precios disponibles y las inversiones que respaldan el ETF."
+        },
+        {
+          "type": "multi",
+          "title": "Qué investigar durante una tensión",
+          "body": "La diferencia entre compra y venta se amplía y quieres vender una cantidad elevada. Selecciona dos comprobaciones útiles.",
+          "options": [
+            {
+              "text": "Si puedes vender cualquier cantidad al último precio mostrado."
+            },
+            {
+              "text": "Qué cantidades están disponibles a los precios compradores."
+            },
+            {
+              "text": "Si un número pequeño de operaciones implica necesariamente un fondo imposible de vender."
+            },
+            {
+              "text": "Si el mercado de las inversiones subyacentes está abierto."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "El horario y la profundidad de las ofertas ayudan a evaluar la operación. El último precio no garantiza una venta grande y el volumen visible no explica toda la liquidez.",
+          "hint": "Piensa tanto en la cartera del fondo como en las ofertas disponibles para tu cantidad."
+        }
+      ],
+      "takeaway": "Compara precio y valor con fechas compatibles y evalúa la liquidez para la cantidad que realmente quieres operar."
+    },
+    {
+      "id": "etfs-v2-9",
+      "track": "etfs",
+      "world": 103,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1030,
+        1031,
+        1032,
+        1033,
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1039
+      ],
+      "learningGoals": [
+        "Distinguir mercados desarrollados y emergentes en dos mandatos reales.",
+        "Calcular exposición conjunta a una empresa presente en varios fondos."
+      ],
+      "title": "World y All-World: cuánto mundo incluyen",
+      "company": "iShares Core MSCI World y Vanguard FTSE All-World",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Compara mercados incluidos y solapamientos sin contar dos veces la misma exposición. Carteras y pesos de práctica simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "map",
+        "color": "#628b61"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core MSCI World, estructura, identificador y mercados",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+        },
+        {
+          "title": "Vanguard: FTSE All-World UCITS ETF, objetivo y documentación",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Global no siempre significa lo mismo",
+          "body": "El iShares Core MSCI World busca exposición a empresas de países desarrollados. El Vanguard FTSE All-World incluye países desarrollados y emergentes, dentro de empresas grandes y medianas. Aquí no comparamos cuál rendirá más: comprobamos qué universo cubre cada uno. Si una persona quiere incluir ambos grupos de países, el nombre World por sí solo no basta. También debe revisar qué queda fuera. Un fondo de acciones internacionales no incorpora automáticamente bonos, empresas pequeñas ni todos los mercados que puedas imaginar.",
+          "takeaway": "La cobertura la decide el índice, no una palabra del nombre.",
+          "figure": {
+            "kind": "table",
+            "caption": "Alcance de los mandatos, no reparto porcentual actual",
+            "headers": [
+              "Fondo",
+              "Desarrollados",
+              "Emergentes"
+            ],
+            "rows": [
+              [
+                "iShares Core MSCI World",
+                "Incluidos",
+                "No forman parte de su universo MSCI World"
+              ],
+              [
+                "Vanguard FTSE All-World",
+                "Incluidos",
+                "Incluidos"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Define primero qué quieres incluir",
+            "options": [
+              {
+                "label": "Solo desarrollados",
+                "title": "Una decisión concreta",
+                "body": "Puedes estudiar un universo desarrollado sin presentarlo como si incluyera también todos los mercados emergentes."
+              },
+              {
+                "label": "Desarrollados y emergentes",
+                "title": "Una cobertura más amplia",
+                "body": "Necesitas verificar ambos grupos en el mandato, ya sea en un fondo o en una combinación."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Ajusta la afirmación al mandato",
+          "body": "Selecciona las dos afirmaciones que encajan con los mandatos explicados.",
+          "options": [
+            {
+              "text": "MSCI World y FTSE All-World cubren exactamente los mismos grupos de países."
+            },
+            {
+              "text": "Para incluir emergentes debes comprobar el índice, no solo leer World."
+            },
+            {
+              "text": "All-World también significa que incorpora automáticamente bonos."
+            },
+            {
+              "text": "Añadir emergentes cambia la exposición; no asegura mejorar la rentabilidad."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La diferencia de universo es relevante, pero no predice el resultado. Ninguno de estos fondos de acciones se convierte en uno de bonos por ampliar países.",
+          "hint": "Separa cobertura de mercados y promesa de rentabilidad.",
+          "figure": {
+            "kind": "table",
+            "caption": "Alcance de los mandatos, no reparto porcentual actual",
+            "headers": [
+              "Fondo",
+              "Desarrollados",
+              "Emergentes"
+            ],
+            "rows": [
+              [
+                "iShares Core MSCI World",
+                "Incluidos",
+                "No forman parte de su universo MSCI World"
+              ],
+              [
+                "Vanguard FTSE All-World",
+                "Incluidos",
+                "Incluidos"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Dos fondos pueden contener la misma empresa",
+          "body": "Tener más fondos no siempre añade inversiones diferentes. Si dos incluyen la misma empresa, sus exposiciones se suman. Para calcular el peso conjunto, multiplica lo que has invertido en cada fondo por el peso de esa empresa dentro de él. Después suma los euros resultantes y divídelos entre toda tu cartera. En la simulación de la tabla, ambos fondos contienen Empresa X. Los nombres y pesos son ficticios: el objetivo es detectar una concentración que quedaría oculta si solo contaras los fondos.",
+          "takeaway": "Cuenta las inversiones de dentro, no solo el número de fondos.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cartera ficticia sin otras posiciones",
+            "headers": [
+              "Fondo",
+              "Dinero invertido",
+              "Peso de Empresa X"
+            ],
+            "rows": [
+              [
+                "A",
+                "600 €",
+                "10%"
+              ],
+              [
+                "B",
+                "400 €",
+                "20%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "La exposición que se repite",
+          "body": "Tienes 600 € en A, donde X pesa el 10%, y 400 € en B, donde X pesa el 20%. ¿Qué porcentaje de tus 1.000 € queda expuesto a X?",
+          "answer": 14,
+          "unit": "%",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "A aporta 60 € de exposición y B aporta 80 €. Son 140 € sobre 1.000 €, es decir, un 14%.",
+          "hint": "Calcula primero los euros de X dentro de cada fondo.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cartera ficticia sin otras posiciones",
+            "headers": [
+              "Fondo",
+              "Dinero invertido",
+              "Peso de Empresa X"
+            ],
+            "rows": [
+              [
+                "A",
+                "600 €",
+                "10%"
+              ],
+              [
+                "B",
+                "400 €",
+                "20%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Más piezas pueden reforzar una apuesta",
+          "body": "Supón que ya tienes una cartera global y añades un ETF de un país que también está dentro de ella. No has incorporado necesariamente un lugar nuevo: puedes estar aumentando su peso. Esa decisión puede ser intencionada, pero conviene nombrarla correctamente. Lo mismo ocurre con un sector que ya aparece en varios fondos. Antes de añadir una pieza, pregunta qué exposición nueva aporta y qué exposición repite. La diversificación se valora mirando el conjunto después del cambio, no por lo distinto que suena el nombre del producto.",
+          "takeaway": "Añadir un fondo puede ampliar la cartera o concentrarla más."
+        },
+        {
+          "type": "choice",
+          "title": "¿Diversificar o reforzar?",
+          "body": "Una cartera global ficticia ya tiene un 60% en un país. Añades un ETF que invierte exclusivamente en ese mismo país. ¿Qué efecto debes investigar primero?",
+          "options": [
+            {
+              "text": "Si el nuevo nombre elimina el solapamiento."
+            },
+            {
+              "text": "Si cada fondo cuenta como una exposición independiente aunque repita empresas."
+            },
+            {
+              "text": "Si aumenta el peso total de ese país y sus empresas."
+            }
+          ],
+          "answer": 2,
+          "explanation": "El fondo adicional puede reforzar una exposición ya grande. Hace falta mirar los pesos finales del conjunto, no contar productos.",
+          "hint": "Pregunta qué hay dentro del ETF que vas a añadir."
+        }
+      ],
+      "takeaway": "Un mapa de países y posiciones compartidas explica más que el número de ETFs de tu cartera."
+    },
+    {
+      "id": "etfs-v2-10",
+      "track": "etfs",
+      "world": 104,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1040,
+        1041,
+        1042,
+        1043,
+        1044,
+        1045,
+        1046,
+        1047,
+        1048,
+        1049
+      ],
+      "learningGoals": [
+        "Distinguir cupón del resultado total de una inversión en bonos.",
+        "Usar la duración como aproximación, sin confundirla con vencimiento."
+      ],
+      "title": "Bonos globales: cobrar intereses no evita las caídas",
+      "company": "iShares Core Global Aggregate Bond UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Relaciona precio, cupón, tipos de interés y duración con un fondo real de bonos. Bonos y movimientos numéricos simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "landmark",
+        "color": "#637ca8"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core Global Aggregate Bond UCITS ETF",
+          "url": "https://www.ishares.com/uk/individual/en/products/291773/ishares-core-global-aggregate-bond-ucits-etf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un préstamo que también tiene precio",
+          "body": "iShares Core Global Aggregate Bond sigue un índice de bonos globales con calificación de grado de inversión, una categoría de calidad crediticia. Un bono representa un préstamo: el emisor se compromete a unos pagos, pero el bono puede negociarse antes de que termine. El cupón es el interés previsto por sus condiciones. Tu resultado también depende del precio pagado y del valor al vender. En este caso usamos bonos ficticios para separar esos conceptos, sin atribuirles los rendimientos actuales del ETF.",
+          "takeaway": "Cobrar un cupón y obtener una rentabilidad total positiva son cosas distintas.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Bono simplificado",
+            "items": [
+              "El inversor presta dinero al emisor",
+              "Recibe los intereses pactados si el emisor cumple",
+              "Al vender, recibe el precio de mercado de ese momento"
+            ]
+          },
+          "explore": {
+            "prompt": "Dos formas de recibir dinero",
+            "options": [
+              {
+                "label": "Cobrar el cupón",
+                "title": "Pago según las condiciones",
+                "body": "El pago de intereses no te dice por sí solo a qué precio podrías vender el bono."
+              },
+              {
+                "label": "Vender antes",
+                "title": "Precio disponible en el mercado",
+                "body": "Puedes vender por más o por menos de lo que pagaste, aunque hayas cobrado intereses."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Distingue los conceptos",
+          "body": "Relaciona cada dato de un bono ficticio con su significado.",
+          "pairs": [
+            {
+              "left": "Paga 3 € anuales según sus condiciones",
+              "right": "Cupón"
+            },
+            {
+              "left": "Hoy alguien ofrece 95 € por comprarlo",
+              "right": "Precio de mercado"
+            },
+            {
+              "left": "Dentro de cuatro años acaba el préstamo previsto",
+              "right": "Vencimiento"
+            }
+          ],
+          "explanation": "El interés pactado, el precio al negociar y la fecha final del préstamo describen aspectos diferentes.",
+          "hint": "Piensa en un pago, una valoración y una fecha.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Bono simplificado",
+            "items": [
+              "El inversor presta dinero al emisor",
+              "Recibe los intereses pactados si el emisor cumple",
+              "Al vender, recibe el precio de mercado de ese momento"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Por qué una subida de tipos puede bajar el precio",
+          "body": "Si aparecen bonos nuevos comparables que pagan más interés, un bono antiguo con pagos inferiores pierde atractivo al mismo precio. Su precio puede bajar para que comprarlo resulte competitivo. La relación es una explicación general, no una predicción exacta: también influyen el riesgo de impago, el plazo y otras condiciones. Un ETF reúne muchos bonos y su valor refleja esos cambios. Por eso llamarlos renta fija describe ciertos pagos, pero no significa que el precio del fondo permanezca fijo.",
+          "takeaway": "Los pagos pactados no fijan el precio de reventa.",
+          "figure": {
+            "kind": "table",
+            "caption": "Comparación ficticia, mismo emisor y vencimiento",
+            "headers": [
+              "Bono",
+              "Precio inicial de comparación",
+              "Interés anual"
+            ],
+            "rows": [
+              [
+                "Antiguo",
+                "100 €",
+                "2 €"
+              ],
+              [
+                "Nuevo",
+                "100 €",
+                "4 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Entiende el ajuste",
+          "body": "Los dos bonos de la tabla son comparables en riesgo y plazo. Los nuevos ofrecen 4 € al año por 100 €, y el antiguo solo 2 €. ¿Qué movimiento ayudaría al antiguo a resultar más atractivo?",
+          "options": [
+            {
+              "text": "Que se cambie automáticamente su cupón de 2 a 4 €."
+            },
+            {
+              "text": "Que su precio baje, manteniendo sus pagos pactados."
+            },
+            {
+              "text": "Que su precio suba sin cambiar sus pagos."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Pagar menos por los mismos cobros aumenta su rendimiento para un nuevo comprador. La aparición de otros bonos no cambia automáticamente el cupón del antiguo.",
+          "hint": "Distingue el precio que puede cambiar del pago que ya estaba pactado.",
+          "figure": {
+            "kind": "table",
+            "caption": "Comparación ficticia, mismo emisor y vencimiento",
+            "headers": [
+              "Bono",
+              "Precio inicial de comparación",
+              "Interés anual"
+            ],
+            "rows": [
+              [
+                "Antiguo",
+                "100 €",
+                "2 €"
+              ],
+              [
+                "Nuevo",
+                "100 €",
+                "4 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Duración: una medida aproximada de sensibilidad",
+          "body": "La duración resume cuánto puede moverse el precio ante un cambio pequeño en el rendimiento exigido a los bonos. Como aproximación, una duración de cinco implica una caída cercana al 5% si ese rendimiento sube un punto porcentual, manteniendo lo demás igual. No es una fecha de devolución ni una garantía: la relación se curva y la cartera cambia. En el siguiente ejercicio ignoramos cupones, costes y divisas para observar únicamente ese efecto de precio sobre una inversión ficticia.",
+          "takeaway": "La duración ayuda a estimar sensibilidad; no promete el resultado final."
+        },
+        {
+          "type": "numeric",
+          "title": "Estima el efecto aislado",
+          "body": "Una cartera ficticia de bonos vale 1.000 € y tiene duración 5. El rendimiento exigido sube 0,5 puntos porcentuales. Con la aproximación anterior y sin otros efectos, ¿cuántos euros perdería de valor?",
+          "answer": 25,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "5 × 0,5% = 2,5% de caída aproximada. El 2,5% de 1.000 € son 25 €. No son cinco años de espera ni un cupón.",
+          "hint": "Multiplica duración por el cambio en puntos y aplica el porcentaje resultante al capital."
+        }
+      ],
+      "takeaway": "Un ETF de bonos combina cobros, precios y riesgos; el cupón por sí solo no explica su rentabilidad."
+    },
+    {
+      "id": "etfs-v2-11",
+      "track": "etfs",
+      "world": 105,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1050,
+        1051,
+        1052,
+        1053,
+        1054,
+        1055,
+        1056,
+        1057,
+        1058,
+        1059
+      ],
+      "learningGoals": [
+        "Distinguir un ETF de vencimiento definido de un fondo que renueva continuamente su cartera.",
+        "Relacionar años objetivo y necesidades de efectivo sin dar el capital por garantizado."
+      ],
+      "title": "iBonds 2028: una fecha no es una garantía",
+      "company": "iShares iBonds Dec 2028 Term € Corp UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Estudia un fondo de bonos con año objetivo y construye una escalera sencilla. Cobros e importes de los ejercicios simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "calendar-days",
+        "color": "#657daf"
+      },
+      "sources": [
+        {
+          "title": "iShares: iBonds Dec 2028 Term € Corp UCITS ETF",
+          "url": "https://www.ishares.com/uk/individual/en/products/331717/"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un año en el nombre cambia la pregunta",
+          "body": "iShares iBonds Dec 2028 Term € Corp sigue un índice de bonos corporativos en euros con vencimientos durante 2028. Corporativo significa emitido por empresas. Esta estructura permite estudiar una fecha objetivo, a diferencia de una cartera que va sustituyendo continuamente bonos para mantener un plazo parecido. Pero el año escrito en el nombre no promete devolverte exactamente lo que pagaste: importan el precio de compra, los gastos, los cobros y que los emisores cumplan.",
+          "takeaway": "Un año objetivo organiza los vencimientos; no convierte el ETF en un depósito.",
+          "figure": {
+            "kind": "table",
+            "caption": "Diferencia conceptual entre dos estructuras",
+            "headers": [
+              "Estructura",
+              "Qué hace con los vencimientos"
+            ],
+            "rows": [
+              [
+                "ETF convencional de plazo estable",
+                "Va renovando bonos"
+              ],
+              [
+                "ETF con año objetivo",
+                "Concentra vencimientos en ese año"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Elige qué fecha estás mirando",
+            "options": [
+              {
+                "label": "Vencimiento del bono",
+                "title": "Fecha de un préstamo",
+                "body": "Cada emisor tiene sus propias obligaciones de pago, sujetas a que pueda cumplirlas."
+              },
+              {
+                "label": "Año objetivo del ETF",
+                "title": "Organización de una cartera",
+                "body": "El fondo reúne bonos alrededor de una fecha; el importe final depende de la evolución del conjunto."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una conclusión demasiado fuerte",
+          "body": "Una persona compra un ETF de bonos con año objetivo 2028 por 1.000 € y dice: «En 2028 recuperaré exactamente 1.000 €». ¿Qué falta considerar?",
+          "options": [
+            {
+              "text": "El precio pagado, los cobros, los costes y posibles incumplimientos."
+            },
+            {
+              "text": "Nada: cualquier año en el nombre fija la devolución."
+            },
+            {
+              "text": "Solo cuántas letras tiene el ticker."
+            }
+          ],
+          "answer": 0,
+          "explanation": "El año objetivo no fija el resultado de una compra concreta. Un fondo de bonos mantiene riesgos y su resultado depende de varias piezas.",
+          "hint": "Distingue saber aproximadamente cuándo vencen los bonos de saber cuánto cobrarás.",
+          "figure": {
+            "kind": "table",
+            "caption": "Diferencia conceptual entre dos estructuras",
+            "headers": [
+              "Estructura",
+              "Qué hace con los vencimientos"
+            ],
+            "rows": [
+              [
+                "ETF convencional de plazo estable",
+                "Va renovando bonos"
+              ],
+              [
+                "ETF con año objetivo",
+                "Concentra vencimientos en ese año"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Repartir por años para distintas necesidades",
+          "body": "Una escalera distribuye la inversión entre varios vencimientos en lugar de concentrarla en uno solo. En la simulación, necesitas 600 € en un primer año y 400 € en el siguiente. Puedes estudiar dos tramos con fechas distintas para aproximarte a ese calendario. Eso no significa que debas invertir hoy exactamente esos importes: el precio y los cobros previstos pueden diferir. Aquí suponemos, solo para practicar el reparto, que cada euro asignado produce un euro disponible en el año correspondiente.",
+          "takeaway": "Alinea cada tramo con su necesidad de efectivo y revisa los supuestos.",
+          "figure": {
+            "kind": "table",
+            "caption": "Calendario ficticio; conversión uno a uno solo para el ejercicio",
+            "headers": [
+              "Necesidad",
+              "Año A",
+              "Año B"
+            ],
+            "rows": [
+              [
+                "Dinero que debe estar disponible",
+                "600 €",
+                "400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Completa el primer tramo",
+          "body": "En esta simulación uno a uno, ya has reservado 350 € para el año A y 400 € para el año B. Necesitas 600 € en A y 400 € en B. ¿Cuántos euros adicionales debes asignar al tramo A?",
+          "answer": 250,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "Para el año A faltan 600 − 350 = 250 €. Lo reservado para B ya cubre su necesidad y no se cuenta dos veces.",
+          "hint": "Compara la necesidad y lo ya reservado dentro del mismo año.",
+          "figure": {
+            "kind": "table",
+            "caption": "Calendario ficticio; conversión uno a uno solo para el ejercicio",
+            "headers": [
+              "Necesidad",
+              "Año A",
+              "Año B"
+            ],
+            "rows": [
+              [
+                "Dinero que debe estar disponible",
+                "600 €",
+                "400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El tipo de bono sigue siendo importante",
+          "body": "Una fecha parecida no hace equivalentes dos fondos de bonos. Un fondo de deuda pública presta a Estados; uno corporativo presta a empresas. Dentro de ambos hay emisores con distinta capacidad de pago. Una calificación crediticia resume una evaluación de ese riesgo, pero puede cambiar y no evita incumplimientos. Al preparar una escalera conviene mirar, además de las fechas, quién debe el dinero, en qué moneda y cuánta concentración existe. El calendario resuelve una pregunta; la calidad de los préstamos resuelve otra.",
+          "takeaway": "Combina calendario, emisores y moneda; no elijas solo por el año."
+        },
+        {
+          "type": "multi",
+          "title": "Revisa los tramos de la escalera",
+          "body": "Dos ETFs ficticios tienen año objetivo 2028, pero uno reúne deuda pública en euros y otro deuda empresarial en dólares. Selecciona dos diferencias que merecen revisión.",
+          "options": [
+            {
+              "text": "Ninguna, porque ambos dicen 2028."
+            },
+            {
+              "text": "El año elimina la posibilidad de pérdidas en los dos."
+            },
+            {
+              "text": "El riesgo de los emisores a los que prestan."
+            },
+            {
+              "text": "La moneda que puede afectar al dinero disponible en euros."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "Compartir año no iguala emisores ni divisas. Esas diferencias pueden cambiar tanto el riesgo como el resultado en euros.",
+          "hint": "El año cuenta cuándo, no quién paga ni en qué moneda."
+        }
+      ],
+      "takeaway": "Una fecha objetivo ayuda a planificar, pero necesita una revisión de emisores, moneda, costes y cobros."
+    },
+    {
+      "id": "etfs-v2-12",
+      "track": "etfs",
+      "world": 106,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1060,
+        1061,
+        1062,
+        1063,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069
+      ],
+      "learningGoals": [
+        "Distinguir moneda de negociación y exposición económica a divisas.",
+        "Combinar retorno de la inversión y cambio de moneda sin sumarlos mecánicamente."
+      ],
+      "title": "iShares EUR Hedged: pagar en euros no basta",
+      "company": "iShares MSCI World EUR Hedged UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Separa las monedas de la pantalla, de la ficha y de las inversiones; después prueba una cobertura. Tipos de cambio simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "languages",
+        "color": "#8a709b"
+      },
+      "sources": [
+        {
+          "title": "iShares: MSCI World EUR Hedged UCITS ETF",
+          "url": "https://www.ishares.com/uk/professionals/en/products/251891/ishares-msci-world-eur-hedged-ucits-etf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Tres monedas que pueden cumplir funciones distintas",
+          "body": "iShares MSCI World EUR Hedged sigue una versión del índice cubierta a euros. Hedged indica que utiliza una cobertura para reducir el efecto de las divisas frente al euro; no basta con que el ETF se compre en euros. La moneda de negociación es la que utilizas al operar. La moneda base sirve para presentar las cuentas del fondo. Las monedas de las inversiones son las que pueden afectar a su valor. Confundirlas puede hacer que creas protegido un riesgo que sigue ahí.",
+          "takeaway": "La moneda del botón de compra no demuestra que exista cobertura.",
+          "figure": {
+            "kind": "table",
+            "caption": "Tres preguntas diferentes",
+            "headers": [
+              "Pregunta",
+              "Concepto"
+            ],
+            "rows": [
+              [
+                "¿Con qué moneda pago en bolsa?",
+                "Moneda de negociación"
+              ],
+              [
+                "¿En qué moneda presenta cuentas el fondo?",
+                "Moneda base"
+              ],
+              [
+                "¿Qué divisas afectan a lo que posee?",
+                "Exposición de las inversiones"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Compara dos etiquetas",
+            "options": [
+              {
+                "label": "Cotiza en EUR",
+                "title": "Describe cómo operas",
+                "body": "Puede contener inversiones extranjeras cuyo cambio de moneda siga afectando a tu resultado."
+              },
+              {
+                "label": "EUR Hedged",
+                "title": "Describe una política de cobertura",
+                "body": "Busca reducir un efecto de divisa frente al euro. Hay que revisar alcance, costes y limitaciones."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Ubica la información",
+          "body": "Relaciona cada observación con lo que realmente describe.",
+          "pairs": [
+            {
+              "left": "El intermediario carga euros al comprar",
+              "right": "Moneda de negociación"
+            },
+            {
+              "left": "La documentación declara cobertura frente al euro",
+              "right": "Política para reducir riesgo de divisa"
+            },
+            {
+              "left": "Las cuentas resumen el patrimonio en dólares",
+              "right": "Moneda base"
+            }
+          ],
+          "explanation": "Pagar euros y leer cuentas en dólares no dicen, por sí solos, si la inversión tiene cobertura. Esa política debe constar de forma explícita.",
+          "hint": "No deduzcas una política de protección a partir de una unidad de presentación.",
+          "figure": {
+            "kind": "table",
+            "caption": "Tres preguntas diferentes",
+            "headers": [
+              "Pregunta",
+              "Concepto"
+            ],
+            "rows": [
+              [
+                "¿Con qué moneda pago en bolsa?",
+                "Moneda de negociación"
+              ],
+              [
+                "¿En qué moneda presenta cuentas el fondo?",
+                "Moneda base"
+              ],
+              [
+                "¿Qué divisas afectan a lo que posee?",
+                "Exposición de las inversiones"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Dos movimientos se multiplican",
+          "body": "Para calcular un resultado en euros, primero sigue el valor de la inversión en su moneda y después conviértelo al cambio final. En nuestra simulación empiezas con 100 €, equivalentes a 100 dólares. Las inversiones suben un 10% en dólares, pero al final cada dólar vale 0,90 €. La subida de las acciones y la caída del dólar actúan sobre cantidades distintas. Por eso sumar un 10% y restar un 10% no calcula exactamente lo que termina en euros.",
+          "takeaway": "Valora la inversión y luego aplica el cambio final.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Recorrido simulado de una inversión sin cobertura",
+            "items": [
+              "Inicio: 100 € = 100 dólares",
+              "Las inversiones suben un 10% en dólares",
+              "Al final: cada dólar se convierte en 0,90 €"
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "El resultado expresado en euros",
+          "body": "Con 100 dólares iniciales, una subida del 10% deja 110 dólares. Al final cada dólar vale 0,90 €. Sin costes, ¿cuál es el valor final en euros?",
+          "answer": 99,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "110 × 0,90 = 99 €. Frente a los 100 € iniciales hay una pérdida del 1%, aunque las inversiones hayan subido en dólares.",
+          "hint": "Aplica el tipo de cambio final a los dólares que tienes al final.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Recorrido simulado de una inversión sin cobertura",
+            "items": [
+              "Inicio: 100 € = 100 dólares",
+              "Las inversiones suben un 10% en dólares",
+              "Al final: cada dólar se convierte en 0,90 €"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Cubrir una parte del riesgo no cubre todo",
+          "body": "Una cobertura de divisa intenta compensar movimientos del cambio mediante contratos. No impide que bajen las acciones o los bonos del fondo, ni tiene por qué anular exactamente cada variación de moneda. Puede tener costes y se ajusta según unas reglas. Piensa en una protección dirigida a una causa concreta de fluctuación. Si tu objetivo es estabilizar una cartera, todavía debes estudiar sus inversiones, su plazo y otros riesgos. Elegir una clase cubierta es una decisión distinta de elegir cuánta renta variable quieres tener.",
+          "takeaway": "La cobertura de moneda no protege de todas las pérdidas."
+        },
+        {
+          "type": "multi",
+          "title": "Qué protege y qué no",
+          "body": "En un ETF de acciones con cobertura a euros, selecciona dos afirmaciones razonables.",
+          "options": [
+            {
+              "text": "Las acciones pueden caer aunque funcione la cobertura."
+            },
+            {
+              "text": "La cobertura impide cualquier caída del fondo."
+            },
+            {
+              "text": "Una compra en euros demuestra por sí sola la misma protección."
+            },
+            {
+              "text": "La cobertura busca reducir el efecto de los cambios de divisa frente al euro."
+            }
+          ],
+          "answers": [
+            0,
+            3
+          ],
+          "explanation": "La protección se dirige al cambio de divisa. Las empresas, los mercados y los costes siguen influyendo en el resultado.",
+          "hint": "Identifica la causa concreta que se intenta compensar."
+        }
+      ],
+      "takeaway": "Busca la política de cobertura y calcula en tu moneda; una cotización en euros no elimina el riesgo de divisa."
+    },
+    {
+      "id": "etfs-v2-13",
+      "track": "etfs",
+      "world": 107,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079
+      ],
+      "learningGoals": [
+        "Entender un factor como una regla de selección.",
+        "Separar la disciplina de una estrategia de la promesa de ganar siempre."
+      ],
+      "title": "iShares Quality: una regla, no un sello de éxito",
+      "company": "iShares Edge MSCI World Quality Factor UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Examina qué significa seleccionar por calidad y cómo evaluar una etapa de resultados flojos. Empresas y rentabilidades ficticias.",
+      "minutes": 9,
+      "cover": {
+        "icon": "filter",
+        "color": "#7879a4"
+      },
+      "sources": [
+        {
+          "title": "iShares: Edge MSCI World Quality Factor UCITS ETF",
+          "url": "https://www.ishares.com/uk/individual/en/products/270054/ishares-msci-world-quality-factor-ucits-etf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Calidad necesita una definición",
+          "body": "iShares Edge MSCI World Quality Factor busca seguir un índice de empresas con beneficios fuertes y estables. Un factor es una característica utilizada para seleccionar o ponderar inversiones: calidad, valor o impulso reciente son ejemplos distintos. La palabra calidad no sustituye la metodología ni significa ausencia de riesgo. Para practicar, inventaremos una regla más sencilla que la del fondo: elegir empresas con beneficios positivos durante tres años y deuda moderada. Esa regla de aula nos permite comprobar decisiones sin fingir que reproduce la fórmula oficial.",
+          "takeaway": "Un factor se entiende leyendo su regla, no interpretando su nombre como una promesa.",
+          "figure": {
+            "kind": "table",
+            "caption": "Regla y empresas ficticias: tres años positivos y deuda moderada",
+            "headers": [
+              "Empresa",
+              "Beneficios de tres años",
+              "Deuda"
+            ],
+            "rows": [
+              [
+                "A",
+                "8, 9 y 10",
+                "Moderada"
+              ],
+              [
+                "B",
+                "12, −2 y 14",
+                "Moderada"
+              ],
+              [
+                "C",
+                "6, 7 y 8",
+                "Elevada"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Dos usos de la palabra calidad",
+            "options": [
+              {
+                "label": "Una regla definida",
+                "title": "Puedes comprobarla",
+                "body": "Permite contrastar si cada empresa cumple condiciones concretas con los datos disponibles."
+              },
+              {
+                "label": "Una impresión general",
+                "title": "No permite verificar nada",
+                "body": "Decir que una marca es buena no demuestra que cumpla los criterios financieros del índice."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Aplica la regla de aula",
+          "body": "Con la regla ficticia de tres años de beneficios positivos y deuda moderada, ¿qué empresa de la tabla cumple ambas condiciones?",
+          "options": [
+            {
+              "text": "C"
+            },
+            {
+              "text": "A"
+            },
+            {
+              "text": "B"
+            }
+          ],
+          "answer": 1,
+          "explanation": "A tiene tres años positivos y deuda moderada. B registra un año negativo y C tiene deuda elevada. Esto aplica una regla de ejercicio, no la metodología exacta de iShares.",
+          "hint": "Debes comprobar las dos condiciones, no escoger el beneficio más alto.",
+          "figure": {
+            "kind": "table",
+            "caption": "Regla y empresas ficticias: tres años positivos y deuda moderada",
+            "headers": [
+              "Empresa",
+              "Beneficios de tres años",
+              "Deuda"
+            ],
+            "rows": [
+              [
+                "A",
+                "8, 9 y 10",
+                "Moderada"
+              ],
+              [
+                "B",
+                "12, −2 y 14",
+                "Moderada"
+              ],
+              [
+                "C",
+                "6, 7 y 8",
+                "Elevada"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Una característica no es otra",
+          "body": "Valor suele buscar precios bajos en relación con alguna medida del negocio. Calidad examina rasgos financieros, como la estabilidad de los beneficios o la solidez del balance. Momentum se refiere a la continuidad de movimientos recientes del precio según reglas concretas. Son ideas distintas y pueden coincidir o entrar en tensión. Una empresa puede tener resultados estables y un precio elevado, o un precio bajo porque afronta problemas importantes. Saber qué criterio aplica el fondo evita cambiar de estrategia sin darte cuenta.",
+          "takeaway": "No confundas una empresa estable con una inversión necesariamente barata.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Tres preguntas para separar factores",
+            "items": [
+              "Calidad: ¿qué rasgos financieros tiene?",
+              "Valor: ¿qué precio pago frente al negocio?",
+              "Momentum: ¿cómo ha evolucionado recientemente el precio?"
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Pon cada pregunta en su lugar",
+          "body": "Relaciona cada análisis simplificado con el factor que está examinando.",
+          "pairs": [
+            {
+              "left": "Comparar el precio con los beneficios del negocio",
+              "right": "Valor"
+            },
+            {
+              "left": "Examinar la regularidad de los beneficios",
+              "right": "Calidad"
+            },
+            {
+              "left": "Estudiar la evolución reciente del precio",
+              "right": "Momentum"
+            }
+          ],
+          "explanation": "Son enfoques diferentes. Ninguno permite deducir automáticamente el resultado futuro ni reemplaza sus reglas detalladas.",
+          "hint": "Separa precio relativo, rasgos del negocio y trayectoria reciente.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Tres preguntas para separar factores",
+            "items": [
+              "Calidad: ¿qué rasgos financieros tiene?",
+              "Valor: ¿qué precio pago frente al negocio?",
+              "Momentum: ¿cómo ha evolucionado recientemente el precio?"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Una etapa mala requiere diagnóstico",
+          "body": "Una estrategia puede cumplir sus reglas y rendir peor que un índice amplio durante un periodo. Eso no demuestra por sí solo que esté mal aplicada; el mercado puede favorecer otras características. En la comparación ficticia, el fondo factor cae un 8% mientras el índice amplio sube un 2%. Antes de cambiar, revisa si el fondo siguió su índice propio y si el factor sigue encajando en tu plan. Juzgarlo únicamente por el ganador del último año invita a perseguir resultados pasados.",
+          "takeaway": "Compara la ejecución con su propio objetivo y después revisa si ese objetivo te sigue encajando.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Un año ficticio, misma moneda y retorno total",
+            "labels": [
+              "Fondo factor",
+              "Índice propio",
+              "Índice amplio"
+            ],
+            "values": [
+              -8,
+              -7.8,
+              2
+            ],
+            "unit": "%"
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Investiga la diferencia correcta",
+          "body": "Ante esos resultados ficticios, selecciona dos preguntas útiles para revisar la estrategia.",
+          "options": [
+            {
+              "text": "¿El −8% del fondo se aparta mucho del −7,8% de su índice propio?"
+            },
+            {
+              "text": "¿Sigue encajando en mi plan la exposición al factor?"
+            },
+            {
+              "text": "¿Debo concluir que calidad significa subir todos los años?"
+            },
+            {
+              "text": "¿El +2% del índice amplio prueba que el factor no se aplicó?"
+            }
+          ],
+          "answers": [
+            0,
+            1
+          ],
+          "explanation": "Primero separas el pequeño desfase frente al índice propio de la diferencia de estrategia frente al mercado amplio. Después revisas su papel en tu cartera.",
+          "hint": "Una cosa es ejecutar el mandato y otra que ese mandato gane al mercado.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Un año ficticio, misma moneda y retorno total",
+            "labels": [
+              "Fondo factor",
+              "Índice propio",
+              "Índice amplio"
+            ],
+            "values": [
+              -8,
+              -7.8,
+              2
+            ],
+            "unit": "%"
+          }
+        }
+      ],
+      "takeaway": "Un factor es una exposición con reglas y periodos difíciles, no una etiqueta que garantice mejores resultados."
+    },
+    {
+      "id": "etfs-v2-14",
+      "track": "etfs",
+      "world": 108,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089
+      ],
+      "learningGoals": [
+        "Distinguir el nombre temático de la exposición económica real.",
+        "Relacionar concentración, reglas de sostenibilidad y precio pagado."
+      ],
+      "title": "Energía limpia: el tema no lo explica todo",
+      "company": "iShares Global Clean Energy Transition UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Mira cuánto negocio pertenece al tema y cómo puede concentrarse el riesgo. Empresas, ventas y valoraciones de los retos simuladas.",
+      "minutes": 9,
+      "cover": {
+        "icon": "leaf",
+        "color": "#4a986e"
+      },
+      "sources": [
+        {
+          "title": "iShares: Global Clean Energy Transition UCITS ETF",
+          "url": "https://www.ishares.com/uk/individual/en/products/326325/ishares-global-clean-energy-ucits-etf?siteEntryPassthrough=true"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un tema reúne empresas distintas",
+          "body": "iShares Global Clean Energy Transition sigue un índice vinculado a la transición hacia energía limpia. Su documentación describe empresas de ese ámbito y reglas de selección. Eso no significa que todas realicen la misma actividad o que el cien por cien de sus ingresos proceda del tema. Para investigarlo, miramos una cartera ficticia con dos empresas: una vende equipos para muchas industrias y otra se concentra en energía limpia. Sus nombres no bastan; necesitamos saber qué parte del negocio corresponde realmente al tema que buscamos.",
+          "takeaway": "La exposición temática se comprueba dentro de cada empresa.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cartera ficticia para estudiar ingresos vinculados al tema",
+            "headers": [
+              "Empresa",
+              "Peso en la cartera",
+              "Ingresos de energía limpia"
+            ],
+            "rows": [
+              [
+                "Equipos A",
+                "60%",
+                "20%"
+              ],
+              [
+                "Energía B",
+                "40%",
+                "90%"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Dos medidas que no son equivalentes",
+            "options": [
+              {
+                "label": "Peso de la empresa",
+                "title": "Cuánto dinero le asigna el fondo",
+                "body": "Un 60% de peso describe una parte de la inversión, no de dónde salen las ventas de esa empresa."
+              },
+              {
+                "label": "Ingresos del tema",
+                "title": "Qué parte del negocio encaja",
+                "body": "Un 20% de ingresos temáticos deja un 80% de ingresos relacionados con otras actividades."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Estima la exposición temática",
+          "body": "Usando solo la medida simplificada de la tabla: 60% de cartera en A con 20% de ingresos temáticos y 40% en B con 90%. ¿Qué porcentaje ponderado de ingresos temáticos resulta?",
+          "answer": 48,
+          "unit": "%",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "60% × 20% + 40% × 90% = 12% + 36% = 48%. Es un indicador simplificado, no una predicción de beneficios ni la exposición publicada del ETF real.",
+          "hint": "Multiplica el peso de cada empresa por su proporción temática y suma.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cartera ficticia para estudiar ingresos vinculados al tema",
+            "headers": [
+              "Empresa",
+              "Peso en la cartera",
+              "Ingresos de energía limpia"
+            ],
+            "rows": [
+              [
+                "Equipos A",
+                "60%",
+                "20%"
+              ],
+              [
+                "Energía B",
+                "40%",
+                "90%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Crecimiento del sector y rentabilidad son distintos",
+          "body": "Un sector puede vender cada vez más y sus acciones dar un resultado decepcionante si se compraron a precios que esperaban todavía más crecimiento. La valoración relaciona el precio con alguna medida del negocio. En nuestra simulación, los beneficios por acción suben de 2 a 3 €, pero el precio baja de 60 a 45 €. El negocio mejora en esa medida y la inversión pierde valor. No hay contradicción: el precio pagado y las expectativas iniciales también forman parte de la historia.",
+          "takeaway": "Acertar con una tendencia económica no garantiza acertar con el precio de compra.",
+          "figure": {
+            "kind": "table",
+            "caption": "Empresa ficticia, sin dividendos",
+            "headers": [
+              "Dato",
+              "Inicio",
+              "Final"
+            ],
+            "rows": [
+              [
+                "Beneficio por acción",
+                "2 €",
+                "3 €"
+              ],
+              [
+                "Precio por acción",
+                "60 €",
+                "45 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Interpreta negocio e inversión",
+          "body": "Con beneficios por acción de 2 a 3 € y precio de 60 a 45 €, ¿qué descripción encaja con la simulación?",
+          "options": [
+            {
+              "text": "Mejora el beneficio por acción, pero quien compró a 60 € pierde valor."
+            },
+            {
+              "text": "La subida del beneficio obliga a que la acción también suba."
+            },
+            {
+              "text": "El precio de 45 € demuestra que el beneficio ha caído."
+            }
+          ],
+          "answer": 0,
+          "explanation": "El beneficio aumenta mientras el precio disminuye. Son magnitudes relacionadas, pero no se mueven siempre en la misma dirección durante un periodo.",
+          "hint": "No uses el precio como sustituto del dato de beneficios ni a la inversa.",
+          "figure": {
+            "kind": "table",
+            "caption": "Empresa ficticia, sin dividendos",
+            "headers": [
+              "Dato",
+              "Inicio",
+              "Final"
+            ],
+            "rows": [
+              [
+                "Beneficio por acción",
+                "2 €",
+                "3 €"
+              ],
+              [
+                "Precio por acción",
+                "60 €",
+                "45 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Una etiqueta sostenible también necesita reglas",
+          "body": "Una política de sostenibilidad puede excluir ciertas actividades, favorecer empresas con determinada puntuación o perseguir un objetivo concreto. No son decisiones equivalentes. Antes de interpretar una etiqueta, pregunta qué se excluye, con qué umbral, qué datos se usan y cuándo se revisan. Una clasificación por sí sola tampoco demuestra que la cartera evite todas las empresas que tú rechazarías. En un ETF temático, conviene sumar esta revisión a la concentración por empresas y actividades: varias posiciones diferentes pueden depender del mismo cambio regulatorio o tecnológico.",
+          "takeaway": "Sostenibilidad y diversificación requieren comprobar reglas y posiciones."
+        },
+        {
+          "type": "multi",
+          "title": "Dos comprobaciones antes de confiar en la etiqueta",
+          "body": "Selecciona las dos preguntas que aportan información comprobable sobre un fondo temático sostenible.",
+          "options": [
+            {
+              "text": "¿Su etiqueta permite ignorar el precio de compra?"
+            },
+            {
+              "text": "¿Qué actividades excluye y con qué límites?"
+            },
+            {
+              "text": "¿Cuánto concentran sus mayores empresas y actividades?"
+            },
+            {
+              "text": "¿Su nombre garantiza que todas sus ventas pertenecen al tema?"
+            }
+          ],
+          "answers": [
+            1,
+            2
+          ],
+          "explanation": "Las exclusiones concretas y la concentración se pueden estudiar. El nombre no certifica cada ingreso ni vuelve irrelevante la valoración.",
+          "hint": "Busca reglas verificables y dependencias comunes."
+        }
+      ],
+      "takeaway": "Investiga actividad real, concentración, reglas y valoración; una buena historia temática no sustituye esos datos."
+    },
+    {
+      "id": "etfs-v2-15",
+      "track": "etfs",
+      "world": 109,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099
+      ],
+      "learningGoals": [
+        "Comparar primero exposiciones y clases compatibles con el objetivo.",
+        "Integrar costes, seguimiento y condiciones de negociación sin elegir por un único dato."
+      ],
+      "title": "Comparar World: primero la misión, después la tabla",
+      "company": "iShares Core MSCI World y MSCI World EUR Hedged",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Diseña una comparación que no mezcle objetivos, monedas ni pagos. Fichas y condiciones del ejercicio simuladas.",
+      "minutes": 9,
+      "cover": {
+        "icon": "list-checks",
+        "color": "#65838b"
+      },
+      "sources": [
+        {
+          "title": "iShares: Core MSCI World, estructura, identificador y mercados",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund"
+        },
+        {
+          "title": "iShares: MSCI World EUR Hedged UCITS ETF",
+          "url": "https://www.ishares.com/uk/professionals/en/products/251891/ishares-msci-world-eur-hedged-ucits-etf"
+        },
+        {
+          "title": "Vanguard: qué afecta al seguimiento del índice",
+          "url": "https://www.vanguard.co.uk/content/uk-aem/gb/en/professional/vanguard-365/investment-knowledge/etf-knowledge/what-affects-index-tracking"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "No hagas una clasificación de productos incompatibles",
+          "body": "El iShares Core MSCI World y el iShares MSCI World EUR Hedged permiten estudiar una diferencia concreta: la política de cobertura de divisas. Un porcentaje de gastos menor no resuelve esa decisión. Primero define qué exposición buscas y qué quieres hacer con los ingresos. Después separa los candidatos que cumplen esas condiciones de los que no. Para el ejercicio fijaremos una misión ficticia: acciones de mercados desarrollados, ingresos reinvertidos y cobertura a euros. No es una propuesta para tu cartera, sino un criterio explícito de comparación.",
+          "takeaway": "Un producto barato que no cumple la misión no resuelve la misma necesidad.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Orden de una comparación coherente",
+            "items": [
+              "Definir exposición e ingresos deseados",
+              "Comprobar índice, clase y cobertura",
+              "Comparar costes, seguimiento y negociación"
+            ]
+          },
+          "explore": {
+            "prompt": "Qué ocurre si cambias el objetivo",
+            "options": [
+              {
+                "label": "Sin cobertura",
+                "title": "Aceptas otra exposición a divisas",
+                "body": "La lista de candidatos puede cambiar. No es solo una decisión de cuál cobra menos."
+              },
+              {
+                "label": "Con cobertura a EUR",
+                "title": "La protección debe estar documentada",
+                "body": "Cotizar en euros no basta para cumplir este requisito de la simulación."
+              }
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Pon criterio a la búsqueda",
+          "body": "Ordena estas tareas para una comparación sin mezclar objetivos.",
+          "items": [
+            "Revisar costes y seguimiento de los candidatos compatibles.",
+            "Escribir la exposición, ingresos y cobertura que buscas.",
+            "Descartar clases que no cumplen esas condiciones."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "explanation": "Primero defines el trabajo que debe hacer el ETF. Después filtras y solo entonces comparas la implementación.",
+          "hint": "Una tabla de costes necesita antes una lista de productos que hagan el mismo trabajo.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Orden de una comparación coherente",
+            "items": [
+              "Definir exposición e ingresos deseados",
+              "Comprobar índice, clase y cobertura",
+              "Comparar costes, seguimiento y negociación"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "La ficha debe resolver los requisitos",
+          "body": "La tabla siguiente es totalmente ficticia y no muestra tarifas ni clases actuales de los fondos reales. En ella, A y B invierten en acciones desarrolladas y reinvierten los ingresos, pero solo B declara cobertura a euros. C cotiza también en euros y está cubierto, aunque invierte únicamente en tecnología. Para la misión definida, hay que cumplir todas las condiciones a la vez. No compensa fallar una condición con un número atractivo en otra columna: estarías cambiando la exposición sin reconocerlo.",
+          "takeaway": "Exige coherencia entre misión, índice, tratamiento de ingresos y cobertura.",
+          "figure": {
+            "kind": "table",
+            "caption": "Tres candidatos ficticios",
+            "headers": [
+              "Candidato",
+              "Universo",
+              "Ingresos",
+              "Cobertura EUR"
+            ],
+            "rows": [
+              [
+                "A",
+                "Desarrollados amplios",
+                "Reinvierte",
+                "No"
+              ],
+              [
+                "B",
+                "Desarrollados amplios",
+                "Reinvierte",
+                "Sí"
+              ],
+              [
+                "C",
+                "Solo tecnología",
+                "Reinvierte",
+                "Sí"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Filtra antes de comparar precios",
+          "body": "La misión es acciones desarrolladas amplias, ingresos reinvertidos y cobertura a euros. ¿Qué candidato ficticio de la tabla cumple las tres condiciones?",
+          "options": [
+            {
+              "text": "B"
+            },
+            {
+              "text": "C"
+            },
+            {
+              "text": "A"
+            }
+          ],
+          "answer": 0,
+          "explanation": "B cumple universo, reinversión y cobertura. A falla la cobertura y C cambia la exposición por una apuesta sectorial.",
+          "hint": "Revisa todas las columnas; no basta con acertar dos de tres.",
+          "figure": {
+            "kind": "table",
+            "caption": "Tres candidatos ficticios",
+            "headers": [
+              "Candidato",
+              "Universo",
+              "Ingresos",
+              "Cobertura EUR"
+            ],
+            "rows": [
+              [
+                "A",
+                "Desarrollados amplios",
+                "Reinvierte",
+                "No"
+              ],
+              [
+                "B",
+                "Desarrollados amplios",
+                "Reinvierte",
+                "Sí"
+              ],
+              [
+                "C",
+                "Solo tecnología",
+                "Reinvierte",
+                "Sí"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "La decisión final usa varias pruebas",
+          "body": "Una vez que dos fondos cumplen tu objetivo, compara cómo lo llevan a la práctica. Mira su diferencia de seguimiento durante periodos comparables, el coste de comprarlos en tu intermediario y las condiciones de negociación para tu importe. Revisa también tamaño, antigüedad y posibles cambios anunciados, sin convertir ninguno de esos datos en una garantía. Los efectos fiscales dependen del producto y de tu situación; no deduzcas un tratamiento idéntico solo porque dos fondos tengan nombres parecidos. Una comparación ordenada ayuda a formular preguntas más concretas.",
+          "takeaway": "Compara varios datos homogéneos y deja visibles las diferencias que no has resuelto."
+        },
+        {
+          "type": "multi",
+          "title": "Qué comparación está bien planteada",
+          "body": "Dos candidatos ya cumplen la misión. Selecciona dos comprobaciones útiles.",
+          "options": [
+            {
+              "text": "Precio por participación: el menor siempre implica una inversión más barata."
+            },
+            {
+              "text": "Antigüedad: el más viejo necesariamente rendirá mejor."
+            },
+            {
+              "text": "Rentabilidad total frente al mismo índice y durante las mismas fechas."
+            },
+            {
+              "text": "Coste de operar la cantidad prevista con tu intermediario."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "El seguimiento homogéneo y el coste concreto de tu operación son comparables. El precio unitario no mide por sí solo valoración o gastos, y la antigüedad no predice rentabilidad.",
+          "hint": "Busca datos que respondan una pregunta real sobre el producto y tu operación."
+        }
+      ],
+      "takeaway": "Define lo que necesitas, filtra por exposición y compara la implementación con fechas, monedas e ingresos coherentes."
+    },
+    {
+      "id": "etfs-v2-16",
+      "track": "etfs",
+      "world": 110,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109
+      ],
+      "learningGoals": [
+        "Relacionar cada ETF con una función dentro de la cartera.",
+        "Calcular la exposición conjunta cuando un fondo contiene otros fondos."
+      ],
+      "title": "LifeStrategy 60: una cartera dentro de un fondo",
+      "company": "Vanguard LifeStrategy 60% Equity UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Mira a través de varios fondos para conocer tu reparto real. Asignaciones personales e importes simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "pie-chart",
+        "color": "#627eac"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: LifeStrategy 60% Equity UCITS ETF, política de inversión",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/lifestrategy/9495/lifestrategy-60-equity-ucits-etf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una sola posición puede mezclar varias inversiones",
+          "body": "Vanguard LifeStrategy 60% Equity UCITS ETF busca una exposición aproximada del 60% a acciones y del 40% a renta fija, principalmente mediante otros fondos. Por eso contar posiciones en tu cuenta no basta para entender la cartera. Una línea puede contener varias clases de activos y miles de inversiones. El porcentaje de acciones describe exposición, no una probabilidad de ganar. Para estudiar el reparto, trabajaremos con un modelo exacto 60/40 y dejaremos a un lado pequeñas desviaciones, efectivo y costes del fondo real.",
+          "takeaway": "Cuenta las exposiciones de dentro, aunque tu cuenta muestre un solo producto.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Modelo didáctico de 1.000 €, no cartera publicada",
+            "labels": [
+              "Acciones",
+              "Bonos"
+            ],
+            "values": [
+              600,
+              400
+            ],
+            "unit": "€"
+          },
+          "explore": {
+            "prompt": "Compara dos formas de organizar una cartera",
+            "options": [
+              {
+                "label": "Un fondo mixto",
+                "title": "Las dos partes están dentro",
+                "body": "Necesitas leer su reparto para saber cuánto dinero queda expuesto a acciones y cuánto a bonos."
+              },
+              {
+                "label": "Dos fondos separados",
+                "title": "Tú controlas el reparto entre ellos",
+                "body": "Debes sumar las posiciones y revisar cómo cambian sus pesos. Dos líneas no implican necesariamente más diversificación."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Cada pieza necesita una función",
+          "body": "Relaciona cada necesidad ficticia con la función descrita, sin convertirla en una garantía.",
+          "pairs": [
+            {
+              "left": "Buscar participación en el crecimiento de empresas a largo plazo",
+              "right": "Parte de acciones"
+            },
+            {
+              "left": "Diversificar con préstamos a emisores y sus riesgos propios",
+              "right": "Parte de bonos"
+            },
+            {
+              "left": "Atender un pago cercano sin depender de vender inversiones",
+              "right": "Reserva de efectivo disponible"
+            }
+          ],
+          "explanation": "Las piezas tienen trabajos diferentes. Los bonos también pueden caer y una inversión a largo plazo no sustituye automáticamente una reserva para pagos próximos.",
+          "hint": "Piensa en la función de cada pieza, no en cuál crees que ganará más.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Modelo didáctico de 1.000 €, no cartera publicada",
+            "labels": [
+              "Acciones",
+              "Bonos"
+            ],
+            "values": [
+              600,
+              400
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Añadir acciones cambia el reparto de todo",
+          "body": "Si a un fondo mixto le añades uno de acciones, aumentas el peso de acciones en tu cartera. En la simulación inviertes 800 € en el modelo 60/40 y otros 200 € en un ETF exclusivamente de acciones. Primero calcula las acciones que ya hay dentro del fondo mixto; después suma las de la nueva posición. El resultado no es 60% solo porque el producto principal se llame así. El nombre de una pieza no describe automáticamente el conjunto que has construido.",
+          "takeaway": "Calcula el reparto de tu cartera completa después de cada incorporación.",
+          "figure": {
+            "kind": "table",
+            "caption": "Posiciones ficticias; el fondo mixto se modela exactamente 60/40",
+            "headers": [
+              "Posición",
+              "Importe",
+              "Porcentaje de acciones"
+            ],
+            "rows": [
+              [
+                "Fondo mixto",
+                "800 €",
+                "60%"
+              ],
+              [
+                "ETF de acciones",
+                "200 €",
+                "100%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "El porcentaje que tendrás realmente",
+          "body": "Con 800 € en el fondo mixto 60/40 y 200 € en un ETF de acciones, ¿qué porcentaje de los 1.000 € queda en acciones?",
+          "answer": 68,
+          "unit": "%",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "El mixto aporta 800 × 60% = 480 € en acciones. Sumando los otros 200 € quedan 680 €, el 68% del total.",
+          "hint": "Mira dentro del fondo mixto antes de sumar la posición adicional.",
+          "figure": {
+            "kind": "table",
+            "caption": "Posiciones ficticias; el fondo mixto se modela exactamente 60/40",
+            "headers": [
+              "Posición",
+              "Importe",
+              "Porcentaje de acciones"
+            ],
+            "rows": [
+              [
+                "Fondo mixto",
+                "800 €",
+                "60%"
+              ],
+              [
+                "ETF de acciones",
+                "200 €",
+                "100%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "La mezcla debe encajar con la necesidad",
+          "body": "La tolerancia al riesgo es cómo te sientes ante una caída; la capacidad de asumirlo depende de qué consecuencias tendría en tu vida. Alguien puede sentirse tranquilo con las oscilaciones y necesitar el dinero muy pronto para un pago importante. En ese caso, la fecha de la necesidad importa tanto como su confianza. Una cartera sencilla ayuda a seguir el plan, pero primero el plan debe tener sentido. Antes de añadir un ETF, describe qué problema resuelve y qué riesgo nuevo introduce.",
+          "takeaway": "Un reparto comprensible empieza por objetivos, plazos y consecuencias de una pérdida."
+        },
+        {
+          "type": "choice",
+          "title": "El plazo cambia la decisión",
+          "body": "Una persona dice tolerar bien las caídas, pero necesita todo el dinero para un pago obligatorio dentro de tres meses. ¿Qué dato debe pesar especialmente al elegir la cartera?",
+          "options": [
+            {
+              "text": "Que el número de ETFs sea superior a cinco."
+            },
+            {
+              "text": "Su capacidad de atender ese pago si las inversiones bajan."
+            },
+            {
+              "text": "Que un fondo incluya la palabra global."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El pago cercano limita la capacidad de asumir pérdidas o esperar una recuperación. La tranquilidad emocional no sustituye esa restricción.",
+          "hint": "Distingue sentirse cómodo con un riesgo de poder soportar sus consecuencias."
+        }
+      ],
+      "takeaway": "Mira a través de cada fondo y calcula el reparto conjunto antes de decidir si encaja en tus objetivos."
+    },
+    {
+      "id": "etfs-v2-17",
+      "track": "etfs",
+      "world": 111,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115,
+        1116,
+        1117,
+        1118,
+        1119
+      ],
+      "learningGoals": [
+        "Detectar desvíos respecto al reparto previsto.",
+        "Usar nuevas aportaciones para reequilibrar y valorar costes antes de vender."
+      ],
+      "title": "Mantener el rumbo: reequilibrar una cartera de ETFs",
+      "company": "Vanguard LifeStrategy 60% Equity UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Usa el reparto de LifeStrategy como referencia para practicar aportaciones y bandas en una cartera separada ficticia.",
+      "minutes": 9,
+      "cover": {
+        "icon": "refresh-cw",
+        "color": "#50857b"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: LifeStrategy 60% Equity UCITS ETF, política de inversión",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/lifestrategy/9495/lifestrategy-60-equity-ucits-etf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El reparto cambia aunque no hagas nada",
+          "body": "La política de LifeStrategy permite ajustar su mezcla de inversiones. Para entender el trabajo que eso supone, aquí gestionaremos dos fondos separados en una cartera ficticia con objetivo 60% acciones y 40% bonos. Si las acciones suben más, su peso aumenta y la cartera pasa a asumir una mezcla distinta. Reequilibrar es acercarla al reparto decidido, no adivinar qué activo va a subir mañana. Puedes fijar revisiones periódicas o bandas: límites de desviación que activan una revisión.",
+          "takeaway": "Reequilibrar mantiene una exposición elegida; no predice el próximo ganador.",
+          "figure": {
+            "kind": "table",
+            "caption": "Regla ficticia: revisar fuera del intervalo del 55% al 65% en acciones",
+            "headers": [
+              "Situación",
+              "Peso de acciones"
+            ],
+            "rows": [
+              [
+                "Objetivo",
+                "60%"
+              ],
+              [
+                "Cartera A",
+                "62%"
+              ],
+              [
+                "Cartera B",
+                "72%"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Dos reglas posibles, elegidas de antemano",
+            "options": [
+              {
+                "label": "Por calendario",
+                "title": "Revisar en fechas previstas",
+                "body": "No exige observar cada pequeña oscilación. En la revisión decides si hay desvío y cómo corregirlo."
+              },
+              {
+                "label": "Por bandas",
+                "title": "Revisar al cruzar un límite",
+                "body": "Necesita vigilar los pesos. La banda define cuándo mirar, no elimina los costes de ajustar."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Aplica la regla sin improvisar",
+          "body": "La regla ficticia activa revisión solo por debajo del 55% o por encima del 65% en acciones. Selecciona las dos afirmaciones correctas.",
+          "options": [
+            {
+              "text": "La cartera al 62% no ha cruzado la banda."
+            },
+            {
+              "text": "La cartera al 72% merece revisión según esa regla."
+            },
+            {
+              "text": "La cartera al 62% debe vender inmediatamente todas sus acciones."
+            },
+            {
+              "text": "La cartera al 72% demuestra que las acciones caerán mañana."
+            }
+          ],
+          "answers": [
+            0,
+            1
+          ],
+          "explanation": "62% queda dentro de la banda; 72% queda fuera. La regla organiza el control del reparto, no pronostica el mercado.",
+          "hint": "Compara con los límites definidos, sin añadir una predicción.",
+          "figure": {
+            "kind": "table",
+            "caption": "Regla ficticia: revisar fuera del intervalo del 55% al 65% en acciones",
+            "headers": [
+              "Situación",
+              "Peso de acciones"
+            ],
+            "rows": [
+              [
+                "Objetivo",
+                "60%"
+              ],
+              [
+                "Cartera A",
+                "62%"
+              ],
+              [
+                "Cartera B",
+                "72%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Una aportación puede corregir sin vender",
+          "body": "Antes de vender una parte que pesa demasiado, comprueba si una nueva aportación puede reforzar la parte que pesa poco. En la cartera ficticia hay 660 € en acciones y 340 € en bonos. Llegan 200 € nuevos que aún no se han invertido. El total tras aportarlos será 1.200 €. Para decidir dónde colocarlos, calcula qué importe de acciones y bonos correspondería al objetivo 60/40 sobre ese nuevo total. Así evitas trabajar con el total antiguo y crear un reparto equivocado.",
+          "takeaway": "Calcula los pesos objetivo sobre el total que habrá después de aportar.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cartera simulada antes de invertir la aportación",
+            "headers": [
+              "Elemento",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Acciones",
+                "660 €"
+              ],
+              [
+                "Bonos",
+                "340 €"
+              ],
+              [
+                "Nueva aportación",
+                "200 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Dirige el dinero nuevo",
+          "body": "Tienes 660 € en acciones y 340 € en bonos. Quieres dejar la cartera exactamente en 60% acciones y 40% bonos después de aportar 200 €, sin vender. ¿Cuánto de esa aportación debe ir a bonos?",
+          "answer": 140,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "Tras aportar habrá 1.200 €. El objetivo de bonos es 480 € y ya tienes 340 €: faltan 140 €. Los otros 60 € van a acciones, que pasan de 660 a 720 €, el 60% del total.",
+          "hint": "Calcula el 40% del total nuevo y resta los bonos que ya existen.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cartera simulada antes de invertir la aportación",
+            "headers": [
+              "Elemento",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Acciones",
+                "660 €"
+              ],
+              [
+                "Bonos",
+                "340 €"
+              ],
+              [
+                "Nueva aportación",
+                "200 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Primero diagnostica, después opera",
+          "body": "No toda desviación requiere vender y comprar inmediatamente. Una aportación próxima, las comisiones y las consecuencias fiscales pueden cambiar la forma de corregirla. Para una revisión ordenada, calcula primero los pesos actuales y compáralos con tu regla. Después estudia si las aportaciones permiten acercarte al objetivo. Solo con esas alternativas claras tiene sentido evaluar las ventas y sus costes. El ejercicio no supone un tratamiento fiscal concreto: la lección es no confundir reequilibrar con negociar siempre de la forma más cara o compleja.",
+          "takeaway": "El objetivo es recuperar el reparto con un procedimiento coherente y costes conocidos."
+        },
+        {
+          "type": "order",
+          "title": "Organiza la revisión",
+          "body": "Ordena el proceso de esta cartera, que prioriza usar las aportaciones antes de plantear ventas.",
+          "items": [
+            "Si todavía hace falta vender, valorar costes y consecuencias antes de decidir.",
+            "Calcular pesos y comprobar si se ha activado la regla.",
+            "Simular el reparto al dirigir las nuevas aportaciones."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "explanation": "Primero detectas el desvío; después pruebas la herramienta prevista de menor intervención; finalmente evalúas las ventas que aún fueran necesarias.",
+          "hint": "No decidas ventas antes de conocer el desvío y el efecto de la aportación."
+        }
+      ],
+      "takeaway": "Define una regla, usa el total actualizado y estudia las aportaciones antes de decidir si necesitas vender."
+    },
+    {
+      "id": "etfs-v2-18",
+      "track": "etfs",
+      "world": 112,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126,
+        1127,
+        1128,
+        1129
+      ],
+      "learningGoals": [
+        "Separar aportaciones y rentabilidad al medir una cartera.",
+        "Relacionar retiradas, secuencia de resultados y reserva de efectivo."
+      ],
+      "title": "LifeStrategy: medir bien antes de retirar dinero",
+      "company": "Vanguard LifeStrategy 60% Equity UCITS ETF",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Distingue ahorro y rendimiento, elige una comparación coherente y descubre por qué importa el orden de las caídas. Datos simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "chart-no-axes-combined",
+        "color": "#647daf"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: LifeStrategy 60% Equity UCITS ETF, política de inversión",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/lifestrategy/9495/lifestrategy-60-equity-ucits-etf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un saldo mayor puede venir de tu bolsillo",
+          "body": "Una cartera basada en un fondo mixto como LifeStrategy puede crecer porque sus inversiones ganan valor o porque tú aportas más dinero. Son causas diferentes. En una simulación empiezas con 1.000 €, las inversiones no cambian y añades 200 € al final. Terminar con 1.200 € no supone haber ganado un 20%. Para medir el rendimiento necesitas separar esos movimientos externos y cuándo ocurrieron. Si hubo aportaciones durante el periodo, comparar únicamente saldo final e inicial mezcla ahorro con resultado de las inversiones.",
+          "takeaway": "Una aportación aumenta el saldo, pero no es una ganancia de mercado.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Movimiento ficticio sin rentabilidad",
+            "items": [
+              "Inicio: 1.000 € invertidos",
+              "El valor de las inversiones no cambia",
+              "Aportación final: 200 €",
+              "Saldo final: 1.200 €"
+            ]
+          },
+          "explore": {
+            "prompt": "Dos preguntas, dos medidas",
+            "options": [
+              {
+                "label": "¿Cuánto he ahorrado?",
+                "title": "Sigue tus aportaciones",
+                "body": "El dinero nuevo cuenta para el crecimiento de tu patrimonio, aunque no sea rentabilidad del fondo."
+              },
+              {
+                "label": "¿Cómo rindió la inversión?",
+                "title": "Separa los flujos externos",
+                "body": "Necesitas aislar el cambio de valor respecto al dinero que estuvo realmente invertido."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "No confundas ahorro y rendimiento",
+          "body": "En esa simulación sin movimientos de mercado, el saldo aumenta de 1.000 a 1.200 € por una aportación final de 200 €. ¿Qué resultado tuvieron las inversiones?",
+          "options": [
+            {
+              "text": "20%: todo aumento de saldo es rentabilidad."
+            },
+            {
+              "text": "−20%: las aportaciones cuentan como pérdidas."
+            },
+            {
+              "text": "0%: el aumento procede de la aportación."
+            }
+          ],
+          "answer": 2,
+          "explanation": "El fondo no ganó ni perdió valor en el supuesto. Los 200 € adicionales vinieron del ahorrador.",
+          "hint": "Identifica de dónde llegó el dinero que explica el aumento.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Movimiento ficticio sin rentabilidad",
+            "items": [
+              "Inicio: 1.000 € invertidos",
+              "El valor de las inversiones no cambia",
+              "Aportación final: 200 €",
+              "Saldo final: 1.200 €"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "La comparación debe parecerse a la cartera",
+          "body": "Para juzgar una cartera mixta, un índice compuesto solo por acciones puede servir como contraste, pero no representa el mismo riesgo. Puedes construir una referencia con acciones y bonos en proporciones parecidas y con la misma moneda y tratamiento de ingresos. Eso no convierte la referencia en el índice oficial del fondo: LifeStrategy gestiona una asignación de activos, y aquí diseñamos una comparación de aula. La rentabilidad tampoco cuenta toda la experiencia; importa cuánto cayó la cartera y si necesitaste vender durante esa caída.",
+          "takeaway": "Compara resultados junto con exposición, moneda, ingresos y caídas.",
+          "figure": {
+            "kind": "table",
+            "caption": "Referencias ficticias para una cartera modelo 60/40",
+            "headers": [
+              "Referencia",
+              "Acciones",
+              "Bonos",
+              "Moneda"
+            ],
+            "rows": [
+              [
+                "R",
+                "60%",
+                "40%",
+                "EUR"
+              ],
+              [
+                "S",
+                "100%",
+                "0%",
+                "USD"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Una comparación que ayude",
+          "body": "Para evaluar una cartera modelo 60/40 en euros, selecciona las dos decisiones mejor justificadas.",
+          "options": [
+            {
+              "text": "Considerar cuánto cayó la cartera, además de su rentabilidad final."
+            },
+            {
+              "text": "Usar S como idéntico riesgo solo porque es un índice conocido."
+            },
+            {
+              "text": "Ignorar cualquier dividendo o interés al comparar resultados totales."
+            },
+            {
+              "text": "Usar R como punto de partida por su mezcla y moneda comparables."
+            }
+          ],
+          "answers": [
+            0,
+            3
+          ],
+          "explanation": "R es una referencia más próxima al modelo, aunque todavía hay que revisar detalles. Las caídas ayudan a entender un riesgo que el resultado final puede ocultar.",
+          "hint": "La referencia debe parecerse a lo que se está evaluando.",
+          "figure": {
+            "kind": "table",
+            "caption": "Referencias ficticias para una cartera modelo 60/40",
+            "headers": [
+              "Referencia",
+              "Acciones",
+              "Bonos",
+              "Moneda"
+            ],
+            "rows": [
+              [
+                "R",
+                "60%",
+                "40%",
+                "EUR"
+              ],
+              [
+                "S",
+                "100%",
+                "0%",
+                "USD"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Retirar durante una caída cambia el camino",
+          "body": "Sin aportaciones ni retiradas, una subida del 25% y una caída del 20% se compensan en dos periodos, ocurra primero una u otra. Al retirar dinero después de cada periodo, el orden importa: lo retirado ya no participa en la recuperación. La tabla muestra dos trayectorias ficticias que parten de 100 € y retiran 10 € al terminar cada año. No son previsiones de LifeStrategy. Sirven para comprender por qué una reserva para gastos puede reducir la necesidad de vender inversiones justo después de una caída.",
+          "takeaway": "Con retiradas, el orden de los resultados influye en el dinero que queda.",
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación: 100 € iniciales y retirada de 10 € al final de cada año",
+            "headers": [
+              "Trayectoria",
+              "Año 1: retorno y saldo tras retirar",
+              "Año 2: retorno"
+            ],
+            "rows": [
+              [
+                "A",
+                "−20%; quedan 70 €",
+                "+25%"
+              ],
+              [
+                "B",
+                "+25%; quedan 115 €",
+                "−20%"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Compara lo que queda tras dos años",
+          "body": "En A quedan 70 € tras el primer año; después sube un 25% y retiras 10 €. En B quedan 115 €; después cae un 20% y retiras 10 €. ¿Cuántos euros más quedan en B que en A al final?",
+          "answer": 4.5,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "A: 70 × 1,25 − 10 = 77,50 €. B: 115 × 0,80 − 10 = 82 €. B termina con 4,50 € más pese a contener los mismos dos porcentajes de mercado.",
+          "hint": "Calcula cada saldo final después de su segunda retirada y compara.",
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación: 100 € iniciales y retirada de 10 € al final de cada año",
+            "headers": [
+              "Trayectoria",
+              "Año 1: retorno y saldo tras retirar",
+              "Año 2: retorno"
+            ],
+            "rows": [
+              [
+                "A",
+                "−20%; quedan 70 €",
+                "+25%"
+              ],
+              [
+                "B",
+                "+25%; quedan 115 €",
+                "−20%"
+              ]
+            ]
+          }
+        }
+      ],
+      "takeaway": "Separa tus aportaciones del rendimiento y estudia las caídas en relación con cuándo necesitarás retirar dinero."
+    },
+    {
+      "id": "etfs-v2-19",
+      "track": "etfs",
+      "world": 113,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1130,
+        1131,
+        1132,
+        1133,
+        1134,
+        1135,
+        1136,
+        1137,
+        1138,
+        1139
+      ],
+      "learningGoals": [
+        "Explicar el intercambio entre prima recibida y subida limitada.",
+        "Distinguir distribuciones periódicas de rentabilidad total."
+      ],
+      "title": "QYLD: cobrar una prima tiene una contrapartida",
+      "company": "Global X Nasdaq 100 Covered Call ETF (QYLD)",
+      "period": "Documentación consultada en octubre de 2026 · ejercicios simulados",
+      "summary": "Explora cómo vender opciones puede limitar la subida sin eliminar las caídas. Modelo didáctico, no historial de rentabilidad del fondo.",
+      "minutes": 9,
+      "cover": {
+        "icon": "split",
+        "color": "#957496"
+      },
+      "sources": [
+        {
+          "title": "Global X: Nasdaq 100 Covered Call ETF (QYLD), estrategia y riesgos",
+          "url": "https://www.globalxetfs.com/funds/qyld"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El ingreso viene de aceptar una condición",
+          "body": "Global X QYLD combina acciones del Nasdaq 100 con venta de opciones de compra sobre el índice. Es un ETF estadounidense que estudiamos por su mecanismo, no como propuesta de compra. Una opción de compra da derecho a comprar a un precio pactado; en opciones sobre índices, el contrato puede pagar la diferencia en dinero. Quien vende ese derecho recibe una prima, un cobro inicial, a cambio de limitar parte de su beneficio si el mercado sube mucho. Ese ingreso no elimina las pérdidas de las acciones cuando bajan.",
+          "takeaway": "La prima remunera una condición; no es un interés gratuito.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Estrategia explicada de forma simplificada",
+            "items": [
+              "Mantener exposición a acciones",
+              "Vender un derecho de compra y cobrar una prima",
+              "Aceptar que parte de la subida quede limitada"
+            ]
+          },
+          "explore": {
+            "prompt": "Dos escenarios en el modelo",
+            "options": [
+              {
+                "label": "Subida fuerte",
+                "title": "La prima tiene un coste de oportunidad",
+                "body": "La posición puede dejar de participar en una parte de la subida al superar el nivel pactado."
+              },
+              {
+                "label": "Caída fuerte",
+                "title": "La prima solo compensa una parte",
+                "body": "Se mantiene el riesgo de pérdida de las acciones. Un cobro pequeño no evita una caída grande."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Identifica el acuerdo",
+          "body": "Relaciona las piezas de este modelo de venta de una opción.",
+          "pairs": [
+            {
+              "left": "Dinero recibido por vender el derecho",
+              "right": "Prima"
+            },
+            {
+              "left": "Nivel a partir del cual se aplica el derecho pactado",
+              "right": "Precio de ejercicio"
+            },
+            {
+              "left": "Subida a la que puedes renunciar por el acuerdo",
+              "right": "Coste de oportunidad"
+            }
+          ],
+          "explanation": "La prima es el pago recibido; el precio de ejercicio marca una condición del contrato; el coste de oportunidad es el beneficio que puedes dejar de obtener.",
+          "hint": "Separa el dinero recibido, el nivel del contrato y aquello a lo que se renuncia.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Estrategia explicada de forma simplificada",
+            "items": [
+              "Mantener exposición a acciones",
+              "Vender un derecho de compra y cobrar una prima",
+              "Aceptar que parte de la subida quede limitada"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Prueba el límite con un modelo pequeño",
+          "body": "Simplificamos la estrategia con una posición inicial de 100 €. Se vende un derecho que limita su valor aprovechable a 105 € y se cobran 3 € de prima. Al final del periodo sumaremos esos 3 € al menor de dos valores: el de la posición y 105 €. Por ejemplo, si termina en 98 €, el total será 101 €. Si sube mucho, el límite empieza a importar. Ignoramos costes, impuestos, dividendos y ajustes; no es una reproducción exacta de las operaciones de QYLD.",
+          "takeaway": "Calcula el valor limitado y añade la prima una sola vez.",
+          "figure": {
+            "kind": "table",
+            "caption": "Contrato ficticio de un periodo",
+            "headers": [
+              "Elemento",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Posición inicial",
+                "100 €"
+              ],
+              [
+                "Límite aprovechable al vencimiento",
+                "105 €"
+              ],
+              [
+                "Prima cobrada",
+                "3 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Una gran subida con límite",
+          "body": "En ese modelo, las acciones terminan valiendo 120 €, pero el acuerdo limita el valor aprovechable a 105 €. Conservas además los 3 € de prima. ¿Cuánto vale el conjunto al terminar?",
+          "answer": 108,
+          "unit": "€",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "El acuerdo deja 105 € aprovechables más 3 € de prima: 108 €. Mantener las acciones sin ese acuerdo habría dado 120 € en este escenario concreto.",
+          "hint": "Aplica primero el límite y suma después el cobro inicial.",
+          "figure": {
+            "kind": "table",
+            "caption": "Contrato ficticio de un periodo",
+            "headers": [
+              "Elemento",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Posición inicial",
+                "100 €"
+              ],
+              [
+                "Límite aprovechable al vencimiento",
+                "105 €"
+              ],
+              [
+                "Prima cobrada",
+                "3 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "Distribuir dinero no demuestra haber ganado",
+          "body": "Una distribución es dinero que sale del fondo hacia sus inversores. Para evaluar el resultado debes sumar lo recibido y lo que queda invertido, comparándolo con el desembolso inicial. La documentación de QYLD advierte que su tasa de distribución no equivale a la rentabilidad total. En nuestro modelo, si las acciones caen a 80 €, los 3 € cobrados dejan 83 € en conjunto: sigue existiendo una pérdida frente a los 100 € iniciales. No basta con observar un pago periódico y omitir la caída del capital.",
+          "takeaway": "El cobro periódico y la ganancia total son medidas distintas.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Escenario ficticio de caída, sin otros costes",
+            "labels": [
+              "Capital inicial",
+              "Acciones al final",
+              "Prima"
+            ],
+            "values": [
+              100,
+              80,
+              3
+            ],
+            "unit": "€"
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Lee el resultado completo",
+          "body": "Con 100 € iniciales, acciones finales de 80 € y una prima de 3 €, selecciona las dos afirmaciones correctas.",
+          "options": [
+            {
+              "text": "Los 3 € cobrados demuestran una rentabilidad total positiva."
+            },
+            {
+              "text": "El ingreso de la prima impide que el capital pierda valor."
+            },
+            {
+              "text": "El conjunto termina en 83 €, antes de otros costes."
+            },
+            {
+              "text": "Hay una pérdida de 17 € pese a haber cobrado una prima."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "80 + 3 = 83 €. El cobro amortigua una parte de la caída, pero el resultado sigue siendo 17 € inferior al capital inicial.",
+          "hint": "Suma todas las piezas y compáralas con el punto de partida.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Escenario ficticio de caída, sin otros costes",
+            "labels": [
+              "Capital inicial",
+              "Acciones al final",
+              "Prima"
+            ],
+            "values": [
+              100,
+              80,
+              3
+            ],
+            "unit": "€"
+          }
+        }
+      ],
+      "takeaway": "Una estrategia con opciones puede transformar el reparto de resultados; entiende qué ingreso recibes y a qué renuncias."
+    },
+    {
+      "id": "etfs-v2-20",
+      "track": "etfs",
+      "world": 114,
+      "revision": "cases-2026-10",
+      "lessonIds": [
+        1140,
+        1141,
+        1142,
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149
+      ],
+      "learningGoals": [
+        "Distinguir cierre de un fondo, retirada de cotización y caída de su patrimonio.",
+        "Organizar una revisión de alternativas conservando el objetivo de inversión."
+      ],
+      "title": "Vanguard Euro STOXX 50: qué hacer ante un cierre",
+      "company": "Vanguard Euro STOXX 50 UCITS ETF",
+      "period": "Cierre comunicado en mayo de 2020 · importes de los ejercicios simulados",
+      "summary": "Lee un cierre histórico y practica cómo revisar un aviso sin confundirlo con una pérdida total. Escenarios de importes simulados.",
+      "minutes": 9,
+      "cover": {
+        "icon": "mail",
+        "color": "#a17d50"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: comunicación del 26 de mayo de 2020 sobre el cierre del Euro STOXX 50 UCITS ETF",
+          "url": "https://www.vanguard.co.uk/content/dam/intl/europe/documents/fund-announcements/shareholder-notification-for-euro-stoxx-50-etf-liquidation-df-en.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un fondo puede cerrar aunque conserve inversiones",
+          "body": "El 26 de mayo de 2020, Vanguard comunicó el cierre de su Euro STOXX 50 UCITS ETF. Explicó que el patrimonio era reducido y no cubría su parte de los costes fijos. El aviso preveía vender o reembolsar las participaciones restantes, no afirmar que todas las empresas de la cartera hubieran quebrado. Un cierre operativo y una pérdida total son situaciones diferentes. Lo útil para un inversor es leer qué ocurrirá con sus participaciones, cuándo dejarán de negociarse y cómo recibirá el importe correspondiente.",
+          "takeaway": "Un cierre requiere leer el procedimiento; no implica por sí solo que el valor sea cero.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Secuencia del aviso histórico de 2020",
+            "items": [
+              "21 de agosto: último día de negociación previsto",
+              "24 de agosto: reembolso obligatorio previsto",
+              "Alrededor del 4 de septiembre: pago previsto"
+            ]
+          },
+          "explore": {
+            "prompt": "Dos noticias que exigen preguntas distintas",
+            "options": [
+              {
+                "label": "Cierra el fondo",
+                "title": "Revisa el destino de tus participaciones",
+                "body": "Busca calendario, forma de reembolso e instrucciones de tu intermediario. El fondo puede seguir teniendo patrimonio."
+              },
+              {
+                "label": "Cae el mercado",
+                "title": "Revisa valor y riesgo de las inversiones",
+                "body": "Que bajen las acciones no significa que el ETF vaya a cerrar. Son hechos diferentes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Interpreta la comunicación",
+          "body": "Recibes un aviso de cierre que explica cómo se reembolsarán las participaciones. ¿Cuál es la conclusión justificada antes de leer los importes definitivos?",
+          "options": [
+            {
+              "text": "Mis participaciones valen automáticamente cero."
+            },
+            {
+              "text": "Hay un procedimiento de salida cuyo calendario e importe debo comprobar."
+            },
+            {
+              "text": "Voy a recuperar necesariamente el precio exacto que pagué."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El procedimiento determina cómo sale el inversor y qué valor se liquida. El cierre no garantiza recuperar el coste de compra ni significa una pérdida total.",
+          "hint": "No sustituyas el procedimiento por una suposición sobre el precio.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Secuencia del aviso histórico de 2020",
+            "items": [
+              "21 de agosto: último día de negociación previsto",
+              "24 de agosto: reembolso obligatorio previsto",
+              "Alrededor del 4 de septiembre: pago previsto"
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El patrimonio cambia por precios y por movimientos de dinero",
+          "body": "El tamaño de un fondo puede aumentar porque sus inversiones suben o porque llegan nuevas aportaciones, y puede disminuir por las causas opuestas. Para separar ambas, usa una simulación: un fondo empieza con 50 millones de euros; sus inversiones ganan un 10% y, al final del periodo, salen 5 millones por reembolsos. Los movimientos ocurren en ese orden para que el cálculo sea claro. Terminar con el mismo patrimonio no significa que no haya ocurrido nada ni que nadie haya salido.",
+          "takeaway": "El tamaño final no revela por sí solo rentabilidad ni entradas y salidas.",
+          "figure": {
+            "kind": "table",
+            "caption": "Fondo ficticio; reembolsos al final del periodo",
+            "headers": [
+              "Movimiento",
+              "Dato"
+            ],
+            "rows": [
+              [
+                "Patrimonio inicial",
+                "50 millones de €"
+              ],
+              [
+                "Cambio de las inversiones antes de reembolsos",
+                "+10%"
+              ],
+              [
+                "Reembolsos posteriores",
+                "5 millones de €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Reconstruye el patrimonio final",
+          "body": "El fondo ficticio tiene 50 millones, gana un 10% en sus inversiones y después reembolsa 5 millones. ¿Con cuántos millones de euros termina?",
+          "answer": 50,
+          "unit": "millones de €",
+          "tolerance": 0.01,
+          "calculator": true,
+          "explanation": "50 × 1,10 = 55 millones antes de los reembolsos. Tras salir 5, quedan 50. Hubo rentabilidad positiva y salidas aunque el tamaño final coincida con el inicial.",
+          "hint": "Aplica primero el cambio de valor y después la salida de dinero.",
+          "figure": {
+            "kind": "table",
+            "caption": "Fondo ficticio; reembolsos al final del periodo",
+            "headers": [
+              "Movimiento",
+              "Dato"
+            ],
+            "rows": [
+              [
+                "Patrimonio inicial",
+                "50 millones de €"
+              ],
+              [
+                "Cambio de las inversiones antes de reembolsos",
+                "+10%"
+              ],
+              [
+                "Reembolsos posteriores",
+                "5 millones de €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "learn",
+          "title": "El sustituto debe resolver la misma necesidad",
+          "body": "Si un fondo cierra, el más parecido por nombre no es necesariamente el mejor sustituto para tu objetivo. Empieza revisando qué función cumplía: país o región, tipo de activo, moneda e ingresos. Después compara candidatos que conserven esa función y estudia costes y condiciones de la salida. Distingue también el cierre del fondo de la retirada de una sola línea de cotización: en esta última puede seguir existiendo la misma clase en otra bolsa. Las instrucciones concretas del aviso y del intermediario mandan sobre una interpretación apresurada.",
+          "takeaway": "Revisa el evento exacto y conserva la función que la inversión cumplía en tu plan."
+        },
+        {
+          "type": "order",
+          "title": "Organiza la revisión del aviso",
+          "body": "Ordena este proceso antes de decidir una sustitución.",
+          "items": [
+            "Comparar sustitutos compatibles y costes de la salida para decidir.",
+            "Confirmar qué clase afecta el aviso y cuál es su calendario.",
+            "Anotar qué exposición y función quieres conservar en la cartera."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "explanation": "Primero entiendes qué ocurre; después defines lo que debe continuar haciendo la inversión; finalmente comparas alternativas y costes.",
+          "hint": "No busques un sustituto antes de identificar el evento y la necesidad que debe cubrir."
+        }
+      ],
+      "takeaway": "Un aviso del fondo merece una revisión ordenada de identidad, calendario, cobros y función dentro de tu cartera."
+    }
+  ]
+}

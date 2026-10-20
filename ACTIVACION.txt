@@ -1,0 +1,95 @@
+﻿VIRUTA — CONFIGURACIÓN Y MANTENIMIENTO
+Versión 0.2.1 · 3 de octubre de 2026
+
+SERVICIO PUBLICADO
+Proyecto Firebase: brote-62d26. Nombre público y remitente: Viruta.
+Web: https://brote-62d26.web.app
+Plan Spark sin facturación vinculada; correo/contraseña activo y Firestore
+configurado en Madrid. Se conservan proyecto, dominio y cuentas existentes.
+Hosting y reglas de Firestore de esta entrega publicados con éxito. Las cuatro
+páginas públicas respondieron HTTP 200 tras el despliegue; revisión a 320 px,
+sin JavaScript ni correo visible. VALIDACION.txt contiene la evidencia final.
+Cambiar remitente y nombre público no prueba que un correo llegue al buzón.
+
+CONFIGURACIÓN
+1. Revisa .env.local y los cuatro valores VITE_FIREBASE_*.
+   projectId: brote-62d26; authDomain: brote-62d26.firebaseapp.com.
+   Usa la clave pública y appId del mismo proyecto. No incluyas claves privadas
+   ni cuentas de servicio en src/, public/ o el APK.
+   Compila para el servicio real con VITE_USE_EMULATORS=false.
+
+2. Conserva brote-62d26.web.app entre los dominios autorizados de Authentication.
+   Los enlaces de confirmación y recuperación usan el manejador web de Firebase.
+   Tras confirmar, se vuelve a Viruta; si hace falta se pulsa «Ya he confirmado
+   mi correo». Para desarrollo, autoriza localhost. Revisa remitente, idioma
+   y enlaces al cambiar plantillas. Nuevas contraseñas: mínimo 8 caracteres,
+   política de producción comprobada sin modificarla. Acceso y reautenticación
+   validan con el servidor para mantener compatibilidad con cuentas existentes.
+
+3. Conserva firestore.rules; no uses reglas abiertas. Cada cuenta verificada
+   accede a su progreso. Los marcadores de eliminación impiden nuevas subidas
+   y el cliente no puede quitarlos. El progreso no concede permisos de pago.
+   Se usan Hosting estático, Authentication y Firestore Standard. No hacen
+   falta Functions, Storage, SMS, App Hosting ni Blaze. Spark tiene cuotas;
+   alcanzar sus límites puede afectar al servicio.
+
+4. La identidad pública se centraliza en src/business.js. MEMORIAS MEDIA SL,
+   NIF B13870266, domicilio y Registro Mercantil de Melilla están incorporados.
+   Las cuatro páginas públicas se generan antes de dev/build desde los textos
+   de la app. Las solicitudes por correo se atienden manualmente; abrir o
+   enviar un mensaje no ejecuta un borrado automático.
+
+NUEVAS PUBLICACIONES
+Desde esta carpeta:
+  pnpm install --frozen-lockfile
+  pnpm build
+  pnpm test
+  pnpm test:rules
+  pnpm exec firebase login
+  pnpm exec firebase deploy --project brote-62d26 --only firestore:rules,hosting
+Comprueba salida, web, /privacidad/, /aviso-legal/, /eliminar-cuenta/ y /ayuda/.
+Una compilación correcta no confirma el despliegue. Publicar solo Hosting no
+actualiza las reglas. Android lleva su propia copia compilada: cambiar la web
+no actualiza un APK instalado. Consulta ANDROID.txt para crear otra versión.
+
+MANTENIMIENTO DE ELIMINACIONES
+La eliminación crea /accountDeletions/{uid}, con solo el campo deletedAt y el
+UID en la ruta, y borra el progreso en el mismo lote. Después elimina el perfil
+de Authentication. Si este último paso falla, se mantienen marcador y copia
+local; el guardado queda bloqueado y se puede reintentar Eliminar cuenta o
+pedir Ayuda. No se anuncia el borrado completo ante ese error.
+
+La retirada de marcadores requiere mantenimiento administrativo explícito.
+Con acceso administrativo al proyecto configurado, consulta sin modificar:
+  node scripts/purge-deletion-markers.mjs
+Para retirar solo los marcadores que superen todas las comprobaciones:
+  node scripts/purge-deletion-markers.mjs --apply
+
+La herramienta confirma que Authentication ya no contiene el UID y exige
+al menos dos horas de antigüedad, usando la hora de lectura de Firestore.
+Acepta solo deletedAt y usa una precondición de updateTime para no borrar un
+marcador modificado tras leerlo. Aborta ante errores; no borra perfiles ni
+progreso. No hay ejecución automática, tarea programada ni servicio de pago.
+Las dos horas son un mínimo de seguridad, no un plazo garantizado de retirada.
+No añadas correo, nombre, respuestas ni progreso a estos marcadores.
+
+Comprobación final: consulta en modo simulación con scanned=0 y removed=0 tras
+retirar exclusivamente los datos sintéticos de QA y cerrar sus sesiones.
+Esa limpieza controlada de ensayos no cambia el mantenimiento normal descrito.
+
+VALIDACIÓN Y LÍMITES
+123/123 pruebas de aplicación y 74/74 de reglas superadas. La auditoría real
+confirmó que un token previo no podía recrear progreso tras la eliminación.
+Recorrido final Android/web: 11/11 comprobaciones. Se usaron cuentas de ensayo
+example.invalid verificadas por Admin, sin enviar correo real. Ver detalles
+y archivos de evidencia en VALIDACION.txt. No sustituye la recepción real
+de correos ni las pruebas en un teléfono físico, que siguen pendientes.
+
+Documentación oficial:
+https://firebase.google.com/docs/auth/web/password-auth
+https://firebase.google.com/docs/auth/web/manage-users
+https://firebase.google.com/docs/auth/admin/manage-sessions
+https://firebase.google.com/docs/firestore/security/rules-conditions
+https://firebase.google.com/docs/hosting/quickstart
+https://firebase.google.com/docs/rules/unit-tests
+https://firebase.google.com/docs/projects/billing/firebase-pricing-plans

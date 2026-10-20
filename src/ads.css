@@ -1,0 +1,5 @@
+#brote-preview .och-result-ad{margin:28px 0;padding:16px 0 24px;border-block:1px solid var(--br-line);min-width:0;text-align:center;overflow:hidden}
+#brote-preview .och-result-ad[hidden]{display:none}
+#brote-preview .och-result-ad .och-ad-label{display:block;margin:0 0 12px;font-size:12px;color:var(--br-muted);font-weight:600;letter-spacing:.04em}
+#brote-preview .och-result-ad .adsbygoogle{display:block;min-width:250px;min-height:250px}
+#brote-preview .och-privacy-dialog .och-ad-privacy{display:block;width:100%;margin-top:16px}

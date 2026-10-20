@@ -1,0 +1,6479 @@
+[
+  {
+    "term": "+DI y −DI",
+    "definition": "Indicadores que comparan de forma suavizada movimientos direccionales positivos y negativos bajo unas reglas.",
+    "aliases": [],
+    "example": "Que +DI supere a −DI no equivale a una probabilidad cierta de subida.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Acción",
+    "definition": "Una parte de la propiedad de una empresa. Puede subir o bajar de valor y no garantiza un beneficio.",
+    "aliases": [],
+    "example": "Si una empresa tiene 1.000 acciones iguales y compras 10, tienes el 1 % de su propiedad.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Acción ordinaria",
+    "definition": "Participación cuyo valor residual depende de lo que queda tras otras obligaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Acción preferente",
+    "definition": "Participación con derechos particulares de pago o prioridad definidos por sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Acciones medias ponderadas",
+    "definition": "Acciones ajustadas por el tiempo que estuvieron en circulación durante el período.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Accionista",
+    "definition": "Persona o entidad que posee acciones de una empresa.",
+    "aliases": [],
+    "example": "Comprar una acción te hace accionista; comprar un producto de esa empresa no.",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Acrecitiva",
+    "definition": "Operación que aumenta la medida por acción analizada bajo sus supuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Activación",
+    "definition": "Momento o condición en que una nueva regla comienza a aplicarse.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Actividad incentivada",
+    "definition": "Uso estimulado por una recompensa específica.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Activo",
+    "definition": "Recurso que una empresa controla y del que espera obtener un beneficio económico.",
+    "aliases": [],
+    "example": "Dinero, maquinaria y facturas que los clientes deben pagar pueden formar parte del activo.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Activo intangible",
+    "definition": "Recurso identificable sin forma física reconocido conforme a criterios contables.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Activo por impuesto diferido",
+    "definition": "Importe reconocido por una reducción fiscal futura que cumple sus condiciones de recuperación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Activos netos identificables",
+    "definition": "Activos identificables menos obligaciones reconocidas en la adquisición.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Actualización de un programa",
+    "definition": "Cambio permitido de su lógica según un procedimiento.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Acumulación",
+    "definition": "Regla por la que el fondo conserva y reinvierte los ingresos en lugar de repartirlos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "ADX",
+    "definition": "Indicador que resume la fuerza del movimiento direccional según su cálculo. No indica por sí solo si la dirección es alcista o bajista.",
+    "aliases": [],
+    "example": "Un ADX elevado puede acompañar una tendencia ascendente o descendente.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Alcance de un informe",
+    "definition": "Hechos y periodo que una revisión examina expresamente.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Alcance de un permiso",
+    "definition": "Acciones y recursos sobre los que una autorización es válida.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Alcance de una incidencia",
+    "definition": "Recursos o permisos que podrían haberse visto afectados.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Alto rendimiento",
+    "definition": "Categoría de deuda con calificaciones inferiores al grado de inversión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Altura de bloque",
+    "definition": "Posición numerada de un bloque dentro de un historial.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "AMM",
+    "definition": "Sistema de intercambio que calcula los precios mediante reglas sobre las reservas disponibles.",
+    "aliases": [
+      "Creador de mercado automatizado"
+    ],
+    "example": "Una compra grande respecto a las reservas puede cambiar mucho el precio de ejecución.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Amortización anticipada",
+    "definition": "Devolución antes del vencimiento final según el contrato.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Amortización del equipo",
+    "definition": "Reparto de su coste contable entre los periodos en que se utiliza.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Análisis fundamental",
+    "definition": "Estudio del negocio, sus cuentas y sus perspectivas para estimar qué podría valer.",
+    "aliases": [],
+    "example": "Revisar ventas, gastos y deuda de una empresa es distinto de estudiar la forma de su gráfico de precios.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Análisis técnico",
+    "definition": "Estudio del precio y la actividad de mercado a lo largo del tiempo para describir movimientos y plantear escenarios. No predice el futuro con certeza.",
+    "aliases": [],
+    "example": "Un gráfico muestra que el precio superó una zona; no demuestra que mañana seguirá subiendo.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Anclaje",
+    "definition": "Peso excesivo de una referencia inicial al evaluar información nueva.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Anticipo",
+    "definition": "Parte del precio que se paga antes de recibir el bien o servicio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Antidilutivo",
+    "definition": "Efecto que eleva el BPA o reduce la pérdida por acción en el cálculo pertinente.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Antigüedad del dato",
+    "definition": "Tiempo transcurrido desde su observación o actualización.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Anualizar",
+    "definition": "Expresar un ritmo de un período corto como equivalente anual bajo supuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Apalancado",
+    "definition": "Producto que utiliza mecanismos financieros para ampliar la cantidad invertida o buscar un resultado multiplicado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Apalancamiento",
+    "definition": "Usar deuda o instrumentos para tener una exposición mayor que los recursos propios aportados. Amplifica pérdidas y ganancias.",
+    "aliases": [],
+    "example": "Una exposición de 200 € con 100 € propios hace que una caída del activo del 10 % suponga 20 € de pérdida antes de costes.",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Apertura",
+    "definition": "Primer precio registrado del periodo según el mercado y la fuente de datos.",
+    "aliases": [],
+    "example": "Si una sesión comienza con una operación a 20 €, esa es su apertura en esos datos.",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Aportación definida",
+    "definition": "Plan cuyo compromiso principal consiste en aportaciones acordadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Arbitraje",
+    "definition": "Operación que intenta aprovechar diferencias de precio de activos o derechos equivalentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Árbol de decisión",
+    "definition": "Representación de elecciones y resultados posibles ordenados en el tiempo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Asignación",
+    "definition": "Reparto del valor total entre inversiones o grupos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Asignación de capital",
+    "definition": "Decisión sobre el destino de recursos entre proyectos, necesidades del negocio, deuda y accionistas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ask",
+    "definition": "Precio pedido por vendedores.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "ATR",
+    "definition": "Promedio suavizado del rango verdadero, que incorpora amplitud y huecos respecto al cierre anterior. Mide amplitud, no dirección.",
+    "aliases": [
+      "Average True Range"
+    ],
+    "example": "Un ATR creciente indica movimientos más amplios según su ventana, no necesariamente una subida.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Auditoría",
+    "definition": "Revisión independiente de las cuentas con un alcance definido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Auditoría técnica",
+    "definition": "Examen de un sistema con alcance y método definidos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Autocustodia",
+    "definition": "Gestión propia de la capacidad de autorizar movimientos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Autonomía financiera",
+    "definition": "Tiempo estimado que recursos utilizables cubren un consumo neto supuesto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Autorización pendiente",
+    "definition": "Solicitud que todavía no se ha aprobado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Backtest",
+    "definition": "Prueba de reglas sobre datos del pasado. Debe considerar información disponible entonces, costes y ejecución.",
+    "aliases": [],
+    "example": "Funcionar en datos históricos no garantiza funcionar en el futuro.",
+    "tracks": []
+  },
+  {
+    "term": "Balance",
+    "definition": "Documento que muestra lo que una empresa tiene, lo que debe y la parte que corresponde a sus propietarios en una fecha.",
+    "aliases": [],
+    "example": "Activos de 200 € y obligaciones de 80 € dejan un patrimonio neto de 120 €.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Banda de permanencia",
+    "definition": "Margen que permite mantener una inversión cerca del punto de corte y evita sustituciones repetidas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Banda de reequilibrio",
+    "definition": "Intervalo de pesos que determina cuándo revisar o ajustar.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Bandas de Bollinger",
+    "definition": "Bandas alrededor de una media, separadas mediante una medida de dispersión y unos parámetros.",
+    "aliases": [],
+    "example": "Tocar la banda superior no obliga al precio a caer. Las bandas se adaptan a los datos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Bandera",
+    "definition": "Pausa o retroceso acotado tras un movimiento marcado, con reglas sobre su forma y contexto.",
+    "aliases": [],
+    "example": "No toda pausa es una bandera ni toda bandera termina continuando el movimiento anterior.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Banderín",
+    "definition": "Pausa con límites convergentes tras un movimiento marcado, según criterios concretos.",
+    "aliases": [],
+    "example": "Su parecido visual con un triángulo no garantiza que continúe el impulso anterior.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Barrera de entrada",
+    "definition": "Dificultad económica, técnica o comercial que limita la entrada eficaz de competidores.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Base de comparación",
+    "definition": "La cifra inicial respecto a la que mides el cambio.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Base de datos",
+    "definition": "Sistema que organiza y permite consultar información.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Base fiscal",
+    "definition": "Importe atribuido al activo o pasivo para determinar efectos fiscales.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Base regulada de activos",
+    "definition": "Importe de activos reconocido por un marco regulatorio para determinados cálculos de remuneración.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Benchmark",
+    "definition": "Referencia elegida para comparar una estrategia.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Beneficio",
+    "definition": "Ingresos menos gastos reconocidos en el periodo. No equivale al dinero cobrado o disponible.",
+    "aliases": [],
+    "example": "Una venta a crédito puede aportar beneficio aunque el cliente todavía no haya pagado.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Beneficio ajustado",
+    "definition": "Resultado reconstruido con modificaciones concretas y explicadas respecto al publicado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Beneficio bruto",
+    "definition": "Lo que queda de las ventas tras restar el coste de lo vendido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Beneficio del periodo",
+    "definition": "Ingresos menos costes considerados en ese periodo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Beneficio neto",
+    "definition": "Resultado final después de todas las partidas incluidas en la cuenta del caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Beneficio operativo",
+    "definition": "Resultado de la actividad después de sus costes, antes de intereses e impuestos en este modelo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Beneficio operativo después de impuestos",
+    "definition": "Resultado de la actividad tras el impuesto supuesto y antes de intereses de financiación.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Beneficio por acción",
+    "definition": "Beneficio que corresponde a las acciones dividido entre su número.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Beneficio por acción (BPA)",
+    "definition": "Beneficio atribuible a las acciones consideradas dividido entre su número. Puede cambiar si cambia el beneficio o el número de acciones.",
+    "aliases": [
+      "EPS"
+    ],
+    "example": "Un beneficio de 200 € dividido entre 100 acciones da un BPA de 2 €.",
+    "tracks": []
+  },
+  {
+    "term": "Beneficio recurrente",
+    "definition": "Parte del beneficio que atribuyes a la actividad habitual del negocio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Bid",
+    "definition": "Precio ofrecido por compradores.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Bifurcación",
+    "definition": "Separación entre posibles continuaciones de un historial.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Blob",
+    "definition": "Paquete de datos con disponibilidad temporal y reglas específicas de publicación en Ethereum.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Blockchain",
+    "definition": "Registro de operaciones organizado en bloques enlazados y mantenido según las reglas de una red.",
+    "aliases": [],
+    "example": "Compartir el historial entre participantes no garantiza que cualquier proyecto que use esa red sea seguro.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Bloque",
+    "definition": "Grupo de información que se incorpora al historial bajo las reglas de la red.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Bolsa",
+    "definition": "Mercado organizado donde se negocian inversiones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Bono",
+    "definition": "Inversión que recoge un préstamo y sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Bono ligado a inflación",
+    "definition": "Bono que ajusta algunos pagos o el importe a devolver según un índice de precios y su contrato.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Bonus",
+    "definition": "Remuneración variable condicionada a objetivos o reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "BPA",
+    "definition": "Beneficio atribuible a ordinarias por acción media del periodo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "BPA diluido",
+    "definition": "Medida que incorpora acciones potenciales con efecto dilutivo bajo sus reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Bróker",
+    "definition": "Intermediario que permite enviar órdenes de compra y venta al mercado y presta servicios según sus condiciones.",
+    "aliases": [],
+    "example": "El bróker tramita tu orden; no garantiza que ganes dinero.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Bruto",
+    "definition": "Resultado antes de descontar los costes indicados.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Buffer",
+    "definition": "Parte inicial de una caída que la estrategia pretende absorber durante un periodo y bajo unas condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cadena de bloques",
+    "definition": "Historial de bloques unidos mediante referencias criptográficas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Caducidad de una orden",
+    "definition": "Momento a partir del cual deja de estar vigente según sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "CAGR",
+    "definition": "Tasa anual constante que convertiría un valor inicial en el final durante un plazo. Resume el resultado, no los altibajos de cada año. En este cálculo simple no hay aportaciones ni retiradas intermedias.",
+    "aliases": [
+      "Tasa de crecimiento anual compuesto"
+    ],
+    "example": "Pasar de 100 € a 121 € en dos años equivale a un CAGR del 10 %: 100 × 1,10 × 1,10 = 121.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Caja",
+    "definition": "Dinero disponible de una empresa en efectivo y cuentas bancarias.",
+    "aliases": [],
+    "example": "Empezar con 100 €, cobrar 50 € y pagar 30 € deja 120 €, sin otros movimientos.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Caja excedente",
+    "definition": "Caja considerada sobrante respecto a restricciones y necesidades bajo supuestos explícitos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Caja restringida",
+    "definition": "Efectivo cuyo uso está limitado por condiciones concretas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Caja sobrante disponible",
+    "definition": "Dinero separable de la empresa sin impedir su actividad, según este caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Calendario de liberación",
+    "definition": "Fechas y cantidades en que terminan restricciones sobre unidades.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Calibración",
+    "definition": "Correspondencia entre probabilidades anunciadas y frecuencias observadas en conjuntos de previsiones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Calidad del beneficio",
+    "definition": "Análisis del origen, sostenibilidad, estimaciones y relación con caja de los resultados, no una garantía o nota única.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Calificación crediticia",
+    "definition": "Opinión de una agencia, expresada mediante una categoría, sobre el riesgo de que un emisor no pague.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Call",
+    "definition": "Opción que da a su comprador el derecho a comprar una inversión al precio acordado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Cambio porcentual",
+    "definition": "Diferencia dividida por el valor inicial, expresada por cien.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Canal",
+    "definition": "Dos líneas o zonas que delimitan un recorrido del precio, trazadas con referencias y reglas explícitas.",
+    "aliases": [],
+    "example": "Un canal ascendente puede describir subidas y retrocesos. Sus límites no son barreras que el precio deba respetar.",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Cap",
+    "definition": "Máximo de ganancia previsto por una estrategia para un periodo concreto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Capital del préstamo",
+    "definition": "Importe prestado que debe devolverse, separado de otros pagos por utilizarlo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Capital flotante",
+    "definition": "Parte de las acciones que la metodología considera disponible para comprar y vender en el mercado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Capital invertido",
+    "definition": "Recursos dedicados a operar; aquí: patrimonio + deuda con intereses − caja sobrante no necesaria para operar.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Capital invertido promedio",
+    "definition": "Media del capital al inicio y al cierre, en la simplificación de estos ejercicios.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Capitalización",
+    "definition": "Valor de mercado del conjunto de acciones: precio por acción multiplicado por acciones existentes.",
+    "aliases": [],
+    "example": "1.000 acciones a 12 € dan una capitalización de 12.000 €. No es el saldo del banco de la empresa.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Capitalización de mercado",
+    "definition": "Precio por unidad multiplicado por la oferta en circulación considerada.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Capitalizar",
+    "definition": "Registrar un coste como activo conforme a criterios, en vez de llevarlo íntegro a gasto inmediato.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Capitalizar un coste",
+    "definition": "Reconocer un desembolso como parte de un activo bajo las condiciones pertinentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cartera",
+    "definition": "Conjunto de inversiones que se mantienen.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Cartera de pedidos",
+    "definition": "Conjunto de pedidos pendientes de ejecutar bajo una definición y fecha concretas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cascada de liquidaciones",
+    "definition": "Proceso en que liquidaciones y movimientos de precio pueden desencadenar nuevas liquidaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cascada de pagos",
+    "definition": "Reparto secuencial de recursos según un orden de reclamaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Caso límite",
+    "definition": "Situación cercana a una restricción que merece comprobarse.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Centralizado",
+    "definition": "Con un centro principal de control o decisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cesta de creación",
+    "definition": "Conjunto de activos o dinero requerido para crear un bloque de participaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ciclo de caja",
+    "definition": "Aproximación del tiempo entre financiar existencias y recuperar efectivo, considerando cobros y pagos operativos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ciclo económico",
+    "definition": "Cambios de ritmo de la actividad económica entre etapas de expansión y de menor actividad.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cierre",
+    "definition": "Último precio del periodo según la definición de la sesión y la fuente de datos.",
+    "aliases": [],
+    "example": "Cerrar a 22 € después de abrir a 20 € muestra un aumento de 2 € entre esos momentos.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Clase de acciones",
+    "definition": "Grupo de acciones con un conjunto específico de derechos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Clave privada",
+    "definition": "Dato secreto que permite autorizar operaciones de los activos o cuentas correspondientes.",
+    "aliases": [],
+    "example": "Quien obtiene tu clave puede autorizar movimientos. No debes compartirla para recibir un pago.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Cliente de red",
+    "definition": "Programa que implementa las reglas y se comunica con otros participantes.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Clientes pendientes de cobro",
+    "definition": "Ventas por las que aún deben pagar a la empresa.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cobertura de intereses",
+    "definition": "Beneficio operativo dividido entre gasto por intereses del mismo período.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cobertura de moneda",
+    "definition": "Acuerdos que intentan compensar cambios entre determinadas monedas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cobertura parcial",
+    "definition": "Intento de compensar solo una fracción de una exposición.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Cobro",
+    "definition": "Momento en que la empresa recibe efectivamente el dinero.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Cobro neto",
+    "definition": "Importe recibido después de restar los costes considerados.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cohorte",
+    "definition": "Grupo definido por una condición y un momento comunes para seguir su evolución.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cola de retirada",
+    "definition": "Espera organizada antes de completar una salida conforme a las reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cola de salida",
+    "definition": "Solicitudes pendientes de abandonar una función, sujetas a su capacidad de procesamiento.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Colateral",
+    "definition": "Inversiones o bienes aportados como respaldo de lo que una entidad debe cumplir.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Comisión",
+    "definition": "Pago por una operación o servicio según sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Comisión de red",
+    "definition": "Coste asociado a procesar una operación conforme a la red.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Comité de disponibilidad",
+    "definition": "Conjunto de participantes al que un diseño asigna responsabilidades sobre acceso a datos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Comparabilidad",
+    "definition": "Compatibilidad de las condiciones con las que se han medido dos datos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Comparables",
+    "definition": "Negocios suficientemente parecidos como para ayudar a interpretar una comparación.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Compatibilidad",
+    "definition": "Capacidad de funcionar con ciertos formatos o herramientas comunes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Composabilidad",
+    "definition": "Capacidad de combinar programas o activos de distintos servicios.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Composición",
+    "definition": "Aplicar cada resultado sobre el valor que dejó el período anterior.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Composición de programas",
+    "definition": "Uso de unos programas por otros para formar una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Concentración",
+    "definition": "Parte del conjunto reunida en pocos titulares o grupos identificados.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Concentración de clientes",
+    "definition": "Dependencia de una parte importante de las ventas respecto a pocos compradores.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Conciliación",
+    "definition": "Comparación de registros para comprobar que corresponden.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Conciliar",
+    "definition": "Comparar registros y justificar las diferencias encontradas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Condición de revisión",
+    "definition": "Hecho previamente identificado que justifica reexaminar una conclusión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Confidencialidad",
+    "definition": "Evitar acceso de personas no autorizadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Confirmación",
+    "definition": "Dato adicional que exiges antes de aceptar una interpretación, definido con antelación.",
+    "aliases": [],
+    "example": "Esperar dos cierres fuera de una zona es una posible regla. No elimina el riesgo de fallo.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Conflicto de interés",
+    "definition": "Situación en la que un interés particular puede interferir con la decisión para la empresa.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Conjunto de validación",
+    "definition": "Datos reservados para comprobar una regla que no se ajustó con ellos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Consejo",
+    "definition": "Grupo que supervisa a la dirección en el modelo de empresa del caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Consenso",
+    "definition": "Acuerdo operativo sobre el historial que se sigue mediante reglas comunes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Consolidación",
+    "definition": "Cumplimiento de las condiciones que permiten adquirir un derecho previsto en un plan.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Consolidar saldos",
+    "definition": "Reunir referencias propias sin duplicar movimientos entre ellas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Contraparte",
+    "definition": "Entidad con la que se firma un contrato financiero.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Contrapartida",
+    "definition": "Persona u oferta situada al otro lado de un intercambio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Contraprestación contingente",
+    "definition": "Parte del precio cuyo importe o pago depende de condiciones futuras.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Contraseña local",
+    "definition": "Dato que limita acceso a una aplicación o archivo concreto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Contrato inteligente",
+    "definition": "Programa ejecutado por una red según sus reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Contribución al resultado",
+    "definition": "Aporte de una posición al resultado total según su peso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Contribución por unidad",
+    "definition": "Precio de venta menos coste variable de esa unidad.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Convertible",
+    "definition": "Instrumento que puede o debe transformarse según condiciones pactadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Convexidad",
+    "definition": "Curvatura de la relación entre el precio del bono y el rendimiento exigido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Copia del registro",
+    "definition": "Reproducción de los datos, sin crear unidades nuevas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Correlación",
+    "definition": "Medida de cuánto tienden a moverse juntas dos series durante el periodo estudiado. Puede cambiar y no demuestra que una cause la otra.",
+    "aliases": [],
+    "example": "Dos activos que suelen caer a la vez pueden diversificar menos de lo que sugiere tener nombres distintos.",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Correlación operativa",
+    "definition": "Tendencia a fallar conjuntamente por causas comunes.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Coste comparable",
+    "definition": "Coste calculado para el mismo trabajo y condiciones explícitas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Coste de adquisición por cliente",
+    "definition": "Gasto definido para captar clientes dividido entre las altas atribuibles.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Coste de capital",
+    "definition": "Rentabilidad exigida por quienes financian el negocio, según su riesgo y las alternativas disponibles.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Coste de lo vendido",
+    "definition": "Coste atribuido a los productos que se vendieron en el periodo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Coste de oportunidad",
+    "definition": "Resultado al que renuncias al elegir una opción frente a una alternativa comparable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Coste del recorrido",
+    "definition": "Suma de los cargos incluidos en todas las etapas de una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Coste fijo",
+    "definition": "Coste que se mantiene en el rango y período considerados.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Coste implícito",
+    "definition": "Coste que aparece en las condiciones de ejecución, aunque no figure como comisión aparte.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Coste total de entrada",
+    "definition": "Desembolso de compra más los costes de entrada incluidos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Coste variable",
+    "definition": "Coste que cambia con el volumen en el rango y período del caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Coste variable unitario",
+    "definition": "Coste que atribuimos a fabricar y vender una unidad más en este caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Costes",
+    "definition": "Valor de los recursos y obligaciones que corresponden a la actividad del período.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Costes de cambio",
+    "definition": "Dinero, tiempo o esfuerzo que necesita un cliente para pasar a otra solución.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cotización",
+    "definition": "Precio mostrado o negociado en un mercado y momento concretos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Covenant",
+    "definition": "Compromiso contractual que puede imponer límites o condiciones al prestatario.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Creador de mercado",
+    "definition": "Entidad que ofrece precios de compra y venta.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Crecimiento compuesto",
+    "definition": "Aplicar cada cambio al valor acumulado, incluidos los cambios anteriores.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Crecimiento estable",
+    "definition": "Supuesto de crecimiento de largo plazo compatible con recursos, riesgo y escala de la empresa.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Crecimiento orgánico",
+    "definition": "Cambio del negocio comparable, ajustado según una definición explícita por adquisiciones, ventas de negocios y divisas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Criptoactivo",
+    "definition": "Representación digital gestionada y transferida mediante un sistema que utiliza criptografía.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Criptografía",
+    "definition": "Técnicas matemáticas para verificar información y autorizaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Criptomoneda",
+    "definition": "Activo digital cuyas transferencias y reglas funcionan mediante un sistema criptográfico. No da necesariamente propiedad de una empresa.",
+    "aliases": [],
+    "example": "Comprar unidades no te concede automáticamente una parte de las ventas de una empresa.",
+    "tracks": [
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Cruce de medias",
+    "definition": "Situación en la que una media pasa de un lado al otro de otra. Hay que fijar las ventanas y la confirmación.",
+    "aliases": [],
+    "example": "En un mercado lateral puede haber muchos cruces que no anticipan una tendencia sostenida.",
+    "tracks": []
+  },
+  {
+    "term": "Cubierta de nube oscura",
+    "definition": "Pauta donde una vela bajista entra de forma relevante en el cuerpo alcista anterior bajo reglas concretas.",
+    "aliases": [],
+    "example": "Su interpretación cambia si aparece tras un avance o en medio de un movimiento lateral.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Cuello de botella",
+    "definition": "Etapa cuya capacidad limita la producción completa del sistema.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cuerpo",
+    "definition": "Parte de la vela entre el precio de apertura y el de cierre.",
+    "aliases": [],
+    "example": "Abrir a 20 € y cerrar a 23 € produce un cuerpo de 3 €, aunque el precio haya recorrido más durante el día.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Cuña",
+    "definition": "Figura con líneas convergentes e inclinadas, definida con referencias y criterios concretos.",
+    "aliases": [],
+    "example": "Revisa los contactos y la invalidación, además del parecido visual.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Cuórum",
+    "definition": "Participación mínima exigida para validar una decisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Cuota de mercado",
+    "definition": "Proporción de ventas o unidades de una empresa dentro de un mercado definido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Cupón",
+    "definition": "Interés contractual del bono.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Curva de rendimientos",
+    "definition": "Relación entre plazo y rendimiento para bonos comparables.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Custodia",
+    "definition": "Quién conserva y controla las claves o los activos y bajo qué condiciones.",
+    "aliases": [],
+    "example": "En un servicio custodial dependes de su gestión; en autocustodia asumes la protección de tus claves.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Dato",
+    "definition": "Información observada y respaldada por una fuente que puedes revisar.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Dato externo",
+    "definition": "Información sobre hechos que suceden fuera del registro.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "DeFi",
+    "definition": "Servicios financieros que usan programas en redes blockchain. Dependen de sus contratos, activos, datos y reglas.",
+    "aliases": [],
+    "example": "Un préstamo puede depender de un oráculo y liquidar una garantía según sus reglas; usar blockchain no elimina esos riesgos.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Déficit del plan",
+    "definition": "Exceso de la obligación estimada sobre los activos que la respaldan.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Delegación de voto",
+    "definition": "Autorización para que otra parte ejerza una capacidad de voto bajo condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Demanda",
+    "definition": "Cantidad que compradores están dispuestos a adquirir bajo ciertas condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Dependencia operativa",
+    "definition": "Componente o parte necesaria para que una función se complete.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Depositario",
+    "definition": "Entidad con funciones de custodia y control del fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Derecho de uso",
+    "definition": "Derecho contractual a utilizar un activo durante un período, reconocido según el criterio aplicable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Derecho de voto",
+    "definition": "Facultad de participar en una decisión concreta.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Derecho del token",
+    "definition": "Facultad o prestación que sus condiciones reconocen al titular.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Derivado",
+    "definition": "Contrato cuyo valor depende, por ejemplo, del precio de una acción o de un índice.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Desbloqueo",
+    "definition": "Fin de una restricción que impedía disponer de unidades existentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Descentralización",
+    "definition": "Grado en que el control se reparte entre participantes independientes.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Descontar",
+    "definition": "Calcular el valor de hoy de un dinero que recibirías después. No significa cobrar una comisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Descubrimiento de precios",
+    "definition": "Proceso por el que la negociación incorpora información al precio.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Descuento",
+    "definition": "Diferencia por la que el precio en bolsa queda por debajo de un valor liquidativo comparable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Descuento de flujos",
+    "definition": "Método que convierte cobros futuros esperados en un valor de hoy usando una tasa de descuento.",
+    "aliases": [],
+    "example": "Si exiges un 10 % anual, 110 € esperados dentro de un año equivalen a 100 € hoy bajo esas hipótesis.",
+    "tracks": []
+  },
+  {
+    "term": "Descuento de valoración",
+    "definition": "Reducción aplicada al valor reconocido de una garantía.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Desdoblamiento de acciones",
+    "definition": "Dividir cada acción en varias, ajustando proporcionalmente el precio. Por sí solo no aumenta tu parte del negocio.",
+    "aliases": [
+      "Split"
+    ],
+    "example": "En un desdoblamiento 2 a 1, una acción de 20 € se convierte en dos de aproximadamente 10 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Deslizamiento",
+    "definition": "Diferencia entre un precio previsto y el precio al que finalmente se ejecuta una operación. Puede favorecerte o perjudicarte.",
+    "aliases": [
+      "Slippage"
+    ],
+    "example": "Esperabas comprar a 10 € y se ejecuta a 10,10 €: pagaste 0,10 € más por unidad.",
+    "tracks": [
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Destino de una comisión",
+    "definition": "Parte que recibe el pago según las reglas del servicio.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Desviación típica",
+    "definition": "Medida de cuánto se separan unos datos de su media, en las unidades de esos datos.",
+    "aliases": [],
+    "example": "Dos series con media de 20 € pueden tener distinta desviación si una oscila mucho más.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Deterioro",
+    "definition": "Reducción del valor registrado cuando supera la recuperación estimada según el criterio aplicable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Deuda",
+    "definition": "Dinero que la empresa está obligada a devolver.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Deuda financiera",
+    "definition": "Dinero debido a prestamistas por la financiación recibida.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Devolución de capital",
+    "definition": "Reparto que devuelve parte del dinero que ya tenías invertido; por sí solo no es una ganancia nueva.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Diario de operaciones",
+    "definition": "Registro de decisiones, motivos, condiciones, costes y resultados para revisar el proceso.",
+    "aliases": [],
+    "example": "Anota la hipótesis y la invalidación antes de conocer el resultado, no solo si ganaste o perdiste.",
+    "tracks": []
+  },
+  {
+    "term": "Días de cobro",
+    "definition": "Aproximación del plazo a partir de clientes medios, ventas a crédito y duración del período.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Diferencia de seguimiento",
+    "definition": "Resultado de restar la rentabilidad del índice a la del fondo, usando datos comparables.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Diferencia imponible",
+    "definition": "Diferencia temporaria que origina importes sujetos a impuestos al recuperarse o liquidarse.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Diferencia permanente",
+    "definition": "Diferencia entre resultado contable y fiscal que no se revierte después.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Diferencial",
+    "definition": "Distancia entre las mejores ofertas de venta y compra.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Diferencial comprador-vendedor",
+    "definition": "Distancia entre el precio al que alguien ofrece comprar y el precio al que alguien ofrece vender.",
+    "aliases": [
+      "Spread",
+      "Horquilla"
+    ],
+    "example": "Compra a 9,90 € y venta a 10,10 € dan un diferencial de 0,20 €.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Diferencial de crédito",
+    "definition": "Rendimiento adicional frente a una referencia comparable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Dilución",
+    "definition": "Reducción de una participación relativa al aumentar el total.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Dilución de propiedad",
+    "definition": "Reducción de tu porcentaje de propiedad al aumentar las acciones sin que aumenten las tuyas.",
+    "aliases": [],
+    "example": "Tener 10 de 100 acciones es el 10 %. Si se emiten otras 100 y sigues con 10, pasas al 5 %.",
+    "tracks": []
+  },
+  {
+    "term": "Dilución relativa",
+    "definition": "Reducción de la proporción propia cuando aumenta más el total de unidades.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Dirección",
+    "definition": "Referencia de destino o cuenta utilizada por una red.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Dispersión",
+    "definition": "Cuánto se separan los precios de su media.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Disponibilidad",
+    "definition": "Poder acceder legítimamente cuando se necesita.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Disponibilidad de datos",
+    "definition": "Posibilidad de obtener la información necesaria para comprobar o reconstruir el estado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Distribución",
+    "definition": "Regla por la que el fondo entrega determinados ingresos a quienes tienen participaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Distribuido",
+    "definition": "Repartido entre varias máquinas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Divergencia",
+    "definition": "Situación donde precio e indicador no confirman la misma secuencia según unos criterios.",
+    "aliases": [],
+    "example": "El precio marca un máximo más alto y el indicador uno más bajo. Esa discrepancia puede persistir.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Diversificación",
+    "definition": "Repartir la inversión entre riesgos diferentes para reducir la dependencia de uno solo. No elimina las pérdidas.",
+    "aliases": [],
+    "example": "Diez empresas del mismo sector pueden depender del mismo problema. Hay que mirar qué riesgos comparten.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Diversificar",
+    "definition": "Repartir el dinero entre inversiones con riesgos distintos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Dividendo",
+    "definition": "Dinero que una empresa decide repartir a sus accionistas. No está garantizado.",
+    "aliases": [],
+    "example": "Con 20 acciones y un reparto de 0,50 € por acción, recibes 10 € antes de impuestos.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Dividendo por acción",
+    "definition": "Cantidad que corresponde a cada acción en el reparto considerado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Divisa",
+    "definition": "Moneda distinta de la utilizada como referencia en el análisis.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Doble gasto",
+    "definition": "Intento de gastar las mismas unidades más de una vez.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Doble suelo",
+    "definition": "Figura con dos zonas bajas parecidas y una recuperación entre ellas. Exige contexto y confirmación.",
+    "aliases": [],
+    "example": "El precio puede volver a caer aunque hayas visto dos mínimos próximos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Doble techo",
+    "definition": "Figura con dos zonas altas parecidas y un retroceso entre ellas. La confirmación depende de una regla adicional.",
+    "aliases": [],
+    "example": "Dos máximos parecidos no prueban por sí solos un cambio de tendencia.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Doji",
+    "definition": "Vela cuya apertura y cierre están muy próximos según una tolerancia definida. No predice por sí sola una dirección.",
+    "aliases": [],
+    "example": "Abrir a 20 € y cerrar a 20,05 € puede formar un doji, incluso con máximo de 23 € y mínimo de 18 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Dotación",
+    "definition": "Reconocimiento de una provisión adicional.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Drawdown",
+    "definition": "Caída desde un máximo anterior hasta un valor posterior del capital o del precio, según la serie medida.",
+    "aliases": [],
+    "example": "Pasar de un máximo de 1.000 € a 800 € supone un drawdown del 20 %.",
+    "tracks": []
+  },
+  {
+    "term": "Duración",
+    "definition": "Medida que aproxima cuánto puede cambiar el precio de un bono al variar los tipos de interés.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Duración modificada",
+    "definition": "Medida que aproxima cuánto cambia el precio ante un cambio pequeño del rendimiento exigido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Earn-out",
+    "definition": "Pago de adquisición condicionado a objetivos pactados.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "EBIT",
+    "definition": "Otro nombre del beneficio operativo, antes de intereses e impuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "EBITDA",
+    "definition": "Resultado antes de intereses, impuestos y gastos contables de amortización y depreciación. No es el efectivo disponible.",
+    "aliases": [],
+    "example": "No restar la amortización de una máquina no hace desaparecer el coste de comprarla o sustituirla.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Economía de escala",
+    "definition": "Reducción del coste por unidad al producir más bajo determinadas condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Efectivo de la actividad",
+    "definition": "Dinero generado o consumido por los cobros y pagos del funcionamiento habitual.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Efecto de red",
+    "definition": "Cambio de utilidad para un participante relacionado con la participación de otros.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ejecución",
+    "definition": "Aplicación de reglas a operaciones para obtener un nuevo estado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Ejecución de una decisión",
+    "definition": "Acción que lleva a la práctica un resultado aprobado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ejecución fallida",
+    "definition": "Procesamiento que no logra el resultado previsto bajo las reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ejecución parcial",
+    "definition": "Cumplimiento de una parte de la cantidad solicitada.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Emisión",
+    "definition": "Creación de unidades según las reglas de un sistema.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Emisión de acciones",
+    "definition": "Creación de acciones adicionales a cambio de recursos para la empresa.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "En especie",
+    "definition": "Entrega mediante activos en lugar de solo efectivo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Endeudamiento",
+    "definition": "Uso de financiación prestada que debe devolverse.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ensayo de recuperación",
+    "definition": "Prueba controlada del procedimiento de acceso con material ficticio.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Envolvente alcista",
+    "definition": "Pauta donde el cuerpo alcista de una vela cubre el cuerpo bajista anterior según las reglas usadas.",
+    "aliases": [],
+    "example": "Puede envolver el cuerpo anterior sin envolver sus mechas: compara aperturas y cierres.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Envolvente bajista",
+    "definition": "Pauta donde el cuerpo bajista de una vela cubre el cuerpo alcista anterior según las reglas usadas.",
+    "aliases": [],
+    "example": "No basta con tener un mínimo más bajo: debes comparar los dos cuerpos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Escala de unidades",
+    "definition": "Forma de dividir y expresar la cantidad de un activo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Escala lineal",
+    "definition": "Escala donde la misma distancia vertical representa el mismo cambio en unidades de precio.",
+    "aliases": [],
+    "example": "De 10 € a 20 € ocupa la misma distancia que de 100 € a 110 €, aunque los porcentajes sean distintos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Escala logarítmica",
+    "definition": "Escala donde la misma distancia vertical representa el mismo cambio proporcional. Requiere precios positivos.",
+    "aliases": [],
+    "example": "Pasar de 10 € a 20 € y de 100 € a 200 € representa en ambos casos duplicar el precio.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Escalera de vencimientos",
+    "definition": "Reparto de la inversión entre productos con fechas finales diferentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Escenario",
+    "definition": "Conjunto explícito de supuestos para estudiar consecuencias.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Escisión",
+    "definition": "Separación de un negocio en otra entidad según condiciones específicas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "ESG",
+    "definition": "Criterios sobre medioambiente, cuestiones sociales y cómo se dirigen y controlan las entidades.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Esperanza matemática",
+    "definition": "Resultado medio teórico de ponderar cada resultado por su probabilidad. Depende de estimaciones y costes.",
+    "aliases": [],
+    "example": "50 % de ganar 20 € y 50 % de perder 10 € dan una esperanza de 5 € antes de costes. Una operación individual puede perder.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Estacionalidad",
+    "definition": "Patrón de ventas o actividad que suele repetirse en ciertas épocas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Estado de un programa",
+    "definition": "Datos vigentes sobre los que actúa el programa.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Estado del registro",
+    "definition": "Situación que resulta de aplicar las operaciones aceptadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Estados financieros",
+    "definition": "Documentos que presentan sus resultados, situación y movimientos de dinero.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Estimación contable",
+    "definition": "Supuesto utilizado para medir una partida, que debe apoyarse en información y puede necesitar revisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Estimación de valor",
+    "definition": "Una aproximación a lo que podría valer una inversión, basada en lo que esperas de ella.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Estrella de la mañana",
+    "definition": "Pauta de tres velas con una caída, un cuerpo pequeño y una recuperación, según las reglas y el contexto.",
+    "aliases": [],
+    "example": "La tercera vela debe cumplir la recuperación definida. Tres colores distintos no bastan.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Estrella de la tarde",
+    "definition": "Pauta de tres velas con un avance, un cuerpo pequeño y una caída, según las reglas y el contexto.",
+    "aliases": [],
+    "example": "Estudia la relación entre los cuerpos y el movimiento previo, no una promesa de caída.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Estrella fugaz",
+    "definition": "Vela con cuerpo pequeño en la zona baja y mecha superior larga, estudiada tras un avance.",
+    "aliases": [],
+    "example": "La mecha superior muestra precios alcanzados que no se mantuvieron al cierre. Necesita contexto.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "ETC",
+    "definition": "Producto cotizado vinculado a materias primas cuya estructura debe revisarse.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "ETF",
+    "definition": "Fondo cuyas participaciones se compran y venden en bolsa. Puede seguir un índice u otra estrategia y puede perder valor.",
+    "aliases": [],
+    "example": "Comprar un ETF de acciones es comprar una parte de un fondo que posee esas acciones, no una rentabilidad garantizada.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "ETF de vencimiento definido",
+    "definition": "Fondo que reúne bonos con vencimientos previstos y contempla cerrar siguiendo sus documentos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "ETN",
+    "definition": "Título de deuda cotizado cuyos pagos se vinculan a una referencia según unas condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "EV",
+    "definition": "Medida del valor atribuido a la actividad del negocio, separada de su caja sobrante, bajo los supuestos del caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "EV/EBIT",
+    "definition": "Valor del negocio dividido entre beneficio operativo anual.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Excepcional",
+    "definition": "Algo poco habitual que no se presupone repetible.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Existencias",
+    "definition": "Bienes mantenidos para vender, producir o consumir en la actividad.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Expectativa",
+    "definition": "Creencia sobre lo que puede pasar en el futuro; no es un hecho comprobado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Expectativa implícita",
+    "definition": "Supuesto que hace compatible un precio con un modelo determinado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Explorador",
+    "definition": "Servicio que presenta información consultable de una red.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Exposición",
+    "definition": "Grado en que un resultado depende de un activo, sistema o contraparte.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Extensión de Fibonacci",
+    "definition": "Proyección de distancias proporcionales más allá de un recorrido seleccionado.",
+    "aliases": [],
+    "example": "Plantea referencias posibles, no precios objetivos asegurados.",
+    "tracks": []
+  },
+  {
+    "term": "Factor",
+    "definition": "Característica medible usada para seleccionar o ponderar inversiones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Factor de salud",
+    "definition": "Relación entre garantía ajustada por umbral y deuda en un modelo de préstamo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Factor de valor",
+    "definition": "Criterio que selecciona empresas o les asigna peso según su precio frente a medidas del negocio.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Factoring",
+    "definition": "Acuerdo para ceder o financiar derechos de cobro bajo condiciones concretas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Falsa ruptura",
+    "definition": "Movimiento que supera una referencia pero no mantiene las condiciones usadas para interpretar esa ruptura.",
+    "aliases": [],
+    "example": "Cerrar por encima de una zona y volver dentro puede invalidar tu lectura, según una regla definida previamente.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "FCFE",
+    "definition": "Flujo libre atribuible a accionistas tras operación, inversión y financiación definidas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "FCFF",
+    "definition": "Flujo libre operativo para todos los financiadores, antes de pagos de deuda y después de impuestos e inversión definidos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Fecha de valoración",
+    "definition": "Momento al que expresas todos los importes para poder compararlos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ficha del activo",
+    "definition": "Conjunto de referencias que distingue la unidad analizada.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Finalidad",
+    "definition": "Condición bajo la cual una red considera firme una parte de su historial.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Finalización",
+    "definition": "Estado definido por ciertas redes que refuerza la garantía de que un bloque no se revertirá bajo sus supuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Financiación de proveedores",
+    "definition": "Acuerdo que introduce financiación para gestionar pagos a proveedores.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Firma digital",
+    "definition": "Prueba matemática que autoriza una operación bajo determinadas reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Flujo de caja",
+    "definition": "Dinero que entra y sale durante un periodo. Se distingue de las ventas y del beneficio contable.",
+    "aliases": [],
+    "example": "Cobrar 80 € y pagar 50 € produce una entrada neta de 30 € en ese periodo.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Flujo de caja libre",
+    "definition": "En estos casos, el efectivo de la actividad que queda tras pagar las inversiones en equipos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Flujo nominal",
+    "definition": "Cantidad prevista de dinero sin eliminar el efecto de la inflación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Flujo para los propietarios",
+    "definition": "Dinero que podría quedar después de las necesidades y obligaciones definidas en el caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Flujo real",
+    "definition": "Cantidad expresada en poder de compra constante.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Flujos netos",
+    "definition": "Entradas menos salidas de dinero o activos del fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Folleto",
+    "definition": "Documento que desarrolla política, estructura y condiciones del fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Fondo",
+    "definition": "Dinero reunido de varias personas para invertir siguiendo unas reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Fondo de comercio",
+    "definition": "Diferencia positiva de adquisición no asignada a activos netos identificables según el cálculo aplicable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Fondo de inversión",
+    "definition": "Una inversión compartida: reúne el dinero de muchas personas para comprar una cesta de inversiones. Cada persona tiene una parte de esa cesta. Hay que mirar qué contiene y qué costes cobra.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Fondo de liquidez",
+    "definition": "Reservas de activos que un programa utiliza para ofrecer intercambios.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Fondo indexado",
+    "definition": "Un fondo que intenta seguir la evolución de un índice.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Frase de recuperación",
+    "definition": "Palabras que permiten recuperar las claves de una cartera compatible. Deben mantenerse en secreto.",
+    "aliases": [
+      "Seed phrase"
+    ],
+    "example": "Alguien que las pide para «verificar» tu cartera podría tomar el control de tus activos.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Frecuencia de referencia",
+    "definition": "Proporción observada de un resultado en un conjunto de casos que se usa como punto de comparación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Fuente directa",
+    "definition": "Documento o información procedente de quien conoce o registra el hecho.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Fuente independiente",
+    "definition": "Origen que no deriva necesariamente del mismo dato o fallo que los demás.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Fuente primaria",
+    "definition": "Documento o registro directamente relacionado con el hecho examinado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Fuentes y usos",
+    "definition": "Conciliación entre recursos obtenidos y destinos de esos recursos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Fuera de muestra",
+    "definition": "Datos no usados para diseñar o ajustar las reglas, reservados para una comprobación separada.",
+    "aliases": [],
+    "example": "Compruebas en años posteriores a los usados para ajustar, respetando la disponibilidad de datos.",
+    "tracks": []
+  },
+  {
+    "term": "Fusión de fondos",
+    "definition": "Unión de fondos según unas condiciones comunicadas a sus inversores.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ganancia media",
+    "definition": "Promedio de lo ganado en las operaciones ganadoras, bajo la base de cálculo elegida.",
+    "aliases": [],
+    "example": "Ganancias de 10 € y 30 € dan una ganancia media de 20 €. No incluye las operaciones perdedoras.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Ganancia puntual",
+    "definition": "Beneficio de una operación concreta que no das por repetida en los próximos años.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Garantía",
+    "definition": "Recurso comprometido para respaldar una obligación.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Gas",
+    "definition": "Unidad de trabajo con la que algunas redes miden la ejecución de operaciones. El precio por unidad y el coste total son distintos.",
+    "aliases": [],
+    "example": "Una operación que usa más gas puede costar más aunque el precio por unidad sea el mismo.",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Gastos corrientes",
+    "definition": "Gastos habituales de funcionamiento expresados respecto al patrimonio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Gestión activa",
+    "definition": "Gestión que toma decisiones para cumplir una estrategia, en lugar de limitarse a seguir mecánicamente una referencia.",
+    "aliases": [],
+    "example": "Elegir unas empresas y descartar otras no garantiza superar al índice después de costes.",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Gestión pasiva",
+    "definition": "Gestión que busca seguir una referencia o unas reglas definidas, en lugar de seleccionar inversiones para superar esa referencia.",
+    "aliases": [],
+    "example": "Un fondo que sigue un índice debe gestionar sus compras y ajustes; pasivo no significa sin riesgo ni sin costes.",
+    "tracks": []
+  },
+  {
+    "term": "Gestora",
+    "definition": "Entidad que administra el fondo y sigue sus reglas de inversión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Gobernanza",
+    "definition": "Forma de organizar decisiones y cambios en un sistema.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Gobierno de empresa",
+    "definition": "Reglas, responsabilidades y mecanismos para decidir, supervisar y rendir cuentas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Harami",
+    "definition": "Pauta de dos velas donde el segundo cuerpo queda dentro del primero, bajo unas reglas.",
+    "aliases": [],
+    "example": "Que el cuerpo esté dentro no obliga a que las mechas también lo estén.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Hash",
+    "definition": "Resultado de una función que transforma datos en una huella de tamaño determinado. Sirve para comprobar coincidencias y detectar cambios.",
+    "aliases": [],
+    "example": "Cambiar un dato de un bloque cambia su hash; eso no demuestra que el dato original fuera verdadero.",
+    "tracks": []
+  },
+  {
+    "term": "Hashrate",
+    "definition": "Número de intentos de cálculo por unidad de tiempo en una red de prueba de trabajo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Hecho verificable",
+    "definition": "Afirmación que puede contrastarse con una fuente identificada.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Hipótesis",
+    "definition": "Idea provisional que se contrasta con observaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Histograma",
+    "definition": "Barras que representan una magnitud. En MACD muestran la diferencia entre MACD y su señal.",
+    "aliases": [],
+    "example": "Un histograma de MACD cerca de cero indica que esas líneas se aproximan, no asegura un giro del precio.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Hombre colgado",
+    "definition": "Forma parecida al martillo situada tras un avance. Su interpretación depende del contexto y las reglas.",
+    "aliases": [],
+    "example": "La misma forma puede recibir otro nombre según aparezca después de una caída o una subida.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Hombro-cabeza-hombro",
+    "definition": "Figura con tres zonas altas, la central más elevada, estudiada con una línea de referencia y reglas.",
+    "aliases": [
+      "HCH"
+    ],
+    "example": "Tres picos no bastan: justifica la estructura y qué dato la invalidaría.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Homologación",
+    "definition": "Aprobación que acredita requisitos técnicos específicos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Horizonte",
+    "definition": "Plazo durante el que pueden mantenerse unos recursos destinados a una decisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Horquilla",
+    "definition": "Diferencia entre precio vendedor y comprador.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Hueco de apertura",
+    "definition": "Separación entre el cierre de un periodo y la apertura del siguiente. Hay otras definiciones de hueco según el contexto.",
+    "aliases": [
+      "Gap",
+      "Salto de apertura"
+    ],
+    "example": "Cerrar ayer a 20 € y abrir hoy a 22 € deja un salto de 2 €. No demuestra que se pudiera operar a 21 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Identificador de transacción",
+    "definition": "Referencia técnica con la que se busca una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Impacto de precio",
+    "definition": "Cambio de condiciones de ejecución provocado por el tamaño de una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Importe contable",
+    "definition": "Cantidad con la que una partida aparece reconocida en las cuentas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Impuesto corriente",
+    "definition": "Impuesto calculado para el periodo conforme a su base fiscal.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Impuesto diferido",
+    "definition": "Efecto contable de diferencias fiscales que se resolverán en otros periodos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Impulso",
+    "definition": "Tramo de movimiento en la dirección de la tendencia que se estudia.",
+    "aliases": [],
+    "example": "En una tendencia alcista, subir de 20 € a 25 € puede ser un impulso.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Inactividad",
+    "definition": "Ausencia de movimientos observados durante un periodo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Incentivo",
+    "definition": "Condición que hace más atractivo un comportamiento.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Incentivo de emisión",
+    "definition": "Recompensa pagada creando o distribuyendo unidades según un programa.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Incidencia operativa",
+    "definition": "Situación que impide o altera el resultado esperado de una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Inclusión forzada",
+    "definition": "Mecanismo alternativo para solicitar procesamiento sin cooperación del secuenciador habitual.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Incógnita decisiva",
+    "definition": "Dato desconocido que podría cambiar de forma importante una conclusión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Indexado",
+    "definition": "Que busca seguir el resultado de un índice.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Índice",
+    "definition": "Referencia que resume un grupo de inversiones seleccionadas y ponderadas con reglas.",
+    "aliases": [],
+    "example": "Un índice puede dar más peso a las empresas de mayor valor de mercado; no todas cuentan necesariamente lo mismo.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Índice de precios",
+    "definition": "Referencia que sigue precios sin reinvertir pagos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Índice de rentabilidad total",
+    "definition": "Referencia que incorpora pagos según sus reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Inflación",
+    "definition": "Subida general de los precios: con el mismo dinero puedes comprar menos.",
+    "aliases": [],
+    "example": "Si una cesta pasa de 100 € a 103 €, ha subido un 3 %.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Inflación implícita",
+    "definition": "Diferencia de rendimientos nominales y reales comparables, condicionada por otros factores.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Informe anual",
+    "definition": "Documento que reúne información del negocio y sus cuentas de un año.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ingeniería social",
+    "definition": "Manipulación de personas para obtener información o acciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ingreso del servicio",
+    "definition": "Cobros atribuibles al servicio bajo el criterio y periodo definidos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Ingresos",
+    "definition": "El importe de las ventas realizadas, aunque todavía estén pendientes de cobro.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Ingresos por ventas",
+    "definition": "El importe de las ventas de una empresa durante un periodo. Una venta puede estar registrada aunque el cliente todavía no la haya pagado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ingresos recurrentes",
+    "definition": "Ingresos de una actividad que se repite mediante una relación periódica, sin que por ello sean seguros.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Interés",
+    "definition": "Pago acordado por prestar dinero.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Interés compuesto",
+    "definition": "Efecto de reinvertir lo que ganas: los resultados siguientes se calculan sobre el dinero inicial y los resultados acumulados. También pueden acumularse pérdidas.",
+    "aliases": [],
+    "example": "Con 100 € y un 10 % constante, pasas a 110 € el primer año y a 121 € el segundo. El segundo año ganas 11 €, no 10 €.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Interés del préstamo",
+    "definition": "Coste que aumenta la obligación según las condiciones pactadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Interfaz",
+    "definition": "Pantalla o herramienta con la que se prepara una interacción.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Intermediario",
+    "definition": "Entidad que tramita operaciones de inversión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Interpretación",
+    "definition": "Una explicación propuesta para unos hechos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Invalidación",
+    "definition": "Condición que hace que una interpretación deje de cumplir tus reglas.",
+    "aliases": [],
+    "example": "Si tu hipótesis exige cierres por encima de 20 €, un cierre por debajo puede obligarte a revisarla.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Inventario",
+    "definition": "Posiciones propias acumuladas al negociar.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Inventario o existencias",
+    "definition": "Materiales y productos que la empresa mantiene para producir o vender.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Inversión de crecimiento",
+    "definition": "La destinada a ampliar la actividad o capacidad del negocio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Inversión de mantenimiento",
+    "definition": "La destinada a sostener la capacidad y funcionamiento del negocio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Inversión en equipos",
+    "definition": "Dinero destinado a adquirir o mejorar recursos que sirven durante varios periodos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Inverso",
+    "definition": "Producto que busca un resultado de signo contrario al de una referencia durante el período indicado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "ISIN",
+    "definition": "Código internacional de 12 caracteres que identifica un título concreto. No fija por sí solo el mercado ni la moneda de una operación.",
+    "aliases": [],
+    "example": "Alphabet clase A tiene US02079K3059 y clase C tiene US02079K1079. Encontrar el nombre Alphabet no basta para distinguirlas.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Latencia",
+    "definition": "Tiempo entre dos etapas definidas del procesamiento de una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Libro de órdenes",
+    "definition": "Listado de propuestas de compra y venta con precio y cantidad.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Límite autorizado",
+    "definition": "Cantidad máxima que un permiso permite utilizar bajo sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Límite de trabajo",
+    "definition": "Máximo de recursos autorizado para una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Línea clavicular",
+    "definition": "Referencia que une zonas intermedias en una figura de hombro-cabeza-hombro según el método usado.",
+    "aliases": [
+      "Neckline"
+    ],
+    "example": "Define antes si tu lectura exige un cierre al otro lado de esa línea.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Línea de señal",
+    "definition": "Media del propio indicador para compararlo con su recorrido reciente. En MACD suele ser una media exponencial.",
+    "aliases": [],
+    "example": "Un cruce del MACD con su señal no es un cruce del precio con una media.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Liquidación de garantía",
+    "definition": "Uso o venta de respaldo para reducir deuda al cumplirse una condición.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Liquidación de un fondo",
+    "definition": "Cierre del fondo y reparto de lo que queda después de atender sus obligaciones y gastos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Liquidación de una operación",
+    "definition": "Proceso de intercambio de dinero y valores tras negociar.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Liquidez",
+    "definition": "Facilidad para comprar o vender una cantidad sin esperar mucho ni provocar un gran cambio en el precio.",
+    "aliases": [],
+    "example": "Vender rápidamente cerca del precio mostrado indica más liquidez que esperar días por un comprador.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Liquidez concentrada",
+    "definition": "Liquidez que participa en intercambios dentro de un intervalo de precios definido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "MACD",
+    "definition": "Indicador basado en la diferencia entre dos medias exponenciales y su comparación con una línea de señal.",
+    "aliases": [],
+    "example": "Sus cruces dependen de los parámetros y del marco temporal; no son iguales en todos los gráficos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Mandato",
+    "definition": "Objetivo y límites que deben respetar las decisiones del fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Marco temporal",
+    "definition": "Duración de los periodos que usa el gráfico: minutos, horas, días, semanas u otros intervalos.",
+    "aliases": [
+      "Timeframe"
+    ],
+    "example": "Un recorrido lateral en el gráfico diario puede contener tendencias en el de cinco minutos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Margen contractual",
+    "definition": "Parte añadida a una referencia para calcular el cupón.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Margen de beneficio",
+    "definition": "Parte de las ventas que queda como beneficio, expresada en porcentaje.",
+    "aliases": [],
+    "example": "Con ventas de 100 € y beneficio de 15 €, el margen es del 15 %.",
+    "tracks": []
+  },
+  {
+    "term": "Margen de contribución",
+    "definition": "Precio menos costes variables definidos; contribuye a cubrir costes fijos y beneficio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Margen de seguridad",
+    "definition": "Distancia entre un precio y un valor estimado superior, comparada con ese valor. Depende de la calidad de la estimación.",
+    "aliases": [],
+    "example": "Estimar un valor de 100 € y pagar 80 € deja un margen del 20 % respecto al valor estimado. No garantiza una ganancia.",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Margen del préstamo",
+    "definition": "Porcentaje que se suma a la referencia para obtener el tipo acordado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Margen operativo",
+    "definition": "La parte de las ventas que queda después de los costes de la actividad, antes de intereses e impuestos. Si de cada 100 € vendidos quedan 15 €, ese margen es del 15 %.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Margen sobre la referencia",
+    "definition": "Porcentaje añadido al tipo de referencia según el contrato.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Martillo",
+    "definition": "Vela con cuerpo relativamente pequeño cerca del extremo superior y una mecha inferior larga, estudiada en su contexto.",
+    "aliases": [],
+    "example": "Una forma de martillo tras una caída es una pista para revisar, no una orden automática de compra.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Martillo invertido",
+    "definition": "Vela con cuerpo pequeño cerca del extremo inferior y mecha superior larga, normalmente estudiada después de una caída.",
+    "aliases": [],
+    "example": "Muestra que el precio llegó más arriba durante el periodo, no que la subida vaya a continuar.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Material",
+    "definition": "Relevante por su naturaleza o magnitud para las decisiones de los usuarios.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Materialidad",
+    "definition": "Importancia potencial de una información para cambiar una evaluación o decisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Máximo",
+    "definition": "Precio más alto registrado durante el periodo.",
+    "aliases": [],
+    "example": "Si el precio pasó por 20 €, 24 € y 22 €, el máximo observado fue 24 €.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Máximos crecientes",
+    "definition": "Sucesión de máximos relevantes donde cada uno supera al anterior.",
+    "aliases": [],
+    "example": "Máximos de 20 €, 23 € y 25 € son crecientes. Mira también los mínimos y el periodo.",
+    "tracks": []
+  },
+  {
+    "term": "Máximos decrecientes",
+    "definition": "Sucesión de máximos relevantes donde cada uno queda por debajo del anterior.",
+    "aliases": [],
+    "example": "Máximos de 30 €, 27 € y 25 € son decrecientes.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Mecanismo algorítmico",
+    "definition": "Conjunto de reglas que ajusta oferta o incentivos para intentar alcanzar un objetivo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Mecanismo económico del token",
+    "definition": "Reglas que relacionan uso, demanda, oferta y derechos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Mechas",
+    "definition": "Líneas que llegan desde el cuerpo de una vela al máximo y al mínimo del periodo.",
+    "aliases": [
+      "Sombras"
+    ],
+    "example": "Con apertura 20 €, cierre 23 € y máximo 25 €, la mecha superior mide 2 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Media exponencial",
+    "definition": "Media que da más peso a los precios recientes mediante un cálculo progresivo. Sigue teniendo retraso respecto al precio.",
+    "aliases": [
+      "EMA"
+    ],
+    "example": "Un cierre nuevo afecta más a una media rápida que a una lenta, según sus parámetros.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Media ponderada de escenarios",
+    "definition": "Suma de cada resultado multiplicado por su probabilidad supuesta.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Media simple",
+    "definition": "Promedio de los precios considerados, dando a cada uno el mismo peso.",
+    "aliases": [
+      "SMA"
+    ],
+    "example": "Cierres de 10 €, 12 € y 14 € tienen una media simple de 12 €.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Mejor oferta",
+    "definition": "Condición más favorable de un lado del libro en un momento.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Mensaje firmado",
+    "definition": "Datos acompañados de una firma, cuyo efecto depende de su uso y reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Mercado",
+    "definition": "Un lugar o sistema que reúne a quienes quieren comprar y vender.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Mercado emergente",
+    "definition": "Categoría de mercado definida por criterios del proveedor del índice.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Mercado secundario",
+    "definition": "Intercambio entre inversores de participaciones existentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Metodología",
+    "definition": "Criterio utilizado para calcular una cifra.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Métrica",
+    "definition": "Medida definida para describir una característica o actividad.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Mezcla de productos",
+    "definition": "Proporción de cada tipo de producto dentro de las ventas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Minero",
+    "definition": "Participante que realiza ese trabajo para proponer bloques.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Mínimo",
+    "definition": "Precio más bajo registrado durante el periodo.",
+    "aliases": [],
+    "example": "Abrir a 20 € y cerrar a 22 € no impide haber tocado un mínimo de 18 € durante la sesión.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Mínimos crecientes",
+    "definition": "Sucesión de mínimos relevantes donde cada uno queda por encima del anterior.",
+    "aliases": [],
+    "example": "Mínimos de 12 €, 15 € y 17 € muestran que los retrocesos terminan cada vez más arriba en esa selección.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Mínimos decrecientes",
+    "definition": "Sucesión de mínimos relevantes donde cada uno queda por debajo del anterior.",
+    "aliases": [],
+    "example": "Mínimos de 20 €, 18 € y 15 € son decrecientes.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Mitigación",
+    "definition": "Medida que reduce el impacto o elimina una vía concreta de un problema.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Momentum",
+    "definition": "Señal de tendencia basada en resultados pasados según un método.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Moneda base",
+    "definition": "Moneda usada para presentar cuentas y valores del fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Moneda de negociación",
+    "definition": "Moneda en la que se expresa una cotización.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Moneda de presentación",
+    "definition": "Moneda utilizada para mostrar los estados financieros.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Moneda funcional",
+    "definition": "Moneda del entorno económico principal de una entidad.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Monedero",
+    "definition": "Herramienta para consultar cuentas e interactuar con sus operaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Movimiento lateral",
+    "definition": "Recorrido sin una dirección clara en el intervalo observado, normalmente dentro de una zona de precios.",
+    "aliases": [],
+    "example": "Oscilar repetidamente entre 20 € y 24 € puede describirse como lateral en ese periodo.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Muestreo",
+    "definition": "Selección de componentes para aproximar una referencia.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Multifactor",
+    "definition": "Estrategia que combina varias características medibles.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Múltiples firmas",
+    "definition": "Regla que exige varias autorizaciones válidas para ejecutar una acción.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Múltiplo",
+    "definition": "Razón que relaciona una valoración con una medida económica definida.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Múltiplo de salida",
+    "definition": "Relación supuesta aplicada a una magnitud futura para estimar el valor de venta en esa fecha.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "NAV",
+    "definition": "Siglas inglesas del valor neto de los activos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Necesidad operativa neta",
+    "definition": "En este caso, clientes pendientes más existencias menos proveedores pendientes.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Negociación ficticia",
+    "definition": "Operaciones entre partes relacionadas utilizadas para aparentar actividad independiente.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Neto",
+    "definition": "Resultado después de descontar los costes indicados.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Nocional",
+    "definition": "Importe de referencia usado para calcular los pagos de un contrato; no equivale necesariamente al dinero invertido.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Nodo",
+    "definition": "Máquina que ejecuta programas para participar en una red.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Nominal",
+    "definition": "Importe de referencia del bono que se promete devolver.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Normalización",
+    "definition": "Ajuste analítico explícito para estudiar condiciones consideradas representativas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Notas a las cuentas",
+    "definition": "Explicaciones que ayudan a interpretar las cifras.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Número medio ponderado",
+    "definition": "Promedio que tiene en cuenta cuánto tiempo estuvo vigente cada cantidad de acciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "OBV",
+    "definition": "Indicador que acumula volumen con signo positivo o negativo según el cierre suba o baje frente al anterior.",
+    "aliases": [],
+    "example": "No identifica quién compró ni demuestra que el movimiento continuará.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Oferta en circulación",
+    "definition": "Unidades consideradas disponibles según una metodología y una fecha.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Oferta máxima",
+    "definition": "Límite de unidades previsto por las reglas, cuando existe.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "OHLC",
+    "definition": "Abreviatura de apertura, máximo, mínimo y cierre: cuatro precios que resumen un periodo.",
+    "aliases": [],
+    "example": "O=20, H=25, L=18 y C=23 describen una vela sin decir en qué orden se recorrieron esos precios.",
+    "tracks": []
+  },
+  {
+    "term": "OPA",
+    "definition": "Oferta pública para adquirir valores bajo precio, plazo y condiciones publicados.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Operación firmada",
+    "definition": "Datos de una operación acompañados por su autorización.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Optimización",
+    "definition": "Búsqueda de una combinación según un objetivo y límites.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Oráculo",
+    "definition": "Mecanismo que proporciona al programa información externa.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Orden a mercado",
+    "definition": "Instrucción para negociar con las ofertas disponibles según las reglas del servicio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Orden de mercado",
+    "definition": "Orden que busca ejecutarse contra los precios disponibles sin fijar un máximo de compra o un mínimo de venta.",
+    "aliases": [],
+    "example": "El precio final puede ser distinto del último que viste, especialmente con poca liquidez.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Orden de stop",
+    "definition": "Orden que se activa cuando se cumple una condición de precio. La ejecución depende del tipo de orden y del mercado.",
+    "aliases": [],
+    "example": "Activar una venta a mercado al tocar 9 € no garantiza vender exactamente a 9 €.",
+    "tracks": []
+  },
+  {
+    "term": "Orden limitada",
+    "definition": "Orden que fija el máximo que aceptas pagar o el mínimo al que aceptas vender. Puede no ejecutarse.",
+    "aliases": [],
+    "example": "Una compra limitada a 10 € no debe ejecutarse por encima de 10 €, pero puede quedar pendiente.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Otro resultado global",
+    "definition": "Cambios contables reconocidos fuera del resultado del periodo, según su naturaleza.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Pago",
+    "definition": "Salida efectiva de dinero de la empresa.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Paridad",
+    "definition": "Relación objetivo entre el token y su referencia de valor.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Parte vinculada",
+    "definition": "Persona o entidad con una relación relevante de control, influencia u otra conexión según el marco aplicable.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Participación",
+    "definition": "Una parte de la propiedad de un fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Participación de un fondo",
+    "definition": "Una de las partes en que se divide un fondo. Su valor depende de las inversiones que contiene y de los costes del fondo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Participación no dominante",
+    "definition": "Parte de una filial consolidada que pertenece a propietarios distintos de la matriz.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Participante autorizado",
+    "definition": "Entidad habilitada para crear o devolver bloques al ETF.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Partida monetaria",
+    "definition": "Derecho u obligación de recibir o pagar una cantidad fija o determinable de moneda.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Pasivo",
+    "definition": "Obligación de la empresa, como un préstamo o una factura pendiente de pago.",
+    "aliases": [],
+    "example": "Una factura de 40 € que debe pagar a un proveedor es un pasivo.",
+    "tracks": []
+  },
+  {
+    "term": "Pasivo por impuesto diferido",
+    "definition": "Importe reconocido por consecuencias fiscales futuras de diferencias temporarias.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Patrimonio",
+    "definition": "Parte contable que queda para los propietarios después de restar las obligaciones a los activos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Patrimonio neto",
+    "definition": "Parte contable que queda al restar las obligaciones a los activos. No es la cotización en bolsa.",
+    "aliases": [],
+    "example": "Activos de 200 € menos pasivos de 80 € dan 120 € de patrimonio neto.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Pauta penetrante",
+    "definition": "Pauta donde una vela alcista entra de forma relevante en el cuerpo bajista anterior bajo reglas concretas.",
+    "aliases": [],
+    "example": "Define qué parte del cuerpo debe recuperar. No basta con que la segunda vela sea verde.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Payout",
+    "definition": "Proporción del beneficio distribuida como dividendo bajo una definición y período dados.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Penalización",
+    "definition": "Reducción aplicada al participante por una condición prevista en las reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Pendiente",
+    "definition": "Estado de una operación que aún no está incorporada como se requiere.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Pequeña capitalización",
+    "definition": "Empresa clasificada en un segmento de menor valor de mercado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "PER",
+    "definition": "Precio de una acción dividido entre su beneficio por acción. Indica cuánto precio pagas por cada euro de ese beneficio; no son años garantizados para recuperar la inversión.",
+    "aliases": [],
+    "example": "Precio de 20 € y BPA de 2 € dan un PER de 10. Un beneficio negativo o nulo dificulta esta comparación.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "PER histórico",
+    "definition": "Precio dividido por el beneficio por acción de un período ya ocurrido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "PER previsto",
+    "definition": "Precio dividido por un beneficio por acción todavía estimado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Pérdida media",
+    "definition": "Promedio de las pérdidas en las operaciones perdedoras, indicando si se expresan como importes positivos o negativos.",
+    "aliases": [],
+    "example": "Pérdidas de 5 € y 15 € dan una pérdida media de 10 € expresada como importe positivo.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Pérdida por divergencia",
+    "definition": "Desventaja de una posición de liquidez frente a mantener sus cantidades iniciales, comparadas a los mismos precios.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Periodo",
+    "definition": "Intervalo de tiempo que resume cada dato o vela del gráfico.",
+    "aliases": [],
+    "example": "En un gráfico de cinco minutos, cada vela corresponde a cinco minutos.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Periodo de medición",
+    "definition": "Intervalo durante el que se calcula un resultado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Peso",
+    "definition": "Porcentaje que representa una inversión sobre el valor total de la cartera.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Pignorar",
+    "definition": "Ofrecer un activo como garantía de una obligación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Piloto",
+    "definition": "Prueba limitada para contrastar una solución bajo condiciones definidas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Plan de custodia",
+    "definition": "Asignación de responsabilidades de acceso, autorización y recuperación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Plazo de espera",
+    "definition": "Tiempo obligatorio antes de ejecutar un cambio autorizado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Política de inversión",
+    "definition": "Criterios escritos sobre objetivos, límites, aplicación y revisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Política de recepción",
+    "definition": "Condiciones que un receptor exige para considerar suficiente una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ponderación igualitaria",
+    "definition": "Asignar el mismo porcentaje a cada componente en una revisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Pool de minería",
+    "definition": "Grupo que reúne trabajo y distribuye las recompensas según reglas acordadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Porcentaje de aciertos",
+    "definition": "Proporción de respuestas u operaciones ganadoras respecto al total considerado. En inversión no basta para medir el resultado económico.",
+    "aliases": [],
+    "example": "Acertar 8 de 10 operaciones es un 80 %, pero dos pérdidas grandes pueden superar las ocho ganancias pequeñas.",
+    "tracks": []
+  },
+  {
+    "term": "Posición larga",
+    "definition": "En este contrato, posición que gana si sube el índice y pierde si baja.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Precio",
+    "definition": "Cantidad de una unidad que se intercambia por otra.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Precio de ejercicio",
+    "definition": "Precio al que la opción permite comprar o vender la inversión.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Precio de las acciones",
+    "definition": "Importe pagado por los derechos de propiedad adquiridos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Precio de referencia",
+    "definition": "Dato elegido de forma explícita para valorar una cantidad.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Precio del bono",
+    "definition": "Cantidad que pagas para adquirirlo en la operación indicada.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Precio ejecutable",
+    "definition": "Precio disponible para una cantidad concreta en ese momento.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Precio marginal",
+    "definition": "Precio alrededor del estado actual para un intercambio de tamaño muy pequeño.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Precio medio",
+    "definition": "Ventas divididas entre unidades vendidas dentro del mismo conjunto.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Precio medio de ejecución",
+    "definition": "Importe negociado dividido entre unidades ejecutadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Precio unitario",
+    "definition": "Coste por cada unidad de la magnitud indicada.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Preferente acumulativa",
+    "definition": "Preferente cuyos dividendos no pagados se acumulan conforme a sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Presión potencial de venta",
+    "definition": "Posibilidad de que nuevas unidades disponibles se ofrezcan en el mercado.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Prestación definida",
+    "definition": "Plan que promete beneficios futuros definidos por sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Préstamo de valores",
+    "definition": "Entrega temporal de inversiones, como acciones o bonos, con obligación de devolver valores equivalentes según un contrato.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Presupuesto de riesgo",
+    "definition": "Límite de impacto aceptado para un escenario y objetivo definidos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Presupuesto de seguridad",
+    "definition": "Remuneración destinada a sostener el funcionamiento y los incentivos de seguridad durante un período.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Previsión",
+    "definition": "Lo que alguien espera que ocurra más adelante.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Prima",
+    "definition": "Precio que paga quien compra una opción y cobra quien la vende.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Prima de adquisición",
+    "definition": "Precio adicional respecto a una referencia independiente definida.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Principal",
+    "definition": "La cantidad prestada que queda por devolver.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Pro forma",
+    "definition": "Presentación hipotética que muestra cómo serían cifras bajo una estructura o periodo supuesto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Probabilidad condicionada",
+    "definition": "Proporción o probabilidad de un resultado al restringir el análisis a una condición.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Problema de agencia",
+    "definition": "Diferencia posible entre los objetivos de quien delega y quien decide por él.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Producto constante",
+    "definition": "Modelo en que el producto de dos reservas permanece fijo durante un intercambio sin comisiones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Profundidad",
+    "definition": "Cantidad disponible en distintos niveles de precio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Protocolo",
+    "definition": "Conjunto de reglas con las que funciona una red.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Proveedores pendientes de pago",
+    "definition": "Compras recibidas que la empresa aún debe pagar.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Provisión",
+    "definition": "Pasivo de importe o vencimiento incierto reconocido cuando se cumplen sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Proyectar",
+    "definition": "Estimar una cifra futura a partir de supuestos explícitos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Prueba de fallo",
+    "definition": "Evidencia utilizada para impugnar un resultado que no cumple las reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Prueba de participación",
+    "definition": "Mecanismo en el que participantes comprometen unidades para intervenir en el consenso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Prueba de reservas",
+    "definition": "Comprobación de determinadas reservas con un alcance y un momento concretos. No demuestra por sí sola todas las obligaciones del servicio.",
+    "aliases": [],
+    "example": "Mostrar 100 € de activos no permite saber si el servicio debe 80 € o 200 € a sus clientes.",
+    "tracks": []
+  },
+  {
+    "term": "Prueba de tensión",
+    "definition": "Análisis de consecuencias de un escenario adverso definido.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Prueba de trabajo",
+    "definition": "Mecanismo que exige demostrar trabajo de cálculo para proponer bloques.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Prueba de validez",
+    "definition": "Evidencia verificable de que un cálculo satisface determinadas reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Puente",
+    "definition": "Mecanismo que comunica mensajes o valor entre redes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Punto de equilibrio",
+    "definition": "Nivel de actividad que cubre los costes bajo los supuestos elegidos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Punto medio",
+    "definition": "Media entre el mejor precio comprador y vendedor.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Punto porcentual",
+    "definition": "Unidad para expresar la diferencia entre dos porcentajes, distinta de un cambio relativo en porcentaje.",
+    "aliases": [],
+    "example": "Pasar del 5 % al 7 % son 2 puntos porcentuales y un aumento relativo del 40 %.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Put",
+    "definition": "Opción que concede al comprador el derecho a vender al precio pactado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Quema",
+    "definition": "Retirada verificable de unidades según el mecanismo del activo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Quema de unidades",
+    "definition": "Retirada de unidades de circulación o uso según un mecanismo verificable.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Quita",
+    "definition": "Reducción acordada o establecida del importe de una obligación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rango de una vela",
+    "definition": "Distancia entre su máximo y su mínimo. Se distingue del tamaño del cuerpo.",
+    "aliases": [],
+    "example": "Máximo 25 € y mínimo 18 € dan un rango de 7 €, aunque el cuerpo mida 3 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Rango verdadero",
+    "definition": "Mayor distancia entre máximo y mínimo, máximo y cierre anterior, o mínimo y cierre anterior.",
+    "aliases": [],
+    "example": "Cierre anterior 20 €, máximo 25 € y mínimo 23 € dan un rango verdadero de 5 €, aunque la vela tenga un rango de 2 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Recibo de participación",
+    "definition": "Token que representa una posición de participación según reglas concretas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Recompensa",
+    "definition": "Unidades recibidas por una actividad bajo las reglas del sistema.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Recompensa de validación",
+    "definition": "Unidades recibidas según las reglas por participar en tareas del consenso.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Recompra",
+    "definition": "Adquisición de unidades propias de un sistema con recursos disponibles.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Recompra de acciones",
+    "definition": "Compra de acciones propias por la empresa; en estos casos se retiran del total en circulación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Reconocimiento de ingresos",
+    "definition": "Registro en resultados de los bienes o servicios transferidos según el criterio aplicable.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Reconstitución",
+    "definition": "Revisión que determina qué inversiones entran o salen de un índice.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rectángulo",
+    "definition": "Figura lateral con límites aproximadamente horizontales en el intervalo observado.",
+    "aliases": [],
+    "example": "Un precio que oscila entre dos zonas puede salir por cualquiera de ellas.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Recuperación de precio",
+    "definition": "Subida necesaria para volver a un nivel anterior.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Red",
+    "definition": "Conjunto de participantes y conexiones que ejecutan unas reglas comunes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Red de destino",
+    "definition": "Sistema concreto donde el receptor espera la operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Reembolso",
+    "definition": "Procedimiento para devolver el token y recibir lo previsto por el emisor.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Reequilibrio",
+    "definition": "Ajuste de los porcentajes de la cartera para volver al reparto previsto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Reestructuración",
+    "definition": "Cambio de condiciones financieras o derechos para afrontar una dificultad.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Referencia de consulta",
+    "definition": "Dato que identifica qué estado del registro se está observando.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Refinanciación",
+    "definition": "Sustitución o renovación de financiación, sujeta a condiciones futuras.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Refinanciar",
+    "definition": "Sustituir o reorganizar una deuda con nueva financiación o condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Registro",
+    "definition": "Lista organizada de hechos u operaciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Registro de incidencia",
+    "definition": "Relación de hechos y referencias útiles para examinar un problema.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Registro de operaciones",
+    "definition": "Relación de movimientos con identidad, fecha, estado y contexto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Registro del ensayo",
+    "definition": "Descripción de datos ficticios, decisiones y resultados de una práctica.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Regla ante un fallo",
+    "definition": "Comportamiento previsto cuando falta una condición necesaria.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Reglas de validación",
+    "definition": "Condiciones que una operación debe cumplir para ser aceptada.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Reinversión",
+    "definition": "Uso del rendimiento recibido como nueva base.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Reinvertir",
+    "definition": "Volver a destinar recursos al propio negocio para mantenerlo o ampliarlo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Relación beneficio-riesgo",
+    "definition": "Comparación entre una ganancia planteada y una pérdida planteada. No indica su probabilidad.",
+    "aliases": [
+      "Ratio beneficio-riesgo"
+    ],
+    "example": "Plantear ganar 30 € frente a perder 10 € da una relación 3 a 1, pero no basta para decidir.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Relación de conversión",
+    "definition": "Número de acciones que corresponde a un instrumento al convertirse.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Relación préstamo sobre garantía",
+    "definition": "Deuda dividida por el valor del respaldo; también llamada LTV.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Remuneración en acciones",
+    "definition": "Compensación por servicios mediante acciones o derechos vinculados a su valor.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Rendición de cuentas",
+    "definition": "Explicación verificable de decisiones y del uso de recursos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rendimiento neto",
+    "definition": "Resultado después de los costes y pérdidas incluidos en el cálculo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rendimiento útil",
+    "definition": "Proporción de la producción procesada que cumple las especificaciones requeridas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rentabilidad",
+    "definition": "Lo que ganas o pierdes comparado con el dinero invertido, normalmente expresado en porcentaje.",
+    "aliases": [],
+    "example": "Invertir 100 € y acabar con 110 €, sin otros movimientos ni costes, supone un 10 % de rentabilidad.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Rentabilidad anualizada",
+    "definition": "Porcentaje anual constante que, aplicado cada año al valor anterior, daría el mismo resultado acumulado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Rentabilidad corriente",
+    "definition": "Cupón anual dividido entre el precio de compra.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rentabilidad exigida",
+    "definition": "Tasa usada para comparar un cobro futuro con recursos disponibles hoy, bajo supuestos de riesgo y oportunidad.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Rentabilidad nominal",
+    "definition": "Resultado expresado sin descontar el efecto de la inflación.",
+    "aliases": [],
+    "example": "Ganar un 5 % nominal no implica aumentar un 5 % lo que puedes comprar.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Rentabilidad ponderada por dinero",
+    "definition": "Tasa calculada a partir del calendario de flujos y el valor final.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Rentabilidad ponderada por tiempo",
+    "definition": "Resultado que encadena períodos separados por flujos externos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Rentabilidad real",
+    "definition": "Rentabilidad después de tener en cuenta cuánto han cambiado los precios de lo que compras.",
+    "aliases": [],
+    "example": "Si tu inversión sube un 5 % y los precios un 3 %, ganas aproximadamente un 1,94 % de poder de compra: 1,05 ÷ 1,03 − 1.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Reorganización",
+    "definition": "Sustitución de una secuencia de bloques por otra aceptada por las reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Réplica física",
+    "definition": "Forma de seguir un índice manteniendo directamente inversiones como las que lo componen.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Réplica sintética",
+    "definition": "Seguimiento de una referencia mediante contratos como swaps.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Requisito",
+    "definition": "Condición que una solución debe cumplir en el caso concreto.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Rescate",
+    "definition": "Retirada del instrumento mediante un pago según sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Reservas",
+    "definition": "Activos mantenidos para respaldar obligaciones del sistema.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Resistencia",
+    "definition": "Zona donde anteriormente se frenaron subidas o apareció oferta. Puede ser superada.",
+    "aliases": [],
+    "example": "Varias subidas detenidas cerca de 30 € permiten estudiar esa zona, pero no la convierten en un techo seguro.",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Respaldo excedente",
+    "definition": "Valor aportado superior a la obligación que pretende cubrir.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Restricción de ejecución",
+    "definition": "Condición que limita o impide realizar la operación supuesta.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Resultado económico",
+    "definition": "Ganancia o pérdida después de considerar los movimientos relevantes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Resultado esperado",
+    "definition": "Condición concreta con la que se comparará lo ocurrido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Resultado operativo",
+    "definition": "Lo que queda de las ventas después de los costes de producir y mantener el negocio funcionando, antes de descontar los intereses de los préstamos y los impuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Resumen de operación",
+    "definition": "Conjunto de campos que describe lo que se va a solicitar.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Retención",
+    "definition": "Importe descontado de un pago por razón de impuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Retención de clientes",
+    "definition": "Porcentaje del grupo inicial de clientes que continúa al terminar el período.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Retención de ingresos",
+    "definition": "Ingresos actuales del grupo original divididos entre sus ingresos anteriores, excluyendo nuevos clientes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Retención neta de ingresos",
+    "definition": "Ingresos recurrentes finales de una cohorte respecto de sus ingresos iniciales, incluyendo cambios y bajas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Retesteo",
+    "definition": "Regreso a una zona superada para observar cómo se comporta allí el precio. Puede no ocurrir.",
+    "aliases": [],
+    "example": "Tras superar 30 €, el precio vuelve cerca de 30 €. No garantiza que esa zona frene la caída.",
+    "tracks": []
+  },
+  {
+    "term": "Retirada",
+    "definition": "Salida solicitada de activos desde un servicio hacia otro destino.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Retirada de liquidez",
+    "definition": "Recuperación de la parte correspondiente de un fondo según sus reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Retorno incremental",
+    "definition": "Resultado adicional relacionado con capital adicional, bajo una definición explícita.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Retroceso",
+    "definition": "Movimiento temporal contrario a la dirección de referencia. No demuestra por sí solo que haya cambiado la tendencia.",
+    "aliases": [
+      "Pullback"
+    ],
+    "example": "Después de subir de 20 € a 25 €, bajar a 23 € puede ser un retroceso.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Retroceso de Fibonacci",
+    "definition": "Niveles proporcionales entre dos extremos elegidos. Son referencias, no lugares donde el precio deba girar.",
+    "aliases": [],
+    "example": "Cambiar los extremos cambia los niveles: explica qué recorrido estás midiendo.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Reversión",
+    "definition": "Cambio de dirección de una pauta anterior.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Revocar un permiso",
+    "definition": "Retirar una autorización mediante el procedimiento correspondiente.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Riesgo",
+    "definition": "Posibilidad de un resultado peor de lo que necesitas o esperas: perder dinero, no poder vender a tiempo o equivocarte sobre el negocio.",
+    "aliases": [],
+    "example": "Necesitar mañana un dinero invertido en acciones añade riesgo aunque esperes que la empresa crezca a largo plazo.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Riesgo de base",
+    "definition": "Riesgo de que una inversión y la operación que intenta compensarla se muevan de forma distinta.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Riesgo de crédito",
+    "definition": "Posibilidad de incumplimiento de quien debe pagar.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Riesgo de reinversión",
+    "definition": "Incertidumbre sobre las condiciones para volver a invertir los cobros.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Riesgo de secuencia",
+    "definition": "Dependencia del resultado respecto al orden de rendimientos cuando existen flujos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Riesgo por operación",
+    "definition": "Pérdida que se pretende limitar en una operación bajo unos supuestos. Un hueco puede hacerla mayor.",
+    "aliases": [],
+    "example": "Arriesgar 10 € en una cuenta de 1.000 € equivale al 1 % bajo esos supuestos.",
+    "tracks": []
+  },
+  {
+    "term": "Robustez",
+    "definition": "Grado en que un resultado o unas reglas se mantienen razonablemente al cambiar datos, parámetros o condiciones.",
+    "aliases": [],
+    "example": "Una estrategia que solo funcionó con una ventana exacta y en un único año merece más comprobaciones.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "ROE",
+    "definition": "Beneficio atribuible a los propietarios comparado con su patrimonio neto, según las definiciones usadas.",
+    "aliases": [],
+    "example": "Con beneficio de 10 € y patrimonio medio de 100 €, el ROE es del 10 %.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "ROIC",
+    "definition": "Beneficio operativo después de impuestos comparado con el capital invertido en la actividad, según la definición usada.",
+    "aliases": [],
+    "example": "Un beneficio operativo después de impuestos de 12 € sobre un capital medio de 100 € da un ROIC del 12 %.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Rollup",
+    "definition": "Sistema que ejecuta fuera de la capa base y publica información en ella para verificar su estado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Rotación",
+    "definition": "Actividad de compra y venta dentro de la cartera.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Rotación de existencias",
+    "definition": "Coste vendido del período dividido entre existencias medias.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Rotación del modelo",
+    "definition": "Compras más ventas, divididas entre patrimonio medio.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "RSI",
+    "definition": "Indicador que compara avances y descensos suavizados durante un periodo y los expresa entre 0 y 100.",
+    "aliases": [],
+    "example": "Un RSI alto puede mantenerse durante una tendencia. No obliga al precio a bajar de inmediato.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Ruptura",
+    "definition": "Movimiento que supera una referencia según unas reglas, como un cierre fuera de una zona.",
+    "aliases": [],
+    "example": "Tocar 30,10 € durante el día no es igual que cerrar por encima si tu regla exige un cierre.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Saldo",
+    "definition": "Cantidad de unidades atribuida a una cuenta en un momento.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Saldo restante",
+    "definition": "Cantidad que queda después de los movimientos indicados.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Sector",
+    "definition": "Grupo de empresas clasificadas por su actividad económica.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Secuenciador",
+    "definition": "Actor o mecanismo que organiza la secuencia de operaciones de una capa.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Segmento",
+    "definition": "Parte del negocio cuya actividad y resultados se estudian por separado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Segregación de funciones",
+    "definition": "Distribución de tareas para evitar que una persona controle sin revisión toda una operación.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Segunda capa",
+    "definition": "Sistema que procesa actividad apoyándose en una red base según su diseño.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Sensibilidad",
+    "definition": "Cambio del resultado cuando varía un supuesto y los restantes se mantienen explícitamente fijos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Servicio de participación",
+    "definition": "Proveedor que realiza o coordina tareas de participación bajo unas condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Sesgo de anticipación",
+    "definition": "Usar en una prueba información que no se conocía cuando se habría tomado la decisión original.",
+    "aliases": [],
+    "example": "Usar el cierre del día para una compra supuestamente anterior a ese cierre falsea la prueba.",
+    "tracks": []
+  },
+  {
+    "term": "Sesgo de confirmación",
+    "definition": "Tendencia a buscar o dar más peso a los datos que apoyan lo que ya creías, ignorando los que lo contradicen.",
+    "aliases": [],
+    "example": "Si solo guardas los gráficos que encajan con tu hipótesis, tu revisión puede resultar engañosa.",
+    "tracks": [
+      "stocks",
+      "technical"
+    ]
+  },
+  {
+    "term": "Sesgo de supervivencia",
+    "definition": "Estudiar solo los activos que siguen existiendo y omitir los que desaparecieron.",
+    "aliases": [],
+    "example": "Probar solo con empresas que cotizan hoy puede excluir las que quebraron.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Seudónimo",
+    "definition": "Identificador que no utiliza directamente el nombre civil.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Símbolo",
+    "definition": "Abreviatura utilizada para presentar un activo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Simulación",
+    "definition": "Caso controlado que representa decisiones sin ejecutarlas en un sistema real.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Sinergia",
+    "definition": "Mejora económica adicional causada por la combinación.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Slashing",
+    "definition": "Sanción del protocolo por conductas específicas demostrables de un validador.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Sobreajuste",
+    "definition": "Ajustar demasiado las reglas a los datos de prueba, capturando casualidades que no se generalizan.",
+    "aliases": [],
+    "example": "Elegir entre cientos de parámetros el que más ganó en el mismo periodo puede crear una falsa impresión de eficacia.",
+    "tracks": []
+  },
+  {
+    "term": "Sobrecompra",
+    "definition": "Etiqueta cuando un indicador supera un umbral alto definido. No demuestra que el activo sea caro ni que deba caer.",
+    "aliases": [],
+    "example": "Un RSI por encima de 70 es una convención frecuente, no una señal infalible de venta.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Sobreventa",
+    "definition": "Etiqueta cuando un indicador cae bajo un umbral definido. No demuestra que el activo sea barato ni que vaya a subir.",
+    "aliases": [],
+    "example": "Un RSI por debajo de 30 puede mantenerse durante una caída fuerte.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Solapamiento",
+    "definition": "Coincidencia de inversiones entre carteras.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Solvencia",
+    "definition": "Capacidad para cumplir las obligaciones financieras. Debe distinguirse de disponer de efectivo justo en este momento.",
+    "aliases": [],
+    "example": "Poseer activos valiosos no garantiza poder pagar una factura mañana si no puedes convertirlos en dinero a tiempo.",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Soporte",
+    "definition": "Zona donde anteriormente se frenaron caídas o apareció demanda. Puede dejar de funcionar.",
+    "aliases": [],
+    "example": "Si varias caídas se detuvieron cerca de 20 €, esa zona puede servir de referencia. No es un suelo garantizado.",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Spin-off",
+    "definition": "Separación en la que suelen distribuirse acciones de la entidad separada.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Stablecoin",
+    "definition": "Token que intenta mantener un valor de referencia mediante respaldo o ajustes. Puede perder esa referencia.",
+    "aliases": [],
+    "example": "Que busque valer un dólar no garantiza poder venderlo o canjearlo siempre por un dólar.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Staking",
+    "definition": "Participar en ciertos mecanismos de validación aportando o comprometiendo activos, directamente o mediante un servicio. Tiene reglas y riesgos.",
+    "aliases": [],
+    "example": "Puede haber plazos de salida, costes o penalizaciones; no equivale a un depósito bancario garantizado.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Subsidio de bloque",
+    "definition": "Unidades nuevas que las reglas permiten crear para remunerar un bloque.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Subyacente",
+    "definition": "Inversión o índice del que depende un contrato financiero.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Suma de partes",
+    "definition": "Valoración que combina estimaciones separadas de negocios y ajustes comunes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Suplantación",
+    "definition": "Intento de presentarse como otra persona o servicio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Supuesto",
+    "definition": "Condición que se acepta para analizar un caso.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Swap",
+    "definition": "Contrato que acuerda intercambiar los resultados de inversiones según unas condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Tamaño de posición",
+    "definition": "Cantidad de unidades que compras o vendes. Depende del límite de riesgo y de las condiciones de ejecución.",
+    "aliases": [],
+    "example": "Con un límite de pérdida de 20 € y 2 € por unidad, serían 10 unidades antes de costes y posibles deslizamientos.",
+    "tracks": []
+  },
+  {
+    "term": "Tarifa base",
+    "definition": "Componente del precio por gas que el protocolo ajusta y quema.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tarifa de prioridad",
+    "definition": "Componente por gas destinado a incentivar la inclusión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tasa anual simple",
+    "definition": "Porcentaje anual aplicado sin incorporar rendimientos a la base durante el periodo.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tasa anualizada",
+    "definition": "Resultado de un periodo expresado como una tasa anual equivalente, usando las hipótesis del cálculo.",
+    "aliases": [],
+    "example": "Un 5 % en seis meses equivaldría a un 10,25 % anual si el siguiente semestre repitiera ese 5 %. No es una previsión.",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Tasa de comisión efectiva",
+    "definition": "Ingreso de comisión dividido por volumen intermediado comparable.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tasa de descuento",
+    "definition": "Tasa usada para expresar pagos futuros como valor actual.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Tasa de recuperación",
+    "definition": "Parte de una reclamación que se recibe en el escenario.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tasa de reinversión",
+    "definition": "Proporción del resultado operativo neto dedicada a inversión neta y necesidades operativas bajo una definición.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Tasa efectiva anual",
+    "definition": "Rendimiento anual que incorpora la reinversión supuesta.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tasa efectiva contable",
+    "definition": "Gasto por impuestos dividido entre beneficio antes de impuestos.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Temático",
+    "definition": "Estrategia que agrupa inversiones alrededor de un tema definido.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Tendencia",
+    "definition": "Dirección general del precio en el intervalo y con las reglas que se estudian.",
+    "aliases": [],
+    "example": "Máximos y mínimos cada vez más altos pueden describir una tendencia alcista; no aseguran que continúe.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "TER",
+    "definition": "Indicador de determinados gastos corrientes de un fondo, normalmente expresado como porcentaje anual. No recoge necesariamente todos tus costes de inversión.",
+    "aliases": [],
+    "example": "Un TER del 0,20 % no incluye por fuerza la comisión de tu bróker ni la diferencia entre precios comprador y vendedor.",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Tesis",
+    "definition": "Explicación razonada de una decisión bajo condiciones y evidencia.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Tesis de inversión",
+    "definition": "Explicación razonada de cómo entiendes un negocio, su futuro posible y su relación con un precio.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ticker",
+    "definition": "Nombre corto de negociación usado en un mercado para localizar un título. Puede variar entre mercados.",
+    "aliases": [],
+    "example": "En Nasdaq, GOOGL identifica Alphabet clase A y GOOG la clase C. Ambos pertenecen a Alphabet, pero tienen distintos derechos de voto.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Tipo de interés de mercado",
+    "definition": "Referencia de interés para préstamos o bonos comparables en riesgo, plazo y condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tipo variable",
+    "definition": "Interés que se actualiza conforme a una regla.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Token",
+    "definition": "Unidad digital emitida o registrada en un sistema. Sus derechos y utilidad dependen del diseño y las condiciones.",
+    "aliases": [],
+    "example": "Un token de uso no te da automáticamente acciones, dividendos ni propiedad de una empresa.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Tolerancia de deslizamiento",
+    "definition": "Límite aceptado de empeoramiento respecto de una estimación de ejecución.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Trabajo acumulado",
+    "definition": "Trabajo de cálculo representado por un historial de bloques.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tracking difference",
+    "definition": "Diferencia de rentabilidad entre un fondo y el índice en un periodo, usando la misma base de comparación.",
+    "aliases": [],
+    "example": "Si el índice gana un 5 % y el fondo un 4,7 %, el fondo queda 0,3 puntos porcentuales por debajo.",
+    "tracks": []
+  },
+  {
+    "term": "Tracking error",
+    "definition": "Medida de cuánto varían las diferencias de rentabilidad entre un fondo y su referencia durante el periodo estudiado.",
+    "aliases": [],
+    "example": "No es lo mismo que quedarse siempre un 0,20 % anual por debajo del índice: eso describe una diferencia persistente, no su variación.",
+    "tracks": [
+      "etfs"
+    ]
+  },
+  {
+    "term": "Transacción",
+    "definition": "Operación propuesta para cambiar el estado de un registro.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Trazabilidad de evidencia",
+    "definition": "Posibilidad de seguir una conclusión hasta su fuente y contexto.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Tres cuervos negros",
+    "definition": "Secuencia de tres velas bajistas con condiciones sobre sus aperturas y cierres.",
+    "aliases": [],
+    "example": "El contexto importa aunque la secuencia cumpla la forma esperada.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Tres soldados blancos",
+    "definition": "Secuencia de tres velas alcistas con condiciones sobre sus aperturas y cierres.",
+    "aliases": [],
+    "example": "Revisa el contexto y si el avance está ya muy extendido. El nombre no garantiza continuación.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Triángulo",
+    "definition": "Figura donde los límites del recorrido convergen según los puntos seleccionados.",
+    "aliases": [],
+    "example": "Unir dos puntos cualesquiera no valida la figura: necesitas referencias suficientes y reglas.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "TVL",
+    "definition": "Valor estimado de los activos depositados en un servicio, bajo un método y momento de medición.",
+    "aliases": [],
+    "example": "El TVL puede subir porque suben los precios de los tokens depositados, sin que entre dinero nuevo.",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "UCITS",
+    "definition": "Marco europeo de normas y protecciones para determinados fondos de inversión colectiva.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Último precio",
+    "definition": "Precio de la operación más reciente observada.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Umbral de liquidación",
+    "definition": "Fracción de la garantía valorada que una regla utiliza para determinar elegibilidad de liquidación.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Umbral de revisión",
+    "definition": "Condición elegida para volver a examinar una hipótesis o decisión.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Unidad de riesgo",
+    "definition": "Cantidad que representa la pérdida prevista al abrir una operación, usada como referencia para comparar resultados.",
+    "aliases": [
+      "R"
+    ],
+    "example": "Si tu riesgo inicial era de 10 €, ganar 20 € equivale a +2R antes de otros costes, según esa definición.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Unidad nativa",
+    "definition": "Activo propio que utiliza una red para determinadas funciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Universo",
+    "definition": "Conjunto de inversiones que un índice puede considerar.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Utilidad",
+    "definition": "Lo que una unidad permite hacer según sus condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Utilización",
+    "definition": "Proporción de recursos prestados respecto de la base definida por el sistema.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Utilización de capacidad",
+    "definition": "Producción efectiva dividida entre capacidad disponible, con período y definición comparables.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Validación",
+    "definition": "Comprobación de que una operación cumple las reglas.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Validación de formato",
+    "definition": "Comprobación de que un dato cumple una estructura prevista.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Validador",
+    "definition": "Participante que propone o comprueba bloques según el mecanismo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Validium",
+    "definition": "Diseño de pruebas de validez con disponibilidad de datos fuera de la capa base.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Valor actual",
+    "definition": "Equivalente hoy de un cobro futuro bajo una tasa de descuento definida.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto"
+    ]
+  },
+  {
+    "term": "Valor de la información",
+    "definition": "Mejora posible de una decisión por disponer de información antes de actuar, bajo supuestos explícitos.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Valor esperado",
+    "definition": "Promedio de resultados ponderado por sus probabilidades.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Valor indicativo",
+    "definition": "Estimación del valor de la cartera por participación publicada durante la sesión, según unos datos y un método.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Valor liquidativo",
+    "definition": "Valor de los activos de un fondo menos sus obligaciones, dividido entre sus participaciones, en el momento de cálculo.",
+    "aliases": [
+      "NAV"
+    ],
+    "example": "Un patrimonio neto de 1.000 € y 100 participaciones da 10 € por participación. Un ETF puede cotizar a otro precio.",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Valor neto realizable",
+    "definition": "Precio esperado menos costes necesarios para terminar y vender.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Valor residual",
+    "definition": "Recuperación estimada al final del uso del activo, con los ajustes pertinentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Valor terminal",
+    "definition": "Valor estimado en la fecha final de la previsión explícita de los flujos posteriores.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Valoración",
+    "definition": "Estimación de cuánto podría valer una inversión usando datos e hipótesis. Puede estar equivocada y ser distinta del precio.",
+    "aliases": [],
+    "example": "Dos hipótesis sobre ventas futuras pueden producir dos valores estimados distintos para la misma empresa.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Valoración inversa",
+    "definition": "Análisis de supuestos necesarios para que un modelo reproduzca un precio observado.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Valoración totalmente diluida",
+    "definition": "Referencia que multiplica el precio actual por una oferta total o máxima definida.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "crypto"
+    ]
+  },
+  {
+    "term": "Vela abierta",
+    "definition": "Vela del periodo que todavía no ha terminado. Su cierre provisional, cuerpo y extremos pueden cambiar.",
+    "aliases": [],
+    "example": "Una vela diaria vista a mediodía puede acabar con otra forma al cerrar la sesión.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Vela alcista",
+    "definition": "Vela cuyo cierre es mayor que su apertura, independientemente del color que use el gráfico.",
+    "aliases": [],
+    "example": "Abrir a 20 € y cerrar a 23 € da una vela alcista, aunque el cierre anterior fuera 24 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Vela bajista",
+    "definition": "Vela cuyo cierre es menor que su apertura.",
+    "aliases": [],
+    "example": "Abrir a 23 € y cerrar a 20 € da una vela bajista, aunque durante el día haya tocado 25 €.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Vela cerrada",
+    "definition": "Vela de un periodo terminado. Conviene comprobar si la fuente corrige o ajusta sus datos.",
+    "aliases": [],
+    "example": "Para comparar cierres diarios, espera a que ambas sesiones hayan terminado.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Vela interior",
+    "definition": "Vela cuyo máximo y mínimo quedan dentro del rango anterior según la regla usada.",
+    "aliases": [
+      "Inside bar"
+    ],
+    "example": "A diferencia de un harami, compara extremos, no únicamente cuerpos.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "Vela japonesa",
+    "definition": "Representación de apertura, cierre, máximo y mínimo de un periodo mediante un cuerpo y mechas.",
+    "aliases": [],
+    "example": "Una vela diaria resume un día; una semanal resume una semana. No muestran todo el recorrido dentro del periodo.",
+    "tracks": []
+  },
+  {
+    "term": "Vencimiento",
+    "definition": "Fecha prevista para devolver el nominal del bono.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs"
+    ]
+  },
+  {
+    "term": "Venta cubierta",
+    "definition": "Tener una inversión y vender una opción de compra sobre esa misma cantidad.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ventaja competitiva",
+    "definition": "Capacidad de ofrecer valor de una forma que los rivales no pueden igualar fácilmente.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Ventana móvil",
+    "definition": "Intervalo de duración fija que se desplaza por el historial.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Ventas",
+    "definition": "Importe de los productos vendidos durante un período.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "technical"
+    ]
+  },
+  {
+    "term": "Ventas netas",
+    "definition": "Ventas después de descuentos y devoluciones, según la definición usada.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Versión",
+    "definition": "Edición identificable de un programa o conjunto de condiciones.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Versión del análisis",
+    "definition": "Registro fechado de datos, supuestos y resultados utilizados en un momento.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Vesting",
+    "definition": "Liberación gradual de una asignación bajo unas condiciones y fechas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "Vida útil",
+    "definition": "Periodo durante el que se espera utilizar económicamente un activo.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Volatilidad",
+    "definition": "Cuánto varía un precio durante un periodo y según una medida. Puede variar al alza y a la baja.",
+    "aliases": [],
+    "example": "Dos inversiones terminan a 100 €; una apenas se movió y otra pasó por 70 € y 130 €. El resultado final no muestra esos altibajos.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "Volumen",
+    "definition": "Cantidad negociada durante un periodo, con la unidad y alcance que publique el mercado o la fuente.",
+    "aliases": [],
+    "example": "Un volumen de 100 acciones no significa 100 personas: una persona puede negociar varias acciones.",
+    "tracks": [
+      "stocks",
+      "etfs",
+      "crypto",
+      "technical"
+    ]
+  },
+  {
+    "term": "VWAP",
+    "definition": "Precio medio ponderado por volumen durante el intervalo definido.",
+    "aliases": [],
+    "example": "10 acciones a 10 € y 30 a 12 € dan un VWAP de 11,50 €: 460 € ÷ 40 acciones.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "VWAP anclado",
+    "definition": "Precio medio ponderado por volumen calculado desde una fecha o acontecimiento elegido, en lugar de reiniciarse necesariamente cada sesión.",
+    "aliases": [],
+    "example": "Anclarlo al día de unos resultados y anclarlo al inicio del mes da referencias distintas.",
+    "tracks": [
+      "technical"
+    ]
+  },
+  {
+    "term": "WACC",
+    "definition": "Coste medio ponderado de las fuentes de financiación, con pesos y tratamiento fiscal coherentes.",
+    "aliases": [],
+    "example": "",
+    "tracks": [
+      "stocks"
+    ]
+  },
+  {
+    "term": "Walk-forward",
+    "definition": "Ajustar reglas en un tramo de datos y comprobarlas en uno posterior, repitiendo el proceso sin mirar el futuro.",
+    "aliases": [],
+    "example": "Ajustas con años anteriores, pruebas en el siguiente y avanzas la ventana respetando las fechas.",
+    "tracks": []
+  },
+  {
+    "term": "Wallet",
+    "definition": "Herramienta para gestionar claves y autorizar operaciones con activos digitales. Los activos se registran en la red, no físicamente dentro de la aplicación.",
+    "aliases": [
+      "Cartera digital"
+    ],
+    "example": "Recuperar una wallet con una frase compatible puede restaurar acceso a sus claves. Proteger esa frase es esencial.",
+    "tracks": []
+  },
+  {
+    "term": "Warrant",
+    "definition": "Título que concede un derecho de compra o suscripción bajo condiciones determinadas.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  },
+  {
+    "term": "YTM",
+    "definition": "Rentabilidad a vencimiento: tasa calculada a partir del precio y de todos los pagos prometidos hasta la fecha final.",
+    "aliases": [],
+    "example": "",
+    "tracks": []
+  }
+]

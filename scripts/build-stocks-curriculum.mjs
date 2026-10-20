@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {parseAuthoring,compileRevision} from './course-authoring.mjs';
+import {refineStocks} from './stocks-editorial/refine.mjs';
+const root=new URL('../',import.meta.url);
+const outline=JSON.parse(await readFile(new URL('src/content/stocks-outline-v2.json',root),'utf8'));
+const records=parseAuthoring(await Promise.all(Array.from({length:5},(_,i)=>readFile(new URL('src/content/stocks-v2-authoring/part-'+(i+1)+'.txt',root),'utf8'))),outline.worlds.length*10);
+const sources=[['Investor.gov · acciones','https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks'],['SEC · órdenes de bolsa','https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders'],['IFRS · normas de información financiera','https://www.ifrs.org/issued-standards/'],['NYU Stern · valoración de empresas','https://pages.stern.nyu.edu/~adamodar/New_Home_Page/lectures/val.html'],['EIOPA · métricas de seguros','https://www.eiopa.europa.eu/qa-regulation/questions-and-answers-database/1429_en'],['FDA · desarrollo de medicamentos','https://www.fda.gov/patients/learn-about-drug-and-device-approvals/drug-development-process']].map(([title,url])=>({title,url}));
+const result=refineStocks(compileRevision({outline,records,start:450,sources}),records);
+await writeFile(new URL('src/content/stocks-curriculum-v2.json',root),JSON.stringify(result,null,2)+'\n');
+console.log('Acciones: '+result.lessons.length+' lecciones, '+result.exams.length+' exámenes, '+result.groups.length+' mundos.');

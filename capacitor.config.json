@@ -1,0 +1,36 @@
+{
+  "appId": "app.brote.inversion",
+  "appName": "Ochavo",
+  "webDir": "dist",
+  "backgroundColor": "#f2f5ed",
+  "server": {
+    "hostname": "localhost",
+    "androidScheme": "https",
+    "cleartext": false,
+    "errorPath": "actualizar-app.html"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#f2f5ed",
+    "minWebViewVersion": 123
+  },
+  "ios": {
+    "contentInset": "never",
+    "webContentsDebuggingEnabled": false,
+    "backgroundColor": "#f2f5ed",
+    "includePlugins": [
+      "@capacitor/app",
+      "@capacitor/network",
+      "@capacitor/preferences",
+      "@revenuecat/purchases-capacitor"
+    ]
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "DEFAULT",
+      "hidden": false
+    }
+  }
+}

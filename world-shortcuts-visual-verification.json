@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-08T20:15:44.215Z",
+  "origin": "https://ochavo.app/",
+  "verified": true,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "freeOfferVisible": true,
+  "paidOfferAbsentFromFirstStockWorld": true,
+  "paidShortcutVisibleInCrypto": true,
+  "paidShortcutSvgIcons": 2,
+  "paidShortcutHeight": 47,
+  "initialWorlds": 2,
+  "answersSubmitted": false,
+  "shortcutsActivated": false,
+  "gemsSpent": false,
+  "temporaryViewportReset": true,
+  "screenshots": [
+    "outputs/ochavo-saltos/salto-gratuito.jpg",
+    "outputs/ochavo-saltos/salto-200-gemas.jpg"
+  ]
+}

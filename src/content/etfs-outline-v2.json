@@ -1,0 +1,945 @@
+{
+  "revision": "etfs-2026-10",
+  "worlds": [
+    {
+      "number": 1,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Qué compras con un ETF",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un fondo de inversión"
+        },
+        {
+          "number": 2,
+          "title": "Qué representa una participación"
+        },
+        {
+          "number": 3,
+          "title": "Qué inversiones puede tener un fondo"
+        },
+        {
+          "number": 4,
+          "title": "Qué diferencia a un ETF de otros fondos"
+        },
+        {
+          "number": 5,
+          "title": "Comprar el ETF frente a comprar sus inversiones"
+        },
+        {
+          "number": 6,
+          "title": "Quién gestiona el dinero del fondo"
+        },
+        {
+          "number": 7,
+          "title": "Qué significa que un ETF cotice en bolsa"
+        },
+        {
+          "number": 8,
+          "title": "Qué puedes ganar y qué puedes perder"
+        },
+        {
+          "number": 9,
+          "title": "Qué puedes saber por su nombre y qué debes comprobar"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: explicar qué contiene un ETF"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Cómo ganas o pierdes con un ETF",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Cómo cambia el valor de sus inversiones"
+        },
+        {
+          "number": 2,
+          "title": "Dividendos, intereses y otras fuentes de ingresos"
+        },
+        {
+          "number": 3,
+          "title": "ETFs de acumulación y de distribución"
+        },
+        {
+          "number": 4,
+          "title": "Rentabilidad del precio y rentabilidad total"
+        },
+        {
+          "number": 5,
+          "title": "Cómo calcular tu ganancia o pérdida"
+        },
+        {
+          "number": 6,
+          "title": "Reinvertir los ingresos y el interés compuesto"
+        },
+        {
+          "number": 7,
+          "title": "Cómo afectan los costes al resultado"
+        },
+        {
+          "number": 8,
+          "title": "Cómo afecta la inflación a lo que ganas"
+        },
+        {
+          "number": 9,
+          "title": "Caídas, recuperación y horizonte de inversión"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar resultados incluyendo los repartos"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Entender el índice que sigue",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué representa un índice"
+        },
+        {
+          "number": 2,
+          "title": "Qué significa que un ETF siga un índice"
+        },
+        {
+          "number": 3,
+          "title": "Reglas para incluir y excluir empresas"
+        },
+        {
+          "number": 4,
+          "title": "Ponderación por capitalización bursátil"
+        },
+        {
+          "number": 5,
+          "title": "Ponderación por capitalización ajustada por acciones disponibles"
+        },
+        {
+          "number": 6,
+          "title": "Índices que dan el mismo peso a cada empresa"
+        },
+        {
+          "number": 7,
+          "title": "Otras formas de repartir los pesos"
+        },
+        {
+          "number": 8,
+          "title": "Revisiones y cambios de composición"
+        },
+        {
+          "number": 9,
+          "title": "Por qué dos índices del mismo mercado pueden ser distintos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: construir y actualizar un índice sencillo"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Leer la documentación del fondo",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Nombre, identificador ISIN y símbolo de cotización"
+        },
+        {
+          "number": 2,
+          "title": "Objetivo de inversión e índice de referencia"
+        },
+        {
+          "number": 3,
+          "title": "Principales posiciones y cartera completa"
+        },
+        {
+          "number": 4,
+          "title": "Distribución por sectores y países"
+        },
+        {
+          "number": 5,
+          "title": "Gestora, domicilio y estructura del fondo"
+        },
+        {
+          "number": 6,
+          "title": "Clases de participaciones y mercados de cotización"
+        },
+        {
+          "number": 7,
+          "title": "Documento de datos fundamentales"
+        },
+        {
+          "number": 8,
+          "title": "Folleto e informes del fondo"
+        },
+        {
+          "number": 9,
+          "title": "Fecha de los datos y fuentes para comprobarlos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: completar una ficha de análisis"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Cómo consigue seguir su objetivo",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Replicación física completa"
+        },
+        {
+          "number": 2,
+          "title": "Replicación física mediante una selección"
+        },
+        {
+          "number": 3,
+          "title": "Replicación sintética mediante contratos"
+        },
+        {
+          "number": 4,
+          "title": "Qué es una contraparte"
+        },
+        {
+          "number": 5,
+          "title": "Garantías y límites de protección"
+        },
+        {
+          "number": 6,
+          "title": "Por qué el ETF puede mantener efectivo"
+        },
+        {
+          "number": 7,
+          "title": "Cómo afectan los cambios del índice"
+        },
+        {
+          "number": 8,
+          "title": "Qué es el préstamo de valores"
+        },
+        {
+          "number": 9,
+          "title": "Ingresos y riesgos del préstamo de valores"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar métodos de réplica"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Costes y seguimiento del índice",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Gastos corrientes y TER"
+        },
+        {
+          "number": 2,
+          "title": "Qué costes no recoge el TER"
+        },
+        {
+          "number": 3,
+          "title": "Comisiones del bróker"
+        },
+        {
+          "number": 4,
+          "title": "Diferencial entre compra y venta"
+        },
+        {
+          "number": 5,
+          "title": "Costes de conversión de moneda"
+        },
+        {
+          "number": 6,
+          "title": "Costes de negociación dentro del fondo"
+        },
+        {
+          "number": 7,
+          "title": "Diferencia de seguimiento frente al índice"
+        },
+        {
+          "number": 8,
+          "title": "Regularidad del seguimiento: tracking error"
+        },
+        {
+          "number": 9,
+          "title": "Cómo se acumulan los costes con los años"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar el coste total de dos ETFs"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Comprar y vender participaciones",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Elegir la cotización que vas a utilizar"
+        },
+        {
+          "number": 2,
+          "title": "Precio de compra y precio de venta"
+        },
+        {
+          "number": 3,
+          "title": "Órdenes de mercado"
+        },
+        {
+          "number": 4,
+          "title": "Órdenes limitadas"
+        },
+        {
+          "number": 5,
+          "title": "Cantidad, importe y participaciones fraccionadas"
+        },
+        {
+          "number": 6,
+          "title": "Horarios del ETF y de sus inversiones"
+        },
+        {
+          "number": 7,
+          "title": "Órdenes parcialmente ejecutadas"
+        },
+        {
+          "number": 8,
+          "title": "Por qué el precio de pantalla puede cambiar"
+        },
+        {
+          "number": 9,
+          "title": "Qué revisar antes de confirmar una operación"
+        },
+        {
+          "number": 10,
+          "title": "Simulación: comprar un ETF con distintas órdenes"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "section": "Entender el fondo y cómo se utiliza",
+      "title": "Precio, valor y liquidez",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es el valor liquidativo por participación"
+        },
+        {
+          "number": 2,
+          "title": "Por qué el precio puede diferir del valor liquidativo"
+        },
+        {
+          "number": 3,
+          "title": "Primas y descuentos"
+        },
+        {
+          "number": 4,
+          "title": "Cómo se crean nuevas participaciones"
+        },
+        {
+          "number": 5,
+          "title": "Cómo se retiran participaciones"
+        },
+        {
+          "number": 6,
+          "title": "Qué hacen los participantes autorizados"
+        },
+        {
+          "number": 7,
+          "title": "Qué hacen los creadores de mercado"
+        },
+        {
+          "number": 8,
+          "title": "Liquidez del ETF y liquidez de sus inversiones"
+        },
+        {
+          "number": 9,
+          "title": "Qué puede cambiar en un mercado bajo tensión"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: interpretar una diferencia entre precio y valor"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "section": "Exposiciones y riesgos",
+      "title": "ETFs de acciones",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué exposición ofrece un ETF de acciones"
+        },
+        {
+          "number": 2,
+          "title": "Mercados desarrollados y mercados emergentes"
+        },
+        {
+          "number": 3,
+          "title": "ETFs globales y ETFs de un solo país"
+        },
+        {
+          "number": 4,
+          "title": "Empresas grandes, medianas y pequeñas"
+        },
+        {
+          "number": 5,
+          "title": "ETFs sectoriales"
+        },
+        {
+          "number": 6,
+          "title": "Concentración en las mayores posiciones"
+        },
+        {
+          "number": 7,
+          "title": "País de cotización frente a origen de los ingresos"
+        },
+        {
+          "number": 8,
+          "title": "Solapamiento entre ETFs de acciones"
+        },
+        {
+          "number": 9,
+          "title": "Qué puede quedar fuera de un índice amplio"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos ETFs de renta variable"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "section": "Exposiciones y riesgos",
+      "title": "Entender los bonos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un bono y qué pagos promete"
+        },
+        {
+          "number": 2,
+          "title": "Cupón frente a rentabilidad"
+        },
+        {
+          "number": 3,
+          "title": "Por qué cambia el precio de un bono"
+        },
+        {
+          "number": 4,
+          "title": "Vencimiento de un bono y duración de un fondo"
+        },
+        {
+          "number": 5,
+          "title": "Duración: sensibilidad a los tipos de interés"
+        },
+        {
+          "number": 6,
+          "title": "Convexidad: límites de una estimación lineal"
+        },
+        {
+          "number": 7,
+          "title": "Riesgo de impago"
+        },
+        {
+          "number": 8,
+          "title": "Diferenciales de crédito"
+        },
+        {
+          "number": 9,
+          "title": "Rentabilidad de los bonos frente a rentabilidad futura del ETF"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: estimar el efecto de un cambio de tipos"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "section": "Exposiciones y riesgos",
+      "title": "Tipos de ETFs de bonos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Bonos públicos y bonos de empresas"
+        },
+        {
+          "number": 2,
+          "title": "Bonos de alta calidad crediticia"
+        },
+        {
+          "number": 3,
+          "title": "Bonos de alto rendimiento"
+        },
+        {
+          "number": 4,
+          "title": "Bonos de mercados emergentes"
+        },
+        {
+          "number": 5,
+          "title": "Bonos ligados a la inflación"
+        },
+        {
+          "number": 6,
+          "title": "Bonos de tipo variable"
+        },
+        {
+          "number": 7,
+          "title": "Bonos de corto, medio y largo plazo"
+        },
+        {
+          "number": 8,
+          "title": "ETFs de vencimiento definido"
+        },
+        {
+          "number": 9,
+          "title": "Cómo construir una escalera de vencimientos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar fondos con riesgos distintos"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "section": "Exposiciones y riesgos",
+      "title": "Monedas y cobertura de divisa",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Moneda de cotización"
+        },
+        {
+          "number": 2,
+          "title": "Moneda base del fondo"
+        },
+        {
+          "number": 3,
+          "title": "Monedas de las inversiones"
+        },
+        {
+          "number": 4,
+          "title": "Por qué comprar en euros no elimina el riesgo de divisa"
+        },
+        {
+          "number": 5,
+          "title": "Cómo afecta el cambio de moneda a la rentabilidad"
+        },
+        {
+          "number": 6,
+          "title": "Qué hace una clase con cobertura de divisa"
+        },
+        {
+          "number": 7,
+          "title": "Costes y límites de la cobertura"
+        },
+        {
+          "number": 8,
+          "title": "Cobertura completa y cobertura parcial"
+        },
+        {
+          "number": 9,
+          "title": "Diferencias entre cubrir acciones y cubrir bonos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: separar el resultado del activo y de la moneda"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "section": "Exposiciones y riesgos",
+      "title": "ETFs de factores",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un factor de inversión"
+        },
+        {
+          "number": 2,
+          "title": "Seleccionar empresas por valoración"
+        },
+        {
+          "number": 3,
+          "title": "Seleccionar empresas por calidad"
+        },
+        {
+          "number": 4,
+          "title": "Invertir según la tendencia de los precios"
+        },
+        {
+          "number": 5,
+          "title": "Seleccionar empresas de menor tamaño"
+        },
+        {
+          "number": 6,
+          "title": "Estrategias de baja volatilidad"
+        },
+        {
+          "number": 7,
+          "title": "Estrategias basadas en dividendos"
+        },
+        {
+          "number": 8,
+          "title": "Combinar varios factores"
+        },
+        {
+          "number": 9,
+          "title": "Periodos desfavorables y riesgo de abandonar la estrategia"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: interpretar las reglas de un ETF de factores"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "section": "Exposiciones y riesgos",
+      "title": "Temas y sostenibilidad",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué diferencia un tema de un sector"
+        },
+        {
+          "number": 2,
+          "title": "Cómo se decide qué empresas pertenecen a un tema"
+        },
+        {
+          "number": 3,
+          "title": "Exposición real frente a nombres atractivos"
+        },
+        {
+          "number": 4,
+          "title": "Concentración y solapamiento con otros fondos"
+        },
+        {
+          "number": 5,
+          "title": "Crecimiento del tema frente a rentabilidad de la inversión"
+        },
+        {
+          "number": 6,
+          "title": "Cómo influye el precio que pagas"
+        },
+        {
+          "number": 7,
+          "title": "Exclusiones y filtros de sostenibilidad"
+        },
+        {
+          "number": 8,
+          "title": "Selección por puntuaciones ambientales, sociales y de gobierno"
+        },
+        {
+          "number": 9,
+          "title": "Limitaciones de los datos y cambios de metodología"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comprobar qué promete y qué contiene un ETF"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "section": "Construir y revisar una cartera",
+      "title": "Comparar ETFs con criterio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Definir qué exposición buscas"
+        },
+        {
+          "number": 2,
+          "title": "Comparar los índices de referencia"
+        },
+        {
+          "number": 3,
+          "title": "Comparar posiciones y concentración"
+        },
+        {
+          "number": 4,
+          "title": "Comparar réplica y riesgos operativos"
+        },
+        {
+          "number": 5,
+          "title": "Comparar costes y seguimiento"
+        },
+        {
+          "number": 6,
+          "title": "Comparar acumulación y distribución"
+        },
+        {
+          "number": 7,
+          "title": "Comparar monedas y cobertura"
+        },
+        {
+          "number": 8,
+          "title": "Comparar tamaño, antigüedad y liquidez"
+        },
+        {
+          "number": 9,
+          "title": "Cómo pueden influir el domicilio y la fiscalidad"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: justificar una elección entre tres ETFs"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "section": "Construir y revisar una cartera",
+      "title": "Construir una cartera",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Definir objetivos y horizonte de inversión"
+        },
+        {
+          "number": 2,
+          "title": "Distinguir capacidad y tolerancia al riesgo"
+        },
+        {
+          "number": 3,
+          "title": "Repartir entre acciones, bonos y liquidez"
+        },
+        {
+          "number": 4,
+          "title": "Elegir el papel de cada ETF"
+        },
+        {
+          "number": 5,
+          "title": "Combinar exposición global y posiciones específicas"
+        },
+        {
+          "number": 6,
+          "title": "Detectar inversiones repetidas"
+        },
+        {
+          "number": 7,
+          "title": "Medir concentración por sector, país y moneda"
+        },
+        {
+          "number": 8,
+          "title": "Entender cómo se relacionan los riesgos"
+        },
+        {
+          "number": 9,
+          "title": "Mantener una cartera que puedas gestionar"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: diseñar una cartera con funciones claras"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "section": "Construir y revisar una cartera",
+      "title": "Aportaciones y reequilibrio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Invertir una cantidad disponible o hacerlo por etapas"
+        },
+        {
+          "number": 2,
+          "title": "Qué consiguen las aportaciones periódicas"
+        },
+        {
+          "number": 3,
+          "title": "Qué riesgos no eliminan las aportaciones"
+        },
+        {
+          "number": 4,
+          "title": "Cómo afectan los costes a las compras pequeñas"
+        },
+        {
+          "number": 5,
+          "title": "Por qué cambian los pesos de la cartera"
+        },
+        {
+          "number": 6,
+          "title": "Reequilibrar en fechas determinadas"
+        },
+        {
+          "number": 7,
+          "title": "Reequilibrar mediante bandas"
+        },
+        {
+          "number": 8,
+          "title": "Utilizar aportaciones para corregir los pesos"
+        },
+        {
+          "number": 9,
+          "title": "Costes e impuestos de vender para reequilibrar"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: actualizar una cartera con nuevas aportaciones"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "section": "Construir y revisar una cartera",
+      "title": "Medir resultados y preparar retiradas",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Rentabilidad de la cartera frente a dinero aportado"
+        },
+        {
+          "number": 2,
+          "title": "Rentabilidad ponderada por tiempo"
+        },
+        {
+          "number": 3,
+          "title": "Rentabilidad ponderada por dinero"
+        },
+        {
+          "number": 4,
+          "title": "Elegir una referencia de comparación adecuada"
+        },
+        {
+          "number": 5,
+          "title": "Qué inversiones explican el resultado"
+        },
+        {
+          "number": 6,
+          "title": "Volatilidad y caída desde máximos"
+        },
+        {
+          "number": 7,
+          "title": "Cómo cambia el riesgo al empezar a retirar dinero"
+        },
+        {
+          "number": 8,
+          "title": "Riesgo de secuencia de rentabilidades"
+        },
+        {
+          "number": 9,
+          "title": "Preparar liquidez para gastos previstos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos planes de aportaciones y retiradas"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "section": "Estrategias y seguimiento",
+      "title": "Estrategias que requieren más cuidado",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué cambia cuando la gestión es activa"
+        },
+        {
+          "number": 2,
+          "title": "Cómo evaluar una estrategia activa"
+        },
+        {
+          "number": 3,
+          "title": "Qué son los derivados y para qué se utilizan"
+        },
+        {
+          "number": 4,
+          "title": "Cómo funciona un ETF apalancado"
+        },
+        {
+          "number": 5,
+          "title": "Reinicio diario y efecto de la trayectoria de precios"
+        },
+        {
+          "number": 6,
+          "title": "ETFs inversos y sus riesgos"
+        },
+        {
+          "number": 7,
+          "title": "Opciones de compra y opciones de venta"
+        },
+        {
+          "number": 8,
+          "title": "ETFs que venden opciones sobre su cartera"
+        },
+        {
+          "number": 9,
+          "title": "ETFs con protección parcial y condiciones específicas"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar estrategias sin confundir ingresos y rentabilidad"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "section": "Estrategias y seguimiento",
+      "title": "Revisar tu cartera y los cambios del fondo",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué información conviene revisar periódicamente"
+        },
+        {
+          "number": 2,
+          "title": "Cambios de índice o de política de inversión"
+        },
+        {
+          "number": 3,
+          "title": "Cambios de costes y de método de réplica"
+        },
+        {
+          "number": 4,
+          "title": "Cómo interpretar entradas, salidas y variaciones de patrimonio"
+        },
+        {
+          "number": 5,
+          "title": "Fusiones entre fondos"
+        },
+        {
+          "number": 6,
+          "title": "Cierre y liquidación de un ETF"
+        },
+        {
+          "number": 7,
+          "title": "Suspensiones y problemas de negociación"
+        },
+        {
+          "number": 8,
+          "title": "Diferencias entre ETFs, ETNs y ETCs"
+        },
+        {
+          "number": 9,
+          "title": "Documentar qué te haría mantener, sustituir o vender un fondo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: revisar una cartera y decidir qué investigar después"
+        }
+      ]
+    }
+  ]
+}

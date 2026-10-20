@@ -1,0 +1,19 @@
+OCHAVO 0.22.0 — PUBLICACIÓN DE ANÁLISIS TÉCNICO
+9 de octubre de 2026
+
+Publicado y comprobado en https://ochavo.app/.
+
+Contenido: cuarto camino con 300 puntos, 30 mundos y 30 exámenes. Mundo 2 reescrito; mundos 3–30 revisados con casos específicos y dinámicas variadas. Se mantiene el primer mundo aceptado, la organización visual de Aprende y la carga de dos mundos por bloque. Hay 1.200 ejercicios; 733 usan gráficos y 715 usan velas japonesas. Cada reto conserva una explicación previa.
+
+Correcciones: barras OHLC diferentes de las velas, geometría de escala logarítmica, periodos y sesiones explícitos, identificación de la vela en curso, forma del hombre colgado, referencias visibles, cálculos sin mostrar directamente la respuesta y ejemplos distintos de la práctica. Se mantienen la tabla de datos y la calculadora desplegable.
+
+Integración: rangos nuevos 1450–1749 y mundos 145–174. Los 1.450 puntos, 145 exámenes y 7.789 entradas de catálogo anteriores conservan sus datos. Las cuentas y sus saldos no se migran ni reinician. La copia independiente no aporta usuarios, accesos libres ni progreso ficticio. Sincronización con esquema 5; conserva la lectura de esquemas anteriores e impide sobrescrituras desde clientes antiguos.
+
+Validación: 656 pruebas de la app; 42 comprobaciones de contenido e integración repetidas tras el último ajuste editorial; 126 pruebas de reglas de Firestore; 460 cálculos independientes y 2.007 figuras del recorrido avanzado. Comprobados 30 archivos públicos de mundo y el HTML publicado contra la compilación local. Interacciones revisadas en navegador, incluidos velas, respuestas y calculadora en tema claro y oscuro.
+
+Publicación: catálogo, reglas y Hosting del proyecto brote-62d26 actualizados. El dominio público sirve exactamente los recursos de esta versión.
+
+Android: APK y AAB 0.22.0, código 44, compilados, revisados y firmados con las claves existentes. No se ha realizado una nueva subida a Google Play en esta tarea ni probado en un teléfono físico.
+iOS: proyecto y recursos sincronizados, comprobación estática y paquete 0.22.0 para Mac preparados. No se ha compilado, firmado ni probado un IPA en este equipo Windows.
+
+Evidencia en work/: technical-production-tests-final.log, technical-final-content-tests.log, technical-backend-rules-test.log, technical-trial-final.log, technical-catalog-publication.log, technical-rules-publication.log, technical-hosting-publication.log, technical-publication-verification.json, technical-android-release.log y technical-ios-sync.log.

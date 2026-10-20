@@ -1,0 +1,602 @@
+[
+  {
+    "lessonId": 0,
+    "step": 3,
+    "activity": {
+      "kind": "intruder",
+      "title": "Una afirmación no encaja",
+      "prompt": "Nébula puede financiarse vendiendo acciones nuevas o mediante un bono. Dos tarjetas describen bien esas relaciones; una añade un derecho que no existe.",
+      "instruction": "Toca la tarjeta que no encaja.",
+      "hideFigure": true,
+      "options": [
+        "Comprar acciones te convierte en propietario de una parte de Nébula.",
+        "Comprar el bono significa prestar dinero con condiciones acordadas.",
+        "Comprar el bono te convierte en propietario de la máquina."
+      ],
+      "answer": 2,
+      "explanation": "El bono recoge un préstamo. Financiar una máquina mediante ese préstamo no te convierte en su propietario.",
+      "hint": "Busca la tarjeta que confunde prestar con ser propietario."
+    }
+  },
+  {
+    "lessonId": 101,
+    "step": 1,
+    "activity": {
+      "kind": "intruder",
+      "title": "El nombre no explica toda la cartera",
+      "prompt": "Un fondo reúne dinero y lo invierte siguiendo sus condiciones. Revisa qué se puede afirmar sobre lo que contiene.",
+      "instruction": "Toca la afirmación que no se puede dar por válida.",
+      "hideFigure": true,
+      "options": [
+        "Para saber en qué invierte hay que revisar sus inversiones y sus reglas.",
+        "Todos los fondos tienen exactamente las mismas inversiones.",
+        "Un fondo puede concentrar su inversión en una actividad."
+      ],
+      "answer": 1,
+      "explanation": "El formato fondo no obliga a tener una cartera idéntica a la de otros fondos. Su contenido y sus reglas son lo que permite compararlos.",
+      "hint": "Piensa si compartir el formato significa compartir todas las inversiones."
+    }
+  },
+  {
+    "lessonId": 150,
+    "step": 5,
+    "activity": {
+      "kind": "intruder",
+      "title": "Qué permite realmente LUZ",
+      "prompt": "El token ficticio LUZ permite votar el color de las entradas. Sus condiciones no conceden propiedad ni reparto de ingresos.",
+      "instruction": "Toca la afirmación que añade un derecho no descrito.",
+      "hideFigure": true,
+      "options": [
+        "Permite participar en la elección del color.",
+        "El voto tiene el alcance que describen las condiciones.",
+        "Permite cobrar una parte de todos los ingresos del festival."
+      ],
+      "answer": 2,
+      "explanation": "El derecho a elegir un color no concede una participación en los ingresos. Hay que leer los derechos que sí están descritos.",
+      "hint": "Distingue votar una cuestión de recibir dinero."
+    }
+  },
+  {
+    "lessonId": 1,
+    "step": 3,
+    "activity": {
+      "kind": "repair",
+      "title": "Repara el cálculo de capitalización",
+      "prompt": "Nébula tiene 100 acciones a 95 € cada una. Alguien escribe: «La capitalización se calcula dividiendo el precio de una acción por el número de acciones».",
+      "instruction": "Sustituye la palabra que convierte la fórmula en incorrecta.",
+      "hideFigure": true,
+      "rows": [
+        {
+          "label": "La capitalización se calcula dividiendo el precio de una acción por el número de acciones.",
+          "wrongWord": "dividiendo",
+          "options": [
+            "multiplicando",
+            "restando",
+            "comparando"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "La fórmula correcta multiplica el precio de una acción por el número de acciones: 95 × 100 = 9.500 €.",
+      "hint": "Quieres calcular lo que valen las 100 acciones juntas."
+    }
+  },
+  {
+    "lessonId": 103,
+    "step": 1,
+    "activity": {
+      "kind": "repair",
+      "title": "El valor de cada parte",
+      "prompt": "En este ejemplo el fondo tiene inversiones valoradas en 12.000 €, no tiene deudas y está dividido en 1.000 participaciones. Lee esta frase: «Para obtener el valor de cada participación multiplicamos 12.000 por 1.000».",
+      "instruction": "Elige qué palabra debe sustituir a «multiplicamos».",
+      "hideFigure": true,
+      "rows": [
+        {
+          "label": "Para obtener el valor de cada participación multiplicamos 12.000 por 1.000.",
+          "wrongWord": "multiplicamos",
+          "options": [
+            "dividimos",
+            "sumamos",
+            "restamos"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Se divide el valor del fondo entre sus partes: 12.000 ÷ 1.000 = 12 € por participación.",
+      "hint": "Repartes un valor total entre 1.000 partes iguales."
+    }
+  },
+  {
+    "lessonId": 151,
+    "step": 3,
+    "activity": {
+      "kind": "repair",
+      "title": "Copias y entradas únicas",
+      "prompt": "Un registro contiene 240 entradas únicas y se copia completo en cinco máquinas. La ficha dice: «Las cinco copias representan 1.200 entradas únicas».",
+      "instruction": "Corrige la cantidad; copiar el registro no crea nuevas entradas.",
+      "hideFigure": true,
+      "rows": [
+        {
+          "label": "Las cinco copias representan 1.200 entradas únicas.",
+          "wrongWord": "1.200",
+          "options": [
+            "240",
+            "48",
+            "245"
+          ],
+          "answer": 0
+        }
+      ],
+      "explanation": "Las cinco máquinas conservan información sobre las mismas 240 entradas. Hay más copias de los datos, no más derechos.",
+      "hint": "Cuenta entradas distintas, no copias del archivo."
+    }
+  },
+  {
+    "lessonId": 3,
+    "step": 3,
+    "activity": {
+      "kind": "hotspot",
+      "title": "Señala la base de la recuperación",
+      "prompt": "Una inversión baja de 120 € a 90 €. Quieres calcular qué subida necesita para volver a 120 €. El gráfico muestra el valor inicial, el valor después de la caída y el objetivo.",
+      "instruction": "Toca la barra cuyo valor debes utilizar como base al calcular la subida porcentual.",
+      "hideFigure": true,
+      "options": [
+        "Antes de caer",
+        "Después de caer",
+        "Objetivo"
+      ],
+      "values": [
+        120,
+        90,
+        120
+      ],
+      "axis": "Valor de la inversión, en euros",
+      "unit": "€",
+      "answer": 1,
+      "explanation": "La subida se calcula desde los 90 € que quedan. Recuperar 30 € sobre 90 € exige aproximadamente un 33,33 %.",
+      "hint": "Un porcentaje de subida se aplica al valor que tienes ahora."
+    }
+  },
+  {
+    "lessonId": 111,
+    "step": 3,
+    "activity": {
+      "kind": "hotspot",
+      "title": "El tamaño determina el peso",
+      "prompt": "Un índice de prueba incluye tres empresas: A vale 60 millones de euros; B, 30; C, 10. Se ponderan por capitalización, sin otros ajustes.",
+      "instruction": "Toca la barra de la empresa que tendrá un peso del 60 %.",
+      "hideFigure": true,
+      "options": [
+        "Empresa A",
+        "Empresa B",
+        "Empresa C"
+      ],
+      "values": [
+        60,
+        30,
+        10
+      ],
+      "axis": "Capitalización de cada empresa, en millones de euros",
+      "unit": "M€",
+      "answer": 0,
+      "explanation": "El total es 100 millones. A representa 60 de 100: su peso es el 60 %. Esta regla utiliza el valor de mercado, no un reparto igual.",
+      "hint": "Divide el tamaño de cada empresa entre el tamaño total."
+    }
+  },
+  {
+    "lessonId": 155,
+    "step": 3,
+    "activity": {
+      "kind": "hotspot",
+      "title": "Qué saldo puede usar la siguiente orden",
+      "prompt": "En la maqueta hay 19 FAR y se acepta una transferencia de 12 FAR. No hay comisiones ni otros movimientos. El gráfico separa el saldo inicial, lo enviado y lo que queda.",
+      "instruction": "Señala la barra que indica el saldo disponible para una orden posterior.",
+      "hideFigure": true,
+      "options": [
+        "Saldo inicial",
+        "Enviado",
+        "Saldo posterior"
+      ],
+      "values": [
+        19,
+        12,
+        7
+      ],
+      "axis": "Unidades FAR en cada parte de la operación",
+      "unit": "FAR",
+      "answer": 2,
+      "explanation": "La operación aceptada cambia el punto de partida: quedan 19 − 12 = 7 FAR disponibles. La siguiente orden debe utilizar ese estado.",
+      "hint": "La siguiente operación parte del saldo después de la transferencia."
+    }
+  },
+  {
+    "lessonId": 8,
+    "step": 3,
+    "activity": {
+      "kind": "differences",
+      "title": "Qué movimientos han cambiado",
+      "prompt": "Estas dos versiones describen un mes ficticio de Nébula. Se muestran todos los movimientos de caja: no hay otros cobros ni pagos.",
+      "instruction": "Marca todas las filas que cambian entre A y B. No marques las que siguen iguales.",
+      "hideFigure": true,
+      "options": [
+        "Caja inicial",
+        "Cobros del mes",
+        "Pagos del mes"
+      ],
+      "before": [
+        "8.000 €",
+        "13.000 €",
+        "9.500 €"
+      ],
+      "after": [
+        "8.000 €",
+        "15.000 €",
+        "11.000 €"
+      ],
+      "answers": [
+        1,
+        2
+      ],
+      "explanation": "Cambian los cobros y los pagos. La caja inicial es la misma. A termina con 11.500 € y B con 12.000 €: debes revisar ambos movimientos para explicar la diferencia.",
+      "hint": "Compara cada fila con la misma fila de la otra versión."
+    }
+  },
+  {
+    "lessonId": 104,
+    "step": 5,
+    "activity": {
+      "kind": "differences",
+      "title": "Dos versiones de una operación",
+      "prompt": "Estas fichas describen compras ficticias del mismo ETF. El precio por participación y la cantidad comprada se indican por separado; no hay otros costes.",
+      "instruction": "Marca las filas que son distintas entre las dos operaciones.",
+      "hideFigure": true,
+      "options": [
+        "ETF",
+        "Precio por participación",
+        "Participaciones compradas"
+      ],
+      "before": [
+        "ETF de prueba A",
+        "10 €",
+        "100"
+      ],
+      "after": [
+        "ETF de prueba A",
+        "11 €",
+        "100"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Solo cambia el precio por participación. Al comprar 100 partes, el importe pasa de 1.000 a 1.100 €. El nombre y la cantidad comprada siguen iguales.",
+      "hint": "Compara producto, precio y cantidad por separado."
+    }
+  },
+  {
+    "lessonId": 157,
+    "step": 5,
+    "activity": {
+      "kind": "differences",
+      "title": "Más recompensa no es el mismo resultado",
+      "prompt": "Dos versiones de una simulación empiezan con 300 unidades comprometidas. Se muestran todas las recompensas y penalizaciones, sin otros cambios.",
+      "instruction": "Marca todas las filas que han cambiado.",
+      "hideFigure": true,
+      "options": [
+        "Unidades iniciales",
+        "Recompensa",
+        "Penalización"
+      ],
+      "before": [
+        "300 unidades",
+        "12 unidades",
+        "5 unidades"
+      ],
+      "after": [
+        "300 unidades",
+        "15 unidades",
+        "5 unidades"
+      ],
+      "answers": [
+        1
+      ],
+      "explanation": "Solo cambia la recompensa. A termina con 307 unidades; B, con 310. Son unidades, no una ganancia monetaria garantizada: para eso también haría falta conocer su precio.",
+      "hint": "Revisa por separado el punto de partida, lo que se añade y lo que se resta."
+    }
+  },
+  {
+    "lessonId": 6,
+    "step": 1,
+    "activity": {
+      "kind": "sequence",
+      "title": "Cada año parte de lo acumulado",
+      "prompt": "Esta simulación comienza con 1.000 € y aplica un 10 % de crecimiento al saldo del año anterior. Todo permanece invertido y no hay costes ni impuestos. Es una regla de prueba, no una previsión.",
+      "instruction": "Completa el valor al terminar el tercer año.",
+      "hideFigure": true,
+      "sequence": [
+        "Inicio: 1.000 €",
+        "Año 1: 1.100 €",
+        "Año 2: 1.210 €",
+        "?"
+      ],
+      "options": [
+        "Año 3: 1.300 €",
+        "Año 3: 1.331 €",
+        "Año 3: 1.210 €"
+      ],
+      "answer": 1,
+      "explanation": "El tercer año se aplica el 10 % a 1.210 €: 1.210 × 1,10 = 1.331 €. El porcentaje trabaja sobre el saldo acumulado.",
+      "hint": "Calcula el 10 % del valor del segundo año y añádelo a ese valor."
+    }
+  },
+  {
+    "lessonId": 107,
+    "step": 5,
+    "activity": {
+      "kind": "sequence",
+      "title": "Reinvertir deja crecer el saldo",
+      "prompt": "Para aislar el efecto de reinvertir, simulamos un saldo de 100 € que aumenta un 10 % al final de cada año. Lo ganado permanece invertido y el porcentaje se aplica al nuevo saldo. No hay aportaciones, retiradas, gastos ni impuestos; la tasa constante no predice la realidad.",
+      "instruction": "Completa el saldo del tercer año siguiendo esa misma regla.",
+      "hideFigure": true,
+      "sequence": [
+        "Inicio: 100 €",
+        "Año 1: 110 €",
+        "Año 2: 121 €",
+        "?"
+      ],
+      "options": [
+        "Año 3: 130 €",
+        "Año 3: 133,10 €",
+        "Año 3: 121 €"
+      ],
+      "answer": 1,
+      "explanation": "Se aplica el 10 % a 121 € y se conserva lo ganado: 121 × 1,10 = 133,10 €. Esta simulación muestra el mecanismo de reinvertir, sin garantizar un resultado futuro.",
+      "hint": "El último incremento se calcula sobre 121 €, no sobre los 100 € iniciales."
+    }
+  },
+  {
+    "lessonId": 154,
+    "step": 5,
+    "activity": {
+      "kind": "sequence",
+      "title": "Continúa el enlace entre bloques",
+      "prompt": "En esta maqueta cada bloque guarda una referencia a la huella del anterior. A tiene huella H1; B, H2; C, H3; D, H4. Son etiquetas de prueba para entender el enlace.",
+      "instruction": "Elige la ficha de C que mantiene la continuidad del historial.",
+      "hideFigure": true,
+      "sequence": [
+        "A: huella H1",
+        "B: referencia H1, huella H2",
+        "?",
+        "D: referencia H3, huella H4"
+      ],
+      "options": [
+        "C: referencia H1, huella H3",
+        "C: referencia H2, huella H3",
+        "C: referencia H4, huella H3"
+      ],
+      "answer": 1,
+      "explanation": "C debe referirse a la huella de B, H2. D se refiere después a la huella de C, H3. Los enlaces hacen comprobable la continuidad; no demuestran la verdad de un dato externo.",
+      "hint": "Cada referencia apunta al bloque inmediatamente anterior."
+    }
+  },
+  {
+    "lessonId": 3,
+    "step": 5,
+    "activity": {
+      "kind": "interval",
+      "title": "Marca tu tiempo disponible",
+      "prompt": "Una persona necesitará el dinero dentro de tres años y estudia una inversión hoy. Su horizonte es el tiempo desde ahora hasta esa necesidad. Eso no garantiza que la inversión recupere una caída dentro del plazo.",
+      "instruction": "Selecciona el inicio y el final del intervalo que representa su horizonte.",
+      "hideFigure": true,
+      "options": [
+        "Hoy",
+        "1 año",
+        "3 años",
+        "5 años"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "El horizonte va desde hoy hasta dentro de tres años. La decisión también debe considerar el riesgo y la facilidad para vender; un plazo por sí solo no asegura recuperar el dinero.",
+      "hint": "Empieza hoy y termina en la fecha en que necesita usar el dinero."
+    }
+  },
+  {
+    "lessonId": 108,
+    "step": 5,
+    "activity": {
+      "kind": "interval",
+      "title": "Del presente a la fecha de uso",
+      "prompt": "Empiezas hoy y necesitarás este dinero dentro de 24 meses. Para valorar una inversión con posibles caídas, primero delimitas el tiempo que puedes mantenerla antes de ese gasto.",
+      "instruction": "Marca el intervalo completo, desde ahora hasta la fecha de necesidad.",
+      "hideFigure": true,
+      "options": [
+        "Hoy",
+        "12 meses",
+        "24 meses",
+        "36 meses"
+      ],
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Tu horizonte termina a los 24 meses. Debes comprobar si el riesgo y la posibilidad de vender encajan con esa fecha; el plazo no garantiza un resultado positivo.",
+      "hint": "El final depende de cuándo necesitas el dinero, no de cuándo esperas que suba el precio."
+    }
+  },
+  {
+    "lessonId": 166,
+    "step": 7,
+    "activity": {
+      "kind": "interval",
+      "title": "Del bloque de inclusión al observado",
+      "prompt": "En un historial de prueba la operación aparece por primera vez en el bloque 100. La consulta actual alcanza el bloque 103. Vamos a marcar el tramo observado, incluyendo sus dos extremos. Este tramo no establece por sí solo una regla universal de seguridad.",
+      "instruction": "Elige el primer y el último bloque del intervalo observado.",
+      "hideFigure": true,
+      "options": [
+        "Bloque 99",
+        "Bloque 100",
+        "Bloque 102",
+        "Bloque 103"
+      ],
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "El tramo va del bloque 100 al 103. La interpretación de las confirmaciones depende de las reglas de la red y del riesgo que se esté evaluando.",
+      "hint": "Empieza en el bloque donde se incluyó la operación y termina en el último que muestra la consulta."
+    }
+  },
+  {
+    "lessonId": 4,
+    "step": 7,
+    "activity": {
+      "kind": "allocate",
+      "title": "Construye el reparto del caso",
+      "prompt": "Quieres que una cartera ficticia tenga la mitad en Nébula y la mitad en una empresa de alimentos. Dispones de diez fichas iguales; cada ficha representa el 10 % de la cartera.",
+      "instruction": "Reparte las diez fichas para cumplir los dos pesos indicados.",
+      "hideFigure": true,
+      "labels": [
+        "Nébula",
+        "Empresa de alimentos"
+      ],
+      "budget": 10,
+      "tokenUnit": "10 % de la cartera",
+      "answer": [
+        5,
+        5
+      ],
+      "explanation": "Cinco fichas en cada empresa representan un 50 % y un 50 %. El peso determina cuánto influye cada inversión en el resultado conjunto.",
+      "hint": "La mitad de las diez fichas debe ir a cada inversión."
+    }
+  },
+  {
+    "lessonId": 109,
+    "step": 3,
+    "activity": {
+      "kind": "allocate",
+      "title": "Representa lo que hay dentro del fondo",
+      "prompt": "En un fondo de prueba, una empresa representa el 45 % del valor de la cartera; las demás inversiones suman el 55 %. Usaremos veinte fichas iguales, cada una equivalente al 5 % del valor.",
+      "instruction": "Reparte todas las fichas para representar esos pesos, sin cambiarlos.",
+      "hideFigure": true,
+      "labels": [
+        "Empresa principal",
+        "Resto de inversiones"
+      ],
+      "budget": 20,
+      "tokenUnit": "5 % del valor",
+      "answer": [
+        9,
+        11
+      ],
+      "explanation": "Nueve fichas representan el 45 % y once, el 55 %. Un fondo puede tener muchas inversiones y seguir dependiendo mucho de una empresa.",
+      "hint": "Divide cada porcentaje entre el 5 % que representa una ficha."
+    }
+  },
+  {
+    "lessonId": 152,
+    "step": 1,
+    "activity": {
+      "kind": "allocate",
+      "title": "Qué se envía y qué queda",
+      "prompt": "En la maqueta tienes 17 FAR y propones enviar 6 FAR. No hay comisiones ni otros movimientos. Cada ficha representa una unidad.",
+      "instruction": "Separa las 17 fichas entre lo que envías y el saldo que conservas.",
+      "hideFigure": true,
+      "labels": [
+        "Se envía",
+        "Se conserva"
+      ],
+      "budget": 17,
+      "tokenUnit": "1 FAR",
+      "answer": [
+        6,
+        11
+      ],
+      "explanation": "Se envían 6 FAR y quedan 11. La operación debe respetar el saldo disponible y las condiciones de autorización.",
+      "hint": "La suma de lo enviado y lo que queda debe seguir siendo 17."
+    }
+  },
+  {
+    "lessonId": 286,
+    "step": 3,
+    "activity": {
+      "kind": "allocate",
+      "title": "Separa valor de activos y deuda",
+      "prompt": "En un ejemplo inmobiliario los activos valen 100 millones de euros y hay 40 millones de deuda. Ignoramos otros activos y obligaciones. Quedan 60 millones para los propietarios. Cada ficha representa 5 millones.",
+      "instruction": "Representa los 100 millones separando la deuda de la parte de los propietarios.",
+      "hideFigure": true,
+      "labels": [
+        "Deuda",
+        "Parte de los propietarios"
+      ],
+      "budget": 20,
+      "tokenUnit": "5 millones de euros",
+      "answer": [
+        8,
+        12
+      ],
+      "explanation": "Ocho fichas son los 40 millones de deuda y doce, los 60 millones restantes. El valor de los activos no pertenece íntegramente a los accionistas.",
+      "hint": "Convierte 40 y 60 millones en grupos de 5 millones."
+    }
+  },
+  {
+    "lessonId": 384,
+    "step": 1,
+    "activity": {
+      "kind": "hotspot",
+      "title": "Señala el máximo previo a la caída",
+      "prompt": "Este ETF de prueba pasa por valores de 100, 120, 90 y 105 €. No hay aportaciones ni retiradas. Queremos medir la caída desde el máximo anterior hasta el mínimo de este recorrido.",
+      "instruction": "Toca el valor que sirve como punto de partida para medir esa caída.",
+      "hideFigure": true,
+      "options": [
+        "Momento 1",
+        "Momento 2",
+        "Momento 3",
+        "Momento 4"
+      ],
+      "values": [
+        100,
+        120,
+        90,
+        105
+      ],
+      "axis": "Valor de la misma inversión en cuatro momentos",
+      "unit": "€",
+      "answer": 1,
+      "explanation": "El máximo anterior es 120 € y el mínimo posterior, 90 €. La caída es 30 ÷ 120 = 25 %. El precio de compra de 100 € responde a una comparación diferente.",
+      "hint": "Para medir una caída desde máximos, busca primero el máximo alcanzado antes del mínimo."
+    }
+  },
+  {
+    "lessonId": 430,
+    "step": 1,
+    "activity": {
+      "kind": "differences",
+      "title": "Detecta el cambio de oferta",
+      "prompt": "Dos versiones de una ficha de prueba describen un token. Queremos detectar qué cambió antes de valorar su oferta: no deducimos un precio futuro de esta comparación.",
+      "instruction": "Marca todas las filas distintas.",
+      "hideFigure": true,
+      "options": [
+        "Unidades que circulan hoy",
+        "Unidades bloqueadas",
+        "Fecha de desbloqueo"
+      ],
+      "before": [
+        "40 millones",
+        "20 millones",
+        "1 de enero de 2027"
+      ],
+      "after": [
+        "40 millones",
+        "30 millones",
+        "1 de julio de 2027"
+      ],
+      "answers": [
+        1,
+        2
+      ],
+      "explanation": "Cambian la cantidad bloqueada y la fecha prevista de desbloqueo. La oferta que circula hoy es igual. El calendario y las condiciones importan para entender qué unidades podrían llegar después al mercado.",
+      "hint": "Compara la cantidad actual, la cantidad futura y la fecha por separado."
+    }
+  }
+]

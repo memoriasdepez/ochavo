@@ -1,0 +1,79 @@
+VIRUTA 0.3.0 — VALIDACIÓN DE LA ENTREGA
+Fecha: 4 de octubre de 2026
+
+RESULTADO
+Tres caminos completos publicados en https://brote-62d26.web.app e instalados
+como actualización en el emulador Android 16 existente. Sin cambiar paquete,
+proyecto Firebase ni facturación. Invitado original conservado en Acciones,
+primera lección, paso 2/8. Las cuentas temporales de esta entrega se retiraron.
+
+CONTENIDO
+Acciones: 100 lecciones/10 exámenes. ETFs: 50/5. Cripto: 50/5.
+200 lecciones con 1.600 pasos y 20 exámenes con 200 preguntas en total.
+Cuatro explicaciones y cuatro ejercicios por lección; al menos tres tipos
+de ejercicio por lección. Los 150 puntos nuevos tienen figura y 94 incluyen
+comparaciones interactivas. Fuentes primarias y diccionario por camino.
+Los primeros 50 puntos y cinco exámenes originales son idénticos al archivo
+de base: comprobado automáticamente. No se han reiniciado logros anteriores.
+
+La revisión de autores recalculó 190 respuestas numéricas de los contenidos
+nuevos, además de ejemplos y gráficos. Una revisión cruzada corrigió
+ambigüedades sobre cobertura de divisas, pesos de cartera, operaciones
+pendientes, correlación, FCFF/FCFE y correspondencia de flujos y tasas.
+La navegación y el cálculo de resultados se verificaron sobre datos reales
+del curso. Estas comprobaciones no constituyen una certificación externa.
+
+PRUEBAS DE APLICACIÓN Y REGLAS
+137/137 pruebas de aplicación y 76/76 de reglas Firestore superadas.
+Se comprobaron migración del progreso, independencia entre caminos,
+conservación de borradores, límites, exámenes, cuentas y barrera de borrado.
+Firestore admite leer versiones 1/2 y escribir 2; las reglas impiden bajar
+de 2 a 1 para que un cliente antiguo no sobrescriba los nuevos recorridos.
+Reglas publicadas; sin activar facturación.
+
+WEB — 9/9 COMPROBACIONES
+Navegador Edge aislado con progreso de invitado de prueba.
+- Inicio y finalización de la primera lección real de los tres caminos.
+- Conservación de las tres lecciones y el camino elegido tras recargar.
+- Selector y mapas a 320, 390 y 768 px, sin desbordamiento horizontal.
+- Renderizado de los 1.600 pasos y todas las opciones de comparación.
+- Acceso al selector desde la barra inferior y contadores completos a 320 px.
+- 40 intentos de examen: los veinte exámenes con siete y ocho aciertos.
+- Ningún error de JavaScript en el recorrido comprobado.
+Informe: ../brote-android/viruta-0.3.0-web-qa.json.
+Las pruebas exhaustivas usan progreso aislado; no modifican cuentas reales.
+
+ANDROID Y FIREBASE REAL — 8/8 COMPROBACIONES
+Android 16/API 36, WebView 133, emulador 720x1600. APK actualizado sin borrar
+datos. Dos cuentas sintéticas example.invalid, verificadas mediante Admin.
+No se enviaron correos ni se utilizaron buzones de personas.
+- Conservación del borrador del invitado que existía antes de la actualización.
+- Finalización mediante la interfaz de una lección de cada activo y guardado.
+- Reinicio completo conserva cuenta, selección y tres logros independientes.
+- Navegador separado recupera esos tres logros desde Firebase.
+- Dos borradores de distintos caminos se guardan sin conexión y sobreviven
+  al cierre forzado; ambos llegan a la web tras reconectar.
+- La segunda cuenta no recibe logros ni borradores de la primera o del invitado.
+- Eliminación de ambas cuentas desde Android; regreso al invitado original.
+Informe: ../brote-android/viruta-0.3.0-android-qa.json.
+API administrativa confirmó ausencia de ambas identidades y su progreso.
+Solo se retiraron sus marcadores sintéticos tras cerrar las sesiones.
+El archivo local con credenciales temporales también se eliminó.
+
+PUBLICACIÓN Y ARTIFACTO
+Hosting liberado; revisión posterior correcta. Los tres caminos aparecen
+en la web. Ayuda, privacidad, aviso legal y eliminación: HTTP 200, sin
+JavaScript, a 320 px y sin dirección de correo visible como texto.
+Vite, Capacitor, assembleDebug y lintDebug correctos.
+Viruta-0.3.0-pruebas.apk: 5287658 bytes; firma v2 verificada.
+SHA256: E7D9B4450221B8539C34550A0170F0163A46DABE430257DB31BC59F40DD1EE46
+app.brote.inversion · versionCode 4 · versionName 0.3.0.
+Android mínimo declarado API24 y objetivo API36.
+
+LÍMITES
+Probado en navegador y emulador; pendiente teléfono Android físico.
+No se ha probado recepción SMTP real con la configuración Viruta.
+No publicado en Google Play ni App Store. APK firmado para pruebas.
+No se han añadido cobros, anuncios, Analytics, Crashlytics ni servicios de pago.
+La validación y auditoría de la entrega anterior permanecen documentadas en
+VALIDACION-0.2.1.txt; no se suman sus contadores a los de esta entrega.

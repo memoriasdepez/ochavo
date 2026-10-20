@@ -1,0 +1,114 @@
+{
+  "revision": "cases-2026-10",
+  "verifiedAt": "2026-10-09",
+  "policy": "Fuentes primarias de gestoras abiertas y contrastadas mediante web. Se usan mandatos, identidades y mecanismos; no se trasladan precios, posiciones porcentuales, comisiones ni rentabilidades actuales. Todos los importes de los ejercicios son simulaciones identificadas. El caso 20 distingue el aviso histórico de 2020 de sus ejercicios ficticios.",
+  "sources": [
+    {
+      "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating",
+      "publisher": "Vanguard",
+      "cases": [1, 2, 6, 9],
+      "verifiedFacts": ["FTSE All-World: acciones grandes y medianas de mercados desarrollados y emergentes.", "Clase de acumulación y método físico con muestra representativa."],
+      "notUsed": "No se usan su TER, NAV, rentabilidad ni pesos actuales."
+    },
+    {
+      "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9505/vanguard-ftse-all-world-ucits-etf-usd-distributing",
+      "publisher": "Vanguard",
+      "cases": [2],
+      "verifiedFacts": ["Existe la clase de distribución del FTSE All-World UCITS ETF; la página muestra historial de pagos."],
+      "notUsed": "El pago de 4 € del caso no procede de ese historial: es ficticio."
+    },
+    {
+      "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-msci-world-ucits-etf-acc-fund",
+      "publisher": "BlackRock / iShares",
+      "cases": [4, 5, 7, 8, 9, 15],
+      "verifiedFacts": ["Objetivo de acciones de países desarrollados; clase IE00B4L5Y983.", "EUNL en Xetra e IWDA en Euronext Amsterdam comparten ISIN.", "Estructura física y metodología optimizada; sección de préstamo de valores."],
+      "notUsed": "No se usan número de posiciones, gastos, rendimientos ni precios actuales."
+    },
+    {
+      "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?productId=RSP",
+      "publisher": "Invesco",
+      "cases": [3],
+      "verifiedFacts": ["RSP sigue S&P 500 Equal Weight; mismas empresas del S&P 500 con igual ponderación al revisar.", "Fondo e índice se reequilibran trimestralmente."],
+      "verificationNote": "La URL abre y redirige a la página nueva de Invesco. El contenido oficial indexado de la ficha confirma las reglas; no se usa un PDF antiguo que redirigía a 404.",
+      "notUsed": "El miniíndice de cuatro empresas no representa sus posiciones reales."
+    },
+    {
+      "url": "https://www.vanguard.co.uk/content/uk-aem/gb/en/professional/vanguard-365/investment-knowledge/etf-knowledge/what-affects-index-tracking",
+      "publisher": "Vanguard",
+      "cases": [6, 15],
+      "verifiedFacts": ["Diferencia de seguimiento: rentabilidad del ETF menos la del índice.", "El error de seguimiento describe la variabilidad; gastos y método de réplica influyen."],
+      "notUsed": "Tarifas A/B y rentabilidades C/D son creadas para razonar, no observadas."
+    },
+    {
+      "url": "https://www.vanguard.co.uk/professional/vanguard-365/investment-knowledge/etf-knowledge/what-are-some-of-the-best-practices-for-trading-ETFs",
+      "publisher": "Vanguard",
+      "cases": [7],
+      "verifiedFacts": ["Una orden a mercado prioriza ejecución; la limitada fija un precio admisible sin asegurar ejecución.", "Horarios y volatilidad pueden afectar a los precios disponibles."],
+      "notUsed": "Todas las ofertas y ejecuciones del ejercicio son ficticias."
+    },
+    {
+      "url": "https://www.blackrock.com/au/insights/ishares/authorised-participants-and-market-makers",
+      "publisher": "BlackRock / iShares",
+      "cases": [8],
+      "verifiedFacts": ["Participantes autorizados crean y reembolsan bloques de participaciones.", "La negociación en bolsa y el mercado de las inversiones subyacentes contribuyen a la liquidez."],
+      "notUsed": "NAV de 100 € y oferta de 102 € pertenecen a una simulación."
+    },
+    {
+      "url": "https://www.ishares.com/uk/individual/en/products/291773/ishares-core-global-aggregate-bond-ucits-etf",
+      "publisher": "BlackRock / iShares",
+      "cases": [10],
+      "verifiedFacts": ["Core Global Aggregate Bond sigue bonos globales de grado de inversión.", "Documenta riesgo de tipos y de crédito."],
+      "notUsed": "La duración 5, el capital de 1.000 € y los cupones son ficticios."
+    },
+    {
+      "url": "https://www.ishares.com/uk/individual/en/products/331717/",
+      "publisher": "BlackRock / iShares",
+      "cases": [11],
+      "verifiedFacts": ["iBonds Dec 2028 Term € Corp sigue Bloomberg MSCI December 2028 Maturity EUR Corporate ESG Screened Index.", "El capital está sujeto a riesgo; un año objetivo no garantiza recuperar el precio pagado."],
+      "notUsed": "El reparto entre años A/B y la conversión uno a uno son supuestos de aula."
+    },
+    {
+      "url": "https://www.ishares.com/uk/professionals/en/products/251891/ishares-msci-world-eur-hedged-ucits-etf",
+      "publisher": "BlackRock / iShares",
+      "cases": [12, 15],
+      "verifiedFacts": ["MSCI World EUR Hedged sigue MSCI World 100% Hedged to EUR Index; cobertura de exposiciones a euros."],
+      "notUsed": "El cambio 0,90 €/dólar y los candidatos A/B/C son simulados."
+    },
+    {
+      "url": "https://www.ishares.com/uk/individual/en/products/270054/ishares-msci-world-quality-factor-ucits-etf",
+      "publisher": "BlackRock / iShares",
+      "cases": [13],
+      "verifiedFacts": ["MSCI World Quality Factor busca una selección de empresas con beneficios fuertes y estables."],
+      "notUsed": "La regla de tres años positivos y deuda moderada es didáctica; no se atribuye a la metodología oficial."
+    },
+    {
+      "url": "https://www.ishares.com/uk/individual/en/products/326325/ishares-global-clean-energy-ucits-etf?siteEntryPassthrough=true",
+      "publisher": "BlackRock / iShares",
+      "cases": [14],
+      "verifiedFacts": ["Global Clean Energy Transition sigue S&P Global Clean Energy Transition Index."],
+      "notUsed": "Empresas A/B, porcentajes de ingresos y cambios de beneficios o precios son simulaciones."
+    },
+    {
+      "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/lifestrategy/9495/lifestrategy-60-equity-ucits-etf",
+      "publisher": "Vanguard",
+      "cases": [16, 17, 18],
+      "verifiedFacts": ["LifeStrategy 60% busca aproximadamente 60% acciones y 40% renta fija, principalmente mediante otros fondos.", "Gestión de asignación de activos con posibilidad de reequilibrar; no gestionado con referencia a un índice."],
+      "notUsed": "Modelos exactamente 60/40, bandas, importes y trayectoria de retiradas son ficticios. La referencia R no se presenta como benchmark oficial."
+    },
+    {
+      "url": "https://www.globalxetfs.com/funds/qyld",
+      "publisher": "Global X",
+      "cases": [19],
+      "verifiedFacts": ["QYLD, ETF estadounidense, combina acciones Nasdaq 100 con venta de opciones de compra sobre ese índice.", "La estrategia limita parte de las subidas y mantiene riesgo bajista; la tasa de distribución no es la rentabilidad total."],
+      "notUsed": "Posición 100 €, límite 105 € y prima 3 € son un contrato didáctico simplificado."
+    },
+    {
+      "url": "https://www.vanguard.co.uk/content/dam/intl/europe/documents/fund-announcements/shareholder-notification-for-euro-stoxx-50-etf-liquidation-df-en.pdf",
+      "publisher": "Vanguard",
+      "cases": [20],
+      "documentDate": "2020-05-26",
+      "verifiedFacts": ["Aviso de cierre de Vanguard Euro STOXX 50 UCITS ETF por patrimonio reducido frente a costes fijos.", "Calendario previsto: última negociación 21/08/2020, reembolso obligatorio 24/08/2020 y pago alrededor del 04/09/2020."],
+      "notUsed": "Los 50 millones, la subida del 10% y los reembolsos de 5 millones son una simulación separada."
+    }
+  ]
+}

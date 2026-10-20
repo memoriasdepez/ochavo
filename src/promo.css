@@ -1,0 +1,32 @@
+#brote-preview .vr-promo-entry{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:20px;border:1px solid var(--br-line);border-radius:20px;margin:0 0 24px;background:light-dark(#faf9ef,#263128)}
+#brote-preview .vr-promo-entry>div{flex:1 1 190px}
+#brote-preview .vr-promo-entry strong{font-size:16px}
+#brote-preview .vr-promo-entry p{font-size:14px;line-height:1.5;color:var(--br-muted);margin:7px 0 0}
+#brote-preview .vr-promo-dialog{text-align:left}
+#brote-preview .vr-promo-dialog h2{margin-top:12px}
+#brote-preview .vr-promo-dialog form{margin:24px 0 12px}
+#brote-preview .vr-promo-dialog .vr-code-label{display:block;margin:20px 0 16px;font-weight:800}
+#brote-preview .vr-promo-dialog .vr-code-label span{font-weight:500;color:var(--br-muted)}
+#brote-preview .vr-promo-dialog input{box-sizing:border-box;display:block;width:100%;margin-top:9px;padding:14px;border:2px solid var(--br-line);border-radius:13px;background:var(--br-panel);color:var(--br-ink);font:inherit;min-width:0;text-transform:none}
+#brote-preview .vr-promo-dialog input:focus{outline:3px solid light-dark(#a7c88e,#739364);outline-offset:2px}
+#brote-preview .vr-promo-dialog #vr-promo-code,#brote-preview .vr-promo-created input{font-family:ui-monospace,monospace;font-size:14px;letter-spacing:.25px}
+#brote-preview .vr-promo-created{padding:19px;border:2px solid light-dark(#adc794,#69825b);border-radius:20px;background:light-dark(#edf4e4,#2d402e);margin:22px 0}
+#brote-preview .vr-promo-created>strong{font-size:18px}
+#brote-preview .vr-promo-created .br-main-button{font-size:14px;padding:14px 10px}
+#brote-preview .vr-promo-promise{font-weight:900;color:light-dark(#426d33,#badb9d);font-size:17px}
+#brote-preview .vr-promo-message{font-size:14px;font-weight:700;line-height:1.55;margin:16px 0 0;overflow-wrap:anywhere}
+#brote-preview .vr-promo-message:empty{display:none}
+#brote-preview .vr-promo-list-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:28px}
+#brote-preview .vr-promo-list-head h3{font-size:20px;margin:0}
+#brote-preview .vr-promo-list{list-style:none;padding:0;margin:16px 0}
+#brote-preview .vr-promo-list li{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:15px 0;border-top:1px solid var(--br-line)}
+#brote-preview .vr-promo-list li>div{flex:1 1 160px;min-width:0}
+#brote-preview .vr-promo-list strong{display:block;overflow-wrap:anywhere;font-size:15px}
+#brote-preview .vr-promo-list small{display:block;margin-top:5px;font-size:12px;color:var(--br-muted)}
+#brote-preview .vr-promo-status{border-radius:20px;padding:5px 9px;font-size:12px;font-weight:900;background:light-dark(#e9e9e1,#3b443b);color:var(--br-muted)}
+#brote-preview .vr-promo-status.is-available{color:light-dark(#436934,#d0e7b6);background:light-dark(#e7f1da,#365137)}
+#brote-preview .vr-promo-status.is-redeemed{color:light-dark(#496779,#bddce9);background:light-dark(#e6eef4,#334a55)}
+#brote-preview .vr-promo-dialog[aria-busy=true]{cursor:progress}
+@media(max-width:360px){#brote-preview .vr-promo-created{padding:13px}#brote-preview .vr-promo-entry>.br-secondary{width:100%}}
+
+#brote-preview .vr-promo-dialog #vr-promo-code{text-transform:uppercase}

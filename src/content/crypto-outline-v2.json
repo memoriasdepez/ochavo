@@ -1,0 +1,1415 @@
+{
+  "revision": "crypto-2026-10",
+  "worlds": [
+    {
+      "number": 1,
+      "section": "Fundamentos de las criptomonedas",
+      "title": "Qué es una criptomoneda y qué compras realmente",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un activo digital"
+        },
+        {
+          "number": 2,
+          "title": "Qué diferencia una criptomoneda del dinero de tu banco"
+        },
+        {
+          "number": 3,
+          "title": "Moneda, token, red y proyecto: conceptos distintos"
+        },
+        {
+          "number": 4,
+          "title": "Criptomonedas con red propia y tokens de otras redes"
+        },
+        {
+          "number": 5,
+          "title": "Qué derechos puede dar un token"
+        },
+        {
+          "number": 6,
+          "title": "Por qué tener un token no significa ser accionista"
+        },
+        {
+          "number": 7,
+          "title": "Para qué se utilizan las criptomonedas"
+        },
+        {
+          "number": 8,
+          "title": "Utilidad del proyecto frente a valor de su moneda"
+        },
+        {
+          "number": 9,
+          "title": "Qué puedes ganar y qué puedes perder"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: identificar qué estás comprando"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "section": "Fundamentos de las criptomonedas",
+      "title": "Cómo funciona una blockchain",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un registro de transacciones"
+        },
+        {
+          "number": 2,
+          "title": "Compartir un registro entre participantes"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se representan los saldos"
+        },
+        {
+          "number": 4,
+          "title": "Qué contiene una transacción"
+        },
+        {
+          "number": 5,
+          "title": "Qué es un bloque"
+        },
+        {
+          "number": 6,
+          "title": "Cómo se enlazan los bloques"
+        },
+        {
+          "number": 7,
+          "title": "Qué hace un nodo"
+        },
+        {
+          "number": 8,
+          "title": "Cómo se comprueba que una operación cumple las reglas"
+        },
+        {
+          "number": 9,
+          "title": "Qué puede comprobarse en una blockchain"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: seguir una operación por el registro"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "section": "Fundamentos de las criptomonedas",
+      "title": "Minería, validadores y seguridad de la red",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Por qué una red necesita acordar su historial"
+        },
+        {
+          "number": 2,
+          "title": "Qué es un mecanismo de consenso"
+        },
+        {
+          "number": 3,
+          "title": "Cómo funciona la prueba de trabajo"
+        },
+        {
+          "number": 4,
+          "title": "Qué hacen los mineros"
+        },
+        {
+          "number": 5,
+          "title": "Cómo funciona la prueba de participación"
+        },
+        {
+          "number": 6,
+          "title": "Qué hacen los validadores"
+        },
+        {
+          "number": 7,
+          "title": "Recompensas, comisiones e incentivos"
+        },
+        {
+          "number": 8,
+          "title": "Qué significa que una transacción sea definitiva"
+        },
+        {
+          "number": 9,
+          "title": "Concentración y posibles ataques a la red"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar la seguridad de dos redes"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "section": "Fundamentos de las criptomonedas",
+      "title": "Monederos, claves y custodia",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué guarda realmente un monedero"
+        },
+        {
+          "number": 2,
+          "title": "Direcciones públicas y claves privadas"
+        },
+        {
+          "number": 3,
+          "title": "Qué permite una firma digital"
+        },
+        {
+          "number": 4,
+          "title": "Qué es una frase de recuperación"
+        },
+        {
+          "number": 5,
+          "title": "Custodia propia frente a custodia de una plataforma"
+        },
+        {
+          "number": 6,
+          "title": "Monederos conectados y almacenamiento sin conexión"
+        },
+        {
+          "number": 7,
+          "title": "Monederos físicos"
+        },
+        {
+          "number": 8,
+          "title": "Copias de seguridad y recuperación"
+        },
+        {
+          "number": 9,
+          "title": "Qué ocurre si pierdes el acceso"
+        },
+        {
+          "number": 10,
+          "title": "Simulación: elegir una forma de custodia"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "section": "Fundamentos de las criptomonedas",
+      "title": "Cómo enviar, recibir y comprobar una transacción",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Identificar el activo y la red"
+        },
+        {
+          "number": 2,
+          "title": "Comprobar la dirección de destino"
+        },
+        {
+          "number": 3,
+          "title": "Referencias adicionales: etiquetas y memos"
+        },
+        {
+          "number": 4,
+          "title": "Calcular el importe y las comisiones"
+        },
+        {
+          "number": 5,
+          "title": "Qué significa pagar gas"
+        },
+        {
+          "number": 6,
+          "title": "Operaciones pendientes y confirmaciones"
+        },
+        {
+          "number": 7,
+          "title": "Leer el resultado en un explorador"
+        },
+        {
+          "number": 8,
+          "title": "Transacciones fallidas y comisiones consumidas"
+        },
+        {
+          "number": 9,
+          "title": "Qué comprobar antes de enviar una cantidad mayor"
+        },
+        {
+          "number": 10,
+          "title": "Simulación: preparar y verificar una transferencia"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "section": "Fundamentos de las criptomonedas",
+      "title": "Cómo evitar estafas y proteger tus activos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Suplantaciones y enlaces falsos"
+        },
+        {
+          "number": 2,
+          "title": "Aplicaciones y extensiones maliciosas"
+        },
+        {
+          "number": 3,
+          "title": "Falsos equipos de soporte"
+        },
+        {
+          "number": 4,
+          "title": "Promesas de rentabilidad garantizada"
+        },
+        {
+          "number": 5,
+          "title": "Tokens falsos y contratos imitadores"
+        },
+        {
+          "number": 6,
+          "title": "Qué revisar antes de firmar un mensaje"
+        },
+        {
+          "number": 7,
+          "title": "Permisos para gastar tus tokens"
+        },
+        {
+          "number": 8,
+          "title": "Cómo revisar y retirar autorizaciones"
+        },
+        {
+          "number": 9,
+          "title": "Qué hacer cuando sospechas que una cuenta está comprometida"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: detectar una operación sospechosa"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "section": "Mercado y economía de los tokens",
+      "title": "Cómo se compran y venden las criptomonedas",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Plataformas centralizadas y mercados descentralizados"
+        },
+        {
+          "number": 2,
+          "title": "Qué representa un par de negociación"
+        },
+        {
+          "number": 3,
+          "title": "Precio de compra, precio de venta y diferencial"
+        },
+        {
+          "number": 4,
+          "title": "Órdenes de mercado"
+        },
+        {
+          "number": 5,
+          "title": "Órdenes limitadas"
+        },
+        {
+          "number": 6,
+          "title": "Volumen, profundidad y liquidez"
+        },
+        {
+          "number": 7,
+          "title": "Deslizamiento entre el precio esperado y el ejecutado"
+        },
+        {
+          "number": 8,
+          "title": "Comisiones de negociación y retirada"
+        },
+        {
+          "number": 9,
+          "title": "Riesgos de mantener activos en una plataforma"
+        },
+        {
+          "number": 10,
+          "title": "Simulación: comparar el coste de dos operaciones"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "section": "Mercado y economía de los tokens",
+      "title": "Oferta, capitalización y desbloqueos de tokens",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Precio por unidad y tamaño del activo"
+        },
+        {
+          "number": 2,
+          "title": "Oferta en circulación"
+        },
+        {
+          "number": 3,
+          "title": "Oferta total y oferta máxima"
+        },
+        {
+          "number": 4,
+          "title": "Cómo calcular la capitalización"
+        },
+        {
+          "number": 5,
+          "title": "Qué representa la valoración totalmente diluida"
+        },
+        {
+          "number": 6,
+          "title": "Emisión de nuevas unidades"
+        },
+        {
+          "number": 7,
+          "title": "Calendarios de desbloqueo"
+        },
+        {
+          "number": 8,
+          "title": "Reparto entre equipo, inversores y comunidad"
+        },
+        {
+          "number": 9,
+          "title": "Quema de tokens y sus límites"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos tokens con precios distintos"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "section": "Mercado y economía de los tokens",
+      "title": "Cómo interpretar rentabilidad, volatilidad y liquidez",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Ganancia en dinero y ganancia en porcentaje"
+        },
+        {
+          "number": 2,
+          "title": "Rentabilidad después de comisiones"
+        },
+        {
+          "number": 3,
+          "title": "Medir el resultado en euros, dólares o criptomonedas"
+        },
+        {
+          "number": 4,
+          "title": "Volatilidad y movimientos extremos"
+        },
+        {
+          "number": 5,
+          "title": "Caídas desde máximos"
+        },
+        {
+          "number": 6,
+          "title": "Cuánto necesitas ganar para recuperar una pérdida"
+        },
+        {
+          "number": 7,
+          "title": "Por qué el volumen anunciado no garantiza liquidez"
+        },
+        {
+          "number": 8,
+          "title": "Cómo cambia el coste al vender una posición grande"
+        },
+        {
+          "number": 9,
+          "title": "Riesgos compartidos entre distintos tokens"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: calcular el resultado y el coste de salida"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "section": "Mercado y economía de los tokens",
+      "title": "Cómo estudiar la economía de un token",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Para qué necesita el proyecto su token"
+        },
+        {
+          "number": 2,
+          "title": "Quién necesita comprarlo o utilizarlo"
+        },
+        {
+          "number": 3,
+          "title": "Quién recibe las nuevas unidades"
+        },
+        {
+          "number": 4,
+          "title": "Emisión, circulación y posibles presiones de venta"
+        },
+        {
+          "number": 5,
+          "title": "Recompensas pagadas con ingresos o con nuevos tokens"
+        },
+        {
+          "number": 6,
+          "title": "Qué derechos recibe quien posee el token"
+        },
+        {
+          "number": 7,
+          "title": "Recompras, quemas y reparto de ingresos"
+        },
+        {
+          "number": 8,
+          "title": "Tesorería y financiación del proyecto"
+        },
+        {
+          "number": 9,
+          "title": "Por qué el uso del proyecto puede no beneficiar al token"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: dibujar los flujos económicos de un token"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "section": "Aplicaciones y funcionamiento avanzado",
+      "title": "Contratos inteligentes y aplicaciones descentralizadas",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un contrato inteligente"
+        },
+        {
+          "number": 2,
+          "title": "Qué significa ejecutar reglas mediante código"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se conecta un monedero a una aplicación"
+        },
+        {
+          "number": 4,
+          "title": "Firmar un mensaje frente a enviar una transacción"
+        },
+        {
+          "number": 5,
+          "title": "Contratos que pueden actualizarse"
+        },
+        {
+          "number": 6,
+          "title": "Permisos de administración"
+        },
+        {
+          "number": 7,
+          "title": "Qué hacen los oráculos"
+        },
+        {
+          "number": 8,
+          "title": "Auditorías de código y sus límites"
+        },
+        {
+          "number": 9,
+          "title": "Dependencias que pueden provocar un fallo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar los permisos de una aplicación"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "section": "Aplicaciones y funcionamiento avanzado",
+      "title": "Stablecoins: respaldo, reembolso y pérdida de paridad",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué intenta mantener estable una stablecoin"
+        },
+        {
+          "number": 2,
+          "title": "Stablecoins respaldadas por activos tradicionales"
+        },
+        {
+          "number": 3,
+          "title": "Stablecoins respaldadas por criptoactivos"
+        },
+        {
+          "number": 4,
+          "title": "Diseños basados en incentivos y mecanismos algorítmicos"
+        },
+        {
+          "number": 5,
+          "title": "Qué contiene la reserva"
+        },
+        {
+          "number": 6,
+          "title": "Quién puede solicitar un reembolso"
+        },
+        {
+          "number": 7,
+          "title": "Precio de mercado frente a valor de reembolso"
+        },
+        {
+          "number": 8,
+          "title": "Por qué puede perderse la paridad"
+        },
+        {
+          "number": 9,
+          "title": "Riesgos del emisor, de la reserva y de la red"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos monedas estables"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "section": "Aplicaciones y funcionamiento avanzado",
+      "title": "Staking: recompensas, bloqueos y riesgos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué significa participar en la seguridad de una red"
+        },
+        {
+          "number": 2,
+          "title": "Validar directamente o delegar"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se calculan las recompensas"
+        },
+        {
+          "number": 4,
+          "title": "Comisiones del validador o del servicio"
+        },
+        {
+          "number": 5,
+          "title": "Rentabilidad anunciada frente a resultado real"
+        },
+        {
+          "number": 6,
+          "title": "Emisión y dilución del token"
+        },
+        {
+          "number": 7,
+          "title": "Plazos de retirada y periodos de bloqueo"
+        },
+        {
+          "number": 8,
+          "title": "Penalizaciones y riesgos operativos"
+        },
+        {
+          "number": 9,
+          "title": "Staking líquido y riesgos adicionales"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: calcular el resultado de participar"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "section": "Aplicaciones y funcionamiento avanzado",
+      "title": "Intercambios descentralizados y provisión de liquidez",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es un intercambio descentralizado"
+        },
+        {
+          "number": 2,
+          "title": "Libros de órdenes y reservas compartidas"
+        },
+        {
+          "number": 3,
+          "title": "Cómo funciona un creador de mercado automatizado"
+        },
+        {
+          "number": 4,
+          "title": "Cómo cambia el precio al intercambiar"
+        },
+        {
+          "number": 5,
+          "title": "Qué significa aportar liquidez"
+        },
+        {
+          "number": 6,
+          "title": "Comisiones que reciben los proveedores"
+        },
+        {
+          "number": 7,
+          "title": "Pérdida frente a mantener los activos por separado"
+        },
+        {
+          "number": 8,
+          "title": "Liquidez concentrada y rangos de precios"
+        },
+        {
+          "number": 9,
+          "title": "Incentivos adicionales y sostenibilidad del rendimiento"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar aportar liquidez y mantener los tokens"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "section": "Aplicaciones y funcionamiento avanzado",
+      "title": "Préstamos, garantías y liquidaciones en DeFi",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Cómo funciona un protocolo de préstamos"
+        },
+        {
+          "number": 2,
+          "title": "Depositar activos y recibir intereses"
+        },
+        {
+          "number": 3,
+          "title": "Pedir prestado utilizando una garantía"
+        },
+        {
+          "number": 4,
+          "title": "Relación entre préstamo y valor de la garantía"
+        },
+        {
+          "number": 5,
+          "title": "Qué determina el tipo de interés"
+        },
+        {
+          "number": 6,
+          "title": "Qué ocurre cuando cae la garantía"
+        },
+        {
+          "number": 7,
+          "title": "Cómo se ejecuta una liquidación"
+        },
+        {
+          "number": 8,
+          "title": "Riesgos de oráculos y falta de liquidez"
+        },
+        {
+          "number": 9,
+          "title": "Cómo se transmiten los problemas entre protocolos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: someter un préstamo a una caída de precios"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "section": "Aplicaciones y funcionamiento avanzado",
+      "title": "Capas de escalado y puentes entre redes",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Por qué una red necesita aumentar su capacidad"
+        },
+        {
+          "number": 2,
+          "title": "Redes base y capas adicionales"
+        },
+        {
+          "number": 3,
+          "title": "Qué operaciones se ejecutan en cada capa"
+        },
+        {
+          "number": 4,
+          "title": "Cómo se comprueba el trabajo de una capa adicional"
+        },
+        {
+          "number": 5,
+          "title": "Quién ordena las transacciones"
+        },
+        {
+          "number": 6,
+          "title": "Disponibilidad de datos y dependencias"
+        },
+        {
+          "number": 7,
+          "title": "Cómo funcionan los puentes"
+        },
+        {
+          "number": 8,
+          "title": "Activos originales y representaciones en otras redes"
+        },
+        {
+          "number": 9,
+          "title": "Riesgos y condiciones para volver a la red de origen"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: seguir un activo al cambiar de red"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "section": "Investigación y decisiones",
+      "title": "Cómo investigar un proyecto con datos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué problema intenta resolver"
+        },
+        {
+          "number": 2,
+          "title": "Documentación, código y fuentes oficiales"
+        },
+        {
+          "number": 3,
+          "title": "Equipo, financiación y gobierno del proyecto"
+        },
+        {
+          "number": 4,
+          "title": "Direcciones activas frente a usuarios reales"
+        },
+        {
+          "number": 5,
+          "title": "Operaciones, volumen y actividad incentivada"
+        },
+        {
+          "number": 6,
+          "title": "Comisiones pagadas e ingresos del protocolo"
+        },
+        {
+          "number": 7,
+          "title": "Qué mide el valor total bloqueado"
+        },
+        {
+          "number": 8,
+          "title": "Reservas visibles y obligaciones que faltan"
+        },
+        {
+          "number": 9,
+          "title": "Competidores, incidentes y cambios del proyecto"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: construir una ficha de investigación"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "section": "Investigación y decisiones",
+      "title": "Cómo evaluar el valor y los riesgos de una criptomoneda",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Separar hechos, promesas y estimaciones"
+        },
+        {
+          "number": 2,
+          "title": "Identificar qué puede sostener la demanda"
+        },
+        {
+          "number": 3,
+          "title": "Relacionar actividad y derechos del token"
+        },
+        {
+          "number": 4,
+          "title": "Cuándo tiene sentido analizar flujos económicos"
+        },
+        {
+          "number": 5,
+          "title": "Comparar proyectos sin mezclar modelos distintos"
+        },
+        {
+          "number": 6,
+          "title": "Construir escenarios de oferta y demanda"
+        },
+        {
+          "number": 7,
+          "title": "Examinar liquidez y condiciones de salida"
+        },
+        {
+          "number": 8,
+          "title": "Medir concentración y exposición conjunta"
+        },
+        {
+          "number": 9,
+          "title": "Definir qué haría cambiar tu conclusión"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: redactar una tesis con preguntas pendientes"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Bitcoin: oferta, minería y uso de BTC",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué problema intenta resolver Bitcoin"
+        },
+        {
+          "number": 2,
+          "title": "Qué representa tener BTC"
+        },
+        {
+          "number": 3,
+          "title": "Cómo funcionan sus transacciones"
+        },
+        {
+          "number": 4,
+          "title": "Minería y seguridad de la red"
+        },
+        {
+          "number": 5,
+          "title": "Emisión, límite de oferta y halvings"
+        },
+        {
+          "number": 6,
+          "title": "Comisiones e incentivos de los mineros"
+        },
+        {
+          "number": 7,
+          "title": "Nodos y cambios de las reglas"
+        },
+        {
+          "number": 8,
+          "title": "Pagos en la red base y soluciones adicionales"
+        },
+        {
+          "number": 9,
+          "title": "Argumentos sobre su valor y riesgos que debes contrastar"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Bitcoin"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Ethereum: contratos inteligentes y economía de ETH",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Diferencia entre Ethereum y ether"
+        },
+        {
+          "number": 2,
+          "title": "Qué permite ejecutar Ethereum"
+        },
+        {
+          "number": 3,
+          "title": "Para qué se utiliza ETH"
+        },
+        {
+          "number": 4,
+          "title": "Gas y comisiones de las transacciones"
+        },
+        {
+          "number": 5,
+          "title": "Validadores y prueba de participación"
+        },
+        {
+          "number": 6,
+          "title": "Emisión y quema de ETH"
+        },
+        {
+          "number": 7,
+          "title": "Staking y alternativas de participación"
+        },
+        {
+          "number": 8,
+          "title": "Aplicaciones y capas de escalado"
+        },
+        {
+          "number": 9,
+          "title": "Relación entre actividad, demanda de ETH y riesgos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Ethereum"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Solana: aplicaciones, validadores y economía de SOL",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué intenta ofrecer Solana"
+        },
+        {
+          "number": 2,
+          "title": "Para qué se utiliza SOL"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se procesan y ordenan las operaciones"
+        },
+        {
+          "number": 4,
+          "title": "Validadores y requisitos de funcionamiento"
+        },
+        {
+          "number": 5,
+          "title": "Comisiones y capacidad de la red"
+        },
+        {
+          "number": 6,
+          "title": "Emisión, distribución y staking"
+        },
+        {
+          "number": 7,
+          "title": "Aplicaciones y actividad del ecosistema"
+        },
+        {
+          "number": 8,
+          "title": "Cómo medir uso sin confundirlo con incentivos"
+        },
+        {
+          "number": 9,
+          "title": "Disponibilidad, concentración y otros riesgos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Solana"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "BNB: usos del token y relación con su ecosistema",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es BNB y cómo ha evolucionado"
+        },
+        {
+          "number": 2,
+          "title": "Diferenciar BNB, BNB Chain y Binance"
+        },
+        {
+          "number": 3,
+          "title": "Para qué se utiliza BNB en las redes"
+        },
+        {
+          "number": 4,
+          "title": "Otros usos dentro de su ecosistema"
+        },
+        {
+          "number": 5,
+          "title": "Validadores y funcionamiento de la red"
+        },
+        {
+          "number": 6,
+          "title": "Oferta y mecanismos de quema"
+        },
+        {
+          "number": 7,
+          "title": "Aplicaciones y actividad económica"
+        },
+        {
+          "number": 8,
+          "title": "Qué depende del token y qué depende de una empresa"
+        },
+        {
+          "number": 9,
+          "title": "Concentración, gobernanza y riesgos externos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de BNB"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "XRP: pagos, oferta y funcionamiento de XRP Ledger",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Diferenciar XRP, XRP Ledger y Ripple"
+        },
+        {
+          "number": 2,
+          "title": "Qué operaciones permite XRP Ledger"
+        },
+        {
+          "number": 3,
+          "title": "Para qué se utiliza XRP"
+        },
+        {
+          "number": 4,
+          "title": "Cómo se validan las transacciones"
+        },
+        {
+          "number": 5,
+          "title": "Comisiones y condiciones de uso"
+        },
+        {
+          "number": 6,
+          "title": "Oferta y distribución del token"
+        },
+        {
+          "number": 7,
+          "title": "Bloqueos, liberaciones y posibles efectos en la circulación"
+        },
+        {
+          "number": 8,
+          "title": "Uso en pagos frente a anuncios de acuerdos"
+        },
+        {
+          "number": 9,
+          "title": "Adopción, control y riesgos que debes investigar"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de XRP"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Cardano: funcionamiento, participación y economía de ADA",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué intenta ofrecer Cardano"
+        },
+        {
+          "number": 2,
+          "title": "Para qué se utiliza ADA"
+        },
+        {
+          "number": 3,
+          "title": "Cómo representa y procesa las transacciones"
+        },
+        {
+          "number": 4,
+          "title": "Prueba de participación y grupos de staking"
+        },
+        {
+          "number": 5,
+          "title": "Delegación y recompensas"
+        },
+        {
+          "number": 6,
+          "title": "Oferta, reservas y distribución"
+        },
+        {
+          "number": 7,
+          "title": "Contratos inteligentes y aplicaciones"
+        },
+        {
+          "number": 8,
+          "title": "Gobierno y financiación del desarrollo"
+        },
+        {
+          "number": 9,
+          "title": "Adopción, competencia y riesgos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Cardano"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Avalanche: redes, aplicaciones y economía de AVAX",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué intenta ofrecer Avalanche"
+        },
+        {
+          "number": 2,
+          "title": "Para qué se utiliza AVAX"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se organiza su arquitectura"
+        },
+        {
+          "number": 4,
+          "title": "Cómo se acuerdan las transacciones"
+        },
+        {
+          "number": 5,
+          "title": "Validadores y participación"
+        },
+        {
+          "number": 6,
+          "title": "Oferta, emisión y comisiones"
+        },
+        {
+          "number": 7,
+          "title": "Redes y aplicaciones de su ecosistema"
+        },
+        {
+          "number": 8,
+          "title": "Conexiones entre redes y sus dependencias"
+        },
+        {
+          "number": 9,
+          "title": "Cómo estudiar la relación entre uso y demanda de AVAX"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Avalanche"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Polkadot: redes conectadas y economía de DOT",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué problema intenta resolver Polkadot"
+        },
+        {
+          "number": 2,
+          "title": "Para qué se utiliza DOT"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se organiza una red de redes"
+        },
+        {
+          "number": 4,
+          "title": "Qué significa compartir seguridad"
+        },
+        {
+          "number": 5,
+          "title": "Cómo se comunican sus distintas cadenas"
+        },
+        {
+          "number": 6,
+          "title": "Validadores, nominación y staking"
+        },
+        {
+          "number": 7,
+          "title": "Oferta y emisión de DOT"
+        },
+        {
+          "number": 8,
+          "title": "Gobierno y asignación de recursos"
+        },
+        {
+          "number": 9,
+          "title": "Actividad, demanda del token y riesgos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Polkadot"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Chainlink: oráculos, servicios y economía de LINK",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué problema resuelve un oráculo"
+        },
+        {
+          "number": 2,
+          "title": "Qué servicios ofrece Chainlink"
+        },
+        {
+          "number": 3,
+          "title": "Para qué se utiliza LINK"
+        },
+        {
+          "number": 4,
+          "title": "Cómo llegan los datos a un contrato"
+        },
+        {
+          "number": 5,
+          "title": "Operadores, fuentes y calidad de la información"
+        },
+        {
+          "number": 6,
+          "title": "Pagos por servicios y recompensas"
+        },
+        {
+          "number": 7,
+          "title": "Participación mediante staking y sus condiciones"
+        },
+        {
+          "number": 8,
+          "title": "Servicios de comunicación entre redes"
+        },
+        {
+          "number": 9,
+          "title": "Relación entre adopción, economía de LINK y riesgos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Chainlink"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Dogecoin: pagos, emisión y efecto de la comunidad",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Origen y propósito de Dogecoin"
+        },
+        {
+          "number": 2,
+          "title": "Para qué se utiliza DOGE"
+        },
+        {
+          "number": 3,
+          "title": "Cómo funcionan sus transacciones"
+        },
+        {
+          "number": 4,
+          "title": "Minería y seguridad de la red"
+        },
+        {
+          "number": 5,
+          "title": "Emisión continua y evolución de la oferta"
+        },
+        {
+          "number": 6,
+          "title": "Comisiones y uso para pagos"
+        },
+        {
+          "number": 7,
+          "title": "Comunidad, atención pública y demanda"
+        },
+        {
+          "number": 8,
+          "title": "Uso comprobable frente a popularidad"
+        },
+        {
+          "number": 9,
+          "title": "Concentración, volatilidad y riesgos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de Dogecoin"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "Tether: cómo funciona USDT y qué sostiene su paridad",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué intenta representar USDT"
+        },
+        {
+          "number": 2,
+          "title": "Quién emite el token"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se crean y retiran unidades"
+        },
+        {
+          "number": 4,
+          "title": "En qué redes circula"
+        },
+        {
+          "number": 5,
+          "title": "USDT original frente a versiones trasladadas mediante puentes"
+        },
+        {
+          "number": 6,
+          "title": "Qué documentos describen las reservas"
+        },
+        {
+          "number": 7,
+          "title": "Condiciones y acceso al reembolso"
+        },
+        {
+          "number": 8,
+          "title": "Precio de mercado y posibles pérdidas de paridad"
+        },
+        {
+          "number": 9,
+          "title": "Riesgos del emisor, de las reservas y de las redes"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar USDT en un escenario de tensión"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "section": "Criptomonedas y proyectos concretos",
+      "title": "USD Coin: cómo funciona USDC y cómo analizar sus riesgos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué intenta representar USDC"
+        },
+        {
+          "number": 2,
+          "title": "Quién emite el token"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se crean y retiran unidades"
+        },
+        {
+          "number": 4,
+          "title": "Qué activos respaldan sus reservas"
+        },
+        {
+          "number": 5,
+          "title": "Cómo interpretar los informes sobre las reservas"
+        },
+        {
+          "number": 6,
+          "title": "USDC nativo frente a versiones trasladadas mediante puentes"
+        },
+        {
+          "number": 7,
+          "title": "Condiciones y acceso al reembolso"
+        },
+        {
+          "number": 8,
+          "title": "Controles del emisor y dependencias bancarias"
+        },
+        {
+          "number": 9,
+          "title": "Comparar USDC y USDT con los mismos criterios"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar monedas estables y decidir qué investigar después"
+        }
+      ]
+    }
+  ]
+}

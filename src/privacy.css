@@ -1,0 +1,13 @@
+#brote-preview .och-consent-option{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.5;color:var(--br-ink);cursor:pointer;text-align:left;margin:16px 0 8px}
+#brote-preview .och-consent-option input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:#24854b}
+#brote-preview .och-privacy-dialog{width:min(460px,calc(100vw - 32px));max-height:85dvh;overflow:auto;border:0;border-radius:24px;padding:24px;color:var(--br-ink);background:var(--br-panel);font:inherit}
+#brote-preview .och-privacy-dialog::backdrop{background:#172b2466}
+#brote-preview .och-privacy-dialog h2{font-size:25px;margin:0 0 16px}
+#brote-preview .och-privacy-dialog p{font-size:13px;line-height:1.5;color:var(--br-muted)}
+#brote-preview .och-privacy-dialog form>.br-main-button{width:100%;margin-top:12px}
+#brote-preview .och-cookie-banner{position:fixed;z-index:150;left:50%;bottom:max(14px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(480px,calc(100vw - 24px));border:1px solid var(--br-line);border-radius:20px;background:var(--br-panel);padding:18px;box-shadow:0 12px 45px #16372525;color:var(--br-ink);font-size:14px}
+#brote-preview .och-cookie-banner[hidden]{display:none}
+#brote-preview .och-cookie-banner p{font-size:13px;line-height:1.5;margin:7px 0 12px;color:var(--br-muted)}
+#brote-preview .och-cookie-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+#brote-preview .och-cookie-actions button{padding:11px 6px;font-size:13px}
+

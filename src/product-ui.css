@@ -1,0 +1,141 @@
+#br-help-slot {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  min-width: 0;
+}
+
+.br-product-dialog,
+#br-help-slot {
+  --product-bg: light-dark(#fffdf6, #1e2523);
+  --product-panel: light-dark(#ffffff, #27312c);
+  --product-ink: light-dark(#23382c, #f1f5e7);
+  --product-muted: light-dark(#626e63, #b6c4b7);
+  --product-line: light-dark(#d9dfd1, #4c5b4f);
+  --product-soft: light-dark(#eff3e7, #303c32);
+  --product-purple: light-dark(#eee5fd, #40354d);
+  --product-focus: light-dark(#436b2a, #d4f89a);
+  --product-error: light-dark(#883d29, #ffd0bd);
+  color-scheme: light dark;
+  font: 600 16px/1.55 'Nunito Variable', 'Nunito', ui-rounded, system-ui, sans-serif;
+  color: var(--product-ink);
+}
+
+.br-product-dialog,
+.br-product-dialog *,
+#br-help-slot * { box-sizing: border-box; }
+
+.br-product-dialog {
+  inset: var(--br-safe-top, 0px) var(--br-safe-right, 0px) var(--br-safe-bottom, 0px) var(--br-safe-left, 0px);
+  width: min(480px, calc(100vw - 24px - var(--br-safe-left, 0px) - var(--br-safe-right, 0px)));
+  max-width: calc(100vw - 24px - var(--br-safe-left, 0px) - var(--br-safe-right, 0px));
+  max-height: calc(100vh - 32px - var(--br-safe-top, 0px) - var(--br-safe-bottom, 0px));
+  max-height: calc(100dvh - 32px - var(--br-safe-top, 0px) - var(--br-safe-bottom, 0px));
+  margin: auto;
+  padding: 24px;
+  border: 1px solid var(--product-line);
+  border-radius: 26px;
+  background: var(--product-bg);
+  box-shadow: 0 18px 64px #10221930;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scroll-padding-block: 16px;
+}
+.br-product-dialog::backdrop { background: #15291bd1; backdrop-filter: blur(3px); }
+.br-product-dialog:not([open]), .br-product-dialog [hidden] { display: none !important; }
+.br-product-header { display: flex; align-items: start; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.br-product-title { margin: 4px 0 0; font-size: 25px; font-weight: 900; letter-spacing: -.45px; line-height: 1.2; overflow-wrap: anywhere; }
+.br-product-header > button { flex: 0 0 auto; font-size: 13px; }
+.br-product-copy { margin: 0 0 16px; font-size: 15px; overflow-wrap: anywhere; }
+.br-product-small { margin: 8px 0 16px; color: var(--product-muted); font-size: 13px; overflow-wrap: anywhere; }
+.br-product-subtitle { margin: 24px 0 12px; font-size: 18px; font-weight: 900; line-height: 1.3; }
+.br-product-card { margin-top: 20px; padding: 17px; border: 1px solid var(--product-line); border-radius: 19px; background: var(--product-panel); }
+.br-product-card > h3:first-child { margin-top: 0; }
+.br-product-card > p:last-child { margin-bottom: 0; }
+
+.br-product-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid var(--product-line);
+  border-bottom-width: 3px;
+  border-radius: 14px;
+  background: var(--product-panel);
+  color: var(--product-ink);
+  font: 800 14px/1.3 'Nunito Variable', 'Nunito', ui-rounded, system-ui, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.br-product-button--primary { border-color: #729d38; background: #c5ed76; color: #294226; }
+.br-product-button--quiet, .br-product-button--header { border-bottom-width: 1px; background: transparent; }
+#br-help-slot .br-product-button--header { font-size: 13px; padding-inline: 10px; }
+.br-product-button--link { border-color: transparent; border-bottom-width: 1px; background: transparent; text-decoration: underline; text-underline-offset: 3px; padding-inline: 3px; }
+.br-product-button:not(:disabled):hover { filter: brightness(.97); }
+.br-product-button:disabled { opacity: .55; cursor: default; }
+.br-product-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; margin: 14px 0; }
+.br-product-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 20px; }
+.br-product-dialog :focus-visible, #br-help-slot :focus-visible { outline: 3px solid var(--product-focus); outline-offset: 3px; }
+.br-product-notice { margin: 0 0 16px; padding: 12px 14px; border: 1px solid var(--product-line); border-radius: 15px; background: var(--product-soft); font-size: 14px; overflow-wrap: anywhere; }
+.br-product-notice--error { color: var(--product-error); border-color: currentColor; }
+
+.br-product-question { padding: 10px 0; border-bottom: 1px solid var(--product-line); }
+.br-product-question summary { min-height: 44px; padding: 10px 0; font-size: 14px; font-weight: 800; cursor: pointer; touch-action: manipulation; }
+.br-product-question p { margin: 8px 0 12px; color: var(--product-muted); font-size: 14px; }
+.br-product-welcome-steps { display: flex; justify-content: center; gap: 14px; list-style: none; padding: 0; margin: 0 0 20px; }
+.br-product-welcome-steps li { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--product-line); border-radius: 50%; background: var(--product-soft); font-size: 14px; font-weight: 900; }
+.br-product-welcome-steps [aria-current="step"] { background: #c5ed76; color: #294226; border-color: #729d38; }
+.br-product-welcome-card { padding: 20px; border-radius: 21px; background: var(--product-soft); }
+.br-product-welcome-card h3 { margin: 0 0 14px; font-size: 23px; font-weight: 900; line-height: 1.25; letter-spacing: -.35px; }
+.br-product-welcome-card .br-product-small { margin-bottom: 0; }
+.br-product-welcome-visual { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 22px 0; }
+.br-product-welcome-visual span { padding: 8px 10px; border-radius: 11px; background: var(--product-panel); font-size: 12px; font-weight: 800; }
+.br-product-welcome-visual span:nth-child(2) { background: var(--product-purple); }
+.br-product-welcome-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.br-product-welcome-actions > :last-child { margin-left: auto; }
+
+.br-product-form { display: grid; gap: 9px; }
+.br-product-label { display: block; font-size: 14px; font-weight: 800; }
+.br-product-input { display: block; min-width: 0; width: 100%; min-height: 48px; padding: 11px 12px; border: 1px solid var(--product-line); border-radius: 13px; background: var(--product-panel); color: var(--product-ink); font: 600 16px/1.5 'Nunito Variable', 'Nunito', ui-rounded, system-ui, sans-serif; scroll-margin-block: 16px; }
+.br-product-input[aria-invalid="true"] { border: 2px solid var(--product-error); }
+.br-product-textarea { resize: vertical; max-width: 100%; }
+.br-product-draft textarea { min-height: 180px; margin-top: 8px; }
+.br-product-form > .br-product-small { margin: 0 0 9px; }
+.br-product-consent { display: flex; align-items: start; gap: 10px; font-size: 14px; cursor: pointer; }
+.br-product-consent > span { padding-top: 6px; }
+.br-product-checkbox { flex: 0 0 44px; width: 44px; height: 44px; margin: 0; accent-color: #729d38; cursor: pointer; }
+.br-product-content > .br-product-button--quiet { margin-top: 18px; }
+
+.br-product-legal { font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
+.br-product-legal h2, .br-product-legal h3, .br-product-legal h4 { margin: 22px 0 10px; line-height: 1.3; font-weight: 900; }
+.br-product-legal h2 { font-size: 20px; }
+.br-product-legal h3 { font-size: 17px; }
+.br-product-legal h4 { font-size: 15px; }
+.br-product-legal p, .br-product-legal ul, .br-product-legal ol, .br-product-legal dl { margin: 0 0 14px; }
+.br-product-legal ul, .br-product-legal ol { padding-left: 23px; }
+.br-product-legal li { margin-bottom: 7px; }
+.br-product-legal dt { font-weight: 800; }
+.br-product-legal dd { margin: 0 0 12px; }
+.br-product-legal a { color: inherit; text-underline-offset: 3px; }
+.br-product-legal .br-legal-actions { display: grid; gap: 10px; margin: 16px 0; }
+.br-product-legal .br-legal-button { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 14px; border: 1px solid var(--product-line); border-radius: 13px; background: var(--product-soft); font-weight: 800; text-align: center; }
+.br-product-legal .br-legal-summary, .br-product-legal .br-legal-contact { padding: 15px; margin: 16px 0; border: 1px solid var(--product-line); border-radius: 17px; background: var(--product-panel); }
+
+@media (max-width: 380px) {
+  .br-product-dialog { padding: 18px 15px; border-radius: 22px; }
+  .br-product-header { gap: 8px; }
+  .br-product-title { font-size: 22px; }
+  .br-product-card, .br-product-welcome-card { padding: 15px; }
+  .br-product-welcome-card h3 { font-size: 21px; }
+}
+@media (prefers-reduced-motion: reduce) { .br-product-dialog * { scroll-behavior: auto; transition: none; } }
+@media (forced-colors: active) {
+  .br-product-button, .br-product-input, .br-product-notice { border-color: ButtonText; }
+  .br-product-welcome-steps [aria-current="step"] { outline: 2px solid Highlight; }
+}

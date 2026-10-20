@@ -1,0 +1,401 @@
+# Análisis técnico — Índice propuesto de mundos y puntos
+
+## Aprender a leer un gráfico
+
+### Mundo 1 — Qué es el análisis técnico y qué puede decirte
+
+1. Qué estudia el análisis técnico
+2. Precio, volumen y tiempo
+3. Análisis técnico y análisis fundamental
+4. Observar un dato frente a interpretar su significado
+5. Qué es una hipótesis sobre el precio
+6. Patrones y probabilidades
+7. Por qué una señal puede fallar
+8. Cómo influye el mercado que estás analizando
+9. Qué información necesitas antes de empezar
+10. Caso práctico: separar observaciones y conclusiones
+
+### Mundo 2 — Cómo leer y configurar un gráfico
+
+1. Gráficos de líneas, barras y velas
+2. Eje del precio y eje del tiempo
+3. Qué representa cada periodo
+4. Gráficos diarios, semanales e intradía
+5. Una vela abierta frente a una vela cerrada
+6. Escala lineal y escala logarítmica
+7. Comparar movimientos en euros y en porcentaje
+8. Horarios, sesiones y huecos
+9. Ajustes por dividendos y desdoblamientos de acciones
+10. Caso práctico: configurar un gráfico para una pregunta concreta
+
+### Mundo 3 — Velas japonesas: apertura, cierre, cuerpo y mechas
+
+1. Los cuatro precios de una vela
+2. Cómo identificar apertura y cierre
+3. Cómo identificar máximo y mínimo
+4. Velas alcistas y velas bajistas
+5. Qué representa el cuerpo
+6. Qué representan las mechas
+7. Rango total y cambio neto
+8. Dónde cierra la vela dentro de su rango
+9. Qué recorrido no puedes reconstruir con una sola vela
+10. Caso práctico: interpretar y construir una vela
+
+### Mundo 4 — Tendencias: máximos, mínimos y cambios de estructura
+
+1. Qué significa que el precio tenga una tendencia
+2. Máximos y mínimos crecientes
+3. Máximos y mínimos decrecientes
+4. Cómo identificar un movimiento lateral
+5. Impulsos y retrocesos
+6. Dirección frente a velocidad del movimiento
+7. Cómo elegir máximos y mínimos relevantes
+8. Primeras señales de un cambio de estructura
+9. Una pausa frente a un cambio de tendencia
+10. Caso práctico: describir una tendencia con criterios explícitos
+
+### Mundo 5 — Soportes y resistencias: cómo marcar zonas
+
+1. Qué es una zona de soporte
+2. Qué es una zona de resistencia
+3. Zonas de precio frente a niveles exactos
+4. Contactos, cierres y rechazos anteriores
+5. Cómo seleccionar referencias relevantes
+6. El papel del tiempo y del marco temporal
+7. Cuando un soporte pasa a actuar como resistencia
+8. Cuando una resistencia pasa a actuar como soporte
+9. Qué indicaría que una zona ha dejado de ser útil
+10. Caso práctico: marcar y justificar las zonas de un gráfico
+
+### Mundo 6 — Volumen: interpretar la actividad del mercado
+
+1. Qué mide el volumen
+2. Qué volumen publica cada mercado
+3. Comparar sesiones y periodos equivalentes
+4. Volumen habitual y volumen excepcional
+5. Subidas con aumento o descenso de actividad
+6. Caídas con aumento o descenso de actividad
+7. Volumen cerca de soportes y resistencias
+8. Volumen durante una ruptura
+9. Por qué mucho volumen no identifica por sí solo a compradores o vendedores
+10. Caso práctico: combinar precio y volumen
+
+### Mundo 7 — Volatilidad: medir cuánto se mueve el precio
+
+1. Qué significa que un activo sea volátil
+2. Dirección y amplitud son cosas distintas
+3. Rangos de las velas
+4. Variaciones porcentuales entre cierres
+5. Volatilidad intradía y volatilidad entre sesiones
+6. Periodos de contracción
+7. Periodos de expansión
+8. Huecos y movimientos discontinuos
+9. Cómo cambia una lectura cuando aumenta la volatilidad
+10. Caso práctico: comparar dos movimientos de distinta amplitud
+
+## Patrones de velas y figuras de precio
+
+### Mundo 8 — Doji, martillos y estrellas fugaces
+
+1. Qué es una vela doji
+2. Cómo definir cuándo un cuerpo es pequeño
+3. Doji con poco rango y doji con mucho rango
+4. Qué caracteriza a un martillo
+5. Martillo invertido y contexto previo
+6. Hombre colgado: una forma parecida en otro contexto
+7. Qué caracteriza a una estrella fugaz
+8. El papel del color, las mechas y la ubicación
+9. Confirmación e invalidación de una interpretación
+10. Caso práctico: comparar la misma forma en dos contextos
+
+### Mundo 9 — Patrones de dos velas: envolventes y harami
+
+1. Cómo comparar dos cuerpos consecutivos
+2. Qué caracteriza a una envolvente alcista
+3. Qué caracteriza a una envolvente bajista
+4. Envolver el cuerpo frente a envolver todo el rango
+5. Qué caracteriza a un harami
+6. Velas interiores y su diferencia con un harami
+7. Pauta penetrante
+8. Cubierta de nube oscura
+9. Tendencia previa, zonas y reglas de identificación
+10. Caso práctico: reconocer patrones con una definición consistente
+
+### Mundo 10 — Patrones de tres velas y secuencias de continuación
+
+1. Cómo interpretar una secuencia de tres velas
+2. Qué caracteriza a una estrella de la mañana
+3. Qué caracteriza a una estrella de la tarde
+4. El papel de la vela intermedia
+5. Tres soldados blancos
+6. Tres cuervos negros
+7. Secuencias de avance con cuerpos cada vez menores
+8. Pausas dentro de un movimiento
+9. Diferencias entre mercados con huecos y mercados continuos
+10. Caso práctico: distinguir patrón completo y patrón pendiente
+
+### Mundo 11 — Figuras de giro: dobles techos, dobles suelos y hombro-cabeza-hombro
+
+1. Qué intenta describir una figura de giro
+2. Cómo identificar un doble techo
+3. Cómo identificar un doble suelo
+4. Qué papel tiene el nivel intermedio
+5. Hombro-cabeza-hombro
+6. Hombro-cabeza-hombro invertido
+7. Qué significa completar o confirmar una figura
+8. Proyecciones de precio y sus límites
+9. Figuras que fallan o quedan incompletas
+10. Caso práctico: formular una hipótesis de giro
+
+### Mundo 12 — Figuras de continuación: triángulos, banderas y rectángulos
+
+1. Qué intenta describir una figura de continuación
+2. Consolidaciones rectangulares
+3. Triángulos simétricos
+4. Triángulos ascendentes
+5. Triángulos descendentes
+6. Banderas y banderines
+7. Cuñas y dificultad para clasificarlas
+8. Duración, amplitud y volumen de la figura
+9. Rupturas contrarias a la interpretación inicial
+10. Caso práctico: comparar figuras sin forzar sus líneas
+
+### Mundo 13 — Rupturas y falsas rupturas
+
+1. Definir qué nivel o zona se está rompiendo
+2. Cruce por mecha frente a cruce por cierre
+3. Distancia del cierre respecto a la zona
+4. Criterios de confirmación
+5. Rupturas con cambios de volumen
+6. Prueba posterior de la zona
+7. Regreso al interior y falsa ruptura
+8. Rupturas con huecos
+9. Cómo definir la invalidación antes del resultado
+10. Caso práctico: evaluar varias rupturas con la misma regla
+
+### Mundo 14 — Retrocesos, canales y niveles de Fibonacci
+
+1. Qué es un retroceso dentro de una tendencia
+2. Medir cuánto se ha corregido
+3. Cómo trazar un canal
+4. Límites y línea central del canal
+5. Qué son los niveles de retroceso de Fibonacci
+6. Cómo elegir los extremos de referencia
+7. Cómo cambia el resultado al cambiar los extremos
+8. Extensiones y proyecciones
+9. Cómo comprobar si un nivel aporta información útil
+10. Caso práctico: comparar referencias de una corrección
+
+## Indicadores y herramientas
+
+### Mundo 15 — Medias móviles: tipos, cruces y retraso
+
+1. Qué resume una media móvil
+2. Cómo calcular una media simple
+3. Cómo funciona una media exponencial
+4. Ventanas cortas y ventanas largas
+5. Precio por encima o por debajo de la media
+6. Pendiente de la media
+7. Cruces entre dos medias
+8. Retraso y señales repetidas en mercados laterales
+9. Cómo combinar medias y estructura del precio
+10. Caso práctico: comparar medias con distintos periodos
+
+### Mundo 16 — RSI: impulso, sobrecompra y sobreventa
+
+1. Qué intenta medir el RSI
+2. Cómo se relaciona con las subidas y bajadas recientes
+3. Periodo de cálculo y sensibilidad
+4. Cómo interpretar su escala
+5. Qué significa hablar de sobrecompra
+6. Qué significa hablar de sobreventa
+7. Por qué puede permanecer en valores extremos
+8. Divergencias entre precio y RSI
+9. Qué cambia entre una tendencia y un mercado lateral
+10. Caso práctico: interpretar RSI y precio conjuntamente
+
+### Mundo 17 — MACD: tendencia, impulso y cruces
+
+1. Qué compara el MACD
+2. La línea MACD
+3. La línea de señal
+4. Qué representa el histograma
+5. Cruces con la línea de señal
+6. Cruces del nivel cero
+7. Cambios en la separación entre las líneas
+8. Divergencias con el precio
+9. Retraso, parámetros y señales en mercados laterales
+10. Caso práctico: explicar qué ha cambiado en el indicador
+
+### Mundo 18 — Bandas de Bollinger: variación y posición del precio
+
+1. La media central y las bandas
+2. Qué papel tiene la desviación típica
+3. Cómo influyen el periodo y la amplitud elegida
+4. Bandas que se estrechan
+5. Bandas que se ensanchan
+6. Precio cerca de la banda superior
+7. Precio cerca de la banda inferior
+8. Movimientos que continúan junto a una banda
+9. Por qué tocar una banda no determina una operación
+10. Caso práctico: comparar contracción y expansión
+
+### Mundo 19 — ATR: medir el rango y contextualizar el riesgo
+
+1. Qué es el rango verdadero
+2. Cómo incorpora los huecos
+3. Qué resume el ATR
+4. Periodo de cálculo y actualización
+5. ATR en unidades de precio
+6. Comparar volatilidad relativa entre activos
+7. Distancias expresadas en múltiplos del ATR
+8. Cómo cambia una distancia cuando cambia el ATR
+9. Qué no predice el indicador
+10. Caso práctico: comparar movimientos y distancias de riesgo
+
+### Mundo 20 — ADX: distinguir fuerza de tendencia y dirección
+
+1. Qué intenta medir el ADX
+2. Qué representan los indicadores direccionales
+3. Dirección frente a fuerza de tendencia
+4. ADX que aumenta
+5. ADX que disminuye
+6. Cruces entre indicadores direccionales
+7. Umbrales de referencia y sus limitaciones
+8. Retraso y sensibilidad al periodo
+9. Cómo contrastar el indicador con la estructura del precio
+10. Caso práctico: comparar fases de tendencia y lateralidad
+
+### Mundo 21 — VWAP y OBV: otras formas de relacionar precio y volumen
+
+1. Qué es un precio medio ponderado por volumen
+2. Cómo se calcula el VWAP
+3. Qué ocurre al reiniciar la referencia por sesión
+4. VWAP anclado a una fecha o acontecimiento
+5. Precio por encima o por debajo de la referencia
+6. Qué intenta representar el OBV
+7. Cómo se acumula el volumen en el OBV
+8. Diferencias entre precio y volumen acumulado
+9. Calidad de los datos y límites de interpretación
+10. Caso práctico: elegir una herramienta según la pregunta
+
+### Mundo 22 — Cómo analizar varios marcos temporales
+
+1. Cómo se agrupan velas de periodos pequeños
+2. Estructura del periodo mayor
+3. Movimiento del periodo intermedio
+4. Detalle del periodo menor
+5. Subidas cortas dentro de caídas largas
+6. Caídas cortas dentro de subidas largas
+7. Zonas que aparecen en varios marcos
+8. Esperar el cierre del periodo utilizado
+9. Evitar contar dos veces la misma información
+10. Caso práctico: redactar una lectura de varios marcos
+
+## Gestión del riesgo y comprobación de estrategias
+
+### Mundo 23 — Entradas, salidas y ejecución de una operación
+
+1. Convertir una hipótesis en condiciones de entrada
+2. Órdenes de mercado y órdenes limitadas
+3. Órdenes de stop
+4. Diferencia entre precio de activación y precio ejecutado
+5. Salidas por invalidación
+6. Salidas por objetivo o por tiempo
+7. Comisiones y diferencial de compra y venta
+8. Deslizamiento y falta de liquidez
+9. Qué ocurre si el precio salta un nivel
+10. Simulación: ejecutar una idea con costes y restricciones
+
+### Mundo 24 — Cómo calcular el tamaño de una posición
+
+1. Capital de la cuenta y capital comprometido
+2. Pérdida prevista por operación
+3. Distancia entre entrada e invalidación
+4. Pérdida prevista por unidad
+5. Cómo calcular el número de unidades
+6. Cómo incorporar comisiones y costes
+7. Qué cambia al aumentar la distancia de salida
+8. Apalancamiento y exposición real
+9. Riesgo conjunto de posiciones relacionadas
+10. Caso práctico: dimensionar una posición con límites explícitos
+
+### Mundo 25 — Aciertos, pérdidas y esperanza matemática
+
+1. Porcentaje de operaciones ganadoras
+2. Ganancia media y pérdida media
+3. Relación entre beneficio y riesgo previstos
+4. Resultados expresados en unidades de riesgo
+5. Cómo calcular la esperanza matemática
+6. Por qué acertar mucho puede no ser suficiente
+7. Cómo afectan los costes a la expectativa
+8. Rachas de pérdidas
+9. Caída acumulada de la cuenta
+10. Caso práctico: comparar dos conjuntos de operaciones
+
+### Mundo 26 — Cómo probar una estrategia con datos históricos
+
+1. Escribir reglas que puedan comprobarse
+2. Elegir activos, periodos y fuentes de datos
+3. Utilizar solo información disponible en cada momento
+4. Definir entradas, salidas y tamaño
+5. Resolver señales simultáneas y operaciones solapadas
+6. Incorporar comisiones, liquidez y ejecución
+7. Separar datos de diseño y datos de evaluación
+8. Leer rentabilidad, riesgo y número de operaciones
+9. Comparar con una referencia sencilla
+10. Caso práctico: diseñar una prueba reproducible
+
+### Mundo 27 — Cómo detectar pruebas engañosas y sobreajuste
+
+1. Seleccionar únicamente los ejemplos favorables
+2. Utilizar datos que aún no se conocían
+3. Excluir activos que desaparecieron
+4. Probar muchas variantes y publicar solo la mejor
+5. Ajustar demasiados parámetros
+6. Resultados que dependen de pocas operaciones
+7. Cambiar ligeramente los parámetros
+8. Probar otros periodos y condiciones de mercado
+9. Diferenciar robustez y coincidencia
+10. Caso práctico: revisar una estrategia aparentemente excelente
+
+### Mundo 28 — Diario de decisiones y sesgos al interpretar gráficos
+
+1. Registrar una hipótesis antes del resultado
+2. Guardar el gráfico y los datos utilizados
+3. Anotar motivos de entrada y de salida
+4. Sesgo de confirmación
+5. Cambiar una explicación después de conocer el resultado
+6. Confundir una buena decisión con una operación ganadora
+7. Perseguir movimientos por miedo a perder una oportunidad
+8. Aumentar el riesgo después de una pérdida
+9. Revisar errores con criterios consistentes
+10. Caso práctico: evaluar una decisión con su información original
+
+## Integrar herramientas y practicar
+
+### Mundo 29 — Cómo construir un análisis técnico coherente
+
+1. Definir la pregunta y el horizonte
+2. Describir la estructura del precio
+3. Marcar zonas relevantes
+4. Revisar volumen y volatilidad
+5. Elegir indicadores que respondan a preguntas distintas
+6. Evitar acumular señales derivadas del mismo dato
+7. Plantear escenarios alternativos
+8. Definir confirmación e invalidación
+9. Decidir si hay suficiente información para actuar
+10. Caso práctico: redactar un análisis con datos y condiciones
+
+### Mundo 30 — Casos prácticos: tendencias, rangos y cambios de mercado
+
+1. Analizar una tendencia alcista con retrocesos
+2. Analizar una tendencia bajista con rebotes
+3. Analizar un mercado lateral
+4. Evaluar una ruptura que pierde continuidad
+5. Interpretar un patrón de velas cerca de una zona
+6. Comparar señales contradictorias entre indicadores
+7. Revisar una hipótesis después de un hueco de precio
+8. Adaptar el análisis a un aumento de volatilidad
+9. Comparar dos interpretaciones del mismo gráfico
+10. Caso práctico: actualizar una hipótesis y decidir qué comprobar después

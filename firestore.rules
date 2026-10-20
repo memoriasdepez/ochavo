@@ -1,0 +1,631 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function verifiedOwner(uid) {
+      return request.auth != null
+        && request.auth.uid == uid
+        && request.auth.token.email_verified == true;
+    }
+
+    function accountActive(uid) {
+      return !exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+
+    function accountActiveAfterWrite(uid) {
+      return accountActive(uid)
+        && !existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+
+    // Private, explicit beta feedback. Clients cannot browse other people's reports.
+    match /feedbackReports/{report} {
+      function reportOwner() {
+        return request.auth != null && verifiedOwner(request.auth.uid)
+          && request.auth.token.get('firebase', {}).get('sign_in_provider', '') != 'anonymous';
+      }
+      function validReportContext(c) {
+        return c.keys().hasAll(['page','track','lessonId','worldId','stepIndex','stepCount','questionIndex','exerciseKind','appVersion','platform'])
+          && c.keys().hasOnly(['page','track','lessonId','worldId','stepIndex','stepCount','questionIndex','exerciseKind','appVersion','platform'])
+          && c.page in ['map','detail','lesson','exam-detail','exam','exam-result','case-lesson','cases','profile','lab','help']
+          && c.track in ['','stocks','etfs','crypto','technical']
+          && c.lessonId is int && c.lessonId >= -1 && c.lessonId < 1750
+          && c.worldId is int && c.worldId >= -1 && c.worldId < 175
+          && c.stepIndex is int && c.stepIndex >= -1 && c.stepIndex < c.stepCount
+          && c.stepCount is int && c.stepCount >= 0 && c.stepCount <= 50
+          && c.questionIndex is int && c.questionIndex >= -1 && c.questionIndex < 10
+          && c.exerciseKind is string && c.exerciseKind.matches('^[a-z-]{0,40}$')
+          && c.appVersion is string && (c.appVersion == '' || c.appVersion.matches('^[0-9]{1,3}[.][0-9]{1,3}[.][0-9]{1,3}$'))
+          && c.platform in ['','web','android','ios'];
+      }
+      allow get: if reportOwner() && report.matches('^[a-f0-9]{32}$')
+        && (!exists(/databases/$(database)/documents/feedbackReports/$(report)) || resource.data.ownerUid == request.auth.uid);
+      allow list: if reportOwner() && resource.data.ownerUid == request.auth.uid;
+      allow create: if reportOwner() && accountActiveAfterWrite(request.auth.uid)
+        && report.matches('^[a-f0-9]{32}$')
+        && request.resource.data.keys().hasAll(['schemaVersion','category','message','context','ownerUid','createdAt'])
+        && request.resource.data.keys().hasOnly(['schemaVersion','category','message','context','ownerUid','createdAt'])
+        && request.resource.data.schemaVersion == 1
+        && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.category in ['contenido','funcionamiento','progreso','cuenta','otro']
+        && request.resource.data.message is string && request.resource.data.message.size() >= 10 && request.resource.data.message.size() <= 2000
+        && request.resource.data.createdAt == request.time
+        && validReportContext(request.resource.data.context);
+      allow update: if false;
+      allow delete: if reportOwner() && resource.data.ownerUid == request.auth.uid && !accountActive(request.auth.uid);
+    }
+
+    // Optional communications consent; writable before email verification so signup records the choice.
+    function preferenceOwner(uid) {
+      return request.auth != null && request.auth.uid == uid
+        && request.auth.token.get('firebase', {}).get('sign_in_provider', '') != 'anonymous';
+    }
+    function validCommunicationPreference() {
+      let d=request.resource.data;
+      return d.keys().hasAll(['newsletter','version','source','eventId','updatedAt'])
+        && d.keys().hasOnly(['newsletter','version','source','eventId','updatedAt'])
+        && d.newsletter is bool && d.version == '2026-10-05'
+        && d.source in ['registration','profile']
+        && d.eventId is string && d.eventId.matches('^[a-f0-9]{32}$')
+        && d.updatedAt == request.time;
+    }
+    match /users/{uid}/preferences/communications {
+      allow get: if preferenceOwner(uid) && accountActive(uid);
+      allow create, update: if preferenceOwner(uid) && accountActiveAfterWrite(uid)
+        && validCommunicationPreference()
+        && getAfter(/databases/$(database)/documents/users/$(uid)/consentEvents/$(request.resource.data.eventId)).data == request.resource.data;
+      allow delete: if preferenceOwner(uid) && !accountActive(uid);
+    }
+    match /users/{uid}/consentEvents/{event} {
+      allow get, list: if preferenceOwner(uid);
+      allow create: if preferenceOwner(uid) && accountActiveAfterWrite(uid)
+        && validCommunicationPreference() && request.resource.data.eventId == event
+        && getAfter(/databases/$(database)/documents/users/$(uid)/preferences/communications).data == request.resource.data;
+      allow update: if false;
+      allow delete: if preferenceOwner(uid) && !accountActive(uid);
+    }
+
+    // Private invitation attribution and anonymous reward receipts.
+    function referralEligible(uid) {
+      return !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-0)
+        && !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-1450)
+        && !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-1150)
+        && !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-950)
+        && !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-450)
+        && !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-100)
+        && !exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-150);
+    }
+    function learnedFirst(uid) {
+      return exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-0)
+        || exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-1450)
+        || exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-1150)
+        || exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-950)
+        || exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-450)
+        || exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-100)
+        || exists(/databases/$(database)/documents/users/$(uid)/gameClaims/lesson-150);
+    }
+    match /inviteCodes/{code} {
+      allow get: if code.matches('^[A-HJ-NP-Z2-9]{10}$');
+      allow list, update: if false;
+      allow create: if code.matches('^[A-HJ-NP-Z2-9]{10}$')
+        && request.resource.data.keys().hasOnly(['uid','createdAt'])
+        && verifiedOwner(request.resource.data.uid) && accountActiveAfterWrite(request.auth.uid)
+        && request.resource.data.createdAt == request.time
+        && getAfter(/databases/$(database)/documents/users/$(request.auth.uid)/referralCode/main).data.code == code;
+      allow delete: if verifiedOwner(resource.data.uid)
+        && exists(/databases/$(database)/documents/accountDeletions/$(request.auth.uid));
+    }
+    match /users/{uid}/referralCode/main {
+      allow get: if verifiedOwner(uid);
+      allow list, update: if false;
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && request.resource.data.keys().hasOnly(['code','createdAt'])
+        && request.resource.data.code is string && request.resource.data.code.matches('^[A-HJ-NP-Z2-9]{10}$')
+        && request.resource.data.createdAt == request.time
+        && getAfter(/databases/$(database)/documents/inviteCodes/$(request.resource.data.code)).data.uid == uid;
+      allow delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /referralAttributions/{uid} {
+      allow get: if verifiedOwner(uid);
+      allow list: if verifiedOwner(resource.data.inviterUid)
+        && exists(/databases/$(database)/documents/accountDeletions/$(request.auth.uid));
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid) && referralEligible(uid)
+        && request.resource.data.keys().hasOnly(['inviterUid','code','receiptId','createdAt','qualified'])
+        && request.resource.data.code is string && request.resource.data.code.matches('^[A-HJ-NP-Z2-9]{10}$')
+        && request.resource.data.receiptId is string && request.resource.data.receiptId.matches('^[a-f0-9]{32}$')
+        && request.resource.data.inviterUid is string && request.resource.data.inviterUid != uid
+        && accountActive(request.resource.data.inviterUid)
+        && get(/databases/$(database)/documents/inviteCodes/$(request.resource.data.code)).data.uid == request.resource.data.inviterUid
+        && request.resource.data.createdAt == request.time && request.resource.data.qualified == false;
+      allow update: if verifiedOwner(uid) && accountActiveAfterWrite(uid) && learnedFirst(uid)
+        && resource.data.qualified == false
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['qualified','qualifiedAt'])
+        && request.resource.data.qualified == true && request.resource.data.qualifiedAt == request.time
+        && accountActive(resource.data.inviterUid)
+        && getAfter(/databases/$(database)/documents/users/$(resource.data.inviterUid)/referrals/$(resource.data.receiptId)).data.qualifiedAt == request.time;
+      allow delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid))
+        || verifiedOwner(resource.data.inviterUid)
+          && exists(/databases/$(database)/documents/accountDeletions/$(request.auth.uid));
+    }
+    match /users/{uid}/referrals/{receipt} {
+      allow get, list: if verifiedOwner(uid);
+      allow update: if false;
+      allow create: if request.auth != null && request.auth.token.email_verified == true
+        && request.auth.uid != uid && accountActiveAfterWrite(request.auth.uid) && accountActiveAfterWrite(uid)
+        && receipt.matches('^[a-f0-9]{32}$')
+        && request.resource.data.keys().hasOnly(['qualifiedAt']) && request.resource.data.qualifiedAt == request.time
+        && get(/databases/$(database)/documents/referralAttributions/$(request.auth.uid)).data.inviterUid == uid
+        && get(/databases/$(database)/documents/referralAttributions/$(request.auth.uid)).data.receiptId == receipt
+        && get(/databases/$(database)/documents/referralAttributions/$(request.auth.uid)).data.qualified == false
+        && getAfter(/databases/$(database)/documents/referralAttributions/$(request.auth.uid)).data.qualified == true
+        && learnedFirst(request.auth.uid);
+      allow delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+
+    function validProgress() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['schemaVersion', 'payload', 'updatedAt', 'revision'])
+        && data.keys().hasOnly(['schemaVersion', 'payload', 'updatedAt', 'revision'])
+        && data.schemaVersion is int
+        && data.schemaVersion in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        && data.payload is string
+        && data.payload.toUtf8().size() <= 131072
+        && data.updatedAt is timestamp
+        && data.updatedAt == request.time
+        && data.revision is int
+        && data.revision > 0;
+    }
+
+    match /users/{uid}/progress/main {
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow list: if false;
+      allow create: if verifiedOwner(uid)
+        && accountActiveAfterWrite(uid)
+        && validProgress()
+        && request.resource.data.revision == 1;
+      allow update: if verifiedOwner(uid)
+        && accountActiveAfterWrite(uid)
+        && validProgress()
+        && resource.data.revision is int
+        && request.resource.data.schemaVersion >= resource.data.schemaVersion
+        && request.resource.data.revision == resource.data.revision + 1;
+      allow delete: if verifiedOwner(uid)
+        && existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+
+    match /accountDeletions/{uid} {
+      allow get: if verifiedOwner(uid);
+      allow create: if verifiedOwner(uid)
+        && request.resource.data.keys().hasAll(['deletedAt'])
+        && request.resource.data.keys().hasOnly(['deletedAt'])
+        && request.resource.data.deletedAt is timestamp
+        && request.resource.data.deletedAt == request.time;
+      allow list, update, delete: if false;
+    }
+
+    function promoGrantPath(uid) { return /databases/$(database)/documents/users/$(uid)/promotions/lifetime; }
+    function promoCodePath(hash) { return /databases/$(database)/documents/promoCodes/$(hash); }
+    function promoAdmin() {
+      return request.auth != null && verifiedOwner(request.auth.uid) && accountActiveAfterWrite(request.auth.uid)
+        && get(/databases/$(database)/documents/promoAdmins/$(request.auth.uid)).data.schemaVersion == 1
+        && get(/databases/$(database)/documents/promoAdmins/$(request.auth.uid)).data.enabled == true;
+    }
+    match /promoAdmins/{uid} {
+      allow get: if verifiedOwner(uid);
+      allow list, create, update: if false;
+      allow delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /promoCodes/{hash} {
+      function validCode() {
+        let d=request.resource.data;
+        return hash.matches('^[a-f0-9]{64}$')
+          && d.keys().hasAll(['schemaVersion','createdBy','createdAt','label','status','redeemedBy','redeemedAt'])
+          && d.keys().hasOnly(['schemaVersion','createdBy','createdAt','label','status','redeemedBy','redeemedAt'])
+          && d.schemaVersion == 1 && d.createdBy is string && d.createdAt is timestamp
+          && d.label is string && d.label.size() <= 80
+          && d.status in ['available','redeemed','disabled'] && d.redeemedBy is string;
+      }
+      function redeemCode() {
+        let uid=request.auth.uid;
+        let grant=getAfter(promoGrantPath(uid)).data;
+        return verifiedOwner(uid) && accountActiveAfterWrite(uid)
+          && resource.data.status == 'available' && !exists(promoGrantPath(uid))
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','redeemedBy','redeemedAt'])
+          && request.resource.data.status == 'redeemed' && request.resource.data.redeemedBy == uid
+          && request.resource.data.redeemedAt == request.time
+          && grant.schemaVersion == 1 && grant.codeHash == hash && grant.grantedAt == request.time;
+      }
+      function removeRecipient() {
+        return verifiedOwner(resource.data.redeemedBy)
+          && exists(/databases/$(database)/documents/accountDeletions/$(request.auth.uid))
+          && resource.data.status == 'redeemed'
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['redeemedBy'])
+          && request.resource.data.redeemedBy == '';
+      }
+      function removeCreator() {
+        return verifiedOwner(resource.data.createdBy)
+          && exists(/databases/$(database)/documents/accountDeletions/$(request.auth.uid))
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['createdBy','label','status','redeemedBy'])
+          && request.resource.data.createdBy == '' && request.resource.data.label == ''
+          && request.resource.data.status == (resource.data.status == 'available' ? 'disabled' : resource.data.status)
+          && (request.resource.data.redeemedBy == resource.data.redeemedBy
+            || resource.data.redeemedBy == request.auth.uid && request.resource.data.redeemedBy == '');
+      }
+      allow get: if request.auth != null && verifiedOwner(request.auth.uid)
+        && (accountActive(request.auth.uid) || resource.data.createdBy == request.auth.uid || resource.data.redeemedBy == request.auth.uid);
+      allow list: if promoAdmin() || request.auth != null && verifiedOwner(resource.data.createdBy)
+        && exists(/databases/$(database)/documents/accountDeletions/$(request.auth.uid));
+      allow create: if promoAdmin() && validCode()
+        && request.resource.data.createdBy == request.auth.uid && request.resource.data.createdAt == request.time
+        && request.resource.data.status == 'available' && request.resource.data.redeemedBy == '' && request.resource.data.redeemedAt == null;
+      allow update: if request.auth != null && validCode() && (redeemCode()
+        || promoAdmin() && resource.data.status == 'available' && request.resource.data.status == 'disabled'
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+        || removeRecipient() || removeCreator());
+      // Never remove or re-enable a used code: it remains an anonymous tombstone after account deletion.
+      allow delete: if false;
+    }
+    match /users/{uid}/promotions/lifetime {
+      allow get: if verifiedOwner(uid);
+      allow list, update: if false;
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && request.resource.data.keys().hasAll(['schemaVersion','codeHash','grantedAt'])
+        && request.resource.data.keys().hasOnly(['schemaVersion','codeHash','grantedAt'])
+        && request.resource.data.schemaVersion == 1 && request.resource.data.codeHash is string
+        && request.resource.data.codeHash.matches('^[a-f0-9]{64}$') && request.resource.data.grantedAt == request.time
+        && get(promoCodePath(request.resource.data.codeHash)).data.status == 'available'
+        && getAfter(promoCodePath(request.resource.data.codeHash)).data.status == 'redeemed'
+        && getAfter(promoCodePath(request.resource.data.codeHash)).data.redeemedBy == uid
+        && getAfter(promoCodePath(request.resource.data.codeHash)).data.redeemedAt == request.time;
+      allow delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    function commercePath(uid) { return /databases/$(database)/documents/users/$(uid)/commerce/main; }
+    function commerceGemPath(uid) { return /databases/$(database)/documents/users/$(uid)/commerceGems/main; }
+    function commerceGemBefore(uid) {
+      return exists(commerceGemPath(uid)) ? get(commerceGemPath(uid)).data : {'granted':0,'consumed':0,'balance':0};
+    }
+    function gGemCost(e,c,item) { return e.kind == 'refill' ? c.refillCost : e.kind == 'skip-world' ? item.cost : 0; }
+    function gSkipPrice(c,item) {
+      return item.worldId == 45 ? item.previousWorldId == -1 && item.cost == 0
+        : item.cost == c.worldSkipCost && item.cost == 200;
+    }
+    function gEarnedGemCost(b,e,c,item) {
+      let cost=gGemCost(e,c,item);
+      return cost < b.gems ? cost : b.gems;
+    }
+    function gPaidGemCost(b,e,c,item) { return gGemCost(e,c,item) - gEarnedGemCost(b,e,c,item); }
+    function gEnoughGems(uid,b,e,c,item) {
+      let paid=gPaidGemCost(b,e,c,item);
+      return paid == 0 || commerceGemBefore(uid).balance >= paid;
+    }
+    function gPaidGemBinding(uid,b,e,c,item) {
+      let cost=gPaidGemCost(b,e,c,item);
+      return cost == 0 || getAfter(commerceGemPath(uid)).data.consumed == commerceGemBefore(uid).consumed + cost;
+    }
+    function commerceBefore(uid) {
+      let paid=exists(commercePath(uid)) ? get(commercePath(uid)).data : {'premiumUntilMs':0,'paidLives':0,'paidConsumed':0};
+      return exists(promoGrantPath(uid)) ? {'premiumUntilMs':253402300799000,
+        'paidLives':paid.paidLives,'paidConsumed':paid.paidConsumed} : paid;
+    }
+    function premium(uid) { return commerceBefore(uid).premiumUntilMs > request.time.toMillis(); }
+    function paidCost(funds,e,base) {
+      let errors=e.kind == 'answer' && !e.correct ? 1 : e.kind == 'exam' ? e.wrongCount : 0;
+      let needed=errors > base ? errors - base : 0;
+      let available=funds.paidLives;
+      return funds.premiumUntilMs > request.time.toMillis() ? 0 : needed < available ? needed : available;
+    }
+    function paidBinding(uid,e,base,funds) {
+      let cost=paidCost(funds,e,base);
+      return cost == 0 || getAfter(commercePath(uid)).data.paidConsumed == funds.paidConsumed + cost;
+    }
+    match /premiumCases/{id} {
+      allow get: if request.auth != null && verifiedOwner(request.auth.uid) && accountActive(request.auth.uid) && premium(request.auth.uid);
+      allow list, write: if false;
+    }
+    match /users/{uid}/commerce/main {
+      function validPaidSpend() {
+        let data=request.resource.data;
+        let old=resource.data;
+        let w=getAfter(gWalletPath(uid)).data;
+        let eventPath=gEventPath(uid,w.lastEventId);
+        let e=getAfter(eventPath).data;
+        let c=gConfig();
+        return data.diff(old).affectedKeys().hasOnly(['paidConsumed','paidLives','revision','updatedAt'])
+          && data.paidConsumed is int && data.paidLives is int
+          && data.paidConsumed > old.paidConsumed && data.paidLives >= 0
+          && data.paidLives == old.paidLives - (data.paidConsumed - old.paidConsumed)
+          && data.revision == old.revision + 1 && data.updatedAt == request.time
+          && w.updatedAt == request.time && !exists(eventPath)
+          && data.paidConsumed == old.paidConsumed + paidCost(old,e,gBaseLives(gBefore(uid,c),e,c));
+      }
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow list, create: if false;
+      allow update: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && !exists(promoGrantPath(uid))
+        && validPaidSpend();
+      allow delete: if verifiedOwner(uid) && existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /users/{uid}/commercePurchases/{id} {
+      allow list, delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+      allow get, create, update: if false;
+    }
+    match /users/{uid}/commerceGems/main {
+      function validGemSpend() {
+        let data=request.resource.data;
+        let old=resource.data;
+        let w=getAfter(gWalletPath(uid)).data;
+        let path=gEventPath(uid,w.lastEventId);
+        let e=getAfter(path).data;
+        let c=gConfig();
+        let b=gBefore(uid,c);
+        let item=e.kind == 'skip-world' ? gEntry(e) : {};
+        let cost=gPaidGemCost(b,e,c,item);
+        return data.diff(old).affectedKeys().hasOnly(['consumed','balance','revision','updatedAt'])
+          && data.schemaVersion == 1 && data.environment in ['production','sandbox']
+          && data.granted is int && data.granted >= 0 && data.consumed is int && data.balance is int
+          && data.consumed > old.consumed && data.consumed == old.consumed + cost
+          && cost > 0 && old.balance >= cost && data.balance == old.balance - cost && data.balance >= 0
+          && data.balance == (data.granted > data.consumed ? data.granted - data.consumed : 0)
+          && data.revision == old.revision + 1 && data.updatedAt == request.time
+          && e.kind in ['refill','skip-world'] && !exists(path) && e.createdAt == request.time
+          && w.updatedAt == request.time && w.revision == b.revision + 1 && e.revision == w.revision
+          && e.gemDelta == -gEarnedGemCost(b,e,c,item) && w.gems == b.gems + e.gemDelta;
+      }
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow list, create: if false;
+      allow update: if verifiedOwner(uid) && accountActiveAfterWrite(uid) && validGemSpend();
+      allow delete: if verifiedOwner(uid) && existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    function gWalletPath(uid) { return /databases/$(database)/documents/users/$(uid)/game/main; }
+    function gSkipsPath(uid) { return /databases/$(database)/documents/users/$(uid)/game/skips; }
+    function gSkipped(uid) { return exists(gSkipsPath(uid)) ? get(gSkipsPath(uid)).data.worldIds : []; }
+    function gSkipTransition(uid,e,item) {
+      let old=gSkipped(uid);
+      let after=getAfter(gSkipsPath(uid)).data;
+      return after == {'schemaVersion':1,'worldIds':old.concat([item.worldId]),'updatedAt':request.time};
+    }
+    function gEventPath(uid, id) { return /databases/$(database)/documents/users/$(uid)/gameEvents/$(id); }
+    function gClaimPath(uid, id) { return /databases/$(database)/documents/users/$(uid)/gameClaims/$(id); }
+    function gConfig() { return get(/databases/$(database)/documents/gameConfig/economy).data; }
+    function gEntry(e) { return get(/databases/$(database)/documents/gameCatalog/$(e.target)).data; }
+    function gDay(day) { return get(/databases/$(database)/documents/gameDays/$(day)).data; }
+    function gInitial(c) {
+      return {'schemaVersion':1,'revision':0,'gems':c.welcomeGems,'lives':c.dailyLives,
+        'lifeDay':'','lastOpenDay':'','streak':0,'bestStreak':0,'unlockedCases':[],
+        'completedCases':[],'badges':[],'completedLessons':0,'passedExams':0,
+        'passedExamIds':[],'referralCount':0,'lastEventId':''};
+    }
+    function gBefore(uid,c) { return exists(gWalletPath(uid)) ? get(gWalletPath(uid)).data : gInitial(c); }
+    function gClaimed(uid,id) { return id != '' && exists(gClaimPath(uid,id)); }
+    function gBaseLives(b,e,c) { return b.lifeDay == e.day ? b.lives : c.dailyLives; }
+    function gStreak(b,e) {
+      return b.lastOpenDay == e.day ? b.streak
+        : b.lastOpenDay != '' && gDay(e.day).ordinal - gDay(b.lastOpenDay).ordinal == 1 ? b.streak + 1 : 1;
+    }
+    function gPrimary(e) {
+      let kind=e.kind;
+      return kind == 'open' ? 'open-' + e.day
+        : kind == 'referral' ? 'referral-' + e.target
+        : kind == 'answer' && !e.correct || kind == 'exam' && !e.passed || kind in ['refill','import-debit'] ? '' : e.target;
+    }
+    function gSecondary(e,item,streak) {
+      return e.kind == 'open'
+        ? (streak == 3 ? 'streak-3' : streak == 7 ? 'streak-7' : streak == 30 ? 'streak-30' : '')
+        : e.kind == 'exam-credit' || e.kind == 'exam' && e.passed ? item.bonusId : '';
+    }
+    function gPrimaryAmount(e,c,item,b) {
+      return e.kind == 'open' ? (b.lastOpenDay == '' ? 0 : c.dailyReward)
+        : e.kind == 'referral' ? c.referralReward : item.amount;
+    }
+    function gSecondaryAmount(e,c,item,streak) {
+      return e.kind == 'open'
+        ? (streak == 3 ? c.streakRewards['3'] : streak == 7 ? c.streakRewards['7'] : c.streakRewards['30'])
+        : item.bonusAmount;
+    }
+    function gRewardBindings(uid,e,c,item,streak,b) {
+      let primary=gPrimary(e);
+      let secondary=gSecondary(e,item,streak);
+      let earns=primary != '' && !gClaimed(uid,primary);
+      let bonus=secondary != '' && !gClaimed(uid,secondary);
+      return e.rewardId == (earns ? primary : '')
+        && e.rewardAmount == (earns ? gPrimaryAmount(e,c,item,b) : 0)
+        && e.bonusId == (bonus ? secondary : '')
+        && e.bonusAmount == (bonus ? gSecondaryAmount(e,c,item,streak) : 0)
+        && (!earns || getAfter(gClaimPath(uid,primary)).data.eventId == e.id)
+        && (!bonus || getAfter(gClaimPath(uid,secondary)).data.eventId == e.id);
+    }
+    function gExamRewards(uid,e,item) {
+      let passed=e.kind == 'exam-credit' || e.passed;
+      let primary=gClaimPath(uid,e.target);
+      let secondary=gClaimPath(uid,item.bonusId);
+      let earns=passed && !exists(primary);
+      let bonus=passed && !exists(secondary);
+      return e.rewardId == (earns ? e.target : '') && e.rewardAmount == (earns ? item.amount : 0)
+        && e.bonusId == (bonus ? item.bonusId : '') && e.bonusAmount == (bonus ? item.bonusAmount : 0)
+        && (!earns || getAfter(primary).data.eventId == e.id)
+        && (!bonus || getAfter(secondary).data.eventId == e.id);
+    }
+    function gBadgeEligible(uid,b,item) {
+      return item.requiredClaim != '' ? gClaimed(uid,item.requiredClaim)
+        : item.metric == 'cases' ? b.completedCases.size() >= item.threshold
+        : item.metric == 'streak' ? b.bestStreak >= item.threshold
+        : item.metric == 'referrals' ? b.referralCount >= item.threshold
+        : b.completedLessons >= item.threshold;
+    }
+    function gKindValid(uid,b,e,c,item,base,funds) {
+      let kind=e.kind;
+      // Exam delivery can write two claims and a paid-life debit. Check this
+      // expensive branch first to stay inside Firestore's expression budget.
+      return kind == 'exam' ? item.kind == 'exam' && (base + funds.paidLives > 0 || funds.premiumUntilMs > request.time.toMillis()) && e.attemptId != ''
+          && e.wrongCount <= item.questions && e.passed == (item.questions - e.wrongCount >= item.passCount)
+        : kind == 'open' ? e.target == '' && e.attemptId == ''
+        : kind == 'answer' ? item.kind == 'answer' && (base + funds.paidLives > 0 || funds.premiumUntilMs > request.time.toMillis()) && e.attemptId != ''
+        : kind == 'answer-credit' ? item.kind == 'answer' && e.attemptId.matches('import-.*')
+        : kind == 'lesson' ? item.kind == 'lesson'
+        : kind == 'exam-credit' ? item.kind == 'exam'
+        : kind == 'refill' ? e.target == '' && e.attemptId != '' && base < c.dailyLives && gEnoughGems(uid,b,e,c,item)
+        : kind == 'case-complete' ? item.kind == 'case-complete' && funds.premiumUntilMs > request.time.toMillis()
+        : kind == 'badge' ? item.kind == 'badge' && gBadgeEligible(uid,b,item)
+        : kind == 'referral' ? get(/databases/$(database)/documents/users/$(uid)/referrals/$(e.target)).data.qualifiedAt <= request.time
+        : kind == 'import-debit' ? e.target == '' && e.attemptId.matches('import-.*') && e.amount >= 0
+        : false;
+    }
+    function gLifeDelta(funds,e,c,base) {
+      return e.kind in ['answer','exam'] && funds.premiumUntilMs > request.time.toMillis() ? 0
+        : e.kind == 'answer' && !e.correct ? (base > 0 ? -1 : 0)
+        : e.kind == 'exam' ? -(e.wrongCount < base ? e.wrongCount : base)
+        : e.kind == 'refill' ? c.dailyLives - base : 0;
+    }
+    function gGemDelta(b,e,c,item) {
+      return e.rewardAmount + e.bonusAmount - (e.kind in ['refill','skip-world'] ? gEarnedGemCost(b,e,c,item)
+        : e.kind == 'import-debit' ? (e.amount < b.gems ? e.amount : b.gems) : 0);
+    }
+    function gEventSchema(e) {
+      return e.keys().size() == 17
+        && (e.attemptId == '' || e.attemptId.matches('[A-Za-z0-9_-]{1,160}'))
+        && e.id == (e.kind == 'open' ? 'open-' + e.day : e.attemptId != '' ? 'attempt-' + e.attemptId : e.kind + '-' + e.target)
+        && e.createdAt == request.time
+        && (e.kind == 'answer' ? e.correct is bool : e.correct == false)
+        && (e.kind == 'exam' ? e.wrongCount is int && e.wrongCount >= 0 && e.wrongCount <= 10 : e.wrongCount == 0 && e.passed == false)
+        && (e.kind == 'import-debit' ? e.amount is int && e.amount >= 0 && e.amount <= 10000000 : e.amount == 0);
+    }
+    function gTransition(b,e,w,c,item,ctx) {
+      let base=ctx.base;
+      let streak=ctx.streak;
+      let lesson=e.kind == 'lesson' && e.rewardAmount > 0;
+      let exam=e.kind in ['exam','exam-credit'] && e.rewardAmount > 0;
+      let complete=e.kind == 'case-complete' && e.rewardAmount > 0;
+      let badge=e.kind == 'badge' && e.rewardAmount > 0;
+      return e.revision == b.revision + 1 && e.gemDelta == gGemDelta(b,e,c,item) && e.lifeDelta == gLifeDelta(ctx.funds,e,c,base)
+        && w.gems is int && w.gems >= 0 && w.gems <= 10000000
+        && w.lives is int && w.lives >= 0 && w.lives <= c.dailyLives
+        && w == {'schemaVersion':1,'revision':b.revision + 1,'lastEventId':e.id,'updatedAt':request.time,
+          'lifeDay':e.day,'lives':base + e.lifeDelta,'gems':b.gems + e.gemDelta,
+          'streak':streak,'bestStreak':streak > b.bestStreak ? streak : b.bestStreak,
+          'lastOpenDay':e.kind == 'open' ? e.day : b.lastOpenDay,
+          'completedLessons':b.completedLessons + (lesson ? 1 : 0),
+          'passedExams':b.passedExams + (exam ? 1 : 0),
+          'referralCount':b.referralCount + (e.kind == 'referral' && e.rewardAmount > 0 ? 1 : 0),
+          'unlockedCases':b.unlockedCases,
+          'completedCases':complete ? b.completedCases.concat([item.caseId]) : b.completedCases,
+          'passedExamIds':exam ? b.passedExamIds.concat([e.target]) : b.passedExamIds,
+          'badges':badge ? b.badges.concat([item.badgeId]) : b.badges};
+    }
+    function gValidSkip(uid,b,e,w,c,item,ctx) {
+      let skipped=gSkipped(uid);
+      let window=ctx.window;
+      return !exists(gEventPath(uid,e.id)) && gEventSchema(e)
+        && window.startAt <= request.time && request.time < window.endAt
+        && e.attemptId == '' && item.kind == 'skip-world' && item.worldId is int
+        && e.target == 'skip-world-' + string(item.worldId)
+        && gSkipPrice(c,item) && item.amount == 0
+        && gEnoughGems(uid,b,e,c,item) && !skipped.hasAny([item.worldId])
+        && !b.passedExamIds.hasAny(['exam-' + string(item.worldId)])
+        && (item.previousWorldId == -1 || skipped.hasAny([item.previousWorldId])
+          || b.passedExamIds.hasAny(['exam-' + string(item.previousWorldId)]))
+        && gSkipTransition(uid,e,item)
+        && e.rewardId == e.target && e.rewardAmount == 0 && e.bonusId == '' && e.bonusAmount == 0
+        && !gClaimed(uid,e.target) && getAfter(gClaimPath(uid,e.target)).data.eventId == e.id
+        && e.revision == b.revision + 1 && e.gemDelta == -gEarnedGemCost(b,e,c,item) && e.lifeDelta == 0
+        && gPaidGemBinding(uid,b,e,c,item)
+        && w.keys().hasAll(b.keys()) && w.keys().hasOnly(b.keys().concat(['updatedAt']))
+        && w.diff(b).affectedKeys().hasOnly(['revision','lastEventId','updatedAt','lifeDay','lives','gems'])
+        && w.gems is int && w.lives is int
+        && w.revision == e.revision && w.lastEventId == e.id && w.updatedAt == request.time
+        && w.lifeDay == e.day && w.lives == ctx.base && w.gems == b.gems + e.gemDelta;
+    }
+    function gValidRefill(uid,b,e,w,c,ctx) {
+      let window=ctx.window;
+      let earned=c.refillCost < b.gems ? c.refillCost : b.gems;
+      return !exists(gEventPath(uid,e.id)) && gEventSchema(e)
+        && window.startAt <= request.time && request.time < window.endAt
+        && e.target == '' && e.attemptId != '' && ctx.base < c.dailyLives
+        && e.rewardId == '' && e.rewardAmount == 0 && e.bonusId == '' && e.bonusAmount == 0
+        && e.revision == b.revision + 1 && e.gemDelta == -earned && e.lifeDelta == c.dailyLives - ctx.base
+        && gPaidGemBinding(uid,b,e,c,{})
+        && w.keys().hasAll(b.keys()) && w.keys().hasOnly(b.keys().concat(['updatedAt']))
+        && w.diff(b).affectedKeys().hasOnly(['revision','lastEventId','updatedAt','lifeDay','lives','gems'])
+        && w.gems is int && w.lives is int
+        && w.revision == e.revision && w.lastEventId == e.id && w.updatedAt == request.time
+        && w.lifeDay == e.day && w.lives == c.dailyLives && w.gems == b.gems - earned;
+    }
+    function gValidOperation(uid) {
+      let w=request.resource.data;
+      let e=getAfter(gEventPath(uid,w.lastEventId)).data;
+      let config=gConfig();
+      let before=gBefore(uid,config);
+      let item=e.kind in ['answer','answer-credit','lesson','exam','exam-credit','case','case-complete','badge','skip-world'] ? gEntry(e) : {};
+      let base=gBaseLives(before,e,config);
+      let streak=e.kind == 'open' ? gStreak(before,e) : before.streak;
+      let funds=e.kind in ['exam','case-complete'] || e.kind == 'answer' && (!e.correct || base == 0) ? commerceBefore(uid) : {'premiumUntilMs':0,'paidLives':0,'paidConsumed':0};
+      let window=gDay(e.day);
+      return e.kind == 'skip-world' ? gValidSkip(uid,before,e,w,config,item,{'base':base,'window':window})
+        : e.kind == 'refill' ? gValidRefill(uid,before,e,w,config,{'base':base,'window':window})
+        : !exists(gEventPath(uid,e.id)) && gEventSchema(e)
+        && window.startAt <= request.time && request.time < window.endAt
+        && gKindValid(uid,before,e,config,item,base,funds)
+        && (e.kind in ['exam','exam-credit'] ? gExamRewards(uid,e,item) : gRewardBindings(uid,e,config,item,streak,before))
+        && gTransition(before,e,w,config,item,{'base':base,'streak':streak,'funds':funds})
+        && (!(e.kind in ['answer','exam']) || e.kind == 'answer' && (e.correct || base > 0) || e.kind == 'exam' && e.wrongCount <= base || paidBinding(uid,e,base,funds));
+    }
+    match /gameConfig/{id} { allow get: if true; allow list, write: if false; }
+    match /gameCatalog/{id} { allow get: if true; allow list, write: if false; }
+    match /gameDays/{id} { allow get: if true; allow list, write: if false; }
+    match /users/{uid}/game/main {
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow list: if false;
+      allow create, update: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && gValidOperation(uid);
+      allow delete: if verifiedOwner(uid) && existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /users/{uid}/game/skips {
+      function validSkipWrite() {
+        let wallet=getAfter(gWalletPath(uid)).data;
+        let e=getAfter(gEventPath(uid,wallet.lastEventId)).data;
+        let item=gEntry(e);
+        return wallet.updatedAt == request.time && !exists(gEventPath(uid,e.id))
+          && e.kind == 'skip-world' && item.kind == 'skip-world'
+          && e.target == 'skip-world-' + string(item.worldId)
+          && gSkipPrice(gConfig(),item) && e.gemDelta == -gEarnedGemCost(gBefore(uid,gConfig()),e,gConfig(),item)
+          && wallet.gems == gBefore(uid,gConfig()).gems + e.gemDelta
+          && gSkipTransition(uid,e,item);
+      }
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow list: if false;
+      allow create, update: if verifiedOwner(uid) && accountActiveAfterWrite(uid) && validSkipWrite();
+      allow delete: if verifiedOwner(uid) && existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /users/{uid}/gameEvents/{id} {
+      function validEventCreate() {
+        let w=getAfter(gWalletPath(uid)).data;
+        let e=request.resource.data;
+        return e.id == id && e.createdAt == request.time && w.lastEventId == id
+          && w.updatedAt == request.time
+          && w.revision == (exists(gWalletPath(uid)) ? get(gWalletPath(uid)).data.revision : 0) + 1;
+      }
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && validEventCreate();
+      allow update: if false;
+      allow list, delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /users/{uid}/gameClaims/{id} {
+      function validClaimCreate() {
+        let d=request.resource.data;
+        let e=getAfter(gEventPath(uid,d.eventId)).data;
+        return d.keys().hasAll(['eventId','createdAt']) && d.keys().hasOnly(['eventId','createdAt'])
+          && d.eventId is string && d.createdAt == request.time
+          && !exists(gEventPath(uid,d.eventId))
+          && getAfter(gWalletPath(uid)).data.lastEventId == d.eventId
+          && (e.rewardId == id || e.bonusId == id);
+      }
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && validClaimCreate();
+      allow update: if false;
+      allow list, delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

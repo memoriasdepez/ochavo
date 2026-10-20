@@ -1,0 +1,132 @@
+/* The laboratory has a tile selector; lesson visualisations stay independent. */
+#brote-preview .oc-dictionary-search-label{display:block;font-size:13px;font-weight:900;margin:18px 0 7px}
+#brote-preview .oc-dictionary-search{width:100%;min-height:48px;border:2px solid var(--br-line);border-radius:14px;background:var(--br-panel);color:var(--br-ink);padding:12px;font-size:16px;box-sizing:border-box}
+#brote-preview .oc-dictionary-search:focus-visible{outline:3px solid var(--br-lime-dark);outline-offset:2px}
+#brote-preview .oc-dictionary-filters{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}
+#brote-preview .oc-dictionary-filters button{background:var(--br-panel);color:var(--br-muted);border:1px solid var(--br-line);border-bottom-width:3px;border-radius:12px;padding:8px 10px;font-size:12px;font-weight:850;cursor:pointer}
+#brote-preview .oc-dictionary-filters button[aria-pressed=true]{background:light-dark(#eef4de,#34452c);color:var(--br-green);border-color:var(--br-lime-dark)}
+#brote-preview .oc-dictionary-count{font-size:12px;color:var(--br-muted);margin-bottom:13px;min-height:20px}
+#brote-preview .oc-dictionary-list{display:grid;gap:9px;margin-bottom:17px}
+#brote-preview .oc-dictionary-entry{border:2px solid var(--br-line);border-radius:16px;background:var(--br-panel);overflow:hidden}
+#brote-preview .oc-dictionary-entry summary{display:flex;justify-content:space-between;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:16px;font-size:15px;font-weight:900;line-height:1.35;color:var(--br-ink)}
+#brote-preview .oc-dictionary-entry summary::-webkit-details-marker{display:none}
+#brote-preview .oc-dictionary-entry summary span{font-size:23px;color:var(--br-green);flex-shrink:0}
+#brote-preview .oc-dictionary-entry[open] summary span{transform:rotate(45deg)}
+#brote-preview .oc-dictionary-entry summary:focus-visible{outline:3px solid var(--br-lime-dark);outline-offset:-3px}
+#brote-preview .oc-dictionary-definition{padding:0 16px 16px;font-size:14px;line-height:1.65;color:var(--br-ink)}
+#brote-preview .oc-dictionary-alias{font-size:12px;color:var(--br-muted);margin-top:9px}
+#brote-preview .oc-dictionary-example{background:var(--br-soft);border-radius:12px;margin-top:13px;padding:12px}
+#brote-preview .oc-dictionary-example strong{display:block;color:var(--br-green);font-size:11px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:5px}
+#brote-preview .oc-dictionary-empty{padding:22px 0;font-size:14px;line-height:1.6;color:var(--br-muted)}
+#brote-preview .oc-lab-home {padding:0 0 30px}
+#brote-preview .oc-lab-hero {
+  position:relative;display:flex;align-items:center;gap:14px;overflow:hidden;
+  padding:28px 23px 30px;background:light-dark(#dff2ed,#28463f);
+  border-bottom:3px solid light-dark(#bfded5,#385d52);
+}
+#brote-preview .oc-lab-hero-body {position:relative;z-index:1;flex:1;min-width:0}
+#brote-preview .oc-lab-eyebrow {font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:light-dark(#457169,#a3d2c1);font-weight:900;margin-bottom:8px}
+#brote-preview .oc-lab-hero h1 {font-size:29px;color:light-dark(#23594d,#e2f6d7);margin-bottom:9px}
+#brote-preview .oc-lab-hero-title {font-size:17px;line-height:1.3;font-weight:900;margin-bottom:8px;color:light-dark(#23594d,#e2f6d7)}
+#brote-preview .oc-lab-intro {font-size:13px;line-height:1.55;color:light-dark(#416659,#c7dfd0);max-width:260px;font-weight:700}
+#brote-preview .oc-lab-mascot {position:relative;flex:0 0 91px;min-height:111px;display:grid;place-items:center}
+#brote-preview .oc-lab-mascot:before {content:'';position:absolute;inset:13px -8px -1px -3px;background:light-dark(#c9e6b7,#375a3e);border-radius:38% 62% 54% 46%;transform:rotate(-9deg)}
+#brote-preview .oc-lab-mascot .br-mascot {position:relative;transform:rotate(6deg)}
+#brote-preview .oc-lab-decor {position:absolute;color:light-dark(#557f67,#acd1b4);font-size:25px;right:5px;bottom:1px;transform:rotate(9deg);font-weight:900}
+#brote-preview .oc-lab-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;padding:24px 23px 6px}
+#brote-preview .oc-lab-card {
+  --lab-accent:light-dark(#5b8735,#c2e384);--lab-soft:light-dark(#eff6df,#354629);--lab-edge:light-dark(#d8e5bd,#566b3c);
+  display:flex;flex-direction:column;align-items:stretch;min-width:0;text-align:center;padding:0;border:0;background:none;
+  color:var(--br-ink);cursor:pointer;touch-action:manipulation;
+}
+#brote-preview .oc-lab-tone-green {--lab-accent:light-dark(#5b8735,#c2e384);--lab-soft:light-dark(#eff6df,#354629);--lab-edge:light-dark(#d8e5bd,#566b3c)}
+#brote-preview .oc-lab-tone-blue {--lab-accent:light-dark(#3386b2,#9bd6fa);--lab-soft:light-dark(#e5f4fb,#29434f);--lab-edge:light-dark(#bcddeb,#476c7e)}
+#brote-preview .oc-lab-tone-purple {--lab-accent:light-dark(#8b65b5,#dab9f8);--lab-soft:light-dark(#f1eafa,#45334f);--lab-edge:light-dark(#decaed,#6b537e)}
+#brote-preview .oc-lab-tone-amber {--lab-accent:light-dark(#b6782e,#f1c484);--lab-soft:light-dark(#fff2db,#4b3c27);--lab-edge:light-dark(#edd7af,#705936)}
+#brote-preview .oc-lab-tone-teal {--lab-accent:light-dark(#34867b,#96d9c5);--lab-soft:light-dark(#e3f4ee,#294a40);--lab-edge:light-dark(#bedfd3,#496b5b)}
+#brote-preview .oc-lab-tone-coral {--lab-accent:light-dark(#ae607c,#f5b2c8);--lab-soft:light-dark(#fbeaf0,#4a313c);--lab-edge:light-dark(#efccd9,#725363)}
+#brote-preview .oc-lab-card-art {--oc-lab-icon-paper:var(--br-panel);position:relative;display:grid;place-items:center;aspect-ratio:1.15;border:2px solid var(--br-line);border-bottom-width:5px;border-radius:24px;background:var(--br-panel);transition:transform .13s ease,border-color .13s ease}
+#brote-preview .oc-lab-icon {display:block;position:relative;width:90px;height:90px;color:var(--lab-accent);background:var(--lab-soft);border-radius:27px;padding:12px;transform:rotate(-4deg)}
+#brote-preview .oc-lab-card:nth-child(even) .oc-lab-icon {transform:rotate(4deg)}
+#brote-preview .oc-lab-icon svg {width:100%;height:100%;display:block}
+#brote-preview .oc-lab-card-title {display:block;font-size:16px;line-height:1.25;font-weight:900;margin:12px 1px 5px}
+#brote-preview .oc-lab-card-description {display:block;font-size:11px;line-height:1.45;font-weight:650;color:var(--br-muted)}
+#brote-preview .oc-lab-card-open {display:none}
+#brote-preview .oc-lab-footnote {padding:17px 26px 0;text-align:center;font-size:11px;line-height:1.6;color:var(--br-muted);font-weight:650}
+#brote-preview .oc-lab-card:active .oc-lab-card-art {transform:translateY(3px);border-bottom-width:2px;padding-bottom:3px}
+#brote-preview .oc-lab-card:focus-visible {outline:3px solid var(--lab-accent);outline-offset:6px;border-radius:24px}
+@media(hover:hover){#brote-preview .oc-lab-card:hover .oc-lab-card-art{transform:translateY(-2px);border-color:var(--lab-edge)}}
+
+#brote-preview .oc-calc-page {padding:21px 23px 36px}
+#brote-preview .oc-calc-back {display:inline-flex;align-items:center;gap:7px;padding:8px 0;border:0;background:none;color:var(--br-green);font-size:13px;font-weight:900;cursor:pointer;margin-bottom:18px}
+#brote-preview .oc-calc-heading {display:flex;align-items:center;gap:13px;margin-bottom:12px;min-width:0}
+#brote-preview .oc-calc-heading-art {flex:0 0 58px;width:58px}
+#brote-preview .oc-calc-heading .oc-lab-icon {width:58px;height:58px;padding:8px;border-radius:18px}
+#brote-preview .oc-calc-heading h1 {font-size:25px;line-height:1.18;overflow-wrap:break-word;min-width:0}
+#brote-preview .oc-calc-lead {font-size:13px;line-height:1.6;color:var(--br-muted);font-weight:650;margin-bottom:22px}
+#brote-preview .oc-calc-layout {display:grid;gap:24px}
+#brote-preview .oc-calc-form {margin:0}
+#brote-preview .oc-calc-fields {display:grid;gap:16px}
+#brote-preview .oc-calc-field {min-width:0}
+#brote-preview .oc-calc-field label {display:block;font-size:13px;font-weight:850;margin-bottom:6px}
+#brote-preview .oc-calc-input-wrap {display:flex;align-items:center;border:2px solid var(--br-line);border-radius:14px;background:var(--br-panel);min-height:48px;overflow:hidden}
+#brote-preview .oc-calc-input-wrap:focus-within {border-color:var(--br-lime-dark);box-shadow:0 0 0 3px light-dark(#c5ed7633,#c5ed761b)}
+#brote-preview .oc-calc-input-wrap:has(input[aria-invalid=true]) {border-color:light-dark(#c97560,#dc9a86)}
+#brote-preview .oc-calc-input-wrap input {border:0;background:transparent;outline:0;display:block;min-width:0;width:100%;padding:12px 13px;font-size:16px;font-weight:800;box-shadow:none;line-height:1.25}
+#brote-preview .oc-calc-unit {padding:0 12px 0 2px;color:var(--br-muted);font-size:12px;white-space:nowrap}
+#brote-preview .oc-calc-help {font-size:11px;color:var(--br-muted);font-weight:600;line-height:1.5;margin-top:5px}
+#brote-preview .oc-calc-error {font-size:12px;line-height:1.4;color:light-dark(#a84535,#f7b39f);font-weight:800;margin-top:5px}
+#brote-preview .oc-calc-submit {display:block;width:100%;min-height:46px;margin-top:20px;padding:11px 18px;border:0;border-bottom:4px solid #83a94b;border-radius:15px;background:var(--br-lime);color:#294226;font-size:15px;font-weight:900;cursor:pointer}
+#brote-preview .oc-calc-submit:active {transform:translateY(2px);border-bottom-width:2px;margin-bottom:2px}
+#brote-preview .oc-calc-status:empty {display:none}
+#brote-preview .oc-calc-status {font-size:11px;line-height:1.5;color:var(--br-muted);margin-top:10px}
+#brote-preview .oc-calc-result {border:1px solid light-dark(#d4e3cb,#4c6245);border-bottom:4px solid light-dark(#c7d9b8,#405638);border-radius:23px;padding:22px 19px;background:light-dark(#f2f7e9,#2a382b);min-width:0}
+#brote-preview .oc-calc-result[data-state=invalid] {background:var(--br-soft);border-color:var(--br-line)}
+#brote-preview .oc-calc-empty {color:var(--br-muted);font-size:13px;line-height:1.6;font-weight:650}
+#brote-preview .oc-calc-result-label {display:block;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--br-green);font-weight:900;margin-bottom:8px}
+#brote-preview .oc-calc-result-value {display:block;font-size:31px;line-height:1.18;letter-spacing:-1px;font-weight:950;color:var(--br-ink);overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+#brote-preview .oc-calc-result-summary {font-size:13px;line-height:1.55;margin-top:10px;color:var(--br-ink);font-weight:650}
+#brote-preview .oc-calc-stats {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:20px;padding-top:17px;border-top:1px solid light-dark(#d6e0cc,#49583f)}
+#brote-preview .oc-calc-stat {display:flex;flex-direction:column;gap:3px;min-width:0}
+#brote-preview .oc-calc-stat strong {font-size:17px;font-weight:900;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+#brote-preview .oc-calc-stat span {font-size:11px;color:var(--br-muted);font-weight:650;line-height:1.4}
+#brote-preview .oc-calc-chart {margin-top:20px;color:var(--br-muted);width:100%;min-width:0}
+#brote-preview .oc-calc-chart svg {display:block;width:100%;height:auto;overflow:visible}
+#brote-preview .oc-calc-chart text {font:650 11px 'Nunito Variable',sans-serif;fill:var(--br-muted)}
+#brote-preview .oc-calc-legend {display:flex;flex-wrap:wrap;gap:7px 13px;font-size:10px;margin-top:8px;font-weight:750}
+#brote-preview .oc-calc-legend>span {display:flex;align-items:center;gap:5px}
+#brote-preview .oc-calc-legend-dot {display:inline-block;width:8px;height:8px;border-radius:50%;background:currentColor}
+#brote-preview .oc-calc-line {stroke:currentColor}
+#brote-preview .oc-calc-chart-grid {stroke:var(--br-line);stroke-width:1;fill:none;stroke-dasharray:3 6}
+#brote-preview .oc-calc-chart-axis {display:flex;justify-content:space-between;font-size:10px;margin-top:4px}
+#brote-preview .oc-calc-line-green {color:light-dark(#648d37,#c4e58d)}
+#brote-preview .oc-calc-line-blue {color:light-dark(#3788b1,#9bd6fa)}
+#brote-preview .oc-calc-line-coral {color:light-dark(#b86880,#f5b2c8)}
+#brote-preview .oc-calc-line-purple {color:light-dark(#8b66ad,#dab9f8)}
+#brote-preview .oc-calc-line-amber {color:light-dark(#b88735,#f1c484)}
+#brote-preview .oc-calc-line-teal {color:light-dark(#34867b,#96d9c5)}
+#brote-preview .oc-calc-line-muted {color:light-dark(#929e88,#889981)}
+#brote-preview .oc-calc-bars {display:grid;gap:14px;margin-top:20px}
+#brote-preview .oc-calc-bar-row {display:grid;gap:5px;font-size:11px}
+#brote-preview .oc-calc-bar-label {display:flex;justify-content:space-between;gap:6px;color:var(--br-muted);font-weight:750}
+#brote-preview .oc-calc-bar-label strong {color:var(--br-ink);font-variant-numeric:tabular-nums}
+#brote-preview .oc-calc-bar-track {height:13px;border-radius:9px;background:light-dark(#e0e8d7,#202c21);overflow:hidden}
+#brote-preview .oc-calc-bar {display:block;min-width:0;height:100%;border-radius:9px;background:currentColor;transition:width .18s ease}
+#brote-preview .oc-calc-note {font-size:11px;line-height:1.6;color:var(--br-muted);font-weight:650;margin-top:17px}
+#brote-preview .oc-calc-assumptions {font-size:12px;line-height:1.65;color:var(--br-muted);font-weight:600;margin-top:19px;padding:15px;background:var(--br-soft);border-radius:16px}
+#brote-preview .oc-calc-assumptions h2 {font-size:13px;line-height:1.4;margin-bottom:7px;color:var(--br-ink);letter-spacing:0}
+#brote-preview .oc-calc-assumptions summary {cursor:pointer;font-weight:900;color:var(--br-green);margin-bottom:7px}
+#brote-preview .oc-calc-assumptions p+p {margin-top:7px}
+#brote-preview .oc-calc-back:focus-visible,#brote-preview .oc-calc-submit:focus-visible {outline:3px solid var(--br-lime-dark);outline-offset:4px}
+@media(max-width:360px){
+  #brote-preview .oc-lab-hero{padding:24px 17px;gap:9px}
+  #brote-preview .oc-lab-hero h1{font-size:27px}
+  #brote-preview .oc-lab-mascot{flex-basis:71px;transform:scale(.83);transform-origin:center}
+  #brote-preview .oc-lab-grid{padding:22px 17px;gap:22px 14px}
+  #brote-preview .oc-lab-icon{width:77px;height:77px;padding:10px;border-radius:23px}
+  #brote-preview .oc-lab-card-title{font-size:14px}
+  #brote-preview .oc-lab-card-art{border-radius:21px}
+  #brote-preview .oc-calc-page{padding:20px 17px 32px}
+  #brote-preview .oc-calc-result-value{font-size:28px}
+}
+@media(prefers-reduced-motion:reduce){#brote-preview .oc-lab-card-art,#brote-preview .oc-calc-bar{transition:none}}

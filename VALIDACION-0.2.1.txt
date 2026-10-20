@@ -1,0 +1,274 @@
+﻿VIRUTA 0.2.1 — VALIDACIÓN DE LA ENTREGA
+Fecha: 3 de octubre de 2026
+
+ESTADO FINAL
+Entrega de pruebas compilada, publicada e instalada. Pruebas automatizadas,
+recorrido final Android/web y auditoría de borrado con una sesión antigua
+completados en los entornos descritos. No se afirma compatibilidad universal
+ni pruebas de entrega de correo o teléfono físico que no se han realizado.
+
+APK DEFINITIVO
+Viruta-0.2.1-pruebas.apk · 4.621.742 bytes.
+SHA256: 5C5452181911E13D8D1DF5C9F9ADBFA9D7C780D41218D30E637F9450192D55D5
+apksigner verifica firma v2. Nombre visible: Viruta.
+Paquete: app.brote.inversion · versionCode 3 · versionName 0.2.1.
+minSdkVersion 24 · targetSdkVersion 36.
+Hash vuelto a comprobar al cierre. Instalación como actualización y reinicio
+en Android 16: invitado original en primera lección, paso 2/8, sin cambios.
+
+PRUEBAS Y CONSTRUCCIÓN
+- 123/123 pruebas de aplicación superadas.
+- 74/74 pruebas de reglas en el emulador oficial Firestore superadas.
+- Vite, sincronización de Capacitor, assembleDebug y lintDebug: correctos.
+- Mantenimiento de marcadores: tres pruebas de sus condiciones de seguridad
+  superadas. Consulta real en modo simulación sin mutación.
+- Firebase real rechazó una contraseña de ensayo de 7 caracteres con
+  PASSWORD_DOES_NOT_MEET_REQUIREMENTS. Mínimo 8 confirmado sin cambiar política.
+  Registro aplica ese mínimo; acceso y reautenticación validan con el servidor
+  una contraseña no vacía para mantener compatibilidad con cuentas existentes.
+Las cifras finales sustituyen a las anteriores; no deben sumarse las baterías.
+
+PUBLICACIÓN Y REVISIÓN WEB FINAL
+Despliegue --only hosting,firestore:rules completado con éxito: reglas liberadas
+y versión de Hosting publicada. No se activó facturación.
+Web: https://brote-62d26.web.app.
+Después de desplegar se repitió la revisión:
+- Viruta muestra cinco mundos; sin desbordamiento a 320 y 390 px ni errores
+  de JavaScript durante la comprobación.
+- /privacidad/, /aviso-legal/, /eliminar-cuenta/ y /ayuda/: HTTP 200, sin
+  JavaScript de la app, revisadas a 320 px y sin correo visible como texto.
+- Nombre Viruta y datos registrales completos de MEMORIAS MEDIA SL en Melilla.
+  Mascota, diseño y curso conservados; proyecto e identificadores internos
+  brote-62d26 y app.brote.inversion conservados.
+
+RECORRIDO FINAL ANDROID Y FIREBASE REAL — 11/11
+APK definitivo en emulador Android 16 y navegador independiente, contra el
+proyecto real. Cuentas sintéticas E/F de example.invalid creadas con Admin
+y emailVerified=true. No se envió SMTP ni se usó el buzón de una persona.
+
+Se repitieron acceso, guardado de primera lección mediante la interfaz,
+conservación de sesión y progreso tras cierre forzado, recuperación en otro
+navegador, borrador de segunda lección sin conexión y tras reabrir, subida
+al reconectar, separación de cuentas y eliminación desde la app introduciendo
+contraseña y confirmación. La cuenta nueva empezó vacía; no se importó el
+invitado automáticamente. El navegador recuperó el mismo progreso y borrador.
+Tras la limpieza, el invitado original permaneció exactamente en primera
+lección, paso 2/8. La consulta de API confirmó ausencia de perfiles y progreso.
+
+Informe final: ../brote-android/viruta-qa-final-results.json.
+Capturas retomadas con el APK definitivo:
+../brote-android/viruta-0.2.1-android.png
+../brote-android/viruta-aviso-legal-android.png
+../brote-android/viruta-cuenta-progreso-android.png
+Las capturas de camino y aviso legal se inspeccionaron visualmente.
+El informe viruta-qa-results.json documenta el recorrido anterior al arreglo;
+se conserva como antecedente y no se confunde con el informe final.
+
+AUDITORÍA DE BORRADO CON OTRA SESIÓN — SUPERADA
+Antecedente: durante una comprobación previa, otro token aún vigente pudo
+recrear el progreso después de borrar Authentication y el documento. Ese caso
+motivó el marcador de seguridad y las nuevas reglas de esta entrega.
+
+Repetición real con la cuenta sintética D y el mismo token aún vigente
+(duración inicial 3.600 segundos):
+- La transacción del cliente anterior fue rechazada.
+- Una escritura setDoc directa sin las guardas nuevas devolvió permission-denied.
+- El documento de progreso no se recreó.
+- El backend nuevo devolvió account/deletion-pending y el almacén de progreso
+  mostró deletion-pending, sin presentar la operación como sincronizada.
+Evidencia: ../../work/viruta-qa-deletion-D-result.json.
+SHA256 del informe:
+51e449af80d2b4f18cda691b342887e61903d128b3c191a45369fbd6626a8083
+
+COMPORTAMIENTO Y MANTENIMIENTO DEL MARCADOR
+La operación registra /accountDeletions/{uid} y borra el progreso en un lote;
+después elimina Authentication. El marcador tiene solo deletedAt; el UID
+está en la ruta. Las reglas bloquean nuevas subidas y su retirada por el cliente.
+No contiene correo, nombre, respuestas ni progreso. Si falla el borrado del
+perfil, se mantienen marcador y copia local para reintentar o pedir Ayuda.
+
+La retirada normal es administrativa: requiere cuenta ausente y al menos dos
+horas, calculadas con la hora de lectura de Firestore. No es automática ni
+se promete retirarlo al cumplir dos horas. La herramienta verifica el único
+campo y updateTime y aborta ante errores; no elimina perfiles ni progreso.
+Comandos y procedimiento: ACTIVACION.txt.
+
+LIMPIEZA DE LOS ENSAYOS
+Tras cerrar sus clientes, se retiraron solo los datos sintéticos de QA.
+Consulta final: Authentication y progreso ausentes para A/B/C/D/E/F.
+Modo simulación del mantenimiento: scanned=0, removed=0; sin marcadores.
+La retirada de marcadores de ensayo se hizo como limpieza controlada de esas
+pruebas; no cambia el mínimo de dos horas del mantenimiento normal.
+Se eliminó ../../work/viruta-qa-private.json y se comprobó su ausencia.
+Se conservan únicamente los resultados saneados, sin credenciales de ensayo.
+
+LÍMITES PENDIENTES
+No se ha acreditado la recepción de mensajes reales con la configuración
+Viruta. La verificación asignada por Admin y las cuentas example.invalid
+no prueban envío ni llegada a un buzón. Una confirmación histórica anterior
+no sustituye esa prueba. No se ha probado en un teléfono Android físico.
+No publicada en Google Play ni App Store. APK de depuración para pruebas,
+sin firma comercial de publicación. Las solicitudes de eliminación por correo
+requieren atención manual. Los resultados cubren los casos aquí descritos.
+
+Los resultados siguientes corresponden a entregas anteriores.
+
+HISTORIAL DE VALIDACIÓN — ENTREGAS ANTERIORES
+
+VERSIÓN 0.2.0 — RESULTADOS HISTÓRICOS
+El código incorpora bienvenida, Ayuda/contacto, borradores de reportes,
+privacidad y aviso legal, enlaces de solicitud de eliminación y mejoras en
+el borrado de cuenta y de la copia local. En 0.2.0 faltaba el Registro Mercantil; resuelto en 0.2.1 con los datos de Melilla.
+92/92 pruebas de progreso, sincronización, almacenamiento nativo, navegación,
+borrado, ayuda y páginas públicas: superadas ejecutando directamente node --test
+con los archivos del script test de package.json. El envoltorio pnpm intentó
+reinstalar dependencias y abortó sin TTY; no se modificaron para esta comprobación.
+
+- Vite build, Gradle assembleDebug y lintDebug: correctos.
+- APK Brote-0.2.0-pruebas.apk, 4.469.710 bytes, firma v2 verificada.
+- SHA256 A032A2A2AE3656D54B38C4BA73DC21BFD9A335CEBCBC73BCB7CDF88DAF89BAF9.
+- adb install -r correcto en Android 16; versionCode 2, versionName 0.2.0.
+- Conserva el invitado en primera lección, paso 2/8 tras actualizar.
+- Bienvenida, Ayuda y Contacto revisados en el APK; Atrás cierra el diálogo y
+  vuelve al camino. Logcat de cierres vacío durante la comprobación.
+- Web a 390 y 320 px: ayuda, reporte y privacidad sin desbordamiento horizontal.
+- Consultar privacidad desde Registro abre información y devuelve el foco al
+  cerrar. Bienvenida de tres pasos, validación y borrador de reporte comprobados.
+- El borrador solo añade versión y plataforma al elegirlo; no envía nada.
+- Despliegue de Hosting a brote-62d26 terminado; reglas y facturación sin cambios.
+- /privacidad/, /aviso-legal/, /eliminar-cuenta/ y /ayuda/ revisadas publicadas:
+  sin scripts de la app ni correo visible, datos de empresa y enlaces correctos.
+- El enlace de eliminación sin sesión abre Acceso; con sesión existente abre
+  confirmación con contraseña y botón deshabilitado. Se canceló esa confirmación.
+  No se borraron cuentas reales ni se enviaron correos durante estas pruebas.
+- Sin errores de consola en las páginas públicas y flujo publicado revisado.
+
+Captura real del APK: ../brote-android/contacto-0.2.0.jpg.
+Pendientes en esa entrega: teléfono Android físico y recorrido
+de cuenta real/sincronización en Android. Las pruebas de fallos de eliminación
+de esta versión son automatizadas; no se provocaron fallos sobre datos reales.
+Novedades: ../brote-android/NOVEDADES-0.2.0.txt.
+
+COMPROBACIONES ANTERIORES
+Los resultados siguientes son el historial de las entregas previas, incluida
+la versión Android 0.1.0; no sustituyen la validación de los cambios de 0.2.0.
+
+29 pruebas de progreso y sincronización: superadas.
+54 pruebas de reglas de seguridad en el emulador oficial Firestore: superadas.
+
+Recorrido de navegador real con los emuladores oficiales Authentication y
+Firestore, sin crear usuarios en un servicio público:
+- Registro y generación del correo de verificación.
+- Aplicación del enlace de confirmación y actualización de sesión.
+- Finalización de la primera lección y confirmación de guardado del servidor.
+- Inicio de sesión en otro contexto de navegador sin almacenamiento compartido.
+- Recuperación de la lección completada desde Firestore.
+- Edición sin conexión y sincronización al reconectar.
+- Cierre de sesión sin mostrar el progreso de la cuenta anterior.
+- Recuperación de las respuestas y el paso de una lección pendiente.
+- Generación del enlace de recuperación de contraseña.
+- Importación confirmada del progreso de invitado y recuperación de su borrador.
+- Eliminación de cuenta verificada con contraseña y limpieza de su progreso.
+- Vista de cuenta y registro en móvil; anchura de 320 px sin desbordamiento.
+- Sin errores JavaScript en ese recorrido.
+
+Revisión adicional de UI: teclado, foco, Escape, validación y confirmación de
+acciones de cuenta, claro/oscuro y botones con altura mínima de 44 px.
+
+Configuración real confirmada:
+- Proyecto Firebase brote-62d26, con condiciones aceptadas por el propietario.
+- Plan Spark sin facturación vinculada.
+- Proveedor de correo electrónico/contraseña activo.
+- Base de datos Firestore en Madrid.
+
+Publicación real verificada el 03/10/2026:
+- Firebase CLI terminó con código 0 y «Deploy complete» para Hosting y reglas
+  de Firestore del proyecto brote-62d26.
+- Las reglas de Firestore se compilaron y publicaron correctamente.
+- https://brote-62d26.web.app carga 50 lecciones, cinco mundos y cinco exámenes.
+- El formulario de registro está activo.
+- No se observaron errores ni avisos de consola durante esa comprobación.
+
+En esa comprobación quedaba pendiente la recepción de correos externos. El
+propietario confirmó después la llegada del correo real de verificación.
+La recepción real del correo de recuperación sigue pendiente; las pruebas con
+emuladores no acreditan ese paso.
+
+El prototipo anterior no importa automáticamente su estado del chat a la app.
+
+CORRECCIÓN DE CORREOS DEL 03/10/2026
+Se detectó que la vista local de 127.0.0.1:5173 seguía ejecutándose con el
+emulador de Authentication: los correos se simulaban, no se enviaban.
+Se reinició esa vista con Firebase real. Las cuentas simuladas no son cuentas
+del servicio publicado; deben registrarse una vez en la app real.
+El modo de prueba ahora avisa también dentro de la ventana de cuenta y los
+mensajes de registro, reenvío y recuperación indican que no hay correo real.
+Los correos reales continúan en https://brote-62d26.web.app incluso si se
+solicitan desde la vista local. El registro conserva el motivo de un fallo
+de envío para poder distinguir problemas de conexión, dominio o límites.
+Build y 29 pruebas de progreso/sincronización superados; corrección publicada.
+El propietario confirmó después que ya recibía el correo real de verificación.
+
+ANDROID — 03/10/2026
+63 pruebas de lógica: superadas. Incluyen progreso y sincronización, guardado
+nativo con reintentos, separación por cuenta, botón Atrás, pausa/regreso y
+conservación de borradores del motor real del curso.
+
+Compilación de Android assembleDebug: correcta.
+Android lint: 0 errores y 8 advertencias (actualizaciones disponibles y
+recursos de plantilla/adaptive icon). No impiden generar el instalador.
+Firma del APK: verificada, esquema v2.
+Identificador app.brote.inversion; versión 0.1.0; target SDK 36.
+Permisos de red INTERNET y ACCESS_NETWORK_STATE. Sin permisos de cámara,
+micrófono, contactos o localización.
+Contenido del APK comprobado: recursos web incluidos, sin server.url,
+Firebase brote-62d26 real y sin clave del emulador; página de actualización
+de WebView incluida. Los servicios reales y la web pública no se modificaron
+durante esta entrega Android.
+
+Vista de navegador comprobada a 390 x 844 y 320 x 480: sin desbordamiento
+horizontal, formularios desplazables y botones de al menos 44 px. La primera
+lección abre correctamente. Sin errores de consola durante esa revisión.
+vista-movil.png es una vista previa en navegador; no una captura del APK.
+
+En la comprobación inicial no había dispositivo conectado a ADB. Posteriormente
+se realizó la prueba del emulador descrita a continuación. La compilación y
+las pruebas de adaptadores no sustituyen una prueba del APK en un teléfono real.
+Pendiente en teléfono: instalación, teclado, orientación, zonas seguras,
+navegación por gestos/tres botones, cuenta real, correo de confirmación,
+recuperación de progreso entre web y app y reapertura después de cerrar.
+
+EMULADOR ANDROID OPERATIVO — COMPROBACIÓN POSTERIOR DEL 03/10/2026
+El propietario activó SVM en la BIOS y la plataforma de hipervisor de Windows.
+emulator -accel-check: salida 0, WHPX 10.0.26200 instalado y utilizable.
+Windows: HypervisorPresent=true. El bloqueo previo por falta de aceleración
+queda resuelto; los intentos sin aceleración no acreditaban el funcionamiento.
+
+- abrir-android.ps1 ejecutado completo con powershell.exe y salida 0.
+  ABRIR-ANDROID.cmd llama a ese lanzador; no se ejecutó el envoltorio CMD
+  durante esta comprobación.
+- AVD Brote_Android_16, Android 16/API 36, sys.boot_completed=1 en unos 70 s.
+- Instalación del APK Brote 0.1.0 y apertura de app.brote.inversion/.MainActivity.
+- Android System WebView 133.0.6943.137.
+- Comprobación visual del camino, Cuenta y «Guardado en este dispositivo».
+- «Empezar» abre la primera lección, paso 1 de 8.
+- Al desplazar la lección se ven la explicación y el visual interactivo.
+- «Vamos al reto» avanza al primer ejercicio.
+- El botón Atrás de Android devuelve al camino.
+- Se detuvo solo Brote con adb am force-stop y se volvió a abrir con am start -W:
+  Status ok, LaunchState COLD y TotalTime 1832 ms.
+- Tras recuperar el almacenamiento, la interfaz muestra «Tienes una lección en
+  marcha — Tu primera acción · paso 2/8» y «Guardado en este dispositivo».
+  Queda confirmada la persistencia nativa del avance de invitado al reabrir.
+- logcat -b crash vacío durante esta comprobación.
+
+Captura real del APK en el emulador: ../brote-android/android-funcionando.jpg.
+
+Pendientes en este emulador: recuperación de respuestas de los distintos tipos
+de ejercicio y del examen, acceso a cuentas reales, confirmación de correo y
+sincronización del progreso con la web. No se ha probado aún en un teléfono
+Android real.
+
+APK: ../brote-android/Brote-0.1.0-pruebas.apk
+Tamaño: 4.856.648 bytes.
+SHA256: 2132A4DB4929071F98AE5048583901B29FC889315F4828127CE8ED91DE3E9BA1

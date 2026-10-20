@@ -1,0 +1,69 @@
+VIRUTA — WEB Y ANDROID 0.4.0
+4 de octubre de 2026
+
+Web: https://brote-62d26.web.app
+Android: ../brote-android/Viruta-0.4.0-pruebas.apk
+Emulador del ordenador: ../brote-android/ABRIR-ANDROID.cmd
+
+Esta versión añade Perfil con 34 insignias originales, 5 vidas diarias,
+gemas, rachas e invitaciones. Casos es una sección independiente con 20
+investigaciones documentadas, una por mundo: 10 de acciones, 5 de ETFs y
+5 de cripto. Cada caso incluye 3 explicaciones, 3 retos y fuentes primarias.
+La mascota, estilo, tres caminos y progreso anteriores se conservan.
+
+Las vidas se renuevan a las 00:00 de España peninsular. Recuperar hasta cinco
+cuesta 20 gemas. Cada caso cuesta 100 y requiere aprobar su mundo. Repetir
+casos no gasta vidas. Las recompensas se conceden una sola vez por logro;
+las visitas diarias y rachas tienen sus reglas específicas.
+Detalle de recompensas, conexión y mantenimiento: ../brote-android/JUEGO.txt.
+
+CUENTAS Y DATOS
+Registro y confirmación de correo, acceso, recuperación, cierre y eliminación.
+Progreso y juego se guardan por cuenta. Una cuenta verificada necesita
+conexión para confirmar respuestas, vidas, premios y gastos. Sin conexión
+puedes leer y practicar casos abiertos. El invitado funciona localmente.
+Importar invitado exige la acción expresa de Cuenta; no duplica bienvenida
+ni copia racha o vidas. Se conservan las copias necesarias hasta confirmar.
+El borrado elimina progreso, monedero, eventos, premios, código e invitaciones.
+Mantiene un marcador mínimo para impedir subidas desde otra sesión antigua;
+su mantenimiento administrativo se explica en ACTIVACION.txt.
+
+VERIFICACIÓN
+205/205 pruebas de aplicación y contenido. 123/123 comprobaciones de reglas.
+20 casos recorridos completos, 60 ejercicios, reintentos tras respuesta perdida,
+concurrencia y 9 comprobaciones Android/web con cuentas temporales propias.
+Ambas cuentas y sus datos de prueba se han retirado. El invitado original
+continúa con el mismo borrador y logros. Evidencias: VALIDACION.txt.
+Compilación y lint Android correctos, firma APK v2 comprobada.
+
+DESARROLLO
+pnpm install --frozen-lockfile
+pnpm dev
+pnpm test
+pnpm test:rules
+pnpm build
+pnpm android:apk
+
+No publicar dist sin reconstruir. El prebuild valida y compone caminos/casos
+y genera las cuatro páginas públicas desde los textos de la aplicación.
+Android: ANDROID.txt. Contenido: CONTENIDO.txt. Reglas del juego: JUEGO.txt
+en la carpeta brote-android. Se mantienen brote-62d26 y app.brote.inversion
+para conservar instalaciones y cuentas. No se ha activado facturación ni
+ningún servicio de pago. Se aplican las cuotas gratuitas de Firebase.
+
+TITULAR
+MEMORIAS MEDIA SL — NIF B13870266.
+Calle Álvaro de Bazán 48 1b, 52006 Melilla, España.
+Registro Mercantil de Melilla, sección 8, hoja ML 3342, inscripción 2,
+de 25 de mayo de 2026. Fuente: BORME de 1 de junio de 2026.
+Páginas: /aviso-legal/, /privacidad/, /eliminar-cuenta/ y /ayuda/.
+Las solicitudes por correo requieren atención manual de la empresa.
+
+LÍMITES
+APK de pruebas, no publicado en Google Play ni App Store. Sin compras,
+anuncios ni seguimiento analítico. No probado en un teléfono Android físico.
+Las cuentas temporales se verificaron por administración, sin enviar correos;
+no acreditan entrega SMTP. El cliente corrige ejercicios: el saldo está
+protegido por transacciones, pero no se ofrece certificación antifraude del
+aprendizaje. No vincular premios a dinero sin validación adicional en servidor.
+Calendario protegido preparado hasta 2035: ampliarlo antes de 2036.

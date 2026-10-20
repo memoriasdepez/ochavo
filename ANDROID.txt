@@ -1,0 +1,59 @@
+VIRUTA — DESARROLLO ANDROID 0.4.1
+4 de octubre de 2026
+
+ENTREGA VERIFICADA
+Versión 0.4.1 / versionCode 6. Paquete: app.brote.inversion.
+APK: ../brote-android/Viruta-0.4.1-pruebas.apk. Tamaño: 4906930 bytes.
+Firma de pruebas v2. Hash: ../brote-android/SHA256.txt.
+Incluye los tres caminos existentes y Perfil, vidas, gemas, rachas,
+invitaciones y los 20 casos independientes. Reglas: ../brote-android/JUEGO.txt.
+
+12 regresiones del curso y navegación; build y lint correctos.
+Validación completa de la base anterior: VALIDACION-0.4.0.txt.
+Instalado con actualización conservando el invitado original (paso 2/8).
+Se probaron cuentas y monedero entre Android y navegador, reinicio, invitación,
+recarga, caso, concurrencia y borrado completo de dos cuentas propias.
+Cuenta verificada: conexión para responder o gastar gemas; teoría y casos
+abiertos se pueden consultar sin red. El invitado funciona localmente.
+La eliminación abarca progreso y todos los registros del juego; el marcador
+mínimo evita que una sesión antigua reponga datos. Ver ACTIVACION.txt.
+
+COMPILAR DESDE ESTA CARPETA
+Requisitos: Node.js, pnpm, Java JDK 21, Android SDK Platform 36 y Build Tools 36.0.0.
+Las herramientas portátiles están en ../../work/. El script admite JAVA_HOME
+y ANDROID_HOME existentes, sin cambiar variables del sistema.
+
+  pnpm dev
+  pnpm test
+  pnpm test:rules
+  pnpm android:apk
+  pnpm android:open
+
+Alternativa directa para el APK:
+  powershell -NoProfile -ExecutionPolicy Bypass -File scripts/android-build.ps1
+
+El script valida y compone los caminos, genera las páginas públicas, compila la web, sincroniza Capacitor,
+construye el APK y ejecuta lint. El resultado se copia a ../brote-android/.
+Mínimo declarado: Android 7 / API 24. Objetivo: API 36.
+La interfaz requiere WebView 123 o posterior; muestra una página de actualización
+cuando no es compatible. No se ha probado en todos los modelos físicos.
+
+EMULADOR DE ESTE ORDENADOR
+AVD Brote_Android_16, Android 16 / API 36, pantalla 720x1600.
+La virtualización y WHPX están habilitados.
+../brote-android/ABRIR-ANDROID.cmd llama a abrir-android.ps1, abre o reutiliza
+el emulador y actualiza la aplicación sin borrar sus datos.
+No desinstales ni limpies el almacenamiento para actualizar el nombre.
+
+PUBLICACIÓN FUTURA
+Este APK está firmado para pruebas. pnpm android:bundle prepara un AAB de
+release que todavía necesita la firma de publicación. Google Play requiere
+cuenta de desarrollador, clave de subida, ficha y sus comprobaciones.
+No se ha publicado en Google Play ni App Store.
+Pendientes de validación: teléfono físico y recepción real de correos Viruta.
+
+Documentación oficial:
+https://capacitorjs.com/docs/android
+https://capacitorjs.com/docs/apis/app
+https://capacitorjs.com/docs/apis/preferences
+https://developer.android.com/studio

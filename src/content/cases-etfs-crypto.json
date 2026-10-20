@@ -1,0 +1,2061 @@
+{
+  "cases": [
+    {
+      "id": "etfs-1",
+      "track": "etfs",
+      "world": 10,
+      "title": "Vanguard: dos formas de tratar los dividendos",
+      "company": "Vanguard · FTSE All-World UCITS ETF",
+      "period": "Clases iniciadas en 2012 y 2019 · documentación consultada el 4 de octubre de 2026",
+      "summary": "Marina compara dos clases reales del mismo fondo y reconstruye el resultado completo, dentro y fuera de la cesta.",
+      "minutes": 12,
+      "cover": {
+        "icon": "layers",
+        "color": "#d8efdf"
+      },
+      "sources": [
+        {
+          "title": "Vanguard · FTSE All-World, clase de distribución: inicio y política de pagos",
+          "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9505/ftse-all-world-ucits-etf-usd-distributing"
+        },
+        {
+          "title": "Vanguard · FTSE All-World, clase de acumulación: inicio y reinversión",
+          "url": "https://www.vanguard.co.uk/professional/product/etf/equity/9679/ftse-all-world-ucits-etf-usd-accumulating"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Mismo objetivo, dos clases",
+          "body": "Marina encuentra dos clases del Vanguard FTSE All-World UCITS ETF. Una clase es una versión del fondo con condiciones concretas. Las páginas oficiales sitúan el inicio de la clase de distribución el 22 de mayo de 2012 y el de acumulación el 23 de julio de 2019. Ambas siguen el índice FTSE All-World. Comprar una participación significa tener una parte del fondo; no convierte a Marina en propietaria de la empresa gestora Vanguard.",
+          "visual": "none",
+          "takeaway": "Separa la gestora, el fondo y la clase concreta que lees.",
+          "terms": [
+            {
+              "word": "Clase",
+              "meaning": "Versión de un fondo con condiciones específicas, como el tratamiento de sus ingresos."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Hechos documentados por Vanguard · fuentes 1 y 2",
+            "headers": [
+              "Clase",
+              "Inicio",
+              "Destino de los ingresos"
+            ],
+            "rows": [
+              [
+                "Distribución",
+                "22 mayo 2012",
+                "Pagos trimestrales"
+              ],
+              [
+                "Acumulación",
+                "23 julio 2019",
+                "Reinversión dentro del fondo"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué representa la participación",
+          "body": "Marina lee «Vanguard FTSE All-World» en una ficha. ¿Qué descripción distingue correctamente las piezas del producto?",
+          "options": [
+            {
+              "text": "Compra una parte de la empresa Vanguard y recibe su beneficio."
+            },
+            {
+              "text": "La participación representa una parte del fondo; la clase concreta determina, entre otras cosas, cómo trata los ingresos."
+            },
+            {
+              "text": "La fecha de inicio más reciente garantiza una cartera más rentable."
+            },
+            {
+              "text": "El índice garantiza recuperar el importe invertido."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El nombre de la gestora identifica quién presta la gestión. La participación corresponde al fondo y la clase precisa sus condiciones. Ni el nombre del índice ni la fecha de inicio garantizan resultados.",
+          "hint": "Identifica de qué conjunto sería propietaria Marina."
+        },
+        {
+          "type": "learn",
+          "title": "Un pago sale de la cesta",
+          "body": "La distribución entrega al partícipe ingresos que estaban en el fondo. La acumulación los mantiene invertidos. Para entender el mecanismo, Marina dibuja una simulación: una participación vale 100 € justo antes de repartir 2 €. Si no cambia nada más, quedan 98 € dentro y 2 € fuera. El pago no crea por sí solo riqueza adicional. La comparación completa suma el valor que queda y el dinero recibido, sin confundirlo con una cotización histórica.",
+          "visual": "none",
+          "takeaway": "El reparto cambia dónde está el dinero; no lo multiplica por sí mismo.",
+          "terms": [
+            {
+              "word": "Distribución",
+              "meaning": "Entrega de ingresos del fondo a sus partícipes."
+            },
+            {
+              "word": "Acumulación",
+              "meaning": "Reinversión de los ingresos dentro del fondo."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Simulación sin variación de mercado, costes ni impuestos",
+            "items": [
+              "Antes: 100 € en el fondo",
+              "El fondo reparte 2 €",
+              "Después: 98 € en el fondo + 2 € recibidos"
+            ]
+          },
+          "explore": {
+            "prompt": "Sigue los mismos 2 € de ingresos en esta simulación",
+            "options": [
+              {
+                "label": "Se reparten",
+                "title": "Cambia la ubicación del dinero",
+                "body": "Tras el reparto, la participación vale 98 € y la persona tiene 2 € en efectivo. Su total sigue siendo 100 € en este instante, antes de otros cambios.",
+                "figure": {
+                  "kind": "bars",
+                  "caption": "Simulación · dos ubicaciones",
+                  "labels": [
+                    "Fondo",
+                    "Efectivo"
+                  ],
+                  "values": [
+                    98,
+                    2
+                  ],
+                  "unit": "€"
+                }
+              },
+              {
+                "label": "Se retienen",
+                "title": "Permanecen dentro de la cesta",
+                "body": "Si esos 2 € no salen, la participación conserva los 100 € bajo los mismos supuestos. La persona no recibe efectivo. No estamos comparando precios reales de las dos clases.",
+                "figure": {
+                  "kind": "bars",
+                  "caption": "Simulación · ingresos retenidos",
+                  "labels": [
+                    "Fondo",
+                    "Efectivo"
+                  ],
+                  "values": [
+                    100,
+                    0
+                  ],
+                  "unit": "€"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Reconstruye el resultado completo",
+          "body": "Simulación independiente de las cotizaciones del fondo: Marina empieza con una posición de 10.000 €. Al terminar el período vale 10.400 € y ha recibido 300 € que conserva en efectivo. No aporta ni retira dinero adicional; omitimos costes e impuestos. ¿Cuál es su rentabilidad total, en porcentaje?",
+          "answer": 7,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "El total final es 10.400 + 300 = 10.700 €. La ganancia de 700 € respecto a 10.000 € representa un 7 %. Mirar solo los 10.400 € omitiría el dinero distribuido.",
+          "hint": "Suma la posición final y el efectivo recibido, y compara la diferencia con el importe inicial."
+        },
+        {
+          "type": "learn",
+          "title": "Compara recorridos equivalentes",
+          "body": "Las clases empezaron en fechas distintas. Por eso Marina no compara directamente sus rentabilidades «desde el inicio»: cubrirían períodos diferentes. Para estudiar su comportamiento escogería las mismas fechas, la misma moneda y un resultado que incluya los pagos, indicando si se reinvierten. Tampoco ordena las clases por precio de una participación: ese precio no mide por sí solo si una cesta es mejor. La decisión sobre recibir efectivo es distinta de predecir qué clase ganará más.",
+          "visual": "none",
+          "takeaway": "Una comparación útil mantiene fechas y tratamiento de los pagos coherentes.",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Lista de comparación · criterio, no resultado observado",
+            "headers": [
+              "Mantener comparable",
+              "Evitar"
+            ],
+            "rows": [
+              [
+                "Mismas fechas",
+                "Dos períodos «desde inicio» distintos"
+              ],
+              [
+                "Pagos incluidos",
+                "Omitir el efectivo repartido"
+              ],
+              [
+                "Misma moneda",
+                "Mezclar cifras sin conversión"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Depura la comparación de Marina",
+          "body": "Marca las dos decisiones que permiten comparar con sentido estas clases reales.",
+          "options": [
+            {
+              "text": "Usar un período común a ambas."
+            },
+            {
+              "text": "Elegir la que tenga menor precio por participación porque necesariamente está más barata."
+            },
+            {
+              "text": "Incluir los ingresos distribuidos en la medida de rentabilidad y aclarar su reinversión."
+            },
+            {
+              "text": "Dar por ganadora a la clase iniciada en 2019 porque su historial es más corto."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "Las fechas comunes y una medida coherente de los ingresos evitan comparar cosas distintas. Un precio unitario menor o un historial más corto no demuestran mayor atractivo.",
+          "hint": "Busca las dos decisiones que hacen comparable el recorrido, sin anticipar un ganador."
+        }
+      ],
+      "takeaway": "La clase concreta importa: compara lo que permanece invertido, lo que se paga y el período medido."
+    },
+    {
+      "id": "etfs-2",
+      "track": "etfs",
+      "world": 11,
+      "title": "iShares: qué significa realmente «World»",
+      "company": "BlackRock / iShares · Core MSCI World UCITS ETF",
+      "period": "Índice MSCI World a 31 de agosto de 2026",
+      "summary": "Marina abre el índice que sigue un ETF real y comprueba cómo una cartera mundial puede concentrar mucho peso en un país.",
+      "minutes": 12,
+      "cover": {
+        "icon": "globe",
+        "color": "#dcecf8"
+      },
+      "sources": [
+        {
+          "title": "iShares · Core MSCI World UCITS ETF: objetivo y referencia",
+          "url": "https://www.ishares.com/uk/individual/en/products/251882/ishares-core-msci-world-ucits-etf"
+        },
+        {
+          "title": "MSCI · World Index Factsheet, 31 agosto 2026: universo y pesos por país",
+          "url": "https://www.msci.com/documents/10199/178e6643-6ae6-47b9-82be-e1fc565ededb"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El nombre necesita unas reglas",
+          "body": "Marina consulta el iShares Core MSCI World UCITS ETF, de la gama iShares de BlackRock. Su referencia es el MSCI World. La ficha del índice del 31 de agosto de 2026 incluye empresas grandes y medianas de 23 mercados desarrollados. «Desarrollado» es una clasificación del proveedor del índice, no una promesa de seguridad. World tampoco significa todos los países ni todas las empresas. Marina separa las reglas del índice de la entidad que ofrece el fondo.",
+          "visual": "none",
+          "takeaway": "Un nombre amplio no sustituye a la descripción del universo incluido.",
+          "terms": [
+            {
+              "word": "Universo",
+              "meaning": "Conjunto de inversiones que las reglas permiten incluir."
+            },
+            {
+              "word": "Mercado desarrollado",
+              "meaning": "Categoría de país utilizada por el proveedor del índice."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Universo del MSCI World · ficha del 31 agosto 2026, fuente 2",
+            "headers": [
+              "Sí describe",
+              "No equivale a"
+            ],
+            "rows": [
+              [
+                "23 mercados desarrollados",
+                "Todos los países del mundo"
+              ],
+              [
+                "Empresas grandes y medianas",
+                "Todas las empresas, incluidas las más pequeñas"
+              ],
+              [
+                "Índice de referencia",
+                "Promesa de rentabilidad del ETF"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Corrige el titular",
+          "body": "Un borrador de Marina dice: «Este ETF reparte el dinero por igual entre todos los países». ¿Qué corrección encaja con el documento consultado?",
+          "options": [
+            {
+              "text": "World significa todos los países con el mismo peso."
+            },
+            {
+              "text": "La referencia abarca empresas grandes y medianas de 23 mercados desarrollados; hay que leer sus pesos."
+            },
+            {
+              "text": "Al ser mundial, ninguna empresa ni país puede concentrar mucho peso."
+            },
+            {
+              "text": "La ficha del índice describe exactamente cada operación del fondo."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La ficha define un universo, no un reparto idéntico entre países. Además, los datos del índice son una referencia; no deben presentarse automáticamente como una fotografía exacta de la cartera del ETF.",
+          "hint": "Separa qué entra en el índice de cuánto pesa cada parte."
+        },
+        {
+          "type": "learn",
+          "title": "Muchas empresas no implican pesos iguales",
+          "body": "En este índice pesan más las empresas con mayor valor bursátil ajustado por las acciones disponibles para negociar. Ese ajuste evita contar del mismo modo participaciones que no circulan libremente. La ficha de agosto de 2026 asigna un 72,14 % a Estados Unidos. El 27,86 % restante se obtiene restando a 100 %. Son pesos históricos del índice, no cifras de ventas de sus empresas ni pesos actuales garantizados del ETF.",
+          "visual": "none",
+          "takeaway": "La cantidad de componentes y el reparto de su peso son preguntas diferentes.",
+          "terms": [
+            {
+              "word": "Capitalización ajustada por libre circulación",
+              "meaning": "Valor bursátil que considera las acciones disponibles para negociar."
+            }
+          ],
+          "figure": {
+            "kind": "bars",
+            "caption": "MSCI World · 31 agosto 2026 · fuente 2; resto calculado",
+            "labels": [
+              "Estados Unidos",
+              "Resto"
+            ],
+            "values": [
+              72.14,
+              27.86
+            ],
+            "unit": "%"
+          },
+          "explore": {
+            "prompt": "Combina esta fotografía histórica con dos carteras hipotéticas",
+            "options": [
+              {
+                "label": "Solo World",
+                "title": "72,14 % en Estados Unidos",
+                "body": "Una cartera que copiase exactamente estos pesos tendría un 72,14 % en empresas clasificadas en Estados Unidos. Es una fotografía del índice, no una predicción.",
+                "figure": {
+                  "kind": "bars",
+                  "caption": "Referencia histórica",
+                  "labels": [
+                    "Estados Unidos",
+                    "Resto"
+                  ],
+                  "values": [
+                    72.14,
+                    27.86
+                  ],
+                  "unit": "%"
+                }
+              },
+              {
+                "label": "Mitad fuera de EE. UU.",
+                "title": "36,07 % en Estados Unidos",
+                "body": "Simulación: la mitad copia World y la otra mitad contiene exclusivamente empresas de otros países. El peso estadounidense sería 50 % × 72,14 % = 36,07 %. Cambiar la segunda cesta cambia la exposición conjunta.",
+                "figure": {
+                  "kind": "bars",
+                  "caption": "Combinación hipotética",
+                  "labels": [
+                    "Estados Unidos",
+                    "Resto"
+                  ],
+                  "values": [
+                    36.07,
+                    63.93
+                  ],
+                  "unit": "%"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Dos fondos, una exposición conjunta",
+          "body": "Simulación: el 50 % de una cartera copia exactamente los pesos del MSCI World del 31 de agosto de 2026. El otro 50 % está en una cesta exclusivamente estadounidense. Usando el 72,14 % de Estados Unidos en World, ¿qué porcentaje de la cartera conjunta corresponde a Estados Unidos?",
+          "answer": 86.07,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "La primera mitad aporta 36,07 puntos porcentuales y la segunda 50. El total es 86,07 %. Tener dos fondos no garantiza reducir la concentración: importa lo que contienen.",
+          "hint": "Multiplica el peso estadounidense de cada cesta por la fracción de la cartera que ocupa."
+        },
+        {
+          "type": "learn",
+          "title": "La etiqueta geográfica tiene un límite",
+          "body": "El país asignado a una empresa en un índice no describe todos los lugares donde vende, compra o mantiene fábricas. Marina utiliza el peso por país para entender la clasificación de la cartera, sin convertirlo en un mapa de sus ingresos. También documenta el solapamiento: inversiones que aparecen en más de una cesta. Antes de añadir otro ETF, busca si amplía lo que falta o aumenta algo que ya tiene, y conserva la fecha de la comparación.",
+          "visual": "none",
+          "takeaway": "Para entender una combinación, mira debajo de los nombres de los fondos.",
+          "terms": [
+            {
+              "word": "Solapamiento",
+              "meaning": "Presencia de las mismas inversiones o exposiciones en varias cestas."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Una lectura de la cartera por capas",
+            "items": [
+              "Identificar el índice de cada ETF",
+              "Leer componentes, reglas y pesos",
+              "Combinar los pesos según el dinero asignado",
+              "Comprobar qué falta y qué se repite"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Qué permite concluir la ficha",
+          "body": "Marca las dos conclusiones justificadas por el análisis de Marina.",
+          "options": [
+            {
+              "text": "Un 72,14 % de peso estadounidense demuestra que el 72,14 % de todas las ventas procede de ese país."
+            },
+            {
+              "text": "La fecha del peso geográfico debe acompañar a la cifra."
+            },
+            {
+              "text": "Añadir un ETF estadounidense puede aumentar una exposición ya presente."
+            },
+            {
+              "text": "El nombre World demuestra que todos los países tienen representación."
+            }
+          ],
+          "answers": [
+            1,
+            2
+          ],
+          "explanation": "Los pesos cambian y las cestas pueden solaparse. La clasificación por país no mide directamente la procedencia de los ingresos empresariales y el nombre comercial no sustituye a las reglas del índice.",
+          "hint": "Distingue la información publicada de dos interpretaciones que añaden algo no demostrado."
+        }
+      ],
+      "takeaway": "La diversificación se comprueba dentro de las cestas y en sus pesos conjuntos."
+    },
+    {
+      "id": "etfs-3",
+      "track": "etfs",
+      "world": 12,
+      "title": "Invesco: seguir un índice mediante un contrato",
+      "company": "Invesco · S&P 500 UCITS ETF Acc",
+      "period": "Ficha de 31 de agosto de 2026 · resultado histórico del año 2024",
+      "summary": "Marina diferencia la cartera del fondo, el resultado del índice y los costes de un ETF de réplica sintética.",
+      "minutes": 12,
+      "cover": {
+        "icon": "repeat",
+        "color": "#eee3f6"
+      },
+      "sources": [
+        {
+          "title": "Invesco · S&P 500 UCITS ETF Acc, ISIN IE00B3YCGJ38: ficha del 31 agosto 2026",
+          "url": "https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00B3YCGJ38_factsheet_en.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La cartera y la referencia pueden diferir",
+          "body": "Marina abre la ficha de Invesco S&P 500 UCITS ETF Acc. La ficha de agosto de 2026 explica que emplea réplica sintética: mantiene una cartera y utiliza un contrato para intercambiar su resultado por el del índice de referencia. Ese intercambio se llama swap y la otra entidad es la contraparte. Por eso encontrar una inversión distinta del S&P 500 en la cartera no demuestra, por sí solo, que el fondo haya abandonado su objetivo.",
+          "visual": "none",
+          "takeaway": "En la réplica sintética, un contrato conecta la cartera con el resultado de referencia.",
+          "terms": [
+            {
+              "word": "Swap",
+              "meaning": "Contrato para intercambiar resultados financieros acordados."
+            },
+            {
+              "word": "Contraparte",
+              "meaning": "La otra entidad que debe cumplir el contrato."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Mecanismo simplificado descrito en la ficha · fuente 1",
+            "items": [
+              "El fondo mantiene una cartera de inversiones",
+              "El swap intercambia resultados con una contraparte",
+              "El objetivo es obtener el resultado del índice, con los ajustes del contrato"
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Reconoce cada pieza",
+          "body": "Relaciona los elementos del mecanismo descrito por Invesco. El esquema explica funciones; no enumera contrapartes concretas.",
+          "pairs": [
+            {
+              "left": "Cartera mantenida por el ETF",
+              "right": "Inversiones que posee el fondo"
+            },
+            {
+              "left": "S&P 500 de referencia",
+              "right": "Resultado que se busca seguir"
+            },
+            {
+              "left": "Swap",
+              "right": "Contrato de intercambio de resultados"
+            },
+            {
+              "left": "Contraparte",
+              "right": "Entidad que asume la otra obligación contractual"
+            }
+          ],
+          "explanation": "Las inversiones mantenidas, la referencia y el contrato cumplen papeles diferentes. La réplica sintética obliga a entender tanto la cartera como la capacidad de cumplimiento del contrato.",
+          "hint": "Separa inversiones, regla de referencia, acuerdo y entidad."
+        },
+        {
+          "type": "learn",
+          "title": "Una cifra publicada ya incorpora ajustes",
+          "body": "La ficha publica para 2024 un resultado del fondo del 24,91 % y del índice del 24,50 %, ambos en dólares. El resultado del fondo se calcula con su valor liquidativo: el valor de la cartera neta por participación, con los ingresos reinvertidos. La ficha indica que ya descuenta gastos corrientes y costes de transacción de la cartera. No es el resultado de cualquier comprador en bolsa, que puede afrontar su propio precio de ejecución y comisiones.",
+          "visual": "none",
+          "takeaway": "Antes de restar un coste, comprueba si la cifra publicada ya lo incluye.",
+          "terms": [
+            {
+              "word": "Valor liquidativo",
+              "meaning": "Valor neto de las inversiones del fondo por participación."
+            },
+            {
+              "word": "Punto porcentual",
+              "meaning": "Unidad para restar directamente dos porcentajes."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Año 2024 · dólares e ingresos reinvertidos · fuente 1",
+            "headers": [
+              "Serie",
+              "Rentabilidad publicada"
+            ],
+            "rows": [
+              [
+                "ETF: valor liquidativo",
+                "24,91 %"
+              ],
+              [
+                "Índice de referencia",
+                "24,50 %"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia la medida del resultado, no el año",
+            "options": [
+              {
+                "label": "Ficha del fondo",
+                "title": "Compara dos series equivalentes",
+                "body": "Para evaluar el seguimiento, Marina compara el resultado del fondo con el del índice durante las mismas fechas y en dólares. No vuelve a restar gastos ya incluidos en la serie."
+              },
+              {
+                "label": "Operación de una persona",
+                "title": "Aparecen datos adicionales",
+                "body": "Para medir la experiencia de una persona hacen falta sus importes pagados y cobrados, las fechas y los costes de operar. La cifra del fondo por sí sola no describe esa experiencia."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Mide la distancia de 2024",
+          "body": "Según la ficha, en el año 2024 el fondo obtuvo un 24,91 % y el índice un 24,50 %. ¿Cuántos puntos porcentuales quedó el fondo por encima de la referencia? Se pide la resta de porcentajes, no una rentabilidad relativa.",
+          "answer": 0.41,
+          "tolerance": 0.02,
+          "unit": "puntos porcentuales",
+          "explanation": "24,91 − 24,50 = 0,41 puntos porcentuales. Es la diferencia de ese año y esa metodología. No permite prometer una ventaja futura ni atribuir todo el resultado a una única causa.",
+          "hint": "Resta las dos rentabilidades publicadas manteniendo la unidad solicitada."
+        },
+        {
+          "type": "learn",
+          "title": "Lee la nota del coste",
+          "body": "La misma ficha distingue un gasto corriente anual del 0,05 % y una tarifa del swap del 0,07 %. Su nota aclara que esta última se refleja dentro del rendimiento acordado y no se cobra como un recibo independiente al partícipe. Marina evita sumar conceptos y descontarlos otra vez de una rentabilidad ya neta. Examina también el contrato: un coste bajo no elimina el riesgo de que la contraparte no cumpla. Son preguntas diferentes.",
+          "visual": "none",
+          "takeaway": "La forma de incorporar un coste importa tanto como su porcentaje.",
+          "terms": [
+            {
+              "word": "Gasto corriente",
+              "meaning": "Coste recurrente del funcionamiento del fondo, según la definición de su ficha."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Costes descritos el 31 agosto 2026 · fuente 1",
+            "headers": [
+              "Concepto",
+              "Cifra anual",
+              "Cómo leerla"
+            ],
+            "rows": [
+              [
+                "Gasto corriente",
+                "0,05 %",
+                "Revisar la metodología del resultado neto"
+              ],
+              [
+                "Tarifa del swap",
+                "0,07 %",
+                "Reflejada en el acuerdo; no recibo separado"
+              ],
+              [
+                "Operar en bolsa",
+                "Depende de la operación",
+                "No inferirlo de las dos cifras anteriores"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos notas para su ficha de análisis",
+          "body": "Selecciona las dos anotaciones correctas sobre el caso Invesco.",
+          "options": [
+            {
+              "text": "Hay que restar siempre ambas tarifas otra vez al 24,91 % para corregir la ficha."
+            },
+            {
+              "text": "Un gasto bajo demuestra que la contraparte siempre cumplirá."
+            },
+            {
+              "text": "El resultado por valor liquidativo y la experiencia de un comprador en bolsa pueden diferir."
+            },
+            {
+              "text": "La existencia del swap exige examinar sus condiciones y su contraparte."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "La ficha y la operación de una persona miden recorridos distintos. El contrato exige su propio análisis; ni duplicar costes ni tratar un precio bajo como garantía mejora la comparación.",
+          "hint": "Busca una conclusión sobre la medición y otra sobre el mecanismo del fondo."
+        }
+      ],
+      "takeaway": "Entender una réplica exige leer el contrato y saber qué costes contiene cada medida."
+    },
+    {
+      "id": "etfs-4",
+      "track": "etfs",
+      "world": 13,
+      "title": "SPY: entre la cartera y el precio de bolsa",
+      "company": "State Street · SPDR S&P 500 ETF Trust (SPY)",
+      "period": "Tabla histórica de primas y descuentos del año natural 2025",
+      "summary": "Marina usa una tabla histórica de SPY para separar frecuencia, tamaño de la desviación y coste de negociar.",
+      "minutes": 12,
+      "cover": {
+        "icon": "scale",
+        "color": "#f5ead3"
+      },
+      "sources": [
+        {
+          "title": "State Street · SPY: tabla de primas y descuentos de 2025 y metodología publicada",
+          "url": "https://www.ssga.com/us/en/individual/etfs/state-street-spdr-sp-500-etf-trust-spy"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La cesta y la cotización son dos medidas",
+          "body": "SPY es un ETF de State Street que sigue el S&P 500. El precio negociado puede quedar por encima del valor de referencia de su cartera; esa diferencia positiva se llama prima. Si queda por debajo, es un descuento. La tabla de 2025 del emisor clasifica 123 observaciones con prima y 127 con descuento, según su comparación al cierre de las 16:00. Contar observaciones revela frecuencia, pero no dice cuánto dinero separaba ambas medidas.",
+          "visual": "none",
+          "takeaway": "Frecuencia y tamaño de la diferencia son datos distintos.",
+          "terms": [
+            {
+              "word": "Prima",
+              "meaning": "Precio superior al valor de referencia de la cartera."
+            },
+            {
+              "word": "Descuento",
+              "meaning": "Precio inferior a ese valor de referencia."
+            }
+          ],
+          "figure": {
+            "kind": "bars",
+            "caption": "SPY · tabla del año 2025, fuente 1 · metodología del emisor",
+            "labels": [
+              "Con prima",
+              "Con descuento"
+            ],
+            "values": [
+              123,
+              127
+            ],
+            "unit": "observaciones"
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Una frecuencia, no una rentabilidad",
+          "body": "La tabla de SPY de 2025 clasifica 123 observaciones con prima y 127 con descuento. Entre esas 250 observaciones, ¿qué porcentaje corresponde a prima? Esta proporción no mide la rentabilidad del fondo.",
+          "answer": 49.2,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "123 / 250 × 100 = 49,2 %. La cifra cuenta observaciones. Para conocer el tamaño de las desviaciones harían falta sus importes o porcentajes, no solo su signo.",
+          "hint": "Divide las observaciones con prima entre el total clasificado."
+        },
+        {
+          "type": "learn",
+          "title": "La horquilla responde a otra pregunta",
+          "body": "Para negociar, Marina necesita distinguir el precio al que puede comprar del precio al que puede vender. La diferencia es la horquilla. No es lo mismo que la prima frente a la cartera. En una simulación, hay compra a 100,20 € y venta a 100,00 €, mientras la referencia vale 100,10 €. La horquilla es 0,20 €, aunque el punto medio coincide con la referencia. No son cotizaciones de SPY ni tarifas de un intermediario.",
+          "visual": "none",
+          "takeaway": "Puede existir horquilla aunque el punto medio no tenga prima.",
+          "terms": [
+            {
+              "word": "Horquilla",
+              "meaning": "Diferencia entre el precio disponible de compra y el de venta."
+            },
+            {
+              "word": "Punto medio",
+              "meaning": "Promedio de los dos precios cotizados."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación independiente de SPY",
+            "headers": [
+              "Dato",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Compra disponible",
+                "100,20 €"
+              ],
+              [
+                "Venta disponible",
+                "100,00 €"
+              ],
+              [
+                "Referencia de la cartera",
+                "100,10 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mantén el punto medio y cambia la horquilla",
+            "options": [
+              {
+                "label": "Más estrecha",
+                "title": "Ida y vuelta de 0,20 € por parte",
+                "body": "Simulación sin cambio de precios ni otras comisiones: comprar a 100,20 € y vender a 100,00 € supone perder 0,20 € por participación. El punto medio es 100,10 €."
+              },
+              {
+                "label": "Más amplia",
+                "title": "Ida y vuelta de 1 € por parte",
+                "body": "Simulación bajo los mismos supuestos: comprar a 100,60 € y vender a 99,60 € supone perder 1 € por participación. El punto medio sigue siendo 100,10 €; la ejecución cuesta más."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Detecta lo que falta",
+          "body": "Alguien concluye: «Como hubo casi el mismo número de primas y descuentos en 2025, negociar SPY no tuvo costes». ¿Qué responde mejor al dato publicado?",
+          "options": [
+            {
+              "text": "La conclusión es correcta porque ambos signos se compensan para todos los compradores."
+            },
+            {
+              "text": "La frecuencia no informa por sí sola del tamaño de las desviaciones, la horquilla ni las comisiones de una operación."
+            },
+            {
+              "text": "Toda observación con descuento garantiza una ganancia al comprar."
+            },
+            {
+              "text": "La tabla permite saber la cotización de la próxima sesión."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Una tabla de frecuencia no reconstruye la operación de una persona. El signo de la desviación no elimina la horquilla ni permite asegurar su evolución posterior.",
+          "hint": "Distingue un resumen anual de los precios y costes de una ejecución concreta."
+        },
+        {
+          "type": "learn",
+          "title": "Una orden necesita su propia comprobación",
+          "body": "Las participaciones se negocian entre compradores y vendedores. El mecanismo de creación y reembolso con el fondo permite a participantes autorizados operar grandes bloques de participaciones; no significa que cualquier persona canjee una participación de SPY directamente por sus acciones subyacentes. Marina separa ese mecanismo de su orden. Primero fija cuánto pretende negociar, observa precios y profundidad —la cantidad disponible a cada precio— y después evalúa si una orden limitada encaja. Limitar el precio puede dejarla sin ejecutar.",
+          "visual": "none",
+          "takeaway": "El mecanismo del ETF no sustituye la revisión de tu orden.",
+          "terms": [
+            {
+              "word": "Participante autorizado",
+              "meaning": "Entidad que puede crear o reembolsar bloques de participaciones conforme al mecanismo del fondo."
+            },
+            {
+              "word": "Profundidad",
+              "meaning": "Cantidad disponible para negociar a distintos precios."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Dos relaciones diferentes · mecanismo de la fuente 1",
+            "items": [
+              "Inversor: negocia participaciones en bolsa",
+              "Participante autorizado: puede operar bloques con el fondo",
+              "Creación o reembolso: conecta participaciones y cartera"
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Ordena una revisión simulada",
+          "body": "Marina prepara una operación solo en su cuaderno. Ordena esta secuencia de análisis, desde definir la necesidad hasta dejar registrada la decisión. No se envía ninguna orden real.",
+          "items": [
+            "Elegir, con esos datos, un precio límite y aceptar que podría no ejecutarse.",
+            "Anotar el importe y el plazo que necesita.",
+            "Registrar la decisión y sus motivos sin confundirla con una ejecución confirmada.",
+            "Consultar la horquilla, la profundidad y los costes para ese importe."
+          ],
+          "answer": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "explanation": "La necesidad concreta orienta la consulta del mercado; los datos permiten evaluar una orden; el registro final distingue decisión, orden y ejecución. Una instrucción de precio no asegura encontrar contrapartida.",
+          "hint": "Primero define la necesidad; después reúne la información que permite decidir."
+        }
+      ],
+      "takeaway": "El dato histórico del ETF y la ejecución concreta de una orden responden a preguntas diferentes."
+    },
+    {
+      "id": "etfs-5",
+      "track": "etfs",
+      "world": 14,
+      "title": "LifeStrategy: mirar dentro de una cartera de fondos",
+      "company": "Vanguard · LifeStrategy 60% Equity UCITS ETF EUR Accumulating",
+      "period": "Fondo iniciado el 8 de diciembre de 2020 · política consultada el 4 de octubre de 2026",
+      "summary": "Marina abre un fondo que invierte en otros fondos y calcula qué ocurre al combinarlo con una segunda cesta.",
+      "minutes": 12,
+      "cover": {
+        "icon": "chart-pie",
+        "color": "#e3ecd1"
+      },
+      "sources": [
+        {
+          "title": "Vanguard · LifeStrategy 60% Equity UCITS ETF EUR Accumulating: política de inversión e inicio",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/lifestrategy/9494/lifestrategy-60-equity-ucits-etf-eur-accumulating"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un fondo puede contener otros fondos",
+          "body": "Marina consulta LifeStrategy 60% Equity UCITS ETF. La política oficial busca aproximadamente un 60 % de exposición a acciones y un 40 % a renta fija, principalmente mediante otros fondos. La renta fija reúne inversiones basadas en dinero prestado, como bonos; su valor no es fijo ni está garantizado. Vanguard describe esta selección como gestión activa, aunque muchos fondos que utiliza siguen índices. El inicio del fondo figura el 8 de diciembre de 2020.",
+          "visual": "none",
+          "takeaway": "La política del fondo exterior y la de sus componentes no son necesariamente iguales.",
+          "terms": [
+            {
+              "word": "Renta fija",
+              "meaning": "Inversiones basadas en obligaciones de pago, cuyo valor de mercado también puede cambiar."
+            },
+            {
+              "word": "Fondo de fondos",
+              "meaning": "Fondo que mantiene participaciones de otros fondos."
+            }
+          ],
+          "figure": {
+            "kind": "bars",
+            "caption": "Objetivo aproximado de la política · fuente 1; no cartera exacta del día",
+            "labels": [
+              "Acciones",
+              "Renta fija"
+            ],
+            "values": [
+              60,
+              40
+            ],
+            "unit": "%"
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Identifica qué gestiona cada capa",
+          "body": "¿Qué interpretación respeta la política publicada de LifeStrategy 60% Equity?",
+          "options": [
+            {
+              "text": "El 40 % de renta fija no puede sufrir pérdidas."
+            },
+            {
+              "text": "El 60/40 es una política aproximada de exposición; el fondo puede elegir y combinar fondos que siguen índices."
+            },
+            {
+              "text": "El fondo entero debe seguir un único índice porque utiliza ETFs."
+            },
+            {
+              "text": "Poseer varios fondos elimina todas sus exposiciones repetidas."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El vehículo exterior puede gestionar activamente la combinación aunque utilice componentes indexados. La etiqueta renta fija no convierte sus precios en constantes ni garantiza el capital.",
+          "hint": "Separa la decisión de combinación de la gestión de cada cesta interior."
+        },
+        {
+          "type": "learn",
+          "title": "La mezcla real aparece al abrir las cestas",
+          "body": "Marina ensaya una combinación: parte de su cartera estaría en un fondo 60/40 y otra parte en una cesta formada solo por acciones. Para conocer el conjunto, multiplica la proporción de cada clase de inversión por el dinero asignado a cada fondo. Es mirar a través de las capas: no contar cada fondo como si fuera una exposición distinta. El cálculo usa un 60/40 exacto solo para simplificar la simulación; no describe una cartera histórica de LifeStrategy.",
+          "visual": "none",
+          "takeaway": "Los pesos de la cartera completa se calculan a partir de sus inversiones interiores.",
+          "terms": [
+            {
+              "word": "Exposición conjunta",
+              "meaning": "Peso total de una inversión o categoría después de sumar todas las cestas."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Simulación por capas",
+            "items": [
+              "Importe asignado a cada fondo",
+              "Porcentaje de acciones y bonos dentro de cada uno",
+              "Euros de cada categoría en todas las cestas",
+              "Peso final sobre el total"
+            ]
+          },
+          "explore": {
+            "prompt": "Compara dos mezclas hipotéticas, sin elegir una ganadora",
+            "options": [
+              {
+                "label": "Solo 60/40",
+                "title": "60 % acciones y 40 % bonos",
+                "body": "Si toda la cartera copiase exactamente el objetivo 60/40, esos serían también los pesos conjuntos. La comodidad de agruparlos no impide que ambas categorías cambien de valor.",
+                "figure": {
+                  "kind": "bars",
+                  "caption": "Simulación de pesos",
+                  "labels": [
+                    "Acciones",
+                    "Bonos"
+                  ],
+                  "values": [
+                    60,
+                    40
+                  ],
+                  "unit": "%"
+                }
+              },
+              {
+                "label": "Mitad y mitad",
+                "title": "80 % acciones y 20 % bonos",
+                "body": "La mitad en el fondo 60/40 y la mitad en una cesta solo de acciones produce 0,5 × 60 + 0,5 × 100 = 80 % en acciones. Añadir un fondo ha aumentado esa exposición.",
+                "figure": {
+                  "kind": "bars",
+                  "caption": "Simulación de pesos conjuntos",
+                  "labels": [
+                    "Acciones",
+                    "Bonos"
+                  ],
+                  "values": [
+                    80,
+                    20
+                  ],
+                  "unit": "%"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Abre una combinación distinta",
+          "body": "Simulación: Marina asigna 6.000 € a una cesta que mantiene exactamente un 60 % en acciones y un 40 % en bonos, y 4.000 € a otra cesta solo de acciones. ¿Qué porcentaje del total de 10.000 € corresponde a acciones? No hay otras posiciones ni costes.",
+          "answer": 76,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "La primera cesta aporta 3.600 € en acciones y la segunda 4.000 €. Son 7.600 € sobre 10.000 €, un 76 %. El número de fondos no sustituye a este cálculo de exposición.",
+          "hint": "Convierte primero cada porcentaje interior en euros y suma los euros de acciones."
+        },
+        {
+          "type": "learn",
+          "title": "El mantenimiento no termina en el nombre",
+          "body": "Con el tiempo, acciones y bonos pueden evolucionar de forma distinta y modificar los pesos. Reequilibrar significa acercarlos otra vez al reparto elegido, mediante aportaciones o intercambios entre posiciones. Eso exige definir una regla y valorar costes; no descubrir qué parte subirá después. La política de LifeStrategy expresa un objetivo aproximado y contiene más detalles que el 60/40. Marina los lee antes de juzgar su encaje con un plazo y una necesidad de liquidez concretos.",
+          "visual": "none",
+          "takeaway": "Una combinación requiere una regla de seguimiento, no solo una etiqueta inicial.",
+          "terms": [
+            {
+              "word": "Reequilibrar",
+              "meaning": "Acercar los pesos de la cartera al reparto elegido."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Preguntas de seguimiento · no instrucciones de compra",
+            "headers": [
+              "Pregunta",
+              "Dato útil"
+            ],
+            "rows": [
+              [
+                "¿Qué tengo realmente?",
+                "Pesos conjuntos de acciones y bonos"
+              ],
+              [
+                "¿Cambió el reparto?",
+                "Pesos actuales frente al objetivo"
+              ],
+              [
+                "¿Sigue encajando?",
+                "Plazo y dinero que necesitaré"
+              ],
+              [
+                "¿Qué cuesta ajustarlo?",
+                "Costes y condiciones de la operación"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Una revisión con motivos",
+          "body": "Marca las dos anotaciones que ayudan a mantener una cartera con varias cestas.",
+          "options": [
+            {
+              "text": "Sumar las exposiciones interiores antes de decidir si está equilibrada."
+            },
+            {
+              "text": "Dar por estable el valor de los bonos porque se llaman renta fija."
+            },
+            {
+              "text": "Revisar los pesos frente a una regla definida y a las necesidades de dinero."
+            },
+            {
+              "text": "Elegir cualquier segundo ETF porque más nombres siempre reducen el riesgo."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "Abrir las cestas y mantener una regla permite detectar cambios reales. Ni una categoría de nombre tranquilizador ni un mayor número de productos garantizan una mejor combinación.",
+          "hint": "Busca decisiones basadas en la composición y en el propósito de la cartera."
+        }
+      ],
+      "takeaway": "La cartera final depende de lo que contienen los fondos y de cómo los combinas."
+    },
+    {
+      "id": "crypto-1",
+      "track": "crypto",
+      "world": 15,
+      "title": "Block: una empresa no es la red Bitcoin",
+      "company": "Block, antes Square · iniciativa Spiral",
+      "period": "Anuncio empresarial del 1 de diciembre de 2021",
+      "summary": "Inés reconstruye un cambio de nombre real para separar empresa, marca, software abierto y unidad digital.",
+      "minutes": 12,
+      "cover": {
+        "icon": "network",
+        "color": "#deece8"
+      },
+      "sources": [
+        {
+          "title": "Square / Block · Square changes name to Block, 1 diciembre 2021",
+          "url": "https://squareup.com/us/en/press/square-changes-name-to-block"
+        },
+        {
+          "title": "Bitcoin.org · Cómo funciona Bitcoin: registro, firmas y consenso",
+          "url": "https://bitcoin.org/es/como-funciona"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un cambio de nombre con varias piezas",
+          "body": "Inés lee un anuncio del 1 de diciembre de 2021: Square comunicó que la empresa pasaría a llamarse Block. Square continuaría como marca de su negocio para vendedores, y la iniciativa Square Crypto se llamaría Spiral. El comunicado describe Spiral como apoyo a proyectos de código abierto relacionados con Bitcoin: programas cuyo código puede examinarse y reutilizarse según su licencia. Ese anuncio cambia nombres y organización empresarial; no convierte a Block en propietaria de Bitcoin.",
+          "visual": "none",
+          "takeaway": "Identifica qué nombre corresponde a una empresa y cuál a una iniciativa o a una red.",
+          "terms": [
+            {
+              "word": "Marca",
+              "meaning": "Nombre con el que se identifica un producto o negocio."
+            },
+            {
+              "word": "Código abierto",
+              "meaning": "Código publicado que puede examinarse y usarse según su licencia."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Mapa del anuncio de diciembre de 2021 · fuente 1",
+            "headers": [
+              "Nombre",
+              "Papel en el anuncio"
+            ],
+            "rows": [
+              [
+                "Block",
+                "Nuevo nombre anunciado de la empresa"
+              ],
+              [
+                "Square",
+                "Marca conservada para el negocio de vendedores"
+              ],
+              [
+                "Spiral",
+                "Iniciativa que apoya proyectos abiertos de Bitcoin"
+              ],
+              [
+                "Bitcoin",
+                "Red distinta de la empresa"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Pon cada nombre en su sitio",
+          "body": "Relaciona los nombres con el papel descrito en el anuncio de 2021. La actividad de una empresa puede relacionarse con una red sin que sean la misma entidad.",
+          "pairs": [
+            {
+              "left": "Block",
+              "right": "Empresa que anuncia el nuevo nombre"
+            },
+            {
+              "left": "Square",
+              "right": "Marca del negocio para vendedores"
+            },
+            {
+              "left": "Spiral",
+              "right": "Iniciativa de apoyo a proyectos abiertos"
+            },
+            {
+              "left": "Bitcoin",
+              "right": "Red que no pasa a ser propiedad de Block"
+            }
+          ],
+          "explanation": "El mapa separa organización empresarial y red. Colaborar en software o financiar proyectos no concede por sí mismo la propiedad del sistema al que contribuyen.",
+          "hint": "Recupera qué cambió de nombre y qué quedó fuera de ese cambio empresarial."
+        },
+        {
+          "type": "learn",
+          "title": "Una unidad no es una participación empresarial",
+          "body": "Bitcoin es una red con un historial y reglas compartidas; BTC es la abreviatura de su unidad. Una acción, en cambio, es una participación en la propiedad de una empresa. Son objetos distintos. Que una empresa trabaje con Bitcoin o lo mencione en su estrategia no transforma BTC en una acción suya. Inés describe primero el objeto que aparece en cada documento: empresa, servicio, programa o unidad digital, sin inventar derechos a cobrar beneficios.",
+          "visual": "none",
+          "takeaway": "La relación comercial con una red no cambia los derechos de su unidad.",
+          "terms": [
+            {
+              "word": "BTC",
+              "meaning": "Abreviatura de la unidad bitcoin."
+            },
+            {
+              "word": "Acción",
+              "meaning": "Participación en la propiedad de una empresa."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Distinción de derechos · no propuesta de inversión",
+            "headers": [
+              "Objeto",
+              "Qué no se debe deducir"
+            ],
+            "rows": [
+              [
+                "Unidad BTC",
+                "Una parte de la empresa Block"
+              ],
+              [
+                "Software financiado por Spiral",
+                "Control exclusivo de las reglas de Bitcoin"
+              ],
+              [
+                "Marca de un servicio",
+                "Propiedad de todo el historial compartido"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una conclusión que añade demasiado",
+          "body": "Un resumen afirma: «Como Block apoya proyectos de Bitcoin, tener BTC da derecho a una parte de los beneficios de Block». ¿Qué corrección es adecuada?",
+          "options": [
+            {
+              "text": "La afirmación es correcta si la empresa tiene muchos clientes."
+            },
+            {
+              "text": "BTC y una participación empresarial son objetos distintos; ese apoyo no concede el derecho descrito."
+            },
+            {
+              "text": "Toda unidad digital da siempre derechos sobre la empresa que la menciona."
+            },
+            {
+              "text": "Cambiar el nombre de Square cambió automáticamente el historial de Bitcoin."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El apoyo de una empresa a un proyecto no convierte una unidad de la red en propiedad de esa empresa. El derecho a beneficios no puede deducirse de una relación comercial o de un nombre.",
+          "hint": "Pregunta qué documento crea el derecho y sobre qué entidad recaería."
+        },
+        {
+          "type": "learn",
+          "title": "Proponer software no impone su adopción",
+          "body": "Un equipo puede desarrollar una modificación y publicarla. Para que forme parte de las reglas utilizadas por una red, otros participantes deben adoptarla y coordinarse conforme a su funcionamiento. Eso es distinto de cambiar el nombre de una aplicación que controla una empresa. La documentación de Bitcoin describe comprobaciones de firmas, saldos e historial entre participantes. Inés distingue contribución e influencia de control exclusivo: ni financiar código ni emitir un comunicado demuestra que todos usarán unas nuevas reglas.",
+          "visual": "none",
+          "takeaway": "La publicación de una propuesta y su adopción por la red son hechos diferentes.",
+          "terms": [
+            {
+              "word": "Adopción",
+              "meaning": "Uso efectivo de una propuesta por los participantes relevantes."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Esquema conceptual · fuente 2",
+            "items": [
+              "Un equipo propone un cambio",
+              "Otros participantes lo examinan",
+              "Deciden qué software y reglas utilizan",
+              "La adopción efectiva debe comprobarse"
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia el ámbito de una decisión hipotética",
+            "options": [
+              {
+                "label": "Nombre de una app",
+                "title": "Una decisión empresarial",
+                "body": "Si una empresa cambia el nombre de una aplicación propia, puede modificar ese producto bajo su control. No se deduce ningún cambio en las reglas de Bitcoin."
+              },
+              {
+                "label": "Regla de la red",
+                "title": "Hace falta adopción",
+                "body": "Si el mismo equipo publica nuevas reglas para Bitcoin, su anuncio no prueba que los demás participantes las usarán. Habría que observar la adopción y la coordinación reales."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos comprobaciones antes de resumir",
+          "body": "Inés revisa una noticia sobre una empresa que financia software de Bitcoin. Marca las dos comprobaciones razonables.",
+          "options": [
+            {
+              "text": "Dar por hecho que el financiador puede modificar todos los saldos."
+            },
+            {
+              "text": "Identificar si el anuncio afecta a la empresa, a una aplicación o a las reglas propuestas para la red."
+            },
+            {
+              "text": "Comprobar la adopción antes de afirmar que unas reglas nuevas se usan de forma general."
+            },
+            {
+              "text": "Tratar cada mención de BTC como un derecho a beneficios de la empresa."
+            }
+          ],
+          "answers": [
+            1,
+            2
+          ],
+          "explanation": "El ámbito de la decisión y la evidencia de adopción evitan confundir una organización con la red. Ninguno de esos hechos crea automáticamente derechos empresariales ni poder sobre todos los saldos.",
+          "hint": "Busca comprobaciones de alcance y de uso efectivo."
+        }
+      ],
+      "takeaway": "Empresa, aplicación, contribución de software y red deben analizarse por separado."
+    },
+    {
+      "id": "crypto-2",
+      "track": "crypto",
+      "world": 16,
+      "title": "Ledger: cuando se filtran datos de clientes",
+      "company": "Ledger · incidente de datos comerciales de 2020",
+      "period": "Comunicados de julio y diciembre de 2020",
+      "summary": "Inés distingue la base de clientes de una empresa, las claves de una cartera y el engaño que puede conectar ambos riesgos.",
+      "minutes": 12,
+      "cover": {
+        "icon": "key-round",
+        "color": "#e5e7f6"
+      },
+      "sources": [
+        {
+          "title": "Ledger · Addressing the July 2020 e-commerce and marketing data breach, 29 julio 2020",
+          "url": "https://www.ledger.com/addressing-the-july-2020-e-commerce-and-marketing-data-breach"
+        },
+        {
+          "title": "Ledger · 6 Ways to Face the Data Breach, 22 diciembre 2020",
+          "url": "https://www.ledger.com/blog/6-ways-to-face-the-data-breach"
+        },
+        {
+          "title": "Bitcoin.org · Cómo funciona Bitcoin: claves privadas y firmas",
+          "url": "https://bitcoin.org/es/como-funciona"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Empieza por el alcance del incidente",
+          "body": "Ledger comunicó en julio de 2020 una filtración de datos de su actividad comercial y de marketing. En diciembre informó de la publicación de una base de clientes y de campañas de suplantación. Según la empresa, aquel incidente no consistía en extraer las claves privadas de sus dispositivos. Inés conserva ese alcance y su atribución: una filtración de datos de contacto es grave, pero no demuestra por sí sola que se hayan obtenido las claves que autorizan operaciones.",
+          "visual": "none",
+          "takeaway": "Identifica qué información se vio afectada antes de deducir qué puede hacer un atacante.",
+          "terms": [
+            {
+              "word": "Suplantación",
+              "meaning": "Engaño en el que alguien se presenta como una persona o entidad de confianza."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Alcance descrito por Ledger en 2020 · fuentes 1 y 2",
+            "headers": [
+              "Información",
+              "Distinción relevante"
+            ],
+            "rows": [
+              [
+                "Datos comerciales y de contacto",
+                "Pueden facilitar mensajes dirigidos y engaños"
+              ],
+              [
+                "Claves privadas del dispositivo",
+                "La empresa no describió su extracción en ese incidente"
+              ],
+              [
+                "Mensaje que conoce tu nombre",
+                "No prueba que su remitente sea auténtico"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Clasifica la información",
+          "body": "En este ejercicio no se utiliza ningún dato personal real. Relaciona cada ejemplo con su función. Una dirección pública permite recibir o consultar; una clave privada permite autorizar.",
+          "pairs": [
+            {
+              "left": "Un correo de contacto guardado al comprar",
+              "right": "Dato comercial"
+            },
+            {
+              "left": "Una dirección pública de la red",
+              "right": "Identificador para recibir o consultar"
+            },
+            {
+              "left": "Una clave privada",
+              "right": "Secreto utilizado para autorizar operaciones"
+            }
+          ],
+          "explanation": "El dato de contacto puede facilitar un engaño, pero no firma operaciones por sí mismo. Una dirección pública tampoco tiene el poder de una clave privada.",
+          "hint": "Separa contactar, localizar un registro y autorizar un cambio."
+        },
+        {
+          "type": "learn",
+          "title": "La cartera controla claves, no guarda monedas dentro",
+          "body": "Una cartera utiliza claves para autorizar operaciones; los saldos se reflejan en la red. La frase de recuperación permite reconstruir claves en un sistema compatible y por eso también es un secreto. La autocustodia significa que la persona asume ese control y su protección. En su aviso de diciembre, Ledger recordó que no pediría las palabras de recuperación. Un mensaje que conoce una compra anterior puede parecer convincente sin tener ninguna autoridad para solicitarlas.",
+          "visual": "none",
+          "takeaway": "Conocer datos de una compra no concede derecho a pedir secretos de recuperación.",
+          "terms": [
+            {
+              "word": "Frase de recuperación",
+              "meaning": "Palabras que permiten reconstruir las claves de una cartera compatible."
+            },
+            {
+              "word": "Autocustodia",
+              "meaning": "Control de las claves asumido por la propia persona."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Funciones diferentes · explicación conceptual, fuente 3",
+            "items": [
+              "La red mantiene el historial",
+              "Las claves permiten autorizar operaciones",
+              "La cartera utiliza esas claves",
+              "La recuperación permite reconstruirlas"
+            ]
+          },
+          "explore": {
+            "prompt": "Compara dos incidentes hipotéticos",
+            "options": [
+              {
+                "label": "Dato de contacto",
+                "title": "Aumenta la posibilidad de engaño dirigido",
+                "body": "Si solo se conoce un correo y una compra, no se obtiene por ello capacidad de firmar. El problema puede evolucionar si la persona entrega después un secreto o autoriza algo engañoso."
+              },
+              {
+                "label": "Secreto de recuperación",
+                "title": "Cambia el control posible de la cartera",
+                "body": "Si otra persona obtiene una frase válida de recuperación, puede reconstruir claves compatibles. Es un alcance diferente al de una lista de correos y no debe tratarse como el mismo incidente."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Un mensaje usa información auténtica",
+          "body": "Simulación: Inés recibe un mensaje que menciona correctamente una compra antigua y pide escribir la frase de recuperación para «validar la cartera». ¿Qué conclusión está justificada?",
+          "options": [
+            {
+              "text": "Conocer la compra demuestra que el remitente está autorizado a pedir la frase."
+            },
+            {
+              "text": "El dato de la compra puede proceder de una filtración; no demuestra autenticidad ni justifica entregar la recuperación."
+            },
+            {
+              "text": "Una frase deja de ser secreta cuando se compra un dispositivo."
+            },
+            {
+              "text": "Si el mensaje tiene el logotipo correcto, sus instrucciones quedan verificadas."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Un detalle verdadero puede utilizarse para construir un mensaje falso. La autenticidad no se prueba con ese detalle y el dato solicitado permitiría un control muy distinto al de una dirección de contacto.",
+          "hint": "Separa una información que el remitente conoce de la autoridad que pretende tener."
+        },
+        {
+          "type": "learn",
+          "title": "Investiga sin seguir el camino del mensaje",
+          "body": "Inés prepara una respuesta de análisis, sin conectar una cartera ni introducir secretos. Primero deja de interactuar con el mensaje. Después consulta la información oficial por una dirección que ya conoce o comprueba de forma independiente, y compara qué datos menciona el incidente. Por último registra el resultado. Conservar una copia del mensaje puede ayudar a documentar un reporte, pero no necesita incluir frases de recuperación, claves ni otros datos que amplíen la exposición.",
+          "visual": "none",
+          "takeaway": "Una comprobación útil puede hacerse sin entregar datos ni autorizar operaciones.",
+          "terms": [
+            {
+              "word": "Canal independiente",
+              "meaning": "Vía de consulta que no depende del enlace o del contacto recibido."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Práctica del caso · sin interacción con carteras",
+            "headers": [
+              "Sí se analiza",
+              "No hace falta"
+            ],
+            "rows": [
+              [
+                "Origen y contenido del mensaje",
+                "Abrir su enlace de validación"
+              ],
+              [
+                "Alcance del comunicado oficial",
+                "Introducir una frase real"
+              ],
+              [
+                "Conclusión y evidencia",
+                "Conectar una cartera"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Ordena la revisión en el cuaderno",
+          "body": "Ordena la secuencia que Inés ha diseñado para un mensaje sospechoso. El ejercicio termina en una conclusión documentada, sin realizar operaciones.",
+          "items": [
+            "Comparar lo pedido con el alcance del incidente y los avisos oficiales.",
+            "Detener la interacción con el mensaje recibido.",
+            "Registrar la conclusión sin incluir secretos.",
+            "Abrir una fuente oficial mediante una vía comprobada independiente del mensaje."
+          ],
+          "answer": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "explanation": "Primero se interrumpe el camino del posible engaño. Una fuente independiente permite comparar afirmaciones; después se deja constancia de lo aprendido sin añadir datos sensibles.",
+          "hint": "La consulta independiente ocurre antes de comparar y documentar."
+        }
+      ],
+      "takeaway": "El alcance importa: datos de contacto, claves y autorizaciones crean riesgos diferentes."
+    },
+    {
+      "id": "crypto-3",
+      "track": "crypto",
+      "world": 17,
+      "title": "Coinbase: qué cuenta el volumen negociado",
+      "company": "Coinbase · carta de resultados del cuarto trimestre de 2024",
+      "period": "Años 2023 y 2024 · carta publicada el 13 de febrero de 2025",
+      "summary": "Inés contrasta un dato de actividad real con la información necesaria para estimar una operación concreta.",
+      "minutes": 12,
+      "cover": {
+        "icon": "chart-no-axes-combined",
+        "color": "#e0eafa"
+      },
+      "sources": [
+        {
+          "title": "Coinbase · Q4 2024 Shareholder Letter, 13 febrero 2025: definición y tabla de volumen anual",
+          "url": "https://investor.coinbase.com/files/doc_financials/2024/q4/Q4-24-Shareholder-Letter.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Actividad acumulada durante un período",
+          "body": "En su carta de febrero de 2025, Coinbase publicó 1.162 miles de millones de dólares de volumen negociado en 2024, frente a 468 en 2023. Aquí un millar de millones equivale a 1.000 millones. La medida suma el valor en dólares de operaciones al contado emparejadas en la plataforma durante el período. «Al contado» identifica intercambios de activos, no contratos derivados. El volumen no es el dinero que Coinbase gana ni un saldo que conserve al terminar el año.",
+          "visual": "none",
+          "takeaway": "El volumen mide actividad durante un período, no ingresos ni patrimonio final.",
+          "terms": [
+            {
+              "word": "Volumen negociado",
+              "meaning": "Valor de los intercambios contabilizados durante un período con una definición concreta."
+            },
+            {
+              "word": "Operación al contado",
+              "meaning": "Intercambio del activo, a diferencia de negociar un contrato derivado."
+            }
+          ],
+          "figure": {
+            "kind": "bars",
+            "caption": "Volumen anual de Coinbase · fuente 1, cifras publicadas redondeadas",
+            "labels": [
+              "2023",
+              "2024"
+            ],
+            "values": [
+              468,
+              1162
+            ],
+            "unit": "miles de millones de USD"
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Calcula el crecimiento de la medida",
+          "body": "Usa las cifras anuales publicadas: 468 en 2023 y 1.162 en 2024, ambas en miles de millones de dólares. ¿Cuánto aumentó el volumen en porcentaje respecto a 2023? Redondea a dos decimales. El cálculo es aproximado porque los importes originales están redondeados.",
+          "answer": 148.29,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "El aumento es 694. Dividido entre la base de 468 y multiplicado por 100, da aproximadamente 148,29 %. Usar 1.162 como base respondería a una pregunta diferente.",
+          "hint": "Compara el aumento con el año de partida, no con el valor final."
+        },
+        {
+          "type": "learn",
+          "title": "Un año de volumen no describe una orden",
+          "body": "La profundidad muestra cuánto puede negociarse a distintos precios en un momento concreto. Es diferente del volumen anual, que acumula operaciones pasadas de numerosos mercados. Inés construye un libro de ofertas ficticio: hay 10 unidades disponibles a 20 € y otras 20 a 21 €. Comprar más de 10 puede alcanzar el segundo precio si las ofertas permanecen iguales. La simulación no reproduce tarifas ni cotizaciones de Coinbase; sirve para separar una cifra de actividad de una condición de ejecución.",
+          "visual": "none",
+          "takeaway": "La liquidez de una orden depende de su tamaño y del mercado concreto en ese momento.",
+          "terms": [
+            {
+              "word": "Profundidad",
+              "meaning": "Cantidades disponibles a distintos precios en un momento dado."
+            },
+            {
+              "word": "Libro de ofertas",
+              "meaning": "Conjunto de propuestas de compra y venta visibles en un mercado."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Libro ficticio para comprar · no es una cotización de Coinbase",
+            "headers": [
+              "Precio por unidad",
+              "Cantidad disponible"
+            ],
+            "rows": [
+              [
+                "20 €",
+                "10 unidades"
+              ],
+              [
+                "21 €",
+                "20 unidades"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mantén las ofertas y cambia el tamaño de compra",
+            "options": [
+              {
+                "label": "5 unidades",
+                "title": "100 € antes de otros costes",
+                "body": "Las cinco unidades caben en el primer nivel: 5 × 20 € = 100 €. Bajo estos supuestos, el precio medio es 20 €."
+              },
+              {
+                "label": "20 unidades",
+                "title": "410 € antes de otros costes",
+                "body": "Diez unidades cuestan 200 € y las otras diez 210 €. El total es 410 €, con precio medio de 20,50 €. Aumentar la orden cambia su ejecución, aunque el volumen anual siga siendo el mismo."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Cuestiona una conclusión sobre liquidez",
+          "body": "Un informe usa el volumen anual de Coinbase para afirmar que cualquier compra se ejecutaría íntegramente al mejor precio anunciado. ¿Qué dato falta para justificar esa conclusión?",
+          "options": [
+            {
+              "text": "Solo el nombre de la empresa."
+            },
+            {
+              "text": "El volumen de todo el año siguiente."
+            },
+            {
+              "text": "La profundidad disponible para ese activo, mercado y tamaño de orden en el momento de operar."
+            },
+            {
+              "text": "La cantidad de veces que se menciona el activo en redes sociales."
+            }
+          ],
+          "answer": 2,
+          "explanation": "El volumen total del año no garantiza cantidades disponibles en un mercado concreto ahora. El tamaño de la orden y las ofertas que encuentre condicionan su precio medio y su ejecución.",
+          "hint": "Piensa qué información distingue comprar cinco unidades de comprar veinte."
+        },
+        {
+          "type": "learn",
+          "title": "La experiencia final necesita más datos",
+          "body": "Coinbase es una empresa que opera servicios; el activo intercambiado es otro objeto. Su volumen no concede a quien mantiene ese activo una parte del negocio. Para medir una operación, Inés anota euros pagados, unidades recibidas, costes y euros recuperados al vender. En una simulación, desembolsa 210 € en total y recupera 230 € después de todos los costes. El resultado se compara con los 210 € iniciales, sin restar las mismas comisiones una segunda vez.",
+          "visual": "none",
+          "takeaway": "El resultado de una operación se reconstruye con sus flujos, no con el volumen de la plataforma.",
+          "terms": [
+            {
+              "word": "Desembolso total",
+              "meaning": "Dinero que sale, incluidos los costes indicados."
+            },
+            {
+              "word": "Importe neto",
+              "meaning": "Cantidad después de descontar los costes especificados."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Registro de una simulación · no rendimiento histórico de ningún activo",
+            "items": [
+              "Salida total: 210 €",
+              "Posición mantenida durante el período",
+              "Entrada final neta: 230 €",
+              "Diferencia: 20 €; comparar con 210 €"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos conclusiones sustentadas",
+          "body": "Marca las dos conclusiones correctas al cerrar el caso.",
+          "options": [
+            {
+              "text": "El crecimiento del volumen demuestra la misma rentabilidad para todos los activos negociados."
+            },
+            {
+              "text": "Los 1.162 miles de millones de dólares son ingresos que la empresa obtuvo por comisiones."
+            },
+            {
+              "text": "Para calcular una rentabilidad personal hay que conocer los importes de entrada, salida y costes."
+            },
+            {
+              "text": "Los datos anuales de actividad y la profundidad de una orden responden a preguntas distintas."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "El volumen no es ingreso por comisiones ni rentabilidad de un activo. La cifra anual describe actividad; la profundidad y los flujos de una persona permiten estudiar una operación concreta.",
+          "hint": "Separa actividad de la plataforma, condiciones de negociación y resultado personal."
+        }
+      ],
+      "takeaway": "Una métrica grande solo es útil si se entiende qué mide, durante qué período y qué no demuestra."
+    },
+    {
+      "id": "crypto-4",
+      "track": "crypto",
+      "world": 18,
+      "title": "Circle: reservas y acceso al dinero de USDC",
+      "company": "Circle · USDC y Silicon Valley Bank",
+      "period": "Reservas descritas el 11 de marzo de 2023 · comunicado publicado el 13 de marzo de 2023",
+      "summary": "Inés abre un episodio histórico de USDC para distinguir el objetivo de paridad, los activos de respaldo y su disponibilidad.",
+      "minutes": 12,
+      "cover": {
+        "icon": "circle-dollar-sign",
+        "color": "#d9efec"
+      },
+      "sources": [
+        {
+          "title": "Circle · $3.3 Billion of USDC Reserve Risk Removed, Dollar De-Peg Closes, 13 marzo 2023",
+          "url": "https://www.circle.com/pressroom/3-3-billion-of-usdc-reserve-risk-removed-dollar-de-peg-closes"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El objetivo de un dólar tiene un mecanismo",
+          "body": "USDC es un token emitido por Circle con el objetivo de mantener equivalencia con un dólar estadounidense. No es una participación en Circle. Las reservas son los activos mantenidos para respaldar las unidades emitidas. El comunicado publicado el 13 de marzo de 2023 describía, con cifras del día 11, 32.400 millones de dólares en letras del Tesoro estadounidense y 9.700 millones en efectivo. Las letras son deuda pública de corto plazo; no son billetes dentro de una caja.",
+          "visual": "none",
+          "takeaway": "El token, la empresa emisora y sus activos de respaldo son piezas diferentes.",
+          "terms": [
+            {
+              "word": "Reservas",
+              "meaning": "Activos mantenidos para respaldar obligaciones o unidades emitidas."
+            },
+            {
+              "word": "Letra del Tesoro",
+              "meaning": "Deuda pública con vencimiento a corto plazo."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Reservas descritas para el 11 marzo 2023 · fuente 1",
+            "headers": [
+              "Categoría",
+              "Millones de USD"
+            ],
+            "rows": [
+              [
+                "Letras del Tesoro",
+                "32.400"
+              ],
+              [
+                "Efectivo",
+                "9.700"
+              ],
+              [
+                "Total de esas categorías",
+                "42.100"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Identifica qué estás leyendo",
+          "body": "Relaciona las piezas del caso. Tener una unidad USDC no equivale a ser dueño directo de cada activo de reserva ni de la empresa emisora.",
+          "pairs": [
+            {
+              "left": "Circle",
+              "right": "Empresa emisora"
+            },
+            {
+              "left": "USDC",
+              "right": "Token con objetivo de paridad con el dólar"
+            },
+            {
+              "left": "Letras y efectivo descritos",
+              "right": "Activos de reserva"
+            },
+            {
+              "left": "Un dólar por USDC",
+              "right": "Objetivo de equivalencia, distinto del precio observado"
+            }
+          ],
+          "explanation": "Empresa, token, respaldo y objetivo de precio cumplen funciones diferentes. El mecanismo de conversión y sus condiciones importan; el nombre del token no convierte esas funciones en propiedad empresarial.",
+          "hint": "Separa quién emite, qué unidad circula, qué la respalda y qué equivalencia se pretende."
+        },
+        {
+          "type": "learn",
+          "title": "La concentración depende del denominador",
+          "body": "Circle informó de 3.300 millones de dólares de reservas depositados en Silicon Valley Bank, aproximadamente el 8 % de la reserva total descrita. El importe era una parte del efectivo, no una categoría que debamos sumar otra vez. Compararlo con todos los activos y compararlo solo con el efectivo responde a preguntas distintas. Inés etiqueta el denominador: así distingue cuánto del respaldo dependía de ese banco y cuánto del dinero bancario estaba concentrado allí.",
+          "visual": "none",
+          "takeaway": "Antes de interpretar un porcentaje, identifica de qué total se ha calculado.",
+          "terms": [
+            {
+              "word": "Denominador",
+              "meaning": "Total de referencia respecto al que calculas una proporción."
+            },
+            {
+              "word": "Concentración",
+              "meaning": "Parte del conjunto que depende de un mismo activo, entidad o condición."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Importes históricos anidados · fuente 1; no sumarlos todos",
+            "headers": [
+              "Nivel",
+              "Millones de USD"
+            ],
+            "rows": [
+              [
+                "Reservas descritas",
+                "42.100"
+              ],
+              [
+                "Efectivo incluido en las reservas",
+                "9.700"
+              ],
+              [
+                "Depósito en SVB incluido en el efectivo",
+                "3.300"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Mide la concentración del efectivo",
+          "body": "Usa las cifras históricas redondeadas del comunicado: 3.300 millones de dólares en Silicon Valley Bank y 9.700 millones de efectivo total. ¿Qué porcentaje de ese efectivo estaba en SVB? Se pregunta sobre el efectivo, no sobre los 42.100 millones de reservas descritas.",
+          "answer": 34.02,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "3.300 / 9.700 × 100 ≈ 34,02 %. El porcentaje es mayor que el aproximado 8 % de la reserva total porque utiliza una base más pequeña. No son dos mediciones contradictorias.",
+          "hint": "El enunciado pide usar únicamente el efectivo como total de referencia."
+        },
+        {
+          "type": "learn",
+          "title": "Valor del respaldo y disponibilidad inmediata",
+          "body": "En marzo de 2023, Circle comunicó que el depósito de SVB estaría disponible tras las medidas anunciadas sobre ese banco. Ese desenlace histórico no demuestra que todo incidente futuro se resolverá igual. Para analizar el mecanismo, Inés separa dos situaciones: un activo conserva valor pero no puede utilizarse de inmediato, o pierde valor de forma permanente. La primera puede impedir atender conversiones a tiempo; la segunda reduce el respaldo. El precio negociado de un token también puede apartarse de su objetivo.",
+          "visual": "none",
+          "takeaway": "Respaldo, acceso inmediato y precio de mercado requieren comprobaciones distintas.",
+          "terms": [
+            {
+              "word": "Conversión o reembolso",
+              "meaning": "Canje del token por el importe previsto, sujeto a las condiciones del emisor."
+            },
+            {
+              "word": "Paridad",
+              "meaning": "Equivalencia de valor que se pretende mantener con una referencia."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Esquema de análisis · no garantía de conversión",
+            "items": [
+              "Solicitudes de conversión",
+              "Condiciones del emisor",
+              "Activos de respaldo",
+              "Acceso al dinero en el plazo necesario"
+            ]
+          },
+          "explore": {
+            "prompt": "Compara dos simulaciones con obligaciones de 100 €",
+            "options": [
+              {
+                "label": "20 € bloqueados",
+                "title": "Falta disponibilidad, no se ha supuesto una pérdida",
+                "body": "Hay activos valorados en 100 €, pero solo 80 € pueden utilizarse ahora. Si se solicitan 90 € de inmediato, faltan 10 € disponibles. El supuesto no permite afirmar que se hayan perdido los 20 € bloqueados."
+              },
+              {
+                "label": "20 € perdidos",
+                "title": "El respaldo ha disminuido",
+                "body": "Si se pierden definitivamente 20 € de los 100 € y no existe otra aportación, quedan activos por 80 € frente a obligaciones de 100 €. Esperar por sí solo no rellena esa diferencia. No describe el desenlace real de SVB."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Lo que el episodio permite aprender",
+          "body": "Selecciona las dos conclusiones defendibles.",
+          "options": [
+            {
+              "text": "Que una reserva exista no demuestra que toda ella pueda usarse inmediatamente."
+            },
+            {
+              "text": "El objetivo de un dólar impide cualquier desviación del precio negociado."
+            },
+            {
+              "text": "Una dificultad temporal de acceso y una pérdida permanente tienen implicaciones diferentes."
+            },
+            {
+              "text": "La recuperación anunciada en marzo de 2023 garantiza el mismo resultado para cualquier emisor."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "El caso obliga a preguntar por los activos, su concentración y su disponibilidad. Un objetivo de precio no elimina el mecanismo que debe sostenerlo y un desenlace histórico no es una garantía universal.",
+          "hint": "Busca dos distinciones del mecanismo, sin convertir el pasado en una promesa."
+        }
+      ],
+      "takeaway": "Un token estable necesita analizar respaldo, concentración, acceso y condiciones de conversión."
+    },
+    {
+      "id": "crypto-5",
+      "track": "crypto",
+      "world": 19,
+      "title": "Uniswap Labs: leer el reparto inicial de UNI",
+      "company": "Uniswap Labs · lanzamiento del token UNI",
+      "period": "Anuncio de lanzamiento del 16 de septiembre de 2020",
+      "summary": "Inés convierte un anuncio de distribución de tokens en preguntas sobre disponibilidad, derechos y control efectivo.",
+      "minutes": 12,
+      "cover": {
+        "icon": "vote",
+        "color": "#eee1f3"
+      },
+      "sources": [
+        {
+          "title": "Uniswap Labs · Introducing UNI, 16 septiembre 2020: distribución y disponibilidad inicial",
+          "url": "https://blog.uniswap.org/uni"
+        },
+        {
+          "title": "Uniswap Developers · Governance Overview: alcance de la gobernanza del protocolo",
+          "url": "https://developers.uniswap.org/docs/ecosystem/governance/overview"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La empresa, el protocolo y el token",
+          "body": "Uniswap Labs publicó el lanzamiento de UNI el 16 de septiembre de 2020. Labs es la empresa; el protocolo es el conjunto de programas y reglas de intercambio; UNI es un token utilizado para participar en su gobernanza. Gobernanza significa decidir determinadas cuestiones del protocolo según sus reglas. Inés no interpreta esa capacidad como una participación en la empresa Labs ni como un derecho automático a sus beneficios. Para describir un derecho necesita conocer su alcance concreto.",
+          "visual": "none",
+          "takeaway": "Un voto sobre un protocolo no equivale a propiedad de la empresa que desarrolla software.",
+          "terms": [
+            {
+              "word": "Protocolo",
+              "meaning": "Conjunto de programas y reglas que hacen funcionar un sistema."
+            },
+            {
+              "word": "Gobernanza",
+              "meaning": "Procedimientos y derechos para decidir determinadas cuestiones del sistema."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Tres objetos distintos · fuentes 1 y 2",
+            "headers": [
+              "Nombre",
+              "Qué identifica"
+            ],
+            "rows": [
+              [
+                "Uniswap Labs",
+                "Empresa que desarrolla productos y software"
+              ],
+              [
+                "Protocolo Uniswap",
+                "Reglas y programas de intercambio"
+              ],
+              [
+                "UNI",
+                "Token utilizado en la gobernanza del protocolo"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Precisa el derecho descrito",
+          "body": "Inés quiere resumir UNI a partir del anuncio de lanzamiento y de la documentación de gobernanza. ¿Qué frase evita inventar derechos?",
+          "options": [
+            {
+              "text": "Cada UNI es una acción de Uniswap Labs."
+            },
+            {
+              "text": "Mantener UNI garantiza cobrar una parte de todos los ingresos de cualquier aplicación llamada Uniswap."
+            },
+            {
+              "text": "UNI permite participar en las decisiones del protocolo dentro del alcance y procedimientos definidos; no equivale por eso a propiedad de Labs."
+            },
+            {
+              "text": "La existencia de votaciones elimina toda concentración de poder."
+            }
+          ],
+          "answer": 2,
+          "explanation": "La gobernanza tiene un ámbito concreto. No demuestra propiedad de la empresa, cobros automáticos de cualquier servicio ni distribución equilibrada del control.",
+          "hint": "Separa el objeto de la decisión de la propiedad de una empresa."
+        },
+        {
+          "type": "learn",
+          "title": "Asignar no significa poner todo en circulación",
+          "body": "El anuncio de 2020 estableció una emisión inicial de 1.000 millones de UNI y asignó un 60 % a la comunidad. Dentro de ese conjunto, un 15 % de la emisión total —150 millones— podía reclamarse inicialmente por determinados usuarios y proveedores de liquidez históricos. Los proveedores aportan activos a los fondos comunes que permiten intercambios. Una asignación describe a qué categoría se destina una cantidad; su disponibilidad y su control efectivo requieren leer además condiciones y calendarios.",
+          "visual": "none",
+          "takeaway": "No sumes subconjuntos ni confundas asignación con disponibilidad inmediata.",
+          "terms": [
+            {
+              "word": "Asignación",
+              "meaning": "Reparto previsto de unidades entre categorías."
+            },
+            {
+              "word": "Proveedor de liquidez",
+              "meaning": "Participante que aporta activos a un fondo común de intercambio."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Reparto inicial anunciado el 16 septiembre 2020 · fuente 1",
+            "headers": [
+              "Categoría",
+              "Parte de la emisión inicial"
+            ],
+            "rows": [
+              [
+                "Comunidad",
+                "60 %"
+              ],
+              [
+                "Equipo y futuros empleados",
+                "21,266 %"
+              ],
+              [
+                "Inversores",
+                "18,044 %"
+              ],
+              [
+                "Asesores",
+                "0,69 %"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia la pregunta sobre las mismas cantidades históricas",
+            "options": [
+              {
+                "label": "Toda la emisión",
+                "title": "15 % disponible para la reclamación inicial",
+                "body": "Los 150 millones destinados a esa reclamación representan un 15 % de los 1.000 millones iniciales. No se suman a la asignación de la comunidad: están incluidos en ella."
+              },
+              {
+                "label": "Todo lo comunitario",
+                "title": "La etiqueta no describe la disponibilidad completa",
+                "body": "La asignación comunitaria era de 600 millones. Saber que una parte podía reclamarse no permite tratar los 600 millones como unidades ya entregadas y disponibles ese día. Hacen falta las condiciones de cada parte."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cambia la base de la comparación",
+          "body": "De los 600 millones de UNI asignados a la comunidad en el anuncio de 2020, 150 millones estaban destinados a la reclamación inicial descrita. ¿Qué porcentaje de la asignación comunitaria representan esos 150 millones? No se pregunta sobre la emisión total de 1.000 millones.",
+          "answer": 25,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "150 / 600 × 100 = 25 %. Los mismos 150 millones equivalen al 15 % del total inicial y al 25 % de la asignación comunitaria. El resto no debe describirse como disponible inmediatamente sin revisar sus condiciones.",
+          "hint": "Utiliza los 600 millones comunitarios como denominador."
+        },
+        {
+          "type": "learn",
+          "title": "El reparto anunciado no prueba quién decide",
+          "body": "Inés puede comprobar los porcentajes del anuncio, pero no deducir de ellos cuántas personas independientes controlan los votos. Una persona puede controlar varias direcciones y varias personas pueden delegar en un mismo representante. Delegar significa asignar el poder de voto según el mecanismo de gobernanza, sin que eso demuestre independencia entre votantes. Para evaluar control efectivo, Inés buscaría distribución, delegaciones y participación en decisiones concretas, con fechas. Las etiquetas del reparto inicial son un punto de partida, no la conclusión.",
+          "visual": "none",
+          "takeaway": "El control efectivo se contrasta con datos de participación y relaciones entre votantes.",
+          "terms": [
+            {
+              "word": "Delegación",
+              "meaning": "Asignación del poder de voto a una dirección o representante según las reglas del sistema."
+            },
+            {
+              "word": "Control efectivo",
+              "meaning": "Capacidad real de influir en una decisión, más allá del reparto nominal."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "De la afirmación a la evidencia · análisis propio",
+            "headers": [
+              "Afirmación",
+              "Qué habría que comprobar"
+            ],
+            "rows": [
+              [
+                "«La comunidad decide»",
+                "Quién posee y ejerce el poder de voto"
+              ],
+              [
+                "«Hay muchas direcciones»",
+                "Si corresponden a personas independientes"
+              ],
+              [
+                "«La asignación es amplia»",
+                "Calendarios, delegaciones y participación efectiva"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos evidencias que mejoran la tesis",
+          "body": "Inés estudia si el control está repartido. Selecciona las dos comprobaciones útiles para esa pregunta, más allá de la distribución anunciada en 2020.",
+          "options": [
+            {
+              "text": "Contar cada dirección como una persona distinta sin más comprobaciones."
+            },
+            {
+              "text": "Examinar concentración de voto delegado y participación en decisiones concretas."
+            },
+            {
+              "text": "Suponer que la palabra comunidad garantiza independencia entre todos sus integrantes."
+            },
+            {
+              "text": "Distinguir asignación inicial, unidades disponibles y quién puede ejercer sus votos."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La participación, la delegación y la disponibilidad acercan el análisis al control real. Un nombre colectivo y un número de direcciones no prueban por sí solos cuántas decisiones independientes existen.",
+          "hint": "Busca datos que conecten el reparto nominal con la capacidad real de decidir."
+        }
+      ],
+      "takeaway": "Un anuncio de tokens se analiza separando derechos, asignación, disponibilidad y control efectivo."
+    }
+  ]
+}

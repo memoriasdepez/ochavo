@@ -1,0 +1,67 @@
+VIRUTA — DESARROLLO ANDROID 0.3.0
+4 de octubre de 2026
+
+ENTREGA VERIFICADA
+Viruta 0.3.0 / versionCode 4. Paquete: app.brote.inversion.
+APK: ../brote-android/Viruta-0.3.0-pruebas.apk.
+Tamaño: 5287658 bytes. Firma v2 verificada con apksigner.
+Identificación completa: ../brote-android/SHA256.txt.
+Incluye Acciones 100/10, ETFs 50/5 y Cripto 50/5 (lecciones/exámenes).
+
+137 pruebas de aplicación y 76 de reglas superadas. Vite, Capacitor,
+assembleDebug y lintDebug correctos. Instalado como actualización.
+Ocho comprobaciones Android/web con cuentas temporales y Firebase real:
+tres caminos, reinicio, borradores sin conexión, sincronización, separación
+de cuentas y eliminación. El invitado original se conserva en paso 2/8.
+Evidencias y límites: VALIDACION.txt.
+
+FUNCIONAMIENTO
+Android incluye dist/ y comparte el curso, la mascota y el diseño con la web.
+Firebase brote-62d26 mantiene las mismas cuentas y los identificadores internos.
+Preferences guarda el progreso local; Firebase Authentication mantiene la sesión.
+El botón Atrás conserva los borradores al volver al camino. La sincronización
+requiere conexión y correo verificado. El invitado se importa solo a petición.
+La eliminación crea un marcador mínimo y borra el progreso en una transacción;
+después elimina el perfil. Si falla ese último paso, conserva la copia local,
+bloquea las subidas y permite reintentar Eliminar cuenta.
+El mantenimiento del marcador es manual y se explica en ACTIVACION.txt.
+
+COMPILAR DESDE ESTA CARPETA
+Requisitos: Node.js, pnpm, Java JDK 21, Android SDK Platform 36 y Build Tools 36.0.0.
+Las herramientas portátiles están en ../../work/. El script admite JAVA_HOME
+y ANDROID_HOME existentes, sin cambiar variables del sistema.
+
+  pnpm dev
+  pnpm test
+  pnpm test:rules
+  pnpm android:apk
+  pnpm android:open
+
+Alternativa directa para el APK:
+  powershell -NoProfile -ExecutionPolicy Bypass -File scripts/android-build.ps1
+
+El script valida y compone los caminos, genera las páginas públicas, compila la web, sincroniza Capacitor,
+construye el APK y ejecuta lint. El resultado se copia a ../brote-android/.
+Mínimo declarado: Android 7 / API 24. Objetivo: API 36.
+La interfaz requiere WebView 123 o posterior; muestra una página de actualización
+cuando no es compatible. No se ha probado en todos los modelos físicos.
+
+EMULADOR DE ESTE ORDENADOR
+AVD Brote_Android_16, Android 16 / API 36, pantalla 720x1600.
+La virtualización y WHPX están habilitados.
+../brote-android/ABRIR-ANDROID.cmd llama a abrir-android.ps1, abre o reutiliza
+el emulador y actualiza la aplicación sin borrar sus datos.
+No desinstales ni limpies el almacenamiento para actualizar el nombre.
+
+PUBLICACIÓN FUTURA
+Este APK está firmado para pruebas. pnpm android:bundle prepara un AAB de
+release que todavía necesita la firma de publicación. Google Play requiere
+cuenta de desarrollador, clave de subida, ficha y sus comprobaciones.
+No se ha publicado en Google Play ni App Store.
+Pendientes de validación: teléfono físico y recepción real de correos Viruta.
+
+Documentación oficial:
+https://capacitorjs.com/docs/android
+https://capacitorjs.com/docs/apis/app
+https://capacitorjs.com/docs/apis/preferences
+https://developer.android.com/studio

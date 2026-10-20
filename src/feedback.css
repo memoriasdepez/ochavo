@@ -1,0 +1,6 @@
+.br-report-location{padding:12px 14px;border:1px solid light-dark(#e6e9df,#424e45);border-radius:14px;background:light-dark(#eff5e7,#253527);font-size:.875rem;font-weight:800;line-height:1.6;color:light-dark(#23382c,#f1f5e7)}
+.br-report-link{display:block;margin:20px auto 0;padding:9px 12px;border:0;background:transparent;color:var(--br-muted);font:inherit;font-size:.78rem;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.br-report-link:hover{color:var(--br-ink)}
+.br-report-link:focus-visible{outline:3px solid var(--br-lime);outline-offset:3px;border-radius:8px}
+.br-report-dialog{max-height:calc(100dvh - 32px);overflow:auto}
+.br-report-dialog .br-product-textarea{min-height:112px}

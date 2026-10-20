@@ -1,0 +1,7 @@
+# The cloud source is functions/ alone; it cannot inherit the repository policy.
+# These exact versions ship usable JavaScript. Their postinstall hooks only
+# generate optional Firebase web defaults and print a protobuf version warning.
+strictDepBuilds: true
+allowBuilds:
+  '@firebase/util@1.15.3': false
+  'protobufjs@7.6.6': false

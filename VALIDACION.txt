@@ -1,0 +1,22 @@
+VIRUTA 0.4.1 — 4 DE OCTUBRE DE 2026
+
+Cambios: pestaña Aprende, primer mundo directamente debajo del selector,
+barra Aprende · Biblioteca · Casos · Laboratorio · Perfil.
+
+12/12 pruebas existentes de curso/navegación actualizadas al acceso por nodo
+y ficha: borradores, exámenes pendientes y guardado se mantienen.
+Comprobados los tres caminos en navegador, ajuste a 320 px y reanudación
+de la primera lección desde el paso guardado.
+Build web, sincronización Android, assembleDebug y lintDebug correctos.
+APK instalado como actualización, conservando logros y borradores.
+Firma v2 comprobada. Hosting publicado en https://brote-62d26.web.app.
+No se modificaron las reglas, cuentas ni economía. Validación de esa base:
+VALIDACION-0.4.0.txt.
+
+APK: Viruta-0.4.1-pruebas.apk
+Versión 0.4.1 / código 6. 4906930 bytes.
+SHA256: 6EDD4FF07C73FC4427D25C5326048E53401F2D997CEDBE140CDA709789E8E95E
+
+Capturas: ../brote-android/viruta-0.4.1-stocks.png,
+viruta-0.4.1-etfs.png, viruta-0.4.1-crypto.png y
+viruta-0.4.1-aprende-android.png.

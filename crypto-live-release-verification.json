@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-08T19:38:04.090Z",
+  "version": "0.21.0",
+  "origin": "https://ochavo.app/",
+  "scope": "Public HTML, its entry assets, and first/last new crypto world; no user data",
+  "verified": true,
+  "files": [
+    {
+      "path": "/index.html",
+      "sha256": "ab3e0c01ef3ef483b0154f70e07e4c3cae1f0af2db1e3d782a5717ee6f3a5b5b",
+      "bytes": 781765,
+      "verified": true
+    },
+    {
+      "path": "/assets/app-Bqgkv996.js",
+      "sha256": "b8445f9c11699e1d567fe96435fca85968f457e978348df8a69a45111aa79ff5",
+      "bytes": 610387,
+      "verified": true
+    },
+    {
+      "path": "/assets/nunito-eGYOqzZe.js",
+      "sha256": "3cd657da54dd2332e02738d6c6d1106661ff20d21b551b854dcf34c2c24cc523",
+      "bytes": 576501,
+      "verified": true
+    },
+    {
+      "path": "/assets/dist-Btb5Jv1E.js",
+      "sha256": "020bd3311ec36b945d412865b91d0b0152780fe623ad1ce85bcc570b836c2b92",
+      "bytes": 7752,
+      "verified": true
+    },
+    {
+      "path": "/assets/preload-helper-DjzSQ1t3.js",
+      "sha256": "66c990b6727d220a346b45d00ee48d433c8d59ef03fbf8b91c6cdadeeadfdf3f",
+      "bytes": 1383,
+      "verified": true
+    },
+    {
+      "path": "/assets/nunito-CAufuki5.css",
+      "sha256": "460e4478316025405e2ced0b1647c2781b64cefc0176cdd47c713b0a0904113d",
+      "bytes": 1515,
+      "verified": true
+    },
+    {
+      "path": "/assets/app-DkM-8Xfl.css",
+      "sha256": "59de3512ad8651e37765aef57c811f0e3cce84f882cc997b3bcaa798009416ce",
+      "bytes": 130097,
+      "verified": true
+    },
+    {
+      "path": "/course/world-115-261b9b8663549f4d.json",
+      "sha256": "261b9b8663549f4dac09c5e1e43932af34dc213fe93c081074cccf04c756fbbc",
+      "bytes": 86218,
+      "verified": true
+    },
+    {
+      "path": "/course/world-144-85c55704f08e74c4.json",
+      "sha256": "85c55704f08e74c4a2dc3fac79885fb53112ba1a3ec3d72420a27e2566c32bc8",
+      "bytes": 93618,
+      "verified": true
+    }
+  ]
+}

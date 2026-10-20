@@ -1,0 +1,35 @@
+{
+  "verifiedAt": "2026-10-09",
+  "priceSeries": [
+    {
+      "product": "BTC-EUR",
+      "url": "https://api.exchange.coinbase.com/products/BTC-EUR/candles?start=2024-01-01T00%3A00%3A00Z&end=2024-07-01T00%3A00%3A00Z&granularity=86400",
+      "fetchedAt": "2026-10-09T15:18:44.921Z",
+      "rows": 182
+    },
+    {
+      "product": "ETH-EUR",
+      "url": "https://api.exchange.coinbase.com/products/ETH-EUR/candles?start=2024-01-01T00%3A00%3A00Z&end=2024-07-01T00%3A00%3A00Z&granularity=86400",
+      "fetchedAt": "2026-10-09T15:18:45.087Z",
+      "rows": 182
+    },
+    {
+      "product": "SOL-EUR",
+      "url": "https://api.exchange.coinbase.com/products/SOL-EUR/candles?start=2024-01-01T00%3A00%3A00Z&end=2024-07-01T00%3A00%3A00Z&granularity=86400",
+      "fetchedAt": "2026-10-09T15:18:45.244Z",
+      "rows": 182
+    }
+  ],
+  "documentation": [
+    "https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/fibonacci-retracement",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/ema",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/rsi",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/macd",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/bollinger-band-width",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/atr",
+    "https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/adx",
+    "https://www.schwab.com/learn/story/how-to-use-volume-weighted-indicators-trading"
+  ],
+  "note": "Los datos OHLCV se conservan íntegros. Las proyecciones y operaciones se identifican como simulaciones; los indicadores derivados declaran su método."
+}

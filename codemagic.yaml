@@ -1,0 +1,83 @@
+# Run manually after connecting the sanitized source package to Codemagic.
+# No credentials belong in this file. See PUBLICAR-SIN-MAC.txt.
+definitions:
+  scripts:
+    - &install_dependencies
+      name: Instalar dependencias fijadas
+      script: |
+        set -euo pipefail
+        # Codemagic already has a pnpm shim; run the pinned version without replacing it.
+        npm exec --yes --package=pnpm@11.19.0 -- pnpm install --frozen-lockfile
+    - &sync_ios
+      name: Compilar Ochavo y sincronizar iOS
+      script: |
+        set -euo pipefail
+        test -f configuracion-firebase-publica.env
+        cp configuracion-firebase-publica.env .env.local
+        node scripts/ios-sync.mjs
+    - &resolve_spm
+      name: Resolver dependencias de Swift
+      script: |
+        set -euo pipefail
+        xcodebuild -resolvePackageDependencies -project ios/App/App.xcodeproj -scheme App
+
+workflows:
+  ios-simulator:
+    name: Ochavo iOS — comprobar compilación sin firma
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      node: 24.19.0
+      xcode: "26.6"
+    scripts:
+      - *install_dependencies
+      - *sync_ios
+      - *resolve_spm
+      - name: Compilar para el simulador de iPhone
+        script: |
+          set -euo pipefail
+          mkdir -p build/ios
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build/ios/DerivedData \
+            CODE_SIGNING_ALLOWED=NO build | tee build/ios/simulator-build.log
+          ditto -c -k --keepParent build/ios/DerivedData/Build/Products/Release-iphonesimulator/App.app \
+            build/ios/Ochavo-simulador.zip
+    artifacts:
+      - build/ios/Ochavo-simulador.zip
+      - build/ios/simulator-build.log
+
+  ios-testflight:
+    name: Ochavo iOS — firmar y subir a App Store Connect
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    integrations:
+      app_store_connect: ochavo-app-store
+    environment:
+      node: 24.19.0
+      xcode: "26.6"
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: app.brote.inversion
+    scripts:
+      - *install_dependencies
+      - *sync_ios
+      - *resolve_spm
+      - name: Asignar un número nuevo a la compilación
+        script: node scripts/ios-cloud-version.mjs
+      - name: Aplicar la firma de Apple configurada en Codemagic
+        script: xcode-project use-profiles
+      - name: Compilar y exportar el instalador de iPhone
+        script: |
+          set -euo pipefail
+          xcode-project build-ipa --project ios/App/App.xcodeproj --scheme App --config Release \
+            --archive-directory build/ios/xcarchive --ipa-directory build/ios/ipa
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - build/ios/xcarchive/*.xcarchive/dSYMs/*.dSYM
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: false
+        submit_to_app_store: false

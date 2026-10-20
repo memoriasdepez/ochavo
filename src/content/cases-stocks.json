@@ -1,0 +1,1936 @@
+{
+  "cases": [
+    {
+      "id": "stocks-1",
+      "track": "stocks",
+      "world": 0,
+      "minutes": 12,
+      "title": "Inditex: una tienda no es una acción",
+      "company": "Inditex",
+      "period": "Ejercicio 2024: 1 de febrero de 2024 a 31 de enero de 2025",
+      "summary": "Clara conoce las tiendas. Ahora distingue el negocio, el beneficio y el precio que pagaría por participar en él.",
+      "cover": {
+        "icon": "store",
+        "color": "#358b75"
+      },
+      "sources": [
+        {
+          "title": "Inditex, cuentas consolidadas 2024: cuenta de resultados, página impresa 18; período en la memoria de gestión",
+          "url": "https://www.inditex.com/itxcomweb/api/media/84135f02-0208-4439-b9c0-b13608fbfeb5/Annualaccountsanddirectorsreport2024consolidated.pdf?t=1742203067340"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Conocer el producto no basta",
+          "body": "Clara entra en una tienda de Zara y comprende qué compra como clienta: una prenda. Al estudiar una acción de Inditex, la pregunta cambia. Una acción representa una pequeña parte de la empresa, no una prenda ni un préstamo que la compañía deba devolver en una fecha. Su resultado depende del negocio y del precio al que consiga venderla.\n\nLas cuentas consolidadas de 2024 reúnen a la matriz y sus empresas del grupo. Publicaron ventas de 38.632 millones de euros y un beneficio de 5.866 millones atribuible a los propietarios de la matriz, frente a 35.947 y 5.381 millones en 2023. Las ventas son lo facturado; el beneficio es lo que queda después de los gastos contabilizados. Ninguna de esas cifras es un pago directo a cada accionista. Para cobrar un dividendo tiene que acordarse ese reparto.",
+          "visual": "none",
+          "takeaway": "Ser propietario permite participar en los resultados, pero no convierte las ventas en dinero que te deban.",
+          "terms": [
+            {
+              "word": "Consolidado",
+              "meaning": "Cuentas que reúnen a la empresa principal y sus empresas del grupo."
+            },
+            {
+              "word": "Dividendo",
+              "meaning": "Dinero que una empresa acuerda repartir entre sus accionistas."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Datos publicados por Inditex. Millones de euros; ejercicios fiscales, no años naturales.",
+            "headers": [
+              "Concepto",
+              "2023",
+              "2024"
+            ],
+            "rows": [
+              [
+                "Ventas",
+                "35.947",
+                "38.632"
+              ],
+              [
+                "Beneficio atribuible a la matriz",
+                "5.381",
+                "5.866"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "La parte que compras",
+          "body": "Clara compra una acción de Inditex a otra persona en bolsa. Después lee las ventas publicadas de 2024. ¿Qué interpretación une correctamente ambas cosas?",
+          "options": [
+            {
+              "text": "Inditex le debe devolver el precio de compra cuando termine el año."
+            },
+            {
+              "text": "Es propietaria de una parte del grupo; las ventas ayudan a entender el negocio, pero no son su rentabilidad."
+            },
+            {
+              "text": "Recibirá automáticamente su parte proporcional de las ventas como dividendo."
+            },
+            {
+              "text": "La operación demuestra que Inditex ha recibido dinero nuevo para abrir tiendas."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Al comprar a otro inversor, el dinero de esa operación va al vendedor. La acción concede participación en la empresa; no garantiza recuperar el precio ni recibir una fracción de las ventas.",
+          "hint": "Distingue lo que factura la empresa de lo que cobra quien posee una acción."
+        },
+        {
+          "type": "learn",
+          "title": "El mismo beneficio, distintos precios",
+          "body": "El informe también publicó 1,884 euros de beneficio por acción para 2024. Esta medida reparte el beneficio entre las acciones empleadas en el cálculo. Sigue siendo un resultado contable: parte del dinero puede necesitarse para mercancías, instalaciones o pagos futuros. No equivale al dividendo ni al efectivo libre para gastar.\n\nClara compara dos precios inventados usando ese mismo beneficio histórico. Dividir el precio por el beneficio por acción produce el PER: cuántas veces ese beneficio anual representa el precio. La comparación ayuda a separar empresa y precio, pero no establece un valor justo. El beneficio puede cambiar y un PER bajo puede reflejar problemas. Los precios del explorador son supuestos didácticos, no cotizaciones históricas ni actuales de Inditex.",
+          "visual": "none",
+          "takeaway": "Una empresa puede ser la misma mientras el precio exigido por participar en ella cambia mucho.",
+          "terms": [
+            {
+              "word": "PER",
+              "meaning": "Precio de una acción dividido por su beneficio anual por acción."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Del negocio al análisis de una acción",
+            "items": [
+              "Ventas",
+              "Gastos contabilizados",
+              "Beneficio",
+              "Beneficio por acción",
+              "Comparación con el precio"
+            ]
+          },
+          "explore": {
+            "prompt": "Mantén el beneficio publicado de 1,884 € por acción y cambia solo el precio simulado.",
+            "options": [
+              {
+                "label": "37,68 €",
+                "title": "PER de 20 veces",
+                "body": "37,68 ÷ 1,884 = 20. El precio equivale a veinte veces el beneficio de ese año. No significa recuperar el dinero en veinte años: el beneficio y los repartos futuros son inciertos."
+              },
+              {
+                "label": "56,52 €",
+                "title": "PER de 30 veces",
+                "body": "56,52 ÷ 1,884 = 30. Pagas un 50 % más por el mismo beneficio histórico. Para justificarlo necesitarías otros supuestos sobre el futuro, no otra descripción de las tiendas."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Un precio que exige más",
+          "body": "Simulación: Clara encuentra un tercer precio de 47,10 € por acción. Usa exclusivamente el beneficio histórico publicado de 1,884 € por acción. ¿Qué PER resulta? Introduce el número de veces, sin interpretar ese resultado como recomendación.",
+          "answer": 25,
+          "tolerance": 0.02,
+          "unit": "veces",
+          "explanation": "47,10 ÷ 1,884 = 25 veces. La operación relaciona un precio simulado con un beneficio pasado; no predice el beneficio siguiente.",
+          "hint": "Divide el precio de la acción por el beneficio anual por acción."
+        },
+        {
+          "type": "learn",
+          "title": "La empresa gana; tu inversión puede perder",
+          "body": "Clara termina con dos preguntas distintas: cómo funciona el negocio y qué puede pasar con su propio dinero. Una empresa rentable no protege cualquier precio de compra. El rendimiento total suma lo ganado o perdido al vender y los dividendos cobrados; después descuenta los costes. Para conocer el poder de compra, además habría que considerar la inflación.\n\nEn la simulación siguiente invierte 500 €, vende más tarde por 450 €, cobra 15 € de dividendos y paga 5 € de costes totales. Son cifras inventadas, sin impuestos, para comprender el mecanismo; no describen una inversión real en Inditex. También revisa si un fondo que posee ya incluye esta compañía. Tener la acción y un fondo no garantiza diversificar: puede aumentar la misma exposición. Reinvierte solo dinero que puede mantener invertido durante su horizonte previsto, sin dar por segura la recuperación.",
+          "visual": "none",
+          "takeaway": "Analiza juntos el negocio, el precio, el tiempo y lo que ya tienes en la cartera.",
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación educativa de una inversión; no es una serie de Inditex. Sin impuestos.",
+            "headers": [
+              "Movimiento",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Compra inicial",
+                "500 €"
+              ],
+              [
+                "Venta posterior",
+                "450 €"
+              ],
+              [
+                "Dividendos cobrados",
+                "15 €"
+              ],
+              [
+                "Costes totales",
+                "5 €"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Cierra el cuaderno de Clara",
+          "body": "Con las cifras simuladas anteriores, selecciona las dos conclusiones correctas: compra 500 €, venta 450 €, dividendos 15 € y costes 5 €, sin impuestos.",
+          "options": [
+            {
+              "text": "El dividendo convierte el resultado en una ganancia."
+            },
+            {
+              "text": "El resultado neto es −40 €, equivalente a −8 % sobre los 500 € iniciales."
+            },
+            {
+              "text": "Un fondo que también tenga Inditex puede añadir exposición a la misma empresa."
+            },
+            {
+              "text": "El beneficio publicado garantiza que el precio recuperará su nivel inicial."
+            }
+          ],
+          "answers": [
+            1,
+            2
+          ],
+          "explanation": "450 + 15 − 5 − 500 = −40 €; −40 ÷ 500 = −8 %. El dividendo amortigua la pérdida, pero no la elimina. El solapamiento entre una acción y un fondo obliga a mirar qué hay dentro de ambos.",
+          "hint": "Suma lo que recibes, resta los costes y la compra; después revisa si repites la misma empresa."
+        }
+      ],
+      "takeaway": "Conocer una marca es un comienzo. Una inversión exige separar propiedad, beneficio, efectivo, precio y riesgo de la cartera."
+    },
+    {
+      "id": "stocks-2",
+      "track": "stocks",
+      "world": 1,
+      "minutes": 12,
+      "title": "Costco: leer lo que el titular no cuenta",
+      "company": "Costco Wholesale",
+      "period": "Ejercicios 2023 y 2024; cierre de 2024 el 1 de septiembre de 2024",
+      "summary": "Un crecimiento de ventas parece sencillo hasta que cambian las semanas del año y aparecen las cuotas de socios.",
+      "cover": {
+        "icon": "receipt",
+        "color": "#4775a8"
+      },
+      "sources": [
+        {
+          "title": "Costco, informe anual 2024: páginas impresas 24–26 y 36, resultados, calendario y cuotas de socios",
+          "url": "https://s201.q4cdn.com/287523651/files/doc_financials/2024/ar/COST-2024-Annual-Report.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Antes de dividir, mira el calendario",
+          "body": "Clara abre el informe anual de Costco y prepara una ficha con fuente, fecha, moneda y alcance. Un informe anual contiene resultados, riesgos, criterios de registro y notas que explican las cifras. El comentario de la dirección ayuda a interpretarlas, pero sus expectativas siguen siendo expectativas.\n\nLas ventas netas publicadas fueron 237.710 millones de dólares en 2023 y 249.625 millones en 2024. Hay un detalle decisivo: 2023 tuvo 53 semanas y 2024 tuvo 52. Comparar los totales sirve para medir lo publicado, pero mezcla actividad y duración. Dividir entre semanas permite una comparación aproximada; no corrige las fiestas, la apertura de centros ni el cambio en lo vendido. Clara guarda las dos lecturas en vez de elegir la que parezca más favorable.",
+          "visual": "none",
+          "takeaway": "Una comparación útil conserva la cifra publicada y explica los ajustes realizados.",
+          "terms": [
+            {
+              "word": "Ejercicio fiscal",
+              "meaning": "Período anual que una empresa utiliza para sus cuentas; puede no coincidir con enero a diciembre."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Costco: ventas netas publicadas; millones de dólares.",
+            "headers": [
+              "Ejercicio",
+              "Semanas",
+              "Ventas"
+            ],
+            "rows": [
+              [
+                "2023",
+                "53",
+                "237.710"
+              ],
+              [
+                "2024",
+                "52",
+                "249.625"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Compara los mismos datos desde dos preguntas distintas.",
+            "options": [
+              {
+                "label": "Total anual",
+                "title": "El aumento publicado es aproximadamente 5,01 %",
+                "body": "249.625 ÷ 237.710 − 1 = 5,01 %. Responde cuánto cambió el total entre esos ejercicios, con su duración real."
+              },
+              {
+                "label": "Media semanal",
+                "title": "Una aproximación que tampoco lo explica todo",
+                "body": "Las medias son 4.485,09 y 4.800,48 millones de dólares por semana. La segunda es aproximadamente un 7,03 % mayor. Es un cálculo propio, no la medida de ventas comparables de Costco: no ajusta aperturas ni estacionalidad."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Corrige el titular",
+          "body": "Una nota dice: «Costco vendió un 5 % más; por tanto, cada centro vendió exactamente un 5 % más cada semana». ¿Qué corrección es la más precisa?",
+          "options": [
+            {
+              "text": "La conclusión es válida porque ambos documentos se llaman informes anuales."
+            },
+            {
+              "text": "Hay que sustituir el 5 % por el 7,03 % y atribuirlo a todos los centros."
+            },
+            {
+              "text": "El total creció cerca del 5 %, pero no demuestra el cambio de cada centro; varían las semanas y el número de centros."
+            },
+            {
+              "text": "Los ejercicios de distinta duración nunca pueden compararse de ninguna manera."
+            }
+          ],
+          "answer": 2,
+          "explanation": "El total es un hecho publicado. Atribuir el mismo cambio a cada centro exige información adicional. La media semanal corrige duración de forma sencilla, pero no convierte el dato en crecimiento comparable por establecimiento.",
+          "hint": "Un total agregado no cuenta lo que pasó en cada unidad del negocio."
+        },
+        {
+          "type": "learn",
+          "title": "Sigue el camino hasta el beneficio",
+          "body": "Costco presenta por separado lo vendido y las cuotas que pagan sus socios por pertenecer al servicio. En 2024 esas cuotas aportaron 4.828 millones de dólares y elevaron los ingresos totales a 254.453 millones. No son automáticamente beneficio: sostener el servicio también necesita recursos.\n\nLa tabla permite reconstruir tres escalones. Tras mercancías y gastos de venta, generales y administrativos quedan 9.285 millones de resultado operativo, el resultado de la actividad antes de partidas financieras e impuestos. Después aparecen intereses y otros ingresos, y finalmente el impuesto sobre el beneficio. Clara no mezcla ese movimiento anual con el balance: el balance es una fotografía de lo que la empresa tiene y debe en una fecha. Una venta del año no es el saldo de dinero de esa fecha.",
+          "visual": "none",
+          "takeaway": "Los ingresos explican una parte; los costes y el resto de la cuenta explican cuánto queda.",
+          "terms": [
+            {
+              "word": "Resultado operativo",
+              "meaning": "Ingresos menos los gastos de la actividad antes del resultado financiero y los impuestos."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Cuenta de resultados publicada de Costco 2024. Millones de dólares.",
+            "headers": [
+              "Escalón",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Ingresos: ventas + cuotas",
+                "254.453"
+              ],
+              [
+                "Coste de mercancías",
+                "−222.358"
+              ],
+              [
+                "Venta, generales y administración",
+                "−22.810"
+              ],
+              [
+                "Resultado operativo",
+                "9.285"
+              ],
+              [
+                "Intereses y otros, neto: −169 + 624",
+                "455"
+              ],
+              [
+                "Impuestos",
+                "−2.373"
+              ],
+              [
+                "Beneficio neto",
+                "7.367"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Comprueba antes de explicar",
+          "body": "Un borrador de análisis confunde el resultado operativo con el beneficio neto. Partiendo del resultado operativo publicado de 9.285 millones de dólares, resta 169 de gasto por intereses, suma 624 de intereses y otros ingresos netos, y resta 2.373 de impuestos. ¿Qué beneficio neto debe aparecer en la ficha? Todas las cifras pertenecen al ejercicio 2024.",
+          "answer": 7367,
+          "tolerance": 0.1,
+          "unit": "millones $",
+          "explanation": "9.285 − 169 + 624 − 2.373 = 7.367 millones de dólares. Así se reconcilia el resultado de la actividad con el beneficio final publicado.",
+          "hint": "Recorre las partidas posteriores a la actividad, respetando sus signos."
+        },
+        {
+          "type": "learn",
+          "title": "Una tesis que acepta preguntas",
+          "body": "Clara quiere explicar por qué podrían continuar los ingresos por cuotas. Separa tres capas: el importe histórico, una hipótesis sobre futuras renovaciones y la evidencia necesaria para comprobarla. Que una cuota se haya cobrado no obliga al socio a renovar siempre. Que una empresa tenga costes relativamente estables tampoco significa que ningún coste pueda aumentar.\n\nUna tesis es una explicación revisable del futuro que se espera y de las condiciones que la sostienen. Puede fallar si los socios perciben menos valor, si se deteriora el servicio o si los gastos crecen más que los ingresos. Para valorar esa tesis, Clara necesitaría proyectar dinero futuro y traerlo al presente con una tasa coherente; copiar el último beneficio no resuelve esa tarea. Termina anotando qué documento respondería cada duda, en vez de convertir una opinión favorable en un dato auditado.",
+          "visual": "none",
+          "takeaway": "Investigar consiste en distinguir dato, interpretación, expectativa y evidencia que todavía falta.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Método de la ficha de investigación",
+            "items": [
+              "Dato fechado y con fuente",
+              "Interpretación del negocio",
+              "Hipótesis sobre el futuro",
+              "Qué evidencia podría refutarla"
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Pon cada pieza en su lugar",
+          "body": "Clara deja cuatro notas sobre su investigación. Relaciona cada nota con la función que cumple; no juzgues si una previsión acabará acertando.",
+          "pairs": [
+            {
+              "left": "«Las cuotas de 2024 fueron 4.828 millones de dólares»",
+              "right": "Dato histórico documentado"
+            },
+            {
+              "left": "«Los socios seguirán renovando al mismo ritmo»",
+              "right": "Hipótesis que necesita contraste"
+            },
+            {
+              "left": "«Quiero comprobar obligaciones y recursos al cierre»",
+              "right": "Pregunta para el balance y sus notas"
+            },
+            {
+              "left": "«Si mantener el servicio exige más gasto, revisaré el margen»",
+              "right": "Condición para revisar la tesis"
+            }
+          ],
+          "explanation": "Un dato puede verificarse en el informe. Una hipótesis necesita evidencia posterior. El balance y la cuenta de resultados responden a preguntas diferentes, y una tesis útil define cuándo cambiar de opinión.",
+          "hint": "Piensa si cada frase describe el pasado, espera algo del futuro o indica dónde investigar."
+        }
+      ],
+      "takeaway": "La calidad de una investigación depende de sus comparaciones y preguntas, no de la seguridad con que redacte una conclusión."
+    },
+    {
+      "id": "stocks-3",
+      "track": "stocks",
+      "world": 2,
+      "minutes": 12,
+      "title": "Microsoft: mucha caja, muchas decisiones",
+      "company": "Microsoft",
+      "period": "Ejercicio fiscal terminado el 30 de junio de 2024",
+      "summary": "Sigue el dinero desde el beneficio hasta los equipos, las compras de empresas, los dividendos y la financiación.",
+      "cover": {
+        "icon": "server",
+        "color": "#7263b0"
+      },
+      "sources": [
+        {
+          "title": "Microsoft, informe anual 2024: Income Statements y Cash Flows Statements, ejercicios terminados el 30 de junio",
+          "url": "https://www.microsoft.com/investor/reports/ar24/"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El beneficio no es un extracto bancario",
+          "body": "Clara cambia las tiendas por Microsoft y empieza por una aparente contradicción. En su ejercicio 2024 el grupo publicó 88.136 millones de dólares de beneficio y 118.548 millones de efectivo procedente de la actividad. No hay que escoger una cifra como la verdadera: miden cosas diferentes.\n\nEl beneficio incluye ingresos y gastos registrados aunque cobros y pagos ocurran en otros momentos. Para llegar a la caja operativa se ajustan, entre otras partidas, los gastos sin pago simultáneo y los cambios de dinero pendiente de cobrar o pagar. La amortización distribuye el coste de un equipo a lo largo de su uso; añadirla en esa reconciliación no hace gratuito el equipo. El estado de flujos permite seguir después las inversiones y la financiación. Clara lo lee completo antes de decidir cuánto dinero podría repartirse.",
+          "visual": "none",
+          "takeaway": "El efectivo de la actividad es un punto de partida, no el saldo que sobra después de todas las decisiones.",
+          "terms": [
+            {
+              "word": "Caja operativa",
+              "meaning": "Efectivo generado o consumido por la actividad durante el período."
+            }
+          ],
+          "figure": {
+            "kind": "bars",
+            "caption": "Microsoft FY2024, datos publicados. Son medidas diferentes, no partes que deban sumarse.",
+            "labels": [
+              "Beneficio neto",
+              "Caja operativa"
+            ],
+            "values": [
+              88136,
+              118548
+            ],
+            "unit": "millones $"
+          }
+        },
+        {
+          "type": "choice",
+          "title": "La amortización no paga el equipo",
+          "body": "Al ver que la caja operativa supera el beneficio, Clara propone: «Podemos ignorar las compras de equipos porque la amortización ya figura en el beneficio». ¿Qué respuesta corrige el razonamiento?",
+          "options": [
+            {
+              "text": "Es correcto si la empresa tiene beneficio positivo."
+            },
+            {
+              "text": "Hay que restar de nuevo toda la amortización y también todas las compras, siempre."
+            },
+            {
+              "text": "El ajuste de amortización elimina un gasto sin pago simultáneo; las compras efectivas de equipos se leen después en inversiones."
+            },
+            {
+              "text": "La diferencia demuestra que todo el beneficio se cobró antes del cierre."
+            }
+          ],
+          "answer": 2,
+          "explanation": "La reconciliación evita tratar la amortización como un pago del período. El desembolso por equipos sigue existiendo y se presenta como inversión. No debe confundirse gasto distribuido con pago de compra.",
+          "hint": "Separa cuándo se registra un gasto de cuándo sale el dinero."
+        },
+        {
+          "type": "learn",
+          "title": "Una medida sencilla, con un nombre preciso",
+          "body": "El estado de flujos recoge 44.477 millones de dólares destinados a propiedades y equipos. Si a los 118.548 millones de caja operativa les restamos ese importe, obtenemos 74.071 millones. En este caso llamaremos a esa resta «caja operativa menos inversión en equipos», una versión sencilla del flujo de caja libre. No pretende medir todo el efectivo disponible para los accionistas.\n\nTambién se publicaron 69.132 millones de pagos por adquisiciones de empresas, netos de caja adquirida, y compras de intangibles y otros activos. Es una línea compuesta: no debe etiquetarse todo como el precio de una única adquisición. Además quedan financiación, inversiones financieras y otros movimientos. La comparación interactiva muestra por qué omitir una categoría puede cambiar mucho la historia sin que cambie el negocio subyacente.",
+          "visual": "none",
+          "takeaway": "Siempre que uses «flujo libre», escribe qué has restado y qué queda fuera.",
+          "figure": {
+            "kind": "table",
+            "caption": "Microsoft FY2024. Millones de dólares; la resta de 74.071 es un cálculo propio con datos publicados.",
+            "headers": [
+              "Concepto",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Caja operativa",
+                "118.548"
+              ],
+              [
+                "Compras de propiedades y equipos",
+                "44.477"
+              ],
+              [
+                "Caja operativa menos equipos",
+                "74.071"
+              ],
+              [
+                "Adquisiciones netas, intangibles y otros activos",
+                "69.132"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia el alcance de la pregunta, sin cambiar ninguna cifra histórica.",
+            "options": [
+              {
+                "label": "Después de equipos",
+                "title": "Quedan 74.071 millones",
+                "body": "118.548 − 44.477 = 74.071. La medida descuenta propiedades y equipos, pero no todas las inversiones ni las obligaciones financieras."
+              },
+              {
+                "label": "Y esa línea de compras",
+                "title": "El subtotal baja a 4.939 millones",
+                "body": "74.071 − 69.132 = 4.939. Sigue siendo un subtotal propio, no la variación final de caja ni el flujo publicado de inversión completo. No hemos incluido el resto de movimientos."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Añade un uso más del dinero",
+          "body": "A los 74.071 millones de dólares de caja operativa menos equipos de Microsoft FY2024, resta los 21.771 millones de dividendos efectivamente pagados que muestra el estado de flujos. ¿Qué subtotal queda antes de adquisiciones, recompras, deuda y los demás movimientos? No lo llames saldo final de caja.",
+          "answer": 52300,
+          "tolerance": 0.1,
+          "unit": "millones $",
+          "explanation": "74.071 − 21.771 = 52.300 millones. El cálculo sirve para medir un uso concreto de la caja; omite deliberadamente otras decisiones y por eso no describe lo que quedó al cierre.",
+          "hint": "Usa el dividendo pagado del estado de flujos, no una declaración de dividendos ni el beneficio."
+        },
+        {
+          "type": "learn",
+          "title": "El calendario completa la historia",
+          "body": "Una compañía puede generar caja y, a la vez, pedir prestado, devolver deuda, comprar negocios o reducir sus acciones mediante recompras. Son decisiones distintas y pueden tener fechas diferentes. Microsoft publicó en 2024 una caída neta de caja y equivalentes de 16.389 millones de dólares, aunque la actividad generó efectivo. Para explicarla hay que recorrer inversiones, financiación y efecto de las divisas.\n\nClara no concluye que endeudarse sea siempre un problema ni que una recompra siempre cree valor. Pregunta cuándo vencen los préstamos, qué interés exigen, si ese interés cambia y qué alternativas tenía el dinero. Pagar deuda requiere el importe principal además de intereses. Un bono puede fluctuar de precio sin que cambie su cupón, la cantidad contractual de interés. Esa diferencia importa al estudiar al financiador y a la empresa que debe pagarle.",
+          "visual": "none",
+          "takeaway": "Un subtotal positivo no sustituye un calendario completo de necesidades y fuentes de dinero.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Lectura del estado de flujos; no son importes que deban ignorarse",
+            "items": [
+              "Actividad: cobros y pagos",
+              "Inversión: equipos, empresas y activos financieros",
+              "Financiación: deuda, acciones y repartos",
+              "Divisas y variación final de caja"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Qué merece una comprobación adicional",
+          "body": "Clara dispone de la caja operativa y de la resta después de equipos. Selecciona las dos comprobaciones que necesita antes de afirmar que puede mantenerse un determinado reparto futuro.",
+          "options": [
+            {
+              "text": "Calendario de deuda, intereses y otras necesidades de caja."
+            },
+            {
+              "text": "Si todas las compras de equipos pueden borrarse porque mejorarán el futuro."
+            },
+            {
+              "text": "Cuánto de la inversión sostiene la actividad y cuánto busca ampliarla, sin dar por segura esa separación."
+            },
+            {
+              "text": "Que cualquier importe positivo de flujo libre garantiza todos los dividendos futuros."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "Hay que estudiar vencimientos y reinversión. La contabilidad no siempre separa mantenimiento y expansión de manera suficiente, y una previsión de reparto exige supuestos sobre ambos.",
+          "hint": "Piensa en pagos que el subtotal no resuelve y en las inversiones necesarias para seguir funcionando."
+        }
+      ],
+      "takeaway": "Seguir el dinero exige nombrar cada subtotal y continuar hasta las inversiones, la financiación y el saldo final."
+    },
+    {
+      "id": "stocks-4",
+      "track": "stocks",
+      "world": 3,
+      "minutes": 12,
+      "title": "ASML: calidad no significa línea recta",
+      "company": "ASML",
+      "period": "Ejercicio 2024; resultados publicados el 29 de enero de 2025",
+      "summary": "Máquinas, servicios y una industria que invierte por ciclos: tres pistas para examinar una ventaja competitiva.",
+      "cover": {
+        "icon": "chip",
+        "color": "#5466b3"
+      },
+      "sources": [
+        {
+          "title": "ASML, resultados FY2024: tabla de ventas, sistemas y márgenes; cifras resumidas redondeadas y base US GAAP",
+          "url": "https://investor.asml.com/news-releases/news-release-details/q4-2024-financial-results"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una ventaja necesita evidencia",
+          "body": "Clara investiga ASML, que desarrolla equipos de litografía: máquinas que ayudan a fabricar los diminutos circuitos de los chips. No basta con llamar avanzada a una tecnología. Una ventaja competitiva es una característica que permite defender el negocio frente a otros; para evaluarla hay que estudiar utilidad para el cliente, alternativas y recursos necesarios para mantenerla.\n\nEl resumen de resultados de 2024 permite empezar sin inventar esa respuesta. Publicó ventas de 28.263 millones de euros, frente a 27.559 en 2023, y un margen bruto del 51,3 % en ambos años. El margen bruto es la parte de ventas que queda después del coste de lo vendido, antes de otros gastos. No es rentabilidad sobre el capital invertido: esta última relaciona el resultado de la actividad con los recursos que necesita. Un margen alto aislado no prueba que toda nueva inversión vaya a rendir bien.",
+          "visual": "none",
+          "takeaway": "La calidad se investiga con varias piezas; ningún margen demuestra por sí solo una ventaja duradera.",
+          "terms": [
+            {
+              "word": "Litografía",
+              "meaning": "Proceso que permite trasladar patrones muy pequeños para fabricar circuitos."
+            },
+            {
+              "word": "Margen bruto",
+              "meaning": "Beneficio tras el coste de lo vendido, expresado como porcentaje de las ventas."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "ASML, resumen publicado de FY2024. Millones de euros salvo porcentajes.",
+            "headers": [
+              "Dato",
+              "2023",
+              "2024"
+            ],
+            "rows": [
+              [
+                "Ventas",
+                "27.559",
+                "28.263"
+              ],
+              [
+                "Margen bruto",
+                "51,3 %",
+                "51,3 %"
+              ],
+              [
+                "Sistemas nuevos vendidos",
+                "421",
+                "380"
+              ],
+              [
+                "Sistemas usados vendidos",
+                "28",
+                "38"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Lo que sí permite concluir la tabla",
+          "body": "Selecciona las dos lecturas que respetan los datos de ASML de 2023 y 2024, sin convertirlos en una predicción.",
+          "options": [
+            {
+              "text": "Las ventas totales subieron aunque se vendieron menos sistemas nuevos."
+            },
+            {
+              "text": "El margen bruto constante demuestra que cualquier precio por la acción sería razonable."
+            },
+            {
+              "text": "Dividir ventas totales entre sistemas nuevos da el precio exacto de cada máquina."
+            },
+            {
+              "text": "Para explicar las ventas hay que mirar la mezcla de equipos y los servicios, además de las unidades."
+            }
+          ],
+          "answers": [
+            0,
+            3
+          ],
+          "explanation": "Las unidades nuevas bajaron de 421 a 380, mientras las ventas aumentaron. El total incluye otras fuentes y equipos distintos; no permite atribuir un precio idéntico a cada unidad ni decidir el valor de la acción.",
+          "hint": "Un total puede cambiar por unidades, mezcla de productos y otras fuentes de ingresos."
+        },
+        {
+          "type": "learn",
+          "title": "La relación continúa después de vender",
+          "body": "ASML separa en su resumen los ingresos de servicios y mejoras de equipos ya instalados, que agrupa bajo Installed Base Management. Fueron 6.494 millones de euros en 2024 y 5.620 millones en 2023. La base instalada es el conjunto de equipos que los clientes ya tienen en funcionamiento. Mantenerlos y mejorarlos puede crear una relación posterior a la venta inicial.\n\nEsa relación ofrece una pista para investigar la continuidad de la demanda, pero no convierte todos los ingresos en suscripciones fijas o garantizadas. También hay que conocer las condiciones de los servicios, el uso de las máquinas y la concentración de clientes. Clara distingue estabilidad de una parte del negocio y estabilidad del conjunto. Un fabricante puede conservar una posición fuerte y atravesar años de inversión más lenta de sus clientes.",
+          "visual": "none",
+          "takeaway": "Una fuente de ingresos posterior a la venta merece análisis propio; no es una garantía de estabilidad.",
+          "terms": [
+            {
+              "word": "Base instalada",
+              "meaning": "Equipos ya vendidos que permanecen en uso por los clientes."
+            }
+          ],
+          "figure": {
+            "kind": "bars",
+            "caption": "ASML: servicios y mejoras de equipos instalados, según el resumen de resultados.",
+            "labels": [
+              "2023",
+              "2024"
+            ],
+            "values": [
+              5620,
+              6494
+            ],
+            "unit": "millones €"
+          },
+          "explore": {
+            "prompt": "Prueba dos lecturas de la misma información.",
+            "options": [
+              {
+                "label": "Solo unidades nuevas",
+                "title": "Falta parte del negocio",
+                "body": "Mirar únicamente las 380 máquinas nuevas vendidas en 2024 deja fuera los sistemas usados y los servicios. No permite reconstruir las ventas totales."
+              },
+              {
+                "label": "Equipos y relación posterior",
+                "title": "Una explicación más completa",
+                "body": "Añadir los servicios y las mejoras abre preguntas sobre continuidad, uso y costes de soporte. Ayuda a investigar la relación con los clientes, sin asegurar que todos renovarán o invertirán al mismo ritmo."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Mide su peso sin exagerarlo",
+          "body": "Con los datos redondeados del resumen publicado de ASML para 2024, ¿qué porcentaje de las ventas representa la línea de servicios y mejoras? Usa 6.494 millones de euros y ventas totales de 28.263 millones. Redondea a una décima.",
+          "answer": 23,
+          "tolerance": 0.06,
+          "unit": "%",
+          "explanation": "6.494 ÷ 28.263 × 100 = 22,977… %, aproximadamente 23,0 %. Es peso en ventas, no porcentaje del beneficio ni proporción de ingresos garantizados.",
+          "hint": "Divide la parte entre el total; ambas cifras están en la misma unidad."
+        },
+        {
+          "type": "learn",
+          "title": "Convierte una buena historia en un análisis",
+          "body": "Para completar la ficha, Clara ordena preguntas sobre calidad y riesgo. Primero, qué necesita el cliente y qué podría sustituir el producto. Después, cuánto capital y gasto exige mantener la capacidad de competir. A continuación, qué parte de los resultados depende del ciclo: períodos en que los clientes amplían capacidad más deprisa o más despacio. Finalmente, cómo se reparte el resultado entre las acciones existentes y las nuevas que puedan emitirse.\n\nEse último punto evita confundir el crecimiento de toda la empresa con el crecimiento por acción. También revisa si los incentivos de la dirección premian solo vender más o hacerlo con resultados sostenibles. Estas son preguntas de investigación, no acusaciones sobre ASML. Para comparar valoraciones necesitaría empresas con negocios y momentos del ciclo suficientemente parecidos; un PER de un año excepcional puede dar una impresión engañosa.",
+          "visual": "none",
+          "takeaway": "Una tesis de calidad debe explicar también reinversión, ciclo, incentivos y resultado por acción.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Secuencia propuesta para analizar una ventaja",
+            "items": [
+              "Necesidad del cliente y alternativas",
+              "Recursos necesarios para competir",
+              "Sensibilidad al ciclo",
+              "Resultado y valor por acción"
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Ordena una investigación que pueda corregirse",
+          "body": "Clara quiere evitar empezar por un múltiplo atractivo y buscar después argumentos que lo justifiquen. Ordena estas tareas desde entender el negocio hasta compararlo con otros.",
+          "items": [
+            "Comparar múltiplos usando beneficios de períodos y negocios compatibles.",
+            "Investigar necesidades de clientes, alternativas y fuentes de la ventaja.",
+            "Construir escenarios de demanda y recursos necesarios, incluyendo un período débil.",
+            "Examinar resultados por acción e incentivos, no solo el tamaño total."
+          ],
+          "answer": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "explanation": "Primero se entiende qué sostiene la actividad; después se prueban escenarios y el efecto para cada acción. Esa base permite una comparación de múltiplos con sentido, sin convertir el orden en una receta que garantice acierto.",
+          "hint": "Deja la comparación de precios para después de comprender qué resultado estás comparando."
+        }
+      ],
+      "takeaway": "Una empresa puede tener una ventaja y seguir expuesta al ciclo, a la reinversión y al precio que se paga por ella."
+    },
+    {
+      "id": "stocks-5",
+      "track": "stocks",
+      "world": 4,
+      "minutes": 12,
+      "title": "Texas Instruments: valorar sin borrar las fábricas",
+      "company": "Texas Instruments",
+      "period": "Ejercicio terminado el 31 de diciembre de 2024",
+      "summary": "Un fabricante genera efectivo e invierte gran parte en equipos. ¿Qué puedes deducir y qué deberías modelar aparte?",
+      "cover": {
+        "icon": "factory",
+        "color": "#a5674d"
+      },
+      "sources": [
+        {
+          "title": "Texas Instruments, resultados 2024 del 23 de enero de 2025: conciliación de flujo de caja libre y nota del incentivo fiscal",
+          "url": "https://www.ti.com/about-ti/newsroom/news-releases/2025/2025-01-23-ti-reports-q4-2024-and-2024-financial-results-and-shareholder-returns.html"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Empieza por la resta que existe",
+          "body": "Clara estudia Texas Instruments, fabricante de semiconductores, y encuentra una gran diferencia entre caja operativa y flujo libre. Para 2024 la compañía publicó 6.318 millones de dólares de efectivo de la actividad y 4.820 millones de inversión en activos duraderos. Su definición de flujo de caja libre resta ambas cifras: 1.498 millones. Es una medida complementaria definida por la empresa, no una línea universal que todas calculen igual.\n\nLa nota añade que la caja operativa incluyó 588 millones de beneficio de caja por un crédito fiscal para inversión industrial. Clara no lo proyecta automáticamente todos los años. Tampoco decide que toda inversión sea gasto excepcional que puede eliminarse: una parte podría sostener la capacidad futura. Para estimar un año representativo necesita investigar el plan industrial y sus necesidades. El informe sirve de base para preguntar, no para rellenar sin más una previsión.",
+          "visual": "none",
+          "takeaway": "Una valoración comienza por definir el flujo y distinguir historia, ayudas y necesidades futuras de inversión.",
+          "terms": [
+            {
+              "word": "Inversión en activos duraderos",
+              "meaning": "Pagos por instalaciones, equipos u otros recursos que se usarán durante varios períodos."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Texas Instruments 2024: cifras publicadas. Millones de dólares.",
+            "headers": [
+              "Medida",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Caja operativa",
+                "6.318"
+              ],
+              [
+                "Inversión en activos duraderos",
+                "4.820"
+              ],
+              [
+                "Flujo libre según la definición de TI",
+                "1.498"
+              ],
+              [
+                "Beneficio de caja fiscal incluido en la actividad",
+                "588"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Compara un dato publicado con dos sensibilidades aritméticas; las sensibilidades no son previsiones de TI.",
+            "options": [
+              {
+                "label": "Publicado",
+                "title": "Flujo libre de 1.498 millones",
+                "body": "6.318 − 4.820 = 1.498. Esta resta conserva la inversión y el efecto fiscal tal como se publicaron."
+              },
+              {
+                "label": "Sin ese efecto fiscal",
+                "title": "Sensibilidad: 910 millones",
+                "body": "1.498 − 588 = 910. Se retira solo el beneficio de caja señalado y se mantiene todo lo demás. No es un resultado alternativo publicado ni una estimación completa de un año normal."
+              },
+              {
+                "label": "Menor inversión hipotética",
+                "title": "Sensibilidad: 2.318 millones",
+                "body": "Si la inversión hubiera sido 4.000, manteniendo caja operativa de 6.318, quedarían 2.318. Es una simulación: no afirma que TI pudiera invertir menos sin consecuencias."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué supuesto no puedes regalarte",
+          "body": "Una valoración copia la caja operativa de TI y elimina toda inversión de los años siguientes porque «las fábricas ya están pagadas». ¿Cuál es la objeción decisiva?",
+          "options": [
+            {
+              "text": "El flujo libre debe ser siempre igual al beneficio."
+            },
+            {
+              "text": "Antes de quitar esas inversiones hay que justificar qué capacidad se mantiene, qué se reemplaza y qué crecimiento exige nuevos recursos."
+            },
+            {
+              "text": "Toda la inversión de 2024 debe repetirse exactamente para siempre."
+            },
+            {
+              "text": "El beneficio fiscal de 588 millones se recibirá de forma automática cada año."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Ni eliminar toda inversión ni perpetuar exactamente la cifra de un año son conclusiones justificadas por el dato histórico. El modelo necesita conectar capacidad, mantenimiento y crecimiento.",
+          "hint": "Piensa qué recursos físicos seguirían haciendo falta en el futuro."
+        },
+        {
+          "type": "learn",
+          "title": "Traer dinero futuro al presente",
+          "body": "Para practicar la valoración sin atribuir una previsión a Texas Instruments, Clara crea un proyecto ficticio e independiente. Tras todos sus costes, impuestos e inversiones, entregará 100 millones de dólares al propietario al final del primer año y 110 al final del segundo. Después termina y no queda valor adicional. Son los únicos cobros del modelo.\n\nClara exige una rentabilidad anual del 10 % para esos cobros del propietario. Descontar significa dividir cada importe por el crecimiento que exigiría durante su espera: 1,10 para un año y 1,10 al cuadrado para dos. Así compara dinero de fechas diferentes en una fecha común. No usa una tasa para toda la empresa con un flujo destinado solo al accionista. Tampoco suma dos veces la inversión, porque ya está descontada al definir los cobros.",
+          "visual": "none",
+          "takeaway": "Antes de calcular, fija quién recibe el flujo, en qué moneda, en qué fecha y qué pagos ya incluye.",
+          "figure": {
+            "kind": "table",
+            "caption": "Proyecto totalmente ficticio, no previsión de TI. Millones de dólares nominales.",
+            "headers": [
+              "Cobro",
+              "Fecha",
+              "Divisor al 10 %"
+            ],
+            "rows": [
+              [
+                "100",
+                "Final del año 1",
+                "1,10"
+              ],
+              [
+                "110",
+                "Final del año 2",
+                "1,21"
+              ],
+              [
+                "0 adicional",
+                "Después del año 2",
+                "Sin valor residual"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Descuenta las dos fechas",
+          "body": "En el proyecto ficticio, calcula el valor presente de cobrar 100 millones de dólares al final del año 1 y 110 al final del año 2, a una tasa anual del 10 %. No hay otros cobros ni valor residual. Introduce millones y redondea a dos decimales.",
+          "answer": 181.82,
+          "tolerance": 0.02,
+          "unit": "millones $",
+          "explanation": "100 ÷ 1,10 + 110 ÷ 1,10² = 90,909… + 90,909… = 181,82. El segundo cobro se descuenta dos años aunque sea solo un 10 % mayor.",
+          "hint": "Cada cobro necesita el divisor correspondiente a su propia fecha."
+        },
+        {
+          "type": "learn",
+          "title": "Del negocio a cada acción",
+          "body": "En una valoración hay otra frontera que Clara no quiere cruzar sin explicación. El valor de toda la actividad corresponde a quienes la financian; para llegar al valor de los accionistas hay que descontar la deuda y añadir el efectivo que realmente sobra para ellos, además de otros ajustes si existen. Dividir después entre acciones convierte el total en valor por acción.\n\nLa figura usa otra empresa enteramente ficticia: valor de actividad 1.000, deuda 200, caja excedente 50 y 100 acciones. El resultado sería 850 en total y 8,50 por acción. Nada de ello es una valoración de TI. La caja necesaria para operar no se añade como si sobrara. Clara archiva los supuestos junto a la cifra y compara varios escenarios; así puede revisar el modelo cuando cambie una condición, en vez de defender un número como si fuera un hecho.",
+          "visual": "none",
+          "takeaway": "Un valor calculado solo tiene sentido junto a su alcance y a los supuestos que lo producen.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Empresa ficticia; todos los importes monetarios usan la misma unidad",
+            "items": [
+              "Actividad: 1.000",
+              "Menos deuda: 200",
+              "Más caja excedente: 50",
+              "Accionistas: 850",
+              "Entre 100 acciones: 8,50"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "La revisión antes de aceptar el valor",
+          "body": "Selecciona las dos revisiones coherentes del modelo ficticio y de la ficha histórica de TI.",
+          "options": [
+            {
+              "text": "Añadir toda la caja sin comprobar si la actividad la necesita."
+            },
+            {
+              "text": "Comprobar que la tasa corresponde al destinatario y al riesgo de los flujos."
+            },
+            {
+              "text": "Tratar los 181,82 millones del proyecto inventado como valor real de Texas Instruments."
+            },
+            {
+              "text": "Documentar qué inversión se mantiene y por qué un efecto fiscal histórico se repite o no."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La tasa, el flujo y la reinversión tienen que contar la misma historia. Los ejercicios ficticios enseñan el método; no suministran una valoración real ni una previsión de la compañía.",
+          "hint": "Busca consistencia en las hipótesis, no un número que parezca preciso."
+        }
+      ],
+      "takeaway": "Las cifras históricas anclan el análisis; una valoración requiere hipótesis explícitas sobre inversión, destinatarios, fechas y financiación."
+    },
+    {
+      "id": "stocks-6",
+      "track": "stocks",
+      "world": 5,
+      "minutes": 12,
+      "title": "Netflix: crecer no es solo subir precios",
+      "company": "Netflix",
+      "period": "Ejercicio terminado el 31 de diciembre de 2024, comparado con 2023",
+      "summary": "Desmonta el crecimiento en clientes, ingreso medio, regiones y divisas, sin confundir una media con el comportamiento de cada socio.",
+      "cover": {
+        "icon": "play",
+        "color": "#b55667"
+      },
+      "sources": [
+        {
+          "title": "Netflix, 10-K 2024: páginas impresas 19–21, miembros medios, ingreso mensual por miembro y regiones",
+          "url": "https://s22.q4cdn.com/959853165/files/doc_financials/2024/ar/Netflix-10-K-01272025.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La foto del último día no es la película",
+          "body": "Clara estudia el crecimiento de Netflix con dos medidas de clientes. El informe de 2024 publicó 301,626 millones de membresías de pago al cierre y 277,730 millones de media durante el año. Una membresía es una suscripción de pago, no una persona distinta. Usar el cierre como si todas esas suscripciones hubieran pagado los doce meses exageraría la base que generó los ingresos anuales.\n\nLa media de 2023 fue 240,889 millones. También cambió el ingreso mensual medio por membresía: de 11,64 a 11,70 dólares. Es una media de lo obtenido por suscripción, afectada por planes, países, divisas y otros elementos; no es una tarifa única. Clara empieza por estas unidades económicas antes de interpretar el total de ingresos. El crecimiento puede venir de más suscripciones, mayor ingreso medio o ambas cosas.",
+          "visual": "none",
+          "takeaway": "Para explicar ingresos de un período, usa una base de clientes que represente ese período.",
+          "terms": [
+            {
+              "word": "Ingreso medio por membresía",
+              "meaning": "Ingresos del servicio divididos entre la base media de suscripciones correspondiente."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Netflix: datos publicados. Membresías en millones; ingreso mensual en dólares.",
+            "headers": [
+              "Medida",
+              "2023",
+              "2024"
+            ],
+            "rows": [
+              [
+                "Membresías medias",
+                "240,889",
+                "277,730"
+              ],
+              [
+                "Membresías al cierre",
+                "260,276",
+                "301,626"
+              ],
+              [
+                "Ingreso mensual medio",
+                "11,64 $",
+                "11,70 $"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Elige la base correcta",
+          "body": "Clara quiere aproximar los ingresos de suscripción de todo 2024 con una media mensual. ¿Qué combinación es la más coherente con esa pregunta?",
+          "options": [
+            {
+              "text": "301,626 millones de membresías al cierre × 11,70 $ × 12."
+            },
+            {
+              "text": "277,730 millones de membresías medias × 11,70 $ × 12, como aproximación sujeta al redondeo y la definición de la medida."
+            },
+            {
+              "text": "301,626 millones de personas únicas × la tarifa más cara del catálogo."
+            },
+            {
+              "text": "La suma de membresías medias y finales × 11,70 $."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La media corresponde al período completo. El cierre es una fotografía; no prueba cuántos meses pagó cada suscripción. La cifra calculada con medidas redondeadas no tiene por qué reproducir al céntimo el ingreso publicado.",
+          "hint": "Relaciona una media de ingresos del período con una media de clientes del mismo período."
+        },
+        {
+          "type": "learn",
+          "title": "Más clientes y menos ingreso por cliente",
+          "body": "Clara construye una simulación, ajena a los resultados de Netflix, para separar los dos motores. Un servicio empieza con 100.000 suscripciones medias y obtiene 10 € mensuales por suscripción. Si gana un 10 % de suscripciones pero el ingreso medio baja un 5 %, el resultado no es un aumento del 10 %: se multiplican ambos cambios. El cálculo de ingresos tampoco indica cuánto beneficio queda después de prestar el servicio.\n\nPara estudiar la economía por unidad hay que restar los costes que cambian al servir a esa unidad. La contribución restante ayuda a pagar contenido, tecnología y otros costes comunes. Una mayor base de clientes puede repartir algunos costes entre más suscripciones, pero competir mediante descuentos también puede reducir lo que deja cada una. La tabla del explorador mantiene constantes las condiciones que no se están comparando.",
+          "visual": "none",
+          "takeaway": "El crecimiento de clientes tiene que conectarse con ingreso medio y costes, no celebrarse de forma aislada.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Descomposición conceptual, no previsión de Netflix",
+            "items": [
+              "Suscripciones medias × ingreso medio",
+              "Ingresos del período",
+              "Menos costes que cambian por unidad",
+              "Contribución para sostener costes comunes"
+            ]
+          },
+          "explore": {
+            "prompt": "Simulación de un servicio ficticio: compara un mes, sin impuestos ni otros ingresos.",
+            "options": [
+              {
+                "label": "Punto de partida",
+                "title": "1.000.000 € mensuales",
+                "body": "100.000 suscripciones × 10 € = 1.000.000 €. Son ingresos, todavía no beneficio.",
+                "figure": {
+                  "kind": "table",
+                  "caption": "Simulación mensual",
+                  "headers": [
+                    "Suscripciones",
+                    "Ingreso medio",
+                    "Ingresos"
+                  ],
+                  "rows": [
+                    [
+                      "100.000",
+                      "10 €",
+                      "1.000.000 €"
+                    ]
+                  ]
+                }
+              },
+              {
+                "label": "Más clientes",
+                "title": "1.100.000 € mensuales",
+                "body": "110.000 suscripciones × 10 € = 1.100.000 €. El volumen sube un 10 % sin cambiar el ingreso medio."
+              },
+              {
+                "label": "Más clientes, menor media",
+                "title": "1.045.000 € mensuales",
+                "body": "110.000 × 9,50 € = 1.045.000 €. El ingreso total crece, pero menos que el número de suscripciones."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Dos cambios que se multiplican",
+          "body": "En la simulación del servicio ficticio, las suscripciones medias suben un 10 % y el ingreso mensual medio baja un 5 %. Ambos cambios duran todo el mes. ¿Qué variación porcentual tienen los ingresos totales respecto al punto de partida? No son cifras de Netflix.",
+          "answer": 4.5,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "1,10 × 0,95 − 1 = 0,045: los ingresos aumentan un 4,5 %. Sumar 10 % y −5 % daría 5 % e ignoraría que la segunda variación se aplica sobre la nueva base.",
+          "hint": "Multiplica el factor de clientes por el factor de ingreso medio y resta uno."
+        },
+        {
+          "type": "learn",
+          "title": "Una región y una moneda pueden cambiar la lectura",
+          "body": "El informe ofrece una comparación especialmente útil en Latinoamérica. El ingreso mensual medio por membresía pasó de 8,66 a 8,24 dólares en 2024: una caída publicada del 5 % al redondear. Sin el efecto de las variaciones de moneda, Netflix informó un aumento del 21 %. Moneda constante significa recalcular con tipos de cambio comparables; no significa que ese ingreso en dólares se haya cobrado realmente.\n\nLa diferencia invita a estudiar divisas, mezcla de países y planes, no a afirmar que todos los clientes pagaron un 21 % más. Tampoco una subida en suscripciones finales permite conocer la retención: cuántas de las anteriores permanecieron. Harían falta entradas y salidas, idealmente por grupos de clientes que empezaron en momentos similares. Clara conserva por separado crecimiento, permanencia y margen, y evita confundir más clientes de Netflix con una mayor cuota de un mercado cuyo tamaño no ha definido.",
+          "visual": "none",
+          "takeaway": "Las medias, las divisas y la mezcla de clientes explican cosas distintas; una sola cifra no las sustituye.",
+          "terms": [
+            {
+              "word": "Moneda constante",
+              "meaning": "Comparación que neutraliza cambios de tipo de cambio mediante una base de conversión común."
+            },
+            {
+              "word": "Retención",
+              "meaning": "Proporción de clientes anteriores que siguen en el período siguiente."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Netflix Latinoamérica, 2024 frente a 2023. Variaciones publicadas redondeadas.",
+            "headers": [
+              "Lectura del ingreso medio mensual",
+              "Variación"
+            ],
+            "rows": [
+              [
+                "Expresado en dólares",
+                "−5 %"
+              ],
+              [
+                "A moneda constante",
+                "+21 %"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Evita dos atajos",
+          "body": "Con lo aprendido sobre las cifras de Netflix, selecciona las dos conclusiones justificadas.",
+          "options": [
+            {
+              "text": "El crecimiento neto de suscripciones demuestra que ningún cliente anterior se marchó."
+            },
+            {
+              "text": "La comparación a moneda constante ayuda a aislar la conversión, pero no es el ingreso en dólares efectivamente publicado."
+            },
+            {
+              "text": "El ingreso medio puede cambiar por la mezcla de países o planes, además de cambios de tarifas."
+            },
+            {
+              "text": "Una caída del ingreso medio en dólares demuestra que todos los precios locales bajaron."
+            }
+          ],
+          "answers": [
+            1,
+            2
+          ],
+          "explanation": "Una media recoge varias fuerzas y el cambio de moneda añade otra. El saldo final de clientes no separa las altas de las bajas; para estudiar retención hacen falta datos adicionales.",
+          "hint": "Distingue promedio, precio individual, cambio de moneda y permanencia de los clientes."
+        }
+      ],
+      "takeaway": "Comprender el crecimiento requiere reconstruir sus motores y sus costes, con unidades, regiones y períodos compatibles."
+    },
+    {
+      "id": "stocks-7",
+      "track": "stocks",
+      "world": 6,
+      "minutes": 12,
+      "title": "Alphabet: cuando cambia la vida de un servidor",
+      "company": "Alphabet",
+      "period": "Ejercicio terminado el 31 de diciembre de 2023",
+      "summary": "Una nota sobre la duración de los equipos cambia el beneficio. Examina el efecto sin confundir estimación, caja y manipulación.",
+      "cover": {
+        "icon": "settings",
+        "color": "#98723f"
+      },
+      "sources": [
+        {
+          "title": "Alphabet, 10-K 2023: nota 1, Change in Accounting Estimate; cuenta de resultados y estado de flujos",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/goog-20231231.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La estimación que vive dentro del gasto",
+          "body": "Clara abre las notas de Alphabet, el grupo al que pertenece Google. En enero de 2023 revisó cuánto tiempo esperaba utilizar ciertos equipos: los servidores pasaron de una vida estimada de cuatro años a seis, y determinados equipos de red, de cinco a seis. La vida útil es el período durante el que se espera obtener servicio de un activo; es una estimación que puede cambiar con la tecnología y el uso.\n\nLa empresa cuantificó el efecto de esa revisión en 2023: 3.900 millones de dólares menos de gasto por depreciación y 3.000 millones más de beneficio neto. Depreciar es repartir el coste del equipo entre los períodos en que se usa. El cambio no significa que entraran 3.900 millones en una cuenta bancaria. Tampoco demuestra por sí solo una irregularidad: obliga a leer la justificación y a estudiar si la duración prevista se sostiene.",
+          "visual": "none",
+          "takeaway": "Una estimación contable puede cambiar el beneficio sin generar una venta ni un cobro adicional.",
+          "terms": [
+            {
+              "word": "Vida útil",
+              "meaning": "Tiempo durante el que se espera utilizar un activo para obtener servicios o ingresos."
+            },
+            {
+              "word": "Depreciación",
+              "meaning": "Reparto del coste de un activo físico a lo largo de su vida de uso estimada."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Cambio divulgado por Alphabet para 2023. Importes redondeados publicados.",
+            "headers": [
+              "Concepto",
+              "Antes",
+              "Después o efecto"
+            ],
+            "rows": [
+              [
+                "Servidores: vida estimada",
+                "4 años",
+                "6 años"
+              ],
+              [
+                "Ciertos equipos de red",
+                "5 años",
+                "6 años"
+              ],
+              [
+                "Gasto por depreciación de 2023",
+                "Base anterior",
+                "3.900 millones $ menos"
+              ],
+              [
+                "Beneficio neto de 2023",
+                "Base anterior",
+                "3.000 millones $ más"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué cambió realmente",
+          "body": "Tras leer la nota de Alphabet, alguien afirma: «La revisión de los equipos produjo 3.900 millones de dólares de cobros nuevos». ¿Qué interpretación es correcta?",
+          "options": [
+            {
+              "text": "Esos cobros proceden de vender todos los servidores."
+            },
+            {
+              "text": "La revisión redujo un gasto contable de 2023; no prueba un cobro nuevo por ese importe."
+            },
+            {
+              "text": "La diferencia entre 3.900 y 3.000 es necesariamente dinero perdido por fraude."
+            },
+            {
+              "text": "La vida física de todos los equipos quedó garantizada durante seis años."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La compañía cuantificó un cambio de gasto y su efecto neto, no una entrada de efectivo. La vida útil sigue siendo una estimación, y la diferencia entre efecto antes y después de impuestos no demuestra una irregularidad.",
+          "hint": "Vuelve al significado de repartir un coste a lo largo del tiempo."
+        },
+        {
+          "type": "learn",
+          "title": "Practica con el coste que todavía queda",
+          "body": "Clara crea un equipo ficticio para entender el mecanismo; sus importes no pertenecen a Alphabet. Al comenzar el año quedan 120.000 € de coste pendiente de repartir, sin valor de reventa al final. Antes se esperaba usarlo tres años más; una revisión justificada amplía ese tiempo a cinco. Repartir por igual el coste restante produce un gasto anual de 40.000 € en el primer supuesto y de 24.000 € en el segundo.\n\nEl cálculo se aplica hacia adelante al valor pendiente: no borra los gastos ya registrados ni recupera lo pagado por comprar el equipo. Si después se espera obtener menos utilidad de la que representa su valor contable, habría que estudiar una pérdida de valor o deterioro. Alargar la vida útil y reconocer deterioro responden a preguntas diferentes. Una revisión exige evidencia técnica y seguimiento, no elegir el gasto que embellece el resultado.",
+          "visual": "none",
+          "takeaway": "Al revisar una estimación, trabaja con el valor pendiente y las condiciones futuras, sin reescribir arbitrariamente el pasado.",
+          "figure": {
+            "kind": "bars",
+            "caption": "Equipo ficticio: depreciación anual del coste pendiente de 120.000 €. Sin valor residual.",
+            "labels": [
+              "3 años restantes",
+              "5 años restantes"
+            ],
+            "values": [
+              40000,
+              24000
+            ],
+            "unit": "€"
+          },
+          "explore": {
+            "prompt": "Observa qué cambia al revisar la duración del mismo equipo ficticio.",
+            "options": [
+              {
+                "label": "Tres años",
+                "title": "40.000 € por año",
+                "body": "120.000 ÷ 3 = 40.000. El coste pendiente se distribuye antes. La compra ya realizada no se paga de nuevo por registrar el gasto."
+              },
+              {
+                "label": "Cinco años",
+                "title": "24.000 € por año",
+                "body": "120.000 ÷ 5 = 24.000. Se registra menos gasto anual y durante más años. El beneficio del período aumenta si todo lo demás permanece igual; el pago original no cambia."
+              },
+              {
+                "label": "Uso deteriorado",
+                "title": "Revisar también el valor recuperable",
+                "body": "Si el equipo deja de servir como se esperaba, la pregunta no se resuelve ampliando años. Debe examinarse cuánto valor puede recuperarse y si hace falta registrar una pérdida. No se cuantifica aquí porque faltan datos."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "El efecto sobre un resultado ficticio",
+          "body": "En el equipo ficticio, el coste pendiente es 120.000 €, sin valor residual. Pasar de tres a cinco años restantes reduce la depreciación anual de 40.000 a 24.000 €. Si todo lo demás permanece igual, ¿en cuántos euros aumenta el resultado anual antes de impuestos? No es un ajuste de las cuentas de Alphabet.",
+          "answer": 16000,
+          "tolerance": 0.1,
+          "unit": "€",
+          "explanation": "40.000 − 24.000 = 16.000 € de gasto anual menos y, por tanto, de resultado antes de impuestos más. No equivale a una entrada de caja de 16.000 €.",
+          "hint": "Compara los dos gastos anuales; no sumes el valor completo del equipo."
+        },
+        {
+          "type": "learn",
+          "title": "Una alerta es una pregunta, no un veredicto",
+          "body": "De vuelta al informe real, Clara registra por separado el beneficio publicado y el efecto divulgado de la estimación. Alphabet publicó 73.795 millones de dólares de beneficio neto en 2023. Restar los aproximadamente 3.000 millones de efecto neto daría 70.795 millones como sensibilidad aritmética propia. No son unas cuentas corregidas, ni eliminan otros cambios del año, ni constituyen una medida publicada por la compañía.\n\nLa revisión contable continúa con preguntas de la misma familia: cuándo se reconoce una venta, si los inventarios conservan valor, qué obligaciones crean los alquileres y qué coste o posible dilución producen las acciones entregadas a empleados. No se ajustan todas esas partidas del mismo modo. Un gasto sin pago inmediato puede seguir siendo un coste económico. Clara pide evidencia, concilia cada ajuste y evita concluir que el efectivo y el beneficio deberían coincidir exactamente.",
+          "visual": "none",
+          "takeaway": "Para juzgar la calidad de las cuentas, explica el efecto de cada criterio y las evidencias necesarias para sostenerlo.",
+          "figure": {
+            "kind": "table",
+            "caption": "Alphabet 2023: dato publicado y sensibilidad propia, ambos en millones de dólares.",
+            "headers": [
+              "Medida",
+              "Importe",
+              "Naturaleza"
+            ],
+            "rows": [
+              [
+                "Beneficio neto",
+                "73.795",
+                "Publicado"
+              ],
+              [
+                "Efecto neto divulgado de la revisión",
+                "≈3.000",
+                "Publicado y redondeado"
+              ],
+              [
+                "Beneficio menos ese efecto",
+                "≈70.795",
+                "Cálculo didáctico; no cifra corregida oficial"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos notas responsables",
+          "body": "Clara escribe la conclusión de su revisión. Selecciona las dos notas que puede defender con lo aprendido.",
+          "options": [
+            {
+              "text": "Conviene revisar la evidencia que sostiene la nueva vida útil y comprobarla con el uso posterior de los equipos."
+            },
+            {
+              "text": "Cualquier gasto sin pago inmediato debe eliminarse permanentemente del análisis económico."
+            },
+            {
+              "text": "Los 70.795 millones son el beneficio oficial que Alphabet debería haber publicado."
+            },
+            {
+              "text": "La sensibilidad propia debe identificarse como tal y usar el efecto neto de 3.000 millones al ajustar un beneficio después de impuestos."
+            }
+          ],
+          "answers": [
+            0,
+            3
+          ],
+          "explanation": "Investigar una estimación exige evidencia. Una sensibilidad no sustituye las cuentas publicadas y debe mantener compatibilidad entre cifras antes y después de impuestos. El hecho de que no haya pago simultáneo no convierte un recurso en gratuito.",
+          "hint": "Separa evidencia, ajuste propio y dato oficial; mantén el mismo nivel de impuestos."
+        }
+      ],
+      "takeaway": "Las notas forman parte del resultado: permiten entender las estimaciones sin confundir una señal que investigar con una acusación."
+    },
+    {
+      "id": "stocks-8",
+      "track": "stocks",
+      "world": 7,
+      "minutes": 12,
+      "title": "Disney y Fox: el precio no es todo el compromiso",
+      "company": "The Walt Disney Company / Twenty-First Century Fox",
+      "period": "Adquisición cerrada el 20 de marzo de 2019; información del informe anual Disney 2019",
+      "summary": "Una adquisición combina efectivo, acciones, obligaciones y expectativas. Examina cada pieza antes de sumar una supuesta creación de valor.",
+      "cover": {
+        "icon": "puzzle",
+        "color": "#8166ac"
+      },
+      "sources": [
+        {
+          "title": "Disney, informe anual 2019: nota 4, páginas impresas 96–98, compra de TFCF y asignación del precio",
+          "url": "https://investors.thewaltdisneycompany.com/files/doc_financials/2019/ar/2019-Annual-Report-1.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Qué compró y cómo pagó",
+          "body": "Clara reconstruye una operación ya cerrada, sin valorar su conveniencia actual. Disney adquirió Twenty-First Century Fox, denominada TFCF en las cuentas, el 20 de marzo de 2019. Antes se habían separado determinados negocios de noticias, deportes y emisión en una empresa distinta. Por eso «compró Fox» es una descripción insuficiente del perímetro, es decir, de los negocios realmente incluidos.\n\nLa nota de la operación publicó un precio de compra de unos 69.500 millones de dólares: aproximadamente 35.700 millones en efectivo y 33.800 millones en acciones de Disney. Pagar con acciones evita ese desembolso de efectivo, pero entrega a otros una parte de la propiedad. Además de examinar lo pagado, una adquisición exige mirar activos y obligaciones incorporados, costes de integración y recursos necesarios para que el conjunto funcione. No todo aparece en una cifra del titular.",
+          "visual": "none",
+          "takeaway": "Define primero qué se compró y distingue precio, forma de pago y obligaciones del negocio incorporado.",
+          "terms": [
+            {
+              "word": "Perímetro de una compra",
+              "meaning": "Negocios y activos concretos incluidos en la operación."
+            },
+            {
+              "word": "Integración",
+              "meaning": "Trabajo y costes necesarios para que los negocios adquiridos funcionen dentro del grupo."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Disney/TFCF: forma de pago publicada, cifras redondeadas a cientos de millones de dólares.",
+            "headers": [
+              "Forma de pago",
+              "Millones $",
+              "Qué implica"
+            ],
+            "rows": [
+              [
+                "Efectivo",
+                "35.700",
+                "Salida de dinero"
+              ],
+              [
+                "Acciones de Disney",
+                "33.800",
+                "Propiedad entregada"
+              ],
+              [
+                "Total aproximado",
+                "69.500",
+                "Precio de compra resumido"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Tres cifras, tres preguntas",
+          "body": "Relaciona las piezas de la compra de Disney/TFCF con la pregunta adecuada. No supongas que pagar con acciones elimina el coste económico.",
+          "pairs": [
+            {
+              "left": "Efectivo entregado",
+              "right": "Qué salida de dinero debe financiarse"
+            },
+            {
+              "left": "Acciones entregadas",
+              "right": "Qué propiedad reciben los vendedores"
+            },
+            {
+              "left": "Obligaciones incorporadas",
+              "right": "Qué pagos del negocio adquirido hay que atender"
+            },
+            {
+              "left": "Negocios incluidos y excluidos",
+              "right": "Qué perímetro se está comprando realmente"
+            }
+          ],
+          "explanation": "La financiación del pago, el reparto de propiedad y las obligaciones adquiridas son piezas diferentes. Sumarlas o ignorarlas sin definir el alcance puede producir un análisis incoherente.",
+          "hint": "Piensa qué cambia para la caja, para los propietarios y para el negocio adquirido."
+        },
+        {
+          "type": "learn",
+          "title": "El fondo de comercio no es una caja fuerte",
+          "body": "Al repartir contablemente el precio entre lo adquirido y las obligaciones asumidas aparece a menudo el fondo de comercio, también llamado goodwill. Representa el exceso reconocido sobre el valor de los activos y pasivos identificados según las reglas de la operación. No es dinero guardado ni una prueba de que el comprador recuperará ese importe.\n\nLa asignación actualizada de Disney en el informe de 2019 incluyó 49.085 millones de dólares de fondo de comercio y 21.723 millones de préstamos asumidos. La tabla completa incorpora además activos, otros pasivos y el tratamiento de Hulu; estos dos números no bastan para reconstruir por sí solos todo el precio. El análisis económico necesita comprobar si las mejoras esperadas, llamadas sinergias, llegan con el coste y el calendario previstos. Un ajuste contable no crea clientes ni ahorra dinero por sí mismo.",
+          "visual": "none",
+          "takeaway": "El fondo de comercio registra expectativas en una operación; su recuperación depende de resultados futuros.",
+          "terms": [
+            {
+              "word": "Fondo de comercio",
+              "meaning": "Exceso contable reconocido en una compra sobre los activos y pasivos identificables correspondientes."
+            },
+            {
+              "word": "Sinergias",
+              "meaning": "Mejoras de ingresos o costes que se esperan por combinar negocios."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Extracto de la asignación actualizada de Disney/TFCF en el informe 2019. No es la tabla completa.",
+            "headers": [
+              "Partida",
+              "Millones $",
+              "Lectura"
+            ],
+            "rows": [
+              [
+                "Préstamos asumidos",
+                "21.723",
+                "Obligaciones incorporadas"
+              ],
+              [
+                "Fondo de comercio",
+                "49.085",
+                "Valor contable sujeto a evaluación posterior"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Simulación independiente: una integración espera ahorrar 100 millones al año. Cambia el calendario, no atribuyas estas cifras a Disney.",
+            "options": [
+              {
+                "label": "Ahorro inmediato",
+                "title": "100 millones desde el primer año",
+                "body": "Con costes de integración de 150 millones pagados al inicio, tres años de ahorro sumarían 300 y el saldo simple sería 150. Todavía faltaría descontar las fechas y estudiar riesgos."
+              },
+              {
+                "label": "Un año de retraso",
+                "title": "Dos años de ahorro dentro del mismo horizonte",
+                "body": "En los tres primeros años se ahorrarían 0 + 100 + 100 = 200. Restar los mismos 150 de integración deja 50, antes de descuento. El retraso tiene un coste aunque el ahorro anual final sea idéntico."
+              },
+              {
+                "label": "Integración más cara",
+                "title": "El ahorro no debe evaluarse solo",
+                "body": "Si el coste inicial fuera 280 y se ahorraran 100 cada año durante tres años, quedarían 20 antes de descuento. Son supuestos didácticos, no resultados de Disney/TFCF."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "La promesa y sus costes",
+          "body": "Un análisis de una adquisición cuenta tres años de sinergias, pero omite todo el coste inicial de integración y no contempla retrasos. ¿Qué cambiarías primero?",
+          "options": [
+            {
+              "text": "Sumaría el fondo de comercio a los ahorros como un ingreso adicional."
+            },
+            {
+              "text": "Trataría cualquier ahorro previsto como dinero ya disponible."
+            },
+            {
+              "text": "Construiría un calendario conjunto de costes, ahorros y financiación, con un escenario de retraso."
+            },
+            {
+              "text": "Daría por hecho que las acciones emitidas no afectan a los propietarios anteriores."
+            }
+          ],
+          "answer": 2,
+          "explanation": "Los flujos de la operación deben incluir costes y beneficios en sus fechas, además de la financiación necesaria. El fondo de comercio no es un cobro y emitir acciones entrega participación en el conjunto.",
+          "hint": "La misma cantidad de ahorro puede tener resultados diferentes según cuándo llegue y cuánto cueste conseguirla."
+        },
+        {
+          "type": "learn",
+          "title": "La liquidez pone condiciones al plan",
+          "body": "Clara prepara ahora una prueba de caja para una compradora ficticia; los importes no son de Disney. Cuenta con 2.000 millones disponibles al principio del trimestre. Espera cobrar 300 netos de la actividad, pagar 700 por integración y devolver 900 de deuda. Su reserva mínima para operar es 800. Tener recursos en el balance no significa que todo pueda gastarse: algunos pueden estar comprometidos o ser necesarios para pagos diarios.\n\nSi la caja prevista cae bajo la reserva, necesita adaptar el calendario, reducir otros usos o conseguir financiación que realmente pueda utilizar. Una refinanciación sustituye una deuda por otra; no es un cobro del negocio y puede exigir condiciones nuevas. Los compromisos contractuales, como límites de endeudamiento, también pueden restringir repartos. Antes de aprobar dividendos, recompras o adquisiciones, Clara une rentabilidad esperada y supervivencia del calendario.",
+          "visual": "none",
+          "takeaway": "Una inversión prometedora necesita también dinero utilizable en las fechas en que vencen los pagos.",
+          "figure": {
+            "kind": "table",
+            "caption": "Compradora ficticia. Millones de euros; sin otros movimientos durante el trimestre.",
+            "headers": [
+              "Movimiento o límite",
+              "Millones €"
+            ],
+            "rows": [
+              [
+                "Caja inicial disponible",
+                "2.000"
+              ],
+              [
+                "Caja neta de actividad",
+                "+300"
+              ],
+              [
+                "Integración",
+                "−700"
+              ],
+              [
+                "Devolución de deuda",
+                "−900"
+              ],
+              [
+                "Reserva mínima necesaria",
+                "800"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cuánto falta para respetar la reserva",
+          "body": "En la compradora ficticia, calcula primero la caja final: 2.000 + 300 − 700 − 900. La reserva mínima requerida es 800 millones de euros. ¿Cuántos millones adicionales necesita conseguir o liberar para alcanzar exactamente esa reserva? Sin otros movimientos ni intereses adicionales en esta simulación.",
+          "answer": 100,
+          "tolerance": 0.1,
+          "unit": "millones €",
+          "explanation": "La caja final sería 700. Para alcanzar la reserva de 800 faltan 100 millones. La necesidad no desaparece porque la operación prometa beneficios en años posteriores.",
+          "hint": "No confundas caja positiva con caja suficiente para cubrir la reserva necesaria."
+        }
+      ],
+      "takeaway": "Una adquisición se analiza por perímetro, precio, financiación, integración y rendimiento futuro, con un calendario de liquidez explícito."
+    },
+    {
+      "id": "stocks-9",
+      "track": "stocks",
+      "world": 8,
+      "minutes": 12,
+      "title": "Visa: el futuro que cabe en una valoración",
+      "company": "Visa",
+      "period": "Ejercicio fiscal terminado el 30 de septiembre de 2024; modelo posterior exclusivamente didáctico",
+      "summary": "Parte de una medida de caja publicada y comprueba por qué cambiar el flujo, la tasa o el valor terminal cambia la respuesta.",
+      "cover": {
+        "icon": "network",
+        "color": "#398c91"
+      },
+      "sources": [
+        {
+          "title": "Visa, presentación de resultados del cuarto trimestre fiscal 2024, diapositiva 11: flujo libre y su definición",
+          "url": "https://investor.visa.com/files/doc_financials/2024/q4/Visa-Inc-Fourth-Quarter-2024-Financial-Results-Presentation.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una cifra histórica no elige por ti el modelo",
+          "body": "Clara lee la presentación de Visa para el ejercicio 2024: efectivo de actividad de 19.950 millones de dólares, inversión en activos de 1.257 millones y flujo libre de 18.693 millones según la definición presentada. La propia explicación delimita la medida: no pretende representar todo el efectivo restante disponible para cualquier uso discrecional.\n\nPara valorar, Clara tiene que decidir quién recibe el dinero del modelo. El flujo para toda la empresa, o FCFF, se calcula antes de los pagos a quienes prestan y se descuenta con una tasa que combina el coste de la financiación propia y ajena, el WACC. El flujo para accionistas, o FCFE, considera la financiación de deuda correspondiente y usa la rentabilidad exigida por esos accionistas. Copiar «flujo libre» de una presentación y tratarlo automáticamente como cualquiera de los dos mezcla definiciones. La resta histórica sirve para empezar a reconciliar, no para saltarse ese trabajo.",
+          "visual": "none",
+          "takeaway": "El nombre «flujo libre» no basta: importa qué pagos incluye y a quién corresponde.",
+          "terms": [
+            {
+              "word": "FCFF",
+              "meaning": "Dinero de la actividad disponible para todos los financiadores después de impuestos operativos y reinversión."
+            },
+            {
+              "word": "WACC",
+              "meaning": "Tasa que combina el coste de financiar el negocio con deuda y con capital de accionistas."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Visa FY2024, datos publicados. Millones de dólares.",
+            "headers": [
+              "Medida",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Caja de la actividad",
+                "19.950"
+              ],
+              [
+                "Inversión en activos",
+                "1.257"
+              ],
+              [
+                "Flujo libre según la presentación",
+                "18.693"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "El emparejamiento que falta",
+          "body": "Un modelo toma los 18.693 millones publicados por Visa y los descuenta con un WACC sin comprobar intereses ni financiación. ¿Qué revisión tiene sentido?",
+          "options": [
+            {
+              "text": "No necesita revisión: cualquier medida llamada flujo libre es FCFF."
+            },
+            {
+              "text": "Debe justificar la reconciliación hasta el flujo para toda la empresa antes de usar el WACC."
+            },
+            {
+              "text": "Basta con añadir todos los dividendos al flujo y repetirlos en el valor terminal."
+            },
+            {
+              "text": "Debe usar siempre una tasa cero cuando existe caja positiva."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La tasa corresponde al destinatario del flujo. La medida publicada es caja operativa menos inversión; hace falta reconciliar su tratamiento financiero y otros ajustes antes de identificarla con FCFF o FCFE.",
+          "hint": "Antes de escoger la tasa, pregunta quién tiene derecho al flujo que estás descontando."
+        },
+        {
+          "type": "learn",
+          "title": "Qué representa el valor terminal",
+          "body": "Clara construye un modelo enteramente ficticio para practicar la continuidad. No es una previsión ni una valoración de Visa. Después de proyectar hasta el final del año 3, supone un flujo para toda la empresa de 102 millones de euros en el año 4. A partir de ahí crecería un 2 % anual de forma estable y se usaría un WACC del 8 %.\n\nEl valor terminal reúne, en una fecha, todos los flujos posteriores al período proyectado. Con crecimiento estable se calcula como flujo del año siguiente dividido entre tasa menos crecimiento: 102 ÷ (0,08 − 0,02) = 1.700 millones al final del año 3. No es dinero recibido hoy ni un cuarto cobro que pueda sumarse otra vez por separado. Para traerlo al presente hay que descontarlo tres años. El crecimiento supuesto también requiere recursos: no puede mantenerse con reinversión insuficiente sin una explicación.",
+          "visual": "none",
+          "takeaway": "El valor terminal es una hipótesis sobre muchos años; su fecha y su reinversión importan tanto como la fórmula.",
+          "terms": [
+            {
+              "word": "Valor terminal",
+              "meaning": "Valor de los flujos que vienen después de los años proyectados individualmente."
+            }
+          ],
+          "figure": {
+            "kind": "flow",
+            "caption": "Modelo ficticio: el año 4 está incluido dentro del valor terminal",
+            "items": [
+              "Hoy",
+              "Años 1 a 3: flujos separados",
+              "Final del año 3: valor terminal",
+              "Año 4 y posteriores: flujos incluidos en él"
+            ]
+          },
+          "explore": {
+            "prompt": "Sensibilidad ficticia: mantén el flujo del año 4 en 102 millones y cambia un supuesto cada vez.",
+            "options": [
+              {
+                "label": "8 % y 2 %",
+                "title": "1.700 millones al final del año 3",
+                "body": "102 ÷ (0,08 − 0,02) = 1.700. Es el escenario de partida. La tasa debe superar el crecimiento para esta fórmula de perpetuidad creciente."
+              },
+              {
+                "label": "9 % y 2 %",
+                "title": "1.457,14 millones en la misma fecha",
+                "body": "102 ÷ (0,09 − 0,02) = 1.457,14. Exigir más rentabilidad reduce el valor, aunque el primer flujo no cambie."
+              },
+              {
+                "label": "8 % y 3 %",
+                "title": "2.040 millones en la misma fecha",
+                "body": "102 ÷ (0,08 − 0,03) = 2.040. La diferencia muestra sensibilidad, no una razón para elegir el mayor crecimiento. Habría que justificar competencia, reinversión y duración."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Lleva el terminal a su fecha correcta",
+          "body": "En el modelo ficticio, el valor terminal es 1.700 millones de euros al final del año 3 y la tasa anual es 8 %. ¿Cuál es su valor presente hoy? Calcula 1.700 ÷ 1,08³ y redondea a dos decimales. No sumes los flujos de los años 1 a 3: se pide solo el componente terminal.",
+          "answer": 1349.52,
+          "tolerance": 0.02,
+          "unit": "millones €",
+          "explanation": "1.700 ÷ 1,08³ = 1.349,5158… millones, es decir, 1.349,52. A ese componente se añadirían los valores presentes de los años 1 a 3 para obtener el total del modelo.",
+          "hint": "Hay tres períodos completos entre hoy y la fecha del valor terminal."
+        },
+        {
+          "type": "learn",
+          "title": "El número también debe poder leerse al revés",
+          "body": "Si la mayor parte de una valoración depende del terminal, pequeños cambios en crecimiento, rentabilidad exigida o reinversión pueden pesar más que una previsión detallada del próximo trimestre. Clara compara varios escenarios y conserva visible qué parte del total corresponde al futuro lejano. Ponderar escenarios con probabilidades es una forma de resumir supuestos; no transforma esas probabilidades en frecuencias conocidas ni elimina las pérdidas posibles.\n\nTambién puede leer el modelo al revés: dado un valor supuesto, preguntar qué crecimiento y márgenes harían falta para sostenerlo. Es una valoración inversa, no una predicción. Otra alternativa estima el valor al terminar el período mediante un múltiplo de resultado; ese múltiplo tampoco puede aparecer sin justificación. Clara comprueba que no mezcla valor de toda la actividad con valor de accionistas, que no descuenta dos veces la deuda y que no paga crecimiento sin incluir los recursos que exige.",
+          "visual": "none",
+          "takeaway": "Una buena valoración permite discutir las condiciones del número, también cuando el número parece atractivo.",
+          "figure": {
+            "kind": "table",
+            "caption": "Preguntas para revisar cualquier modelo; no contienen estimaciones de Visa.",
+            "headers": [
+              "Pieza",
+              "Comprobación"
+            ],
+            "rows": [
+              [
+                "Flujo y tasa",
+                "Mismo destinatario, moneda y fechas"
+              ],
+              [
+                "Crecimiento",
+                "Recursos necesarios para sostenerlo"
+              ],
+              [
+                "Terminal",
+                "Fecha correcta y sensibilidad visible"
+              ],
+              [
+                "Escenarios",
+                "Probabilidades declaradas como supuestos"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Detecta las dos incoherencias",
+          "body": "En una revisión de modelos ficticios, selecciona las dos prácticas incoherentes.",
+          "options": [
+            {
+              "text": "Descontar el terminal desde el final del año de proyección al presente."
+            },
+            {
+              "text": "Usar crecimiento estable del 9 % y tasa del 8 % en la fórmula terminal y aceptar el resultado como una perpetuidad válida."
+            },
+            {
+              "text": "Mostrar qué proporción del valor depende del terminal."
+            },
+            {
+              "text": "Añadir otra vez el flujo del año 4 cuando ya está incluido en el terminal calculado con ese flujo."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La fórmula de crecimiento perpetuo requiere una tasa mayor que el crecimiento. Además, sumar por separado un flujo ya contenido en el terminal lo cuenta dos veces. Mostrar peso y fechas ayuda a detectar estos errores.",
+          "hint": "Comprueba la condición de la fórmula y si algún cobro aparece en dos sitios."
+        }
+      ],
+      "takeaway": "Valorar con coherencia exige definir flujos, tasas, reinversión y continuidad, y enseñar cuánto depende el resultado de cada supuesto."
+    },
+    {
+      "id": "stocks-10",
+      "track": "stocks",
+      "world": 9,
+      "minutes": 12,
+      "title": "NVIDIA: una gran historia dentro de una cartera",
+      "company": "NVIDIA",
+      "period": "Ejercicio fiscal 2025 terminado el 26 de enero de 2025; cartera y precios simulados",
+      "summary": "Un crecimiento extraordinario abre dos análisis distintos: qué está valorando el precio y cuánto riesgo común acumula una cartera.",
+      "cover": {
+        "icon": "layers",
+        "color": "#568b4c"
+      },
+      "sources": [
+        {
+          "title": "NVIDIA, 10-K FY2025: resultados consolidados y nota 17, ingresos por mercado final",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El resultado pasado no decide el precio",
+          "body": "Clara cierra el recorrido con NVIDIA. En el ejercicio fiscal terminado el 26 de enero de 2025 publicó ingresos de 130.497 millones de dólares, frente a 60.922 millones en el ejercicio anterior. La información por mercado final sitúa 115.186 millones en centros de datos. Es un crecimiento histórico fuerte y una concentración relevante en esa demanda; no constituye una rentabilidad prometida para quien compre después.\n\nUna acción incorpora expectativas sobre beneficios futuros y sobre cuánto estarán dispuestos a pagar otros por ellos. La calidad del negocio y la conveniencia de un precio son preguntas diferentes. Para calcular un valor por acción, Clara necesita llegar primero al valor de accionistas con los ajustes adecuados y dividirlo por un número de acciones compatible. Además, el resultado final de su inversión dependerá de dividendos, costes y cambios en el precio. Ninguna de esas piezas se obtiene mirando solo el porcentaje de aumento de las ventas.",
+          "visual": "none",
+          "takeaway": "Un gran crecimiento histórico puede coexistir con un precio exigente y con riesgo de concentración.",
+          "figure": {
+            "kind": "table",
+            "caption": "NVIDIA, ejercicios fiscales. Millones de dólares; no son cotizaciones.",
+            "headers": [
+              "Dato",
+              "FY2024",
+              "FY2025"
+            ],
+            "rows": [
+              [
+                "Ingresos totales",
+                "60.922",
+                "130.497"
+              ],
+              [
+                "Centros de datos",
+                "47.525",
+                "115.186"
+              ],
+              [
+                "Resto de mercados, cálculo por diferencia",
+                "13.397",
+                "15.311"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué pregunta deja abierta el informe",
+          "body": "Después de leer los ingresos de NVIDIA FY2025, ¿qué afirmación mantiene separadas la evidencia y la decisión?",
+          "options": [
+            {
+              "text": "Si los ingresos más que se duplican, cualquier accionista duplicará su dinero."
+            },
+            {
+              "text": "El crecimiento histórico elimina la necesidad de analizar el precio de compra."
+            },
+            {
+              "text": "Es necesario evaluar qué beneficios futuros exige el precio y cómo encajaría la exposición en la cartera."
+            },
+            {
+              "text": "Los ingresos de centros de datos garantizan que todos los mercados crecerán igual."
+            }
+          ],
+          "answer": 2,
+          "explanation": "Los resultados históricos describen el negocio durante un período. El precio puede exigir un futuro distinto y la cartera puede acumular riesgos semejantes incluso con varios nombres.",
+          "hint": "Separa el resultado de la empresa, las expectativas incorporadas al precio y el riesgo del conjunto."
+        },
+        {
+          "type": "learn",
+          "title": "Varios nombres pueden compartir una misma apuesta",
+          "body": "Clara diseña dos carteras ficticias, sin atribuir rentabilidades a NVIDIA ni a otra empresa. En ambas hay tres posiciones. La primera reúne un diseñador de chips, un proveedor de equipos y un negocio de infraestructura digital. La segunda combina una exposición a chips con dos actividades distintas. Contar nombres no revela cuántos riesgos independientes existen: una reducción común de inversión en tecnología podría afectar a varias posiciones a la vez.\n\nLa correlación describe cómo se mueven conjuntamente los rendimientos; no es fija ni se deduce por completo de una etiqueta sectorial. La prueba del explorador impone caídas inventadas para ver el efecto del tamaño de las posiciones. Usa pesos al inicio y supone que no hay compras, ventas, aportaciones ni retiradas durante el período. No demuestra que una combinación vaya a caer menos en todos los escenarios.",
+          "visual": "none",
+          "takeaway": "El tamaño de cada posición y los riesgos compartidos importan más que contar símbolos distintos.",
+          "terms": [
+            {
+              "word": "Peso de una posición",
+              "meaning": "Porcentaje del valor de la cartera asignado a esa inversión."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Prueba de tensión totalmente ficticia. Pesos iniciales; variaciones sin dividendos ni costes.",
+            "headers": [
+              "Cartera",
+              "Pesos",
+              "Caídas supuestas"
+            ],
+            "rows": [
+              [
+                "Concentrada en inversión tecnológica",
+                "40 % / 30 % / 30 %",
+                "−30 % / −20 % / −10 %"
+              ],
+              [
+                "Actividades más distintas",
+                "20 % / 40 % / 40 %",
+                "−30 % / −5 % / −2 %"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia la cartera dentro de la misma prueba ficticia.",
+            "options": [
+              {
+                "label": "Tecnología concentrada",
+                "title": "Resultado conjunto: −21 %",
+                "body": "0,40 × −30 % + 0,30 × −20 % + 0,30 × −10 % = −21 %. Tres nombres no evitan que varios dependan del mismo gasto de sus clientes."
+              },
+              {
+                "label": "Actividades distintas",
+                "title": "Resultado conjunto: −8,8 %",
+                "body": "0,20 × −30 % + 0,40 × −5 % + 0,40 × −2 % = −8,8 %. El resultado depende de estas caídas inventadas. Otros escenarios y correlaciones podrían producir pérdidas mayores."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Dimensiona una caída antes de vivirla",
+          "body": "Otra cartera ficticia coloca al inicio un 25 % en una posición que cae un 40 % y el 75 % restante en posiciones que caen conjuntamente un 4 %. No hay dividendos, costes ni movimientos durante el período. ¿Cuál es el rendimiento total porcentual? Introduce un número negativo. No son rendimientos históricos de NVIDIA.",
+          "answer": -13,
+          "tolerance": 0.02,
+          "unit": "%",
+          "explanation": "0,25 × (−40 %) + 0,75 × (−4 %) = −10 % − 3 % = −13 %. La caída de una posición contribuye según su peso inicial.",
+          "hint": "Multiplica cada rendimiento por la proporción de dinero que tenía al principio y suma."
+        },
+        {
+          "type": "learn",
+          "title": "Un plan que sigue abierto después de comprar",
+          "body": "Clara termina con un protocolo, no con una orden de inversión. Antes de actuar escribe qué evidencias sostienen la tesis, qué resultados la debilitarían y qué peso máximo admite en su cartera. Después separa dos revisiones: si cambió la empresa y si cambió el equilibrio de sus inversiones. Reequilibrar es devolver la cartera hacia unos pesos decididos; no demuestra que una empresa haya empeorado.\n\nTambién distingue decisión y ejecución. Una orden limitada fija el precio máximo al comprar o mínimo al vender, pero puede no ejecutarse. Una orden a mercado busca ejecución al precio disponible, que puede diferir del observado. Los costes y la liquidez importan. El caso de NVIDIA queda archivado con su fecha: no se actualiza solo porque el lector llegue más tarde. Para una decisión real haría falta revisar información posterior. El análisis continúa cada vez que cambia una evidencia relevante o la situación de quien invierte.",
+          "visual": "none",
+          "takeaway": "La disciplina consiste en mantener vinculados tesis, precio, tamaño, ejecución y criterios de revisión.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Protocolo de análisis revisable, no recomendación de compra",
+            "items": [
+              "Evidencia y condiciones de la tesis",
+              "Precio y escenarios compatibles",
+              "Peso y riesgo del conjunto",
+              "Orden y costes de ejecución",
+              "Revisión ante nueva evidencia"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "El plan que permite cambiar de opinión",
+          "body": "Selecciona las dos prácticas coherentes para continuar un análisis después de estudiar este caso histórico.",
+          "options": [
+            {
+              "text": "Revisar la tesis si empeoran de forma persistente los motores que la sostenían, aunque el precio aún suba."
+            },
+            {
+              "text": "Elegir una orden limitada sabiendo que garantiza comprar todas las acciones."
+            },
+            {
+              "text": "Confundir una subida del precio con una confirmación suficiente de todos los supuestos del negocio."
+            },
+            {
+              "text": "Revisar el peso y los riesgos comunes si una posición crece mucho dentro de la cartera."
+            }
+          ],
+          "answers": [
+            0,
+            3
+          ],
+          "explanation": "La evidencia del negocio y la composición de la cartera requieren seguimiento propio. Un precio que sube no verifica todas las hipótesis; una orden limitada controla el precio aceptable, pero no garantiza ejecución.",
+          "hint": "Busca decisiones ligadas a evidencia y riesgo, no a la sensación de que una subida confirma todo."
+        }
+      ],
+      "takeaway": "El análisis no termina en una empresa atractiva: continúa en el precio, el riesgo compartido, la ejecución y la revisión de la tesis."
+    }
+  ]
+}

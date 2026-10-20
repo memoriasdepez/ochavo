@@ -1,0 +1,360 @@
+{
+  "checkedAt": "2026-10-09",
+  "scope": "Hechos de funcionamiento; todas las cifras de ejercicios se identifican como simulaciones, salvo reglas de protocolo expresamente descritas.",
+  "sources": [
+    {
+      "key": "eth",
+      "title": "Ethereum · Qué es ETH",
+      "url": "https://ethereum.org/what-is-ether/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "ETH como activo nativo y pago de operaciones.",
+      "worlds": [
+        115
+      ]
+    },
+    {
+      "key": "bitcoinTx",
+      "title": "Bitcoin Developer Guide · Transactions",
+      "url": "https://developer.bitcoin.org/devguide/transactions.html",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Entradas, salidas, cambio y comisiones de Bitcoin.",
+      "worlds": [
+        116
+      ]
+    },
+    {
+      "key": "pos",
+      "title": "Ethereum · Proof of stake",
+      "url": "https://ethereum.org/developers/docs/consensus-mechanisms/pos/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Validadores, capital depositado y penalizaciones.",
+      "worlds": [
+        117
+      ]
+    },
+    {
+      "key": "backup",
+      "title": "Trezor · How to use a wallet backup",
+      "url": "https://trezor.io/guides/backups-recovery/general-standards/how-to-use-a-wallet-backup",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "La copia permite recuperar el acceso y no se comparte con soporte.",
+      "worlds": [
+        118
+      ]
+    },
+    {
+      "key": "tags",
+      "title": "XRP Ledger · Source and Destination Tags",
+      "url": "https://xrpl.org/docs/concepts/transactions/source-and-destination-tags",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Etiquetas para identificar destinatarios dentro de direcciones compartidas.",
+      "worlds": [
+        119,
+        137
+      ]
+    },
+    {
+      "key": "approvals",
+      "title": "MetaMask · Revocar autorizaciones de tokens",
+      "url": "https://support.metamask.io/more-web3/learn/how-to-revoke-smart-contract-allowances-token-approvals/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "La autorización de gasto y su revocación no equivalen a desconectar una web.",
+      "worlds": [
+        120
+      ]
+    },
+    {
+      "key": "swaps",
+      "title": "Uniswap · Swaps",
+      "url": "https://developers.uniswap.org/docs/get-started/concepts/traders/swaps",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Intercambios y efecto de una operación sobre el precio.",
+      "worlds": [
+        121
+      ]
+    },
+    {
+      "key": "kraken",
+      "title": "Kraken · Trading glossary",
+      "url": "https://support.kraken.com/articles/115000364388-trading-glossary",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Órdenes, libro de órdenes y liquidez.",
+      "worlds": [
+        123
+      ]
+    },
+    {
+      "key": "xrp",
+      "title": "XRP Ledger · XRP",
+      "url": "https://xrpl.org/about/xrp",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "XRP es el activo nativo; Ripple es una empresa distinta. La oferta original se creó al inicio.",
+      "worlds": [
+        122,
+        137
+      ]
+    },
+    {
+      "key": "arb",
+      "title": "Arbitrum Foundation · DAO Constitution",
+      "url": "https://docs.arbitrum.foundation/dao-constitution",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Gobernanza de ARB, propuestas y tesorería.",
+      "worlds": [
+        124
+      ]
+    },
+    {
+      "key": "upgrade",
+      "title": "OpenZeppelin · Upgrades Plugins",
+      "url": "https://docs.openzeppelin.com/upgrades-plugins/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Contratos actualizables y autorizaciones de actualización.",
+      "worlds": [
+        125
+      ]
+    },
+    {
+      "key": "circleReserve",
+      "title": "Circle · Transparency",
+      "url": "https://www.circle.com/transparency",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Composición de reservas e informes de aseguramiento.",
+      "worlds": [
+        126,
+        144
+      ]
+    },
+    {
+      "key": "lido",
+      "title": "Lido · Tokens integration guide",
+      "url": "https://docs.lido.fi/guides/lido-tokens-integration-guide/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "stETH representa ETH en staking; recompensas y penalizaciones alteran el saldo.",
+      "worlds": [
+        127
+      ]
+    },
+    {
+      "key": "lp",
+      "title": "Uniswap V2 · Understanding returns",
+      "url": "https://developers.uniswap.org/docs/protocols/v2/concepts/understanding-returns",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Comparación entre aportar liquidez y mantener los activos.",
+      "worlds": [
+        128
+      ]
+    },
+    {
+      "key": "aave",
+      "title": "Aave · Health factor and liquidations",
+      "url": "https://aave.com/help/borrowing/liquidations",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Factor de salud, umbral y riesgo de liquidación por debajo de uno.",
+      "worlds": [
+        129
+      ]
+    },
+    {
+      "key": "bridge",
+      "title": "Arbitrum · Bridge quickstart",
+      "url": "https://docs.arbitrum.io/arbitrum-bridge/quickstart",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Ruta estándar de retirada, espera, red de destino y activos admitidos.",
+      "worlds": [
+        130
+      ]
+    },
+    {
+      "key": "data",
+      "title": "Ethereum · Data and analytics",
+      "url": "https://ethereum.org/developers/docs/data-and-analytics/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Datos observables en la cadena y herramientas de análisis.",
+      "worlds": [
+        131
+      ]
+    },
+    {
+      "key": "btc",
+      "title": "Bitcoin Developer Guide · Block chain",
+      "url": "https://developer.bitcoin.org/devguide/block_chain.html",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Prueba de trabajo, subsidio de bloque, halvings y comisiones.",
+      "worlds": [
+        117,
+        133
+      ]
+    },
+    {
+      "key": "gas",
+      "title": "Ethereum · Gas and fees",
+      "url": "https://ethereum.org/developers/docs/gas/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Tarifa base quemada y propina del validador.",
+      "worlds": [
+        134
+      ]
+    },
+    {
+      "key": "sol",
+      "title": "Solana · Transaction fees",
+      "url": "https://solana.com/docs/core/fees",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Comisión base y prioridad pagadas en SOL.",
+      "worlds": [
+        135
+      ]
+    },
+    {
+      "key": "bnb",
+      "title": "BNB Chain · BNB Smart Chain introduction",
+      "url": "https://docs.bnbchain.org/bnb-smart-chain/introduction/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "BNB como activo nativo para comisiones en BNB Smart Chain.",
+      "worlds": [
+        136
+      ]
+    },
+    {
+      "key": "ada",
+      "title": "Cardano · Delegation",
+      "url": "https://docs.cardano.org/about-cardano/learn/delegation",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Delegación de ADA conservando la posibilidad de gastar los activos.",
+      "worlds": [
+        138
+      ]
+    },
+    {
+      "key": "avax",
+      "title": "Avalanche · Primary Network",
+      "url": "https://build.avax.network/docs/primary-network",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Funciones de las cadenas C, P y X y moneda nativa.",
+      "worlds": [
+        139
+      ]
+    },
+    {
+      "key": "dot",
+      "title": "Polkadot · Relay chain",
+      "url": "https://docs.polkadot.com/reference/polkadot-hub/consensus-and-security/relay-chain/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Seguridad compartida, cadenas conectadas y funciones de DOT.",
+      "worlds": [
+        140
+      ]
+    },
+    {
+      "key": "link",
+      "title": "Chainlink · Price Feeds",
+      "url": "https://docs.chain.link/data-feeds/price-feeds",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Agregación de precios y publicación de datos para contratos.",
+      "worlds": [
+        132,
+        141
+      ]
+    },
+    {
+      "key": "doge",
+      "title": "Dogecoin · Can you put a cap on Dogecoin?",
+      "url": "https://dogecoin.com/dogepedia/faq/putting-a-cap-on-dogecoin/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Emisión continuada a ritmo establecido, sin máximo final.",
+      "worlds": [
+        142
+      ]
+    },
+    {
+      "key": "tether",
+      "title": "Tether · Transparency",
+      "url": "https://tether.to/en/transparency/",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Publicación de reservas y obligaciones.",
+      "worlds": [
+        143
+      ]
+    },
+    {
+      "key": "chains",
+      "title": "Circle · Supported chains and currencies",
+      "url": "https://developers.circle.com/circle-mint/references/supported-chains-and-currencies",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Compatibilidad de moneda y red; activos nativos frente a versiones de puentes.",
+      "worlds": [
+        144
+      ]
+    },
+    {
+      "key": "eea",
+      "title": "Circle Europe · MiCA Redemption Policy",
+      "url": "https://www.circle.com/legal/mica-redemption-policy",
+      "primary": true,
+      "checkedAt": "2026-10-09",
+      "verification": "Página oficial abierta y contenido relevante revisado con búsqueda web",
+      "verifiedClaim": "Condiciones y procedimientos de reembolso para titulares del EEE.",
+      "worlds": [
+        126,
+        144
+      ]
+    }
+  ]
+}

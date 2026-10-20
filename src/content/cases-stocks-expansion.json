@@ -1,0 +1,1553 @@
+{
+  "cases": [
+    {
+      "id": "stocks-11",
+      "track": "stocks",
+      "world": 20,
+      "title": "Caterpillar: vender menos, conservar margen",
+      "company": "Caterpillar",
+      "period": "Ejercicio 2024; comparación con 2023",
+      "summary": "Sigue el puente entre volumen, precio y margen antes de trasladar una conclusión a la fábrica.",
+      "minutes": 12,
+      "cover": {
+        "icon": "factory",
+        "color": "#d99b22"
+      },
+      "sources": [
+        {
+          "title": "Caterpillar, resultados del ejercicio 2024, publicados el 30 de enero de 2025: ventas, volumen, precio y margen operativo",
+          "url": "https://www.caterpillar.com/en/news/corporate-press-releases/h/4q24-results-caterpillar-inc.html"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Primero separa las causas",
+          "body": "Elena abre los resultados de Caterpillar de 2024 para contrastar su diagnóstico industrial de Nébula. La compañía presentó ventas e ingresos de 64,8 mil millones de dólares, frente a 67,1 en 2023. Su explicación atribuyó 3,5 mil millones de descenso al volumen y 1,2 de compensación favorable a los precios. Son cifras publicadas redondeadas. El puente identifica causas distintas: una menor facturación no demuestra por sí sola que cada producto se vendiera más barato.",
+          "visual": "none",
+          "takeaway": "Un cambio total puede contener fuerzas de signo contrario.",
+          "figure": {
+            "kind": "table",
+            "caption": "Caterpillar, ejercicio completo; miles de millones de USD redondeados",
+            "headers": [
+              "Componente del puente",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Ventas e ingresos 2023",
+                67.1
+              ],
+              [
+                "Efecto volumen",
+                -3.5
+              ],
+              [
+                "Efecto precio",
+                1.2
+              ],
+              [
+                "Ventas e ingresos 2024",
+                64.8
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cuánto compensó el precio",
+          "body": "Con los efectos redondeados publicados, volumen −3,5 y precio +1,2 mil millones de USD, ¿qué efecto conjunto resulta? Escribe un número negativo para una reducción.",
+          "answer": -2.3,
+          "tolerance": 0.01,
+          "unit": "miles de millones de USD",
+          "explanation": "−3,5 + 1,2 = −2,3. Aplicado a 67,1 deja 64,8; el efecto favorable de precio compensó solo parte del descenso de volumen.",
+          "hint": "Combina los efectos con su signo, no sus valores absolutos."
+        },
+        {
+          "type": "learn",
+          "title": "El margen necesita otra explicación",
+          "body": "En el mismo ejercicio, el margen operativo publicado pasó del 19,3 % al 20,2 %. Aquí usamos el margen operativo, sin mezclarlo con la versión ajustada que también presenta la compañía. Menor venta y mayor margen pueden coexistir. Sin embargo, esos dos indicadores no identifican utilización de máquinas, calidad de producción ni rentabilidad de cada nueva inversión. Elena separa lo observado en las cuentas de las causas que todavía tendría que comprobar dentro de una fábrica.",
+          "visual": "none",
+          "takeaway": "La mejora de un porcentaje no prueba cualquier explicación operativa.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Lectura del dato y preguntas pendientes",
+            "items": [
+              "Observación: menor venta total",
+              "Observación: mayor margen operativo",
+              "Pregunta: mezcla, costes y capacidad",
+              "Decisión: estudiar la inversión concreta"
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Conclusión que sí permiten los datos",
+          "body": "Un analista ve la caída de ventas y el aumento del margen operativo de Caterpillar. ¿Qué afirmación respeta el alcance de esas cifras?",
+          "options": [
+            {
+              "text": "Toda su maquinaria estuvo más utilizada"
+            },
+            {
+              "text": "El margen aumentó pese al descenso de ventas; faltan datos para atribuirlo a una ampliación concreta"
+            },
+            {
+              "text": "La demanda final creció necesariamente"
+            }
+          ],
+          "answer": 1,
+          "explanation": "La relación entre venta y margen es observable. La utilización de equipos o el efecto causal de una ampliación requiere otra evidencia.",
+          "hint": "No conviertas una observación contable en una explicación física no medida."
+        },
+        {
+          "type": "learn",
+          "title": "De la cuenta al taller: una simulación",
+          "body": "Elena vuelve a Nébula y plantea una simulación independiente, sin atribuir estos números a Caterpillar. Montaje permite 120 lámparas por hora, prueba eléctrica 80 y embalaje 100; todas pasan por los tres pasos. Un proveedor propone ampliar montaje a 160. La capacidad de la cadena seguiría limitada por la prueba. Para decidir, Elena añade demanda, unidades aceptadas, garantías y el coste de intervenir. Una máquina más rápida no resuelve un límite situado en otra estación.",
+          "visual": "none",
+          "takeaway": "Localiza la restricción antes de financiar más capacidad.",
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación de Nébula, unidades/hora; no datos de Caterpillar",
+            "headers": [
+              "Paso",
+              "Capacidad inicial"
+            ],
+            "rows": [
+              [
+                "Montaje",
+                120
+              ],
+              [
+                "Prueba",
+                80
+              ],
+              [
+                "Embalaje",
+                100
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Compara dos inversiones de la simulación",
+            "options": [
+              {
+                "label": "Más montaje",
+                "title": "La cadena sigue en 80",
+                "body": "Montaje llega a 160, pero prueba conserva el límite de 80 unidades/h."
+              },
+              {
+                "label": "Más prueba",
+                "title": "El límite cambia de estación",
+                "body": "Prueba llega a 110; embalaje limita ahora a 100 unidades/h, antes de considerar defectos y demanda."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Qué llevar a la reunión de inversión",
+          "body": "En la simulación de Nébula, ¿qué pruebas ayudan a justificar la ampliación de la estación de prueba?",
+          "options": [
+            {
+              "text": "Pedidos rentables suficientes para las unidades adicionales"
+            },
+            {
+              "text": "Rendimiento de calidad y coste completo de la intervención"
+            },
+            {
+              "text": "Que otra empresa haya publicado mayor margen"
+            },
+            {
+              "text": "Solo la velocidad máxima de montaje"
+            }
+          ],
+          "answers": [
+            0,
+            1
+          ],
+          "explanation": "La decisión exige demanda y capacidad vendible que compensen el coste. El margen de otra compañía no sustituye esas pruebas.",
+          "hint": "Conecta restricción, unidades aceptadas, compradores y recursos."
+        }
+      ],
+      "takeaway": "Un negocio industrial se entiende conectando precio y volumen con capacidad, calidad e inversión; ningún porcentaje explica por sí solo la fábrica."
+    },
+    {
+      "id": "stocks-12",
+      "track": "stocks",
+      "world": 21,
+      "title": "Walmart: qué incluye crecer en ventas",
+      "company": "Walmart",
+      "period": "Ejercicio fiscal terminado el 31 de enero de 2025; comparación con 2024",
+      "summary": "Distingue venta de mercancía, otras fuentes de ingreso y economía de los canales.",
+      "minutes": 12,
+      "cover": {
+        "icon": "store",
+        "color": "#2f80c5"
+      },
+      "sources": [
+        {
+          "title": "Walmart, Form 10-K del ejercicio fiscal 2025: estados consolidados de resultados, análisis de operaciones y reconocimiento de ingresos",
+          "url": "https://stock.walmart.com/sec-filings/all-sec-filings/content/0000104169-25-000021/wmt-20250131.htm/wmtexhibit991fy2510-k.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El año fiscal y el perímetro",
+          "body": "Elena estudia Walmart para aprender a leer una red comercial mucho mayor que los distribuidores de Nébula. El ejercicio fiscal 2025 terminó el 31 de enero de 2025: no coincide con el año natural. El informe presenta ventas netas de 674.538 millones de dólares y 6.447 millones en la categoría de cuotas de socios y otros ingresos. Esta segunda categoría agrupa conceptos; su nombre no permite tratarla entera como cuotas de suscripción.",
+          "visual": "none",
+          "takeaway": "Lee el período y las categorías antes de comparar comercios.",
+          "figure": {
+            "kind": "table",
+            "caption": "Walmart, millones de USD; ejercicio terminado el 31/01/2025",
+            "headers": [
+              "Categoría publicada",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Ventas netas",
+                674538
+              ],
+              [
+                "Cuotas de socios y otros ingresos",
+                6447
+              ],
+              [
+                "Ingresos totales",
+                680985
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Un rótulo demasiado amplio",
+          "body": "Una presentación afirma que Walmart ingresó 6.447 millones de USD exclusivamente por cuotas de socios en ese ejercicio. ¿Qué corregirías?",
+          "options": [
+            {
+              "text": "Nada: la categoría contiene solo cuotas"
+            },
+            {
+              "text": "Cambiaría USD por euros sin conversión"
+            },
+            {
+              "text": "La cifra incluye también otros ingresos; no puede atribuirse entera a cuotas"
+            }
+          ],
+          "answer": 2,
+          "explanation": "El rótulo publicado combina cuotas y otros ingresos. Para aislar cuotas hay que consultar su desglose, no cambiar el significado del total.",
+          "hint": "Comprueba todas las palabras de la categoría."
+        },
+        {
+          "type": "learn",
+          "title": "Crecer no dice todavía dónde",
+          "body": "Las ventas netas comparables del ejercicio anterior fueron 642.637 millones de dólares. Comparar ambas cifras permite calcular crecimiento consolidado, pero no demuestra que cada tienda existente creciera igual. Aperturas, comercio electrónico, mezcla y perímetro pueden intervenir. Elena conserva separados crecimiento total y ventas comparables de establecimientos según la definición empleada. Para trasladar el análisis a Nébula, también necesitará visitas, conversión, importe por compra, metros y la contribución después de servir cada pedido.",
+          "visual": "none",
+          "takeaway": "El total es un punto de partida, no un diagnóstico de todas las tiendas.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Preguntas comerciales que no sustituye el total",
+            "items": [
+              "Mismo período y perímetro",
+              "Tiendas existentes frente a nuevas",
+              "Visitas, conversión y cesta",
+              "Costes de servir cada canal"
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cambio consolidado",
+          "body": "Las ventas netas fueron 642.637 millones de USD en el ejercicio fiscal 2024 y 674.538 en 2025. ¿Cuál es su crecimiento porcentual calculado con esas cifras? Redondea a dos decimales.",
+          "answer": 4.96,
+          "tolerance": 0.01,
+          "unit": "%",
+          "explanation": "(674.538 / 642.637 − 1) × 100 = 4,964… %, aproximadamente 4,96 %. Es crecimiento consolidado, no una tasa de cada tienda.",
+          "hint": "Divide la diferencia entre las ventas del período inicial."
+        },
+        {
+          "type": "learn",
+          "title": "El canal cambia lo que queda",
+          "body": "Nébula prepara una simulación comercial ajena a las cuentas de Walmart. Una lámpara deja 35 € antes de servir el pedido. En recogida, preparar y entregar cuesta 5 €; a domicilio, preparación y transporte cuestan 12 €. No se incluyen aquí costes centrales ni impuestos. Comparar solo venta y coste del producto ocultaría una diferencia de contribución. Elena añade devoluciones, promociones y uso compartido de locales antes de extrapolar ese resultado a una red entera.",
+          "visual": "none",
+          "takeaway": "El mismo ingreso puede dejar distinta contribución según cómo se sirve.",
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación de Nébula, por pedido; no datos de Walmart",
+            "headers": [
+              "Canal",
+              "Margen previo",
+              "Coste de servir",
+              "Contribución del alcance"
+            ],
+            "rows": [
+              [
+                "Recogida",
+                "35 €",
+                "5 €",
+                "30 €"
+              ],
+              [
+                "Domicilio",
+                "35 €",
+                "12 €",
+                "23 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia el pedido de la simulación",
+            "options": [
+              {
+                "label": "Pedido aislado",
+                "title": "El transporte pesa más",
+                "body": "Una sola lámpara soporta todo el coste de entregar ese pedido."
+              },
+              {
+                "label": "Pedido agrupado",
+                "title": "Puede repartirse parte del coste",
+                "body": "Varias lámparas en una entrega pueden repartir el transporte; hay que comprobar si cambian preparación y devoluciones."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Construir un expediente comercial",
+          "body": "Relaciona cada duda de Nébula con la evidencia más directa.",
+          "pairs": [
+            {
+              "left": "La red crece porque abre locales",
+              "right": "Separar ventas de establecimientos nuevos y existentes"
+            },
+            {
+              "left": "El canal digital vende pero deja menos",
+              "right": "Medir preparación, transporte y devoluciones"
+            },
+            {
+              "left": "Una promoción parece exitosa",
+              "right": "Comparar contribución incremental con ventas desplazadas"
+            }
+          ],
+          "explanation": "Un expediente comercial separa crecimiento, servicio y ventas que habrían ocurrido sin la campaña.",
+          "hint": "Elige la evidencia que explica el mecanismo concreto."
+        }
+      ],
+      "takeaway": "El crecimiento comercial necesita un perímetro definido y un puente desde la venta hasta la contribución de los distintos canales."
+    },
+    {
+      "id": "stocks-13",
+      "track": "stocks",
+      "world": 22,
+      "title": "Adobe: recurrencia, contrato y caja",
+      "company": "Adobe",
+      "period": "Ejercicio fiscal terminado el 29 de noviembre de 2024",
+      "summary": "Lee las suscripciones sin convertir ingresos recurrentes en una garantía de retención.",
+      "minutes": 12,
+      "cover": {
+        "icon": "laptop",
+        "color": "#b84972"
+      },
+      "sources": [
+        {
+          "title": "Adobe, Annual Report 2024: ingresos por categoría y obligaciones de desempeño pendientes, páginas 41 y 66 del PDF",
+          "url": "https://www.adobe.com/cc-shared/assets/investor-relations/pdfs/adbe-2024-annual-report.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una mezcla dominada por suscripciones",
+          "body": "Elena busca un ejemplo para el programa de control de lámparas que estudia Nébula. En el ejercicio fiscal 2024 de Adobe, terminado el 29 de noviembre, los ingresos por suscripción fueron 20.521 millones de dólares, frente a ingresos totales de 21.505 millones. Producto aportó 386 y servicios y otros, 598. Estas categorías describen ingresos reconocidos durante el ejercicio. No son, por ese solo hecho, la cuota anualizada de los contratos activos al cierre ni el efectivo cobrado.",
+          "visual": "none",
+          "takeaway": "El ingreso del año y la foto contractual del cierre son magnitudes distintas.",
+          "figure": {
+            "kind": "table",
+            "caption": "Adobe, ejercicio fiscal 2024; millones de USD",
+            "headers": [
+              "Categoría",
+              "Ingreso"
+            ],
+            "rows": [
+              [
+                "Suscripción",
+                20521
+              ],
+              [
+                "Producto",
+                386
+              ],
+              [
+                "Servicios y otros",
+                598
+              ],
+              [
+                "Total",
+                21505
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Peso de la suscripción",
+          "body": "Con 20.521 millones de USD de suscripciones y 21.505 millones de ingresos totales, ¿qué porcentaje representan las suscripciones? Redondea a dos decimales.",
+          "answer": 95.42,
+          "tolerance": 0.01,
+          "unit": "%",
+          "explanation": "20.521 / 21.505 × 100 = 95,424… %, aproximadamente 95,42 %. El informe lo presenta redondeado al 95 %.",
+          "hint": "Usa el total de ingresos como denominador."
+        },
+        {
+          "type": "learn",
+          "title": "El contrato todavía tiene trabajo pendiente",
+          "body": "Adobe informó de obligaciones de desempeño pendientes de 19,96 mil millones de dólares al cierre de 2024. Esa expresión, abreviada RPO, se refiere al ingreso contratado asociado a prestaciones todavía pendientes bajo su definición. No equivale a dinero libre en una cuenta bancaria ni promete que todo se reconocerá el mes siguiente. Elena lo sitúa en un calendario y pregunta qué servicio falta, durante cuánto tiempo y con qué costes. Para estudiar clientes, mantiene aparte las cohortes y su renovación.",
+          "visual": "none",
+          "takeaway": "El importe contratado pendiente requiere prestación y calendario.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Tres lecturas que deben reconciliarse",
+            "items": [
+              "Contrato y obligaciones pendientes",
+              "Servicio prestado e ingreso reconocido",
+              "Cobro y costes para prestar el servicio"
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Lo que no dice la mezcla",
+          "body": "Un resumen concluye que, por tener aproximadamente 95 % de ingresos por suscripción, Adobe retuvo exactamente 95 % del dinero de sus clientes antiguos. ¿Qué problema tiene?",
+          "options": [
+            {
+              "text": "Confunde composición de ingresos con retención de una cohorte"
+            },
+            {
+              "text": "Ninguno: son la misma división"
+            },
+            {
+              "text": "La retención solo puede medirse contando oficinas"
+            }
+          ],
+          "answer": 0,
+          "explanation": "El peso de suscripciones divide una categoría entre ingresos totales. La retención sigue a los mismos clientes y separa bajas, reducciones y ampliaciones.",
+          "hint": "Pregunta qué grupo y qué denominador necesita cada indicador."
+        },
+        {
+          "type": "learn",
+          "title": "Probar la recurrencia con una cohorte",
+          "body": "En una simulación propia de Nébula, cien contratos aportaban 100.000 € anuales. En la renovación se pierden 10.000 € por bajas y reducciones; los restantes amplían 25.000 €. Antes de clientes nuevos quedan 115.000 €. La retención bruta es 90 % y la neta, 115 %. La expansión compensa las pérdidas, pero no las borra. Elena compara además coste de captar, soporte, recuperación del gasto comercial y supervivencia de las cohortes. Estos números no pertenecen a Adobe.",
+          "visual": "none",
+          "takeaway": "Una retención neta alta puede coexistir con pérdida de clientes o gasto.",
+          "figure": {
+            "kind": "table",
+            "caption": "Cohorte ficticia de Nébula; no datos de Adobe",
+            "headers": [
+              "Concepto",
+              "€ anuales"
+            ],
+            "rows": [
+              [
+                "Importe inicial",
+                100000
+              ],
+              [
+                "Bajas y reducciones",
+                -10000
+              ],
+              [
+                "Ampliaciones",
+                25000
+              ],
+              [
+                "Importe final sin clientes nuevos",
+                115000
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia las ampliaciones de esta cohorte",
+            "options": [
+              {
+                "label": "Sin ampliaciones",
+                "title": "La pérdida queda visible",
+                "body": "Con las mismas bajas, el importe final sería 90.000 € y la retención neta 90 %."
+              },
+              {
+                "label": "Ampliaciones de 25.000 €",
+                "title": "El total supera el inicio",
+                "body": "La retención neta llega al 115 %, aunque la retención bruta sigue en el 90 %."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Lectura completa de la simulación",
+          "body": "¿Qué afirmaciones corresponden a la cohorte ficticia de Nébula?",
+          "options": [
+            {
+              "text": "Las ampliaciones más que compensan las bajas y reducciones"
+            },
+            {
+              "text": "No se perdió nada porque la retención neta supera 100 %"
+            },
+            {
+              "text": "El coste de atender y captar sigue siendo relevante"
+            },
+            {
+              "text": "Los 115.000 € son necesariamente efectivo cobrado hoy"
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "La expansión sostiene el total, pero no elimina pérdidas de la cohorte ni los costes y calendarios que condicionan la caja.",
+          "hint": "Separa conservación, expansión y economía de prestar el servicio."
+        }
+      ],
+      "takeaway": "Un negocio de suscripción se analiza conectando mezcla, cohortes, contratos, coste de servicio y caja, sin intercambiar sus indicadores."
+    },
+    {
+      "id": "stocks-14",
+      "track": "stocks",
+      "world": 23,
+      "title": "Airbnb: reservas no son ingresos propios",
+      "company": "Airbnb",
+      "period": "Ejercicio terminado el 31 de diciembre de 2024",
+      "summary": "Sigue el dinero entre huésped, anfitrión y plataforma sin inflar la actividad económica propia.",
+      "minutes": 12,
+      "cover": {
+        "icon": "network",
+        "color": "#df6b53"
+      },
+      "sources": [
+        {
+          "title": "Airbnb, Form 10-K 2024: Key Business Metrics, definición de Gross Booking Value e ingresos consolidados",
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972025000010/abnb-20241231.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Dos tamaños de una misma plataforma",
+          "body": "Elena consulta Airbnb para entender el mercado digital donde vende Nébula. En 2024, Airbnb publicó un valor bruto de reservas, o GBV, de 81.784 millones de dólares e ingresos de 11.102 millones. El GBV incluye importes para anfitriones, comisiones de servicio, limpieza e impuestos, netos de cancelaciones y cambios según su definición. Por tanto, no representa todo él ingreso propio de la plataforma. Identificar quién presta cada servicio y a quién corresponde el dinero es parte del análisis.",
+          "visual": "none",
+          "takeaway": "El dinero que pasa por una red no pertenece íntegramente a la plataforma.",
+          "figure": {
+            "kind": "table",
+            "caption": "Airbnb, ejercicio 2024; millones de USD",
+            "headers": [
+              "Medida",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Valor bruto de reservas",
+                81784
+              ],
+              [
+                "Ingresos de la compañía",
+                11102
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Un tamaño engañoso",
+          "body": "Un informe llama ingresos de Airbnb a los 81.784 millones de USD de GBV. ¿Qué corrección corresponde?",
+          "options": [
+            {
+              "text": "Mantener la cifra: toda reserva pertenece a la plataforma"
+            },
+            {
+              "text": "Usar 11.102 millones como ingresos publicados y conservar el GBV como otra medida de actividad"
+            },
+            {
+              "text": "Sumar ambas cifras como ingresos"
+            }
+          ],
+          "answer": 1,
+          "explanation": "El GBV y los ingresos tienen alcances distintos. Sumarlos duplicaría conceptos y atribuiría a la plataforma importes ajenos.",
+          "hint": "Distingue el valor de la operación y la parte reconocida por la compañía."
+        },
+        {
+          "type": "learn",
+          "title": "Un cociente útil, pero con límites",
+          "body": "Dividir ingresos entre GBV da una relación agregada aproximada de monetización, no una comisión contractual universal. Las medidas pueden reflejar momentos distintos: una reserva y la prestación del alojamiento no ocurren necesariamente en el mismo período. Además, varían servicios y composición. Elena usaría ese cociente como señal inicial y leería sus definiciones antes de explicar cambios. Tampoco deduciría beneficio por reserva sin conocer costes de atención, pagos, promociones y confianza.",
+          "visual": "none",
+          "takeaway": "Un cociente agregado no sustituye condiciones ni economía por operación.",
+          "figure": {
+            "kind": "flow",
+            "caption": "No saltarse los puentes",
+            "items": [
+              "Valor reservado según su definición",
+              "Ingreso reconocido por servicios",
+              "Coste de operar y generar confianza",
+              "Resultado y caja de la plataforma"
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cociente agregado",
+          "body": "Usando 11.102 millones de USD de ingresos y 81.784 millones de GBV de 2024, calcula ingresos / GBV × 100. Redondea a dos decimales; no lo interpretes como tarifa contractual de cada reserva.",
+          "answer": 13.57,
+          "tolerance": 0.01,
+          "unit": "%",
+          "explanation": "11.102 / 81.784 × 100 = 13,574… %, aproximadamente 13,57 %. Las diferencias de alcance y momento impiden tratarlo como comisión de todas las operaciones.",
+          "hint": "Divide ingresos propios entre volumen, sin sumar las dos magnitudes."
+        },
+        {
+          "type": "learn",
+          "title": "Confianza y densidad: una simulación separada",
+          "body": "Nébula ensaya un mercado ficticio de instaladores de lámparas, sin usar cifras de Airbnb. En una ciudad hay demanda, pero pocos profesionales disponibles a la hora necesaria; incorporar otros muy lejos no resuelve el encuentro. Además, una reserva puede fallar o generar una reclamación. Elena compara cobertura local, repetición sin descuentos, fraude y coste de resolver incidencias. Crecer en participantes solo crea una red útil si mejora el servicio y sostiene una economía que no dependa de subvencionar cada operación.",
+          "visual": "none",
+          "takeaway": "La red se prueba donde ocurre el encuentro y después del descuento.",
+          "figure": {
+            "kind": "table",
+            "caption": "Simulación local, no datos de Airbnb",
+            "headers": [
+              "Señal",
+              "Pregunta"
+            ],
+            "rows": [
+              [
+                "Más registros",
+                "¿Están disponibles donde y cuando se necesitan?"
+              ],
+              [
+                "Más reservas con bono",
+                "¿Se repiten sin el bono?"
+              ],
+              [
+                "Menos reclamaciones",
+                "¿Se mantienen seguridad y calidad?"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia la expansión del mercado ficticio",
+            "options": [
+              {
+                "label": "Profesionales en otra región",
+                "title": "Puede no mejorar la búsqueda local",
+                "body": "Aumenta el total registrado, pero las necesidades urgentes de esa ciudad siguen sin cubrirse."
+              },
+              {
+                "label": "Profesionales locales disponibles",
+                "title": "Mejora el encuentro relevante",
+                "body": "La cobertura puede aumentar; todavía deben medirse repetición, costes y calidad."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Elegir la prueba pertinente",
+          "body": "Relaciona cada afirmación sobre el mercado ficticio con la prueba que necesita.",
+          "pairs": [
+            {
+              "left": "La red es más útil",
+              "right": "Mejor cobertura y respuesta en la zona atendida"
+            },
+            {
+              "left": "La demanda se sostiene sola",
+              "right": "Repetición después de retirar promociones"
+            },
+            {
+              "left": "El volumen deja dinero",
+              "right": "Ingreso propio menos costes e incentivos compatibles"
+            }
+          ],
+          "explanation": "Los registros, la demanda subvencionada y el volumen bruto no resuelven esas tres preguntas por sí solos.",
+          "hint": "Busca utilidad, continuidad y contribución por separado."
+        }
+      ],
+      "takeaway": "Una plataforma se entiende desde sus participantes, el reparto del dinero, la calidad del encuentro y el coste de sostenerlo."
+    },
+    {
+      "id": "stocks-15",
+      "track": "stocks",
+      "world": 24,
+      "title": "Shell: una cifra de caja necesita definición",
+      "company": "Shell",
+      "period": "Ejercicio 2024; cifras redondeadas a miles de millones de USD",
+      "summary": "Combina ciclo, inversión y definición de efectivo disponible sin inventar una caja libre universal.",
+      "minutes": 12,
+      "cover": {
+        "icon": "flame",
+        "color": "#c88032"
+      },
+      "sources": [
+        {
+          "title": "Shell, Annual Report and Accounts 2024 presentado en Form 6-K: estados de efectivo y conciliaciones de cash capital expenditure y free cash flow",
+          "url": "https://www.sec.gov/Archives/edgar/data/1306965/000130696525000011/a6-kannualreportandaccounts.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una resta no hereda cualquier nombre",
+          "body": "Elena revisa el informe anual de Shell de 2024. Redondeados a miles de millones de dólares, el efectivo de actividades operativas fue 54,7 y la inversión de capital en efectivo, 21,1. Su resta es 33,6. Pero no es la medida de flujo de caja libre publicada por Shell: esta incorpora el flujo neto de inversión y presenta aproximadamente 39,5. Las definiciones incluyen partidas diferentes. Antes de comparar empresas cíclicas, Elena escribe qué suma y qué resta cada medida.",
+          "visual": "none",
+          "takeaway": "Dos medidas de caja distintas pueden ser válidas si se explican sus componentes.",
+          "figure": {
+            "kind": "table",
+            "caption": "Shell 2024; miles de millones de USD redondeados",
+            "headers": [
+              "Medida",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Efectivo de actividades operativas",
+                54.7
+              ],
+              [
+                "Cash capital expenditure",
+                21.1
+              ],
+              [
+                "Resta limitada de las dos filas anteriores",
+                33.6
+              ],
+              [
+                "Free cash flow publicado por Shell",
+                39.5
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "La resta con su alcance",
+          "body": "Con los valores redondeados del caso, resta inversión de capital en efectivo de 21,1 al efectivo operativo de 54,7. ¿Qué resto limitado resulta? No lo etiquetes como el flujo de caja libre oficial de Shell.",
+          "answer": 33.6,
+          "tolerance": 0.01,
+          "unit": "miles de millones de USD",
+          "explanation": "54,7 − 21,1 = 33,6. La medida oficial usa una conciliación diferente; cambiar la etiqueta no cambia el cálculo.",
+          "hint": "Resta únicamente las dos partidas indicadas."
+        },
+        {
+          "type": "learn",
+          "title": "La caja de un año no dibuja el ciclo",
+          "body": "La cifra histórica anterior no permite afirmar que ese efectivo se repetirá. En un productor expuesto a mercados de materias primas, precio realizado, volumen, costes y movimientos de existencias y cobros pueden cambiar conjuntamente. Tampoco toda inversión crea capacidad nueva: parte sostiene operaciones existentes o responde a obligaciones. Elena pide un puente entre esas causas, distingue mantenimiento y crecimiento cuando existe información suficiente, y conserva como desconocido cualquier desglose que el documento no permita reconstruir.",
+          "visual": "none",
+          "takeaway": "La normalización exige causas, no repetir mecánicamente el último año.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Preguntas para atravesar un ciclo",
+            "items": [
+              "Precio realizado y volumen",
+              "Costes y capital circulante",
+              "Inversión necesaria y expansión",
+              "Obligaciones de cierre y deuda"
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una comparación poco defendible",
+          "body": "Dos compañías usan etiquetas parecidas de caja libre, pero una incluye ingresos por vender activos y la otra no. ¿Qué haría Elena antes de compararlas?",
+          "options": [
+            {
+              "text": "Elegir siempre la cifra más alta"
+            },
+            {
+              "text": "Reconciliar sus componentes y separar los cobros por ventas de activos"
+            },
+            {
+              "text": "Suponer que el nombre garantiza idéntica definición"
+            }
+          ],
+          "answer": 1,
+          "explanation": "El alcance económico de la medida importa más que la etiqueta. Una venta de activo puede aportar efectivo sin repetirse cada año.",
+          "hint": "Comprueba qué entradas y salidas incluye cada cálculo."
+        },
+        {
+          "type": "learn",
+          "title": "La sensibilidad pertenece a otra empresa ficticia",
+          "body": "Para practicar, Elena usa un productor inventado que vende 100.000 toneladas y tiene 9 millones de euros de costes del alcance, constantes solo dentro de esta simulación. A 120 €/t deja 3 millones; a 100 €/t deja 1 millón. La venta cae una sexta parte, mientras el resultado cae dos tercios. Son supuestos didácticos, no costes ni previsiones de Shell. Antes de financiar expansión se añadirían reservas, plazos, mantenimiento, cierre y necesidades de caja del escenario adverso.",
+          "visual": "none",
+          "takeaway": "Un cambio moderado en precio puede tener un efecto mucho mayor en el resultado.",
+          "figure": {
+            "kind": "table",
+            "caption": "Productor ficticio; no datos ni previsiones de Shell",
+            "headers": [
+              "Precio €/t",
+              "Ingresos millones €",
+              "Resultado del alcance millones €"
+            ],
+            "rows": [
+              [
+                120,
+                12,
+                3
+              ],
+              [
+                100,
+                10,
+                1
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia el precio del productor ficticio",
+            "options": [
+              {
+                "label": "120 €/t",
+                "title": "Hay 3 millones antes de usos excluidos",
+                "body": "Los 12 millones de ingresos menos 9 de costes dejan 3; todavía no son caja distribuible."
+              },
+              {
+                "label": "100 €/t",
+                "title": "El margen de maniobra se reduce",
+                "body": "Queda 1 millón antes de inversión, deuda y otras partidas excluidas; el volumen no cambió."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Preparar el escenario adverso",
+          "body": "En el productor ficticio, ¿qué comprobaciones ayudan a evaluar si puede atravesar una caída prolongada del precio?",
+          "options": [
+            {
+              "text": "Inversión necesaria para sostener producción"
+            },
+            {
+              "text": "Vencimientos de deuda y obligaciones de cierre"
+            },
+            {
+              "text": "Suponer que el precio volverá antes del siguiente pago"
+            },
+            {
+              "text": "Cantidad, calidad y coste de extraer recursos disponibles"
+            }
+          ],
+          "answers": [
+            0,
+            1,
+            3
+          ],
+          "explanation": "La resistencia depende de recursos, costes y compromisos con calendario; no de fijar una fecha segura para la recuperación del precio.",
+          "hint": "Conecta actividad futura y pagos que no pueden aplazarse gratuitamente."
+        }
+      ],
+      "takeaway": "En negocios cíclicos, la caja necesita una definición explícita y un escenario que conecte precio, costes, recursos e inversión."
+    },
+    {
+      "id": "stocks-16",
+      "track": "stocks",
+      "world": 25,
+      "title": "National Grid: invertir antes de recuperar",
+      "company": "National Grid",
+      "period": "Ejercicio 2024/25 terminado el 31 de marzo de 2025",
+      "summary": "Distingue inversión, activos reconocidos y dinero disponible para atender obligaciones.",
+      "minutes": 12,
+      "cover": {
+        "icon": "zap",
+        "color": "#5c74ad"
+      },
+      "sources": [
+        {
+          "title": "National Grid, Full Year Results Statement 2024/25, páginas 20 y 79: capital investment de operaciones continuadas y conciliación",
+          "url": "https://www.nationalgrid.com/document/559906/download"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una inversión grande necesita su propio puente",
+          "body": "Elena estudia las redes de National Grid para entender infraestructuras que comprometen recursos durante años. En el ejercicio terminado el 31 de marzo de 2025, la inversión de capital de operaciones continuadas fue 9.847 millones de libras, frente a 8.235 el año anterior, a tipos de cambio efectivos. La definición incluye inversiones materiales e intangibles, anticipos a proveedores y aportaciones de capital a negocios conjuntos. No debe reemplazarse automáticamente por otra partida llamada gasto de capital o por una base regulada.",
+          "visual": "none",
+          "takeaway": "La inversión publicada tiene una definición y no equivale a todas las otras bases.",
+          "figure": {
+            "kind": "table",
+            "caption": "National Grid, operaciones continuadas; millones de GBP, cambio efectivo",
+            "headers": [
+              "Ejercicio terminado en marzo",
+              "Capital investment"
+            ],
+            "rows": [
+              [
+                "2024",
+                8235
+              ],
+              [
+                "2025",
+                9847
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Cuánto aumentó la inversión definida",
+          "body": "Con las cifras comparables del caso, 9.847 y 8.235 millones de GBP, ¿cuál fue el aumento absoluto de la inversión de capital de operaciones continuadas?",
+          "answer": 1612,
+          "tolerance": 0.01,
+          "unit": "millones de GBP",
+          "explanation": "9.847 − 8.235 = 1.612 millones. La comparación conserva la definición y el tipo de cambio efectivo de la tabla.",
+          "hint": "Compara la misma medida entre los dos ejercicios."
+        },
+        {
+          "type": "learn",
+          "title": "Gastar, reconocer y cobrar son momentos distintos",
+          "body": "Elena no interpreta el incremento histórico como una garantía de retorno inmediato. En una red regulada, la base admitida para remuneración depende de las reglas aplicables; un pago a un proveedor no prueba que el importe ya se haya incorporado íntegramente a esa base. El análisis debe conectar obra, puesta en servicio, reconocimiento y cobro, además de deuda y posibles retrasos. Esta es una pauta de lectura: el caso no atribuye a National Grid un calendario contractual ficticio.",
+          "visual": "none",
+          "takeaway": "Sigue el recorrido de los recursos hasta su recuperación bajo condiciones concretas.",
+          "figure": {
+            "kind": "flow",
+            "caption": "Preguntas de una infraestructura, no calendario contractual de National Grid",
+            "items": [
+              "Comprometer y financiar recursos",
+              "Construir y poner en servicio",
+              "Reconocer según las reglas aplicables",
+              "Cobrar y atender deuda"
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "No confundir tres importes",
+          "body": "Relaciona cada descripción con su concepto en el análisis de una red.",
+          "pairs": [
+            {
+              "left": "Recursos incorporados según una medida definida",
+              "right": "Inversión de capital del alcance"
+            },
+            {
+              "left": "Activos admitidos para remuneración bajo reglas",
+              "right": "Base regulada"
+            },
+            {
+              "left": "Efectivo del período disponible según contrato para deuda",
+              "right": "Caja usada al calcular cobertura de servicio"
+            }
+          ],
+          "explanation": "Las tres magnitudes responden a preguntas distintas y no se sustituyen automáticamente.",
+          "hint": "Separa actividad de inversión, reconocimiento y capacidad de pago."
+        },
+        {
+          "type": "learn",
+          "title": "Un retraso se prueba con caja: simulación",
+          "body": "Nébula analiza ahora una red ficticia, sin atribuir sus números a National Grid. El proyecto dispone de 18 millones de euros para atender deuda según una definición contractual simplificada; debe pagar 4 de intereses y 8 de principal. Su cobertura es 1,5 veces. Si un retraso reduce esa caja a 12, baja a una vez: cubre exactamente los pagos previstos y pierde holgura. Elena revisa también reservas disponibles, sobrecostes y garantías antes de concluir que unos ingresos estables bastan.",
+          "visual": "none",
+          "takeaway": "La estabilidad del negocio no elimina el calendario de inversión y financiación.",
+          "figure": {
+            "kind": "table",
+            "caption": "Red ficticia; no datos de National Grid",
+            "headers": [
+              "Escenario",
+              "Caja para deuda millones €",
+              "Pagos millones €",
+              "Cobertura"
+            ],
+            "rows": [
+              [
+                "Sin retraso",
+                18,
+                12,
+                "1,5 veces"
+              ],
+              [
+                "Con retraso",
+                12,
+                12,
+                "1 vez"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia el calendario de la red ficticia",
+            "options": [
+              {
+                "label": "Caja llega a tiempo",
+                "title": "Existe holgura de 6 millones",
+                "body": "Con 18 disponibles y 12 de pagos, la holgura depende de que no haya otros usos fuera de la definición."
+              },
+              {
+                "label": "Caja se retrasa",
+                "title": "La cobertura llega al límite",
+                "body": "Con 12 disponibles para 12 de pagos, cualquier salida adicional requiere otros recursos o una solución contractual."
+              }
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Antes de aprobar el proyecto ficticio",
+          "body": "¿Qué revisiones completan su cobertura de deuda?",
+          "options": [
+            {
+              "text": "Sobrecostes y caja durante el retraso"
+            },
+            {
+              "text": "Qué sociedad debe y qué garantías existen"
+            },
+            {
+              "text": "Suponer que toda inversión se remunera desde el día del pago"
+            },
+            {
+              "text": "Vencimientos y condiciones para repartir efectivo"
+            }
+          ],
+          "answers": [
+            0,
+            1,
+            3
+          ],
+          "explanation": "La cobertura de un período necesita contexto contractual, societario y temporal. Una inversión no garantiza por sí misma reconocimiento ni cobro inmediato.",
+          "hint": "Conecta derechos, plazos y quién soporta cada obligación."
+        }
+      ],
+      "takeaway": "La infraestructura se analiza siguiendo recursos, reglas y calendarios: invertir, reconocer y cobrar no son el mismo hecho."
+    },
+    {
+      "id": "stocks-17",
+      "world": 26,
+      "track": "stocks",
+      "company": "Silicon Valley Bank / SVB Financial Group",
+      "title": "SVB: activos valiosos y dinero que sale hoy",
+      "minutes": 12,
+      "period": "Informe de la Reserva Federal publicado el 28 de abril de 2023; escenarios numéricos independientes y ficticios",
+      "summary": "Relaciona concentración de depósitos, vencimientos y liquidez sin confundirlos con el beneficio de un banco.",
+      "cover": {
+        "icon": "landmark",
+        "color": "#4c8399"
+      },
+      "sources": [
+        {
+          "title": "Reserva Federal, abril de 2023: evolución de Silicon Valley Bank y depósitos de SVB Financial Group",
+          "url": "https://www.federalreserve.gov/publications/2023-April-SVB-Evolution-of-Silicon-Valley-Bank.htm"
+        },
+        {
+          "title": "Reserva Federal, abril de 2023: resumen ejecutivo de la revisión de SVB",
+          "url": "https://www.federalreserve.gov/publications/2023-April-SVB-Executive-Summary.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Los clientes también forman una cartera de riesgos",
+          "body": "Elena abre el informe que la Reserva Federal publicó en abril de 2023 sobre Silicon Valley Bank. La revisión describe un negocio concentrado en empresas tecnológicas y capital de riesgo, junto con una dependencia elevada de depósitos no asegurados. Para SVB Financial Group, la sociedad matriz, indica aproximadamente un 94 % de depósitos no asegurados al cierre de 2022. Esa cifra tiene fecha y corresponde al grupo; no es un porcentaje vigente del sector.\n\nUn depósito es dinero que el banco debe al cliente. Si muchos clientes comparten necesidades y reaccionan a las mismas noticias, las retiradas pueden coincidir. Elena añade al análisis del banco una pregunta distinta de cuánto gana: quién puede pedirle el dinero, cuánto y con qué rapidez. Muchos nombres de clientes no garantizan necesidades independientes.",
+          "visual": "none",
+          "takeaway": "La financiación de un banco puede estar concentrada aunque tenga numerosos depositantes.",
+          "figure": {
+            "kind": "table",
+            "caption": "Dato histórico del informe de la Reserva Federal; alcance y fecha explícitos",
+            "headers": [
+              "Dato",
+              "Alcance"
+            ],
+            "rows": [
+              [
+                "Aproximadamente 94 % no asegurado",
+                "Depósitos de SVB Financial Group al cierre de 2022"
+              ],
+              [
+                "Clientes vinculados a tecnología y capital de riesgo",
+                "Concentración descrita por la revisión de abril de 2023"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Diversificación aparente",
+          "body": "Un banco ficticio tiene 2.000 clientes, pero la mayoría son empresas del mismo sector que necesitan efectivo cuando escasea su financiación. ¿Qué conclusión está mejor apoyada?",
+          "options": [
+            {
+              "text": "El número de clientes demuestra que las retiradas serán independientes."
+            },
+            {
+              "text": "La concentración económica puede hacer coincidir las retiradas, aunque haya muchos clientes."
+            },
+            {
+              "text": "La rentabilidad del último trimestre elimina cualquier riesgo de retirada."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La cantidad de clientes no mide por sí sola la relación entre sus necesidades de dinero. La base de depósitos también exige analizar concentración y comportamiento.",
+          "hint": "Piensa en lo que comparten los clientes, además de contarlos."
+        },
+        {
+          "type": "learn",
+          "title": "Un vencimiento lejano no paga una retirada inmediata",
+          "body": "Elena construye ahora un banco ficticio: ninguna de estas cantidades reproduce las cuentas de SVB. Tiene 12 millones disponibles hoy y un lote de bonos que, si se vende hoy, permite obtener 34 millones. Aunque sus pagos futuros pudieran ser mayores, una retirada inmediata se atiende con efectivo disponible, no con el importe que llegará dentro de años. Si salen 50 millones y no hay otra financiación, faltan cuatro.\n\nEl importe de venta ya incorpora el precio que acepta el mercado. No se vuelve a restar su descuento. Tampoco se cuenta el mismo lote como vendido y como garantía disponible para un segundo préstamo. La prueba obliga a identificar fechas, recursos utilizables y posibles dobles conteos.",
+          "visual": "none",
+          "takeaway": "Una prueba de liquidez necesita importes realizables en la fecha de pago.",
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo ficticio, millones de euros disponibles en el mismo día",
+            "headers": [
+              "Recurso o necesidad",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Efectivo inicial",
+                12
+              ],
+              [
+                "Efectivo obtenido al vender el lote",
+                34
+              ],
+              [
+                "Retiradas que hay que atender",
+                50
+              ],
+              [
+                "Falta de efectivo tras usar ambos recursos",
+                4
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mantén las retiradas en 50 millones y cambia solo el efectivo obtenido por el lote.",
+            "options": [
+              {
+                "label": "Venta por 34",
+                "title": "Faltan cuatro millones",
+                "body": "12 + 34 = 46. Frente a salidas de 50, queda un desfase de 4. No se cuenta ninguna financiación adicional."
+              },
+              {
+                "label": "Venta por 40",
+                "title": "Quedan dos millones",
+                "body": "12 + 40 = 52. Tras pagar 50 quedan 2. Este cambio de precio mejora liquidez, pero no demuestra por sí solo que toda la entidad sea solvente."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "El desfase del día",
+          "body": "En otro banco ficticio hay 8 millones de euros de efectivo y la venta de un único lote produce 27 millones netos. Debe atender retiradas de 40 millones hoy. Sin otras entradas, ¿cuántos millones faltan? No vuelvas a descontar un precio ya neto.",
+          "answer": 5,
+          "tolerance": 0.01,
+          "unit": "millones de €",
+          "explanation": "Los recursos son 8 + 27 = 35 millones. Faltan 40 − 35 = 5 millones en esa fecha.",
+          "hint": "Suma los dos recursos utilizables y compáralos con las salidas."
+        },
+        {
+          "type": "learn",
+          "title": "Liquidez, pérdidas y beneficio responden preguntas distintas",
+          "body": "Elena vuelve al expediente histórico con tres columnas. La liquidez pregunta si la entidad puede pagar cuando corresponde. La solvencia pregunta qué pérdidas pueden absorber sus recursos propios. El beneficio describe ingresos y gastos de un período. Son perspectivas relacionadas, pero una cifra positiva en una columna no resuelve automáticamente las otras.\n\nPara su próximo análisis, Elena pide un calendario de salidas, activos realmente movilizables y sensibilidad del valor de esos activos. Después revisa capital y calidad del resultado. El episodio no le proporciona una regla para adivinar la siguiente quiebra ni convierte todos los depósitos no asegurados en una pérdida inevitable. Le enseña a investigar la combinación de vulnerabilidades antes de aceptar una conclusión cómoda.",
+          "visual": "none",
+          "takeaway": "El análisis bancario necesita separar pago puntual, absorción de pérdidas y resultado.",
+          "figure": {
+            "kind": "table",
+            "caption": "Preguntas de análisis; no son cifras ni estimaciones de SVB",
+            "headers": [
+              "Perspectiva",
+              "Pregunta"
+            ],
+            "rows": [
+              [
+                "Liquidez",
+                "¿Qué dinero está disponible cuando se exige?"
+              ],
+              [
+                "Solvencia",
+                "¿Qué pérdidas puede absorber el capital?"
+              ],
+              [
+                "Beneficio",
+                "¿Qué ingresos y gastos corresponden al período?"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Tres pruebas diferentes",
+          "body": "Relaciona cada comprobación con la pregunta principal que resuelve.",
+          "pairs": [
+            {
+              "left": "Caja y ventas ejecutables antes de mañana",
+              "right": "Atender pagos en su fecha"
+            },
+            {
+              "left": "Capital restante tras un escenario de pérdidas",
+              "right": "Absorber pérdidas"
+            },
+            {
+              "left": "Intereses netos menos gastos y otras partidas del año",
+              "right": "Explicar el resultado del período"
+            }
+          ],
+          "explanation": "Las pruebas se complementan. Ninguna permite sustituir todas las demás con una sola cifra.",
+          "hint": "Distingue el momento del pago, el colchón de pérdidas y el resultado del año."
+        }
+      ],
+      "takeaway": "El banco se analiza por ambos lados del balance: quién reclama el dinero, cuándo lo reclama y qué recursos permiten responder."
+    },
+    {
+      "id": "stocks-18",
+      "world": 27,
+      "track": "stocks",
+      "company": "Berkshire Hathaway · operaciones de seguros",
+      "title": "Berkshire: cobrar antes no convierte el dinero en beneficio",
+      "minutes": 12,
+      "period": "Informe anual de Berkshire Hathaway 2023; ejercicios ficticios sobre suscripción y reservas",
+      "summary": "Separa fondos disponibles temporalmente, resultado asegurador y rendimiento de las inversiones.",
+      "cover": {
+        "icon": "shield-check",
+        "color": "#7b6fa2"
+      },
+      "sources": [
+        {
+          "title": "Berkshire Hathaway, informe anual 2023, páginas K-37 y K-42: suscripción, inversiones y float",
+          "url": "https://www.berkshirehathaway.com/2023ar/2023ar.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Dinero disponible con obligaciones detrás",
+          "body": "Elena estudia el negocio asegurador de Berkshire Hathaway. Su informe de 2023 sitúa el float en aproximadamente 169.000 millones de dólares al cierre de ese año, frente a 164.000 millones un año antes. El float son fondos que la aseguradora mantiene temporalmente mientras espera efectuar pagos ligados a sus obligaciones de seguros. No equivale a beneficio libre para repartir.\n\nLa suscripción es la actividad de aceptar riesgos a cambio de primas, el precio del seguro. Puede ganar o perder dinero antes de sumar el resultado de invertir esos fondos. Para 2023, Berkshire presenta 6.913 millones de dólares de ganancia de suscripción antes de impuestos. Elena conserva esa etiqueta: no la mezcla con beneficio neto ni con rendimiento de inversiones.",
+          "visual": "none",
+          "takeaway": "El float es una fuente de fondos con obligaciones; el resultado asegurador es otra medida.",
+          "figure": {
+            "kind": "table",
+            "caption": "Datos publicados por Berkshire, millones de dólares; cifras de float aproximadas",
+            "headers": [
+              "Medida",
+              "2023",
+              "2022"
+            ],
+            "rows": [
+              [
+                "Float al cierre del año",
+                169000,
+                164000
+              ],
+              [
+                "Resultado de suscripción antes de impuestos",
+                6913,
+                -22
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una interpretación del float",
+          "body": "Una presentación destaca que el float de una aseguradora ha crecido. ¿Qué interpretación evita confundir financiación y beneficio?",
+          "options": [
+            {
+              "text": "El aumento puede aportar fondos invertibles, pero hay que revisar obligaciones, reservas y calidad de la suscripción."
+            },
+            {
+              "text": "Todo el aumento puede pagarse como dividendo sin más comprobaciones."
+            },
+            {
+              "text": "El float y el beneficio neto son dos nombres de la misma cifra."
+            }
+          ],
+          "answer": 0,
+          "explanation": "Tener temporalmente fondos no elimina los pagos futuros asociados a las pólizas. El crecimiento necesita revisarse junto al riesgo y al resultado del negocio asegurador.",
+          "hint": "Pregunta qué compromisos acompañan al dinero."
+        },
+        {
+          "type": "learn",
+          "title": "Una buena inversión puede ocultar una mala suscripción",
+          "body": "Para practicar, Elena inventa una aseguradora independiente. Reconoce 100 millones de primas por el período, 72 de coste de siniestros y 25 de gastos aseguradores, con bases compatibles. Su resultado de suscripción es 100 − 72 − 25 = 3 millones. La proporción de esos costes frente a primas es 97 %. Es un cociente didáctico; en una cuenta real hay que comprobar el denominador de cada componente.\n\nSi obtiene además ocho millones al invertir, eso no cambia los tres ganados por asegurar. Y si suben los siniestros, una buena cartera de inversiones no demuestra que las pólizas estuvieran bien valoradas. El análisis conserva ambas fuentes de resultado separadas antes de calcular un total.",
+          "visual": "none",
+          "takeaway": "Invertir bien no corrige por sí solo el precio insuficiente de los riesgos asegurados.",
+          "figure": {
+            "kind": "table",
+            "caption": "Aseguradora ficticia, millones de euros; no son cifras de Berkshire",
+            "headers": [
+              "Partida",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Primas del período",
+                100
+              ],
+              [
+                "Coste de siniestros",
+                72
+              ],
+              [
+                "Gastos aseguradores",
+                25
+              ],
+              [
+                "Resultado de suscripción",
+                3
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Conserva primas de 100 y gastos de 25; cambia únicamente los siniestros.",
+            "options": [
+              {
+                "label": "Siniestros de 72",
+                "title": "La suscripción gana tres",
+                "body": "100 − 72 − 25 = 3. El cociente de costes del ejemplo es (72 + 25) / 100 = 97 %."
+              },
+              {
+                "label": "Siniestros de 82",
+                "title": "La suscripción pierde siete",
+                "body": "100 − 82 − 25 = −7. El cociente pasa al 107 %. Un ingreso de inversiones positivo no borra esta pérdida de suscripción."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Aislar el resultado asegurador",
+          "body": "Otra aseguradora ficticia reconoce 120 millones de primas, 84 de siniestros y 30 de gastos aseguradores del período. Obtiene además 11 millones de inversiones. ¿Cuál es únicamente su resultado de suscripción antes de impuestos?",
+          "answer": 6,
+          "tolerance": 0.01,
+          "unit": "millones de €",
+          "explanation": "120 − 84 − 30 = 6 millones. Los 11 de inversiones quedan fuera de la medida pedida.",
+          "hint": "Calcula el resultado de aceptar y cubrir riesgos; no añadas la otra fuente de ingresos."
+        },
+        {
+          "type": "learn",
+          "title": "Una estimación puede cambiar después",
+          "body": "Elena revisa las reservas, estimaciones de pagos pendientes por siniestros, y no se limita a las primas cobradas. Un expediente puede tardar en resolverse y acabar costando más de lo previsto. En un ejemplo ficticio, revisar de 20 a 26 millones una obligación estimada añade seis millones al coste reconocido, antes de impuestos y sin considerar otros ajustes. No significa necesariamente que esos seis se paguen ese mismo día.\n\nElena compara cómo evolucionaron estimaciones anteriores, qué riesgos se aceptan ahora y qué parte se transfiere mediante reaseguro, un seguro contratado por la propia aseguradora. Esa protección también exige comprobar límites y capacidad de pago del tercero. Un solo año favorable no demuestra que las estimaciones sean suficientes para todos los años siguientes.",
+          "visual": "none",
+          "takeaway": "El beneficio asegurador depende también de estimaciones que deben contrastarse con el tiempo.",
+          "figure": {
+            "kind": "table",
+            "caption": "Revisión de una reserva ficticia, millones de euros",
+            "headers": [
+              "Momento",
+              "Estimación de pagos pendientes"
+            ],
+            "rows": [
+              [
+                "Estimación inicial",
+                20
+              ],
+              [
+                "Estimación revisada",
+                26
+              ],
+              [
+                "Aumento de coste del ejemplo",
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos conclusiones justificadas",
+          "body": "Selecciona las dos afirmaciones compatibles con el análisis del caso.",
+          "options": [
+            {
+              "text": "Un aumento de reservas puede reducir el resultado sin un pago inmediato del mismo importe."
+            },
+            {
+              "text": "Una ganancia de inversiones demuestra que todas las pólizas se cobraron a precio suficiente."
+            },
+            {
+              "text": "Conviene revisar el desarrollo de estimaciones anteriores y las condiciones del reaseguro."
+            },
+            {
+              "text": "Un año bueno permite tratar el float como dinero sin obligaciones."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "Las reservas conectan estimaciones y pagos futuros. Analizar su desarrollo y la protección contratada aporta evidencia; las inversiones y un año favorable no sustituyen esa revisión.",
+          "hint": "Separa la evolución de obligaciones del rendimiento de la cartera."
+        }
+      ],
+      "takeaway": "Para entender una aseguradora, separa suscripción, inversiones y obligaciones pendientes; después estudia cómo se relacionan."
+    },
+    {
+      "id": "stocks-19",
+      "world": 28,
+      "track": "stocks",
+      "company": "Prologis",
+      "title": "Prologis: una subida del alquiler no llega a toda la cartera a la vez",
+      "minutes": 12,
+      "period": "Resultados del cuarto trimestre de 2023 publicados el 17 de enero de 2024; valoración posterior enteramente ficticia",
+      "summary": "Lee el alcance de las métricas inmobiliarias y conecta alquileres, valoración y deuda.",
+      "cover": {
+        "icon": "building-2",
+        "color": "#a8794a"
+      },
+      "sources": [
+        {
+          "title": "Prologis, resultados del cuarto trimestre y ejercicio 2023, publicación del 17 de enero de 2024",
+          "url": "https://ir.prologis.com/financials/sec-filings/content/0000950170-24-004825/pld-ex99_2.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "La etiqueta decide qué estás comparando",
+          "body": "Elena abre los resultados de Prologis, propietaria y gestora de inmuebles logísticos. En el cuarto trimestre de 2023, el comunicado presenta ocupación media del 97,1 % para la cartera propia y gestionada. También informa de un cambio del alquiler en efectivo del 51,8 % en los contratos que comenzaron, según la participación de Prologis. No son dos medidas del mismo conjunto ni describen por sí solas el ingreso total del trimestre.\n\nUn contrato antiguo puede seguir pagando la renta pactada hasta su revisión. Por eso, una diferencia elevada entre rentas nuevas y antiguas puede tardar en trasladarse al conjunto. Elena pide fechas de vencimiento, renovaciones y condiciones antes de multiplicar todos los ingresos por el porcentaje más llamativo.",
+          "visual": "none",
+          "takeaway": "El cambio de renta en contratos iniciados no es el crecimiento automático de toda la cartera.",
+          "figure": {
+            "kind": "table",
+            "caption": "Prologis, cuarto trimestre de 2023; métricas con alcances diferentes",
+            "headers": [
+              "Medida publicada",
+              "Dato",
+              "Alcance"
+            ],
+            "rows": [
+              [
+                "Ocupación media",
+                "97,1 %",
+                "Cartera propia y gestionada"
+              ],
+              [
+                "Cambio de alquiler en efectivo",
+                "51,8 %",
+                "Contratos iniciados; participación de Prologis"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "El titular y los ingresos",
+          "body": "Alguien toma el 51,8 % publicado y proyecta que todos los ingresos de Prologis crecerán de inmediato en ese porcentaje. ¿Cuál es la revisión necesaria?",
+          "options": [
+            {
+              "text": "Ninguna: todos los contratos se revisan a la vez."
+            },
+            {
+              "text": "Cambiar el porcentaje por la ocupación media y aplicarlo sin más."
+            },
+            {
+              "text": "Comprobar qué contratos se renuevan, cuándo y bajo qué condiciones antes de estimar ingresos del conjunto."
+            }
+          ],
+          "answer": 2,
+          "explanation": "La métrica de contratos iniciados no se aplica automáticamente a los contratos aún vigentes. También importan ocupación, incentivos y calendario.",
+          "hint": "Distingue los contratos que cambian de los que continúan con condiciones anteriores."
+        },
+        {
+          "type": "learn",
+          "title": "Una tasa conecta renta operativa y valor del inmueble",
+          "body": "Elena pasa a un inmueble ficticio, sin relación numérica con Prologis. Produce diez millones anuales de renta operativa neta: alquileres menos gastos operativos del inmueble, antes de intereses y otros conceptos excluidos del modelo. Una valoración simplificada divide esa renta por una tasa de capitalización. Con 5 %, el valor del activo sería 10 / 0,05 = 200 millones.\n\nLa tasa resume supuestos y rentabilidad exigida; no es una promesa ni una ley de precios. Si sube al 6 %, manteniendo exactamente la misma renta, el valor baja a 166,67 millones. Para pasar del valor del activo al de los accionistas todavía hay que considerar la deuda y otros activos y obligaciones. No se resta la deuda dos veces.",
+          "visual": "none",
+          "takeaway": "La renta puede permanecer estable mientras cambia el valor del activo y el de sus accionistas.",
+          "terms": [
+            {
+              "word": "Tasa de capitalización",
+              "meaning": "Relación entre renta operativa anual y valor del inmueble bajo un alcance y unas hipótesis definidos."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo ficticio: renta anual constante de diez millones de euros",
+            "headers": [
+              "Tasa supuesta",
+              "Valor del activo, millones de €"
+            ],
+            "rows": [
+              [
+                "5 %",
+                200
+              ],
+              [
+                "6 %",
+                "166,67"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mantén el valor del activo en 200 millones y cambia solo la deuda, sin caja ni otras partidas.",
+            "options": [
+              {
+                "label": "Deuda de 60",
+                "title": "Valor para accionistas: 140",
+                "body": "200 − 60 = 140 millones bajo el modelo. No es una cotización ni una valoración de Prologis."
+              },
+              {
+                "label": "Deuda de 100",
+                "title": "Valor para accionistas: 100",
+                "body": "200 − 100 = 100 millones. El mismo inmueble deja menos valor residual cuando debe responder por más deuda."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Del activo a sus accionistas",
+          "body": "Una cartera ficticia genera 7,2 millones de euros de renta operativa neta anual. El modelo usa una tasa del 6 % y deuda de 50 millones, sin caja ni otras partidas. ¿Qué valor en millones queda para los accionistas? Divide primero 7,2 entre 0,06 y resta después la deuda.",
+          "answer": 70,
+          "tolerance": 0.01,
+          "unit": "millones de €",
+          "explanation": "El activo vale 7,2 / 0,06 = 120 millones en el modelo. Tras restar 50 de deuda, quedan 70 millones para los accionistas.",
+          "hint": "Mantén separadas la valoración del activo y la resta de su financiación pendiente."
+        },
+        {
+          "type": "learn",
+          "title": "Cobrar más exige mirar el calendario completo",
+          "body": "Elena incorpora ahora un calendario al modelo ficticio. Una renovación puede traer una renta mayor y, al mismo tiempo, gastos para adaptar el inmueble o meses sin cobrar. Si además vence deuda, la nueva financiación puede tener condiciones diferentes. La mejora de una métrica comercial no convierte todos esos movimientos en efectivo disponible hoy.\n\nSu siguiente informe compara contratos por vencer, inversión necesaria, concentración de inquilinos y vencimientos de deuda. Mantiene separados el dato histórico, el escenario supuesto y la información que aún le falta. La investigación no termina en elegir un único porcentaje de capitalización: comprueba qué combinación de rentas, gastos y financiación haría cambiar la conclusión y cuándo podrá observarla.",
+          "visual": "none",
+          "takeaway": "El calendario de contratos, inversión y deuda determina cómo llega la actividad al accionista.",
+          "figure": {
+            "kind": "table",
+            "caption": "Calendario de revisión del modelo ficticio",
+            "headers": [
+              "Evento",
+              "Comprobación"
+            ],
+            "rows": [
+              [
+                "Renovación del alquiler",
+                "Nueva renta, incentivos y posibles períodos vacíos"
+              ],
+              [
+                "Adaptación del inmueble",
+                "Desembolso y fecha antes de cobrar"
+              ],
+              [
+                "Vencimiento de deuda",
+                "Tipo, condiciones y financiación disponible"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Una revisión más completa",
+          "body": "Selecciona las dos comprobaciones que ayudan a evaluar la cartera inmobiliaria del ejemplo.",
+          "options": [
+            {
+              "text": "Aplicar la mayor subida de renta publicada a todos los contratos."
+            },
+            {
+              "text": "Separar la rentabilidad operativa del inmueble de los pagos de su deuda."
+            },
+            {
+              "text": "Suponer que la ocupación media de un trimestre garantiza todos los cobros futuros."
+            },
+            {
+              "text": "Revisar fechas de renovación, inversiones necesarias y vencimientos de financiación."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La actividad del inmueble y su financiación se relacionan, pero deben analizarse con medidas y fechas claras. Un dato medio o una subida parcial no garantizan la caja futura.",
+          "hint": "Busca medidas comparables y un calendario que incluya entradas y salidas."
+        }
+      ],
+      "takeaway": "Analizar inmuebles exige respetar el alcance de las métricas y conectar alquileres, costes, valoración y financiación en el tiempo."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+VIRUTA 0.4.0 — VALIDACIÓN, 4 DE OCTUBRE DE 2026
+
+Aplicación/contenido: 205/205 pruebas puras, incluidas persistencia de casos,
+reglas de vida/racha, cambios de horario, recompensas únicas, conflictos,
+importación recuperable y fallos de guardado antes del descuento.
+Reglas Firestore: 112 progreso/invitaciones + 11 economía = 123/123.
+Emulador oficial: privacidad, pruebas de saldo adulterado, catálogo protegido,
+requisitos de casos, invitaciones, calendario, gastos simultáneos y borrado.
+
+WEB AISLADA
+34 insignias y 20 casos. Anchos 320/360/430. Sin errores de ejecución.
+Pérdida de vida, primer acierto, recarga y reapertura conservan el saldo.
+Se recorrieron los 20 casos completos, sus 60 ejercicios y comparaciones.
+Repetir caso no premia otra vez ni consume vidas. Borradores se conservan.
+Un examen de 7/10 resta tres vidas al entregar, no al editar preguntas.
+Respuesta perdida tras el quinto fallo: recarga y reintento usan el mismo
+UUID con cero vidas, sin doble descuento. Lo mismo en un examen 0/10.
+Un examen nuevo sí se bloquea sin vidas.
+
+ANDROID / FIREBASE REAL — 9/9
+1. Actualización conserva el borrador y logros del invitado original.
+2. Cuenta A: lección, error, gemas e insignia inicial confirmados.
+3. Cuenta B: código antes de aprender; premio a A tras verificar y completar.
+4. Recarga de vidas y compra de caso persisten; errores de caso no descuentan.
+5. Reinicio conserva cuenta, saldo, vidas e instante del caso.
+6. Otro navegador recupera el mismo monedero y avance de Android.
+7. Dos dispositivos no duplican el premio del mismo caso.
+8. Cuenta B aislada y eliminada con su atribución.
+9. Cuenta A eliminada; el invitado original reaparece intacto.
+Auditoría administrativa confirmó ausencia de Auth, progreso, monedero,
+eventos, claims, códigos, vínculos y recibos de ambas cuentas temporales.
+Se retiraron sus marcadores propios y el archivo local de credenciales.
+
+PUBLICACIÓN
+Reglas y catálogo/calendario publicados; 5.112 documentos de configuración.
+Hosting: https://brote-62d26.web.app. Cuatro páginas públicas responden 200,
+sin JavaScript, a 320 px y sin correo visible. Validación de cuenta correcta.
+Build web, sincronización Capacitor, assembleDebug y lintDebug correctos.
+APK v2 verificado e instalado como actualización: versión 0.4.0, código 5.
+Viruta-0.4.0-pruebas.apk: 5447990 bytes.
+SHA256: 8CB98244976BD1055A2C76EA08AD574F9192989F35111FE585CB39DC06528EF0
+
+LÍMITES
+Emulador Android16/API36; no dispositivo físico ni tiendas. Sin prueba de
+recepción real de correos. Sin ensayo de carga masiva. El servidor verifica
+el saldo, no certifica respuestas calculadas por el cliente. Ver JUEGO.txt.
+No se añadieron servicios de pago. El calendario debe ampliarse antes de 2036.
+
+EVIDENCIAS
+../brote-android/viruta-0.4.0-android-qa.json
+../brote-android/viruta-0.4.0-perfil-android.png
+../brote-android/viruta-0.4.0-perfil.png
+../brote-android/viruta-0.4.0-casos.png
+../brote-android/viruta-0.4.0-caso-inditex.png
+../brote-android/viruta-0.4.0-insignias-conseguidas.png
+../../work/viruta-social-retry-qa-results.json
+Pruebas: tests/; scripts QA: ../../work/viruta-social-*.cjs.

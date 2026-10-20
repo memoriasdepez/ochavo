@@ -1,0 +1,265 @@
+OCHAVO — BACKEND DE COMPRAS: SANDBOX LOCAL ACTIVO, PRODUCCIÓN PENDIENTE
+
+Criterio provisional actual: no recaudar impuestos de clientes fuera de la UE por instrucción del propietario. RevenueCat mantiene el cálculo automático desactivado globalmente. No es una regla por país ni una exención validada. UE/OSS y pruebas finales siguen pendientes; BILLING_ENABLED permanece false. Ver outputs/ochavo-pagos/AJUSTE-PROVISIONAL-IMPUESTOS.txt.
+
+Estado actualizado a 7 octubre 2026: Blaze está activo en brote-62d26. Las dos
+claves privadas V2 de RevenueCat (lectura y supresión) y el secreto HMAC están
+guardados localmente y en Secret Manager, versión 1 ENABLED verificada HTTP 200.
+Secret Manager API está ENABLED; el 403 inicial SERVICE_DISABLED se resolvió
+activando solo esa API, sin cambios IAM. El webhook permanente está ahora guardado
+en Production only con firma HMAC activada. La conexión oficial RevenueCat en
+Stripe REAL está instalada y muestra Account connected / Ochavo; las compras
+públicas siguen desactivadas y la fiscalidad y verificación final están pendientes.
+Investigación oficial: outputs/ochavo-pagos/FISCALIDAD-WEB-2026-10-07.txt.
+La última corrección del propietario confirma que no está inscrita en OSS exterior;
+PREPARACION-ALTA-OSS.txt reúne los datos conocidos sin presentar el formulario.
+No se requiere esperar instrucciones del gestor para preparar los siguientes pasos.
+Se ha probado históricamente entrega firmada sandbox mediante un túnel temporal
+autorizado hacia el receptor local demo-brote; no despliega una función en nube.
+En los emuladores demo-brote se comprobaron compras reales del SDK sandbox:
+Plus, los tres paquetes de gemas y cinco vidas. Se observaron gasto,
+renovación/cancelación de Plus, reembolso de gemas y vidas y saldos separados.
+Un checkout sandbox rechazado y cancelado mantuvo el saldo, sin abonar gemas.
+El TEST firmado respondió 200 y un reembolso de 200 gemas se procesó con la
+app cerrada, sin sincronización manual. Aislamiento HTTP del proxy: 6/6.
+El túnel y el proxy se cerraron; ausencia de listener y cloudflared verificada.
+Se restauró la URL original de RevenueCat; su receptor en nube ya está publicado,
+con las compras desactivadas mediante BILLING_ENABLED=false.
+El E2E global continúa incompleto: comprobaciones restantes
+pendientes. No interpretar tests con fixtures como compras reales.
+Las tres funciones en nube están ACTIVE; las compras públicas siguen desactivadas.
+El acceso privado de cleanup está verificado y el smoke de gate/CORS pasó 6/6;
+JWT/HMAC y entrega E2E en nube siguen pendientes. El detalle y las evidencias
+actuales están en outputs/ochavo-pagos/estado.json y CONFIGURACION-PENDIENTE.txt.
+Para probar compras y sincronización de forma aislada, consultar PRUEBAS-LOCALES.txt.
+Ese recorrido usa los tres emuladores de Firebase y un sandbox real de RevenueCat;
+no sustituye la validación posterior del receptor permanente ni de tiendas móviles.
+RevenueCat Web Billing usa Stripe como pasarela; no activar Stripe Billing directo.
+Revisar las condiciones y costes vigentes antes de cobrar. Mantener
+BILLING_ENABLED=false en producción/publicación hasta validar el flujo completo
+y las notificaciones del proveedor. El launcher habilita únicamente sandbox
+local aislado; ninguna prueba debe cobrar dinero real.
+
+Paquete independiente functions/package.json, Node 22. Configuración Firebase
+separada: functions/firebase.billing.json. No ejecutar deploy sin autorización.
+Cada función usa una cuenta de servicio dedicada; ver IAM-PUBLICACION.txt y
+work/payments/runtime-iam-plan.json antes de desplegar. Read y webhook necesitan
+Auth Viewer y Firestore; cleanup solo Firestore y la entrega de Eventarc.
+Montar secretos distintos no basta si se comparte identidad: aplicar acceso
+por secreto a las cuentas separadas. No publicar ni descargar claves de cuentas.
+
+Contrato:
+- POST /billing con Authorization: Bearer <Firebase ID token> y {"action":"sync"}.
+  Revalida token revocado, usuario existente, correo verificado y marcador de borrado.
+  Para comprobar un consumible concreto, admite además purchase:{productId,
+  transactionId,store}. El ID es storeTransaction.storeTransactionId en Web Billing
+  y transaction.transactionIdentifier en el SDK nativo; store debe ser rc_billing,
+  app_store o play_store. No enviar cantidades ni UID. La suscripción Plus conserva
+  la comprobación de entitlement y no utiliza este selector de consumibles.
+- Respuesta: {commerce:{schemaVersion,revision,premiumUntilMs,store,environment,
+  paidGranted,paidConsumed,paidLives},gems:{schemaVersion,revision,environment,
+  granted,consumed,balance},gemProducts:[{productId,gems}],
+  gemGrants:[{productId,granted}],billingEnvironment,serverTimeMs}.
+  Con selector añade purchaseConfirmation:{productId,transactionId,store,
+  confirmed,status}. El servidor busca esa transacción exacta en la respuesta
+  recién verificada de RevenueCat para el UID, entorno, tienda y producto.
+  status=confirmed y confirmed=true solo cuando está owned; refunded y false
+  solo si RevenueCat devuelve refunded; ausente o pendiente da pending y false.
+  El selector nunca concede saldo. Las comprobaciones se resuelven después de
+  escribir el monedero mediante la transacción protegida contra borrado/reintentos.
+  No se guardan IDs de tienda en bruto: el ledger conserva sus huellas habituales.
+  billingEnvironment declara el entorno configurado del servidor, production o
+  sandbox. El cliente web debe comprobarlo antes de abrir una compra y rechazar
+  cualquier diferencia con el entorno de su clave pública. No inferir el entorno
+  de una cuenta que todavía no tiene compras. paidLives=max(0,granted-consumed).
+  Un reembolso después de gastar puede dejar consumed > granted; no regalar saldo.
+- premiumUntilMs es un instante UTC en milisegundos. Reglas comparan request.time.
+  Expiración y gracia verificadas por RevenueCat; cancelar renovación no revoca
+  antes del vencimiento. Estado pendiente, pago fallido sin gracia o reembolso no
+  concede acceso. No se confía en entitlements enviados por el cliente.
+- SKU viruta_plus_monthly, entitlement viruta_plus. Google puede añadir :basePlan.
+  Precio mensual previsto 9,99 EUR se configura en la tienda, nunca en la regla.
+  Usar también ese identificador al crear el producto RevenueCat Web Billing.
+  Tiendas admitidas: play_store, app_store y rc_billing. La última significa
+  RevenueCat Web Billing con Stripe como procesador; stripe identifica otra
+  integración (Stripe Billing directo) y no está habilitada por este backend.
+- SKU viruta_lives_5, consumible de cinco vidas. Precio confirmado: 0,99 EUR.
+  Configurarlo como consumible también en RevenueCat Web Billing; no adjuntarlo
+  a viruta_plus ni a otro entitlement permanente.
+  Las compras no sustituyen las cinco vidas diarias. Se gastan diarias antes de
+  compradas. Plus no gasta ninguna. Recargar diarias por 20 gemas sigue disponible.
+- Gemas confirmadas: ochavo_gems_200, 200 gemas por 1,99 EUR;
+  ochavo_gems_600, 600 gemas por 4,99 EUR;
+  ochavo_gems_1500, 1500 gemas por 9,99 EUR.
+  Los precios se configuran en cada tienda; el servidor conserva solamente la
+  cantidad por producto. Todos son consumibles, sin entitlement permanente.
+  API v2 admite type=consumable o type=one_time con one_time.is_consumable=true.
+  No se interpretan metadatos, precios ni cantidades enviados por el cliente
+  como prueba de compra: se consulta RevenueCat con la identidad verificada.
+  BILLING_GEM_PACKS es un JSON de productos y cantidades; valor inicial [] para
+  mantener las compras de gemas desactivadas hasta completar las pruebas.
+  Ejemplo concreto en gem-packs.example.json; el catálogo se devuelve en
+  gemProducts, pero el precio visible debe venir de la tienda.
+  gemGrants desglosa por producto la cantidad acreditada de compras activas
+  verificadas, excluidos los reembolsos. Es informativo: no se debe usar para
+  confirmar compras. Una devolución simultánea puede dejarlo igual; una segunda
+  compra del mismo SKU podría aumentarlo sin acreditar la que se está esperando.
+  El cliente conserva el selector de la compra pendiente entre recargas y usa
+  purchaseConfirmation para resolverla; sin ID del SDK no deduce una confirmación
+  a partir del saldo. Un reembolso exacto termina la espera sin celebrar una compra.
+  Guardar saldo comprado en users/{uid}/commerceGems/main, separado del saldo
+  ganado en users/{uid}/game/main.gems y del saldo de vidas commerce/main.
+  balance=max(0,granted-consumed). Reembolsar no resta recompensas ganadas ni
+  repone gemas ya gastadas: conserva consumed y, si supera granted, las compras
+  siguientes compensan esa deuda. Gastos de gemas y juego deben ser atómicos.
+  Una huella de transacción global impide acreditar la misma compra a otro UID;
+  reintentos, restauración y webhooks recomputan el mismo saldo, sin incrementos
+  duplicados. Para retirar un paquete de venta, quitarlo de las ofertas de tienda
+  pero conservar para siempre su ID y cantidad en el catálogo del servidor.
+  Cambiar/quitar un paquete ya vendido bloquea la reconciliación y no altera saldos.
+- Casos: solo premium verificado, lectura /premiumCases/case-N. No gemas.
+
+Parámetros públicos del servidor:
+REVENUECAT_WEB_PUBLIC_KEY: clave pública SDK de RevenueCat Web Billing del mismo
+proyecto: rcb_sb_ para sandbox, rcb_ de producción para production. Se usa solo
+para GET /v1/subscribers/{uid}, con X-Is-Sandbox calculado por el servidor.
+Conserva identidad original, fecha exacta de gracia y estado de reembolso; no
+se utiliza información enviada por el cliente como prueba. No hace falta crear
+una clave secreta API v1. No se solicitan atributos personales del cliente.
+REVENUECAT_PROJECT_ID: projae1cdb17, ID de API del proyecto Ochavo.
+El slug ae1cdb17 que aparece en la URL del panel no es el ID para la API v2.
+
+Tres secretos separados, nunca en Git ni en variables VITE:
+REVENUECAT_SECRET_API_KEY_V2: clave secreta versión 2 de solo lectura, con permisos
+customer_information:purchases:read, customer_information:subscriptions:read y
+project_configuration:products:read.
+REVENUECAT_SECRET_API_KEY_CLEANUP_V2: otra clave secreta v2 con únicamente
+customer_information:customers:read_write. Este es el permiso mínimo documentado
+para borrar clientes; no es exclusivo de borrado y permite otras operaciones
+sobre clientes. Montarla solo en billingAccountDeleted; billing y webhook no
+reciben esta clave. El servicio solo realiza GET y DELETE para el UID marcado.
+REVENUECAT_WEBHOOK_SIGNING_SECRET: secreto HMAC del webhook; habilitado y guardado.
+La función billing recibe solo V2 de lectura; revenuecatWebhook recibe esa clave
+y el secreto HMAC; billingAccountDeleted recibe solo la clave V2 de supresión.
+No copiar una antigua REVENUECAT_SECRET_API_KEY_V1: ya no está declarada ni se usa.
+Para guardar o rotar estos secretos con la sesión de Firebase existente, consultar
+work/payments/ALMACENAR-SECRETOS.txt. El primer intento se detuvo antes de escribir
+por SERVICE_DISABLED; se conserva como histórico resuelto. El helper real de
+activación habilitó Secret Manager (ENABLED, HTTP 200, exit 0) sin cambiar IAM.
+El cargador real guardó los tres secretos en versión 1 ENABLED y terminó exit 0;
+su journal es secret-storage-state.json. No repetir guardados ya confirmados.
+No usar functions:secrets:set para esta preparación: la versión instalada del
+CLI puede registrar el contenido codificado incluso ante un fallo de red.
+El helper mantiene un registro local de versiones, no muestra los valores ni
+sus codificaciones, y no repite una escritura cuyo resultado sea incierto.
+BILLING_ENVIRONMENT: production en producción. Sandbox solo en proyecto Firebase
+de pruebas separado; nunca cambiar entorno sobre un monedero de producción.
+El código rechaza sandbox en brote-62d26 salvo dentro del emulador de Functions.
+En sandbox, CORS permite automáticamente los dos orígenes HTTPS concretos del
+proyecto Firebase aislado donde se ejecuta la función: <projectId>.web.app y
+<projectId>.firebaseapp.com. Solo acepta IDs de proyecto válidos; no comodines ni
+hosts proporcionados por el navegador. En producción se conserva la lista de
+ochavo.app, www.ochavo.app, dominios Firebase históricos y orígenes nativos.
+http://localhost:5173 y http://127.0.0.1:5173 se admiten únicamente cuando
+FUNCTIONS_EMULATOR=true. No están permitidos en una función desplegada.
+Preparar la web de pruebas con Vite --mode sandbox y variables del proyecto
+aislado. Publicarla exclusivamente en su Hosting HTTPS de pruebas. No subir
+ese build a ochavo.app ni a brote-62d26; el backend debe ser también sandbox.
+BILLING_ENABLED: true únicamente al completar configuración y pruebas.
+BILLING_GEM_PACKS: [{"productId":"ochavo_gems_200","gems":200},{"productId":"ochavo_gems_600","gems":600},{"productId":"ochavo_gems_1500","gems":1500}]
+Los tres precios confirmados no se añaden a este parámetro: se configuran en
+RevenueCat/Apple/Google y los clientes consultan los importes efectivos de tienda.
+Cliente: VITE_BILLING_API_URL = URL HTTPS de la función billing.
+La configuración de publicación excluye .env*, .secret*, archivos de claves,
+credenciales y datos de prueba del archivo fuente enviado. Los parámetros de
+entorno se resuelven por Firebase CLI y los secretos se sirven desde Secret
+Manager; no guardar credenciales administrativas en el código ni en el catálogo.
+
+RevenueCat appUserID siempre Firebase UID verificado, nunca email ni anónimo.
+Configurar restauración "Keep with original App User ID". Se rechazan compras
+cuyo propietario original sea otra cuenta. La política no transfiere saldos.
+REST v2 pagina todas las compras, todas las suscripciones y sus entitlements;
+comprueba gives_access, tipo/SKU, propietario original y entorno antes de
+conceder Plus. Así una entrada web o sandbox con el mismo SKU no tapa una
+suscripción nativa válida. Se usa la fecha de fin del periodo confirmado y,
+en gracia, la fecha de gracia v1 solo si corresponde a la misma tienda y entorno.
+No conceder acceso ilimitado por fechas ausentes o por un entitlement permanente.
+Una transacción de
+tienda conserva una huella global y propietario hash para impedir nueva
+acreditación a otro UID. Solo se escriben cambios y recibos nuevos; no hay un
+límite de 200 compras. Un historial inicial excepcional puede requerir importar
+por lotes antes de activar compras (límite transaccional de Firestore y timeout).
+Cada sincronización reserva generación antes de consultar: una respuesta vieja
+no puede sobrescribir una más reciente. Reserva también una barrera durable en
+commerceSync/main antes del GET V1, que puede crear un cliente inexistente.
+Cada generación tiene su propio lease de 120 segundos (superior al timeout de
+60 segundos de la función y a los 15 segundos de cada petición); máximo 32 leases
+simultáneos por cuenta. Se podan los vencidos al reservar una nueva consulta.
+Un snapshot resuelto libera solo su lease. Un error de red/timeout conserva la
+barrera hasta que vence: abortar la petición no demuestra que el proveedor haya
+dejado de procesarla. Los eventos webhook son idempotentes.
+
+Borrado: marcador bloquea lecturas y nuevas compras; el cliente debe eliminar
+commerce, commerceGems y commercePurchases junto al juego antes de borrar Auth.
+Trigger billingAccountDeleted vuelve a eliminar esos registros de forma
+idempotente; conserva commerceSync hasta verificar el borrado remoto. Huellas globales de transacciones (sin email, nombre,
+UID en claro ni recibo original) se conservan para evitar repetición; documentar
+retención antes de activar. La baja de cuenta no cancela suscripción de tienda.
+El trigger comprueba GET /v2/projects/{project}/customers/{uid}; si devuelve 200,
+verifica que id y project_id coincidan antes de solicitar DELETE a esa misma URL.
+No hace una comprobación concluyente mientras haya un lease vigente. Que venza
+un lease huérfano no significa que el cliente esté borrado: se consulta al proveedor.
+GET404 o DELETE404 es la primera observación de ausencia; exige otra observación
+404 al menos 60 segundos después para terminar y eliminar commerceSync. El estado
+de esta comprobación queda en Firestore; no usa esperas dentro de una función ni
+depende de memoria de un proceso. DELETE200/202, fallos de red, 429/5xx o respuesta
+incoherente impiden declarar completada la supresión y anulan la observación previa.
+
+Si una sincronización iniciada antes del marcador termina tarde, su finally
+incrementa billingRecheckCounter del marcador y anula la observación provisional.
+No recrea commerceSync si ya se había borrado. billingAccountDeleted escucha
+onDocumentWritten y se ejecuta al crear el marcador o cambiar ese contador;
+ignora otros cambios y su eliminación. La propia limpieza nunca escribe el
+marcador, por lo que no genera un bucle de eventos. Si el GET V1 recreó un cliente
+incluso después de terminar una limpieza anterior, el contador vuelve a programar
+su supresión con la misma clave V2 exclusiva de cleanup.
+Se conserva accountDeletions y las huellas globales durante y después de los
+reintentos; no se reabren lecturas ni se acredita una compra borrada. Apagar
+BILLING_ENABLED detiene nuevas compras, pero no detiene esta supresión pendiente.
+Verificar alertas de fallos y procedimiento operativo de reintento antes de
+activar compras. El proveedor y los reintentos pueden añadir minutos de demora;
+los 120/60 segundos son barreras mínimas internas, no un plazo de supresión.
+Hay una escritura adicional de control al terminar cada snapshot resuelto y
+consultas/escrituras adicionales durante el borrado. Revisarlas en los límites
+de coste y registrar operaciones pendientes si se agota la ventana de reintentos
+de Firebase. No prometer supresión inmediata en tienda.
+
+Preparados: productos/entitlement/oferta sandbox, permisos separados y los tres
+secretos, incluida firma HMAC. Probadas compras SDK web sandbox y parte de su
+economía, TEST HMAC y reembolso automático con app cerrada mediante túnel local.
+Pendientes antes de cobrar: receptor permanente y su entrega firmada HMAC,
+App Store Server Notifications / Google RTDN, publicación de Functions y
+completar pruebas sandbox web+Android+iOS de compra/cancelación/restore,
+reembolsos y vencimiento, alertas de webhook fallido y límites de coste. Probar
+que comprar vidas web y después sincronizar en Android/iOS conserva el saldo,
+y que un reembolso web no borra las compras nativas de la misma cuenta.
+Repetir para los tres paquetes de gemas: compra, repetición del mismo recibo,
+gasto concurrente, reembolso antes/después del gasto, saldo combinado con gemas
+ganadas, restauración desde otro dispositivo, cambio de cuenta y borrado.
+Los casos se publican en premiumCases, protegidos por las reglas.
+El cuerpo utiliza caseJson:string para conservar tablas con arrays anidados.
+
+Fuentes oficiales consultadas:
+https://www.revenuecat.com/docs/integrations/webhooks
+https://www.revenuecat.com/docs/integrations/webhooks/event-types-and-fields
+https://www.revenuecat.com/docs/api-v1/customer-info-model
+https://www.revenuecat.com/docs/api-v1/customers
+https://www.revenuecat.com/docs/api-v2/customer
+https://www.revenuecat.com/docs/projects/authentication
+https://www.revenuecat.com/docs/api-v2/customer/resources
+https://www.revenuecat.com/docs/api-v2/subscription-data-model
+https://www.revenuecat.com/docs/api-v2/purchase
+https://www.revenuecat.com/docs/api-v2/product
+https://www.revenuecat.com/docs/web/web-billing/product-setup
+https://www.revenuecat.com/pricing
+https://firebase.google.com/docs/functions/get-started

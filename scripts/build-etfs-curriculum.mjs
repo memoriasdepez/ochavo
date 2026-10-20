@@ -1,0 +1,10 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {parseAuthoring,compileRevision} from './course-authoring.mjs';
+import {refineEtfs} from './funds-crypto-editorial/refine.mjs';
+const root=new URL('../',import.meta.url);
+const outline=JSON.parse(await readFile(new URL('src/content/etfs-outline-v2.json',root),'utf8'));
+const records=parseAuthoring(await Promise.all(Array.from({length:2},(_,i)=>readFile(new URL('src/content/etfs-v2-authoring/part-'+(i+1)+'.txt',root),'utf8'))),outline.worlds.length*10);
+const sources=[['Investor.gov · ETFs','https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-24'],['ESMA · ETFs y fondos UCITS','https://www.esma.europa.eu/document/guidelines-etfs-and-other-ucits-issues-0'],['Investor.gov · costes de fondos','https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin'],['Investor.gov · ETFs apalancados e inversos','https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/sec']].map(([title,url])=>({title,url}));
+const result=refineEtfs(compileRevision({outline,records,start:950,sources}),records);
+await writeFile(new URL('src/content/etfs-curriculum-v2.json',root),JSON.stringify(result,null,2)+'\n');
+console.log('ETFs: '+result.lessons.length+' lecciones, '+result.exams.length+' exámenes, '+result.groups.length+' mundos.');

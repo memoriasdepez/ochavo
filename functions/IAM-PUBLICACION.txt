@@ -1,0 +1,289 @@
+OCHAVO — IDENTIDADES Y PERMISOS DEL BACKEND
+
+Backend publicado, runtime IAM y cleanup privado verificados; compras desactivadas.
+Proyecto brote-62d26, región europe-west1. Mantener BILLING_ENABLED=false.
+La revisión independiente pasó. El plan de lectura y apply real terminaron
+correctamente con el digest
+8fafd250463d47867e56e7398f35b436ab87ee67cccb3ed6f2acbe2241ce7d8c.
+work/payments/runtime-iam-state.json tiene siete pasos confirmados: tres cuentas
+creadas y grants de proyecto/secretos aplicados y verificados tras otra lectura.
+actAs está comprobado para las tres; grants operador/Compute/PubSub no cambiaron.
+El plan estático work/payments/runtime-iam-plan.json conserva su preparación
+como snapshot histórico; el estado aplicado está en el journal, sin cambiar
+aquel plan ni su digest.
+
+cloudIAMPending=false: invocador privado del cleanup SA solo en su servicio
+y grants de runtime ya están verificados. parent=null en la auditoría.
+Queda endurecimiento adicional de identidades por defecto, separado de esta
+publicación completada; no se afirma aislamiento efectivo total. El rechazo inicial de
+apply antes de crear proceso quedó resuelto tras autorización humana y apply
+exit 0. Otro rechazo posterior al deploy HTTP-only ocurrió también antes de
+crear proceso. Ese rechazo quedó resuelto después de la autorización humana
+precisa para tres funciones, APIs y agentes gestionados. El deploy estándar
+fue aprobado e iniciado. Su primer intento terminó exit 1 antes de crear
+funciones por un parámetro público que pedía respuesta non-interactive.
+Durante ese intento autorizado se observó activación de las APIs necesarias;
+no fue una operación sin efectos. La configuración de entorno se corrigió
+y pasan 62 pruebas backend. El segundo intento también paró antes de crear
+funciones, al pedir --force para retry:true de cleanup. Un inventario posterior
+completo confirmó cero Functions/Run/Eventarc y actAs para las tres cuentas.
+El tercer intento --force terminó exit 2: dos HTTP creadas en FAILED por
+ERR_PNPM_IGNORED_BUILDS, cleanup NOT_FOUND por propagación Eventarc. Ocho APIs
+ya figuran ENABLED; auditoría registra 14 altas IAM/cero bajas y secretos sin
+cambios. Incluye Editor automáticos a Compute/Cloud Services/Appspot, todavía
+bajo revisión de usos y permisos; no se ha retirado ningún grant.
+Se corrigió pnpm; el cuarto intento falló por Functions Framework ausente.
+Framework 5.0.5 se fijó tras consultar el registro oficial y pasan 62 pruebas.
+El quinto intento detectó cleanup FAILED sin eventTrigger/service; se eliminó
+solo esa función fallida con aprobación y exit 0, sin borrar datos de cuentas.
+El sexto FULL3 terminó exit 0: tres funciones ACTIVE/Node 22/cuentas Ochavo
+separadas/secretos correctos/BILLING_ENABLED=false, según auditoría real.
+El redeploy de las dos HTTP con invocador público explícito también terminó
+exit 0. El invocador privado de cleanup está aplicado/verificado exit 0. Auditoría
+posterior comprueba los tres ACTIVE y cuentas/secretos/env false; smoke 6/6
+de gate/CORS pasó por separado (sin JWT/HMAC/E2E). Revisión min0/max2, servicio
+agregado20: PATCH409 diagnosticado como revisión existente con configuración
+diferente. Sin mutación confirmada ni reintento; ajuste a2 diferido a la próxima
+publicación planificada, sin forzar otra revisión. Publicación core completada.
+El build usa realmente Compute; no retirar su Editor sin revisar ese uso.
+No hubo deploy ni activación de APIs por el intento rechazado. Evidencia del
+comando autorizado: work/payments/cloud-functions-deploy-2026-10-07.log.
+Este documento conserva el procedimiento y los efectos automáticos conocidos;
+no acredita aislamiento IAM completo, despliegue o compras habilitadas.
+
+Las variables secretas montadas por función no bastan para aislar permisos si
+las funciones comparten la misma cuenta Compute predeterminada: esa identidad
+puede consultar por API los secretos concedidos a las otras funciones.
+index.js usa tres cuentas distintas mediante serviceAccount y una expresión
+oficial Firebase con PROJECT_ID incorporado. No hay opción de volver a Compute
+ni parámetro editable que permita asignar la misma cuenta a las tres funciones.
+
+CUENTAS CREADAS Y GRANTS DIRECTOS VERIFICADOS, SIN CLAVES JSON
+billing:
+  ochavo-billing-read@brote-62d26.iam.gserviceaccount.com
+  Proyecto: roles/firebaseauth.viewer y roles/datastore.user.
+  Secreto: REVENUECAT_SECRET_API_KEY_V2.
+
+revenuecatWebhook:
+  ochavo-billing-webhook@brote-62d26.iam.gserviceaccount.com
+  Proyecto: roles/firebaseauth.viewer y roles/datastore.user.
+  Secretos: REVENUECAT_SECRET_API_KEY_V2 y REVENUECAT_WEBHOOK_SIGNING_SECRET.
+
+billingAccountDeleted:
+  ochavo-billing-cleanup@brote-62d26.iam.gserviceaccount.com
+  Proyecto: roles/datastore.user y roles/eventarc.eventReceiver.
+  Secreto: REVENUECAT_SECRET_API_KEY_CLEANUP_V2.
+  Invocación: roles/run.invoker exclusivamente sobre el servicio Cloud Run que
+  corresponda a billingAccountDeleted. Resolver su nombre desde el resultado
+  del despliegue; no conceder ese rol a todo el proyecto.
+
+Cada acceso a secreto anterior significa roles/secretmanager.secretAccessor
+en ESE recurso de Secret Manager, no a nivel proyecto. La V2 de lectura puede
+tener dos miembros (read y webhook); HMAC solo webhook; cleanup V2 solo cleanup.
+No conceder a estas cuentas Owner, Editor, Firebase Admin, Auth Admin,
+Secret Manager Admin, IAM Admin ni Service Account Token Creator. No necesitan
+crear claves, firmar tokens, asumir otra identidad ni administrar el proyecto.
+
+Auth Viewer permite getUser y la comprobación de revocación/estado actual.
+Webhook también consulta usuarios antes de reconciliar. Cleanup no utiliza
+Firebase Auth y no recibe ese rol; la prueba de borrado funciona sin adaptador
+Auth. datastore.user permite las transacciones, consultas, escrituras y borrado
+de los documentos del backend. Es un rol sobre los datos del proyecto, no una
+restricción por colección: las SDK Admin no se protegen con firestore.rules.
+Los controles de UID, entorno, marcador y transacción siguen siendo necesarios.
+
+EVENTARC Y DESPLIEGUE
+La versión instalada de Firebase CLI utiliza la cuenta de ejecución configurada
+como identidad del evento de segunda generación. Por ello cleanup necesita
+eventarc.eventReceiver y run.invoker sobre su destino. Las otras dos cuentas
+no reciben permisos de Eventarc ni de invocación entre funciones.
+Sin embargo, Firebase CLI 15.32.1 añade automáticamente roles/run.invoker y
+roles/eventarc.eventReceiver a {projectNumber}-compute@developer.gserviceaccount.com
+A NIVEL PROYECTO cuando introduce el primer servicio de eventos. Lo hace aunque
+las funciones tengan serviceAccount explícito. El revisor lo reprodujo usando
+el CLI instalado y dobles de IAM/backend sin red. El origen es
+checkIam.ensureServiceAgentRoles() -> obtainDefaultComputeServiceAgentBindings()
+cuando haveServices.length===0. Por tanto, el despliegue CLI NO garantiza que
+la cuenta Compute permanezca intacta; las cuentas personalizadas no evitan
+este efecto lateral. Estos dos grants amplían recepción/invocación, no son
+necesarios para que el runtime de Ochavo use sus cuentas dedicadas ni conceden
+por sí mismos acceso a los secretos.
+En ese mismo primer despliegue de eventos, el CLI también prepara
+roles/iam.serviceAccountTokenCreator para el agente administrado de Pub/Sub,
+service-{projectNumber}@gcp-sa-pubsub.iam.gserviceaccount.com. Es una identidad
+distinta de Compute y de las tres cuentas Ochavo. Inventariar el grant previo y
+revisar el diff, sin retirarlo como parte de la mitigación de Compute.
+No utilizar firebase deploy --dry-run como consulta sin efectos: esta versión
+del CLI ejecuta comprobaciones que pueden habilitar APIs durante prepare(),
+antes de sus ramas dryRun. La consulta del helper descrito abajo no habilita APIs.
+Los agentes administrados de Google/Cloud Functions/Eventarc conservan sus
+roles de servicio correspondientes; nunca asignar esos roles a las tres cuentas
+de ejecución. La identidad que despliega necesita iam.serviceAccounts.actAs;
+si le falta, conceder roles/iam.serviceAccountUser sobre estas tres cuentas,
+no sobre todas las cuentas del proyecto. La creación usa
+iam.serviceAccounts.create; los cambios de políticas se aplican por el operador
+autorizado, nunca por el código de las funciones ni por una clave descargada.
+
+PROCEDIMIENTO PARA EL OPERADOR
+1. Validar proyecto/identidad del operador y revisar el plan JSON. Consultar las
+   tres cuentas: si no existen, crearlas con esos IDs y displayName. Si existen,
+   comprobar que pertenecen al proyecto y que no arrastran roles más amplios.
+2. Revisar políticas vigentes del proyecto y de los tres secretos. Añadir solo
+   los miembros/roles del plan, conservando otros miembros, condiciones y etag.
+   No sustituir la política vigente por el JSON mínimo del plan ni conceder
+   SecretAccessor en el proyecto. Guardar la política previa al despliegue con
+   requestedPolicyVersion=3 para que las condiciones sean visibles. Los snapshots
+   privados pueden guardarse en work/payments/iam-snapshots/, excluido de Git.
+   Firebase CLI puede añadir los bindings de los secretos al desplegar; verificar
+   que su plan resuelto contiene exactamente los destinatarios previstos.
+3. Comprobar actAs del operador. Desplegar solo estas funciones con sus cuentas
+   dedicadas y las compras desactivadas. Resolver el servicio de cleanup, aplicar
+   run.invoker solo ahí y comprobar la entrega privada de Eventarc. No hacerlo
+   público para solucionar errores de invocación ni usar la cuenta por defecto
+   para sortear un fallo de permisos.
+4. Inspeccionar el resultado: serviceAccountEmail distinto por función, secretos
+   montados correctos, secreto V2 cleanup inaccesible a read/webhook, HMAC
+   inaccesible a read/cleanup y ausencia de roles amplios heredados. Revisar tanto
+   políticas de recurso como proyecto/carpeta/organización y grupos. Los permisos
+   son aditivos: separar cuentas no anula un permiso amplio preexistente.
+5. Si un despliegue anterior concedió acceso de estos secretos a Compute u otra
+   identidad compartida, revisar uso e impacto antes de retirar esos bindings.
+   Esta preparación no modifica otras funciones ni revoca permisos existentes.
+   Ninguna prueba local demuestra aislamiento IAM en la nube. Verificar las
+   políticas efectivas antes de activar las compras.
+
+MITIGACIÓN DE LOS GRANTS AUTOMÁTICOS A COMPUTE
+A. Justo antes de desplegar, guardar el IAM del proyecto, incluyendo etag,
+   versión, bindings completos y auditConfigs; confirmar el número del proyecto.
+   Inventariar también funciones, triggers Eventarc y destinos Cloud Run que usen
+   Compute. No deducir ausencia de uso solo porque no existan funciones anteriores:
+   pueden existir otros servicios o cambios concurrentes.
+B. Después del despliegue, volver a leer IAM v3 y calcular un diff de
+   (rol, condición completa, miembro). Los únicos candidatos de esta mitigación
+   son el miembro exacto serviceAccount:{número verificado}-compute@developer.gserviceaccount.com
+   en roles/run.invoker y roles/eventarc.eventReceiver que no existiera antes y
+   cuya incorporación se atribuya a este despliegue del CLI. Si ya existía el
+   grant, no retirarlo como parte de esta mitigación. No borrar otros miembros
+   de un binding compartido, otros roles ni modificar sus condiciones.
+C. Confirmar que el runtime Y el trigger de billingAccountDeleted usan cleanup,
+   que cleanup dispone de Eventarc receiver y Run invoker sobre su destino,
+   y que no hay otros usos de los grants nuevos a Compute. Si hay uso o dudas,
+   detener la retirada y documentar el caso concreto; no declarar terminado
+   el aislamiento ni introducir un rollback automático.
+D. Con esa revisión completada, releer la política ACTUAL y quitar únicamente
+   esos miembros nuevos en esos bindings exactos. Usar el etag actual, mantener
+   policy.version=3, todos los demás miembros/condiciones y auditConfigs. Borrar
+   un binding solo si queda sin miembros. Nunca restaurar la política anterior
+   completa: se perderían las cuentas/permisos legítimos añadidos por el despliegue
+   u otros operadores. Ante conflicto de etag, releer y revisar otra vez el diff;
+   no reenviar una política vieja ni eliminar automáticamente lo que haya cambiado.
+E. Leer IAM después de la actualización y comprobar que el diff final contiene
+   exactamente las altas previstas para Ochavo y ninguna retirada ajena. Probar
+   la entrega privada de cleanup y las identidades finales antes de activar cobros.
+   En despliegues futuros, repetir la comparación si el CLI vuelve a añadir grants.
+
+No se modifica el código del CLI ni se deshabilitan sus comprobaciones de IAM.
+Desplegar manualmente por API evitaría esa política automática concreta, pero
+exigiría gestionar build, artefactos, Cloud Functions/Run, secretos y Eventarc
+por separado; no se ha preparado ni ejecutado esa alternativa. La mitigación
+elegida es revisar el diff real del despliegue y retirar solo lo nuevo innecesario,
+con comprobación de usos y concurrencia; habilitar compras sigue condicionado
+a verificar el resultado. El plan de lectura se ejecutó y después se aplicaron
+los grants autorizados de las tres cuentas de runtime, con relectura verificada.
+Compute/PubSub no cambiaron en esa aplicación; sus posibles efectos automáticos
+del despliegue ya están inventariados: 15 altas/cero retiradas. Compute Editor
+se conserva porque es la identidad de build real; Cloud Services Editor se
+mantiene según Google. Una futura reducción requiere inventario, plan granular
+y build sin Editor comprobado. No se ha demostrado que sea seguro retirar
+Appspot Editor o Compute RunInvoker/EventarcReceiver; es endurecimiento adicional
+fuera del alcance de la publicación completada.
+
+HELPER DE DOS FASES, PLAN Y APPLY REALES VERIFICADOS
+work/payments/runtime-iam.mjs usa la sesión Firebase existente y clientes Google
+con orígenes fijos y logs silenciados antes de autenticar. No lee .secret.local,
+valores de Secret Manager, credenciales ADC ni datos de RevenueCat. Solo admite
+el proyecto brote-62d26, cuyo número valida antes de consultar otros recursos.
+Desde la raíz de outputs/brote-app:
+  node work/payments/runtime-iam.mjs plan
+La fase plan hace consultas GET y getIamPolicy/testIamPermissions (algunas son
+POST de lectura), guarda snapshots IAM completos en el registro local privado
+work/payments/runtime-iam-state.json y muestra el digest de aprobación, las altas
+exactas y la cobertura del inventario. No crea cuentas ni concede permisos.
+Revisar este resultado y el registro antes de autorizar la fase de aplicación:
+  node work/payments/runtime-iam.mjs apply --approve-plan DIGEST_REVISADO
+La aplicación exige el digest exacto, un plan de menos de 24 horas y el mismo
+proyecto/número. Crea únicamente las tres cuentas indicadas y añade únicamente
+sus seis grants de proyecto y cuatro accesos a los tres secretos. Nunca concede
+actAs al operador: lo comprueba y comunica si falta. Tampoco habilita APIs,
+modifica Compute/PubSub, cambia IAM de Cloud Run, despliega o activa compras.
+run.invoker de cleanup ya está aplicado y verificado solo en su servicio
+concreto, sin acceso público ni grant de invocación en el proyecto.
+
+Antes de cada POST que modifica Google, el helper guarda y sincroniza un journal
+con la operación iniciada y la política vigente; vuelve a leer las políticas al
+aplicar, conserva el etag, todos los miembros, condiciones y auditConfigs y envía
+versión 3. Si Google devuelve versión 1 por no haber condiciones, eso no es una
+pérdida de condiciones. La comprobación compara el contenido completo de los
+bindings/auditorías sin depender del orden de esas listas.
+No hay reintentos de red ni redirecciones. Un resultado incierto conserva la fase
+started. Repetir apply con el mismo digest solo puede confirmar ese paso mediante
+lecturas si observa exactamente el efecto previsto; si no, se detiene sin repetir
+el POST. Un conflicto de etag exige volver a generar y revisar un plan. No borrar
+el journal ni la cerradura para forzar un reintento: investigar antes cualquier
+operación incierta o proceso que siga vivo. Nunca restaurar una política antigua.
+Un cambio inesperado posterior a una escritura exige revisión aunque estén los
+grants previstos. Un grant más amplio o condicionado sobre una identidad Ochavo
+también detiene el helper. El estado final solo acredita esos grants directos,
+no aislamiento frente a herencia, grupos ni una publicación completada.
+
+Inventario incluido: Functions v1/v2 en todas las ubicaciones, Eventarc en todas
+las ubicaciones y servicios Cloud Run de europe-west1. Cada lista tiene un límite
+de 20 páginas de 100 elementos; fallos, APIs deshabilitadas o regiones inaccesibles
+quedan explícitos. No se interpreta una lista incompleta como ausencia de usos.
+El helper recoge los grants exactos actuales de Compute y del agente Pub/Sub,
+pero NO autoriza ninguna retirada: faltan otras regiones de Run, jobs, revisiones,
+VMs y otros servicios, además de la comprobación de usos concurrentes. Antes de
+la mitigación manual hay que completar el inventario relevante. La aplicación
+del helper puede preparar altas sin convertir ese inventario parcial en una
+afirmación de que Compute no se utiliza.
+El registro, su fichero temporal y la cerradura están excluidos de Git. No copiar
+snapshots IAM a paquetes públicos; contienen identidades y políticas del proyecto.
+La revisión del plan de recursos sigue aprobada. El helper también ha recibido
+revisión independiente sin bloqueos: 13/13 pruebas IAM y 34/34 junto con las
+regresiones de autenticación/almacenamiento, exclusivamente con datos ficticios.
+Evidencia: work/payments/runtime-iam-tests.log. Plan y apply reales completados
+con el digest revisado; siete pasos confirmados en runtime-iam-state.json.
+El invocador y la publicación están verificados; caps agregados, endurecimiento
+adicional y las pruebas JWT/HMAC/E2E quedan separados y pendientes.
+
+COMPATIBILIDAD CON PRUEBAS LOCALES
+El parámetro PROJECT_ID se resuelve a demo-brote en el recorrido local, por lo
+que los metadatos no apuntan a una cuenta de producción. El emulador no necesita
+crear esas cuentas ni simula IAM. Auth y Firestore siguen conectados a sus
+emuladores; las claves RevenueCat permanecen en el archivo privado de staging.
+No añadir ADC, GOOGLE_APPLICATION_CREDENTIALS o una clave de cuenta de servicio
+para las pruebas locales. scripts/billing-local.mjs copia index.js sin cambios
+y conserva los guardas de sandbox/demo-brote. Si ya estaba ejecutándose, hay que
+regenerar staging y reiniciarlo para usar el nuevo índice, sin migrar cuentas.
+Una publicación futura a otro proyecto aislado usaría las mismas tres bases
+de nombre con el PROJECT_ID de ese proyecto, con cuentas y permisos propios.
+
+FUENTES Y COMPROBACIÓN LOCAL
+https://firebase.google.com/docs/functions/manage-functions#set_a_service_account
+https://firebase.google.com/docs/functions/config-env
+https://docs.cloud.google.com/iam/docs/roles-permissions/firebaseauth
+https://docs.cloud.google.com/iam/docs/roles-permissions/firestore
+https://docs.cloud.google.com/eventarc/docs/roles-permissions
+https://cloud.google.com/secret-manager/docs/access-control
+https://cloud.google.com/iam/docs/allow-policies
+La metadata de Cloud Functions, los tres nombres por proyecto, los secretos y
+la capacidad de cleanup sin Auth están cubiertos por functions/test/billing.test.js.
+Las 62 pruebas del backend pasan. La revisión posterior confirma el diff exacto
+de rol, condición completa y miembro; IAM v3, etag actual y relectura tras
+conflicto; conservación de auditConfigs, condiciones y demás miembros; revisión
+de usos ajenos de Compute; retirada manual y ausencia de rollback de política
+antigua. Hubo plan de lectura y aplicación real autorizada de las tres cuentas
+y sus grants directos, verificada exit 0. No se han cambiado los grants del
+operador, Compute o Pub/Sub en la aplicación original del helper. La
+publicación posterior sí añadió permisos automáticos: revisar el estado actual
+en work/payments/cloud-audit-after-build-failure.log y su auditoría pendiente.

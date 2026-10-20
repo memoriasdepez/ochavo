@@ -1,0 +1,167 @@
+OCHAVO — PRUEBAS DE COMPRA AISLADAS
+
+Estado actual: la integración permanente whintgrc856bf496f está en Production
+only y no entrega eventos sandbox. Los resultados firmados descritos son
+históricos, del túnel temporal ya cerrado. Para repetirlos se necesita un destino
+de prueba aislado y su configuración explícita; no cambiar el receptor público
+de producción ni reabrir el túnel como parte de este recorrido.
+
+Este recorrido usa Auth, Firestore y Functions en este ordenador con el proyecto
+ficticio demo-brote. RevenueCat y Stripe sí reciben compras de su sandbox.
+No utiliza cuentas, progreso, gemas ni monederos de la web pública. No desplegar
+firebase.billing-local.json ni distribuir esta web de pruebas.
+Las tres identidades de ejecución se resuelven con PROJECT_ID=demo-brote.
+El emulador no necesita cuentas de servicio reales ni comprueba sus permisos
+IAM; no introducir credenciales Google para suplirlas. La verificación de IAM
+en la nube es independiente y se describe en IAM-PUBLICACION.txt.
+Blaze ya está activo en brote-62d26; este recorrido no utiliza ese backend.
+Las dos claves V2 privadas y el secreto HMAC están guardados localmente y en
+Secret Manager, versión 1 ENABLED verificada HTTP 200. HMAC está activado y la
+API de Secret Manager ENABLED; el 403 inicial SERVICE_DISABLED está resuelto.
+El runtime local demo-brote está iniciado. Se han realizado compras SDK sandbox
+de Plus, los tres paquetes de gemas y cinco vidas, con observaciones de gasto,
+reembolso, renovación/cancelación, rechazo de checkout sin abono y aislamiento
+entre cuentas. El túnel temporal autorizado estuvo activo desde 13:20:21 UTC;
+TEST firmado 200, aislamiento HTTP 6/6 y reembolso con la app cerrada observados.
+Túnel y proxy ya cerrados; no quedan listener del relay ni cloudflared. La URL
+original del webhook se restauró; el receptor en nube ya está publicado con
+BILLING_ENABLED=false. Los emuladores
+y Vite continúan en localhost, sin exposición. El E2E global continúa incompleto;
+otros casos de la matriz siguen pendientes.
+Las tres funciones en nube están ACTIVE; las compras públicas siguen desactivadas.
+Este recorrido no acredita JWT/HMAC ni entrega E2E en nube. Resultados y evidencias:
+outputs/ochavo-pagos/estado.json y CONFIGURACION-PENDIENTE.txt.
+
+Los pasos siguientes son la guía reproducible; la configuración sandbox actual
+ya existe. No volver a crear productos, claves o versiones confirmadas al releerla.
+
+1. En RevenueCat, crear una configuración RevenueCat Billing vinculada al sandbox
+   de Stripe (no Stripe Billing directo ni Test Store). Añadir viruta_plus_monthly
+   mensual a 9,99 EUR, vincularlo a viruta_plus y a una oferta actual. Añadir el
+   consumible viruta_lives_5 a 0,99 EUR por cinco vidas, sin entitlement.
+   Añadir también ochavo_gems_200 (200 gemas, 1,99 EUR), ochavo_gems_600
+   (600 gemas, 4,99 EUR) y ochavo_gems_1500 (1500 gemas, 9,99 EUR), todos
+   consumibles y sin entitlement. El ejemplo de configuración local incluye sus
+   IDs y cantidades en gemProducts; el lanzador los convierte al parámetro del
+   servidor BILLING_GEM_PACKS. No permite otros IDs ni cambiar las cantidades.
+   Puedes usar gemProducts:[] para probar únicamente Plus y vidas. Omitir esa
+   opción también deja las gemas desactivadas. No se copian cantidades al entorno
+   VITE del navegador; el cliente las obtiene del catálogo confirmado del servidor.
+   El archivo es solo un ejemplo: no activa productos ni modifica el proveedor.
+   El usuario debe autorizar los permisos de la conexión Stripe y crear las claves.
+
+2. Copiar scripts/billing-local.example.json a work/billing-local/config.json.
+   Usar projae1cdb17 como ID de proyecto para la API de RevenueCat; ae1cdb17 es
+   solo el slug de la URL del panel. Rellenar webPublicKey con la
+   clave PUBLICA de RevenueCat Billing sandbox que empieza por rcb_sb_.
+   No escribir estas opciones en .env.local ni en configuraciones de publicación.
+   El lanzador usa la misma clave pública de pruebas en el navegador y en el
+   parámetro del servidor REVENUECAT_WEB_PUBLIC_KEY. Las consultas V1 se hacen
+   desde el servidor con esa clave pública y X-Is-Sandbox=true; no se necesita
+   ni se copia una clave secreta V1.
+   gemProducts admite los tres paquetes de scripts/billing-local.example.json
+   o un subconjunto; no incluye precios ni permite configurar compras reales.
+
+3. Guardar las claves privadas únicamente en functions/.secret.local, una por línea:
+   REVENUECAT_SECRET_API_KEY_V2=<clave privada API v2 solo lectura>
+   REVENUECAT_SECRET_API_KEY_CLEANUP_V2=<otra clave privada v2 para supresión>
+   REVENUECAT_WEBHOOK_SIGNING_SECRET=<secreto HMAC de la integración>
+   La primera v2 necesita purchases:read, subscriptions:read y products:read,
+   con los prefijos indicados en ACTIVACION.txt. La de supresión necesita solo
+   customer_information:customers:read_write y se monta únicamente en el trigger
+   de cuenta eliminada. Este permiso no es exclusivo de borrado; no ampliarlo a
+   otras categorías. Nunca pegar valores en el chat ni VITE_.
+   El emulador resuelve los tres secretos declarados por las funciones, aunque
+   todavía no se esté comprobando la entrega pública de notificaciones.
+
+4. Desde la carpeta de la app, con Node 22 o posterior y Java disponible:
+   node scripts/billing-local.mjs check
+   node scripts/billing-local.mjs emulators
+   En una segunda terminal: node scripts/billing-local.mjs web
+   La comprobación solo valida configuración: no abre puertos ni llama a servicios.
+   El arranque de emuladores prepara una copia temporal del backend y de sus
+   secretos dentro de work/billing-local/backend, ignorado por Git y excluido de
+   las entregas. No modifica functions/.env.local. Borrar esta carpeta local al
+   terminar las pruebas si se desea retirar la copia de las claves.
+   El lanzador rechaza enlaces o archivos previos inesperados en el directorio
+   temporal. Vite bloquea servir secretos, el backend y work/billing-local.
+   Se usan puertos 5001 (Functions), 9099 (Auth), 8080 (Firestore) y 5173 (web).
+   Cerrar otros emuladores de estos puertos antes de arrancar este recorrido.
+
+5. Abrir http://127.0.0.1:5173, registrar una cuenta ficticia y verificarla con el
+   enlace de verificación que muestra el emulador de Auth. Mantener el correo
+   ficticio @ochavo.invalid en Auth. RevenueCat rechaza ese dominio en checkout:
+   usar reserved@example.com solo allí, sin destinatario real y conservando el
+   UID de Auth como appUserID. Usar exclusivamente
+   tarjetas de prueba publicadas por Stripe. No usar datos de tarjetas reales.
+   Verificar compra Plus, vencimiento, cancelación, sincronización repetida,
+   restauración y compra/reembolso de vidas (producto actual ya configurado).
+   Verificar los tres paquetes de gemas, reintentos que no duplican el saldo,
+   gasto antes de un reembolso, conservación de las gemas ganadas y borrado.
+   Comprobar confirmación exacta por ID del SDK: compra nueva y reembolso anterior
+   del mismo paquete pueden coincidir sin bloquear la confirmación; otra compra
+   del mismo paquete nunca debe dar por recibida la transacción que sigue pendiente.
+   Cerrar/recargar durante la confirmación debe conservar el bloqueo para evitar
+   una compra repetida. Confirmar/reembolsar ese recibo permite terminar la espera.
+   Comprobar que una cuenta distinta no recibe las ventajas de la primera.
+   En borrado, comprobar que una aceptación200/202 de DELETE no se comunica como
+   supresión final: se requieren dos observaciones GET404/DELETE404 separadas
+   por al menos 60 segundos, manteniendo el marcador. No contar como segunda
+   observación un reintento inmediato ni conservar la primera si reaparece el
+   cliente y hay que volver a pedir DELETE.
+   Reproducir GET V1 en vuelo antes de borrar la cuenta: el lease de 120 segundos
+   impide terminar la limpieza mientras sigue vigente; un timeout no lo libera.
+   El vencimiento de un proceso huérfano permite comprobar, pero no da la cuenta
+   por borrada. Una respuesta tardía incrementa el contador del marcador y
+   reprograma la limpieza, sin recrear commerceSync desde finally ni el saldo.
+   Probar dos consultas concurrentes, reinicio durante la comprobación y una
+   respuesta tardía incluso después de las dos observaciones 404 anteriores.
+   La prueba debe comprobar también que desactivar nuevas compras no suspende
+   el borrado pendiente del proveedor.
+   Las cuentas y compras del emulador no migran a la web publicada.
+
+LIMITES DE ESTA PRUEBA
+La sincronización tras comprar consulta RevenueCat desde el servidor local.
+RevenueCat no puede entregar webhooks a 127.0.0.1: no se considera probada esa
+entrega hasta disponer de un servidor HTTPS accesible. No se ha iniciado un túnel.
+No comprueba Apple o Google Play: sus sandboxes y dispositivos requieren pruebas
+independientes. La excepción HTTP del cliente solo existe en desarrollo web,
+con emuladores activados, entorno sandbox y la ruta exacta demo-brote. Android,
+iOS y publicación siguen exigiendo HTTPS y claves válidas para su plataforma.
+El backend público de Firebase Functions requiere Blaze, que ya está activo en
+brote-62d26. Las compras públicas siguen pendientes de configuración y pruebas.
+
+GUÍA REPRODUCIBLE DE ENTREGA PUBLICA SIN UN SEGUNDO PROYECTO BLAZE
+En el recorrido actual el túnel se autorizó e inició y se comprobaron TEST
+firmado y devolución con app cerrada. Se cerró el túnel y se restauró la URL
+original; estos pasos describen cómo reproducir otra prueba autorizada. Mantener
+demo-brote, emuladores y RevenueCat/Stripe sandbox; no usar cuentas reales.
+Un Quick Tunnel temporal de Cloudflare puede dar HTTPS a un proxy local. Ese
+proxy debe aceptar solo POST /revenuecatWebhook, limitar el cuerpo a 262144 bytes
+y reenviarlo sin transformar, junto con X-RevenueCat-Webhook-Signature, a
+http://127.0.0.1:5001/demo-brote/europe-west1/revenuecatWebhook. Todas las demás
+rutas deben responder 404. La función comprueba la firma HMAC y consulta al
+proveedor antes de cambiar saldo. No exponer todo el puerto de Functions,
+Auth, Firestore, Vite ni la interfaz de los emuladores. No usar credenciales
+de producción ni incluir los secretos en la URL o en registros del proxy.
+
+Configurar esa URL temporal únicamente en una integración de webhook sandbox
+de RevenueCat. Comprobar en el panel la entrega con respuesta correcta de una
+compra, una devolución y un reintento; verificar que no se duplica saldo, que
+el recibo exacto se confirma, y que una firma inválida falla. Un evento TEST
+prueba conexión y firma, pero no sustituye una compra/reembolso real de sandbox.
+Al terminar, desactivar esa integración y cerrar proxy/túnel. Su URL es pública,
+cambia al reiniciarlo y no tiene garantía de disponibilidad: no sirve como backend
+de producción. Para mantener una URL de webhook estable en la aplicación publicada
+el backend de brote-62d26 ya está publicado con Blaze y compras desactivadas.
+No hace falta un segundo proyecto Blaze para este plan.
+
+Fuentes oficiales:
+https://www.revenuecat.com/docs/web/connect-stripe-account
+https://www.revenuecat.com/docs/web/web-billing/testing
+https://www.revenuecat.com/docs/integrations/webhooks
+https://www.revenuecat.com/docs/api-v1/customers
+https://www.revenuecat.com/docs/api-v2/customer
+https://firebase.google.com/docs/functions/local-emulator
+https://firebase.google.com/docs/functions/get-started
+https://developers.cloudflare.com/tunnel/get-started/quick-tunnels/

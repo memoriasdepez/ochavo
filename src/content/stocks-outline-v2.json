@@ -1,0 +1,2355 @@
+{
+  "revision": "stocks-2026-10",
+  "worlds": [
+    {
+      "number": 1,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Qué es una acción y qué significa ser accionista",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Una acción es una parte de una empresa"
+        },
+        {
+          "number": 2,
+          "title": "Qué compras cuando compras una acción"
+        },
+        {
+          "number": 3,
+          "title": "Accionistas, directivos y trabajadores"
+        },
+        {
+          "number": 4,
+          "title": "Por qué una empresa emite acciones"
+        },
+        {
+          "number": 5,
+          "title": "Qué significa cotizar en bolsa"
+        },
+        {
+          "number": 6,
+          "title": "Cuántas acciones tiene una empresa"
+        },
+        {
+          "number": 7,
+          "title": "Qué porcentaje de la empresa te pertenece"
+        },
+        {
+          "number": 8,
+          "title": "Derechos económicos y derechos de voto"
+        },
+        {
+          "number": 9,
+          "title": "Qué puedes perder como accionista"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comprar una parte de una empresa"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Cómo ganas o pierdes dinero: precio y dividendos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Ganar dinero cuando sube una acción"
+        },
+        {
+          "number": 2,
+          "title": "Perder dinero cuando baja una acción"
+        },
+        {
+          "number": 3,
+          "title": "Qué es un dividendo"
+        },
+        {
+          "number": 4,
+          "title": "Rentabilidad por precio y por dividendos"
+        },
+        {
+          "number": 5,
+          "title": "Calcular la rentabilidad en porcentaje"
+        },
+        {
+          "number": 6,
+          "title": "Ganancias realizadas y ganancias pendientes"
+        },
+        {
+          "number": 7,
+          "title": "Cómo afectan las comisiones a tu resultado"
+        },
+        {
+          "number": 8,
+          "title": "Qué ocurre cuando reinviertes los dividendos"
+        },
+        {
+          "number": 9,
+          "title": "Por qué un dividendo alto no garantiza una buena inversión"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: calcular cuánto has ganado"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Cómo funciona la bolsa y por qué cambian los precios",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Quién compra y quién vende en bolsa"
+        },
+        {
+          "number": 2,
+          "title": "Mercado primario y mercado secundario"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se forma el precio de una acción"
+        },
+        {
+          "number": 4,
+          "title": "Precio de compra, precio de venta y diferencial"
+        },
+        {
+          "number": 5,
+          "title": "Qué significan el volumen y la liquidez"
+        },
+        {
+          "number": 6,
+          "title": "Cómo influyen las noticias en el precio"
+        },
+        {
+          "number": 7,
+          "title": "Resultados esperados frente a resultados publicados"
+        },
+        {
+          "number": 8,
+          "title": "Por qué una buena empresa puede bajar en bolsa"
+        },
+        {
+          "number": 9,
+          "title": "Qué nos dice un índice bursátil"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: interpretar una sesión de bolsa"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Rentabilidad, inflación e interés compuesto",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Rentabilidad en euros y rentabilidad en porcentaje"
+        },
+        {
+          "number": 2,
+          "title": "Rentabilidad acumulada y rentabilidad anualizada"
+        },
+        {
+          "number": 3,
+          "title": "Qué significa obtener una rentabilidad media"
+        },
+        {
+          "number": 4,
+          "title": "Cómo reduce la inflación tu poder adquisitivo"
+        },
+        {
+          "number": 5,
+          "title": "Rentabilidad nominal y rentabilidad real"
+        },
+        {
+          "number": 6,
+          "title": "Cómo funciona el interés compuesto"
+        },
+        {
+          "number": 7,
+          "title": "El efecto de invertir durante más años"
+        },
+        {
+          "number": 8,
+          "title": "El efecto de las aportaciones periódicas"
+        },
+        {
+          "number": 9,
+          "title": "Cómo se acumulan los costes con el tiempo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos inversiones a largo plazo"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Riesgo, volatilidad y pérdidas permanentes",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué significa asumir riesgo al invertir"
+        },
+        {
+          "number": 2,
+          "title": "Volatilidad: cuánto se mueve el precio"
+        },
+        {
+          "number": 3,
+          "title": "Una caída de precio frente a un deterioro del negocio"
+        },
+        {
+          "number": 4,
+          "title": "Cuánto necesitas ganar para recuperar una pérdida"
+        },
+        {
+          "number": 5,
+          "title": "Riesgo de quiebra y pérdida permanente"
+        },
+        {
+          "number": 6,
+          "title": "Riesgo de necesitar el dinero demasiado pronto"
+        },
+        {
+          "number": 7,
+          "title": "Riesgo de concentrarte en una sola empresa"
+        },
+        {
+          "number": 8,
+          "title": "Riesgos de moneda, país y regulación"
+        },
+        {
+          "number": 9,
+          "title": "Tu capacidad y tu disposición para asumir riesgo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: identificar los riesgos de una inversión"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Cómo comprar y vender acciones: órdenes y costes",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué hace un bróker"
+        },
+        {
+          "number": 2,
+          "title": "Cómo identificar una acción y su mercado"
+        },
+        {
+          "number": 3,
+          "title": "Órdenes de mercado"
+        },
+        {
+          "number": 4,
+          "title": "Órdenes limitadas"
+        },
+        {
+          "number": 5,
+          "title": "Órdenes de stop y sus limitaciones"
+        },
+        {
+          "number": 6,
+          "title": "Ejecuciones parciales y vigencia de una orden"
+        },
+        {
+          "number": 7,
+          "title": "Comisiones de compra, venta y custodia"
+        },
+        {
+          "number": 8,
+          "title": "Conversión de moneda y costes de cambio"
+        },
+        {
+          "number": 9,
+          "title": "Qué comprobar antes de confirmar una operación"
+        },
+        {
+          "number": 10,
+          "title": "Simulación: comprar y vender con distintas órdenes"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Cómo diversificar una cartera de acciones",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué es una cartera de inversión"
+        },
+        {
+          "number": 2,
+          "title": "Calcular el peso de cada posición"
+        },
+        {
+          "number": 3,
+          "title": "Diversificar entre empresas"
+        },
+        {
+          "number": 4,
+          "title": "Diversificar entre sectores"
+        },
+        {
+          "number": 5,
+          "title": "Diversificar entre países y monedas"
+        },
+        {
+          "number": 6,
+          "title": "Por qué varias empresas pueden compartir el mismo riesgo"
+        },
+        {
+          "number": 7,
+          "title": "Qué riesgos reduce la diversificación"
+        },
+        {
+          "number": 8,
+          "title": "Qué riesgos permanecen aunque diversifiques"
+        },
+        {
+          "number": 9,
+          "title": "Acciones individuales frente a fondos y ETFs"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: detectar concentraciones en una cartera"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "section": "Fundamentos de inversión en acciones",
+      "title": "Cómo empezar a investigar una empresa",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué preguntas responder antes de invertir"
+        },
+        {
+          "number": 2,
+          "title": "Dónde encontrar los informes de una empresa"
+        },
+        {
+          "number": 3,
+          "title": "Informe anual y resultados trimestrales"
+        },
+        {
+          "number": 4,
+          "title": "Presentaciones de resultados y llamadas con analistas"
+        },
+        {
+          "number": 5,
+          "title": "Información oficial frente a opiniones y rumores"
+        },
+        {
+          "number": 6,
+          "title": "Cómo comprobar una cifra y su fuente"
+        },
+        {
+          "number": 7,
+          "title": "Comparar datos del mismo periodo"
+        },
+        {
+          "number": 8,
+          "title": "Separar hechos, estimaciones y opiniones"
+        },
+        {
+          "number": 9,
+          "title": "Cómo organizar un cuaderno de investigación"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: preparar una primera ficha de empresa"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "section": "El negocio y sus cuentas",
+      "title": "Cómo gana dinero una empresa: su modelo de negocio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué vende la empresa y a quién"
+        },
+        {
+          "number": 2,
+          "title": "Qué problema resuelve para sus clientes"
+        },
+        {
+          "number": 3,
+          "title": "Venta de productos frente a prestación de servicios"
+        },
+        {
+          "number": 4,
+          "title": "Ingresos recurrentes y ventas puntuales"
+        },
+        {
+          "number": 5,
+          "title": "Quién paga y quién utiliza el producto"
+        },
+        {
+          "number": 6,
+          "title": "Cómo funcionan sus canales de distribución"
+        },
+        {
+          "number": 7,
+          "title": "Qué recursos necesita para operar"
+        },
+        {
+          "number": 8,
+          "title": "De qué proveedores y socios depende"
+        },
+        {
+          "number": 9,
+          "title": "Cómo separar los distintos negocios de un grupo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: explicar un modelo de negocio"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "section": "El negocio y sus cuentas",
+      "title": "Cómo analizar las ventas y sus fuentes de crecimiento",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Descomponer las ventas en precio y cantidad"
+        },
+        {
+          "number": 2,
+          "title": "Crecimiento orgánico frente a crecimiento por adquisiciones"
+        },
+        {
+          "number": 3,
+          "title": "Cómo afectan las divisas al crecimiento publicado"
+        },
+        {
+          "number": 4,
+          "title": "Ventas por producto, región y segmento"
+        },
+        {
+          "number": 5,
+          "title": "Clientes nuevos frente a compras de clientes existentes"
+        },
+        {
+          "number": 6,
+          "title": "Crecimiento del mercado y ganancia de cuota"
+        },
+        {
+          "number": 7,
+          "title": "Pedidos pendientes y su posible conversión en ventas"
+        },
+        {
+          "number": 8,
+          "title": "Estacionalidad y comparaciones entre periodos"
+        },
+        {
+          "number": 9,
+          "title": "Crecimiento sostenible frente a ventas adelantadas"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: explicar por qué han crecido las ventas"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "section": "El negocio y sus cuentas",
+      "title": "Costes, márgenes y punto de equilibrio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Costes fijos y costes variables"
+        },
+        {
+          "number": 2,
+          "title": "Coste de ventas y beneficio bruto"
+        },
+        {
+          "number": 3,
+          "title": "Qué mide el margen bruto"
+        },
+        {
+          "number": 4,
+          "title": "Gastos operativos y beneficio operativo"
+        },
+        {
+          "number": 5,
+          "title": "Qué mide el margen operativo"
+        },
+        {
+          "number": 6,
+          "title": "Beneficio neto y margen neto"
+        },
+        {
+          "number": 7,
+          "title": "Margen de contribución por producto"
+        },
+        {
+          "number": 8,
+          "title": "Cómo calcular el punto de equilibrio"
+        },
+        {
+          "number": 9,
+          "title": "Apalancamiento operativo: cuando las ventas amplifican el beneficio"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: qué ocurre si cambian precios, ventas y costes"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "section": "El negocio y sus cuentas",
+      "title": "Clientes, competencia y ventajas competitivas",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Identificar a los competidores reales"
+        },
+        {
+          "number": 2,
+          "title": "Qué alternativas tiene el cliente"
+        },
+        {
+          "number": 3,
+          "title": "Poder de fijación de precios"
+        },
+        {
+          "number": 4,
+          "title": "Marcas y diferenciación del producto"
+        },
+        {
+          "number": 5,
+          "title": "Costes de cambiar de proveedor"
+        },
+        {
+          "number": 6,
+          "title": "Ventajas de escala y ventajas de costes"
+        },
+        {
+          "number": 7,
+          "title": "Efectos de red"
+        },
+        {
+          "number": 8,
+          "title": "Patentes, licencias y barreras de entrada"
+        },
+        {
+          "number": 9,
+          "title": "Cómo comprobar si una ventaja competitiva se mantiene"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: evaluar una ventaja con evidencias"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "section": "El negocio y sus cuentas",
+      "title": "Cómo leer la cuenta de resultados",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué periodo describe la cuenta de resultados"
+        },
+        {
+          "number": 2,
+          "title": "Cuándo se reconoce un ingreso"
+        },
+        {
+          "number": 3,
+          "title": "Coste de ventas y gastos operativos"
+        },
+        {
+          "number": 4,
+          "title": "Amortización y depreciación"
+        },
+        {
+          "number": 5,
+          "title": "EBITDA y beneficio operativo: qué incluye cada uno"
+        },
+        {
+          "number": 6,
+          "title": "Gastos financieros e impuestos"
+        },
+        {
+          "number": 7,
+          "title": "Del ingreso al beneficio neto"
+        },
+        {
+          "number": 8,
+          "title": "Resultados extraordinarios y actividades discontinuadas"
+        },
+        {
+          "number": 9,
+          "title": "Cifras contables frente a cifras ajustadas"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: reconstruir una cuenta de resultados"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "section": "El negocio y sus cuentas",
+      "title": "Cómo leer el balance: activos, deuda y patrimonio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "La relación entre activos, pasivos y patrimonio"
+        },
+        {
+          "number": 2,
+          "title": "Caja y activos financieros"
+        },
+        {
+          "number": 3,
+          "title": "Clientes pendientes de cobro"
+        },
+        {
+          "number": 4,
+          "title": "Existencias y almacenes"
+        },
+        {
+          "number": 5,
+          "title": "Inmuebles, equipos y otros activos materiales"
+        },
+        {
+          "number": 6,
+          "title": "Intangibles y fondo de comercio"
+        },
+        {
+          "number": 7,
+          "title": "Proveedores y otras obligaciones"
+        },
+        {
+          "number": 8,
+          "title": "Deuda a corto y largo plazo"
+        },
+        {
+          "number": 9,
+          "title": "Qué representa el patrimonio neto"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: interpretar la situación de una empresa"
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "section": "El negocio y sus cuentas",
+      "title": "Cómo leer el estado de flujos de efectivo",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Por qué necesitamos un estado de flujos de efectivo"
+        },
+        {
+          "number": 2,
+          "title": "Flujos de las actividades operativas"
+        },
+        {
+          "number": 3,
+          "title": "Del beneficio a la caja operativa"
+        },
+        {
+          "number": 4,
+          "title": "Ajustes por gastos que no implican pagos"
+        },
+        {
+          "number": 5,
+          "title": "Cómo afectan los cobros, existencias y proveedores"
+        },
+        {
+          "number": 6,
+          "title": "Flujos de inversión"
+        },
+        {
+          "number": 7,
+          "title": "Flujos de financiación"
+        },
+        {
+          "number": 8,
+          "title": "Cómo reconciliar la caja inicial y final"
+        },
+        {
+          "number": 9,
+          "title": "Qué significa generar flujo de caja libre"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: seguir el dinero durante un año"
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "section": "El negocio y sus cuentas",
+      "title": "Por qué beneficio y caja no son lo mismo",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Vender no significa haber cobrado"
+        },
+        {
+          "number": 2,
+          "title": "Cobrar antes de prestar un servicio"
+        },
+        {
+          "number": 3,
+          "title": "Comprar existencias antes de venderlas"
+        },
+        {
+          "number": 4,
+          "title": "Pagar a proveedores después de comprar"
+        },
+        {
+          "number": 5,
+          "title": "Capital circulante y necesidades de financiación"
+        },
+        {
+          "number": 6,
+          "title": "Cómo calcular el ciclo de conversión de caja"
+        },
+        {
+          "number": 7,
+          "title": "Invertir hoy y reconocer el gasto durante años"
+        },
+        {
+          "number": 8,
+          "title": "Inversión de mantenimiento e inversión de crecimiento"
+        },
+        {
+          "number": 9,
+          "title": "Por qué una empresa rentable puede quedarse sin dinero"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: detectar una tensión de caja"
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "section": "El negocio y sus cuentas",
+      "title": "Cómo medir la rentabilidad del capital",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Ganar más dinero frente a utilizar mejor el capital"
+        },
+        {
+          "number": 2,
+          "title": "Rentabilidad sobre el patrimonio: ROE"
+        },
+        {
+          "number": 3,
+          "title": "Rentabilidad sobre los activos: ROA"
+        },
+        {
+          "number": 4,
+          "title": "Qué es el capital invertido"
+        },
+        {
+          "number": 5,
+          "title": "Rentabilidad sobre el capital invertido: ROIC"
+        },
+        {
+          "number": 6,
+          "title": "Cómo influye la deuda en la rentabilidad del accionista"
+        },
+        {
+          "number": 7,
+          "title": "Márgenes y rotación del capital"
+        },
+        {
+          "number": 8,
+          "title": "Rentabilidad del capital nuevo frente al capital antiguo"
+        },
+        {
+          "number": 9,
+          "title": "Crecer creando valor o destruyéndolo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos empresas con distinto uso del capital"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "section": "El negocio y sus cuentas",
+      "title": "Dividendos, recompras y reinversión: qué hacer con el beneficio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Las alternativas para utilizar el dinero disponible"
+        },
+        {
+          "number": 2,
+          "title": "Reinvertir en el propio negocio"
+        },
+        {
+          "number": 3,
+          "title": "Comprar otras empresas"
+        },
+        {
+          "number": 4,
+          "title": "Reducir deuda"
+        },
+        {
+          "number": 5,
+          "title": "Mantener caja y activos líquidos"
+        },
+        {
+          "number": 6,
+          "title": "Repartir dividendos"
+        },
+        {
+          "number": 7,
+          "title": "Recomprar acciones"
+        },
+        {
+          "number": 8,
+          "title": "Por qué importa el precio de una recompra"
+        },
+        {
+          "number": 9,
+          "title": "Cómo evaluar el historial de asignación de capital"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elegir entre varios usos del dinero"
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "section": "Valoración de empresas",
+      "title": "Precio y valor: cuánto pagas y qué recibes",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Por qué precio y valor pueden ser distintos"
+        },
+        {
+          "number": 2,
+          "title": "Qué determina el valor de un activo"
+        },
+        {
+          "number": 3,
+          "title": "Valor contable, valor de mercado y valor estimado"
+        },
+        {
+          "number": 4,
+          "title": "Qué significa valorar un negocio en funcionamiento"
+        },
+        {
+          "number": 5,
+          "title": "Valor de liquidación"
+        },
+        {
+          "number": 6,
+          "title": "Valoración relativa y valoración por flujos de caja"
+        },
+        {
+          "number": 7,
+          "title": "Por qué una empresa buena puede ser una inversión mala"
+        },
+        {
+          "number": 8,
+          "title": "Por qué una acción barata puede seguir siendo cara"
+        },
+        {
+          "number": 9,
+          "title": "Cómo expresar una valoración como un rango"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elegir un método de valoración"
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "section": "Valoración de empresas",
+      "title": "Capitalización bursátil y valor de empresa",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Cómo calcular la capitalización bursátil"
+        },
+        {
+          "number": 2,
+          "title": "Por qué el precio de una acción no indica el tamaño de la empresa"
+        },
+        {
+          "number": 3,
+          "title": "Qué representa el valor de empresa"
+        },
+        {
+          "number": 4,
+          "title": "Deuda financiera y caja"
+        },
+        {
+          "number": 5,
+          "title": "Caja disponible frente a caja restringida o necesaria"
+        },
+        {
+          "number": 6,
+          "title": "Cómo tratar los arrendamientos en una comparación"
+        },
+        {
+          "number": 7,
+          "title": "Accionistas minoritarios y participaciones en otras empresas"
+        },
+        {
+          "number": 8,
+          "title": "Otros derechos y obligaciones que afectan al valor"
+        },
+        {
+          "number": 9,
+          "title": "Pasar del valor de empresa al valor del accionista"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: construir el puente entre ambos valores"
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "section": "Valoración de empresas",
+      "title": "Beneficio por acción, dilución y recompras",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Cómo calcular el beneficio por acción"
+        },
+        {
+          "number": 2,
+          "title": "Acciones medias frente a acciones al cierre"
+        },
+        {
+          "number": 3,
+          "title": "Ampliaciones de capital"
+        },
+        {
+          "number": 4,
+          "title": "Derechos de suscripción"
+        },
+        {
+          "number": 5,
+          "title": "Remuneración mediante acciones"
+        },
+        {
+          "number": 6,
+          "title": "Opciones y otros derechos a recibir acciones"
+        },
+        {
+          "number": 7,
+          "title": "Bonos convertibles"
+        },
+        {
+          "number": 8,
+          "title": "Beneficio por acción básico y diluido"
+        },
+        {
+          "number": 9,
+          "title": "Cómo afectan las recompras al beneficio por acción"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: medir la dilución de un accionista"
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "section": "Valoración de empresas",
+      "title": "Cómo valorar con el PER y cuándo puede engañarte",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué relaciona el PER"
+        },
+        {
+          "number": 2,
+          "title": "PER histórico y PER sobre beneficios previstos"
+        },
+        {
+          "number": 3,
+          "title": "Cómo se conecta el PER con la rentabilidad del beneficio"
+        },
+        {
+          "number": 4,
+          "title": "Crecimiento y rentabilidad del capital"
+        },
+        {
+          "number": 5,
+          "title": "Deuda y riesgo detrás del múltiplo"
+        },
+        {
+          "number": 6,
+          "title": "Beneficios extraordinarios que distorsionan el PER"
+        },
+        {
+          "number": 7,
+          "title": "PER en empresas cíclicas"
+        },
+        {
+          "number": 8,
+          "title": "Qué ocurre cuando el beneficio es negativo"
+        },
+        {
+          "number": 9,
+          "title": "Qué expectativas puede incorporar un PER elevado"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos acciones con distinto PER"
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "section": "Valoración de empresas",
+      "title": "Otros múltiplos: ventas, EBITDA, caja y patrimonio",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Precio sobre ventas y valor de empresa sobre ventas"
+        },
+        {
+          "number": 2,
+          "title": "Cuándo los márgenes cambian una comparación"
+        },
+        {
+          "number": 3,
+          "title": "Valor de empresa sobre EBITDA"
+        },
+        {
+          "number": 4,
+          "title": "Lo que el EBITDA deja fuera"
+        },
+        {
+          "number": 5,
+          "title": "Valor de empresa sobre beneficio operativo"
+        },
+        {
+          "number": 6,
+          "title": "Precio sobre flujo de caja libre"
+        },
+        {
+          "number": 7,
+          "title": "Precio sobre valor contable"
+        },
+        {
+          "number": 8,
+          "title": "Múltiplos del negocio frente a múltiplos del accionista"
+        },
+        {
+          "number": 9,
+          "title": "Elegir un múltiplo adecuado para cada empresa"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: detectar una comparación incoherente"
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "section": "Valoración de empresas",
+      "title": "Cómo elegir empresas comparables",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Comparar modelos de negocio similares"
+        },
+        {
+          "number": 2,
+          "title": "Diferencias de tamaño y geografías"
+        },
+        {
+          "number": 3,
+          "title": "Diferencias de crecimiento"
+        },
+        {
+          "number": 4,
+          "title": "Diferencias de márgenes y rentabilidad del capital"
+        },
+        {
+          "number": 5,
+          "title": "Diferencias de deuda y riesgo"
+        },
+        {
+          "number": 6,
+          "title": "Homogeneizar periodos y criterios contables"
+        },
+        {
+          "number": 7,
+          "title": "Ajustar resultados extraordinarios"
+        },
+        {
+          "number": 8,
+          "title": "Mediana, dispersión y valores extremos"
+        },
+        {
+          "number": 9,
+          "title": "Por qué una media sectorial no es un precio objetivo"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: construir un grupo de comparables"
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "section": "Valoración de empresas",
+      "title": "Cómo estimar los flujos de caja futuros",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Elegir el horizonte de proyección"
+        },
+        {
+          "number": 2,
+          "title": "Estimar ventas desde precios, cantidades y clientes"
+        },
+        {
+          "number": 3,
+          "title": "Proyectar costes y márgenes"
+        },
+        {
+          "number": 4,
+          "title": "Estimar los impuestos operativos"
+        },
+        {
+          "number": 5,
+          "title": "Proyectar depreciación y amortización"
+        },
+        {
+          "number": 6,
+          "title": "Estimar la inversión en activos"
+        },
+        {
+          "number": 7,
+          "title": "Proyectar las necesidades de capital circulante"
+        },
+        {
+          "number": 8,
+          "title": "Flujo de caja para todos los financiadores: FCFF"
+        },
+        {
+          "number": 9,
+          "title": "Flujo de caja para el accionista: FCFE"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: construir una proyección coherente"
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "section": "Valoración de empresas",
+      "title": "Cómo elegir la tasa de descuento",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Por qué el dinero futuro vale menos que el dinero actual"
+        },
+        {
+          "number": 2,
+          "title": "Coste de oportunidad y rentabilidad exigida"
+        },
+        {
+          "number": 3,
+          "title": "Qué representa una tasa libre de riesgo"
+        },
+        {
+          "number": 4,
+          "title": "Prima de riesgo de las acciones"
+        },
+        {
+          "number": 5,
+          "title": "Qué intenta medir la beta y cuáles son sus límites"
+        },
+        {
+          "number": 6,
+          "title": "Cómo estimar el coste del capital propio"
+        },
+        {
+          "number": 7,
+          "title": "Cómo estimar el coste de la deuda"
+        },
+        {
+          "number": 8,
+          "title": "Coste medio ponderado del capital: WACC"
+        },
+        {
+          "number": 9,
+          "title": "Coherencia entre tasa, moneda y flujo de caja"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: descontar distintos tipos de flujos"
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "section": "Valoración de empresas",
+      "title": "Cómo calcular el valor terminal",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué ocurre después del último año proyectado"
+        },
+        {
+          "number": 2,
+          "title": "Por qué el valor terminal puede pesar tanto"
+        },
+        {
+          "number": 3,
+          "title": "Crecimiento perpetuo"
+        },
+        {
+          "number": 4,
+          "title": "Límites económicos del crecimiento a largo plazo"
+        },
+        {
+          "number": 5,
+          "title": "Relación entre crecimiento, reinversión y rentabilidad"
+        },
+        {
+          "number": 6,
+          "title": "Márgenes sostenibles en un negocio maduro"
+        },
+        {
+          "number": 7,
+          "title": "Valor terminal mediante un múltiplo de salida"
+        },
+        {
+          "number": 8,
+          "title": "Comparar el crecimiento implícito de ambos métodos"
+        },
+        {
+          "number": 9,
+          "title": "Sensibilidad a la tasa de descuento y al crecimiento"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: revisar un valor terminal demasiado optimista"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "section": "Valoración de empresas",
+      "title": "Cómo construir una valoración con escenarios y margen de seguridad",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Construir un escenario base"
+        },
+        {
+          "number": 2,
+          "title": "Construir escenarios favorables y desfavorables"
+        },
+        {
+          "number": 3,
+          "title": "Mantener relacionados los supuestos"
+        },
+        {
+          "number": 4,
+          "title": "Identificar las variables que más influyen"
+        },
+        {
+          "number": 5,
+          "title": "Crear una tabla de sensibilidad"
+        },
+        {
+          "number": 6,
+          "title": "Qué exige el precio actual: valoración inversa"
+        },
+        {
+          "number": 7,
+          "title": "Cómo ponderar escenarios sin fingir certeza"
+        },
+        {
+          "number": 8,
+          "title": "Pasar de valor de empresa a valor por acción"
+        },
+        {
+          "number": 9,
+          "title": "Qué significa utilizar un margen de seguridad"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: presentar una valoración completa"
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Cómo detectar beneficios poco sostenibles y señales contables de alerta",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Beneficios recurrentes y beneficios extraordinarios"
+        },
+        {
+          "number": 2,
+          "title": "Crecimiento de ventas frente a crecimiento de cobros"
+        },
+        {
+          "number": 3,
+          "title": "Existencias que crecen más que el negocio"
+        },
+        {
+          "number": 4,
+          "title": "Gastos registrados como activos"
+        },
+        {
+          "number": 5,
+          "title": "Cambios en las estimaciones contables"
+        },
+        {
+          "number": 6,
+          "title": "Deterioros de activos y fondo de comercio"
+        },
+        {
+          "number": 7,
+          "title": "Provisiones que aumentan o se revierten"
+        },
+        {
+          "number": 8,
+          "title": "Ajustes que la empresa repite cada año"
+        },
+        {
+          "number": 9,
+          "title": "Opinión del auditor y notas de las cuentas"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: convertir señales de alerta en preguntas"
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Cómo afectan los impuestos, las pensiones y las divisas",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Gasto fiscal, tipo efectivo e impuestos pagados"
+        },
+        {
+          "number": 2,
+          "title": "Diferencias temporales e impuestos diferidos"
+        },
+        {
+          "number": 3,
+          "title": "Cuándo puede recuperarse un activo fiscal"
+        },
+        {
+          "number": 4,
+          "title": "Compromisos de pensiones y activos que los respaldan"
+        },
+        {
+          "number": 5,
+          "title": "Qué hace cambiar un déficit de pensiones"
+        },
+        {
+          "number": 6,
+          "title": "Riesgo de vender y pagar en distintas monedas"
+        },
+        {
+          "number": 7,
+          "title": "Conversión de las cuentas de una filial extranjera"
+        },
+        {
+          "number": 8,
+          "title": "Coberturas de divisas y sus límites"
+        },
+        {
+          "number": 9,
+          "title": "Incorporar estas obligaciones a una valoración"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: ajustar beneficio, caja y valor"
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Cómo evaluar la deuda y el riesgo de insolvencia",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Identificar toda la deuda y sus condiciones"
+        },
+        {
+          "number": 2,
+          "title": "Deuda bruta y deuda neta"
+        },
+        {
+          "number": 3,
+          "title": "Vencimientos y calendario de pagos"
+        },
+        {
+          "number": 4,
+          "title": "Tipos fijos, tipos variables y coste financiero"
+        },
+        {
+          "number": 5,
+          "title": "Cobertura de intereses y capacidad de repago"
+        },
+        {
+          "number": 6,
+          "title": "Condiciones de los préstamos y restricciones financieras"
+        },
+        {
+          "number": 7,
+          "title": "Liquidez disponible y líneas de crédito"
+        },
+        {
+          "number": 8,
+          "title": "Refinanciar en condiciones adversas"
+        },
+        {
+          "number": 9,
+          "title": "Prioridad de cobro y recuperación en una insolvencia"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: someter la financiación a un escenario de estrés"
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Adquisiciones, escisiones y valoración por partes",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué compra una empresa en una adquisición"
+        },
+        {
+          "number": 2,
+          "title": "Pagar con caja, deuda o nuevas acciones"
+        },
+        {
+          "number": 3,
+          "title": "Sinergias, costes de integración y plazos"
+        },
+        {
+          "number": 4,
+          "title": "Quién recibe el valor de las sinergias"
+        },
+        {
+          "number": 5,
+          "title": "Fondo de comercio y asignación del precio de compra"
+        },
+        {
+          "number": 6,
+          "title": "Por qué aumentar el BPA no garantiza crear valor"
+        },
+        {
+          "number": 7,
+          "title": "Escisiones y separación de negocios"
+        },
+        {
+          "number": 8,
+          "title": "Filiales, participaciones y accionistas minoritarios"
+        },
+        {
+          "number": 9,
+          "title": "Cómo construir una valoración por partes"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: evaluar una operación corporativa"
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Cómo evaluar a los directivos y sus incentivos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Quién controla la empresa"
+        },
+        {
+          "number": 2,
+          "title": "Derechos de voto y clases de acciones"
+        },
+        {
+          "number": 3,
+          "title": "Funciones del consejo de administración"
+        },
+        {
+          "number": 4,
+          "title": "Independencia y capacidad de supervisión"
+        },
+        {
+          "number": 5,
+          "title": "Salarios, bonus y objetivos de los directivos"
+        },
+        {
+          "number": 6,
+          "title": "Incentivos mediante acciones y opciones"
+        },
+        {
+          "number": 7,
+          "title": "Participación económica de quienes deciden"
+        },
+        {
+          "number": 8,
+          "title": "Operaciones con partes relacionadas"
+        },
+        {
+          "number": 9,
+          "title": "Historial de decisiones y trato al accionista"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: elaborar una ficha de gobierno corporativo"
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Cómo construir y poner a prueba una tesis de inversión",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Explicar por qué podría ser una buena inversión"
+        },
+        {
+          "number": 2,
+          "title": "Identificar qué debe cumplirse"
+        },
+        {
+          "number": 3,
+          "title": "Separar la tesis del escenario de valoración"
+        },
+        {
+          "number": 4,
+          "title": "Buscar pruebas que contradigan tu idea"
+        },
+        {
+          "number": 5,
+          "title": "Utilizar casos comparables y probabilidades iniciales"
+        },
+        {
+          "number": 6,
+          "title": "Evitar el sesgo de confirmación"
+        },
+        {
+          "number": 7,
+          "title": "Evitar el sesgo de supervivencia y la información retrospectiva"
+        },
+        {
+          "number": 8,
+          "title": "Decidir qué comprobación merece la pena hacer"
+        },
+        {
+          "number": 9,
+          "title": "Definir qué te haría cambiar de opinión"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: redactar y cuestionar una tesis"
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "section": "Análisis avanzado y decisiones de inversión",
+      "title": "Cómo decidir cuánto invertir, cuándo revisar y cuándo vender",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Relacionar una inversión con tus objetivos y plazos"
+        },
+        {
+          "number": 2,
+          "title": "Dimensionar una posición según su riesgo"
+        },
+        {
+          "number": 3,
+          "title": "Revisar las exposiciones del conjunto de la cartera"
+        },
+        {
+          "number": 4,
+          "title": "Mantener liquidez para necesidades previstas"
+        },
+        {
+          "number": 5,
+          "title": "Invertir de una vez o por etapas: ventajas y límites"
+        },
+        {
+          "number": 6,
+          "title": "Establecer un calendario de seguimiento"
+        },
+        {
+          "number": 7,
+          "title": "Distinguir cambios del precio y cambios de la tesis"
+        },
+        {
+          "number": 8,
+          "title": "Vender por deterioro, valoración o necesidades de cartera"
+        },
+        {
+          "number": 9,
+          "title": "Costes, impuestos y ejecución de una decisión"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: documentar una decisión y revisar su resultado"
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar una empresa industrial",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Productos, clientes y mercados finales"
+        },
+        {
+          "number": 2,
+          "title": "Pedidos y cartera pendiente de entrega"
+        },
+        {
+          "number": 3,
+          "title": "Capacidad instalada y capacidad útil"
+        },
+        {
+          "number": 4,
+          "title": "Utilización de fábricas y costes fijos"
+        },
+        {
+          "number": 5,
+          "title": "Cuellos de botella, defectos y calidad"
+        },
+        {
+          "number": 6,
+          "title": "Fabricación propia frente a subcontratación"
+        },
+        {
+          "number": 7,
+          "title": "Existencias y necesidades de capital circulante"
+        },
+        {
+          "number": 8,
+          "title": "Mantenimiento, automatización y ampliación de capacidad"
+        },
+        {
+          "number": 9,
+          "title": "Servicios posventa, garantías y recurrencia"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una empresa industrial"
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar tiendas, supermercados y franquicias",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Tiendas propias, franquicias y venta digital"
+        },
+        {
+          "number": 2,
+          "title": "Ventas comparables frente a aperturas"
+        },
+        {
+          "number": 3,
+          "title": "Tráfico, conversión y tamaño de cesta"
+        },
+        {
+          "number": 4,
+          "title": "Ventas y rentabilidad por tienda"
+        },
+        {
+          "number": 5,
+          "title": "Maduración de nuevos establecimientos"
+        },
+        {
+          "number": 6,
+          "title": "Alquileres y compromisos de arrendamiento"
+        },
+        {
+          "number": 7,
+          "title": "Existencias, rotación y descuentos"
+        },
+        {
+          "number": 8,
+          "title": "Costes de entrega, devoluciones y canales digitales"
+        },
+        {
+          "number": 9,
+          "title": "Expansión rentable y saturación comercial"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una cadena comercial"
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar marcas de alimentación, bebidas y productos del hogar",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Categorías de producto y frecuencia de compra"
+        },
+        {
+          "number": 2,
+          "title": "Crecimiento por precios, volumen y mezcla de productos"
+        },
+        {
+          "number": 3,
+          "title": "Marcas propias frente a marcas del fabricante"
+        },
+        {
+          "number": 4,
+          "title": "Poder de negociación con supermercados y distribuidores"
+        },
+        {
+          "number": 5,
+          "title": "Materias primas, envases y costes de producción"
+        },
+        {
+          "number": 6,
+          "title": "Publicidad y construcción de marca"
+        },
+        {
+          "number": 7,
+          "title": "Distribución y disponibilidad del producto"
+        },
+        {
+          "number": 8,
+          "title": "Innovación, nuevos formatos y canibalización"
+        },
+        {
+          "number": 9,
+          "title": "Márgenes, caja y crecimiento sostenible"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una empresa de consumo"
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar empresas de lujo",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Qué diferencia el lujo del consumo convencional"
+        },
+        {
+          "number": 2,
+          "title": "Deseabilidad de marca y capacidad de subir precios"
+        },
+        {
+          "number": 3,
+          "title": "Escasez, distribución y control del producto"
+        },
+        {
+          "number": 4,
+          "title": "Tiendas propias frente a distribuidores"
+        },
+        {
+          "number": 5,
+          "title": "Categorías, marcas y segmentos de clientes"
+        },
+        {
+          "number": 6,
+          "title": "Turismo y exposición geográfica"
+        },
+        {
+          "number": 7,
+          "title": "Inventario, descuentos y mercado de segunda mano"
+        },
+        {
+          "number": 8,
+          "title": "Inversión en tiendas y experiencia de compra"
+        },
+        {
+          "number": 9,
+          "title": "Crecimiento sin deteriorar la exclusividad"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una empresa de lujo"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar una empresa de software y suscripciones",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Licencias, suscripciones y cobro por uso"
+        },
+        {
+          "number": 2,
+          "title": "Ingresos recurrentes y sus límites"
+        },
+        {
+          "number": 3,
+          "title": "Retención de clientes y retención de ingresos"
+        },
+        {
+          "number": 4,
+          "title": "Expansión de ingresos dentro de los clientes existentes"
+        },
+        {
+          "number": 5,
+          "title": "Coste de adquisición de clientes"
+        },
+        {
+          "number": 6,
+          "title": "Plazo de recuperación del gasto comercial"
+        },
+        {
+          "number": 7,
+          "title": "Valor del cliente y sensibilidad de sus estimaciones"
+        },
+        {
+          "number": 8,
+          "title": "Contratos pendientes e ingresos diferidos"
+        },
+        {
+          "number": 9,
+          "title": "Desarrollo, remuneración en acciones y flujo de caja"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una empresa de software"
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar plataformas digitales y comercio electrónico",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Venta propia frente a intermediación"
+        },
+        {
+          "number": 2,
+          "title": "Volumen de operaciones frente a ingresos"
+        },
+        {
+          "number": 3,
+          "title": "Comisiones y tasa de monetización"
+        },
+        {
+          "number": 4,
+          "title": "Usuarios activos, frecuencia y gasto por usuario"
+        },
+        {
+          "number": 5,
+          "title": "Efectos de red y uso de varias plataformas"
+        },
+        {
+          "number": 6,
+          "title": "Captación, promociones y subsidios"
+        },
+        {
+          "number": 7,
+          "title": "Logística y rentabilidad por pedido"
+        },
+        {
+          "number": 8,
+          "title": "Confianza, fraude y calidad del servicio"
+        },
+        {
+          "number": 9,
+          "title": "Crecimiento rentable y límites de la plataforma"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una plataforma"
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar redes de pago y procesadores de transacciones",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Quién participa en un pago"
+        },
+        {
+          "number": 2,
+          "title": "Bancos, redes y procesadores: funciones distintas"
+        },
+        {
+          "number": 3,
+          "title": "Autorización, compensación y liquidación"
+        },
+        {
+          "number": 4,
+          "title": "Volumen de pagos y número de transacciones"
+        },
+        {
+          "number": 5,
+          "title": "Comisiones e ingresos por servicio"
+        },
+        {
+          "number": 6,
+          "title": "Pagos internacionales y mezcla de operaciones"
+        },
+        {
+          "number": 7,
+          "title": "Fraude, devoluciones y responsabilidades"
+        },
+        {
+          "number": 8,
+          "title": "Escala, competencia y nuevas formas de pago"
+        },
+        {
+          "number": 9,
+          "title": "Regulación, márgenes y necesidades de capital"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar un negocio de pagos"
+        }
+      ]
+    },
+    {
+      "number": 43,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar fabricantes de chips y semiconductores",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Diseñadores, fabricantes y proveedores de equipos"
+        },
+        {
+          "number": 2,
+          "title": "Mercados finales y tipos de chips"
+        },
+        {
+          "number": 3,
+          "title": "Ciclos de demanda e inventarios"
+        },
+        {
+          "number": 4,
+          "title": "Capacidad de fabricación y utilización"
+        },
+        {
+          "number": 5,
+          "title": "Rendimiento de producción y coste por chip"
+        },
+        {
+          "number": 6,
+          "title": "Inversión en nuevas fábricas y tecnologías"
+        },
+        {
+          "number": 7,
+          "title": "Investigación, propiedad intelectual y competencia"
+        },
+        {
+          "number": 8,
+          "title": "Concentración de clientes y proveedores"
+        },
+        {
+          "number": 9,
+          "title": "Restricciones comerciales y riesgos geográficos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una empresa de semiconductores"
+        }
+      ]
+    },
+    {
+      "number": 44,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar petroleras, mineras y otras empresas de materias primas",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Cómo se determina el precio de la materia prima"
+        },
+        {
+          "number": 2,
+          "title": "Producción, reservas y vida de los recursos"
+        },
+        {
+          "number": 3,
+          "title": "Costes de extracción y curvas de costes"
+        },
+        {
+          "number": 4,
+          "title": "Precio realizado frente a precio de referencia"
+        },
+        {
+          "number": 5,
+          "title": "Sensibilidad del beneficio al precio"
+        },
+        {
+          "number": 6,
+          "title": "Coberturas y sus límites"
+        },
+        {
+          "number": 7,
+          "title": "Inversión de mantenimiento y nuevos proyectos"
+        },
+        {
+          "number": 8,
+          "title": "Disciplina financiera durante el ciclo"
+        },
+        {
+          "number": 9,
+          "title": "Obligaciones ambientales y costes de cierre"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: valorar un productor con distintos precios"
+        }
+      ]
+    },
+    {
+      "number": 45,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar eléctricas, infraestructuras y concesiones",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Ingresos regulados, contratados y de mercado"
+        },
+        {
+          "number": 2,
+          "title": "Activos regulados y rentabilidad permitida"
+        },
+        {
+          "number": 3,
+          "title": "Tarifas, inflación y traslado de costes"
+        },
+        {
+          "number": 4,
+          "title": "Demanda, utilización y pagos por disponibilidad"
+        },
+        {
+          "number": 5,
+          "title": "Duración de contratos y concesiones"
+        },
+        {
+          "number": 6,
+          "title": "Inversión, mantenimiento y retrasos de proyectos"
+        },
+        {
+          "number": 7,
+          "title": "Financiación del proyecto frente a deuda del grupo"
+        },
+        {
+          "number": 8,
+          "title": "Cobertura de pagos y restricciones al dividendo"
+        },
+        {
+          "number": 9,
+          "title": "Riesgos regulatorios y valor al finalizar el contrato"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una infraestructura"
+        }
+      ]
+    },
+    {
+      "number": 46,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar un banco",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Cómo gana dinero un banco"
+        },
+        {
+          "number": 2,
+          "title": "Préstamos, depósitos y otras fuentes de financiación"
+        },
+        {
+          "number": 3,
+          "title": "Margen de intereses"
+        },
+        {
+          "number": 4,
+          "title": "Comisiones, gastos y eficiencia"
+        },
+        {
+          "number": 5,
+          "title": "Calidad crediticia y préstamos problemáticos"
+        },
+        {
+          "number": 6,
+          "title": "Provisiones y coste del riesgo"
+        },
+        {
+          "number": 7,
+          "title": "Capital regulatorio y capacidad de absorber pérdidas"
+        },
+        {
+          "number": 8,
+          "title": "Liquidez y estabilidad de los depósitos"
+        },
+        {
+          "number": 9,
+          "title": "Rentabilidad sobre patrimonio y valoración bancaria"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar un banco bajo distintos escenarios"
+        }
+      ]
+    },
+    {
+      "number": 47,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar una aseguradora",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Seguros de vida y seguros generales"
+        },
+        {
+          "number": 2,
+          "title": "Primas emitidas, primas devengadas y siniestros"
+        },
+        {
+          "number": 3,
+          "title": "Gastos y resultado de la actividad aseguradora"
+        },
+        {
+          "number": 4,
+          "title": "Ratio combinado y sus límites"
+        },
+        {
+          "number": 5,
+          "title": "Reservas y evolución de las estimaciones"
+        },
+        {
+          "number": 6,
+          "title": "Reaseguro y transferencia de riesgos"
+        },
+        {
+          "number": 7,
+          "title": "Catástrofes y concentración de exposiciones"
+        },
+        {
+          "number": 8,
+          "title": "Cartera de inversiones y compromisos futuros"
+        },
+        {
+          "number": 9,
+          "title": "Solvencia, crecimiento y valoración"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una aseguradora"
+        }
+      ]
+    },
+    {
+      "number": 48,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar una empresa inmobiliaria",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Alquiler de inmuebles frente a promoción y venta"
+        },
+        {
+          "number": 2,
+          "title": "Tipos de activos y localización"
+        },
+        {
+          "number": 3,
+          "title": "Ocupación, cobros y calidad de los inquilinos"
+        },
+        {
+          "number": 4,
+          "title": "Contratos, vencimientos y actualización de rentas"
+        },
+        {
+          "number": 5,
+          "title": "Gastos operativos e ingreso operativo neto"
+        },
+        {
+          "number": 6,
+          "title": "Mantenimiento, reformas e incentivos a inquilinos"
+        },
+        {
+          "number": 7,
+          "title": "Tasas de capitalización y valor de los inmuebles"
+        },
+        {
+          "number": 8,
+          "title": "Deuda, vencimientos y exposición a los tipos"
+        },
+        {
+          "number": 9,
+          "title": "Valor neto de activos y caja recurrente"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: analizar y valorar una cartera inmobiliaria"
+        }
+      ]
+    },
+    {
+      "number": 49,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo analizar farmacéuticas y empresas de biotecnología",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Medicamentos comercializados y proyectos en desarrollo"
+        },
+        {
+          "number": 2,
+          "title": "Fases de investigación y ensayos clínicos"
+        },
+        {
+          "number": 3,
+          "title": "Probabilidad de éxito y riesgo de fracaso"
+        },
+        {
+          "number": 4,
+          "title": "Patentes, exclusividad y competencia de genéricos"
+        },
+        {
+          "number": 5,
+          "title": "Pacientes, precios y acceso al tratamiento"
+        },
+        {
+          "number": 6,
+          "title": "Ventas por producto y concentración"
+        },
+        {
+          "number": 7,
+          "title": "Investigación propia, licencias y adquisiciones"
+        },
+        {
+          "number": 8,
+          "title": "Caja disponible y financiación de los proyectos"
+        },
+        {
+          "number": 9,
+          "title": "Valoración por escenarios y probabilidades"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: valorar una cartera de medicamentos y proyectos"
+        }
+      ]
+    },
+    {
+      "number": 50,
+      "section": "Cómo analizar cada sector",
+      "title": "Cómo comparar empresas de distintos sectores: casos prácticos",
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Elegir métricas adecuadas para cada negocio"
+        },
+        {
+          "number": 2,
+          "title": "Comparar crecimiento sin mezclar sus fuentes"
+        },
+        {
+          "number": 3,
+          "title": "Comparar márgenes con modelos de negocio diferentes"
+        },
+        {
+          "number": 4,
+          "title": "Comparar rentabilidad y necesidades de capital"
+        },
+        {
+          "number": 5,
+          "title": "Comparar deuda sin ignorar la estabilidad de la caja"
+        },
+        {
+          "number": 6,
+          "title": "Distinguir beneficios temporales y sostenibles"
+        },
+        {
+          "number": 7,
+          "title": "Conectar clientes, proveedores y riesgos entre sectores"
+        },
+        {
+          "number": 8,
+          "title": "Elegir el método de valoración para cada empresa"
+        },
+        {
+          "number": 9,
+          "title": "Comparar oportunidades con supuestos explícitos"
+        },
+        {
+          "number": 10,
+          "title": "Caso práctico: comparar dos empresas y decidir qué investigar después"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+/* Shared visual accents. Navigation keeps the same four equal-width slots. */
+#brote-preview .br-nav {
+  border-top-color: light-dark(#dce4d4, #46564b);
+  box-shadow: 0 -4px 18px light-dark(#243a2810, #00000024);
+}
+
+#brote-preview .br-nav button {
+  --oc-nav-ink: light-dark(#3b632e, #d3ed90);
+  --oc-nav-soft: light-dark(#edf5df, #314330);
+  --oc-nav-edge: light-dark(#d2e4b6, #526947);
+  color: light-dark(#606d62, #b9c7bb);
+  border-radius: 17px;
+}
+
+#brote-preview .br-nav [data-nav="cases"] {
+  --oc-nav-ink: light-dark(#875b24, #f0cc8b);
+  --oc-nav-soft: light-dark(#fcf0d9, #493c29);
+  --oc-nav-edge: light-dark(#ecd5a9, #6c5735);
+}
+
+#brote-preview .br-nav [data-nav="lab"] {
+  --oc-nav-ink: light-dark(#286c63, #a9ddd5);
+  --oc-nav-soft: light-dark(#e7f5f1, #2b4641);
+  --oc-nav-edge: light-dark(#c1dfd8, #466b62);
+}
+
+#brote-preview .br-nav [data-nav="profile"] {
+  --oc-nav-ink: light-dark(#76508b, #e3caff);
+  --oc-nav-soft: light-dark(#f3eafa, #44344e);
+  --oc-nav-edge: light-dark(#e0cee9, #685073);
+}
+
+#brote-preview .br-nav svg {
+  box-sizing: content-box;
+  width: 23px;
+  height: 23px;
+  padding: 4px;
+  border-radius: 11px;
+  background: var(--oc-nav-soft);
+  color: var(--oc-nav-ink);
+  stroke-width: 2.25;
+}
+
+#brote-preview .br-nav button[aria-current="page"] {
+  color: var(--oc-nav-ink);
+  background: var(--oc-nav-soft);
+  box-shadow: inset 0 -3px 0 var(--oc-nav-edge);
+}
+
+#brote-preview .br-nav button[aria-current="page"] svg {
+  background: transparent;
+}
+
+/* Distinct, compact surfaces for the three resources; no added counters. */
+#brote-preview .vr-game-bar {
+  gap: 5px;
+}
+
+#brote-preview .vr-game-bar button {
+  gap: 4px;
+  padding: 6px 5px;
+  border: 1px solid light-dark(#ead8e8, #5b4760);
+  border-bottom-width: 3px;
+  border-radius: 14px;
+  background: light-dark(#f7eefb, #3c2f45);
+  color: light-dark(#68447f, #e3caff);
+  font-variant-numeric: tabular-nums;
+}
+
+#brote-preview .vr-game-bar button[data-vr="lives"] {
+  background: light-dark(#fff0ee, #482f34);
+  border-color: light-dark(#efd2d3, #69434b);
+  color: light-dark(#a74d60, #f1acb7);
+}
+
+#brote-preview .vr-game-bar button[data-vr="streak"] {
+  background: light-dark(#fff3da, #463a28);
+  border-color: light-dark(#efdbb2, #675436);
+  color: light-dark(#87551e, #f0cc8b);
+}
+
+#brote-preview .vr-game-bar button:active {
+  box-shadow: inset 0 2px 0 #00000008;
+}
+
+/* The profile is a collection of progress, with a quiet illustrated backdrop. */
+#brote-preview .vr-profile-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 20px 17px;
+  border: 1px solid light-dark(#dfcbe9, #645071);
+  border-bottom-width: 4px;
+  border-radius: 26px;
+  background: light-dark(#f0e4fa, #3b3048);
+  gap: 12px;
+}
+
+#brote-preview .vr-profile-hero::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 95px;
+  height: 95px;
+  right: -30px;
+  top: -38px;
+  border: 15px solid light-dark(#ffffff88, #ffffff0b);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#brote-preview .vr-profile-hero > div:last-child { min-width: 0; }
+#brote-preview .vr-profile-hero .vr-avatar { flex-basis: 74px; }
+#brote-preview .vr-profile-hero .vr-avatar svg { display: block; }
+#brote-preview .vr-profile-hero .br-eyebrow { color: light-dark(#775484, #dabfe9); }
+#brote-preview .vr-profile-hero h1 { font-size: 27px; }
+#brote-preview .vr-profile-hero p:last-child { margin-bottom: 0; }
+
+#brote-preview .vr-summary { gap: 9px; }
+
+#brote-preview .vr-summary button {
+  border-color: light-dark(#edcdd2, #654650);
+  background: light-dark(#fff1f1, #3f3036);
+  border-radius: 22px;
+  padding: 15px 6px 13px;
+}
+
+#brote-preview .vr-summary button[data-vr="gems"] {
+  border-color: light-dark(#dfcceb, #604c70);
+  background: light-dark(#f5edfc, #3a3147);
+}
+
+#brote-preview .vr-summary button[data-vr="streak"] {
+  border-color: light-dark(#ecd5a9, #655336);
+  background: light-dark(#fff4df, #403928);
+}
+
+#brote-preview .vr-summary strong {
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+#brote-preview .vr-summary span {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+#brote-preview .vr-streak-card {
+  border: 1px solid light-dark(#eddbb7, #68573c);
+  border-bottom-width: 4px;
+  border-radius: 25px;
+  background: light-dark(#fff1d6, #433829);
+}
+
+#brote-preview .vr-streak-card .br-eyebrow {
+  color: light-dark(#8a662f, #e6c084);
+}
+
+#brote-preview .vr-streak-dots {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+#brote-preview .vr-streak-dots span {
+  justify-self: center;
+  width: min(34px, 100%);
+  height: auto;
+  aspect-ratio: 1;
+  border-color: light-dark(#d7bd91, #9e865f);
+  background: light-dark(#fffaf0, #514532);
+}
+
+#brote-preview .vr-streak-dots .lit {
+  border-color: #d59b45;
+  background: #f4c575;
+  color: #553c18;
+  box-shadow: 0 3px 0 light-dark(#ddb26b, #917342);
+}
+
+#brote-preview .vr-badge.earned .vr-badge-art {
+  filter: drop-shadow(0 4px 0 light-dark(#d9e4cd, #1c2b21));
+}
+
+#brote-preview .vr-section-head > strong {
+  padding: 7px 11px;
+  border-radius: 14px;
+  background: light-dark(#e9f2db, #31432b);
+  color: light-dark(#4c6a30, #cee3a9);
+}
+
+#brote-preview .vr-invite {
+  border: 1px solid light-dark(#c8ded4, #4a6558);
+  border-bottom-width: 4px;
+  background: light-dark(#e5f3ed, #2b4136);
+}
+
+/* Simulator accents are limited to the lab, leaving exercise visuals intact. */
+#brote-preview #br-main[data-view="lab"] > .br-page > .br-eyebrow {
+  color: light-dark(#37786d, #a9ddd5);
+}
+
+#brote-preview #br-main[data-view="lab"] .br-visual {
+  border-color: light-dark(#c7ded4, #48665a);
+  border-bottom-width: 4px;
+  border-radius: 25px;
+  box-shadow: 0 5px 0 light-dark(#eff5e9, #1b2b23);
+}
+
+#brote-preview #br-main[data-view="lab"] .br-tab[aria-pressed="true"] {
+  background: light-dark(#a9ddd5, #365d53);
+  color: light-dark(#245b50, #d4f1e5);
+  border-color: light-dark(#68a79b, #6d9c8c);
+  box-shadow: 0 2px 0 light-dark(#85bfb0, #294438);
+}
+
+@media (max-width: 360px) {
+  #brote-preview .vr-game-bar { gap: 4px; }
+  #brote-preview .vr-game-bar button { gap: 3px; padding-inline: 4px; font-size: 13px; }
+  #brote-preview .vr-game-bar svg { width: 18px; height: 18px; }
+  #brote-preview .vr-profile-hero { gap: 10px; padding: 17px 13px; }
+  #brote-preview .vr-profile-hero .vr-avatar { flex-basis: 60px; }
+  #brote-preview .vr-profile-hero h1 { font-size: 24px; }
+  #brote-preview .vr-profile-hero p { font-size: 12px; }
+  #brote-preview .vr-summary { gap: 7px; }
+  #brote-preview .vr-summary button { padding-inline: 4px; }
+  #brote-preview .vr-summary strong { font-size: 23px; }
+  #brote-preview .vr-summary span { font-size: 10px; }
+  #brote-preview .vr-streak-card { padding: 18px 15px; }
+}

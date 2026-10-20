@@ -1,0 +1,70 @@
+VIRUTA — WEB Y ANDROID
+Versión de pruebas 0.3.0 · 4 de octubre de 2026
+
+ENTREGA
+Tres caminos independientes: Acciones 100 lecciones/10 exámenes,
+ETFs 50/5 y Cripto 50/5. Selector con progreso por camino y acceso desde
+Caminos en la barra inferior. Mapa continuo con separación entre mundos.
+La mascota y el diseño se mantienen. Los 50 puntos originales de Acciones
+conservan exactamente su contenido e identidad, además del progreso anterior.
+
+Web publicada: https://brote-62d26.web.app.
+APK: ../brote-android/Viruta-0.3.0-pruebas.apk.
+Instalación: ../brote-android/INSTALAR.txt.
+Firma, tamaño y hash: ../brote-android/SHA256.txt.
+Contenido y futuras ampliaciones: CONTENIDO.txt.
+
+137/137 pruebas de aplicación y 76/76 de reglas superadas. Construcción,
+lint, firma e instalación como actualización comprobados. Las comprobaciones
+web recorren los 1.600 pasos y los 20 exámenes. Recorrido Android/web con
+Firebase real: 8/8 comprobaciones. Las cuentas temporales y sus datos se han
+retirado; el invitado original sigue en la primera lección, paso 2/8.
+Evidencias y límites: VALIDACION.txt. Histórico: VALIDACION-0.2.1.txt.
+
+CUENTA Y PROGRESO
+Registro, confirmación de correo, acceso, recuperación, cierre y eliminación
+de cuenta. El progreso incluye lecciones, respuestas pendientes y exámenes.
+El invitado solo se importa a la cuenta cuando la persona lo solicita.
+Preferences guarda el progreso en Android; la web usa almacenamiento local.
+La sincronización requiere correo confirmado y conexión. El mensaje
+«Progreso sincronizado» confirma la respuesta del servidor.
+
+La eliminación crea un marcador mínimo y borra el progreso en una transacción;
+después elimina el perfil y su copia local. El marcador conserva solo UID y
+fecha para bloquear subidas de otras sesiones. Su retirada es administrativa,
+con cuenta ausente y antigüedad mínima de dos horas; no es automática.
+Si falla el borrado del perfil, se conserva la copia local para reintentar.
+Desinstalar o cerrar sesión no equivale a eliminar la cuenta. El invitado
+independiente y las copias de otros dispositivos no se eliminan remotamente.
+
+DESARROLLO
+  pnpm install --frozen-lockfile
+  pnpm dev
+  pnpm test
+  pnpm test:rules
+  pnpm build
+  pnpm android:apk
+
+El paso previo a dev/build valida y compone los caminos y genera las páginas públicas a partir de los mismos
+textos de la app. No publiques dist sin recompilar tras cambiar el contenido.
+ANDROID.txt explica la compilación nativa. ACTIVACION.txt explica el servicio
+y el mantenimiento administrativo. Los identificadores brote-62d26 y
+app.brote.inversion se conservan para mantener instalaciones y cuentas.
+Firebase sigue en Spark sin facturación vinculada. Firestore está en Madrid;
+Authentication procesa datos en Estados Unidos y Hosting usa infraestructura
+global. No todo el tratamiento se realiza en la Unión Europea.
+
+TITULAR
+MEMORIAS MEDIA SL · NIF B13870266.
+Calle Álvaro de Bazán 48 1b, 52006 Melilla, España.
+Registro Mercantil de Melilla, sección 8, hoja ML 3342, inscripción 2,
+de 25 de mayo de 2026. Fuente: BORME de 1 de junio de 2026:
+https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-102-52.
+Páginas: /aviso-legal/, /privacidad/, /eliminar-cuenta/ y /ayuda/.
+Las solicitudes por correo requieren atención manual de la empresa.
+
+LÍMITES
+Versión de pruebas, no publicada en Google Play ni App Store. Sin cobros,
+anuncios, Analytics ni Crashlytics. Pendientes: teléfono Android físico y
+recepción real de correos con la configuración Viruta. Las cuentas de ensayo
+example.invalid fueron verificadas por Admin y no acreditan entrega de correo.

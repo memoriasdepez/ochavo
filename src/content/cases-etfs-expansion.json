@@ -1,0 +1,904 @@
+{
+  "cases": [
+    {
+      "id": "etfs-6",
+      "track": "etfs",
+      "world": 35,
+      "title": "iShares iBonds: una fecha no fija el importe",
+      "company": "BlackRock · iShares iBonds Dec 2028 Term € Corp UCITS ETF",
+      "period": "Lanzamiento: 9 de agosto de 2023. Diseño para vencimientos de 2028; documentación consultada el 4 de octubre de 2026.",
+      "summary": "Marina separa la fecha prevista de un fondo de bonos del dinero que finalmente podría recibir.",
+      "minutes": 12,
+      "cover": {
+        "icon": "landmark",
+        "color": "#d6eadd"
+      },
+      "sources": [
+        {
+          "title": "iShares: identidad, lanzamiento y riesgos del fondo IB28, ISIN IE000264WWY0",
+          "url": "https://www.ishares.com/uk/individual/en/products/331717/"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "El hecho y la pregunta",
+          "body": "La ficha de iShares fecha el lanzamiento de esta clase el 9 de agosto de 2023 e identifica una estrategia de bonos corporativos en euros con vencimientos de 2028. Marina no confunde ese diseño con un depósito ni con una promesa de devolver exactamente lo invertido. Los hechos del producto proceden de la fuente enlazada; los importes de los ejercicios siguientes son modelos didácticos inventados, no resultados publicados de IB28.",
+          "takeaway": "Una fecha de vencimientos no garantiza el capital.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Identidad documentada por iShares",
+            "headers": [
+              "Dato",
+              "Información"
+            ],
+            "rows": [
+              [
+                "Fondo",
+                "iBonds Dec 2028 Term € Corp UCITS ETF"
+              ],
+              [
+                "Clase",
+                "IE000264WWY0"
+              ],
+              [
+                "Lanzamiento",
+                "9 de agosto de 2023"
+              ],
+              [
+                "Año del diseño de vencimientos",
+                "2028"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué puede deducir Marina",
+          "body": "¿Qué conclusión permite la fecha de vencimientos del diseño?",
+          "options": [
+            {
+              "text": "Orienta el calendario de los bonos; no fija una devolución garantizada del desembolso."
+            },
+            {
+              "text": "Garantiza recuperar exactamente cualquier precio de compra."
+            },
+            {
+              "text": "Elimina el riesgo de que un emisor no pague."
+            }
+          ],
+          "answer": 0,
+          "explanation": "El calendario ayuda a estudiar la cartera, pero el precio pagado, los cobros y los riesgos siguen importando.",
+          "hint": "Separa fecha e importe."
+        },
+        {
+          "type": "learn",
+          "title": "Cerrar el resultado sin contar dos veces",
+          "body": "Marina construye una inversión ficticia de 2.000 €. Supone 70 € repartidos durante su vida y 1.960 € recibidos al cierre. El resultado monetario sería 30 €: cobros más importe final menos desembolso. No llama beneficio a toda la devolución, porque una parte recupera dinero invertido. Tampoco convierte este cálculo acumulado en una tasa anual sin conocer las fechas. La tabla no representa una previsión del fondo real.",
+          "takeaway": "La devolución contiene capital; el beneficio es la diferencia total.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo inventado, no cifras de IB28",
+            "headers": [
+              "Componente",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Desembolso inicial",
+                "-2.000 €"
+              ],
+              [
+                "Distribuciones acumuladas",
+                "70 €"
+              ],
+              [
+                "Importe final recibido",
+                "1.960 €"
+              ],
+              [
+                "Resultado monetario",
+                "30 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia solo el importe final del mismo modelo",
+            "options": [
+              {
+                "label": "Final de 1.960 €",
+                "title": "Ganancia acumulada de 30 €",
+                "body": "1.960 + 70 - 2.000 = 30 €. No se anualiza sin calendario."
+              },
+              {
+                "label": "Final de 1.850 €",
+                "title": "Pérdida acumulada de 80 €",
+                "body": "1.850 + 70 - 2.000 = -80 €. Los repartos no garantizan recuperar la inversión."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Un expediente con otros cobros",
+          "body": "Modelo nuevo: desembolso 3.000 €, distribuciones acumuladas 110 € e importe final 2.940 €. Sin otros flujos ni costes pendientes, ¿qué resultado monetario total obtiene?",
+          "answer": 50,
+          "tolerance": 0.01,
+          "unit": "€",
+          "explanation": "2.940 + 110 - 3.000 = 50 €. Es un importe acumulado; no una rentabilidad anual.",
+          "hint": "Suma todos los cobros y resta lo pagado."
+        },
+        {
+          "type": "learn",
+          "title": "El último año también importa",
+          "body": "iShares explica que, durante el año final, el dinero de bonos que vencen puede invertirse en deuda pública hasta la liquidación. Ese periodo introduce condiciones de reinversión. Marina conecta el mecanismo con lo aprendido: un calendario de vencimientos ayuda a acotar sensibilidad, pero no elimina crédito ni hace idéntico vender antes y mantener hasta el cierre. Su conclusión conserva el precio pagado, las distribuciones y la fecha de salida como datos por comprobar.",
+          "takeaway": "Importan también reinversión, crédito y momento de salida.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Preguntas de Marina",
+            "items": [
+              "¿Cuánto pagaría?",
+              "¿Qué pagos y riesgos tiene la cesta?",
+              "¿Qué ocurre al vencer los bonos?",
+              "¿Cuándo y cuánto recibe finalmente?"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos comprobaciones pendientes",
+          "body": "Selecciona dos comprobaciones razonables para el expediente.",
+          "options": [
+            {
+              "text": "Qué emisores podrían no cumplir y qué precio se pagó."
+            },
+            {
+              "text": "Cómo se reinvierte el dinero durante el año final."
+            },
+            {
+              "text": "Dar por seguro que 2028 equivale a recuperar el precio inicial."
+            },
+            {
+              "text": "Tratar la tasa de la ficha como una promesa personal."
+            }
+          ],
+          "answers": [
+            0,
+            1
+          ],
+          "explanation": "La estructura temporal ayuda, pero no sustituye el análisis de pagos, reinversión y riesgo de crédito.",
+          "hint": "Mantén separadas estructura y garantía."
+        }
+      ],
+      "takeaway": "El vencimiento definido ordena fechas; el resultado sigue dependiendo de precio, pagos, riesgos y reinversión."
+    },
+    {
+      "id": "etfs-7",
+      "track": "etfs",
+      "world": 36,
+      "title": "Invesco RSP: las mismas empresas, otra regla",
+      "company": "Invesco · S&P 500 Equal Weight ETF (RSP)",
+      "period": "Fondo iniciado en 2003; análisis de su regla de igual ponderación, documentación consultada el 4 de octubre de 2026.",
+      "summary": "Marina estudia qué cambia al dar pesos similares a las empresas y qué diferencias siguen existiendo.",
+      "minutes": 12,
+      "cover": {
+        "icon": "scale",
+        "color": "#eee3c9"
+      },
+      "sources": [
+        {
+          "title": "Invesco: S&P 500 Equal Weight ETF y su metodología",
+          "url": "https://www.invesco.com/us/en/financial-products/etfs/invesco-sp-500-equal-weight-etf.html"
+        },
+        {
+          "title": "Invesco: comentario oficial sobre RSP e historial desde 2003",
+          "url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/commentary/invesco-s-p-500-equal-weight-etf-commentary-rsp.pdf"
+        },
+        {
+          "title": "Invesco: detalle oficial RSP, fecha de inicio y rebalanceo trimestral",
+          "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=RSP"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Cambiar pesos dentro de un universo",
+          "body": "Invesco RSP, iniciado en 2003, sigue una versión de igual ponderación del S&P 500. La regla cambia los pesos respecto a una ponderación por tamaño bursátil; no convierte la cesta en un fondo de pequeñas empresas. Marina distingue universo y peso, conceptos del mundo anterior. Para visualizar la diferencia utiliza a continuación cuatro empresas ficticias: la tabla enseña el mecanismo y no reproduce ninguna cartera histórica del fondo.",
+          "takeaway": "Universo y ponderación son decisiones diferentes.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo de cuatro empresas, no posiciones de RSP",
+            "headers": [
+              "Empresa",
+              "Peso por tamaño",
+              "Peso igual objetivo"
+            ],
+            "rows": [
+              [
+                "A",
+                "50 %",
+                "25 %"
+              ],
+              [
+                "B",
+                "25 %",
+                "25 %"
+              ],
+              [
+                "C",
+                "15 %",
+                "25 %"
+              ],
+              [
+                "D",
+                "10 %",
+                "25 %"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué cambió en la tabla",
+          "body": "¿Cuál es la interpretación correcta del modelo?",
+          "options": [
+            {
+              "text": "Se añaden automáticamente empresas pequeñas fuera del universo."
+            },
+            {
+              "text": "Se garantiza igual riesgo por empresa."
+            },
+            {
+              "text": "Cambian los pesos dentro del mismo conjunto de empresas."
+            }
+          ],
+          "answer": 2,
+          "explanation": "La regla redistribuye el capital; no iguala todas las características ni cambia por sí sola el conjunto elegible.",
+          "hint": "Separa quién entra de cuánto pesa."
+        },
+        {
+          "type": "learn",
+          "title": "Igual por empresa no es igual por sector",
+          "body": "Aunque cada empresa recibiera el mismo peso, un sector con más compañías tendría mayor peso agregado. Marina suma antes de concluir que todo está equilibrado. En un modelo de cinco empresas, tres de un sector representan el 60 % si cada una pesa el 20 %. Este ejemplo no describe la composición de RSP en ninguna fecha: muestra por qué una regla de empresas iguales no asegura sectores iguales ni igual contribución al riesgo.",
+          "takeaway": "La concentración agregada requiere mirar dentro de la regla.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo de cinco empresas con igual peso",
+            "headers": [
+              "Sector ficticio",
+              "Empresas",
+              "Peso agregado"
+            ],
+            "rows": [
+              [
+                "Servicios",
+                "3",
+                "60 %"
+              ],
+              [
+                "Industria",
+                "1",
+                "20 %"
+              ],
+              [
+                "Consumo",
+                "1",
+                "20 %"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Misma igualdad por empresa; cambia el número por sector",
+            "options": [
+              {
+                "label": "Un sector reúne tres de cinco",
+                "title": "Pesa el 60 %",
+                "body": "Los pesos individuales iguales se suman dentro del sector."
+              },
+              {
+                "label": "Cinco sectores con una empresa cada uno",
+                "title": "Cada sector pesa el 20 %",
+                "body": "El equilibrio sectorial aparece por la composición de este modelo, no por una garantía de la regla."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Otro universo didáctico",
+          "body": "En un índice ficticio de ocho empresas con igual peso, dos pertenecen a un mismo sector. ¿Qué peso agregado tiene ese sector?",
+          "answer": 25,
+          "tolerance": 0.01,
+          "unit": "%",
+          "explanation": "Cada empresa pesa 100 / 8 = 12,5 %. Dos suman el 25 %.",
+          "hint": "Cuenta empresas y multiplica por su peso."
+        },
+        {
+          "type": "learn",
+          "title": "La regla necesita mantenimiento",
+          "body": "RSP utiliza rebalanceos trimestrales según la documentación del emisor. Entre revisiones, los precios pueden separar los pesos. Marina relaciona ese mantenimiento con operaciones y costes, sin prometer una ventaja permanente sobre otra ponderación. Un historial favorable en cierto intervalo no resuelve por sí solo la comparación: debe revisar periodos, riesgos, costes y concentraciones. La práctica final aplica esta secuencia a un cambio de pesos ficticio, sin pedir ninguna operación real.",
+          "takeaway": "Rebalancear mantiene una regla y también tiene consecuencias.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Revisión de una regla de pesos",
+            "items": [
+              "Identificar universo y objetivo",
+              "Medir pesos actuales",
+              "Aplicar límites y calendario",
+              "Evaluar costes y resultado de la implementación"
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Reconstruir el rebalanceo del modelo",
+          "body": "Ordena la revisión didáctica.",
+          "items": [
+            "Documentar costes y pesos resultantes.",
+            "Identificar pesos objetivo y fecha de revisión.",
+            "Comparar pesos actuales con los objetivos.",
+            "Determinar los ajustes compatibles con la regla."
+          ],
+          "answer": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "explanation": "La regla define el objetivo antes de medir desviaciones y ajustes; después se documenta su implementación.",
+          "hint": "No calcules operaciones sin saber la regla."
+        }
+      ],
+      "takeaway": "La igual ponderación modifica exposición y mantenimiento; no iguala sectores, riesgos ni resultados futuros."
+    },
+    {
+      "id": "etfs-8",
+      "track": "etfs",
+      "world": 37,
+      "title": "Vanguard en marzo de 2020: interpretar un descuento",
+      "company": "Vanguard · análisis de ETF de bonos durante marzo de 2020",
+      "period": "Episodio: marzo de 2020. Carta de Vanguard a la SEC: 21 de julio de 2020.",
+      "summary": "Marina contrasta precios de negociación y valoraciones de cartera durante un episodio de tensión documentado.",
+      "minutes": 12,
+      "cover": {
+        "icon": "search",
+        "color": "#dce9ef"
+      },
+      "sources": [
+        {
+          "title": "Vanguard, carta a la SEC del 21 de julio de 2020, sección VI sobre descuentos de ETF de bonos",
+          "url": "https://corporate.vanguard.com/content/dam/corp/public-policy/pdf/Modernize%20Fund%20Valuation%20Practices%20Framework%20%28Adviser%20letter%29.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un episodio, una interpretación documentada",
+          "body": "En su carta del 21 de julio de 2020 a la SEC, Vanguard analizó descuentos observados en ETF de bonos de varios proveedores durante marzo de ese año. Los relacionó con menor liquidez, costes y diferencias de valoración. Marina trata esa explicación como la posición documentada del emisor, no como prueba de que cualquier descuento sea inocuo. Los precios de las tablas siguientes son inventados para practicar la lectura, no cotizaciones de ese episodio.",
+          "takeaway": "Un descuento requiere investigar bases, horarios y costes.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Documento y alcance",
+            "headers": [
+              "Elemento",
+              "Dato"
+            ],
+            "rows": [
+              [
+                "Episodio analizado",
+                "Marzo de 2020"
+              ],
+              [
+                "Fecha de la carta",
+                "21 de julio de 2020"
+              ],
+              [
+                "Ámbito",
+                "ETF de distintos proveedores y tipos de bonos"
+              ],
+              [
+                "Precios de este caso",
+                "Modelos didácticos, no datos del episodio"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué acredita la fuente",
+          "body": "¿Qué puede sostener Marina con esa carta?",
+          "options": [
+            {
+              "text": "Todos los descuentos garantizan una ganancia."
+            },
+            {
+              "text": "Vanguard documentó su interpretación de un episodio concreto; otros descuentos requieren su propio análisis."
+            },
+            {
+              "text": "Todo valor liquidativo equivale a un precio ejecutable instantáneo."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La fuente aporta contexto e interpretación, no una regla universal sobre precios futuros.",
+          "hint": "Respeta el alcance del documento."
+        },
+        {
+          "type": "learn",
+          "title": "Una diferencia depende de la referencia",
+          "body": "El descuento porcentual se calcula como precio dividido entre valor de referencia, menos uno. Marina comprueba si ambos corresponden al mismo momento y qué operaciones respaldan la estimación. En el modelo, un precio de 98 € parece estar un 2 % por debajo de una referencia de 100 €. Si una estimación actualizada es 98,50 €, la distancia es mucho menor; ninguna resta demuestra que pueda ejecutarse una ganancia sin costes.",
+          "takeaway": "La cifra depende de la actualidad y definición de la referencia.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo inventado: misma cotización, referencias distintas",
+            "headers": [
+              "Cotización",
+              "Referencia",
+              "Diferencia aproximada"
+            ],
+            "rows": [
+              [
+                "98 €",
+                "100 €",
+                "-2 %"
+              ],
+              [
+                "98 €",
+                "98,50 €",
+                "-0,51 %"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Cambia la información sobre la referencia",
+            "options": [
+              {
+                "label": "Referencia antigua",
+                "title": "La aparente distancia puede mezclar relojes",
+                "body": "Hay que actualizar la estimación y considerar las condiciones de negociación."
+              },
+              {
+                "label": "Referencia contemporánea y contrastada",
+                "title": "La diferencia sigue necesitando explicación",
+                "body": "Costes, riesgo de ejecución y condiciones de creación o reembolso pueden importar."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Calcular antes de interpretar",
+          "body": "Modelo nuevo: cotización de 94,50 € y referencia contemporánea de 96 €. ¿Qué diferencia porcentual tiene el precio respecto a la referencia? Incluye el signo.",
+          "answer": -1.5625,
+          "tolerance": 0.01,
+          "unit": "%",
+          "explanation": "(94,50 / 96 - 1) × 100 = -1,5625 %, aproximadamente -1,56 %. El cálculo no demuestra una oportunidad ejecutable.",
+          "hint": "Divide precio entre referencia y resta uno."
+        },
+        {
+          "type": "learn",
+          "title": "Un expediente evita una orden impulsiva",
+          "body": "Marina separa tres preguntas: qué mide la referencia, qué precio permite ejecutar el tamaño deseado y qué mecanismo puede acercar ambas cifras. Conserva hora, documento y supuestos. Si no conoce el coste de negociar los bonos o la vigencia de sus valoraciones, no lo sustituye por cero. La secuencia final es una revisión de información, no una instrucción de operar ni una afirmación sobre qué ocurrió en un ETF específico.",
+          "takeaway": "Primero se investiga la diferencia; después se evalúa su significado.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Secuencia de comprobación",
+            "items": [
+              "Identificar fondo, hora y fuente",
+              "Contrastar valoración y cotización",
+              "Investigar costes y condiciones del mecanismo",
+              "Registrar conclusión y límites"
+            ]
+          }
+        },
+        {
+          "type": "order",
+          "title": "Investigar una diferencia nueva",
+          "body": "Ordena el expediente de Marina.",
+          "items": [
+            "Escribir qué se sabe y qué sigue incierto.",
+            "Verificar identidad, hora y definición de las dos cifras.",
+            "Revisar actualización de precios de la cartera.",
+            "Examinar costes y condiciones de ejecución."
+          ],
+          "answer": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "explanation": "La definición de los datos precede a interpretar su separación y documentar una conclusión.",
+          "hint": "Empieza por saber qué se está comparando."
+        }
+      ],
+      "takeaway": "Precio y valoración pueden incorporar información y costes distintos; una diferencia aislada no es una ganancia disponible."
+    },
+    {
+      "id": "etfs-9",
+      "track": "etfs",
+      "world": 38,
+      "title": "Vanguard LifeStrategy: mirar dentro del 60/40",
+      "company": "Vanguard · LifeStrategy 60% Equity UCITS ETF (EUR) Accumulating",
+      "period": "Clase iniciada el 8 de diciembre de 2020; diseño documentado consultado el 4 de octubre de 2026.",
+      "summary": "Marina estudia una cartera de fondos y comprueba qué explican sus pesos, su moneda y su política de acumulación.",
+      "minutes": 12,
+      "cover": {
+        "icon": "chart-pie",
+        "color": "#e1e8d0"
+      },
+      "sources": [
+        {
+          "title": "Vanguard: LifeStrategy 60% Equity UCITS ETF (EUR) Accumulating, ISIN IE00BMVB5P51",
+          "url": "https://www.vanguard.co.uk/uk-fund-directory/product/etf/lifestrategy/9494/lifestrategy-60-equity-ucits-etf-eur-accumulating"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Identificar la versión concreta",
+          "body": "Esta clase del ETF LifeStrategy comenzó el 8 de diciembre de 2020. Su objetivo de composición es aproximadamente un 60 % de acciones y un 40 % de renta fija, principalmente mediante otros fondos. Marina identifica la versión UCITS en euros y de acumulación para no mezclarla con productos LifeStrategy de otros mercados. Las cuentas del caso utilizan una cartera ideal exactamente 60/40 y retornos inventados, no resultados históricos de esta clase.",
+          "takeaway": "El nombre de una familia no identifica todas sus versiones.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Identidad y modelo",
+            "headers": [
+              "Elemento",
+              "Información"
+            ],
+            "rows": [
+              [
+                "Clase real",
+                "IE00BMVB5P51"
+              ],
+              [
+                "Inicio de clase",
+                "8 de diciembre de 2020"
+              ],
+              [
+                "Composición objetivo aproximada",
+                "60 % acciones / 40 % renta fija"
+              ],
+              [
+                "Cuentas siguientes",
+                "Modelo exacto 60/40 con retornos inventados"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "La identificación que evita mezclar datos",
+          "body": "¿Qué información permite localizar la clase analizada?",
+          "options": [
+            {
+              "text": "ISIN, moneda, política de acumulación y estructura ETF indicados."
+            },
+            {
+              "text": "Únicamente un porcentaje 60."
+            },
+            {
+              "text": "Solo la palabra LifeStrategy."
+            }
+          ],
+          "answer": 0,
+          "explanation": "Una familia puede reunir estructuras y clases diferentes; la identidad concreta importa para usar datos compatibles.",
+          "hint": "Busca el identificador de la clase."
+        },
+        {
+          "type": "learn",
+          "title": "Ponderar no es promediar sin pesos",
+          "body": "Marina aplica a su modelo una caída del 15 % en acciones y del 5 % en bonos, sin flujos ni rebalanceos durante el periodo. Con pesos iniciales 60/40, las contribuciones son -9 y -2 puntos porcentuales: el conjunto pierde un 11 %. Es una simulación para explicar la suma ponderada. No implica que bonos y acciones tengan esas caídas ni esas probabilidades en ningún año del fondo real.",
+          "takeaway": "Los pesos iniciales transforman rentabilidades en contribuciones.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Escenario inventado de un periodo",
+            "headers": [
+              "Parte",
+              "Peso inicial",
+              "Rentabilidad",
+              "Contribución"
+            ],
+            "rows": [
+              [
+                "Acciones",
+                "60 %",
+                "-15 %",
+                "-9 puntos"
+              ],
+              [
+                "Bonos",
+                "40 %",
+                "-5 %",
+                "-2 puntos"
+              ],
+              [
+                "Total",
+                "100 %",
+                "-11 %",
+                "-11 puntos"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mismos pesos iniciales; cambia el escenario",
+            "options": [
+              {
+                "label": "Acciones -15 %, bonos -5 %",
+                "title": "Cartera -11 %",
+                "body": "0,60 × -15 + 0,40 × -5 = -11 %. Ambas partes restan."
+              },
+              {
+                "label": "Acciones -15 %, bonos +5 %",
+                "title": "Cartera -7 %",
+                "body": "0,60 × -15 + 0,40 × 5 = -7 %. Los bonos compensan una parte, sin evitar toda pérdida."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Un periodo diferente",
+          "body": "Modelo 60/40 sin flujos ni rebalanceos: acciones +8 % y bonos -2 %. ¿Cuál es la rentabilidad conjunta del periodo?",
+          "answer": 4,
+          "tolerance": 0.01,
+          "unit": "%",
+          "explanation": "0,60 × 8 + 0,40 × -2 = 4,8 - 0,8 = 4 %.",
+          "hint": "Suma las contribuciones ponderadas."
+        },
+        {
+          "type": "learn",
+          "title": "Una participación, varias decisiones",
+          "body": "La documentación describe una estrategia de asignación gestionada activamente, aunque utilice principalmente fondos indexados. También busca cubrir a euros la exposición de renta fija en otras monedas; eso no equivale a cubrir toda la renta variable. La clase de acumulación reinvierte distribuciones. Marina conserva estas distinciones al evaluar el conjunto: una participación simplifica la tenencia, pero no elimina riesgos, decisiones de asignación ni la necesidad de verificar la exposición que encaja con su plan.",
+          "takeaway": "El envoltorio único no borra las decisiones de cartera.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Mirar dentro de un fondo de fondos",
+            "items": [
+              "Identificar la clase",
+              "Sumar exposiciones subyacentes",
+              "Separar moneda de cotización y cobertura",
+              "Revisar asignación, costes y necesidad personal"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos conclusiones respaldadas",
+          "body": "Selecciona dos afirmaciones compatibles con la documentación y el análisis.",
+          "options": [
+            {
+              "text": "La cobertura de renta fija no significa que toda la cartera carezca de riesgo de moneda."
+            },
+            {
+              "text": "Acumular distribuciones garantiza una ganancia anual."
+            },
+            {
+              "text": "Puede utilizar fondos indexados y tener una asignación general gestionada activamente."
+            },
+            {
+              "text": "El 60/40 garantiza evitar pérdidas."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "La composición, la gestión de la asignación y la cobertura describen dimensiones diferentes.",
+          "hint": "Distingue cada capa de la cartera."
+        }
+      ],
+      "takeaway": "El 60/40 explica una asignación, no una rentabilidad prometida ni una eliminación del riesgo."
+    },
+    {
+      "id": "etfs-10",
+      "track": "etfs",
+      "world": 39,
+      "title": "Invesco PBP: el intercambio detrás de la prima",
+      "company": "Invesco · S&P 500 BuyWrite ETF (PBP)",
+      "period": "Ficha histórica a 30 de septiembre de 2025; fondo iniciado el 20 de diciembre de 2007.",
+      "summary": "Marina reconstruye una estrategia que mantiene exposición bursátil y vende opciones de compra cubiertas.",
+      "minutes": 12,
+      "cover": {
+        "icon": "layers",
+        "color": "#eadfce"
+      },
+      "sources": [
+        {
+          "title": "Invesco: ficha PBP a 30 de septiembre de 2025",
+          "url": "https://www.invesco.com/content/dam/invesco/us/en/product-documents/etf/fact-sheet/pbp-invesco-s-p-500-buywrite-etf-fact-sheet.pdf"
+        },
+        {
+          "title": "Invesco: folleto resumido PBP presentado en la SEC en 2025",
+          "url": "https://www.sec.gov/Archives/edgar/data/1209466/000119312525190403/d56632d497k.htm"
+        },
+        {
+          "title": "Cboe: metodología general del índice S&P 500 BuyWrite BXM",
+          "url": "https://www.cboe.com/us/indices/dashboard/bxm/"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un fondo, un índice y una estrategia",
+          "body": "La ficha de PBP a 30 de septiembre de 2025 identifica el Cboe S&P 500 BuyWrite Index como referencia e indica que el fondo comenzó el 20 de diciembre de 2007. La estrategia combina exposición al S&P 500 y venta de calls cubiertas. Marina distingue fondo, gestora e índice: comprar una participación del fondo no sería comprar acciones de Invesco ni directamente el índice. Este caso estudia su mecanismo, sin recomendar adquirirlo.",
+          "takeaway": "El fondo implementa una estrategia; la gestora y el índice son entidades distintas.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Qué representa cada nombre",
+            "headers": [
+              "Nombre",
+              "Papel"
+            ],
+            "rows": [
+              [
+                "Invesco",
+                "Gestora del producto"
+              ],
+              [
+                "PBP",
+                "ETF que implementa la estrategia"
+              ],
+              [
+                "Cboe S&P 500 BuyWrite Index",
+                "Referencia de la estrategia"
+              ],
+              [
+                "Call cubierta",
+                "Obligación respaldada por exposición al subyacente"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Identificar los papeles",
+          "body": "Relaciona las tres piezas.",
+          "pairs": [
+            {
+              "left": "Invesco",
+              "right": "Entidad gestora"
+            },
+            {
+              "left": "PBP",
+              "right": "Participación en un fondo"
+            },
+            {
+              "left": "Índice BuyWrite",
+              "right": "Referencia de una regla de inversión"
+            }
+          ],
+          "explanation": "Los derechos de una participación de fondo no se confunden con los de una acción de la gestora ni con un índice teórico.",
+          "hint": "Separa proveedor, vehículo y referencia."
+        },
+        {
+          "type": "learn",
+          "title": "Un modelo pequeño hace visible el intercambio",
+          "body": "Marina reduce la estrategia a una unidad ficticia para recordar la venta cubierta: compra el activo por 100 €, vende una call con ejercicio 105 € y recibe 3 €. Si termina en 80 €, conserva 83 € contando la prima; si termina en 120 €, el conjunto queda en 108 €. El ejemplo supone cumplimiento al vencimiento, coincidencia total y ausencia de dividendos, impuestos y gastos. No reproduce posiciones, retornos ni distribuciones reales de PBP.",
+          "takeaway": "La prima amortigua una parte de la caída y acompaña a una subida cedida.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo inventado, no rendimiento histórico de PBP",
+            "headers": [
+              "Precio final",
+              "Valor conjunto con prima",
+              "Resultado sobre 100 €"
+            ],
+            "rows": [
+              [
+                "80 €",
+                "83 €",
+                "-17 €"
+              ],
+              [
+                "100 €",
+                "103 €",
+                "3 €"
+              ],
+              [
+                "120 €",
+                "108 €",
+                "8 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mantén coste 100 €, ejercicio 105 € y prima 3 €",
+            "options": [
+              {
+                "label": "Caída a 70 €",
+                "title": "Resultado de -27 €",
+                "body": "70 + 3 - 100 = -27 €. La prima no protege todo el capital."
+              },
+              {
+                "label": "Subida a 140 €",
+                "title": "Resultado limitado a +8 €",
+                "body": "105 + 3 - 100 = 8 €. La subida adicional se entrega por la call vendida."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Otra operación didáctica",
+          "body": "Modelo nuevo de una unidad: coste del activo 100 €, call vendida con ejercicio 108 € y prima 4 €. Al vencimiento el activo vale 130 €. Sin otros flujos, ¿cuál es la ganancia monetaria conjunta?",
+          "answer": 12,
+          "tolerance": 0.01,
+          "unit": "€",
+          "explanation": "108 + 4 - 100 = 12 €. La subida por encima de 108 € corresponde a la obligación vendida.",
+          "hint": "Aplica el límite de la venta cubierta y suma la prima."
+        },
+        {
+          "type": "learn",
+          "title": "Del modelo a una lectura del fondo",
+          "body": "La referencia de PBP renueva una sucesión de opciones, por lo que una sola tabla al vencimiento no describe todos los caminos del fondo. Marina revisa reglas de renovación, cantidades, costes y tratamiento de distribuciones. Compara resultados totales en periodos y monedas compatibles, sin tratar primas cobradas como beneficio definitivo. Su expediente conserva la ficha histórica de 2025; para una evaluación posterior necesitaría contrastar documentos vigentes, sin trasladar precios ni conclusiones de una fecha a otra.",
+          "takeaway": "La evaluación debe incluir todas las posiciones, los costes y el calendario.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Lectura del expediente",
+            "items": [
+              "Identidad y fecha de la fuente",
+              "Exposición bursátil y obligaciones vendidas",
+              "Resultados totales y costes comparables",
+              "Límites, escenarios y preguntas pendientes"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Qué no debe perderse al comparar",
+          "body": "Selecciona dos comprobaciones necesarias.",
+          "options": [
+            {
+              "text": "Tratar toda prima como interés garantizado."
+            },
+            {
+              "text": "Suponer que un índice teórico tiene los mismos gastos que el fondo."
+            },
+            {
+              "text": "La caída que sigue soportando la exposición bursátil."
+            },
+            {
+              "text": "La subida cedida, las reglas de renovación y los costes."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "La estrategia intercambia parte de la subida por primas; la implementación y los costes completan la evaluación.",
+          "hint": "Mira los dos lados del intercambio."
+        }
+      ],
+      "takeaway": "La prima tiene una contraprestación: el resultado exige reunir exposición, obligaciones, fechas y costes."
+    }
+  ]
+}

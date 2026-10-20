@@ -1,0 +1,462 @@
+{
+  "cases": [
+    {
+      "id": "stocks-23",
+      "track": "stocks",
+      "world": 32,
+      "title": "Wells Fargo: lo que un objetivo de ventas puede ocultar",
+      "company": "Wells Fargo · actuación del CFPB",
+      "period": "Septiembre de 2016",
+      "summary": "Elena conecta indicadores comerciales, incentivos y comprobación del consentimiento.",
+      "minutes": 12,
+      "cover": {
+        "icon": "shield-check",
+        "color": "#e5efd8"
+      },
+      "sources": [
+        {
+          "title": "CFPB · actuación sobre cuentas no autorizadas, 8 septiembre 2016",
+          "url": "https://www.consumerfinance.gov/archive/newsroom/consumer-financial-protection-bureau-fines-wells-fargo-100-million-widespread-illegal-practice-secretly-opening-unauthorized-accounts/"
+        },
+        {
+          "title": "CFPB · riesgos de programas de incentivos, noviembre 2016",
+          "url": "https://www.consumerfinance.gov/archive/newsroom/cfpb-warns-financial-companies-about-sales-and-production-incentives-may-lead-fraud-or-consumer-abuse/"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una medida comercial no demuestra servicio válido",
+          "body": "El 8 de septiembre de 2016, el CFPB anunció una sanción de 100 millones de dólares a Wells Fargo por la apertura de cuentas no autorizadas. La actuación vinculaba prácticas de empleados con objetivos de ventas y remuneración. Elena analiza ese episodio documentado, no la situación actual del banco. El número de productos abiertos podía crecer sin demostrar que el cliente los hubiera solicitado, utilizado o valorado: el indicador de actividad omitía condiciones fundamentales.",
+          "takeaway": "Comprueba qué acredita realmente el indicador que se premia.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Indicador",
+              "Lo que no acredita por sí solo"
+            ],
+            "rows": [
+              [
+                "Cuenta abierta",
+                "Consentimiento del cliente"
+              ],
+              [
+                "Más productos por cliente",
+                "Uso y necesidad reales"
+              ],
+              [
+                "Meta comercial cumplida",
+                "Calidad del procedimiento"
+              ]
+            ],
+            "caption": "Lectura del episodio de 2016; no descripción de prácticas actuales."
+          }
+        },
+        {
+          "type": "choice",
+          "title": "La inferencia que falla",
+          "body": "Una oficina supera la meta de cuentas abiertas. ¿Qué no puede darse por probado únicamente con ese contador?",
+          "options": [
+            {
+              "text": "Que el contador haya aumentado."
+            },
+            {
+              "text": "Que todas las cuentas respondan a solicitudes válidas de clientes."
+            },
+            {
+              "text": "Que existe una cifra que debe verificarse."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Abrir un producto no acredita consentimiento, uso ni adecuación de su contratación.",
+          "hint": "Comprueba qué acredita realmente el indicador que se premia."
+        },
+        {
+          "type": "learn",
+          "title": "Ensayar el control con una muestra ficticia",
+          "body": "Para entender la revisión, Elena inventa una muestra de 200 expedientes: 180 contienen la evidencia de consentimiento exigida por el procedimiento y 20 carecen de ella. La ausencia documental activa una investigación; no demuestra automáticamente que cada caso fuera fraudulento. Tampoco esta muestra representa las cuentas de Wells Fargo. El ejercicio enseña a definir una condición verificable y a conservar los expedientes que no la cumplen, sin borrarlos del denominador.",
+          "takeaway": "Una excepción documental es una señal que debe investigarse.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Muestra didáctica, ajena al caso real",
+              "Expedientes"
+            ],
+            "rows": [
+              [
+                "Evidencia exigida presente",
+                180
+              ],
+              [
+                "Evidencia exigida ausente",
+                20
+              ],
+              [
+                "Total revisado",
+                200
+              ]
+            ],
+            "caption": "No estima la incidencia histórica en Wells Fargo."
+          },
+          "explore": {
+            "prompt": "Falta una evidencia obligatoria en un expediente ficticio.",
+            "options": [
+              {
+                "label": "Se encuentra un documento válido",
+                "title": "Se resuelve esa excepción concreta",
+                "body": "Debe comprobarse autenticidad y alcance; no valida automáticamente todos los demás expedientes."
+              },
+              {
+                "label": "No se puede justificar",
+                "title": "La excepción permanece abierta",
+                "body": "Hace falta investigar y aplicar el procedimiento; no se elimina para mejorar el indicador."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Porcentaje de excepciones de otro ensayo",
+          "body": "En otra muestra didáctica de 250 expedientes, 30 carecen de la evidencia requerida. ¿Qué porcentaje debe investigarse por esa excepción?",
+          "answer": 12,
+          "unit": "%",
+          "tolerance": 0.02,
+          "explanation": "30 / 250 × 100 = 12 %. Es el porcentaje del ensayo, no una tasa histórica de fraude.",
+          "hint": "Una excepción documental es una señal que debe investigarse."
+        },
+        {
+          "type": "learn",
+          "title": "Cambiar el premio no sustituye todo el control",
+          "body": "En noviembre de 2016, el CFPB publicó una advertencia general sobre riesgos de incentivos comerciales mal vigilados. Elena extrae una pregunta de análisis: además de qué se paga, quién comprueba consentimiento, calidad y excepciones. Un plan revisado debe observarse funcionando; un anuncio no demuestra por sí solo que el problema esté resuelto. La ficha conserva responsables, evidencias y resultados de seguimiento para evaluar la mejora sin convertir el caso en una regla universal contra toda remuneración variable.",
+          "takeaway": "El diseño del incentivo y la comprobación de su funcionamiento van juntos.",
+          "visual": "none"
+        },
+        {
+          "type": "multi",
+          "title": "Dos pruebas de una mejora operativa",
+          "body": "Selecciona dos.",
+          "options": [
+            {
+              "text": "Revisar muestras posteriores de consentimiento y excepciones."
+            },
+            {
+              "text": "Confiar solo en cambiar el nombre del bonus."
+            },
+            {
+              "text": "Documentar quién investiga señales y cómo se cierran."
+            },
+            {
+              "text": "Borrar expedientes incompletos para elevar la tasa."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "Los controles deben dejar evidencia de funcionamiento y de respuesta a problemas.",
+          "hint": "El diseño del incentivo y la comprobación de su funcionamiento van juntos."
+        }
+      ],
+      "takeaway": "Un crecimiento comercial solo es interpretable si se conocen las condiciones, los incentivos y los controles que lo sostienen."
+    },
+    {
+      "id": "stocks-24",
+      "track": "stocks",
+      "world": 33,
+      "title": "Nvidia y Arm: una operación anunciada puede no cerrarse",
+      "company": "NVIDIA y SoftBank · adquisición de Arm propuesta",
+      "period": "Anuncio de terminación del 7 de febrero de 2022",
+      "summary": "Elena distingue una operación condicionada, sus ramas posibles y los efectos de abandonarla.",
+      "minutes": 12,
+      "cover": {
+        "icon": "briefcase-business",
+        "color": "#e5efd8"
+      },
+      "sources": [
+        {
+          "title": "NVIDIA · terminación de la adquisición de Arm",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-softbank-group-announce-termination-of-nvidias-acquisition-of-arm-limited"
+        },
+        {
+          "title": "NVIDIA · anuncio original de adquisición, septiembre 2020",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-to-acquire-arm-for-40-billion-creating-worlds-premier-computing-company-for-the-age-of-ai"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Separar acuerdo firmado y operación completada",
+          "body": "NVIDIA y SoftBank anunciaron el 7 de febrero de 2022 que terminaban la adquisición propuesta de Arm por dificultades regulatorias importantes. El acuerdo se había anunciado en septiembre de 2020. Elena no interpreta la firma original como transferencia ya completada: una operación puede depender de autorizaciones y otras condiciones. El episodio permite revisar qué hechos eran conocidos en cada fecha y evitar presentar el desenlace posterior como si hubiera sido seguro desde el principio.",
+          "takeaway": "Un acuerdo sujeto a condiciones no equivale a cierre consumado.",
+          "visual": "none",
+          "figure": {
+            "kind": "flow",
+            "items": [
+              "Acuerdo anunciado en 2020",
+              "Condiciones y revisión regulatoria",
+              "Terminación anunciada en 2022"
+            ],
+            "caption": "Cronología del caso; no probabilidad asignada retrospectivamente."
+          }
+        },
+        {
+          "type": "choice",
+          "title": "El supuesto demasiado fuerte",
+          "body": "Un modelo de 2020 incorporaba todos los beneficios de la adquisición como si ya estuviera completada. ¿Qué debía hacer explícito?",
+          "options": [
+            {
+              "text": "Las condiciones de cierre y escenarios alternativos."
+            },
+            {
+              "text": "Solo el nuevo logotipo combinado."
+            },
+            {
+              "text": "Que anunciar equivale siempre a cerrar."
+            }
+          ],
+          "answer": 0,
+          "explanation": "Mientras existen condiciones pendientes, el modelo necesita distinguir cierre, demora y no realización.",
+          "hint": "Un acuerdo sujeto a condiciones no equivale a cierre consumado."
+        },
+        {
+          "type": "learn",
+          "title": "Los efectos al terminar dependen del contrato",
+          "body": "El comunicado de terminación indicó que SoftBank conservaba 1.250 millones de dólares prepagados por NVIDIA y que NVIDIA mantenía su licencia Arm de veinte años. Son condiciones específicas del caso, no una regla para cualquier adquisición. Elena distingue el importe retenido de una estimación completa de todos los costes contables o económicos, y comprueba qué derechos subsisten en lugar de resumir el abandono como si nada se hubiera pagado ni conservado.",
+          "takeaway": "Lee pagos y derechos remanentes antes de medir el efecto del abandono.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Según el comunicado de terminación",
+              "Condición"
+            ],
+            "rows": [
+              [
+                "Prepago retenido por SoftBank",
+                "1.250 millones de dólares"
+              ],
+              [
+                "Derecho que conservaba NVIDIA",
+                "Licencia Arm de veinte años"
+              ]
+            ],
+            "caption": "No pretende calcular el coste económico total de la operación."
+          },
+          "explore": {
+            "prompt": "Una operación ficticia termina. Cambia el contrato del anticipo.",
+            "options": [
+              {
+                "label": "Anticipo reembolsable",
+                "title": "El efectivo puede recuperarse según condiciones",
+                "body": "Deben leerse plazos, costes y requisitos del reembolso."
+              },
+              {
+                "label": "Anticipo retenido",
+                "title": "No se recupera ese importe por terminar",
+                "body": "Pueden subsistir otros derechos; hay que valorarlos por separado."
+              }
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Tres categorías del expediente",
+          "body": "Relaciona.",
+          "pairs": [
+            {
+              "left": "Autorización todavía pendiente",
+              "right": "Condición de cierre"
+            },
+            {
+              "left": "Prepago que conserva la otra parte",
+              "right": "Consecuencia contractual"
+            },
+            {
+              "left": "Licencia que sigue vigente",
+              "right": "Derecho remanente"
+            }
+          ],
+          "explanation": "La decisión y su resultado económico requieren separar condiciones, pagos y derechos.",
+          "hint": "Lee pagos y derechos remanentes antes de medir el efecto del abandono."
+        },
+        {
+          "type": "learn",
+          "title": "Una cuenta ilustrativa no atribuye probabilidades históricas",
+          "body": "Elena crea ahora otra operación enteramente ficticia: si cierra, su resultado neto es más 100; si no, menos 20. Supone probabilidades de 40 % y 60 %, con todos los efectos ya incluidos y sin descuento. El esperado es 28, pero ninguno de los dos desenlaces paga exactamente 28. Estas probabilidades no se atribuyen a NVIDIA ni a Arm: el modelo solo permite practicar cómo conservar una rama desfavorable en la decisión.",
+          "takeaway": "Un promedio ponderado no borra la pérdida posible ni predice el caso histórico.",
+          "visual": "none"
+        },
+        {
+          "type": "numeric",
+          "title": "Otro modelo, otras condiciones",
+          "body": "En una operación ficticia distinta, el resultado neto es +80 con probabilidad 30 % o −10 con 70 %. Sin descuento ni otros pagos, ¿cuál es su valor esperado?",
+          "answer": 17,
+          "unit": "unidades monetarias",
+          "tolerance": 0.02,
+          "explanation": "0,30 × 80 + 0,70 × (−10) = 17. Es una media del modelo, no un resultado garantizado ni una estimación del caso real.",
+          "hint": "Un promedio ponderado no borra la pérdida posible ni predice el caso histórico."
+        }
+      ],
+      "takeaway": "Una operación condicionada necesita ramas completas, contratos y fechas; conocer el desenlace no reemplaza analizar lo que se sabía antes."
+    },
+    {
+      "id": "stocks-25",
+      "track": "stocks",
+      "world": 34,
+      "title": "Unilever: conectar volumen, precio y crecimiento publicado",
+      "company": "Unilever · resultados de 2024",
+      "period": "Ejercicio 2024 · comunicado de resultados",
+      "summary": "Elena distingue medidas de crecimiento antes de construir una explicación del negocio.",
+      "minutes": 12,
+      "cover": {
+        "icon": "chart-pie",
+        "color": "#e5efd8"
+      },
+      "sources": [
+        {
+          "title": "Unilever · resultados del cuarto trimestre y ejercicio 2024",
+          "url": "https://www.unilever.com/files/ir-q4-2024-full-announcement.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Dos cifras de crecimiento pueden ser correctas",
+          "body": "En sus resultados de 2024, Unilever publicó crecimiento subyacente de ventas del 4,2 % y crecimiento de facturación del 1,9 %. Subyacente es una medida definida por la empresa para separar determinados efectos, como cambios de perímetro y divisas, con detalles metodológicos. Elena no escoge automáticamente la mayor cifra: pregunta qué mide cada una y cómo se relacionan. La diferencia no demuestra una contradicción, pero exige leer definiciones y conciliaciones del mismo período.",
+          "takeaway": "Compara definiciones y período antes de elegir una cifra de crecimiento.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Medida publicada para 2024",
+              "Variación"
+            ],
+            "rows": [
+              [
+                "Crecimiento subyacente de ventas",
+                "4,2 %"
+              ],
+              [
+                "Crecimiento de facturación",
+                "1,9 %"
+              ],
+              [
+                "Componente subyacente de volumen",
+                "2,9 %"
+              ],
+              [
+                "Componente subyacente de precio",
+                "1,3 %"
+              ]
+            ],
+            "caption": "Fuente: comunicado 2024; porcentajes publicados y redondeados."
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una diferencia que debe explicarse",
+          "body": "¿Qué hace Elena ante el 4,2 % subyacente y el 1,9 % de facturación?",
+          "options": [
+            {
+              "text": "Elige el 4,2 % y elimina el otro."
+            },
+            {
+              "text": "Lee las definiciones y los efectos que conectan ambas medidas."
+            },
+            {
+              "text": "Concluye que no puede haber dos medidas distintas."
+            }
+          ],
+          "answer": 1,
+          "explanation": "Las medidas tienen ajustes y alcance diferentes; deben reconciliarse, no escogerse por conveniencia.",
+          "hint": "Compara definiciones y período antes de elegir una cifra de crecimiento."
+        },
+        {
+          "type": "learn",
+          "title": "Conservar la aritmética y sus límites",
+          "body": "La facturación publicada fue 59.604 millones de euros en 2023 y 60.761 en 2024. Su diferencia es 1.157 millones; la variación relativa aproxima el 1,9 % redondeado del comunicado. Elena mantiene unidades y base temporal. No suma mecánicamente todos los porcentajes de volumen, precio, divisas y perímetro: el documento explica la combinación de componentes y sus medidas incluyen definiciones propias, por lo que los redondeos también limitan una reconstrucción exacta.",
+          "takeaway": "Reconcilia cantidades y método, sin convertir porcentajes redondeados en identidades exactas.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Facturación publicada",
+              "Millones de €"
+            ],
+            "rows": [
+              [
+                "2023",
+                59604
+              ],
+              [
+                "2024",
+                60761
+              ]
+            ],
+            "caption": "Datos del comunicado; no proyección ni cotización actual."
+          },
+          "explore": {
+            "prompt": "Un modelo didáctico parte de 100 de ventas. Cambia sus dos factores.",
+            "options": [
+              {
+                "label": "Volumen +3 %, precio +2 %",
+                "title": "105,06 de ventas",
+                "body": "100 × 1,03 × 1,02 = 105,06. El aumento es 5,06 %, no exactamente 5 %."
+              },
+              {
+                "label": "Volumen −3 %, precio +2 %",
+                "title": "98,94 de ventas",
+                "body": "100 × 0,97 × 1,02 = 98,94. Subir precio no compensa aquí toda la caída de volumen."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Diferencia publicada",
+          "body": "Con 59.604 millones de euros en 2023 y 60.761 en 2024, ¿en cuántos millones aumentó la facturación?",
+          "answer": 1157,
+          "unit": "millones de €",
+          "tolerance": 0.02,
+          "explanation": "60.761 − 59.604 = 1.157 millones de euros. El cálculo no atribuye por sí solo la causa del cambio.",
+          "hint": "Reconcilia cantidades y método, sin convertir porcentajes redondeados en identidades exactas."
+        },
+        {
+          "type": "learn",
+          "title": "Del crecimiento a una pregunta de calidad",
+          "body": "Elena utiliza la separación entre volumen y precio para formular preguntas sobre demanda, combinación de productos y costes. En un modelo general, vender más puede requerir promoción, capacidad y capital; subir precios puede afectar cantidad demandada. Ningún componente garantiza por sí solo mejor flujo para propietarios. El siguiente trabajo del expediente será conectar estas medidas con margen, inversión y caja, usando las definiciones del documento y manteniendo visibles las diferencias entre hechos históricos y supuestos futuros.",
+          "takeaway": "El crecimiento se evalúa junto con recursos, margen y flujo; el expediente continúa.",
+          "visual": "none"
+        },
+        {
+          "type": "multi",
+          "title": "Dos pasos para continuar el análisis",
+          "body": "Selecciona dos.",
+          "options": [
+            {
+              "text": "Relacionar los componentes con margen, inversión y caja."
+            },
+            {
+              "text": "Suponer que subir precio garantiza siempre mayor beneficio."
+            },
+            {
+              "text": "Mantener separadas las cifras históricas y las hipótesis futuras."
+            },
+            {
+              "text": "Sumar porcentajes redondeados como identidad exacta universal."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "La calidad del crecimiento necesita conexión económica y una separación clara entre dato y escenario.",
+          "hint": "El crecimiento se evalúa junto con recursos, margen y flujo; el expediente continúa."
+        }
+      ],
+      "takeaway": "Una lectura integrada conserva definiciones, unidades y puentes entre crecimiento, operación y caja."
+    }
+  ]
+}

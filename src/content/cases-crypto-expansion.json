@@ -1,0 +1,815 @@
+{
+  "cases": [
+    {
+      "id": "crypto-6",
+      "track": "crypto",
+      "world": 40,
+      "title": "Bitcoin: qué cambió en el cuarto halving",
+      "company": "Bitcoin · regla de emisión",
+      "period": "20 de abril de 2024 · bloque 840.000",
+      "summary": "Inés separa un cambio verificable de emisión de las conjeturas sobre ingresos y precios.",
+      "minutes": 12,
+      "cover": {
+        "icon": "blocks",
+        "color": "#eee1f3"
+      },
+      "sources": [
+        {
+          "title": "Bitcoin.org · historial de halvings",
+          "url": "https://bitcoin.org/en/halving"
+        },
+        {
+          "title": "Bitcoin Developer Guide · bloque y recompensa",
+          "url": "https://developer.bitcoin.org/devguide/block_chain.html"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un cambio de regla con un punto preciso",
+          "body": "El cuarto halving de Bitcoin llegó en el bloque 840.000, el 20 de abril de 2024. Halving significa reducir a la mitad el subsidio de bloque, las unidades nuevas permitidas como recompensa: pasó de 6,25 a 3,125 BTC. Inés puede verificar esa transición sin conocer ninguna cotización. Las comisiones de las operaciones son otra entrada para el productor del bloque; no forman parte del subsidio que se divide.",
+          "takeaway": "El halving reduce el subsidio; no divide automáticamente todas las entradas.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Magnitud histórica",
+              "Antes",
+              "Desde el bloque 840.000"
+            ],
+            "rows": [
+              [
+                "Subsidio por bloque",
+                "6,25 BTC",
+                "3,125 BTC"
+              ],
+              [
+                "Comisiones",
+                "Variables",
+                "Variables"
+              ]
+            ],
+            "caption": "Regla de emisión histórica; no son cotizaciones."
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Precisa la noticia",
+          "body": "¿Qué afirmación describe el cambio de abril de 2024 sin añadir una predicción?",
+          "options": [
+            {
+              "text": "El ingreso total en euros de cada minero quedó dividido exactamente por dos."
+            },
+            {
+              "text": "El subsidio autorizado por bloque pasó a 3,125 BTC."
+            },
+            {
+              "text": "El precio tenía que duplicarse."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La regla fija unidades nuevas. Las comisiones, los costes y las cotizaciones no quedan fijados por esa transición.",
+          "hint": "El halving reduce el subsidio; no divide automáticamente todas las entradas."
+        },
+        {
+          "type": "learn",
+          "title": "Construir una cuenta sin disfrazarla de historia",
+          "body": "Para separar las piezas, Inés crea un modelo, no una reconstrucción de aquellos bloques: cada bloque posterior incorpora 3,125 BTC de subsidio y exactamente 0,875 BTC de comisiones supuestas. Su ingreso bruto modelado suma cuatro BTC. No sabemos cuánto cuesta producirlo ni cómo se distribuye entre participantes. Tampoco multiplicamos por un precio inventado para presentar una rentabilidad histórica. La tabla etiqueta qué cifra procede de la regla y cuál del ejercicio.",
+          "takeaway": "Declara las comisiones supuestas y suma antes de interpretar el ingreso.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Modelo por bloque posterior",
+              "BTC",
+              "Naturaleza"
+            ],
+            "rows": [
+              [
+                "Subsidio",
+                3.125,
+                "Regla del período"
+              ],
+              [
+                "Comisiones",
+                0.875,
+                "Supuesto didáctico"
+              ],
+              [
+                "Ingreso bruto",
+                4,
+                "Suma del modelo"
+              ]
+            ],
+            "caption": "Las comisiones no describen las observadas en abril de 2024."
+          },
+          "explore": {
+            "prompt": "Mantén el subsidio de 3,125 BTC y cambia las comisiones del modelo.",
+            "options": [
+              {
+                "label": "0,875 BTC",
+                "title": "Ingreso bruto de 4 BTC",
+                "body": "La suma es 3,125 + 0,875. No hemos restado costes."
+              },
+              {
+                "label": "1,875 BTC",
+                "title": "Ingreso bruto de 5 BTC",
+                "body": "Una comisión mayor cambia el total aunque el subsidio sea idéntico."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Dos bloques del modelo",
+          "body": "En dos bloques se cumple exactamente el supuesto anterior: 3,125 BTC de subsidio y 0,875 BTC de comisiones por bloque. ¿Qué ingreso bruto conjunto resulta?",
+          "answer": 8,
+          "unit": "BTC",
+          "tolerance": 0.02,
+          "explanation": "Cada bloque suma 4 BTC; dos bloques suman 8 BTC, antes de costes.",
+          "hint": "Declara las comisiones supuestas y suma antes de interpretar el ingreso."
+        },
+        {
+          "type": "learn",
+          "title": "La conclusión tiene un alcance limitado",
+          "body": "El expediente contiene una regla histórica y una cuenta ilustrativa, pero todavía no una valoración. Inés necesitaría contrastar comisiones observadas, costes de operadores, potencia relativa y demanda para estudiar otras preguntas. Que la emisión nueva disminuya no asegura que aumente la disposición a comprar. Esta separación también evita atribuir cualquier movimiento posterior exclusivamente al halving: durante el mismo período pueden cambiar muchos factores de mercado.",
+          "takeaway": "Un hecho de emisión no determina por sí solo rentabilidad, demanda ni causalidad.",
+          "visual": "none",
+          "figure": {
+            "kind": "flow",
+            "items": [
+              "Regla comprobada",
+              "Supuestos explícitos",
+              "Datos adicionales necesarios",
+              "Conclusión limitada"
+            ],
+            "caption": "Proceso de análisis propio, sin recomendación de compra."
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Qué puede quedar en el expediente",
+          "body": "Selecciona las dos conclusiones justificadas.",
+          "options": [
+            {
+              "text": "El cambio de subsidio es verificable por la regla y el bloque."
+            },
+            {
+              "text": "El modelo demuestra el beneficio real de los mineros."
+            },
+            {
+              "text": "Las comisiones deben analizarse por separado."
+            },
+            {
+              "text": "El halving garantiza ganancias a cualquier comprador."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "El subsidio y las comisiones son componentes diferentes. Faltan datos para concluir beneficio o rentabilidad.",
+          "hint": "Un hecho de emisión no determina por sí solo rentabilidad, demanda ni causalidad."
+        }
+      ],
+      "takeaway": "Una regla de emisión verificable es el inicio del análisis de incentivos, no una predicción de precios."
+    },
+    {
+      "id": "crypto-7",
+      "track": "crypto",
+      "world": 41,
+      "title": "Ethereum Dencun: del dato al coste",
+      "company": "Ethereum · actualización Dencun",
+      "period": "Marzo de 2024",
+      "summary": "Inés analiza qué cambió para publicar datos y qué falta para explicar la tarifa del usuario.",
+      "minutes": 12,
+      "cover": {
+        "icon": "layers",
+        "color": "#eee1f3"
+      },
+      "sources": [
+        {
+          "title": "Ethereum Foundation · anuncio Dencun",
+          "url": "https://blog.ethereum.org/2024/02/27/dencun-mainnet-announcement"
+        },
+        {
+          "title": "Ethereum Foundation · evaluación de EIP-4844 tras su implementación",
+          "url": "https://blog.ethereum.org/2024/09/13/4844-data-challenge"
+        },
+        {
+          "title": "EIP-4844 · especificación",
+          "url": "https://eips.ethereum.org/EIPS/eip-4844"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una mejora con una función concreta",
+          "body": "Dencun incorporó EIP-4844 a Ethereum en marzo de 2024. La propuesta introdujo blobs, paquetes de datos con un mecanismo específico de publicación y disponibilidad temporal. Ayudan a las redes que agrupan operaciones fuera de la capa principal y publican información para su comprobación. Inés distingue esa función de ejecutar todas las operaciones dentro de Ethereum y de conservar sus datos para siempre. La mejora no elimina todas las dependencias de esas redes.",
+          "takeaway": "Publicar datos con blobs no significa ejecutar todo en la capa principal.",
+          "visual": "none",
+          "figure": {
+            "kind": "flow",
+            "items": [
+              "Operaciones agrupadas",
+              "Datos publicados mediante blobs",
+              "Comprobación según el sistema"
+            ],
+            "caption": "Esquema funcional; cada red conserva sus propias condiciones."
+          }
+        },
+        {
+          "type": "match",
+          "title": "Qué hace cada pieza",
+          "body": "Asocia la descripción con su función.",
+          "pairs": [
+            {
+              "left": "Agrupar operaciones fuera de la capa principal",
+              "right": "Ejecución en otra capa"
+            },
+            {
+              "left": "Hacer accesible información necesaria para comprobar",
+              "right": "Disponibilidad de datos"
+            },
+            {
+              "left": "Conservar copias más allá de la ventana prevista",
+              "right": "Archivo adicional"
+            }
+          ],
+          "explanation": "Ejecutar, publicar datos y archivar son funciones distintas; ninguna etiqueta sustituye el diseño concreto.",
+          "hint": "Publicar datos con blobs no significa ejecutar todo en la capa principal."
+        },
+        {
+          "type": "learn",
+          "title": "Medir una unidad comparable",
+          "body": "Inés ensaya un lote ficticio de 150 operaciones: publicar sus datos cuesta 45 euros en el escenario A y 15 en el B. El coste por operación pasa de 0,30 a 0,10 euros. Estos importes no son mediciones históricas de Dencun. Mantener el mismo número de operaciones permite aislar la diferencia del modelo; si cambiara el tamaño del lote, tendría que separar también ese efecto al comparar.",
+          "takeaway": "Divide el coste del lote por las operaciones incluidas.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Modelo de 150 operaciones",
+              "Escenario A",
+              "Escenario B"
+            ],
+            "rows": [
+              [
+                "Publicación del lote",
+                "45 €",
+                "15 €"
+              ],
+              [
+                "Por operación",
+                "0,30 €",
+                "0,10 €"
+              ]
+            ],
+            "caption": "Cifras didácticas, sin pretensión de representar tarifas reales."
+          },
+          "explore": {
+            "prompt": "El coste total es 15 €. Cambia solo la cantidad de operaciones del lote.",
+            "options": [
+              {
+                "label": "150 operaciones",
+                "title": "0,10 € por operación",
+                "body": "El coste se reparte entre 150 operaciones del modelo."
+              },
+              {
+                "label": "75 operaciones",
+                "title": "0,20 € por operación",
+                "body": "Repartir la misma factura entre menos operaciones eleva su coste unitario."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Un lote diferente",
+          "body": "En un nuevo modelo, publicar los datos de 120 operaciones cuesta 18 €. ¿Cuál es el coste de publicación por operación?",
+          "answer": 0.15,
+          "unit": "€/operación",
+          "tolerance": 0.02,
+          "explanation": "18 / 120 = 0,15 €. No incluye los demás costes ni establece la tarifa final.",
+          "hint": "Divide el coste del lote por las operaciones incluidas."
+        },
+        {
+          "type": "learn",
+          "title": "El ahorro técnico y la tarifa no son idénticos",
+          "body": "Una aplicación puede cobrar al usuario por publicación, ejecución y otros servicios. Su tarifa también depende de decisiones comerciales. En un ejemplo independiente, el coste total baja de 0,50 a 0,30 euros, pero el cobro baja de 0,70 a 0,60: solo se traslada parte del ahorro. Inés buscaría series comparables de ambos importes, con fechas, antes de afirmar cuánto recibió el usuario. El ejemplo no atribuye este comportamiento a una empresa concreta.",
+          "takeaway": "Compara coste y tarifa por separado para medir quién recibe el ahorro.",
+          "visual": "none"
+        },
+        {
+          "type": "choice",
+          "title": "El ahorro que sí puede afirmarse",
+          "body": "En ese modelo, el coste total baja 0,20 € y la tarifa baja 0,10 €. ¿Qué conclusión procede?",
+          "options": [
+            {
+              "text": "El usuario recibió todo el ahorro técnico."
+            },
+            {
+              "text": "La reducción de tarifa equivale a la mitad del ahorro de coste."
+            },
+            {
+              "text": "La tarifa no cambió."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El cociente es 0,10 / 0,20 = 50 %. Es una cuenta del modelo, no una estimación histórica de Dencun.",
+          "hint": "Compara coste y tarifa por separado para medir quién recibe el ahorro."
+        }
+      ],
+      "takeaway": "Una mejora de infraestructura se evalúa separando función, coste unitario y tarifa efectivamente cobrada."
+    },
+    {
+      "id": "crypto-8",
+      "track": "crypto",
+      "world": 42,
+      "title": "Uniswap v3: liquidez dentro de un intervalo",
+      "company": "Uniswap Labs · diseño de Uniswap v3",
+      "period": "Anuncio del 23 de marzo de 2021",
+      "summary": "Inés examina qué exige concentrar los activos y cómo comparar el resultado completo.",
+      "minutes": 12,
+      "cover": {
+        "icon": "repeat",
+        "color": "#eee1f3"
+      },
+      "sources": [
+        {
+          "title": "Uniswap Labs · Introducing Uniswap v3",
+          "url": "https://blog.uniswap.org/uniswap-v3"
+        },
+        {
+          "title": "Uniswap · documento técnico de v3",
+          "url": "https://app.uniswap.org/whitepaper-v3.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un intervalo elegido por el participante",
+          "body": "El anuncio de Uniswap v3 del 23 de marzo de 2021 describió liquidez concentrada: el proveedor elige un intervalo de precios en el que sus activos participan en intercambios. Concentrar permite utilizar el capital de otra manera, pero añade decisiones de seguimiento. Inés analiza el diseño anunciado, no una rentabilidad obtenida desde esa fecha. Un intervalo estrecho puede dejar de estar activo si el precio sale de él; la concentración no asegura ingresos continuos.",
+          "takeaway": "La participación depende del intervalo elegido y del precio observado.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Ejemplo ficticio",
+              "Condición"
+            ],
+            "rows": [
+              [
+                "Intervalo elegido",
+                "99 a 103 unidades de precio"
+              ],
+              [
+                "Precio 101",
+                "Dentro del intervalo"
+              ],
+              [
+                "Precio 104",
+                "Fuera del intervalo"
+              ]
+            ],
+            "caption": "Números didácticos; no corresponden a un par de mercado."
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Al salir del intervalo",
+          "body": "En el modelo, el precio pasa a 104 y permanece fuera de 99–103. ¿Qué debe reconocer Inés?",
+          "options": [
+            {
+              "text": "La posición sigue ganando automáticamente comisiones por cualquier intercambio."
+            },
+            {
+              "text": "La posición deja de aportar liquidez activa en ese intervalo y no gana sus comisiones mientras siga fuera."
+            },
+            {
+              "text": "El precio tiene que volver de inmediato."
+            }
+          ],
+          "answer": 1,
+          "explanation": "La posición fuera de intervalo no está activa. No existe una garantía temporal de regreso.",
+          "hint": "La participación depende del intervalo elegido y del precio observado."
+        },
+        {
+          "type": "learn",
+          "title": "Comparar con conservar los mismos activos",
+          "body": "Para evaluar un resultado, Inés fija una alternativa: mantener los activos iniciales sin aportarlos al sistema. En un modelo al final del período, esa alternativa vale 1.000 euros; la posición retirada vale 970, ha cobrado 50 de comisiones y cuesta 12 operarla. Su resultado relativo es 970 + 50 − 12 − 1.000: ocho euros más que la alternativa. Separar componentes evita confundir comisiones positivas con superioridad total.",
+          "takeaway": "Compara posición, comisiones y costes con una alternativa equivalente.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Cuenta didáctica al final",
+              "€"
+            ],
+            "rows": [
+              [
+                "Activos retirados",
+                970
+              ],
+              [
+                "Comisiones",
+                50
+              ],
+              [
+                "Costes",
+                12
+              ],
+              [
+                "Alternativa sin aportar",
+                1000
+              ]
+            ],
+            "caption": "Mismas cantidades iniciales y mismo instante de valoración."
+          },
+          "explore": {
+            "prompt": "Mantén los demás datos y cambia las comisiones.",
+            "options": [
+              {
+                "label": "50 €",
+                "title": "Ventaja relativa de 8 €",
+                "body": "970 + 50 − 12 − 1.000 = 8."
+              },
+              {
+                "label": "20 €",
+                "title": "Desventaja relativa de 22 €",
+                "body": "970 + 20 − 12 − 1.000 = −22. Cobrar comisiones no impide quedar por detrás."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Otra comparación completa",
+          "body": "En un ejemplo nuevo, los activos retirados valen 1.420 €, las comisiones son 80 €, los costes 25 € y conservar los activos iniciales habría valido 1.500 €. ¿Cuál es la diferencia frente a conservarlos?",
+          "answer": -25,
+          "unit": "€",
+          "tolerance": 0.02,
+          "explanation": "1.420 + 80 − 25 − 1.500 = −25 €. La posición queda 25 € por debajo de la alternativa.",
+          "hint": "Compara posición, comisiones y costes con una alternativa equivalente."
+        },
+        {
+          "type": "learn",
+          "title": "Recolocar también cambia la cuenta",
+          "body": "Cambiar el intervalo puede requerir operaciones y costes, además de alterar la composición de los activos. Inés no trata esa decisión como una reparación gratuita del resultado pasado. Define antes cuándo revisaría el intervalo y cómo registraría cada coste, y evita elegir retrospectivamente solo los momentos favorables. Para comparar estrategias necesita el recorrido de precios y reglas de actuación, no únicamente el precio del último día ni una cifra llamativa de comisiones.",
+          "takeaway": "Una estrategia reproducible declara sus reglas y registra todos los cambios.",
+          "visual": "none"
+        },
+        {
+          "type": "multi",
+          "title": "Un informe que permite comparar",
+          "body": "Selecciona las dos mejoras útiles.",
+          "options": [
+            {
+              "text": "Registrar costes de cada modificación del intervalo."
+            },
+            {
+              "text": "Mostrar solo el período que salió mejor."
+            },
+            {
+              "text": "Comparar con las mismas cantidades iniciales mantenidas durante el mismo período."
+            },
+            {
+              "text": "Llamar beneficio a toda comisión cobrada."
+            }
+          ],
+          "answers": [
+            0,
+            2
+          ],
+          "explanation": "Las reglas, los costes y una alternativa comparable hacen interpretable el resultado sin escoger solo episodios favorables.",
+          "hint": "Una estrategia reproducible declara sus reglas y registra todos los cambios."
+        }
+      ],
+      "takeaway": "La concentración de liquidez debe analizarse con un intervalo, un recorrido y una comparación completa."
+    },
+    {
+      "id": "crypto-9",
+      "track": "crypto",
+      "world": 43,
+      "title": "Optimism: un calendario no es una promesa",
+      "company": "Optimism Collective · suministro de OP",
+      "period": "Aclaración oficial del 13 de marzo de 2023",
+      "summary": "Inés distingue asignaciones, calendarios ilustrativos y decisiones pendientes.",
+      "minutes": 12,
+      "cover": {
+        "icon": "vote",
+        "color": "#eee1f3"
+      },
+      "sources": [
+        {
+          "title": "Optimism Collective · Clarification on OP Token Supply",
+          "url": "https://gov.optimism.io/t/clarification-on-op-token-supply/5589"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Leer el alcance de una aclaración",
+          "body": "En marzo de 2023, Optimism aclaró que sus asignaciones iniciales de OP no habían cambiado y que ciertos gráficos de disponibilidad eran ilustrativos. Asignación significa el destino previsto de unidades; disponibilidad indica cuándo pueden distribuirse o utilizarse bajo las condiciones correspondientes. Inés no lee la modificación de una hoja de cálculo como prueba automática de una emisión adicional. Primero identifica qué representa cada columna y qué decisiones quedaban pendientes según el propio comunicado.",
+          "takeaway": "Una asignación y una fecha ilustrativa responden a preguntas distintas.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Documento o dato",
+              "Pregunta que responde"
+            ],
+            "rows": [
+              [
+                "Asignación",
+                "¿A qué destino corresponde?"
+              ],
+              [
+                "Calendario ilustrativo",
+                "¿Qué recorrido posible representa?"
+              ],
+              [
+                "Decisión aprobada",
+                "¿Qué actuación queda autorizada?"
+              ]
+            ],
+            "caption": "Distinciones para leer el comunicado histórico."
+          }
+        },
+        {
+          "type": "match",
+          "title": "Ordenar las etiquetas",
+          "body": "Relaciona cada frase con su alcance.",
+          "pairs": [
+            {
+              "left": "25 % destinado al ecosistema",
+              "right": "Asignación"
+            },
+            {
+              "left": "Ejemplo de distribución a lo largo del tiempo",
+              "right": "Calendario ilustrativo"
+            },
+            {
+              "left": "Fecha concreta decidida por el órgano competente",
+              "right": "Decisión sobre ejecución"
+            }
+          ],
+          "explanation": "La categoría, la ilustración y la decisión no son intercambiables.",
+          "hint": "Una asignación y una fecha ilustrativa responden a preguntas distintas."
+        },
+        {
+          "type": "learn",
+          "title": "Sumar categorías sin inventar circulación",
+          "body": "El comunicado confirmó cinco partes del total inicial: 19 % para distribuciones a usuarios, 20 % para financiación retroactiva, 25 % para el ecosistema, 17 % para inversores y 19 % para colaboradores principales. Financiación retroactiva significa apoyar contribuciones ya realizadas según sus procedimientos. Inés puede sumar categorías con la misma base, pero su suma no dice cuánto estaba circulando ese día ni cuántas personas independientes controlaban los votos de esas unidades.",
+          "takeaway": "Sumar asignaciones no demuestra disponibilidad ni control independiente.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Asignación inicial descrita",
+              "% del total"
+            ],
+            "rows": [
+              [
+                "Distribuciones a usuarios",
+                19
+              ],
+              [
+                "Financiación retroactiva",
+                20
+              ],
+              [
+                "Ecosistema",
+                25
+              ],
+              [
+                "Inversores",
+                17
+              ],
+              [
+                "Colaboradores principales",
+                19
+              ]
+            ],
+            "caption": "Porcentajes del comunicado de marzo de 2023, no estado actual."
+          },
+          "explore": {
+            "prompt": "Elige la pregunta que haces sobre el 25 % del ecosistema.",
+            "options": [
+              {
+                "label": "Destino",
+                "title": "El porcentaje describe una categoría",
+                "body": "Puede identificarse su peso dentro del reparto inicial."
+              },
+              {
+                "label": "Disponibilidad",
+                "title": "Hace falta el calendario y sus decisiones",
+                "body": "No puede suponerse que todo estaba entregado y libre para vender."
+              },
+              {
+                "label": "Control",
+                "title": "Hace falta conocer quién decide",
+                "body": "La etiqueta no prueba independencia entre los participantes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Misma base, conclusión limitada",
+          "body": "Las asignaciones a usuarios, financiación retroactiva y ecosistema eran 19 %, 20 % y 25 % del mismo total inicial. ¿Qué porcentaje sumaban?",
+          "answer": 64,
+          "unit": "%",
+          "tolerance": 0.02,
+          "explanation": "19 + 20 + 25 = 64 %. No significa que ese porcentaje estuviera disponible inmediatamente.",
+          "hint": "Sumar asignaciones no demuestra disponibilidad ni control independiente."
+        },
+        {
+          "type": "learn",
+          "title": "Hacer explícito lo que todavía falta",
+          "body": "Inés conserva la fecha del comunicado y distingue sus afirmaciones de su propia lectura. Para describir un calendario posterior tendría que buscar decisiones efectivas y movimientos observados. Un escenario podría estudiar entregas rápidas o lentas, pero ninguno debe presentarse como un hecho sin evidencia. Tampoco una distribución más lenta garantiza una cotización mejor: esa conclusión requeriría estudiar demanda, derechos y otras condiciones que el calendario por sí solo no contiene.",
+          "takeaway": "La incertidumbre sobre fechas debe permanecer visible en el expediente.",
+          "visual": "none"
+        },
+        {
+          "type": "multi",
+          "title": "Dos notas que mejoran la investigación",
+          "body": "Selecciona las dos anotaciones correctas.",
+          "options": [
+            {
+              "text": "El gráfico ilustrativo prueba una venta efectiva en cada fecha."
+            },
+            {
+              "text": "La fecha y el órgano que decide cada entrega deben contrastarse."
+            },
+            {
+              "text": "El reparto inicial fija la cotización futura."
+            },
+            {
+              "text": "Los porcentajes históricos deben separarse de la disponibilidad observada posteriormente."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La investigación necesita decisiones y datos con fecha; un esquema de reparto no proporciona por sí solo movimientos ni precios.",
+          "hint": "La incertidumbre sobre fechas debe permanecer visible en el expediente."
+        }
+      ],
+      "takeaway": "Conservar el contexto y las limitaciones del documento evita convertir un escenario de distribución en un hecho."
+    },
+    {
+      "id": "crypto-10",
+      "track": "crypto",
+      "world": 44,
+      "title": "Solana: reconstruir una interrupción",
+      "company": "Solana · informe de incidente de Anza",
+      "period": "6 de febrero de 2024 · informe del 9 de febrero",
+      "summary": "Inés conecta cronología, dependencias compartidas y alcance de una mitigación.",
+      "minutes": 12,
+      "cover": {
+        "icon": "network",
+        "color": "#eee1f3"
+      },
+      "sources": [
+        {
+          "title": "Solana · informe del incidente del 6 de febrero de 2024",
+          "url": "https://solana.com/news/02-06-24-solana-mainnet-beta-outage-report"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una cronología que se puede contrastar",
+          "body": "El informe publicado por Anza y recogido por Solana sitúa la detención de la finalidad de bloques a las 09:53 UTC del 6 de febrero de 2024. La progresión del consenso volvió a las 14:55 UTC. Finalidad se refiere a la condición de firmeza del historial; consenso, al acuerdo de la red sobre su avance. Inés mide este intervalo documentado, sin afirmar que toda aplicación recuperara su servicio exactamente al mismo segundo.",
+          "takeaway": "Define el indicador de recuperación antes de medir la duración.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Hito del informe",
+              "Hora UTC"
+            ],
+            "rows": [
+              [
+                "Se detiene la finalidad",
+                "09:53"
+              ],
+              [
+                "Se publican instrucciones y versión para reinicio",
+                "Alrededor de 12:34"
+              ],
+              [
+                "Vuelve a avanzar el consenso",
+                "14:55"
+              ]
+            ],
+            "caption": "6 de febrero de 2024; la segunda hora es aproximada."
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Duración entre los dos hitos",
+          "body": "¿Cuántos minutos hay entre las 09:53 y las 14:55 del mismo día? Usa los hitos de detención y retorno del consenso.",
+          "answer": 302,
+          "unit": "minutos",
+          "tolerance": 0.02,
+          "explanation": "De 09:53 a 14:53 hay 300 minutos y hasta 14:55 dos más: 302. Es el intervalo de esos hitos.",
+          "hint": "Define el indicador de recuperación antes de medir la duración."
+        },
+        {
+          "type": "learn",
+          "title": "Muchos participantes pueden compartir un fallo",
+          "body": "El informe atribuye el incidente a un error de software que provocaba repetición indefinida de una tarea. Más del 95 % del peso de participación utilizaba la versión afectada. Inés observa una dependencia compartida: muchas máquinas pueden fallar juntas si ejecutan el mismo comportamiento defectuoso. En un modelo general, repartir equipos entre edificios protege de ciertos cortes locales, pero no basta para evitar un error idéntico presente en todos sus programas.",
+          "takeaway": "La diversidad física no garantiza diversidad del software.",
+          "visual": "none",
+          "figure": {
+            "kind": "table",
+            "headers": [
+              "Modelo de protección",
+              "Lo que no resuelve por sí solo"
+            ],
+            "rows": [
+              [
+                "Dos edificios",
+                "Un error común del programa"
+              ],
+              [
+                "Dos programas independientes",
+                "Una misma conexión física"
+              ],
+              [
+                "Copias de respaldo",
+                "Una regla de reinicio defectuosa"
+              ]
+            ],
+            "caption": "Comparaciones didácticas; no representan la infraestructura real de Solana."
+          },
+          "explore": {
+            "prompt": "Cambia la dependencia que comparten dos grupos ficticios.",
+            "options": [
+              {
+                "label": "Mismo edificio",
+                "title": "Riesgo físico compartido",
+                "body": "Un corte de ese edificio puede afectar a ambos grupos."
+              },
+              {
+                "label": "Mismo programa",
+                "title": "Riesgo lógico compartido",
+                "body": "Un fallo de ese programa puede afectar a ambos aunque estén separados físicamente."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "La evidencia que falta",
+          "body": "Un sistema anuncia miles de equipos repartidos por el mundo. ¿Basta para descartar un fallo de software compartido?",
+          "options": [
+            {
+              "text": "Sí: cada equipo implica un programa distinto."
+            },
+            {
+              "text": "No: hay que conocer qué programas y versiones ejecutan."
+            },
+            {
+              "text": "Sí: la distancia elimina todos los fallos correlacionados."
+            }
+          ],
+          "answer": 1,
+          "explanation": "El número y la ubicación de equipos no informan por sí solos de sus dependencias de software.",
+          "hint": "La diversidad física no garantiza diversidad del software."
+        },
+        {
+          "type": "learn",
+          "title": "Mitigar y resolver por completo no son sinónimos",
+          "body": "Una mitigación limita las condiciones que disparan un problema; una solución completa busca corregir su causa en un alcance mayor. El informe distinguía la medida utilizada para reiniciar de mejoras posteriores previstas. Inés registra esa diferencia en vez de escribir que ningún incidente similar podría volver a ocurrir. Su siguiente revisión buscaría pruebas de las mejoras y su adopción. Esta disciplina permite actualizar una conclusión cuando aparecen datos nuevos, sin reescribir el episodio como si siempre hubiera sido previsible.",
+          "takeaway": "El retorno del servicio no demuestra que desaparezcan todas las causas de riesgo.",
+          "visual": "none"
+        },
+        {
+          "type": "match",
+          "title": "Tres niveles del expediente",
+          "body": "Relaciona cada elemento.",
+          "pairs": [
+            {
+              "left": "09:53 y 14:55 en el informe",
+              "right": "Cronología documentada"
+            },
+            {
+              "left": "Dependencia de una versión común",
+              "right": "Explicación del fallo compartido"
+            },
+            {
+              "left": "Comprobar mejoras y su adopción después",
+              "right": "Trabajo de seguimiento"
+            }
+          ],
+          "explanation": "El historial observado, la explicación técnica y la revisión posterior desempeñan papeles diferentes.",
+          "hint": "El retorno del servicio no demuestra que desaparezcan todas las causas de riesgo."
+        }
+      ],
+      "takeaway": "Una revisión de incidentes conserva fechas, dependencias y límites; el expediente sigue abierto a evidencia nueva."
+    }
+  ]
+}

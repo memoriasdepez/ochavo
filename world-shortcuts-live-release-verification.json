@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-08T20:14:16.024Z",
+  "version": "0.21.1",
+  "origin": "https://ochavo.app/",
+  "scope": "Public HTML, its entry assets, and first two stock worlds and first/last crypto world; no user data",
+  "verified": true,
+  "files": [
+    {
+      "path": "/index.html",
+      "sha256": "66d8784a1f650909e1609c7c7c08e7563282ff2662837c6789fe38009d87d0c4",
+      "bytes": 781787,
+      "verified": true
+    },
+    {
+      "path": "/assets/app-BoEqXtrE.js",
+      "sha256": "d230641d0f0752b126856a1b71533ab364f8cef930b88e05a95633c9dc81ecb9",
+      "bytes": 610747,
+      "verified": true
+    },
+    {
+      "path": "/assets/nunito-C2nUZbRV.js",
+      "sha256": "71981e97e0230c1a4884349ffcb2b2360760459237d9539ccdc80c1f0451c1df",
+      "bytes": 576548,
+      "verified": true
+    },
+    {
+      "path": "/assets/dist-Btb5Jv1E.js",
+      "sha256": "020bd3311ec36b945d412865b91d0b0152780fe623ad1ce85bcc570b836c2b92",
+      "bytes": 7752,
+      "verified": true
+    },
+    {
+      "path": "/assets/preload-helper-DjzSQ1t3.js",
+      "sha256": "66c990b6727d220a346b45d00ee48d433c8d59ef03fbf8b91c6cdadeeadfdf3f",
+      "bytes": 1383,
+      "verified": true
+    },
+    {
+      "path": "/assets/nunito-CAufuki5.css",
+      "sha256": "460e4478316025405e2ced0b1647c2781b64cefc0176cdd47c713b0a0904113d",
+      "bytes": 1515,
+      "verified": true
+    },
+    {
+      "path": "/assets/app-W0TImWak.css",
+      "sha256": "86811a58ab02ccce5670acb817e524195f10925cc52abb101afeb6d4107c7f27",
+      "bytes": 130549,
+      "verified": true
+    },
+    {
+      "path": "/course/world-45-93730f1b611cfcf9.json",
+      "sha256": "93730f1b611cfcf9ae1e890bc8da270b34073716d61cf1ed5457ccb7ae3df818",
+      "bytes": 86430,
+      "verified": true
+    },
+    {
+      "path": "/course/world-46-f402a20fe0d8b628.json",
+      "sha256": "f402a20fe0d8b628237df46441e9580e86f88c6897f2a4bf6204ff3af9b11fa0",
+      "bytes": 84868,
+      "verified": true
+    },
+    {
+      "path": "/course/world-115-261b9b8663549f4d.json",
+      "sha256": "261b9b8663549f4dac09c5e1e43932af34dc213fe93c081074cccf04c756fbbc",
+      "bytes": 86218,
+      "verified": true
+    },
+    {
+      "path": "/course/world-144-85c55704f08e74c4.json",
+      "sha256": "85c55704f08e74c4a2dc3fac79885fb53112ba1a3ec3d72420a27e2566c32bc8",
+      "bytes": 93618,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "cases": [
+    {
+      "id": "stocks-20",
+      "track": "stocks",
+      "world": 29,
+      "title": "BT: aportar dinero y ver crecer el déficit",
+      "company": "BT Group plc",
+      "period": "Ejercicio terminado el 31 de marzo de 2024; comparación con el 31 de marzo de 2023.",
+      "summary": "Elena distingue el saldo contable de pensiones de las aportaciones y de los cambios de valoración.",
+      "minutes": 12,
+      "cover": {
+        "icon": "landmark",
+        "color": "#dde8d4"
+      },
+      "sources": [
+        {
+          "title": "BT Group: resultados del ejercicio terminado el 31 de marzo de 2024",
+          "url": "https://newsroom.bt.com/results-for-the-full-year-to-31-march-2024/"
+        },
+        {
+          "title": "BT Group: informe anual 2024, nota 19 de pensiones",
+          "url": "https://www.bt.com/bt-plc/assets/documents/investors/financial-reporting-and-news/annual-reports/2024/2024-bt-group-plc-annual-report.pdf"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Dos hechos que pueden coexistir",
+          "body": "BT informó de un déficit de pensiones bajo IAS 19, antes de impuestos, de 4.800 millones de libras al 31 de marzo de 2024, frente a 3.100 millones un año antes. IAS 19 es la norma internacional utilizada para esa medición. También informó de aportaciones programadas al plan de 800 millones durante el ejercicio. Elena no ve una contradicción automática: los activos y obligaciones pueden cambiar mientras la empresa aporta efectivo.",
+          "takeaway": "Un déficit puede aumentar pese a aportaciones de caja.",
+          "visual": "none",
+          "terms": [
+            {
+              "word": "IAS 19",
+              "meaning": "Norma internacional sobre prestaciones a empleados utilizada en la medición indicada."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Cifras redondeadas publicadas por BT, millones de libras",
+            "headers": [
+              "Medida",
+              "Importe"
+            ],
+            "rows": [
+              [
+                "Déficit IAS 19 antes de impuestos, 31-03-2023",
+                "3.100"
+              ],
+              [
+                "Déficit IAS 19 antes de impuestos, 31-03-2024",
+                "4.800"
+              ],
+              [
+                "Aportaciones programadas del ejercicio indicadas",
+                "800"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Qué no puede deducirse del aumento",
+          "body": "El déficit publicado creció pese a aportaciones. ¿Qué afirmación no está justificada por ese hecho aislado?",
+          "options": [
+            {
+              "text": "Que BT no aportó dinero al plan."
+            },
+            {
+              "text": "Que el saldo final fue mayor."
+            },
+            {
+              "text": "Que hay que analizar cambios en activos y obligaciones."
+            }
+          ],
+          "answer": 0,
+          "explanation": "La empresa informó de aportaciones; otros movimientos pueden superar su efecto sobre el déficit.",
+          "hint": "Separa pago observado y saldo valorado."
+        },
+        {
+          "type": "learn",
+          "title": "Reconstruir un mecanismo con cifras inventadas",
+          "body": "Para aislar el efecto, Elena crea un plan ficticio con obligación de 100 y activos de 90. La empresa aporta 5, pero los activos pierden 8 de valor y la obligación aumenta 2. Al final los activos son 87 y la obligación 102: el déficit sube de 10 a 15. Estas cantidades no reconstruyen las cuentas de BT; muestran por qué un pago real puede coexistir con un deterioro del saldo.",
+          "takeaway": "El puente debe incluir todos los movimientos relevantes.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Plan didáctico, sin relación numérica con BT",
+            "headers": [
+              "Componente",
+              "Inicio",
+              "Cambios",
+              "Final"
+            ],
+            "rows": [
+              [
+                "Obligación",
+                "100",
+                "+2",
+                "102"
+              ],
+              [
+                "Activos",
+                "90",
+                "+5 -8",
+                "87"
+              ],
+              [
+                "Déficit",
+                "10",
+                "+5",
+                "15"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mismo plan inicial y aportación de 5; cambia el rendimiento",
+            "options": [
+              {
+                "label": "Activos sin pérdida; obligación estable",
+                "title": "Déficit final de 5",
+                "body": "100 - (90 + 5) = 5. La aportación reduce el déficit del modelo."
+              },
+              {
+                "label": "Activos pierden 8; obligación aumenta 2",
+                "title": "Déficit final de 15",
+                "body": "102 - (90 + 5 - 8) = 15. Otros efectos superan la aportación."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Otro plan ficticio",
+          "body": "Obligación inicial 120 y activos iniciales 100, en millones €. Se aportan 6; los activos pierden 4 y la obligación aumenta 3. Sin otros movimientos, ¿qué déficit final resulta?",
+          "answer": 21,
+          "tolerance": 0.01,
+          "unit": "millones €",
+          "explanation": "Obligación 123; activos 100 + 6 - 4 = 102. Déficit 123 - 102 = 21. No son cifras de BT.",
+          "hint": "Reconstruye cada lado antes de restar."
+        },
+        {
+          "type": "learn",
+          "title": "Volver a la nota real sin simplificarla de más",
+          "body": "BT explica que su cobertura toma como referencia la medición de financiación del plan, que no coincide necesariamente con la medición contable. Elena conserva esa distinción y no atribuye todo el movimiento a una sola tasa. Tampoco trata el déficit antes de impuestos como un pago inmediato ni mezcla esa cifra con su versión neta fiscal. La fuente real exige leer bases y calendario; el modelo anterior solo ayuda a formular preguntas mejores.",
+          "takeaway": "Base de medición, calendario y caja siguen siendo distintos.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Lectura del expediente BT",
+            "items": [
+              "Identificar fecha y base del déficit",
+              "Separar aportaciones efectivas",
+              "Revisar cambios de activos y obligaciones",
+              "Contrastar financiación, cobertura y efectos fiscales"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos comprobaciones para comparar años",
+          "body": "Selecciona dos prácticas coherentes.",
+          "options": [
+            {
+              "text": "Sumar el déficit íntegro a pagos ya incluidos sin revisar duplicaciones."
+            },
+            {
+              "text": "Suponer que toda cobertura usa idéntica base contable."
+            },
+            {
+              "text": "Comparar déficits sobre la misma base antes o después de impuestos."
+            },
+            {
+              "text": "Revisar aportaciones y cambios de valoración por separado."
+            }
+          ],
+          "answers": [
+            2,
+            3
+          ],
+          "explanation": "La comparación requiere bases homogéneas y una conciliación de movimientos.",
+          "hint": "Mantén definición y fecha de cada importe."
+        }
+      ],
+      "takeaway": "El saldo de pensiones combina estimaciones y activos; las aportaciones son una pieza de su evolución."
+    },
+    {
+      "id": "stocks-21",
+      "track": "stocks",
+      "world": 30,
+      "title": "Boeing en 2024: capital con conversión obligatoria",
+      "company": "The Boeing Company",
+      "period": "Emisión del 31 de octubre de 2024, documentada en el informe anual 2024; condiciones originales de conversión de 2027.",
+      "summary": "Elena lee derechos, fracciones y conversión antes de interpretar la tasa de una preferente real.",
+      "minutes": 12,
+      "cover": {
+        "icon": "briefcase-business",
+        "color": "#e1e5ee"
+      },
+      "sources": [
+        {
+          "title": "Boeing: informe anual 2024 presentado en la SEC, emisión de preferentes convertibles",
+          "url": "https://www.sec.gov/Archives/edgar/data/12927/000001292725000015/ba-20241231.htm"
+        },
+        {
+          "title": "Boeing: anuncio de condiciones de las ofertas de octubre de 2024",
+          "url": "https://investors.boeing.com/investors/news/press-release-details/2024/Boeing-Announces-Pricing-of-Upsized-Concurrent-Offerings-of-Common-Stock-and-Depositary-Shares/default.aspx"
+        },
+        {
+          "title": "Boeing: documentación de la emisión presentada en la SEC en octubre de 2024",
+          "url": "https://www.sec.gov/Archives/edgar/data/12927/000119312524248743/d750441d8k.htm"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Un nombre que requiere varias capas",
+          "body": "Boeing informó que el 31 de octubre de 2024 emitió 115 millones de títulos representativos de 5,75 millones de acciones preferentes convertibles obligatorias de la serie A al 6 %. Cada título representaba una vigésima parte de una preferente. Aquí título representativo significa una unidad que transmite esa fracción de sus derechos según el acuerdo, no una acción ordinaria completa. Elena comienza por esa escala antes de interpretar pagos o conversión.",
+          "takeaway": "Un título representativo puede corresponder a una fracción de otro instrumento.",
+          "visual": "none",
+          "terms": [
+            {
+              "word": "Título representativo",
+              "meaning": "Unidad que representa una fracción de los derechos de otro instrumento según un acuerdo."
+            }
+          ],
+          "figure": {
+            "kind": "table",
+            "caption": "Emisión histórica comunicada por Boeing",
+            "headers": [
+              "Dato",
+              "Cantidad"
+            ],
+            "rows": [
+              [
+                "Fecha de emisión",
+                "31 de octubre de 2024"
+              ],
+              [
+                "Títulos representativos",
+                "115 millones"
+              ],
+              [
+                "Preferentes representadas",
+                "5,75 millones"
+              ],
+              [
+                "Relación",
+                "20 títulos por preferente"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "match",
+          "title": "Identificar la unidad",
+          "body": "Relaciona las piezas del caso.",
+          "pairs": [
+            {
+              "left": "Una unidad representativa",
+              "right": "Una vigésima parte de una preferente"
+            },
+            {
+              "left": "Acción preferente serie A",
+              "right": "Instrumento con condiciones propias"
+            },
+            {
+              "left": "Acción ordinaria tras conversión",
+              "right": "Instrumento distinto al que se transforma"
+            }
+          ],
+          "explanation": "La unidad representativa, la preferente y la ordinaria no son equivalentes uno por uno.",
+          "hint": "Conserva la escala indicada."
+        },
+        {
+          "type": "learn",
+          "title": "La tasa no elimina las condiciones",
+          "body": "Las condiciones originales fijaban dividendos acumulativos al 6 % sobre la preferencia de liquidación, pagaderos si se declaraban bajo sus términos, y conversión obligatoria prevista alrededor del 15 de octubre de 2027 salvo conversión anterior. Elena no transforma esa fecha en devolución garantizada de efectivo ni el porcentaje en rentabilidad total asegurada. Para practicar la escala, utiliza después títulos ficticios; los importes del ejercicio no describen una compra ni un cobro real de Boeing.",
+          "takeaway": "Tasa, declaración y forma de liquidación deben leerse conjuntamente.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Tres preguntas separadas",
+            "headers": [
+              "Pregunta",
+              "Qué se debe consultar"
+            ],
+            "rows": [
+              [
+                "Sobre qué se calcula el porcentaje",
+                "Importe de referencia contractual"
+              ],
+              [
+                "Cómo se paga",
+                "Condiciones de dividendos y declaración"
+              ],
+              [
+                "Qué se recibe al final",
+                "Regla de conversión, fechas y ajustes"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Un convertible obligatorio ficticio entrega acciones al final",
+            "options": [
+              {
+                "label": "La acción termina más alta",
+                "title": "El valor recibido puede ser mayor",
+                "body": "Depende del número entregado y de todas las condiciones; no se deduce solo de la tasa."
+              },
+              {
+                "label": "La acción termina más baja",
+                "title": "Puede perderse valor pese a dividendos",
+                "body": "La conversión no es una promesa de recuperar en efectivo un nominal fijo."
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Una escala didáctica distinta",
+          "body": "Un instrumento ficticio se divide en 25 títulos representativos por preferente. Se mantienen 200 títulos. ¿Cuántas preferentes completas representan? No es la relación de Boeing.",
+          "answer": 8,
+          "tolerance": 0.01,
+          "unit": "preferentes",
+          "explanation": "200 / 25 = 8 preferentes equivalentes. La escala se especifica para este modelo separado.",
+          "hint": "Divide títulos entre títulos por preferente."
+        },
+        {
+          "type": "learn",
+          "title": "La conversión cambia el reparto futuro",
+          "body": "El contrato histórico de Boeing incluía una relación variable dentro de límites y ajustes. Elena no necesita predecir el precio de 2027 para entender el punto: la cantidad de ordinarias depende de una regla, y los antiguos titulares deben analizar su posible dilución junto al capital recibido. El caso no valora el instrumento hoy ni recomienda adquirirlo. Conserva la emisión de 2024 como ejemplo de por qué el mapa de financiación no se reduce a deuda y ordinarias.",
+          "takeaway": "El análisis debe incluir financiación recibida y derechos futuros.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Método para leer el instrumento",
+            "items": [
+              "Identificar unidad y fracción",
+              "Leer pagos y condiciones",
+              "Reconstruir conversión y posibles acciones",
+              "Relacionar recursos recibidos y reparto futuro"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Dos conclusiones compatibles con el caso",
+          "body": "Selecciona dos afirmaciones.",
+          "options": [
+            {
+              "text": "El 6 % garantiza la rentabilidad total del inversor."
+            },
+            {
+              "text": "La conversión obligatoria exige estudiar la fórmula de acciones, no suponer devolución fija en efectivo."
+            },
+            {
+              "text": "Cada título representativo equivale a una ordinaria completa."
+            },
+            {
+              "text": "Una preferente convertible puede tener derechos diferentes de una ordinaria."
+            }
+          ],
+          "answers": [
+            1,
+            3
+          ],
+          "explanation": "La tasa es solo una condición; unidad, pagos y transformación completan el contrato.",
+          "hint": "No conviertas una etiqueta en todos los derechos."
+        }
+      ],
+      "takeaway": "Un instrumento híbrido se entiende leyendo escala, pagos y conversión; la tasa aislada no resume su resultado."
+    },
+    {
+      "id": "stocks-22",
+      "track": "stocks",
+      "world": 31,
+      "title": "GE y GE Vernova: separar sin duplicar el valor",
+      "company": "General Electric · GE Aerospace · GE Vernova",
+      "period": "Escisión completada el 2 de abril de 2024; condiciones anunciadas el 29 de febrero de 2024.",
+      "summary": "Elena sigue el reparto de acciones y reconstruye qué cambia cuando dos negocios empiezan a funcionar por separado.",
+      "minutes": 12,
+      "cover": {
+        "icon": "factory",
+        "color": "#ebdfcf"
+      },
+      "sources": [
+        {
+          "title": "GE: aprobación de la escisión y relación de una acción de GE Vernova por cada cuatro de GE",
+          "url": "https://www.ge.com/news/press-releases/ge-board-of-directors-approves-spin-off-of-ge-vernova-ge-vernova-and-ge-aerospace-to"
+        },
+        {
+          "title": "GE: comunicación a la SEC de la separación completada el 2 de abril de 2024",
+          "url": "https://www.sec.gov/Archives/edgar/data/40545/000119312524084038/d792336d8k.htm"
+        },
+        {
+          "title": "GE: documentación oficial de sus separaciones",
+          "url": "https://www.ge.com/investor-relations/spinoff-resources"
+        }
+      ],
+      "steps": [
+        {
+          "type": "learn",
+          "title": "Una separación con una relación concreta",
+          "body": "GE completó la separación de GE Vernova el 2 de abril de 2024. Las condiciones anunciadas establecían una acción de GE Vernova por cada cuatro acciones de GE para los titulares elegibles; estos conservaron sus acciones de GE, que continuó como GE Aerospace. Elena estudia el evento ya ocurrido, sin utilizar cotizaciones actuales. La relación distribuye propiedad de negocios que antes estaban reunidos; no demuestra por sí sola una ganancia ni duplica el patrimonio del titular.",
+          "takeaway": "La relación de reparto indica cantidades, no una ganancia automática.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Hechos documentados de la operación",
+            "headers": [
+              "Elemento",
+              "Dato"
+            ],
+            "rows": [
+              [
+                "Anuncio del consejo",
+                "29 de febrero de 2024"
+              ],
+              [
+                "Separación completada",
+                "2 de abril de 2024"
+              ],
+              [
+                "Relación anunciada",
+                "1 GE Vernova por cada 4 GE"
+              ],
+              [
+                "Negocio que continuó con GE",
+                "GE Aerospace"
+              ]
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "title": "Aplicar la relación histórica",
+          "body": "En una tenencia hipotética elegible de 120 acciones de GE, sin fracciones ni otros ajustes, ¿cuántas acciones de GE Vernova corresponde recibir según la relación anunciada?",
+          "answer": 30,
+          "tolerance": 0.01,
+          "unit": "acciones",
+          "explanation": "120 / 4 = 30 acciones. La tenencia es hipotética; la relación es histórica y documentada.",
+          "hint": "Usa cuatro antiguas por cada nueva."
+        },
+        {
+          "type": "learn",
+          "title": "Conciliar el conjunto con precios inventados",
+          "body": "Elena construye un ejemplo que no utiliza precios reales de GE. Antes hay 100 unidades con valor total de 10.000 €. Después, esas unidades de la sociedad que continúa valen en conjunto 7.500 €, y las 25 recibidas de la separada valen 2.500 €. Sin otros flujos ni cambios del modelo, el total sigue en 10.000 €. Mirar solo la primera cotización confundiría el reparto de valor con una pérdida del conjunto.",
+          "takeaway": "La conciliación debe incluir las dos posiciones.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "table",
+            "caption": "Modelo didáctico, no cotizaciones históricas de GE",
+            "headers": [
+              "Momento o parte",
+              "Valor total"
+            ],
+            "rows": [
+              [
+                "Antes de separar",
+                "10.000 €"
+              ],
+              [
+                "Parte que continúa después",
+                "7.500 €"
+              ],
+              [
+                "Parte recibida después",
+                "2.500 €"
+              ],
+              [
+                "Suma después",
+                "10.000 €"
+              ]
+            ]
+          },
+          "explore": {
+            "prompt": "Mismo reparto de cantidades; cambian valores posteriores inventados",
+            "options": [
+              {
+                "label": "7.500 € y 2.500 €",
+                "title": "El total se mantiene en 10.000 €",
+                "body": "La distribución por sí sola no crea ni destruye valor en este modelo."
+              },
+              {
+                "label": "7.000 € y 2.400 €",
+                "title": "El total baja a 9.400 €",
+                "body": "Ahora existe una variación conjunta que no se explica solo por contar dos posiciones."
+              }
+            ]
+          }
+        },
+        {
+          "type": "choice",
+          "title": "Una caída en la primera línea",
+          "body": "La posición que continúa vale menos, pero se recibió otra. ¿Qué debe hacerse antes de medir el resultado del titular?",
+          "options": [
+            {
+              "text": "Sumar ambas posiciones y los flujos pertinentes sobre una base comparable."
+            },
+            {
+              "text": "Suponer que dos compañías duplican el valor."
+            },
+            {
+              "text": "Contar solo la primera porque conserva el nombre."
+            }
+          ],
+          "answer": 0,
+          "explanation": "La operación completa reparte derechos; la medida del resultado debe incluirlos todos.",
+          "hint": "Reconstruye el patrimonio conjunto."
+        },
+        {
+          "type": "learn",
+          "title": "Dos negocios exigen dos expedientes",
+          "body": "La separación también requiere acuerdos sobre activos, obligaciones y relaciones entre las entidades, documentados por GE. Elena revisaría deuda, costes compartidos, servicios de transición y capacidad de cada negocio para financiarse. No deduce del reparto una norma fiscal aplicable a cualquier accionista. El caso conecta las lecciones de escisiones y suma de partes: cada negocio necesita valoración propia y el conjunto debe conservar ajustes coherentes, sin restar dos veces obligaciones ya incluidas.",
+          "takeaway": "El análisis continúa con las cuentas y condiciones de cada entidad.",
+          "visual": "none",
+          "terms": [],
+          "figure": {
+            "kind": "flow",
+            "caption": "Revisión después de una separación",
+            "items": [
+              "Conciliar títulos y efectivo",
+              "Leer activos, deuda y acuerdos asignados",
+              "Valorar cada negocio sobre bases compatibles",
+              "Reunir resultado y límites del análisis"
+            ]
+          }
+        },
+        {
+          "type": "multi",
+          "title": "Qué completar después del reparto",
+          "body": "Selecciona dos comprobaciones.",
+          "options": [
+            {
+              "text": "Bases compatibles al valorar y sumar las dos posiciones."
+            },
+            {
+              "text": "Restar dos veces la misma deuda por prudencia."
+            },
+            {
+              "text": "Aplicar a todos los accionistas una conclusión fiscal universal."
+            },
+            {
+              "text": "Deuda y acuerdos que corresponden a cada entidad."
+            }
+          ],
+          "answers": [
+            0,
+            3
+          ],
+          "explanation": "La separación de títulos debe acompañarse de una separación coherente de economía y financiación.",
+          "hint": "Mantén el alcance de cada cifra."
+        }
+      ],
+      "takeaway": "Una escisión distribuye propiedad; comprender su valor exige reunir posiciones y estudiar cada negocio por separado."
+    }
+  ]
+}
