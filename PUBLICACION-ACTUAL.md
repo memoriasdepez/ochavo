@@ -1,50 +1,21 @@
-# Publicación de Ochavo — comprobación del 21 de octubre de 2026
+# Publicación de Ochavo — 21 de octubre de 2026
 
-La referencia de producto es ochavo.app 0.35.4. Android e iOS comparten sus recursos
-web; las verificaciones de recursos y del proyecto iOS han pasado. Esto no acredita
-una nueva compilación firmada ni un envío a las tiendas.
+Versión de producto: 0.35.5. La bienvenida automática se muestra una sola vez por cuenta, con comprobante compartido entre dispositivos. Las cuentas con progreso previo no vuelven a recibirla. Se conserva el acceso manual desde Ayuda.
 
-| Área | Comprobado | Siguiente paso |
+| Plataforma | Comprobado | Pendiente |
 | --- | --- | --- |
-| Google Play | Ficha pública de `app.brote.inversion`, versión 0.31.4. | Preparar y subir una versión móvil con los cambios actuales. |
-| App Store | Acceso API verificado con el ID de clave correcto. Ficha 0.31.4 en PREPARE_FOR_SUBMISSION, sin compilación seleccionada, sin datos de revisión y sin capturas. | Compilar/subir 0.35.4, preparar la ficha de esa versión, añadir capturas y datos de revisión y revisar los requisitos de la cuenta antes del envío. |
-| AdMob Android | Adaptador, intersticiales, consentimiento UMP, exclusión de Plus y frecuencia tras cada segunda finalización guardada implementados. Configuración real desactivada. | Vincular o comprobar la ficha pública de Play en AdMob, comprobar la aprobación de la aplicación y probar consentimiento/anuncios oficiales de prueba antes de activar anuncios reales. |
-| AdMob iOS | Excluido del arranque y de los plugins nativos; no hay integración activa. | Integrar SDK y adaptador iOS, crear sus identificadores propios, implementar UMP, evaluar ATT según el uso de seguimiento/IDFA, actualizar privacidad y probar en iPhone. |
+| ochavo.app | 0.35.5 publicada; reglas Firestore y Hosting desplegados correctamente. El dominio sirve app-GgFhN9yC.js, igual que la compilación. | Ninguno para este cambio web. |
+| iOS / TestFlight | 0.35.5 (72) firmada, procesada por Apple y En pruebas en el grupo interno Ochavo — actualizaciones, con un tester. | Actualizar desde TestFlight en el iPhone. No hay envío público nuevo a App Store. |
+| Android / Google Play | Fuentes 0.35.5/73 y recursos Capacitor sincronizados. La ficha pública comprobada anteriormente era 0.31.4; no se ha verificado una nueva publicación en esta operación. | Recuperar upload.p12 original para firmar y subir el AAB. No se ha subido 0.35.5. |
 
-`https://ochavo.app/app-ads.txt` autoriza el editor configurado de AdMob. Esto no
-equivale a la aprobación de la aplicación. El último registro de consola, del 14 de
-octubre, indicaba cuenta AdMob aprobada y app pendiente de revisión; ese registro
-no confirma el estado de aprobación actual.
+La clave de subida Android no apareció en la copia histórica, Documentos, Descargas, Escritorio ni en la búsqueda de Drive. Las contraseñas DPAPI y el exportado PEPK encontrado no sustituyen ese almacén. No crear otra clave ni reiniciar la firma para sortear su ausencia.
 
-La beta iOS 0.34.1 (63) está procesada, sin caducar y en IN_BETA_TESTING para
-pruebas internas según la API de Apple. La 0.31.4 (58) también está procesada. No
-se ha subido la 0.35.4. El detalle de asignación a grupos y la disponibilidad de
-la app devolvieron 403 con la clave Developer: no se afirman verificados.
+Validación: compilación web correcta, 92 pruebas de aplicación y 78 del emulador Firestore superadas. Los 1495 JSON de cursos históricos y actuales conservan sus hashes. Detalle técnico y continuidad iOS en outputs/welcome-0.35.5/ESTADO.md.
 
-La ficha española ya tiene descripción, palabras clave, URLs de soporte y
-marketing y texto promocional. También hay nombre, subtítulo, URLs de privacidad,
-categorías EDUCATION/FINANCE y una declaración de edad. No se ha validado que cada
-respuesta de esa declaración sea correcta. Los pendientes de contrato/comerciante
-del historial deben comprobarse por el titular en la consola.
+## Publicidad y App Store pública
 
-La conexión de Apple recibe las tres variables del entorno. La clave privada
-válida también se admite como cuerpo base64 PKCS#8 sin cabeceras PEM. El JWT se
-firma en memoria, sin guardar claves ni tokens en Git. Se diagnosticó un ID de
-clave equivocado: el correcto, deducido del nombre del P8 facilitado por el usuario
-y validado contra Apple, es XVP9HS8Q34. El cliente ya selecciona automáticamente
-ese ID únicamente cuando coincide la huella de la clave pública verificada. Esto
-resuelve las consultas aunque el formulario de ajustes falle al guardar el ID.
-No se almacena material privado ni se modifica el secreto del entorno. Para
-cualquier clave nueva o rotada se conserva el ID indicado en las variables.
+Esta corrección no activa ni modifica AdMob. El último registro de consola, del 14 de octubre, indicaba cuenta aprobada y aplicación pendiente de revisión; no acredita la aprobación actual. Android y web conservan anuncios reales desactivados; iOS sigue sin integración AdMob activa. app-ads.txt autoriza al editor configurado, lo cual no equivale a aprobar la aplicación.
 
-El resultado de la consulta está en referencias/apple-publicacion-2026-10-21/.
-No se ha abierto ni copiado al checkout el P8 adjunto al chat; bastó su nombre.
-La siguiente dependencia de compilación es Codemagic: no hay credencial API suya
-configurada aquí ni certificado de distribución/IPA local. Revisar el proyecto
-existente y que apunte al repositorio actualizado antes de lanzar el workflow
-`ios-testflight`. No se ha iniciado ni cobrado una compilación de Codemagic.
+La ficha pública de App Store observada anteriormente seguía en preparación, con capturas y datos de revisión pendientes. TestFlight disponible no equivale a publicación en App Store. Contratos, declaración de comerciante y respuestas de edad deben comprobarse por el titular antes de un envío público.
 
-Validación realizada: siete pruebas del cliente Apple y 47 pruebas de publicidad
-superadas; comprobación de igualdad de recursos Android/iOS/web y chequeo estático
-de iOS superados. No se han activado anuncios reales ni enviado una nueva versión
-a las tiendas durante esta comprobación.
+Claves, tokens y certificados permanecen fuera del repositorio. Codemagic conserva su integración de firma existente; no se han sustituido identificadores ni claves.
