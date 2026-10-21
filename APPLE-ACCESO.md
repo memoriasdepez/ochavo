@@ -6,6 +6,13 @@ Reutilizarla si sigue activa y se conserva su `.p8`; no crear ni revocar claves
 automáticamente. La clave guardada en Codemagic no está conectada por ello a este
 entorno. Tampoco se comparte una sesión iniciada en el navegador de otro equipo.
 
+El usuario ha confirmado que no conserva el `.p8` anterior. Para conectar este
+entorno, crear una clave adicional de equipo «Ochavo Codex», empezando por el rol
+Developer para consultar versiones y TestFlight. Si Apple deniega una operación
+necesaria, revisar el permiso concreto antes de ampliar acceso. Descargar el `.p8`
+una sola vez y conservarlo en el almacenamiento seguro del titular. No revocar
+«Ochavo Codemagic» ni sustituir la integración de compilación existente.
+
 ## Abrir las consolas
 
 - [Apps de App Store Connect](https://appstoreconnect.apple.com/apps)
