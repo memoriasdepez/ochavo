@@ -43,10 +43,12 @@ El acceso de red necesita `api.appstoreconnect.apple.com`. La consola humana usa
 
 La conexión se verificó el 21-10-2026. El ID configurado inicialmente no coincidía
 con el archivo del usuario. El identificador correcto es `XVP9HS8Q34`; la clave
-privada y el emisor existentes funcionan con él. Hasta que el titular corrija
-`APP_STORE_CONNECT_KEY_ID` en ajustes, usarlo únicamente como sustitución por
-comando: `APP_STORE_CONNECT_KEY_ID=XVP9HS8Q34 node --use-env-proxy scripts/apple-status.mjs`.
-El identificador no es el contenido de la clave privada. No crear claves nuevas
+privada y el emisor existentes funcionan con él. Ante el error de guardado del
+entorno, el cliente identifica esa clave por SHA-256 de su clave pública y elige
+su ID ya autenticado. `scripts/apple-api-key-identifiers.json` solo guarda esa
+huella pública y el identificador, nunca el P8 ni el token. El comando normal de
+consulta ya funciona sin sustituciones manuales. Una clave nueva o rotada cuya
+huella no esté registrada sigue usando el ID del entorno. No crear claves nuevas
 ni volver a solicitar el P8 para resolver este error de identificación.
 
 Comprobar la inyección sin mostrar valores:

@@ -1,5 +1,6 @@
-import {createPrivateKey,sign} from 'node:crypto';
+import {createHash,createPrivateKey,createPublicKey,sign} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
+import verifiedIdentifiers from './apple-api-key-identifiers.json' with {type:'json'};
 
 const names=['APP_STORE_CONNECT_KEY_ID','APP_STORE_CONNECT_ISSUER_ID','APP_STORE_CONNECT_PRIVATE_KEY'];
 const origin='https://api.appstoreconnect.apple.com';
@@ -10,11 +11,20 @@ export function appleCredentialStatus(env=process.env){
   return {configured:missing.length===0,missing};
 }
 
+export function appleKeyIdentifier(key,configuredIdentifier,known=verifiedIdentifiers){
+  const fingerprint=createHash('sha256').update(createPublicKey(key).export({format:'der',type:'spki'})).digest('hex');
+  const matches=known.filter(item=>item.publicKeySha256===fingerprint);
+  if(matches.length>1)throw Error('Hay identificadores verificados duplicados para la clave de Apple.');
+  // Select a previously authenticated identifier only for that exact public key.
+  // A rotated or unknown key continues to use the environment's identifier.
+  return matches[0]?.keyId||configuredIdentifier;
+}
+
 export function appleToken(env=process.env,now=Date.now()){
   const status=appleCredentialStatus(env);
   if(!status.configured)throw Error('Faltan variables seguras: '+status.missing.join(', '));
-  const keyId=env.APP_STORE_CONNECT_KEY_ID.trim(),issuer=env.APP_STORE_CONNECT_ISSUER_ID.trim();
-  if(!/^[A-Z0-9]{10}$/.test(keyId)||!/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(issuer))throw Error('Revisa el identificador de clave y el identificador del emisor de Apple.');
+  const issuer=env.APP_STORE_CONNECT_ISSUER_ID.trim();
+  if(!/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(issuer))throw Error('Revisa el identificador del emisor de Apple.');
   let key;
   try{
     const raw=env.APP_STORE_CONNECT_PRIVATE_KEY.trim().replace(/\\n/g,'\n');
@@ -29,6 +39,8 @@ export function appleToken(env=process.env,now=Date.now()){
   }catch{
     throw Error('La variable privada debe contener la clave P8 de Apple en formato PEM o su cuerpo base64 PKCS#8. Un marcador de secreto del proxy no permite firmar localmente.');
   }
+  const keyId=appleKeyIdentifier(key,env.APP_STORE_CONNECT_KEY_ID.trim());
+  if(!/^[A-Z0-9]{10}$/.test(keyId))throw Error('Revisa el identificador de clave de Apple.');
   const encode=value=>Buffer.from(JSON.stringify(value)).toString('base64url');
   const iat=Math.floor(now/1000);
   const unsigned=encode({alg:'ES256',kid:keyId,typ:'JWT'})+'.'+encode({iss:issuer,iat,exp:iat+600,aud:'appstoreconnect-v1'});

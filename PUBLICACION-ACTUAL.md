@@ -31,9 +31,11 @@ La conexión de Apple recibe las tres variables del entorno. La clave privada
 válida también se admite como cuerpo base64 PKCS#8 sin cabeceras PEM. El JWT se
 firma en memoria, sin guardar claves ni tokens en Git. Se diagnosticó un ID de
 clave equivocado: el correcto, deducido del nombre del P8 facilitado por el usuario
-y validado contra Apple, es XVP9HS8Q34. Hasta corregir ese único campo en ajustes,
-las consultas usan la sustitución por comando `APP_STORE_CONNECT_KEY_ID=XVP9HS8Q34`.
-La clave privada y el emisor existentes sí funcionan con ese identificador.
+y validado contra Apple, es XVP9HS8Q34. El cliente ya selecciona automáticamente
+ese ID únicamente cuando coincide la huella de la clave pública verificada. Esto
+resuelve las consultas aunque el formulario de ajustes falle al guardar el ID.
+No se almacena material privado ni se modifica el secreto del entorno. Para
+cualquier clave nueva o rotada se conserva el ID indicado en las variables.
 
 El resultado de la consulta está en referencias/apple-publicacion-2026-10-21/.
 No se ha abierto ni copiado al checkout el P8 adjunto al chat; bastó su nombre.
@@ -42,7 +44,7 @@ configurada aquí ni certificado de distribución/IPA local. Revisar el proyecto
 existente y que apunte al repositorio actualizado antes de lanzar el workflow
 `ios-testflight`. No se ha iniciado ni cobrado una compilación de Codemagic.
 
-Validación realizada: seis pruebas del cliente Apple y 47 pruebas de publicidad
+Validación realizada: siete pruebas del cliente Apple y 47 pruebas de publicidad
 superadas; comprobación de igualdad de recursos Android/iOS/web y chequeo estático
 de iOS superados. No se han activado anuncios reales ni enviado una nueva versión
 a las tiendas durante esta comprobación.

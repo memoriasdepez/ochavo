@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {generateKeyPairSync,verify} from 'node:crypto';
-import {appleToken,appleCredentialStatus,readAppleStatus} from '../scripts/apple-status.mjs';
+import {createHash,createPublicKey,generateKeyPairSync,verify} from 'node:crypto';
+import {appleToken,appleCredentialStatus,appleKeyIdentifier,readAppleStatus} from '../scripts/apple-status.mjs';
 
 // Ephemeral test keys; never account credentials.
 const {privateKey,publicKey}=generateKeyPairSync('ec',{namedCurve:'prime256v1'});
@@ -20,6 +20,15 @@ test('the Apple JWT has a valid ES256 signature and expires in ten minutes',()=>
   assert.equal(p.aud,'appstoreconnect-v1');assert.equal(p.iat,now/1000);assert.equal(p.exp-p.iat,600);
   assert.ok(verify('sha256',Buffer.from(header+'.'+payload),{key:publicKey,dsaEncoding:'ieee-p1363'},Buffer.from(signature,'base64url')));
   assert.ok(!token.includes('PRIVATE KEY'));
+});
+
+test('a verified identifier is selected only for the matching public key',()=>{
+  const publicKeySha256=createHash('sha256').update(createPublicKey(privateKey).export({format:'der',type:'spki'})).digest('hex');
+  const known=[{keyId:'VERIFIED12',publicKeySha256}];
+  assert.equal(appleKeyIdentifier(privateKey,'OUTDATED12',known),'VERIFIED12');
+  const rotated=generateKeyPairSync('ec',{namedCurve:'prime256v1'}).privateKey;
+  assert.equal(appleKeyIdentifier(rotated,'ROTATED123',known),'ROTATED123');
+  assert.throws(()=>appleKeyIdentifier(privateKey,'OUTDATED12',[...known,...known]),/duplicados/);
 });
 
 test('private-key failures do not disclose the invalid credential',()=>{
