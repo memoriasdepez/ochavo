@@ -74,6 +74,17 @@ service cloud.firestore {
         && getAfter(/databases/$(database)/documents/users/$(uid)/consentEvents/$(request.resource.data.eventId)).data == request.resource.data;
       allow delete: if preferenceOwner(uid) && !accountActive(uid);
     }
+    // One immutable welcome receipt per account, shared by web, Android and iOS.
+    match /users/{uid}/preferences/onboarding {
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && request.resource.data.keys().hasAll(['version','seen','seenAt'])
+        && request.resource.data.keys().hasOnly(['version','seen','seenAt'])
+        && request.resource.data.version == 1 && request.resource.data.seen == true
+        && request.resource.data.seenAt == request.time;
+      allow update, list: if false;
+      allow delete: if verifiedOwner(uid) && !accountActive(uid);
+    }
     match /users/{uid}/consentEvents/{event} {
       allow get, list: if preferenceOwner(uid);
       allow create: if preferenceOwner(uid) && accountActiveAfterWrite(uid)

@@ -127,6 +127,29 @@ test('manual privacy can open above Account and returns focus; automatic welcome
   });
 });
 
+test('account welcome is not repeated after logout and manual help remains available', async () => {
+  await withDocument(async ({all}) => {
+    let owner='a';const seen=new Set();
+    const ui=mountProductUI({getWelcomeOwner:()=>owner,claimWelcome:async uid=>{if(seen.has(uid))return false;seen.add(uid);return true;}});
+    const dialog=all().find(node=>node.className==='br-product-dialog');
+    assert.equal(await ui.maybeWelcome(),true);dialog.close();
+    owner=null;assert.equal(ui.maybeWelcome(),false);
+    owner='a';assert.equal(await ui.maybeWelcome(),false);
+    owner='b';assert.equal(await ui.maybeWelcome(),true);dialog.close();
+    assert.equal(ui.open('welcome'),true);dialog.close();ui.dispose();
+  });
+});
+
+test('a late welcome result cannot open over a different account', async () => {
+  await withDocument(async ({all}) => {
+    let owner='a',resolve;
+    const ui=mountProductUI({getWelcomeOwner:()=>owner,claimWelcome:()=>new Promise(done=>{resolve=done;})});
+    const pending=ui.maybeWelcome();await Promise.resolve();owner='b';resolve(true);
+    assert.equal(await pending,false);
+    assert.equal(all().find(node=>node.className==='br-product-dialog').open,false);ui.dispose();
+  });
+});
+
 test('internal legal links stay in the dialog and account deletion runs after close', async () => {
   await withDocument(async ({ Element, all }) => {
     let callbackSawClosed = false;

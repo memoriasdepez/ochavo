@@ -1,6 +1,7 @@
 import {initializeApp} from 'firebase/app';
 import {initializeAuth,connectAuthEmulator,browserLocalPersistence,indexedDBLocalPersistence} from 'firebase/auth';
-import {getFirestore,connectFirestoreEmulator,doc,getDocFromServer,runTransaction,serverTimestamp} from 'firebase/firestore';
+import {getFirestore,connectFirestoreEmulator,doc,getDocFromServer,runTransaction,serverTimestamp,deleteDoc} from 'firebase/firestore';
+import {createWelcomeBackend} from './welcome.js';
 import {mergeProgress} from './progress.js';
 
 export function createCloud(){
@@ -19,7 +20,8 @@ export function createCloud(){
   auth.languageCode='es';
   const persistence=auth.authStateReady();
   const backend=createProgressBackend(db);
-  return {auth,db,backend,persistence,emulator};
+  const welcome=createWelcomeBackend(db,{doc,runTransaction,serverTimestamp,deleteDoc});
+  return {auth,db,backend,welcome,persistence,emulator};
 }
 
 export function createProgressBackend(db,api={doc,getDocFromServer,runTransaction,serverTimestamp}){

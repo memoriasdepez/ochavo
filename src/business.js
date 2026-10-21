@@ -11,5 +11,6 @@ export const BUSINESS = Object.freeze({
   registry: 'Registro Mercantil de Melilla, sección 8, hoja ML 3342, inscripción 2, de 25 de mayo de 2026.',
   siteUrl: 'https://ochavo.app',
   policyDate: '2026-10-10',
-  appVersion: '0.35.4',
+  appVersion: '0.35.5',
 });
+

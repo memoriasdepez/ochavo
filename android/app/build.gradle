@@ -5,7 +5,7 @@ def releaseStore = System.getenv('VIRUTA_KEYSTORE')
 def releasePassword = System.getenv('VIRUTA_STORE_PASSWORD')
 def releaseAlias = System.getenv('VIRUTA_KEY_ALIAS')
 def releaseRequested = gradle.startParameter.taskNames.any { it.toLowerCase().contains('release') }
-def publicationVersionCode = (project.findProperty('virutaVersionCode') ?: '72').toInteger()
+def publicationVersionCode = (project.findProperty('virutaVersionCode') ?: '73').toInteger()
 if (publicationVersionCode < 1 || publicationVersionCode > 2100000000) {
     throw new GradleException('Android versionCode is outside the Google Play range.')
 }
@@ -25,7 +25,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode publicationVersionCode
-        versionName "0.35.4"
+        versionName "0.35.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
@@ -82,3 +82,4 @@ try {
 } catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
 }
+

@@ -32,6 +32,24 @@ const DELETION_PATH = `accountDeletions/${OWNER}`;
 const MAX_PAYLOAD_BYTES = 128 * 1024;
 let environment;
 
+test('welcome receipt is private, immutable, and deletable only after account deletion', async () => {
+  const target=doc(verifiedDb(),`users/${OWNER}/preferences/onboarding`);
+  await assertSucceeds(setDoc(target,{version:1,seen:true,seenAt:serverTimestamp()}));
+  await assertSucceeds(getDocFromServer(target));
+  await assertFails(getDocFromServer(doc(verifiedDb(OTHER),`users/${OWNER}/preferences/onboarding`)));
+  await assertFails(updateDoc(target,{seen:false}));
+  await assertFails(deleteDoc(target));
+  await seedDeletion();
+  await assertSucceeds(deleteDoc(target));
+});
+
+test('welcome receipt rejects unverified accounts, extra fields and spoofed timestamps', async () => {
+  const path=`users/${OWNER}/preferences/onboarding`;
+  await assertFails(setDoc(doc(environment.authenticatedContext(OWNER,{email_verified:false}).firestore(),path),{version:1,seen:true,seenAt:serverTimestamp()}));
+  await assertFails(setDoc(doc(verifiedDb(),path),{version:1,seen:true,seenAt:serverTimestamp(),extra:'unneeded'}));
+  await assertFails(setDoc(doc(verifiedDb(),path),{version:1,seen:true,seenAt:Timestamp.fromMillis(1)}));
+});
+
 function verifiedDb(uid = OWNER) {
   return environment.authenticatedContext(uid, { email_verified: true }).firestore();
 }

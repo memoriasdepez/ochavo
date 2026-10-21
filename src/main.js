@@ -1,6 +1,7 @@
 import {createIcons,Lock,Route,BookOpen,FlaskConical,ChartNoAxesCombined,Layers,Blocks,UserRound,BriefcaseBusiness,Store,Globe,Repeat,Scale,ChartPie,Network,KeyRound,CircleDollarSign,Vote,Building2,Landmark,ShieldCheck,Coins,Monitor,Factory,Play,Search,ChartColumnIncreasing,Trophy,Flag,ChevronRight,Check,Sprout,Hourglass,FastForward,Gem,ChartCandlestick,Receipt,Server,Settings,Puzzle,Laptop,Flame,Zap,Cpu,Palette,ShoppingBasket,House,Plane,CreditCard,Fuel,Warehouse,Pill,FileSearch,MousePointer2,ArrowLeftRight,Map,CalendarDays,Languages,Filter,Leaf,ListChecks,PieChart,RefreshCw,Split,Mail} from 'lucide';
 import {onIdTokenChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail,sendEmailVerification,updateProfile,signOut,reload,getIdToken,getIdTokenResult,EmailAuthProvider,reauthenticateWithCredential,deleteUser} from 'firebase/auth';
 import {createCloud} from './cloud.js';
+import {createWelcomeController} from './welcome.js';
 import {createGameBackend} from './game-backend.js';
 import {createGameStore} from './game-store.js';
 import {newAttemptId} from './game-domain.js';
@@ -83,6 +84,7 @@ const communications=cloud?createCommunicationPreferences(cloud.db):null;
 const analytics=browserAnalytics({enabled:!nativeMobile&&!import.meta.env.DEV&&!cloud?.emulator&&['ochavo.app','www.ochavo.app','brote-62d26.web.app','brote-62d26.firebaseapp.com'].includes(location.hostname),id:import.meta.env.VITE_WEB_ANALYTICS_ID});
 window.OchavoAnalytics=analytics;
 let ui=null,productUI=null,nativeLifecycle=null,identity=null,social=null,store=null,gameSelecting=false,reconciling=null,authSelectionPending=false,selectionGeneration=0,lastAccess='',recoveringSession=null,signingOut=false;
+const welcome=createWelcomeController({backend:cloud?.welcome,storage:progressStorage});
 const gameBackend=cloud?createGameBackend(cloud.db):null;
 const referrals=cloud?createReferralBackend(cloud.db):null;
 const promotions=cloud&&!nativeMobile?createPromotions({db:cloud.db,getUser:()=>cloud.auth.currentUser}):null;
@@ -236,7 +238,7 @@ async function selectStores(user){
  finally{if(generation===selectionGeneration){gameSelecting=false;update();social.update();}}
 }
 async function resumeGame(){if(!accessState().canLearn||gameSelecting||view.busy||window.BroteCourse?.isBusy()||window.BroteCourse?.hasPendingAnswers()||social?.busy())return;try{await purchases.refresh();await gameStore.retry();await reconcileGame();}catch{social.update();}}
-const combinedStore={...store,pause:async()=>{await Promise.all([store.pause(),gameStore.pause()]);},select:selectStores,forget:async uid=>{await purchases.forget(uid);await gameStore.forget(uid);await store.forget(uid);await motion.forget(uid);if(await lessonAds.forget(uid)===false)throw Error('No se pudo borrar el contador local de anuncios.');},flushLocal:async()=>{const values=await Promise.all([store.flushLocal?.(),gameStore.flushLocal()]);await motion.flush();return values.every(x=>x!==false);},retry:async()=>{await store.retry();await resumeGame();}};
+const combinedStore={...store,pause:async()=>{await Promise.all([store.pause(),gameStore.pause()]);},select:selectStores,forget:async uid=>{await purchases.forget(uid);await gameStore.forget(uid);await store.forget(uid);await motion.forget(uid);await welcome.forget(uid);if(await lessonAds.forget(uid)===false)throw Error('No se pudo borrar el contador local de anuncios.');},flushLocal:async()=>{const values=await Promise.all([store.flushLocal?.(),gameStore.flushLocal()]);await motion.flush();return values.every(x=>x!==false);},retry:async()=>{await store.retry();await resumeGame();}};
 
 const sessionRecovery=createSessionRecovery({getUser:()=>cloud?.auth.currentUser,reloadUser:reload,refreshToken:getIdToken,retryProgress:()=>store.retry(),retryGame:async()=>{await gameStore.retry();await reconcileGame();}});
 function recoverSession(){
@@ -358,11 +360,12 @@ ui=mountAccountUI({
   onDeleteAccount:password=>action(()=>deleteAccountWithProgress({
     user:cloud.auth.currentUser,
     authenticate:user=>reauthenticateWithCredential(user,EmailAuthProvider.credential(user.email,password)),
-    removeProgress:async uid=>{await cloud.backend.remove(uid);await feedbackBackend.remove(uid);await gameBackend.remove(uid);await referrals.remove(uid);},deleteIdentity:deleteUser,
+    removeProgress:async uid=>{await cloud.backend.remove(uid);await cloud.welcome.remove(uid);await feedbackBackend.remove(uid);await gameBackend.remove(uid);await referrals.remove(uid);},deleteIdentity:deleteUser,
     getCurrentUser:()=>cloud.auth.currentUser,store:combinedStore
   }))
 });
 productUI=mountProductUI({
+  claimWelcome:uid=>welcome.claim(uid),getWelcomeOwner:()=>accessState().canLearn?view.user?.uid:null,
   onOpenAccount:()=>ui.open(),onDeleteAccount:()=>ui.requestDeletion(),
   onReport:()=>feedbackUI?.open(),
   getContext:()=>({appVersion:BUSINESS.appVersion,platform:platformName})

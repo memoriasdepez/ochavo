@@ -52,7 +52,7 @@ export function buildSupportDraft({ category, text, includeContext = false, cont
 }
 
 /** Presentation only. Account actions are handed back to the host app. */
-export function mountProductUI({ onOpenAccount, onDeleteAccount, getContext, onReport } = {}) {
+export function mountProductUI({ onOpenAccount, onDeleteAccount, getContext, onReport, claimWelcome, getWelcomeOwner } = {}) {
   const slot = document.getElementById('br-help-slot');
   if (!slot) throw new Error('Product UI requires #br-help-slot.');
   const prefix = `br-product-${++productInstance}`;
@@ -62,6 +62,8 @@ export function mountProductUI({ onOpenAccount, onDeleteAccount, getContext, onR
   let disposed = false;
   let opener = null;
   let pendingAction = null;
+  let welcomeRequest = null;
+  let welcomeOwner = null;
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -485,6 +487,20 @@ export function mountProductUI({ onOpenAccount, onDeleteAccount, getContext, onR
   }
 
   function maybeWelcome() {
+    if (claimWelcome) {
+      const owner = getWelcomeOwner?.();
+      if (!owner || disposed || dialog.open || anotherDialogOpen()) return false;
+      if (welcomeOwner === owner) { welcomeOwner = null; return open('welcome'); }
+      if (welcomeRequest) return false;
+      welcomeRequest = Promise.resolve().then(() => claimWelcome(owner)).then(first => {
+        if (!first || disposed || getWelcomeOwner?.() !== owner) return false;
+        welcomeOwner = owner;
+        if (dialog.open || anotherDialogOpen()) return false;
+        welcomeOwner = null;
+        return open('welcome');
+      }).catch(() => false).finally(() => { welcomeRequest = null; });
+      return welcomeRequest;
+    }
     if (disposed || dialog.open || anotherDialogOpen() || wasWelcomeSeen()) return false;
     return open('welcome');
   }
