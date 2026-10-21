@@ -45,5 +45,15 @@
     "android": "0.35.4/72",
     "ios": "0.35.4/66"
   },
-  "native_build_or_store_upload": false
+  "native_build_or_store_upload": false,
+  "validation": {
+    "command": "pnpm test",
+    "tests": 909,
+    "passed": 909,
+    "failed": 0,
+    "skipped": 0,
+    "rebuild_repeatability": true,
+    "ios_static_check": "passed",
+    "native_build": "not run"
+  }
 }
