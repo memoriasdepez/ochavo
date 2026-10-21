@@ -1,4 +1,5 @@
 import {calculationMethod} from '../course-authoring.mjs';
+import {applyPublishedProse} from './published-prose.mjs';
 import {ETF_CASES} from './etfs-cases.mjs';
 import {ETF_TRANSFERS} from './etfs-transfers.mjs';
 import {etfsFirstWorld} from './etfs-first-world.mjs';
@@ -173,7 +174,7 @@ export function refineFundsCrypto(result,records,{track,cases,transfers={}}){
   exam.editorialRevision=revision;
  }
  result.editorialRevision=revision;
- return result;
+ return applyPublishedProse(result);
 }
 
 export function refineEtfs(result,records){return refineFundsCrypto(result,records,{track:'etfs',cases:ETF_CASES});}

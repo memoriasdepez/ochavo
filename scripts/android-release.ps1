@@ -1,4 +1,4 @@
-param([ValidateRange(7,2100000000)][int]$VersionCode=71,[switch]$QaBaseline)
+param([ValidateRange(7,2100000000)][int]$VersionCode=72,[switch]$QaBaseline)
 $ErrorActionPreference='Stop'
 . (Join-Path $PSScriptRoot 'android-signing.ps1')
 $env:JAVA_HOME=$virutaJdk.FullName

@@ -1202,8 +1202,7 @@
     "aliases": [],
     "example": "",
     "tracks": [
-      "stocks",
-      "etfs"
+      "stocks"
     ]
   },
   {
@@ -1960,7 +1959,8 @@
     "example": "Compra a 9,90 € y venta a 10,10 € dan un diferencial de 0,20 €.",
     "tracks": [
       "stocks",
-      "etfs"
+      "etfs",
+      "crypto"
     ]
   },
   {
@@ -3313,8 +3313,6 @@
     "example": "",
     "tracks": [
       "stocks",
-      "etfs",
-      "crypto",
       "technical"
     ]
   },
@@ -3824,9 +3822,7 @@
     "definition": "Moneda en la que se expresa una cotización.",
     "aliases": [],
     "example": "",
-    "tracks": [
-      "etfs"
-    ]
+    "tracks": []
   },
   {
     "term": "Moneda de presentación",
@@ -3963,8 +3959,7 @@
     "aliases": [],
     "example": "",
     "tracks": [
-      "stocks",
-      "etfs"
+      "stocks"
     ]
   },
   {
@@ -4577,6 +4572,7 @@
     "tracks": [
       "stocks",
       "etfs",
+      "crypto",
       "technical"
     ]
   },
@@ -5092,7 +5088,8 @@
     "aliases": [],
     "example": "",
     "tracks": [
-      "stocks"
+      "stocks",
+      "etfs"
     ]
   },
   {
@@ -5138,7 +5135,8 @@
     "aliases": [],
     "example": "",
     "tracks": [
-      "stocks"
+      "stocks",
+      "crypto"
     ]
   },
   {
@@ -6045,6 +6043,7 @@
     "tracks": [
       "stocks",
       "etfs",
+      "crypto",
       "technical"
     ]
   },
@@ -6099,6 +6098,7 @@
     "example": "",
     "tracks": [
       "stocks",
+      "etfs",
       "crypto",
       "technical"
     ]
@@ -6351,6 +6351,7 @@
     "tracks": [
       "stocks",
       "etfs",
+      "crypto",
       "technical"
     ]
   },
