@@ -30,7 +30,7 @@ En los ajustes seguros del entorno están solicitadas estas variables:
 | --- | --- |
 | `APP_STORE_CONNECT_KEY_ID` | Identificador de la clave de equipo. |
 | `APP_STORE_CONNECT_ISSUER_ID` | Identificador del emisor que muestra Apple. |
-| `APP_STORE_CONNECT_PRIVATE_KEY` | Contenido PEM del `.p8` correspondiente, con sus líneas BEGIN/END. |
+| `APP_STORE_CONNECT_PRIVATE_KEY` | Contenido PEM del `.p8` correspondiente, con sus líneas BEGIN/END. También se admite su cuerpo base64 PKCS#8 sin esas líneas. |
 
 Introducir los valores únicamente en los ajustes del entorno. La clave privada
 debe estar disponible para firmar en memoria: configurarla como variable de

@@ -17,10 +17,17 @@ export function appleToken(env=process.env,now=Date.now()){
   if(!/^[A-Z0-9]{10}$/.test(keyId)||!/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(issuer))throw Error('Revisa el identificador de clave y el identificador del emisor de Apple.');
   let key;
   try{
-    key=createPrivateKey(env.APP_STORE_CONNECT_PRIVATE_KEY.trim().replace(/\\n/g,'\n'));
+    const raw=env.APP_STORE_CONNECT_PRIVATE_KEY.trim().replace(/\\n/g,'\n');
+    if(raw.startsWith('-----BEGIN '))key=createPrivateKey(raw);
+    else{
+      // The secure form may contain only the base64 PKCS#8 body of the P8.
+      // Parse the original bytes directly; never persist or print key material.
+      if(!/^[A-Za-z0-9+/=\s]+$/.test(raw))throw Error();
+      key=createPrivateKey({key:Buffer.from(raw.replace(/\s/g,''),'base64'),format:'der',type:'pkcs8'});
+    }
     if(key.asymmetricKeyType!=='ec'||key.asymmetricKeyDetails?.namedCurve!=='prime256v1')throw Error();
   }catch{
-    throw Error('La variable privada debe contener la clave P8 de Apple en formato PEM. Un marcador de secreto del proxy no permite firmar localmente.');
+    throw Error('La variable privada debe contener la clave P8 de Apple en formato PEM o su cuerpo base64 PKCS#8. Un marcador de secreto del proxy no permite firmar localmente.');
   }
   const encode=value=>Buffer.from(JSON.stringify(value)).toString('base64url');
   const iat=Math.floor(now/1000);

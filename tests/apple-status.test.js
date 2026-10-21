@@ -27,6 +27,14 @@ test('private-key failures do not disclose the invalid credential',()=>{
   assert.throws(()=>appleToken({...env,APP_STORE_CONNECT_PRIVATE_KEY:invalid}),error=>!error.message.includes(invalid)&&error.message.includes('formato PEM'));
 });
 
+test('the original PKCS#8 body and escaped PEM both produce valid Apple signatures',()=>{
+  const body=privateKey.export({type:'pkcs8',format:'der'}).toString('base64').match(/.{1,64}/g).join('\n');
+  for(const value of [body,env.APP_STORE_CONNECT_PRIVATE_KEY.replace(/\n/g,'\\n')]){
+    const [header,payload,signature]=appleToken({...env,APP_STORE_CONNECT_PRIVATE_KEY:value}).split('.');
+    assert.ok(verify('sha256',Buffer.from(header+'.'+payload),{key:publicKey,dsaEncoding:'ieee-p1363'},Buffer.from(signature,'base64url')));
+  }
+});
+
 test('status queries use only authenticated GET requests to Apple and report limited results',async()=>{
   const requests=[];
   const fetchImpl=async(url,options)=>{
