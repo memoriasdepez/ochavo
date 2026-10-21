@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-21T01:05:10.735Z",
+  "app": {
+    "id": "6821981429",
+    "name": "Ochavo: aprende inversión",
+    "bundleId": "app.brote.inversion"
+  },
+  "appStoreVersions": [
+    {
+      "id": "336b071f-1336-436f-bbf5-4142b8e5c917",
+      "version": "0.31.4",
+      "platform": "IOS",
+      "state": "PREPARE_FOR_SUBMISSION",
+      "releaseType": "MANUAL"
+    }
+  ],
+  "latestBuilds": [
+    {
+      "id": "2e9246e1-1919-4e87-82d1-1f3bec5971c6",
+      "version": "0.34.1",
+      "build": "63",
+      "uploadedAt": "2026-10-12T19:01:17-07:00",
+      "processingState": "VALID",
+      "expired": false,
+      "expiresAt": "2027-01-10T18:01:17-08:00"
+    },
+    {
+      "id": "a51463a3-cc8d-4758-a4be-b63efbcfc6f2",
+      "version": "0.31.4",
+      "build": "58",
+      "uploadedAt": "2026-10-12T12:49:59-07:00",
+      "processingState": "VALID",
+      "expired": false,
+      "expiresAt": "2027-01-10T11:49:59-08:00"
+    }
+  ],
+  "testFlightGroups": [
+    {
+      "id": "8f878dac-8d84-43d4-82cc-72d146e1f64d",
+      "name": "Ochavo — actualizaciones",
+      "internal": true,
+      "publicLinkEnabled": null
+    },
+    {
+      "id": "8d48d7d8-1348-4a1c-8343-8b56fe0c676d",
+      "name": "Ochavo — prueba en iPhone",
+      "internal": true,
+      "publicLinkEnabled": null
+    }
+  ],
+  "limits": {
+    "versions": 20,
+    "builds": 10,
+    "groups": 20
+  },
+  "limitations": [
+    "Contratos, declaración de comerciante y otros avisos de la cuenta requieren revisar App Store Connect en el navegador.",
+    "Una compilación procesada y un grupo existente no acreditan por sí solos que esa compilación esté asignada a los probadores."
+  ]
+}

@@ -41,6 +41,14 @@ Guardar los ajustes y publicar el entorno para aplicarlos según la interfaz.
 El acceso de red necesita `api.appstoreconnect.apple.com`. La consola humana usa
 `appstoreconnect.apple.com`. El borrador conserva los demás dominios existentes.
 
+La conexión se verificó el 21-10-2026. El ID configurado inicialmente no coincidía
+con el archivo del usuario. El identificador correcto es `XVP9HS8Q34`; la clave
+privada y el emisor existentes funcionan con él. Hasta que el titular corrija
+`APP_STORE_CONNECT_KEY_ID` en ajustes, usarlo únicamente como sustitución por
+comando: `APP_STORE_CONNECT_KEY_ID=XVP9HS8Q34 node --use-env-proxy scripts/apple-status.mjs`.
+El identificador no es el contenido de la clave privada. No crear claves nuevas
+ni volver a solicitar el P8 para resolver este error de identificación.
+
 Comprobar la inyección sin mostrar valores:
 
 ```sh
