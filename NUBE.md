@@ -5,7 +5,7 @@ Proyecto con contexto e historiales recuperados: https://chatgpt.com/g/g-p-6ac0e
 
 ## Archivos y ejecución
 
-Aplicación recuperada v0.35.3, fuente brote-app. Node 24; pnpm install --frozen-lockfile, pnpm test, pnpm build. Conservar las instrucciones históricas de AGENTS.md.
+Aplicación alineada con ochavo.app v0.35.4. Node 24; pnpm install --frozen-lockfile, pnpm test, pnpm build. En un checkout nuevo, copiar configuracion-firebase-publica.env a .env.local si no existe; contiene únicamente la configuración pública del navegador. Conservar las instrucciones históricas de AGENTS.md.
 
 Esta migración procede de las copias recuperadas de Drive; no incluye contraseñas, certificados de firma ni dependencias regenerables. Los originales se conservan en el proyecto de ChatGPT como recuperación histórica.
 
@@ -27,4 +27,6 @@ Leer CONTEXTO-RECUPERADO.txt para retomar las decisiones y el trabajo de las con
 
 ## Referencia publicada de OCHAVO
 
-El usuario ha pedido tomar ochavo.app como autoridad sobre la versión publicada. La captura del 21-10-2026 está en referencias/ochavo-app-2026-10-21/. comparison.json compara todos sus mundos con el código recuperado. Se han encontrado 50 mundos diferentes de 175. Esta captura conserva la referencia; no sustituye ni reconstruye los fuentes editables que falten.
+El usuario ha pedido tomar ochavo.app como autoridad y sustituir la copia recuperada por esa versión. La captura del 21-10-2026 está en referencias/ochavo-app-2026-10-21/. comparison.json conserva la auditoría inicial, que encontró 50 mundos diferentes. Los textos publicados de las 500 lecciones de ETFs y Cripto están recuperados como autoría editable en scripts/funds-crypto-editorial/published-prose.json; refine.mjs los aplica como etapa final, conservando ejercicios, exámenes, IDs y revisiones compatibles. pnpm build reconstruye la versión 0.35.4: HTML, seis assets principales y los 175 mundos idénticos a la publicación. tests/published-reference.test.js protege esa referencia. alignment.json recoge la comprobación final.
+
+Android e iOS usan los mismos recursos web reconstruidos. Los proyectos quedan preparados como 0.35.4/72 y 0.35.4/66 respectivamente; esto no acredita publicación en tiendas ni compilación o firma nativa. No desplegar ni sustituir una versión de tienda como parte de esta recuperación.

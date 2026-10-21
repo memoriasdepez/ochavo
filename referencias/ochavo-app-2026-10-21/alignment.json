@@ -1,0 +1,49 @@
+{
+  "origin": "https://ochavo.app/",
+  "version": "0.35.4",
+  "verified_at": "2026-10-21T00:10:29.090219+00:00",
+  "html_exact_match": true,
+  "entry_assets": [
+    {
+      "path": "/assets/app-C9MDFGaW.js",
+      "sha256": "1fe9d5db8c9dc513645b806dcbdd1df9a0f78eff47c23cdbbc75e51d10c15c5f",
+      "exact_match": true
+    },
+    {
+      "path": "/assets/nunito-Dbol8noq.js",
+      "sha256": "fadb1efa2af0005a5b81668c307945150d558c0a164e112acab4d33d23237c64",
+      "exact_match": true
+    },
+    {
+      "path": "/assets/preload-helper-DjzSQ1t3.js",
+      "sha256": "66c990b6727d220a346b45d00ee48d433c8d59ef03fbf8b91c6cdadeeadfdf3f",
+      "exact_match": true
+    },
+    {
+      "path": "/assets/dist-Btb5Jv1E.js",
+      "sha256": "020bd3311ec36b945d412865b91d0b0152780fe623ad1ce85bcc570b836c2b92",
+      "exact_match": true
+    },
+    {
+      "path": "/assets/nunito-CAufuki5.css",
+      "sha256": "460e4478316025405e2ced0b1647c2781b64cefc0176cdd47c713b0a0904113d",
+      "exact_match": true
+    },
+    {
+      "path": "/assets/app-D2ss0Pxh.css",
+      "sha256": "954a9e6c0761c752bb1edebbc456b86e33f3d0ed621d5476e3d60497f2822366",
+      "exact_match": true
+    }
+  ],
+  "worlds_exact_match": 175,
+  "restored_lessons": 500,
+  "restored_learning_bodies": 1510,
+  "restored_summaries": 70,
+  "android_resources_exact_match": true,
+  "ios_resources_exact_match": true,
+  "native_projects": {
+    "android": "0.35.4/72",
+    "ios": "0.35.4/66"
+  },
+  "native_build_or_store_upload": false
+}

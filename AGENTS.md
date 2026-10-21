@@ -1,3 +1,7 @@
+## Referencia válida y fuentes restaurados (21-10-2026)
+
+Por petición expresa del usuario, la versión válida es ochavo.app 0.35.4, por encima de las copias históricas de Drive. La captura está en referencias/ochavo-app-2026-10-21/. Los 50 mundos de ETFs/Cripto distintos se han restaurado en los fuentes mediante scripts/funds-crypto-editorial/published-prose.json y su etapa final en refine.mjs. Mantener esa etapa al regenerar: conserva ejercicios, exámenes, IDs y revisiones compatibles. pnpm build reproduce el HTML, seis assets principales y 175 mundos de la captura; tests/published-reference.test.js verifica contenido y metadatos. Para futuros cambios autorizados de producto, revisar conscientemente esta prueba de referencia en lugar de restaurar automáticamente prosa histórica. .env.example describe opciones adicionales; configuracion-firebase-publica.env contiene la configuración pública publicada: copiarla a .env.local si falta. Android e iOS preparados con recursos equivalentes no implican una nueva subida a tiendas.
+
 ## Continuidad y guardado en la nube (petición del usuario del 21-10-2026)
 
 El usuario quiere que los cambios queden guardados automáticamente en el repositorio privado, para continuar desde cualquier ordenador.
