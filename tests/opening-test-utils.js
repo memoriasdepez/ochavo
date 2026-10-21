@@ -1,4 +1,5 @@
 import {beforeDepth} from './depth-test-utils.js';
+import {beforePublishedFile} from './published-prose-utils.js';
 import {beforeSecondCatalog} from './second-corrections-utils.js';
 // Earlier revisions remain testable after the separately requested opening edits.
 import {readFileSync} from 'node:fs';
@@ -16,7 +17,7 @@ export function beforeOpening(lesson){
  return historical.find(l=>l.id===lesson.id);
 }
 export function beforeOpeningFile(path){
- const data=readFileSync(new URL('../'+path,import.meta.url));
+ const data=beforePublishedFile(path);
  if(path!=='src/content/game-catalog.json')return data;
  const catalog=JSON.parse(beforeSecondCatalog(data));delete catalog['answer-453-9'];
  return Buffer.from(JSON.stringify(catalog,null,2)+'\n');

@@ -1,4 +1,5 @@
 import test from 'node:test';
+import {beforePublishedFile} from './published-prose-utils.js';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
@@ -25,7 +26,7 @@ test('development starts exactly at 53 and preserves every identity, answer, rev
  for(const prior of old.exams)assert.equal(hash(course.exams.find(e=>e.id===prior.id)),prior.hash);
  assert.equal(hash(course.groups),old.groups);
  assert.equal(createHash('sha256').update(beforeSecondCatalog(read('src/content/game-catalog.json'))).digest('hex'),old.catalogHash);
- for(const [file,expected] of Object.entries(old.otherPaths))assert.equal(createHash('sha256').update(read('src/content/'+file+'.json')).digest('hex'),expected,file);
+ for(const [file,expected] of Object.entries(old.otherPaths))assert.equal(createHash('sha256').update(beforePublishedFile('src/content/'+file+'.json')).digest('hex'),expected,file);
 });
 
 test('all 1792 teaching screens are developed, with individually authored explanations rather than repeated padding',()=>{

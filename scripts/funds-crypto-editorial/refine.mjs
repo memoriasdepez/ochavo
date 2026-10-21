@@ -122,7 +122,7 @@ function transferExercise(r,t,id,reserved){
  return step;
 }
 
-export function refineFundsCrypto(result,records,{track,cases,transfers={}}){
+export function refineFundsCrypto(result,records,{track,cases,transfers={},publishedProse=true}){
  const revision=REVISIONS[track],start=track==='etfs'?950:1150,quant=track==='etfs'?ETF_NUMERIC:CRYPTO_NUMERIC;
  cases ||= track==='etfs'?ETF_CASES:undefined;
  if(!revision||!cases||cases.length!==result.lessons.length)throw Error('Missing complete topic-specific editorial cases for '+track);
@@ -174,7 +174,7 @@ export function refineFundsCrypto(result,records,{track,cases,transfers={}}){
   exam.editorialRevision=revision;
  }
  result.editorialRevision=revision;
- return applyPublishedProse(result);
+ return publishedProse?applyPublishedProse(result):result;
 }
 
-export function refineEtfs(result,records){return refineFundsCrypto(result,records,{track:'etfs',cases:ETF_CASES});}
+export function refineEtfs(result,records,options={}){return refineFundsCrypto(result,records,{...options,track:'etfs',cases:ETF_CASES});}
