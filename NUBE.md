@@ -24,3 +24,7 @@ Fuera de Cloud, un checkout local solo se guarda automáticamente mientras el pr
 ## Contexto anterior
 
 Leer CONTEXTO-RECUPERADO.txt para retomar las decisiones y el trabajo de las conversaciones recuperadas. Es un archivo histórico; las instrucciones actuales están en AGENTS.md y en el chat activo.
+
+## Referencia publicada de OCHAVO
+
+El usuario ha pedido tomar ochavo.app como autoridad sobre la versión publicada. La captura del 21-10-2026 está en referencias/ochavo-app-2026-10-21/. comparison.json compara todos sus mundos con el código recuperado. Se han encontrado 50 mundos diferentes de 175. Esta captura conserva la referencia; no sustituye ni reconstruye los fuentes editables que falten.

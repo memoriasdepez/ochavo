@@ -1,0 +1,1119 @@
+{
+  "origin": "https://ochavo.app/",
+  "captured_date": "2026-10-21",
+  "reference_only": true,
+  "worlds_checked": 175,
+  "different_world_ids": [
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144
+  ],
+  "entry_assets": [
+    "/assets/app-C9MDFGaW.js",
+    "/assets/nunito-Dbol8noq.js",
+    "/assets/preload-helper-DjzSQ1t3.js",
+    "/assets/dist-Btb5Jv1E.js",
+    "/assets/nunito-CAufuki5.css",
+    "/assets/app-D2ss0Pxh.css"
+  ],
+  "worlds": [
+    {
+      "id": 0,
+      "url": "/course/world-0-dbbd866d554fe495.json",
+      "sha256": "dbbd866d554fe495820656833d3df139ef1ac0228646696873c89a3494024131",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 1,
+      "url": "/course/world-1-283354c69aa10a95.json",
+      "sha256": "283354c69aa10a952ed42c24287b33b845cae41fbf80f3f39e627347f579dc2e",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 2,
+      "url": "/course/world-2-bf4c3bc9f4d74f45.json",
+      "sha256": "bf4c3bc9f4d74f451d2907b354fa3a3d96089579e0496fde743aa7c6d317636e",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 3,
+      "url": "/course/world-3-b5757dfdbab56ab4.json",
+      "sha256": "b5757dfdbab56ab4622810bdd61ec3eda9ade27de8f018c07d0b677db215b121",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 4,
+      "url": "/course/world-4-882287318a50dccf.json",
+      "sha256": "882287318a50dccfbd3727e851e50fc63f79559c395603d7652a356d4c45279c",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 5,
+      "url": "/course/world-5-a2cecc5dc49f9bff.json",
+      "sha256": "a2cecc5dc49f9bffdf6809981969a6557068f7d53c26a8034fb78fb8b095a30e",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 6,
+      "url": "/course/world-6-f09630642f121c9e.json",
+      "sha256": "f09630642f121c9e783455acaf81c0000f13ad63a7969bdc2954c46ce6ef73f7",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 7,
+      "url": "/course/world-7-f4d8c1caa23e1715.json",
+      "sha256": "f4d8c1caa23e171568ef2b0d223f06688bc217dea918ce8f3b5d3b744d73236b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 8,
+      "url": "/course/world-8-ff67f71547fc977d.json",
+      "sha256": "ff67f71547fc977dedacfd7f1ff6d26f88ba8871eb3809843239c63aaf6823fd",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 9,
+      "url": "/course/world-9-eab17464a041e39d.json",
+      "sha256": "eab17464a041e39d5948889a487c4e32e91b95aa03154529dca806dc2a60f925",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 10,
+      "url": "/course/world-10-9e4e6a8eb62cefde.json",
+      "sha256": "9e4e6a8eb62cefde041a13137f7bfc44426f95309b8d144ea80ce63a0439eb21",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 11,
+      "url": "/course/world-11-0db30044b4bfff73.json",
+      "sha256": "0db30044b4bfff73477a994858d7127dfbe4731a535cfc3200aad672c701d2ac",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 12,
+      "url": "/course/world-12-9d4f044f7a941503.json",
+      "sha256": "9d4f044f7a941503f67653c2fa06aafc765a27f4a10008d48996bd9994377d80",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 13,
+      "url": "/course/world-13-5e9c218b55e98a0d.json",
+      "sha256": "5e9c218b55e98a0d92678abaefc7e9ed930aae70aad3a258c6ccd1123625567a",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 14,
+      "url": "/course/world-14-447e2fadafa37836.json",
+      "sha256": "447e2fadafa3783612a0845e4845b607fcbe68095462941a02c87ebf513957a3",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 15,
+      "url": "/course/world-15-06aedc7e6670b611.json",
+      "sha256": "06aedc7e6670b611bd338e7be4896c4583d84a865359e6a2ec64d21bbd5abf02",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 16,
+      "url": "/course/world-16-3238b56543efba59.json",
+      "sha256": "3238b56543efba59eb497f86d1a63192b3902a59487f4ab52804636a55c0295c",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 17,
+      "url": "/course/world-17-dcd5c61ad5a74df3.json",
+      "sha256": "dcd5c61ad5a74df327849308809250637ee6865f24ec4bceb0fc6ce3accc2df5",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 18,
+      "url": "/course/world-18-0ff911a2fac3a44f.json",
+      "sha256": "0ff911a2fac3a44f74268bc73a15c24c316c77ba39c5c4e36d7a01defb1ce112",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 19,
+      "url": "/course/world-19-7262ce40a7a0c870.json",
+      "sha256": "7262ce40a7a0c870fa3bbfa1fb35f76acb7dee4136a4ae457c2aa3b5132b1a8c",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 20,
+      "url": "/course/world-20-c5089a717f9874a4.json",
+      "sha256": "c5089a717f9874a4c63d953ca2b0061e513cd1e08256176b37efa5a6de141989",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 21,
+      "url": "/course/world-21-bd4b39b00f733bc4.json",
+      "sha256": "bd4b39b00f733bc427499517c32b10cb0f3702d49f6151628100e16654b00891",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 22,
+      "url": "/course/world-22-f9deebdd429f7218.json",
+      "sha256": "f9deebdd429f7218b932f0d16b7a070f3216342598de1c172cfbbca818e7e609",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 23,
+      "url": "/course/world-23-95426ee8632fd872.json",
+      "sha256": "95426ee8632fd87239fe165ee9804c74525bdad7eacc5fb9ecf7e3da45c93cdd",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 24,
+      "url": "/course/world-24-a271a024b4b6f3df.json",
+      "sha256": "a271a024b4b6f3df20a5fb12f7b71b93c7dce8b0b592ec5b09d55e4ba2f3775b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 25,
+      "url": "/course/world-25-f69931407076d058.json",
+      "sha256": "f69931407076d05871b0af2e772f37d7cf483bda8399e1583e288f8d6e85b49a",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 26,
+      "url": "/course/world-26-8efda10367b9f7c2.json",
+      "sha256": "8efda10367b9f7c24f56ea9c2a0addd28f259a1d5483dcd23fa20164ba07bcf3",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 27,
+      "url": "/course/world-27-45206852f46f5161.json",
+      "sha256": "45206852f46f51618389a75887923002fd37bbad78d68cc2b1297e94b262f9f6",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 28,
+      "url": "/course/world-28-ba14fe0b086a2e3d.json",
+      "sha256": "ba14fe0b086a2e3d0a93424f2ec389556bbe025337df62e11ff2343dd3e6429f",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 29,
+      "url": "/course/world-29-ca03d085338fa2d1.json",
+      "sha256": "ca03d085338fa2d119e73be98416fdd94a4ae20a98b0969f651a98158f2a7355",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 30,
+      "url": "/course/world-30-8b04af0d8bde0125.json",
+      "sha256": "8b04af0d8bde0125c180cb5febf748114297ed494b7c1ab01ea68433681e03a7",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 31,
+      "url": "/course/world-31-fca876c6b2cc68b7.json",
+      "sha256": "fca876c6b2cc68b73d651f094fa638091c03d628ec4ba4d249a38e31aa8e6dac",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 32,
+      "url": "/course/world-32-ae7d2a5b4596d6b6.json",
+      "sha256": "ae7d2a5b4596d6b6f2b978ff19fa1a09f13b19f2e2af0d7f383a7c7511c24936",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 33,
+      "url": "/course/world-33-c5ac4445c1769723.json",
+      "sha256": "c5ac4445c1769723350ff9197e511838eaf590a7594dfefcaf42978a4591d268",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 34,
+      "url": "/course/world-34-63fadcb2cd320506.json",
+      "sha256": "63fadcb2cd320506db4a33063f1a4b4860f72f732fc837ec7f9a29bd8cced7d4",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 35,
+      "url": "/course/world-35-53b8de0cc6c9aaae.json",
+      "sha256": "53b8de0cc6c9aaae181be9e3949aadeb021815f7fb27819a1630f44b71008938",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 36,
+      "url": "/course/world-36-0a89d44b3b198f6f.json",
+      "sha256": "0a89d44b3b198f6ffed95a6fa0492f9ae8d8bbcf9dbb8993ec2eab1c7737d96d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 37,
+      "url": "/course/world-37-d6cddddff4b5a751.json",
+      "sha256": "d6cddddff4b5a751cf2536758ba59d44eb57417e9e495350c9b4701de006f49e",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 38,
+      "url": "/course/world-38-5367f11259ead5ba.json",
+      "sha256": "5367f11259ead5ba117690f5ec5dc2237f01ebd59ffd86a51e4f3a9087f77149",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 39,
+      "url": "/course/world-39-41f0129527b38e76.json",
+      "sha256": "41f0129527b38e76b64700d1757c1446844b75d0d9810c7c39f634334f435475",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 40,
+      "url": "/course/world-40-32178884fa403a09.json",
+      "sha256": "32178884fa403a09c24e0a132b5d7141f5edf82dc44a4d781fa36ff0edf8fbbd",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 41,
+      "url": "/course/world-41-ee0c7eda64b0cac6.json",
+      "sha256": "ee0c7eda64b0cac6fbbcee32866dd375fb65f352f38175c54e5f8ff249273275",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 42,
+      "url": "/course/world-42-bd28606bb92321a2.json",
+      "sha256": "bd28606bb92321a25d3f0ff22b9c47253faf805c66e5bb8c7f9374bfdc50a8fe",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 43,
+      "url": "/course/world-43-d1550a3ed3aaf03d.json",
+      "sha256": "d1550a3ed3aaf03dc2bc1b20082c8a879f36815bd06d5af72bc2c3c599c49082",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 44,
+      "url": "/course/world-44-70690bec349d1bbd.json",
+      "sha256": "70690bec349d1bbda913949e27a082a5f362baaa7d9e5dc8cd5950fd7c379509",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 45,
+      "url": "/course/world-45-c1fff8f036e91db8.json",
+      "sha256": "c1fff8f036e91db8e5ab85139070875f9d08baa3f624d0ed489288e6715d6186",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 46,
+      "url": "/course/world-46-5a3bd34a09a8fcfb.json",
+      "sha256": "5a3bd34a09a8fcfb58d1efe8f701d0b7f8e6b500f47884176a72f411e943380d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 47,
+      "url": "/course/world-47-f57e03c2d0950af1.json",
+      "sha256": "f57e03c2d0950af1a4120a4690128a4ba1fcce3dba7b947466945557655fe1af",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 48,
+      "url": "/course/world-48-ab03cacec9f43d2a.json",
+      "sha256": "ab03cacec9f43d2a993745465375e87a5c22cff8401cb20a43de85cb764d8e79",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 49,
+      "url": "/course/world-49-8c4a007d6616a2bc.json",
+      "sha256": "8c4a007d6616a2bcc51b4a66dcab72c0bb16897dc15f8a84a829ecee948bf01b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 50,
+      "url": "/course/world-50-404af600a1f780b6.json",
+      "sha256": "404af600a1f780b61bb7bfdb7fa5987494b5d365ab55c2d6eff4bf910f1530dd",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 51,
+      "url": "/course/world-51-42a3d55557b50693.json",
+      "sha256": "42a3d55557b506931a1a5ad5025b127783df8710fc0fb465d9dd8ba0c27d2086",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 52,
+      "url": "/course/world-52-62966ce1befaad08.json",
+      "sha256": "62966ce1befaad08fabcd2e399c054a9810d0117ccd394f592c8142b0a839373",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 53,
+      "url": "/course/world-53-7916698f9dffdf10.json",
+      "sha256": "7916698f9dffdf10814cf46e25b5a1be16b90236940b6f07f2f24674c98588b6",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 54,
+      "url": "/course/world-54-ccfc0e40a1f5da3a.json",
+      "sha256": "ccfc0e40a1f5da3af62c7b2fb723197187ddb40bded37dc1937c9bc3fbd42d5d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 55,
+      "url": "/course/world-55-9609cb029db482a8.json",
+      "sha256": "9609cb029db482a8e2bb4dce8cf8b792b24cd06eb42069315559744959e1763d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 56,
+      "url": "/course/world-56-5d0cb8ab539432f7.json",
+      "sha256": "5d0cb8ab539432f78ad6d765431431ee67cd528581c0f59692df810bb8b66d09",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 57,
+      "url": "/course/world-57-bbe35af120a2766c.json",
+      "sha256": "bbe35af120a2766c506e30be20e13c4b9a23e561b53337de74c0f9d36ad06277",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 58,
+      "url": "/course/world-58-7d08a20b6ce58303.json",
+      "sha256": "7d08a20b6ce58303f728e26cf873b338f88ce9bec2965d9f5701d44727f88676",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 59,
+      "url": "/course/world-59-093dbf198abb93d6.json",
+      "sha256": "093dbf198abb93d648c56bf2f7dd743b4b245da13968c0759895a40321eee14b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 60,
+      "url": "/course/world-60-5d1e9b92d73a6ab2.json",
+      "sha256": "5d1e9b92d73a6ab21a794a23c22b9cde17d3f860012d9fcfb12a49e04e359cd4",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 61,
+      "url": "/course/world-61-d8e4435fe20cc99a.json",
+      "sha256": "d8e4435fe20cc99a2cf25391fefeb9797e62dc859365ab005536b163144a3461",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 62,
+      "url": "/course/world-62-6ca2356c452264fc.json",
+      "sha256": "6ca2356c452264fcc4e7df59adae37d537964ddb46dea372af4098abaf57a236",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 63,
+      "url": "/course/world-63-84f02feeb4627799.json",
+      "sha256": "84f02feeb4627799cb99860e16d02e7fc4d2e69126818a96dc2d48c6014d6289",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 64,
+      "url": "/course/world-64-5366418ffa492f78.json",
+      "sha256": "5366418ffa492f781f27379303eae2197a8aa81868cae372c79fba9ae7dd3e33",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 65,
+      "url": "/course/world-65-1ccc99f710406f12.json",
+      "sha256": "1ccc99f710406f125f25f0f1e19e297855ea9faa53cc1c34f2bbbe50bdd16d3f",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 66,
+      "url": "/course/world-66-1b7ae4ba8cb49c80.json",
+      "sha256": "1b7ae4ba8cb49c80dd19238d470f5d08cf173d2b474687c1c2d09a7b3b778f22",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 67,
+      "url": "/course/world-67-cba26beb4b61d7eb.json",
+      "sha256": "cba26beb4b61d7eb56fd732eecd88a6f0e9b247fef73e9b8b87f44ec5b9a4e38",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 68,
+      "url": "/course/world-68-7b7b25fba4bcead3.json",
+      "sha256": "7b7b25fba4bcead33d63ed14752e000975ae891557e4c79c7b358cdacef7aca8",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 69,
+      "url": "/course/world-69-0869a1bd5fde8d1e.json",
+      "sha256": "0869a1bd5fde8d1e0104054ed9e0a2b7aaaa9941e375a04189f73e3b248db7ef",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 70,
+      "url": "/course/world-70-7f9d8c3d71a87b85.json",
+      "sha256": "7f9d8c3d71a87b85ed29788eeb80c88e670ca326fc6b9e3f6c9d86be02031c49",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 71,
+      "url": "/course/world-71-78d9ddf8ff98a2b2.json",
+      "sha256": "78d9ddf8ff98a2b2c1c04f5cd51566d5c448d1bcc309b41149e7f00fb5f2a17b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 72,
+      "url": "/course/world-72-cf2db8682918b079.json",
+      "sha256": "cf2db8682918b079bd9a8c8363e84f1b7c3210559deebda6def4783be83c995f",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 73,
+      "url": "/course/world-73-8ca8d9ff7ea17d63.json",
+      "sha256": "8ca8d9ff7ea17d634e5bbf39eface29f0c5193704c3d8924903a985d023d1187",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 74,
+      "url": "/course/world-74-217dbf6b504217d9.json",
+      "sha256": "217dbf6b504217d9d45c19c53af335b56c64895ca5f8607e57edf05a3c775350",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 75,
+      "url": "/course/world-75-97edad2f70afab98.json",
+      "sha256": "97edad2f70afab981b00a6853a3eaf85ec812860af6b23e7b02a8ed771ce68b2",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 76,
+      "url": "/course/world-76-516d06cf64ac0fb5.json",
+      "sha256": "516d06cf64ac0fb59a9effa505c2504fc249c26b27802b8b1c117d5af9ccd4b8",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 77,
+      "url": "/course/world-77-23232303c24248fd.json",
+      "sha256": "23232303c24248fd4f8dc22d7bfa09e329a31b9fb9acde15dec0a1cb52423862",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 78,
+      "url": "/course/world-78-4e9e217d5d7aa893.json",
+      "sha256": "4e9e217d5d7aa893e6f3f24c40a06ca51ed7a9d05c307fb3f2f5764aa33bd06b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 79,
+      "url": "/course/world-79-3d7c4acd3d718360.json",
+      "sha256": "3d7c4acd3d71836015beee579f791368506c2dfef8121feca196eb764763ffe4",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 80,
+      "url": "/course/world-80-4605ed2bc47def88.json",
+      "sha256": "4605ed2bc47def889adba5106a31a55fd75dfb18c44e9907540ad5990536f016",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 81,
+      "url": "/course/world-81-32d2ca085c9e4fae.json",
+      "sha256": "32d2ca085c9e4faed210ee21be41b62588338217d31f918617e16959d7db2c31",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 82,
+      "url": "/course/world-82-e236841c0b28d515.json",
+      "sha256": "e236841c0b28d515442341fb1cdf837a0e4b857767d10971d54d7fdec4550278",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 83,
+      "url": "/course/world-83-ee93ab4190e2f2ec.json",
+      "sha256": "ee93ab4190e2f2ecf42ae07822305a069aca935ad388d53d14c56bc705d0880b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 84,
+      "url": "/course/world-84-8a17a64800bd29f0.json",
+      "sha256": "8a17a64800bd29f002fe1dd4cc32839c478de8cb28ed55b7944c8764318f7608",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 85,
+      "url": "/course/world-85-7961403bc06fbbf2.json",
+      "sha256": "7961403bc06fbbf2d9e0283ef8383c703b6bf0f48a2da51c5af959396216c523",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 86,
+      "url": "/course/world-86-ae3612603968db11.json",
+      "sha256": "ae3612603968db1146d485302c30dc295b21b6541f9301b7c60d095bf5fc982f",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 87,
+      "url": "/course/world-87-8c25e12475790127.json",
+      "sha256": "8c25e12475790127ff2fade4dddd0590288be61a56c277aca5c181757a426c84",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 88,
+      "url": "/course/world-88-f17899b489cb4dad.json",
+      "sha256": "f17899b489cb4dad48edcd2468feed0f1766d533a5eed0c40f099df4a28fe690",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 89,
+      "url": "/course/world-89-78b77b88966188e1.json",
+      "sha256": "78b77b88966188e1e43d92f8f2dd6d870df0cb400cf030a48a7fdb4ce04e64b6",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 90,
+      "url": "/course/world-90-d1141aa46195d10a.json",
+      "sha256": "d1141aa46195d10ab114011cc7bd6a91ef7ef1b5606e9211688ee66e9d7c2b72",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 91,
+      "url": "/course/world-91-5de47c2b4c99dc72.json",
+      "sha256": "5de47c2b4c99dc7260c8c514d4cdd5e961331836522e3c409e111995f2cc152b",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 92,
+      "url": "/course/world-92-c5da9a363d6cdc6f.json",
+      "sha256": "c5da9a363d6cdc6f9f029acc26fd1ce4035706b8cb063a94b0d30dad539e8110",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 93,
+      "url": "/course/world-93-ece0097b9501026c.json",
+      "sha256": "ece0097b9501026ce0c66d109281a537224a975949a11a60f73516063dd85ff7",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 94,
+      "url": "/course/world-94-59701eb6e01376a3.json",
+      "sha256": "59701eb6e01376a3ec3c63ac01766a190bf77cbe73a5003c43d42936e05a4eef",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 95,
+      "url": "/course/world-95-5447f84b1f265fe7.json",
+      "sha256": "5447f84b1f265fe78bfaa2dbbe7bc24406a7b3508ac80d121cd0f25ac1eb455a",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 96,
+      "url": "/course/world-96-253f8b3899ba9c1b.json",
+      "sha256": "253f8b3899ba9c1b06a02e2f8e2a36dd88cbc26c17e55f1bf6d91eaa4510f4c8",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 97,
+      "url": "/course/world-97-2a80d1adac677ff8.json",
+      "sha256": "2a80d1adac677ff8fcc5889d1767654774d642bc9df8b1a2571f784cedfe17d4",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 98,
+      "url": "/course/world-98-29ba33b13b203c21.json",
+      "sha256": "29ba33b13b203c21cdcfbd44998bb21b2efe4d30395ee96b3d2d25256cae5a57",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 99,
+      "url": "/course/world-99-757357ca27d676d9.json",
+      "sha256": "757357ca27d676d950b6f26f96c0bc0e14449b49acb87125d86dc0e2feaa5f5f",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 100,
+      "url": "/course/world-100-0337464a623644bb.json",
+      "sha256": "0337464a623644bbce2b6cad37f899438256b83ea387da7956716077728548dd",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 101,
+      "url": "/course/world-101-b64617760118596a.json",
+      "sha256": "b64617760118596abf227a296e4aeb589ec717eaa830910f98cffbcc10f1f0c9",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 102,
+      "url": "/course/world-102-911f885809f13b1a.json",
+      "sha256": "911f885809f13b1a20a90bfa204c90678ed6acc70e2ce14dd630d2b35211f2b5",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 103,
+      "url": "/course/world-103-4d128b73a25edf9a.json",
+      "sha256": "4d128b73a25edf9acfc6c0a528dc2376e43ab54cb20a9f9b5cae52d575c70fcd",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 104,
+      "url": "/course/world-104-461becb80dc27474.json",
+      "sha256": "461becb80dc27474d33be04862b9b83ef119b187d395eb48a98d3beaa96e5229",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 105,
+      "url": "/course/world-105-ed7319500e450a9e.json",
+      "sha256": "ed7319500e450a9eb47ce88ad62aa566825dfcfb70cece2b030986dde33b9415",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 106,
+      "url": "/course/world-106-4cffa725299a205f.json",
+      "sha256": "4cffa725299a205f3a340d0c7775819e3128612b43d9313984aba0114dbdfa06",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 107,
+      "url": "/course/world-107-03541561b1e0ce6a.json",
+      "sha256": "03541561b1e0ce6ae540d625665fc846833dbd044d490b7c691cb6ce80a0bb08",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 108,
+      "url": "/course/world-108-22d5d8f69812a7c2.json",
+      "sha256": "22d5d8f69812a7c2cbdd48325a28666c1a0c0204b565744f1b76513ca10546b1",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 109,
+      "url": "/course/world-109-e112d03eb3c55ba3.json",
+      "sha256": "e112d03eb3c55ba3bab87dc78576704ac681c8a5096bb49f267f55f2183a8976",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 110,
+      "url": "/course/world-110-936a5b5c144da2d1.json",
+      "sha256": "936a5b5c144da2d1a0134745aa3df33dc3c7bc90805000c2f3d08379afab66b4",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 111,
+      "url": "/course/world-111-d7574f8c6fef2733.json",
+      "sha256": "d7574f8c6fef273373c89bc24f27406a91b08a0ace56f4ceed692f0d8d9a2d7e",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 112,
+      "url": "/course/world-112-482d5af0b49e0dcd.json",
+      "sha256": "482d5af0b49e0dcd0a282a4d7678a1596ca85728896b055db06020724ad9c81d",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 113,
+      "url": "/course/world-113-393f01432471fce2.json",
+      "sha256": "393f01432471fce2cdb950d9ac37e05cb8a8c77c022350e8f538979414a0d0b1",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 114,
+      "url": "/course/world-114-0e0897bc52b810f8.json",
+      "sha256": "0e0897bc52b810f8369cd7b93679e7d0a775ebb0057e92e16405829a4afd7c92",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 115,
+      "url": "/course/world-115-37328475cdfd5bb3.json",
+      "sha256": "37328475cdfd5bb3752235f5f513ab7112f928b0975cb28f8458262b55bd6c59",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 116,
+      "url": "/course/world-116-4f334ce2b039cacd.json",
+      "sha256": "4f334ce2b039cacd44c226ed15c43ba221728870d480a5577a35a6a8ea77d376",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 117,
+      "url": "/course/world-117-4815f0d95961fe3d.json",
+      "sha256": "4815f0d95961fe3de63486bf6a90f37c475a23f5e712fa9f2ce4196ef72ef222",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 118,
+      "url": "/course/world-118-d4c92134d8ad2b1b.json",
+      "sha256": "d4c92134d8ad2b1b43136316fd0751ddb8d3ced679b9664ee7bbb0f681ab358e",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 119,
+      "url": "/course/world-119-cb09ce45fc43cfcf.json",
+      "sha256": "cb09ce45fc43cfcf08cc612601b7af22b6f916ae34483d9bc7cf3883ac6b335b",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 120,
+      "url": "/course/world-120-3b89ebc26fa94df4.json",
+      "sha256": "3b89ebc26fa94df496d59f300e89d23166d65342d672cc6bf8180fabb08661b4",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 121,
+      "url": "/course/world-121-4629443070f12168.json",
+      "sha256": "4629443070f12168693a500ab8d6d766db7389117a6d3803553f329b47b90ce9",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 122,
+      "url": "/course/world-122-402d0c975d00cfd4.json",
+      "sha256": "402d0c975d00cfd4db0e20fbfa148ebab92b47409d85fc0ad343bdc07ec9aab2",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 123,
+      "url": "/course/world-123-5c78c6f531084402.json",
+      "sha256": "5c78c6f5310844027ef4beb2c2aca54fe7e1f86eeab21d11b553cf13d4d4fc37",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 124,
+      "url": "/course/world-124-aeac8efb500621c5.json",
+      "sha256": "aeac8efb500621c56522c895c4445ae376b3fc4c51268fa7557a3a066f928927",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 125,
+      "url": "/course/world-125-03f2fcb98a0f7a08.json",
+      "sha256": "03f2fcb98a0f7a08632ba765dfe99baee4b37b4be64a42ea198a3becc76fc418",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 126,
+      "url": "/course/world-126-43b67cd551150072.json",
+      "sha256": "43b67cd551150072583aab07c7c7db5980b658c9f483af6b83eba7247e50a20a",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 127,
+      "url": "/course/world-127-c55907ca654a9ed7.json",
+      "sha256": "c55907ca654a9ed73c5601327c305359f693b94236e992351e02120107892608",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 128,
+      "url": "/course/world-128-dfb7592b5fc61f44.json",
+      "sha256": "dfb7592b5fc61f44ef36ce601df3d69ac835beca0567c55b527cd94d862478f9",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 129,
+      "url": "/course/world-129-2ea530eca38968c6.json",
+      "sha256": "2ea530eca38968c6671d645e094e9626942711e7d90705e4f8265c4e9ef7c503",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 130,
+      "url": "/course/world-130-1030cbf361ccd392.json",
+      "sha256": "1030cbf361ccd392b515df7b0b73863c0f9997186c60102fa4c76ecf72fe8635",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 131,
+      "url": "/course/world-131-b2fd088331e3b035.json",
+      "sha256": "b2fd088331e3b035897987ec98b4663ef563625212a958807deba348f8f05fec",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 132,
+      "url": "/course/world-132-c90231c5cd0d4a7d.json",
+      "sha256": "c90231c5cd0d4a7d59d0f6d8f2b1de7def722fa6b3d4e5dbc9f6bdcd37dcc3d2",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 133,
+      "url": "/course/world-133-c06e23d0c4bc7e69.json",
+      "sha256": "c06e23d0c4bc7e695678362b339f5a054f09e565a42882b909a6c688d236bbf0",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 134,
+      "url": "/course/world-134-976ada5f414fada4.json",
+      "sha256": "976ada5f414fada40e969cba1337fde104bd9950a87274335933f53f547f4c3c",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 135,
+      "url": "/course/world-135-e6ec3caf15af782c.json",
+      "sha256": "e6ec3caf15af782cd4858560b68b6888166407bdc72f15b258be9d75605f15dc",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 136,
+      "url": "/course/world-136-3b67235e186ccc34.json",
+      "sha256": "3b67235e186ccc345e1076388492d26470b8b5c9ffebc084d8c8856b383a15ef",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 137,
+      "url": "/course/world-137-4b476f07fe23ebc2.json",
+      "sha256": "4b476f07fe23ebc2f9ebfee3b679e5d6668c3196ba8de7c5a40cd1bd7a63df1e",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 138,
+      "url": "/course/world-138-b156716c00e258da.json",
+      "sha256": "b156716c00e258da78bb52cde5f48b2b297f820a35daa783c6c62e7981a6b933",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 139,
+      "url": "/course/world-139-3199dfdfc3b7cbee.json",
+      "sha256": "3199dfdfc3b7cbeee728f6f27f56409d0494f8a1250bf564040c9d15a8505fb4",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 140,
+      "url": "/course/world-140-16ad695a448c0f0a.json",
+      "sha256": "16ad695a448c0f0aeef0adcb3ab6d14a2cce75c83e0a3156344071323a593e79",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 141,
+      "url": "/course/world-141-11efb685def62ca9.json",
+      "sha256": "11efb685def62ca9edafb8c0bc654f3b3f6090f8e11ea8c6f0e434f10e998217",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 142,
+      "url": "/course/world-142-2265999b14e2aaf9.json",
+      "sha256": "2265999b14e2aaf9584d71bdee1e5fa2e922a6b357efeee23c35d16760c1302c",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 143,
+      "url": "/course/world-143-9726b8a3e8213335.json",
+      "sha256": "9726b8a3e821333537d6875aefbce5fd8d6a3785fad893ccf61cdc9449a469af",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 144,
+      "url": "/course/world-144-56347c761d2ecac2.json",
+      "sha256": "56347c761d2ecac2f210ab6adac058746bbe10bd56acbe34eb8ab942ce7ff8ab",
+      "matches_recovered_source": false
+    },
+    {
+      "id": 145,
+      "url": "/course/world-145-8d59a49528dc92f1.json",
+      "sha256": "8d59a49528dc92f13c93483e5c835ecfdab96047ade8682e5c976ec4f2ba147f",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 146,
+      "url": "/course/world-146-391bae1fe608f317.json",
+      "sha256": "391bae1fe608f317cd49cb81de2f3dfcfd03d23227cd2d5f3d16f62093f9b15d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 147,
+      "url": "/course/world-147-d23cbbb5b6139efd.json",
+      "sha256": "d23cbbb5b6139efd1a90f058ec96960b1cf180e4c763c24b91bd874419045777",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 148,
+      "url": "/course/world-148-0cb1b02a1b0dad17.json",
+      "sha256": "0cb1b02a1b0dad1767a8160803e8a4996b0e63b3bba3dae3bb3686cc734b15bb",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 149,
+      "url": "/course/world-149-c3a715cd6c107da4.json",
+      "sha256": "c3a715cd6c107da4035ae73c96907e52f287e1ba3e9e0156bd2be3c829f7d738",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 150,
+      "url": "/course/world-150-0362f6df064b22d9.json",
+      "sha256": "0362f6df064b22d912c907d9683dde5e6c5cd20d7e14dd795360908146dbd816",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 151,
+      "url": "/course/world-151-9c15342e3a16776a.json",
+      "sha256": "9c15342e3a16776a07b306119808c7d47631dc0714e8c1e914461667cffbfc68",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 152,
+      "url": "/course/world-152-df2ed71f6eadce1f.json",
+      "sha256": "df2ed71f6eadce1f09bb97dfe1d7ce2ddf6731b6ae895292574c337405365397",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 153,
+      "url": "/course/world-153-9d09dbff1730baec.json",
+      "sha256": "9d09dbff1730baec3798754fe82c4405ec9e1f900f0e04848373e861f64c5ff2",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 154,
+      "url": "/course/world-154-a4d042051838da02.json",
+      "sha256": "a4d042051838da021f8e2191c4b00f8c434d39f28012c95ad9f89fb481e1cbb0",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 155,
+      "url": "/course/world-155-122a8a76bb442543.json",
+      "sha256": "122a8a76bb442543e3dcdc04f978d1e23ef18df699573d548872c0873717a5c1",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 156,
+      "url": "/course/world-156-51cbb9055d2c1de8.json",
+      "sha256": "51cbb9055d2c1de8bb7e25e8a98a46b53444126d3a51ba1fd9892489e5681ca6",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 157,
+      "url": "/course/world-157-d2fb2929e5e5633d.json",
+      "sha256": "d2fb2929e5e5633d8e459c088c9fd9a9fa37faef5b59009bd5ac85666aa9f6b6",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 158,
+      "url": "/course/world-158-e4d0ac7149433e36.json",
+      "sha256": "e4d0ac7149433e360c1629f8129f7d24dad370ba7cbd8d8466e40d8b51ebda5e",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 159,
+      "url": "/course/world-159-b4ce0fc93f545365.json",
+      "sha256": "b4ce0fc93f545365a20e1dda0e4ba67a510fa828a5e0ec2a40956c4d69f4a809",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 160,
+      "url": "/course/world-160-bd8d1870419d72a0.json",
+      "sha256": "bd8d1870419d72a04de6d54462ca20952f4ed13050f4fc0fd0c99604459ec682",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 161,
+      "url": "/course/world-161-dfddb0316c76eb81.json",
+      "sha256": "dfddb0316c76eb81aac3a165953bcf26453e9f6c1102b7343215611f6373f850",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 162,
+      "url": "/course/world-162-b2e9ef3ccd13faee.json",
+      "sha256": "b2e9ef3ccd13faee44b5548d878fe7681c78c0d9d70a1b3735e47061e6a2b65d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 163,
+      "url": "/course/world-163-d826214919fe7c1d.json",
+      "sha256": "d826214919fe7c1d54272d7d53ab4e1ed1c2d40a6530b2872c134611f71a536d",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 164,
+      "url": "/course/world-164-d1e8c9b7deea04b3.json",
+      "sha256": "d1e8c9b7deea04b37998cb1e96dfc133780192ff7b63cca234fd0e40692ee9dd",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 165,
+      "url": "/course/world-165-778da9ba90ef614f.json",
+      "sha256": "778da9ba90ef614f563d6b9f88e40af03a6cba528e795899f5fec0c00ef37adf",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 166,
+      "url": "/course/world-166-3a74464e32d6a5a5.json",
+      "sha256": "3a74464e32d6a5a560e3866ceb69c76c5d3f454360ffd7de56654e51d85cec44",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 167,
+      "url": "/course/world-167-b7da5ba37de7d752.json",
+      "sha256": "b7da5ba37de7d752a6b3358b8fd1831cb0ff5d3685ce7152736bccb180c73756",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 168,
+      "url": "/course/world-168-a7e9f53c581b070b.json",
+      "sha256": "a7e9f53c581b070b753cf5da67d6fc065be802ff0e4478788d5a2396c81f4383",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 169,
+      "url": "/course/world-169-25ca562b8afd118a.json",
+      "sha256": "25ca562b8afd118a10c57d052b0c36e36d476f239d5617a1537806b3fcfed642",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 170,
+      "url": "/course/world-170-0ef2cad1d114ab91.json",
+      "sha256": "0ef2cad1d114ab91f0595ef7f2f2f10b7cf7c150b116cf72474318e311dd82c5",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 171,
+      "url": "/course/world-171-4e26e9ac98bf0a14.json",
+      "sha256": "4e26e9ac98bf0a14ff08312c82c45d848f1358dc363dde22dd5434507098e2bb",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 172,
+      "url": "/course/world-172-39f7ba071f8e5ede.json",
+      "sha256": "39f7ba071f8e5edefe444e6fee80f3473c6a9f2e84ed3510d8d0a663bd5efa39",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 173,
+      "url": "/course/world-173-35588177f951289e.json",
+      "sha256": "35588177f951289e021923e3acfa813dbd535738886156296e34d410f0ba5cf6",
+      "matches_recovered_source": true
+    },
+    {
+      "id": 174,
+      "url": "/course/world-174-b0c2393627e50d9b.json",
+      "sha256": "b0c2393627e50d9b3e75f68ccfa4122ccf59df0a58e74ff15eeacc418a5464ec",
+      "matches_recovered_source": true
+    }
+  ],
+  "note": "Public deployment reference, not recovered editable source. Recovered code preserved unchanged."
+}
