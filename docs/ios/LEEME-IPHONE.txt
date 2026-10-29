@@ -1,0 +1,15 @@
+OCHAVO PARA IPHONE · PROYECTO 0.35.5
+
+Este paquete contiene el proyecto nativo de iOS y la app web compartida. Está preparado para continuar en un Mac con Xcode. No es un IPA; no se ha compilado ni probado en un iPhone desde este equipo Windows.
+
+Nombre visible: Ochavo.
+Identificador permanente: app.brote.inversion.
+Versión: 0.35.5. Compilación iOS: 72.
+Dispositivo objetivo: iPhone. Mínimo configurado: iOS 17.5.
+Capacitor: 8.5.2 con Swift Package Manager.
+
+Se conservan la mascota, el icono actual de Ochavo, los colores y el diseño. Se mantienen el proyecto Firebase, los orígenes locales y las claves de almacenamiento. Las cuentas, el progreso y los accesos Plus pertenecen a la misma app; los códigos ya emitidos siguen siendo válidos.
+
+Web disponible: https://ochavo.app/
+Para el proyecto nativo, seguir PREPARAR-EN-MAC.txt y PRIVACIDAD-Y-PRUEBAS-IOS.txt. Para compilar en la nube sin un Mac propio, usar el paquete adicional -nube y PUBLICAR-SIN-MAC.txt. El paquete no contiene firma, certificados, claves privadas ni credenciales administrativas. La publicidad está desactivada en iOS y AdMob se excluye de sus plugins. Las compras iOS y la publicación en tienda necesitan su propia configuración y pruebas; una compra web no demuestra que StoreKit esté preparado.
+

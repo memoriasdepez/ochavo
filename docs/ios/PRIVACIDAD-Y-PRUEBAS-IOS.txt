@@ -1,0 +1,21 @@
+OCHAVO 0.35.5 · BUILD 72 · PRUEBAS PENDIENTES EN IPHONE
+
+La preparación se realiza en Windows. El control estático del proyecto no sustituye la compilación, el informe de privacidad del archivo de Xcode ni una prueba real de iPhone.
+
+Mantener el manifiesto PrivacyInfo.xcprivacy, el origen capacitor://localhost, las áreas seguras actuales y el identificador app.brote.inversion. La app usa Firebase web para cuentas y progreso; Preferences conserva la copia local por cuenta. Las compras iOS usan la integración de RevenueCat y necesitan sus productos y pruebas de StoreKit. No hay anuncios activos en iOS y AdMob no debe incluirse entre sus plugins nativos ni dependencias SPM.
+
+Antes de distribuir:
+1. Resolver las dependencias SPM y compilar Debug y Release. Verificar nombre Ochavo, versión 0.35.5/build 72, icono y arranque. Generar y revisar el informe de privacidad del archivo definitivo y completar la ficha App Privacy con los flujos reales, incluidos cuenta, progreso, soporte, promociones y compras. Confirmar que no se inicializan anuncios ni aparecen avisos publicitarios de Android/web en iOS.
+2. Probar en simulador y teléfono iPhone, en iOS 17.5 y una versión compatible posterior. Revisar modo claro/oscuro, barras seguras, teclado, rotación, texto grande, navegación y VoiceOver sin atribuir soporte aún no comprobado.
+3. Confirmar acceso obligatorio: cerrar el formulario no permite entrar al curso. Crear una cuenta de prueba y confirmar correo; probar recuperación y regreso desde navegador. La contraseña nueva pide 12 caracteres, mayúscula, minúscula, número y símbolo; las cuentas anteriores mantienen su acceso.
+4. Con una cuenta existente de prueba, comparar el progreso antes y después de la actualización sin desinstalar. Comprobar borradores, exámenes, mundos, rachas, gemas, vidas y Plus. Cambiar de cuenta y verificar que no se mezclan datos. Perder conexión y recuperarla sin duplicar recompensas.
+5. Probar un código promocional autorizado desde la web y comprobar Plus en la app con esa misma cuenta. No reutilizar códigos de amigos ni canjear códigos reales solo para probar. Los códigos previos deben seguir siendo válidos.
+6. Abrir Ayuda, Enviar correo y textos legales; comprobar que ninguna acción envía un correo automáticamente. Verificar eliminación con una cuenta de prueba desechable y su aislamiento respecto a otra cuenta.
+7. Preparar capturas de la app real en iPhone, cuenta de revisión, firma y requisitos de la consola antes de enviar. La existencia del proyecto y de capturas web no demuestra ejecución nativa.
+
+No ejecutado en esta entrega de Windows: compilación Swift/Xcode, simulador Apple, iPhone, firma iOS, IPA, TestFlight ni App Review. La preparación de iOS no activa compras ni publicidad por sí sola.
+
+Avisos privados de esta versión: comprobar «Informar de un problema» desde una lección y un examen. Revisar que el camino, punto y paso son correctos; que no se adjuntan respuestas; y que la opción de versión/plataforma comienza desmarcada. Probar falta de conexión y reintento sin duplicar el aviso. Incluir el texto enviado por el usuario y el identificador de cuenta en la declaración de datos de soporte de la ficha App Privacy, según el flujo real del archivo definitivo. Los avisos se guardan en Firestore y se eliminan con la cuenta desde la app.
+
+Carga de mundos: comprobar los dos mundos iniciales de cada camino, la ampliación automática de dos en dos, el reintento sin conexión y la vuelta al punto guardado. Los archivos de lecciones se incluyen como recursos locales. No se han cambiado los identificadores de contenido ni las claves del progreso.
+

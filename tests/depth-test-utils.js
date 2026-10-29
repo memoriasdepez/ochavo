@@ -11,7 +11,7 @@ export function beforeDepth(lesson){
  if(lesson.id<502)return beforeSecondCorrections(lesson);
  if(!historical){
   const records=parseAuthoring(Array.from({length:5},(_,i)=>read(`src/content/stocks-v2-authoring/part-${i+1}.txt`)),500);
-  historical=refineStocks(compileRevision({outline:JSON.parse(read('src/content/stocks-outline-v2.json')),records,start:450,sources:[]}),records,{depthTeaching:false,secondCorrections:false,lessonNotes:false,marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false}).lessons;
+  historical=refineStocks(compileRevision({outline:JSON.parse(read('src/content/stocks-outline-v2.json')),records,start:450,sources:[]}),records,{depthTeaching:false,secondCorrections:false,lessonNotes:false,marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false,orderNotes:false}).lessons;
  }
  return historical.find(l=>l.id===lesson.id);
 }

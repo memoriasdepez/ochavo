@@ -1,0 +1,9 @@
+OCHAVO 0.35.5 · CONTADOR IOS 72 · ANDROID 73
+
+Nueve explicaciones solicitadas en Acciones 55, 56 y 58: stops, vigencia y ejecuciones parciales, cambio de divisas. Conservados los saltos de párrafo y el énfasis. Dos prácticas nuevas en 55/6 y 55/8: ordenar la caída y el rebote; interpretar el stop dinámico en un retroceso, con calculadora opcional. Tabla de 55/3 coherente con el ejemplo de 9/8,50 €.
+
+Solo se reinicia el intento incompatible del punto 55; aprobados, historial y saldos se conservan. Los otros 497 puntos de Acciones, los exámenes, los demás caminos, catálogo y formato de progreso 9 no cambian.
+
+918 pruebas correctas. 36 vistas móviles comprobadas en claro/oscuro sin desbordamiento. Las revisiones locales no escriben cuentas reales.
+
+Esta entrega sincroniza recursos iOS. No acredita compilación Xcode, IPA, prueba física ni nueva subida a TestFlight/App Store. Mantener las compras y anuncios en su configuración actual.

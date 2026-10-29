@@ -9,7 +9,7 @@ import { earlySituations } from '../scripts/stocks-editorial/early-situations.mj
 const read = file => readFileSync(new URL('../' + file, import.meta.url), 'utf8');
 const outline = JSON.parse(read('src/content/stocks-outline-v2.json'));
 const records = parseAuthoring(Array.from({ length: 5 }, (_, i) => read(`src/content/stocks-v2-authoring/part-${i + 1}.txt`)), 500);
-const original = refineStocks(compileRevision({ outline, records, start: 450, sources: [] }), records,{depthTeaching:false,secondCorrections:false,marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false});
+const original = refineStocks(compileRevision({ outline, records, start: 450, sources: [] }), records,{depthTeaching:false,secondCorrections:false,marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false,orderNotes:false});
 // This tests the earlier reasoning stage in isolation. The subsequent world-four
 // rewrite removes some of the calculation exercises this stage needs as input;
 // replaying an earlier stage on that finished curriculum is not a valid pipeline.

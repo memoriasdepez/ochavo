@@ -1,0 +1,10 @@
+OCHAVO 0.35.5 · ALCANCE Y PENDIENTES IOS
+
+El proyecto comparte la interfaz y el aprendizaje con web y Android. Se conserva la identidad Ochavo, la mascota y su icono actual. Identificador, orígenes, claves de almacenamiento, cuentas y acceso Plus mantienen la misma identidad técnica. La publicidad iOS está desactivada y el plugin AdMob se excluye expresamente del proyecto iOS.
+
+La carpeta contiene el proyecto iOS sincronizable y sus instrucciones. La comprobación estática verifica estructura, versiones, manifiesto, recursos gráficos y coincidencia de la web empaquetada. Solo la ejecución de Xcode podrá confirmar la compilación, resolución de SPM, comportamiento de Firebase en WKWebView y compatibilidad efectiva con el dispositivo.
+
+Las fuentes conciliadas el 30 de octubre de 2026 no se han compilado ni subido a TestFlight en esta tarea. El informe remoto conservado en PUBLICACION-ACTUAL.md acredita una beta anterior 0.35.5 (72) en TestFlight; ese informe es histórico y esta operación no vuelve a consultar su estado. Se conserva 72 como contador de referencia del proyecto para que una futura compilación use uno superior. No se ha realizado ningún envío público a App Store en esta operación. Las instrucciones de prueba están en PRIVACIDAD-Y-PRUEBAS-IOS.txt.
+
+Los archivos en las carpetas de entregas anteriores son históricos y conservan sus nombres originales. No deben usarse como evidencia de la compilación o prueba de 0.35.5. El estado y la huella del ZIP actual quedan registrados por el script de empaquetado en VERIFICACION-PAQUETE.json. VERIFICACION-NUBE.json identifica por separado el paquete para Codemagic, sin acreditar que se haya ejecutado una compilación en ese servicio.
+

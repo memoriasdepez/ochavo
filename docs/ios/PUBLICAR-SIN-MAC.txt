@@ -1,0 +1,5 @@
+OCHAVO · CONTINUAR SIN MAC PROPIO
+
+El proyecto completo está en GitHub. Instalar dependencias, copiar configuracion-firebase-publica.env a .env.local y ejecutar node scripts/ios-sync.mjs. Ese paso no genera un IPA.
+
+Codemagic conserva sus workflows en codemagic.yaml. Una ejecución de ios-testflight firma y transmite una compilación a App Store Connect: no iniciarla hasta una autorización nueva del usuario. Las credenciales permanecen en la integración privada existente, fuera de Git. Ver CODEMAGIC-ACCESO.md y APPLE-ACCESO.md. Los ZIP históricos no contienen las nuevas correcciones de esta conciliación.

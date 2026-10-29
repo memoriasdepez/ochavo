@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $virutaApp = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $virutaOutput = [IO.Path]::GetFullPath((Join-Path $virutaApp '../ochavo-ios'))
+$virutaDocs = Join-Path $virutaApp 'docs/ios'
 $virutaVersion = (Get-Content -LiteralPath (Join-Path $virutaApp 'package.json') -Raw | ConvertFrom-Json).version
 $virutaName = 'Ochavo-iOS-' + $virutaVersion
 $virutaStage = [IO.Path]::GetFullPath((Join-Path $virutaOutput $virutaName))
@@ -37,7 +38,7 @@ foreach ($key in @('VITE_FIREBASE_API_KEY','VITE_FIREBASE_AUTH_DOMAIN','VITE_FIR
 if ($virutaEnv['VITE_FIREBASE_PROJECT_ID'] -ne 'brote-62d26') { throw 'Proyecto público inesperado.' }
 $virutaPublicEnv = @('# Configuración pública del cliente; no contiene credenciales administrativas.') + @($virutaEnv.Keys | Sort-Object | ForEach-Object { $_ + '=' + $virutaEnv[$_] }) + @('VITE_USE_EMULATORS=false')
 [IO.File]::WriteAllLines((Join-Path $virutaStage 'configuracion-firebase-publica.env'), $virutaPublicEnv, [Text.UTF8Encoding]::new($false))
-foreach ($file in @('LEEME-IPHONE.txt','PREPARAR-EN-MAC.txt','PRIVACIDAD-Y-PRUEBAS-IOS.txt','AUDITORIA-PENDIENTES.txt',('NOVEDADES-'+$virutaVersion+'.txt'))) { Copy-Item -LiteralPath (Join-Path $virutaOutput $file) -Destination (Join-Path $virutaStage $file) }
+foreach ($file in @('LEEME-IPHONE.txt','PREPARAR-EN-MAC.txt','PRIVACIDAD-Y-PRUEBAS-IOS.txt','AUDITORIA-PENDIENTES.txt',('NOVEDADES-'+$virutaVersion+'.txt'))) { Copy-Item -LiteralPath (Join-Path $virutaDocs $file) -Destination (Join-Path $virutaStage $file) }
 
 $virutaInventory = @(Get-ChildItem -LiteralPath $virutaStage -File -Recurse | Sort-Object FullName | ForEach-Object {
     $relative = [IO.Path]::GetRelativePath($virutaStage, $_.FullName).Replace('\','/')

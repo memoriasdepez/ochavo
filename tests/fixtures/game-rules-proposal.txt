@@ -1,0 +1,205 @@
+VIRUTA — PROPUESTA DE REGLAS DE ECONOMÍA, NO DESPLEGADA
+
+Insertar el bloque entre BEGIN/END dentro de match /databases/{database}/documents,
+junto a las reglas actuales. Reutiliza verifiedOwner, accountActive y
+accountActiveAfterWrite. No sustituir las reglas de progreso ni el marcador de borrado.
+
+Catálogo/calendario: scripts/seed-game-catalog.mjs genera datos, no publica.
+Convertir {$timestamp: ISO} a timestamp Firestore al aprovisionar con permisos de
+administración. Clientes solo leen estos documentos. Actualizar el calendario antes
+de 2036 (o si cambian legalmente las reglas horarias); no usar reloj cliente como prueba.
+
+La regla valida identidad, calendario contra request.time, saldos, vidas, límites,
+referencias al catálogo y claims inmutables. El aprendizaje y la migración histórica
+siguen siendo declaraciones del cliente: sin servidor confiable no certifica que la
+respuesta realmente fuera correcta. No es dinero real ni permite comprar con dinero.
+Los recibos privados de referencia los crea otro módulo; este bloque solo los consulta.
+
+BEGIN GAME RULES
+    function gWalletPath(uid) { return /databases/$(database)/documents/users/$(uid)/game/main; }
+    function gEventPath(uid, id) { return /databases/$(database)/documents/users/$(uid)/gameEvents/$(id); }
+    function gClaimPath(uid, id) { return /databases/$(database)/documents/users/$(uid)/gameClaims/$(id); }
+    function gConfig() { return get(/databases/$(database)/documents/gameConfig/economy).data; }
+    function gEntry(e) { return get(/databases/$(database)/documents/gameCatalog/$(e.target)).data; }
+    function gDay(day) { return get(/databases/$(database)/documents/gameDays/$(day)).data; }
+    function gInitial(c) {
+      return {'schemaVersion':1,'revision':0,'gems':c.welcomeGems,'lives':c.dailyLives,
+        'lifeDay':'','lastOpenDay':'','streak':0,'bestStreak':0,'unlockedCases':[],
+        'completedCases':[],'badges':[],'completedLessons':0,'passedExams':0,
+        'passedExamIds':[],'referralCount':0,'lastEventId':''};
+    }
+    function gBefore(uid,c) { return exists(gWalletPath(uid)) ? get(gWalletPath(uid)).data : gInitial(c); }
+    function gClaimed(uid,id) { return id != '' && exists(gClaimPath(uid,id)); }
+    function gBaseLives(b,e,c) { return b.lifeDay == e.day ? b.lives : c.dailyLives; }
+    function gStreak(b,e) {
+      return b.lastOpenDay == e.day ? b.streak
+        : b.lastOpenDay != '' && gDay(e.day).ordinal - gDay(b.lastOpenDay).ordinal == 1 ? b.streak + 1 : 1;
+    }
+    function gPrimary(e) {
+      return e.kind == 'open' ? 'open-' + e.day
+        : e.kind == 'referral' ? 'referral-' + e.target
+        : e.kind in ['lesson','badge','case-complete','answer-credit','exam-credit'] ? e.target
+        : e.kind == 'answer' && e.correct ? e.target
+        : e.kind == 'exam' && e.passed ? e.target : '';
+    }
+    function gSecondary(e,item,streak) {
+      return e.kind == 'open'
+        ? (streak == 3 ? 'streak-3' : streak == 7 ? 'streak-7' : streak == 30 ? 'streak-30' : '')
+        : e.kind == 'exam-credit' || e.kind == 'exam' && e.passed ? item.bonusId : '';
+    }
+    function gPrimaryAmount(e,c,item) {
+      return e.kind == 'open' ? c.dailyReward
+        : e.kind == 'referral' ? c.referralReward : item.amount;
+    }
+    function gSecondaryAmount(e,c,item,streak) {
+      return e.kind == 'open'
+        ? (streak == 3 ? c.streakRewards['3'] : streak == 7 ? c.streakRewards['7'] : c.streakRewards['30'])
+        : item.bonusAmount;
+    }
+    function gRewardBindings(uid,e,c,item,streak) {
+      let primary=gPrimary(e);
+      let secondary=gSecondary(e,item,streak);
+      let earns=primary != '' && !gClaimed(uid,primary);
+      let bonus=secondary != '' && !gClaimed(uid,secondary);
+      return e.rewardId == (earns ? primary : '')
+        && e.rewardAmount == (earns ? gPrimaryAmount(e,c,item) : 0)
+        && e.bonusId == (bonus ? secondary : '')
+        && e.bonusAmount == (bonus ? gSecondaryAmount(e,c,item,streak) : 0)
+        && (!earns || existsAfter(gClaimPath(uid,primary)) && getAfter(gClaimPath(uid,primary)).data.eventId == e.id)
+        && (!bonus || existsAfter(gClaimPath(uid,secondary)) && getAfter(gClaimPath(uid,secondary)).data.eventId == e.id);
+    }
+    function gBadgeEligible(uid,b,item) {
+      return item.requiredClaim != '' ? gClaimed(uid,item.requiredClaim)
+        : item.metric == 'cases' ? b.completedCases.size() >= item.threshold
+        : item.metric == 'streak' ? b.bestStreak >= item.threshold
+        : item.metric == 'referrals' ? b.referralCount >= item.threshold
+        : b.completedLessons >= item.threshold;
+    }
+    function gKindValid(uid,b,e,c,item,base) {
+      return e.kind == 'open' && e.target == '' && e.attemptId == ''
+        || e.kind == 'answer' && item.kind == 'answer' && base > 0 && e.attemptId != ''
+        || e.kind == 'answer-credit' && item.kind == 'answer' && e.attemptId.matches('import-.*')
+        || e.kind == 'lesson' && item.kind == 'lesson'
+        || e.kind == 'exam-credit' && item.kind == 'exam'
+        || e.kind == 'exam' && item.kind == 'exam' && base > 0 && e.attemptId != ''
+          && e.wrongCount <= item.questions && e.passed == (item.questions - e.wrongCount >= item.passCount)
+        || e.kind == 'refill' && e.target == '' && e.attemptId != '' && base < c.dailyLives && b.gems >= c.refillCost
+        || e.kind == 'case' && item.kind == 'case' && !(e.target in b.unlockedCases)
+          && b.gems >= item.cost && gClaimed(uid,item.requiredClaim)
+        || e.kind == 'case-complete' && item.kind == 'case-complete' && item.caseId in b.unlockedCases
+        || e.kind == 'badge' && item.kind == 'badge' && gBadgeEligible(uid,b,item)
+        || e.kind == 'referral' && exists(/databases/$(database)/documents/users/$(uid)/referrals/$(e.target))
+          && get(/databases/$(database)/documents/users/$(uid)/referrals/$(e.target)).data.qualifiedAt is timestamp
+          && get(/databases/$(database)/documents/users/$(uid)/referrals/$(e.target)).data.qualifiedAt <= request.time
+        || e.kind == 'import-debit' && e.target == '' && e.attemptId.matches('import-.*') && e.amount >= 0;
+    }
+    function gLifeDelta(e,c,base) {
+      return e.kind == 'answer' && !e.correct ? -1
+        : e.kind == 'exam' ? -(e.wrongCount < base ? e.wrongCount : base)
+        : e.kind == 'refill' ? c.dailyLives - base : 0;
+    }
+    function gGemDelta(b,e,c,item) {
+      return e.rewardAmount + e.bonusAmount - (e.kind == 'refill' ? c.refillCost
+        : e.kind == 'case' ? item.cost : e.kind == 'import-debit' ? (e.amount < b.gems ? e.amount : b.gems) : 0);
+    }
+    function gEventSchema(e,id) {
+      return e.keys().size() == 17
+        && (e.attemptId == '' || e.attemptId.matches('[A-Za-z0-9_-]{1,160}'))
+        && e.id == (e.kind == 'open' ? 'open-' + e.day : e.attemptId != '' ? 'attempt-' + e.attemptId : e.kind + '-' + e.target)
+        && e.createdAt == request.time
+        && (e.kind == 'answer' ? e.correct is bool : e.correct == false)
+        && (e.kind == 'exam' ? e.wrongCount is int && e.wrongCount >= 0 && e.wrongCount <= 10 : e.wrongCount == 0 && e.passed == false)
+        && (e.kind == 'import-debit' ? e.amount is int && e.amount >= 0 && e.amount <= 10000000 : e.amount == 0);
+    }
+    function gTransition(b,e,w,c,item,base,streak) {
+      let lesson=e.kind == 'lesson' && e.rewardAmount > 0;
+      let exam=e.kind in ['exam','exam-credit'] && e.rewardAmount > 0;
+      let complete=e.kind == 'case-complete' && e.rewardAmount > 0;
+      let badge=e.kind == 'badge' && e.rewardAmount > 0;
+      return e.revision == b.revision + 1 && e.gemDelta == gGemDelta(b,e,c,item) && e.lifeDelta == gLifeDelta(e,c,base)
+        && w.gems is int && w.gems >= 0 && w.gems <= 10000000
+        && w.lives is int && w.lives >= 0 && w.lives <= c.dailyLives
+        && w == {'schemaVersion':1,'revision':b.revision + 1,'lastEventId':e.id,'updatedAt':request.time,
+          'lifeDay':e.day,'lives':base + e.lifeDelta,'gems':b.gems + e.gemDelta,
+          'streak':streak,'bestStreak':streak > b.bestStreak ? streak : b.bestStreak,
+          'lastOpenDay':e.kind == 'open' ? e.day : b.lastOpenDay,
+          'completedLessons':b.completedLessons + (lesson ? 1 : 0),
+          'passedExams':b.passedExams + (exam ? 1 : 0),
+          'referralCount':b.referralCount + (e.kind == 'referral' && e.rewardAmount > 0 ? 1 : 0),
+          'unlockedCases':e.kind == 'case' ? b.unlockedCases.concat([e.target]) : b.unlockedCases,
+          'completedCases':complete ? b.completedCases.concat([item.caseId]) : b.completedCases,
+          'passedExamIds':exam ? b.passedExamIds.concat([e.target]) : b.passedExamIds,
+          'badges':badge ? b.badges.concat([item.badgeId]) : b.badges};
+    }
+    function gValidOperation(uid,e,w) {
+      let config=gConfig();
+      let before=gBefore(uid,config);
+      let item=e.kind in ['answer','answer-credit','lesson','exam','exam-credit','case','case-complete','badge'] ? gEntry(e) : {};
+      let base=gBaseLives(before,e,config);
+      let streak=e.kind == 'open' ? gStreak(before,e) : before.streak;
+      return !exists(gEventPath(uid,e.id)) && gEventSchema(e,e.id)
+        && gDay(e.day).startAt <= request.time && request.time < gDay(e.day).endAt
+        && gKindValid(uid,before,e,config,item,base) && gRewardBindings(uid,e,config,item,streak) && gTransition(before,e,w,config,item,base,streak);
+    }
+    match /gameConfig/{id} { allow get: if true; allow list, write: if false; }
+    match /gameCatalog/{id} { allow get: if true; allow list, write: if false; }
+    match /gameDays/{id} { allow get: if true; allow list, write: if false; }
+    match /users/{uid}/game/main {
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow list: if false;
+      allow create, update: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && gValidOperation(uid,getAfter(gEventPath(uid,request.resource.data.lastEventId)).data,request.resource.data);
+      allow delete: if verifiedOwner(uid) && existsAfter(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /users/{uid}/gameEvents/{id} {
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && request.resource.data.id == id && request.resource.data.createdAt == request.time
+        && getAfter(gWalletPath(uid)).data.lastEventId == id
+        && getAfter(gWalletPath(uid)).data.updatedAt == request.time
+        && getAfter(gWalletPath(uid)).data.revision == (exists(gWalletPath(uid)) ? get(gWalletPath(uid)).data.revision : 0) + 1;
+      allow update: if false;
+      allow list, delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+    match /users/{uid}/gameClaims/{id} {
+      allow get: if verifiedOwner(uid) && accountActive(uid);
+      allow create: if verifiedOwner(uid) && accountActiveAfterWrite(uid)
+        && request.resource.data.keys().hasAll(['eventId','createdAt']) && request.resource.data.keys().hasOnly(['eventId','createdAt'])
+        && request.resource.data.eventId is string && request.resource.data.createdAt == request.time
+        && !exists(gEventPath(uid,request.resource.data.eventId))
+        && getAfter(gWalletPath(uid)).data.lastEventId == request.resource.data.eventId
+        && (getAfter(gEventPath(uid,request.resource.data.eventId)).data.rewardId == id
+          || getAfter(gEventPath(uid,request.resource.data.eventId)).data.bonusId == id);
+      allow update: if false;
+      allow list, delete: if verifiedOwner(uid) && exists(/databases/$(database)/documents/accountDeletions/$(uid));
+    }
+END GAME RULES
+
+Integración de borrado: await progressBackend.remove(uid) crea marcador; después
+await gameBackend.remove(uid) elimina gameEvents/gameClaims en lotes de 200 y wallet;
+después limpiar recibos de referidos y por último Auth. Si un paso falla, reintentar
+con la misma cuenta; no quitar el marcador ni afirmar que la limpieza terminó.
+
+Imports: no trasladan reloj, racha ni aperturas históricas. Reproducen claims de
+aprendizaje y casos, descuentan gasto de vidas hasta el crédito nuevo importado,
+y conservan fuente invitada hasta confirmación duradera. La bienvenida no se importa.
+
+Validación realizada: 11/11 pruebas game-rules con emulador Firestore oficial local,
+reglas combinadas finales, apertura con hito, examen+mundo, límites de saldo,
+recompensas/recargas, solicitudes concurrentes de dos clientes, formatos adulterados,
+fecha antigua, aislamiento, borrado por lotes y bloqueo del token tras marcador.
+game-backend también usa un simulador de transacción optimista para regresiones puras.
+No se han ejecutado operaciones contra cuentas reales desde este módulo.
+
+Preparar sin publicar: node scripts/seed-game-catalog.mjs
+Aprovisionar con la sesión administrativa existente del CLI (requiere autorización
+de publicación y proyecto explícito):
+node scripts/seed-game-catalog.mjs --publish --project brote-62d26
+El script no muestra credenciales, escribe exclusivamente gameConfig/gameCatalog/
+gameDays en lotes de 400 y convierte las marcas de tiempo. Sus rutas son idempotentes.
+Publicar las reglas integradas antes de habilitar el monedero en producción.
+
+Referencias oficiales consultadas:
+https://firebase.google.com/docs/firestore/manage-data/transactions
+https://firebase.google.com/docs/reference/rules/rules.firestore
+https://firebase.google.com/docs/reference/rules/rules.List

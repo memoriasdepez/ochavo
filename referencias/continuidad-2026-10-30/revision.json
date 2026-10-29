@@ -1,0 +1,64 @@
+{
+  "version": "0.35.5",
+  "date": "2026-10-30",
+  "changedPoints": [
+    55,
+    56,
+    58
+  ],
+  "lessonMetadata": {
+    "504": {
+      "id": 504,
+      "title": "Órdenes de stop y sus limitaciones",
+      "prerequisites": [
+        503
+      ],
+      "takeaway": "Distingue tipo de orden, nivel de activación y precio ejecutado.",
+      "editorialRevision": "stocks-order-notes-2026-10-28",
+      "steps": [
+        {
+          "type": "learn"
+        },
+        {
+          "type": "match"
+        },
+        {
+          "type": "learn"
+        },
+        {
+          "type": "choice"
+        },
+        {
+          "type": "learn"
+        },
+        {
+          "type": "order"
+        },
+        {
+          "type": "learn"
+        },
+        {
+          "type": "choice"
+        }
+      ]
+    }
+  },
+  "worldFiles": {
+    "50": {
+      "id": 50,
+      "lessonIds": [
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509
+      ],
+      "url": "/course/world-50-ae80e672b0a9028b.json"
+    }
+  }
+}

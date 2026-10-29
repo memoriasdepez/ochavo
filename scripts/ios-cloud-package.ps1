@@ -28,7 +28,7 @@ foreach ($relative in @('codemagic.yaml','scripts/ios-cloud-version.mjs','ios/Ap
     New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force | Out-Null
     Copy-Item -LiteralPath (Join-Path $ochavoApp $relative) -Destination $target
 }
-Copy-Item -LiteralPath (Join-Path $ochavoOutput 'PUBLICAR-SIN-MAC.txt') -Destination (Join-Path $ochavoStage 'PUBLICAR-SIN-MAC.txt')
+Copy-Item -LiteralPath (Join-Path $ochavoApp 'docs/ios/PUBLICAR-SIN-MAC.txt') -Destination (Join-Path $ochavoStage 'PUBLICAR-SIN-MAC.txt')
 [IO.File]::WriteAllText((Join-Path $ochavoStage '.gitignore'), "node_modules/`ndist/`n.env.local`n.env.*.local`nbuild/`nDerivedData/`n**/xcuserdata/`n*.p8`n*.p12`n*.mobileprovision`n*.ipa`n", [Text.UTF8Encoding]::new($false))
 
 $ochavoFiles = @(Get-ChildItem -LiteralPath $ochavoStage -File -Recurse -Force | Sort-Object FullName | ForEach-Object {

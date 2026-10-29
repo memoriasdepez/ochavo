@@ -1,0 +1,35 @@
+ABRIR OCHAVO 0.35.5 EN MAC · BUILD 72
+
+1. Descomprimir Ochavo-iOS-0.35.5-para-Mac.zip y abrir la carpeta completa Ochavo-iOS-0.35.5 en Terminal. No mover únicamente la carpeta ios: el proyecto depende de las carpetas hermanas.
+
+2. Preparar Node.js compatible con el proyecto (mínimo 22.12.0), pnpm y Xcode compatible con Capacitor 8. Antes de subir, comprobar en Apple la versión de Xcode/SDK exigida entonces. Esta entrega no acredita la disponibilidad ni compilación de Xcode en Windows.
+
+   node --version
+   pnpm --version
+   xcodebuild -version
+
+3. El ZIP no incluye .env.local. configuracion-firebase-publica.env contiene únicamente la configuración pública del cliente de Firebase y emuladores desactivados. Preparar el proyecto:
+
+   cp configuracion-firebase-publica.env .env.local
+   pnpm install --frozen-lockfile
+   pnpm ios:sync
+   pnpm ios:open
+
+   ios:sync reconstruye el contenido y la web, sincroniza iOS y ejecuta ios:check. No crea certificados, no firma ni sube la app.
+
+4. Abrir ios/App/App.xcodeproj. Se usa Swift Package Manager; permitir que Xcode resuelva las dependencias. No es un proyecto CocoaPods. Elegir esquema App y simulador iPhone iOS 17.5 o posterior. Comprobar nombre Ochavo, versión 0.35.5 y build 72. AdMob no debe aparecer entre las dependencias de CapApp-SPM ni en los plugins iOS generados: está excluido expresamente para esta entrega.
+
+5. Para un iPhone físico, configurar el equipo del propietario en Signing & Capabilities. Se mantiene app.brote.inversion. Probar registro, correo confirmado, inicio de sesión, progreso, recuperación, Plus, enlaces y áreas seguras. No cambiar el identificador ni el origen local para resolver errores de compilación.
+
+6. Antes de distribuir, completar PRIVACIDAD-Y-PRUEBAS-IOS.txt. Para TestFlight o App Store se necesita preparar con el propietario la cuenta y firma de distribución, ficha y revisión correspondientes. Incrementar CURRENT_PROJECT_VERSION en cada nueva subida.
+
+CONTROL ESTÁTICO
+   pnpm ios:check
+
+La sincronización genera dist y el control compara esos recursos con los empaquetados para iOS. No copiar node_modules de Windows al Mac; pnpm los instala allí. Los iconos incluidos contienen el símbolo actual de Ochavo; no hace falta regenerarlos durante la compilación.
+
+Referencias del proyecto:
+https://capacitorjs.com/docs/ios
+https://capacitorjs.com/docs/ios/spm
+https://developer.apple.com/xcode/
+

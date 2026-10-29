@@ -10961,7 +10961,7 @@
       "title": "Órdenes de stop y sus limitaciones",
       "short": "Órdenes de stop y sus limitaciones",
       "subtitle": "Cómo comprar y vender acciones: órdenes y costes",
-      "summary": "Un stop es una condición que pone en marcha una orden cuando el precio alcanza el nivel elegido. Es importante distinguir el precio que activa la orden del precio al que finalmente compras o vendes. Un stop de mercado puede ejecutarse peor que el nivel de activación si el precio salta o hay poca liquidez.\n\nActivación y precio de ejecución son conceptos distintos. Un stop limitado activa una orden con un precio límite. Evita aceptar un precio peor que ese límite, pero puede quedarse sin ejecutar.\n\nEjemplo ficticio, con cifras simplificadas: El stop se activa a 9 €, pero la venta ocurre a 8 €: el precio de activación no aseguró 9 €.",
+      "summary": "Un stop es una herramienta que sirve para comprar o vender automáticamente cuando una inversión alcanza un precio que hemos elegido. Pero cuidado, porque ese precio solo activa la orden y no garantiza que la operación se haga exactamente a ese valor. Si el precio cambia muy rápido, podríamos acabar comprando más caro o vendiendo más barato.\n\nTambién existe el **stop limitado**, con el que establecemos un precio máximo de compra o mínimo de venta. Así evitamos aceptar un precio peor, aunque corremos el riesgo de que la operación no llegue a realizarse.\n\n**Por ejemplo:** tenemos una acción y ponemos un stop de venta a 9 €. Si el precio cae bruscamente, nuestra orden podría ejecutarse a 8 €. Es decir, el stop se activó a 9 €, pero terminamos vendiendo a 8 €.",
       "takeaway": "Distingue tipo de orden, nivel de activación y precio ejecutado.",
       "minutes": 6,
       "prerequisites": [
@@ -10976,7 +10976,7 @@
         {
           "type": "learn",
           "title": "Órdenes de stop y sus limitaciones",
-          "body": "Un stop es una condición que pone en marcha una orden cuando el precio alcanza el nivel elegido. Es importante distinguir el precio que activa la orden del precio al que finalmente compras o vendes. Un stop de mercado puede ejecutarse peor que el nivel de activación si el precio salta o hay poca liquidez.\n\nActivación y precio de ejecución son conceptos distintos. Un stop limitado activa una orden con un precio límite. Evita aceptar un precio peor que ese límite, pero puede quedarse sin ejecutar.\n\nEjemplo ficticio, con cifras simplificadas: El stop se activa a 9 €, pero la venta ocurre a 8 €: el precio de activación no aseguró 9 €.",
+          "body": "Un stop es una herramienta que sirve para comprar o vender automáticamente cuando una inversión alcanza un precio que hemos elegido. Pero cuidado, porque ese precio solo activa la orden y no garantiza que la operación se haga exactamente a ese valor. Si el precio cambia muy rápido, podríamos acabar comprando más caro o vendiendo más barato.\n\nTambién existe el **stop limitado**, con el que establecemos un precio máximo de compra o mínimo de venta. Así evitamos aceptar un precio peor, aunque corremos el riesgo de que la operación no llegue a realizarse.\n\n**Por ejemplo:** tenemos una acción y ponemos un stop de venta a 9 €. Si el precio cae bruscamente, nuestra orden podría ejecutarse a 8 €. Es decir, el stop se activó a 9 €, pero terminamos vendiendo a 8 €.",
           "takeaway": "Activación y precio de ejecución son conceptos distintos."
         },
         {
@@ -11003,7 +11003,7 @@
         {
           "type": "learn",
           "title": "Llévalo a un caso concreto",
-          "body": "El precio de activación de un stop de mercado no es el precio asegurado de venta. Tras activarse, negocia con las ofertas que existan.\n\nImagina un aviso que pone en marcha una venta cuando el precio alcanza cierto nivel. El aviso decide cuándo actuar; quienes compran después deciden qué precios están disponibles. Son dos momentos diferentes.",
+          "body": "**El precio que eliges para activar un stop de mercado no garantiza que vendas a ese precio.** Cuando se activa, la orden intenta vender al mejor precio disponible en ese momento.\n\n**Por ejemplo:** imagina que tienes una acción y decides venderla automáticamente si baja a 9 €. Cuando llega a ese precio, se activa la venta, pero puede que en ese instante solo haya compradores dispuestos a pagar 8,50 €. Por tanto, podrías acabar vendiendo por menos de los 9 € que habías elegido.",
           "takeaway": "El precio de activación de un stop de mercado no es el precio asegurado de venta.",
           "figure": {
             "kind": "table",
@@ -11014,11 +11014,11 @@
             "rows": [
               [
                 "Nivel que activa el stop a mercado",
-                "10 €"
+                "9 €"
               ],
               [
-                "Primera oferta de compra tras la noticia",
-                "8 €"
+                "Oferta disponible al ejecutar la venta",
+                "8,50 €"
               ]
             ],
             "caption": "El nivel de activación y el posible precio de venta no son lo mismo."
@@ -11086,54 +11086,55 @@
         },
         {
           "type": "learn",
-          "title": "Activación y ejecución son dos momentos",
-          "body": "Un stop a mercado de venta se activa al alcanzarse su condición. Entonces busca vender con ofertas disponibles. Si el precio salta por una noticia y la primera oferta es peor, puede ejecutarse por debajo del nivel del stop. Ese nivel es un disparador, no un seguro de precio.\n\nLa diferencia puede ser importante después de una noticia, si desaparecen compradores o la cotización pasa de un nivel a otro sin operaciones intermedias. El stop no crea compradores al precio que habías elegido.",
-          "takeaway": "El stop a mercado activa la venta; no garantiza el precio al ejecutarla."
+          "title": "Una caída breve también puede activar la venta",
+          "body": "**Un stop también puede activarse por una caída puntual del precio, aunque después la acción vuelva a subir.** Esto es importante porque podrías acabar vendiendo una inversión que, en realidad, querías mantener.\n\n**Por ejemplo:** imagina que compras una acción a 10 € y colocas un stop de venta a 9 €. Un día, el precio cae brevemente hasta los 9 € y tu stop se activa, vendiendo tus acciones. Sin embargo, poco después, el precio se recupera y sube hasta los 11 €. Tú ya habrías vendido y te perderías esa recuperación.\n\nPor eso, **colocar un stop demasiado cerca del precio actual puede provocar ventas innecesarias**, especialmente en inversiones que tienen muchas subidas y bajadas.",
+          "takeaway": "Un rebote posterior no deshace una venta que el stop ya ha ejecutado."
         },
         {
           "type": "order",
-          "title": "Ordena los hechos",
-          "body": "Un stop a mercado está en 10 €. Tras una noticia, el primer precio disponible ya es 8 €. Ordena lo que describe este supuesto.",
+          "title": "Reconstruye la caída y el rebote",
+          "body": "Compraste a 12 € y pusiste un stop de mercado en 11 €. El precio cae, la venta se ejecuta a 10,90 € y después la acción se recupera hasta 13 €. Ordena lo que sucede desde la activación del stop.",
           "items": [
-            "La orden activada busca comprador en el mercado",
-            "La venta puede usar la oferta disponible de 8 €",
-            "El precio cumple la condición que activa el stop"
+            "La acción se recupera hasta 13 €, pero ya has vendido y no participas en ese rebote.",
+            "El precio cae hasta el nivel que activa el stop de venta.",
+            "La orden encuentra comprador y vendes a 10,90 €."
           ],
           "answer": [
+            1,
             2,
-            0,
-            1
+            0
           ],
-          "explanation": "La oferta que hay al ejecutar puede ser distinta del nivel que activó la orden.",
-          "hint": "Recuerda: El stop a mercado activa la venta; no garantiza el precio al ejecutarla."
+          "explanation": "Primero se activa el stop; después, en este caso, vendes a 10,90 €. Cuando el precio rebota hasta 13 € ya no tienes esas acciones: la recuperación no anula la venta ni las recompra automáticamente. Los 11 € eran el nivel de activación, no un precio de venta garantizado.",
+          "hint": "Busca qué paso necesita que el anterior ya haya ocurrido."
         },
         {
           "type": "learn",
-          "title": "Antes de decidir, comprueba esto",
-          "body": "Distingue tipo de orden, nivel de activación y precio ejecutado. El historial de precios ayuda a explicar un salto; no convierte el stop en garantía de pérdida máxima.\n\nBusca en la confirmación el nivel que activó la orden y el precio al que realmente vendiste. Para estimar la pérdida usa este último, junto con el coste de compra y las comisiones.",
-          "takeaway": "Distingue tipo de orden, nivel de activación y precio ejecutado."
+          "title": "Un stop que acompaña las subidas",
+          "body": "**Un stop no tiene por qué quedarse siempre en el mismo precio. Puedes ir subiéndolo a medida que tu inversión gana valor para proteger parte de los beneficios.** De hecho, existe un tipo de stop llamado *stop dinámico* que puede hacerlo automáticamente.\n\n**Por ejemplo:** imagina que compras una acción a 10 € y colocas un stop dinámico un 10 % por debajo de su precio. Si la acción sube hasta los 15 €, el stop también subirá, situándose en 13,50 €. Si después el precio comienza a caer, el stop se mantendrá en ese nivel y activará la venta cuando la acción llegue a 13,50 €.\n\nAsí puedes **dejar que tus beneficios crezcan mientras limitas lo que podrías perder si el precio empieza a caer**, aunque el precio final de venta no está garantizado.",
+          "takeaway": "El stop dinámico de venta sube con los nuevos máximos y no retrocede cuando el precio baja."
         },
         {
           "type": "choice",
-          "title": "Decide qué datos reunir",
-          "body": "Una noticia hace que el mercado abra por debajo del nivel de activación de un stop a mercado.\n\n¿Qué revisión incluye los datos necesarios para comprobar este problema?",
+          "title": "Qué hace el stop cuando llega el retroceso",
+          "body": "Tienes un stop dinámico de venta un 10 % por debajo del precio máximo alcanzado desde que lo activaste. La acción sube de 18 € a 20 € y luego baja a 19 €. ¿Qué debe ocurrir con el nivel de activación?",
           "options": [
             {
-              "text": "Solo la hora de activación"
+              "text": "Baja a 17,10 €, porque debe seguir siempre al precio actual."
             },
             {
-              "text": "El tipo de stop y las ofertas disponibles después del salto de precio."
+              "text": "Se mantiene en 18 €; si el precio llega a ese nivel se activa la venta, sin asegurar el precio final."
             },
             {
-              "text": "Solo el nivel escrito y la cotización anterior"
+              "text": "Se mantiene en 18 € y garantiza que cualquier venta se hará exactamente a 18 €."
             }
           ],
           "answer": 1,
-          "explanation": "Distingue tipo de orden, nivel de activación y precio ejecutado. El historial de precios ayuda a explicar un salto; no convierte el stop en garantía de pérdida máxima.",
-          "hint": "Recuerda: Distingue tipo de orden, nivel de activación y precio ejecutado."
+          "explanation": "El máximo alcanzado es 20 €. Un 10 % son 2 €, así que el nivel sube a 18 €. Al retroceder a 19 €, el nivel no baja a 17,10 €. Si después se alcanza 18 €, se activa la venta; como ocurre con el stop de mercado, su ejecución puede hacerse a otro precio.",
+          "hint": "Aplica la idea de la pantalla anterior a los datos de esta situación.",
+          "calculator": true
         }
       ],
-      "editorialRevision": "stocks-clarity-variety-2026-10-11",
+      "editorialRevision": "stocks-order-notes-2026-10-28",
       "qualitativeRevision": "early-reasoning-2026-10-10"
     },
     {
@@ -11218,7 +11219,7 @@
         {
           "type": "learn",
           "title": "Otra situación que conviene distinguir",
-          "body": "La vigencia limita cuánto tiempo puede seguir abierta la parte restante. Un resultado parcial no permite suponer ni cancelación automática ni ejecución posterior.\n\nLa parte ejecutada ya se ha comprado o vendido; la pendiente todavía no. No puedes usar ambas como si fueran inversiones realizadas. Esta distinción evita gastar un saldo que sigue reservado para la orden abierta.",
+          "body": "**La vigencia de una orden indica cuánto tiempo puede permanecer pendiente.** Si solo se ejecuta una parte, el resto puede seguir esperando hasta que se complete, se cancele o termine el plazo establecido.\n\n**Las acciones que ya se han comprado o vendido forman parte de una operación realizada, pero las que siguen pendientes todavía no.** Además, el dinero necesario para completar la compra puede seguir reservado, por lo que no podrás utilizarlo para otras inversiones mientras la orden siga abierta.",
           "takeaway": "La vigencia limita cuánto tiempo puede seguir abierta la parte restante."
         },
         {
@@ -11254,7 +11255,7 @@
         {
           "type": "learn",
           "title": "Lee el estado de lo que falta",
-          "body": "Una ejecución parcial compra o vende solo parte de lo solicitado. Esa parte ya existe; la restante sigue sujeta al precio, a la cantidad disponible y a la fecha de vencimiento de la orden. Hay que revisar ejecutadas y pendientes por separado, para no duplicar pedidos ni dar por compradas acciones que faltan.\n\nLa fecha de vencimiento responde a otra pregunta: hasta cuándo se seguirá intentando completar lo que falta. Cancelar la parte pendiente no deshace las operaciones que ya se realizaron antes.",
+          "body": "**Una orden de compra o venta puede ejecutarse en varias operaciones diferentes.** Esto ocurre cuando no hay suficientes acciones disponibles al mismo precio y el bróker necesita completar la orden poco a poco.\n\n**Por ejemplo:** imagina que quieres comprar 100 acciones con una orden de mercado. Primero compras 40 a 10 €, después otras 30 a 10,10 € y finalmente las últimas 30 a 10,20 €. Aunque hayas dado una sola orden, habrás comprado acciones a tres precios distintos.",
           "takeaway": "La confirmación de ejecución es distinta de la solicitud."
         },
         {
@@ -11532,7 +11533,7 @@
       "title": "Conversión de moneda y costes de cambio",
       "short": "Conversión de moneda y costes de cambio",
       "subtitle": "Cómo comprar y vender acciones: órdenes y costes",
-      "summary": "Si tus ahorros están en euros y compras acciones en dólares, primero necesitas cambiar moneda. El coste puede aparecer como una comisión o estar incluido en el tipo de cambio que te aplican. Evalúa cuánta moneda recibes finalmente, no solo el nombre de la comisión.\n\nLee el cambio con su unidad: dólares por euro permite multiplicar tus euros para obtener dólares. El tipo aplicado puede incluir un margen respecto a una referencia de mercado.",
+      "summary": "**Si tienes euros y quieres comprar acciones en dólares, tendrás que cambiar tu dinero de una moneda a otra.** Tu bróker puede cobrarte una comisión por hacerlo o aplicarte un tipo de cambio algo peor que el del mercado.\n\n**Por ejemplo:** si un euro equivale a 1,10 dólares, por cada 100 € deberías recibir 110 dólares. Sin embargo, si tu bróker aplica un cambio menos favorable, podrías recibir solo 108 dólares. Por eso, **lo importante es comprobar cuánto dinero recibes realmente después del cambio.**",
       "takeaway": "Anota moneda de origen, moneda final y cantidad neta recibida.",
       "minutes": 6,
       "prerequisites": [
@@ -11547,7 +11548,7 @@
         {
           "type": "learn",
           "title": "Conversión de moneda y costes de cambio",
-          "body": "Si tus ahorros están en euros y compras acciones en dólares, primero necesitas cambiar moneda. El coste puede aparecer como una comisión o estar incluido en el tipo de cambio que te aplican. Evalúa cuánta moneda recibes finalmente, no solo el nombre de la comisión.\n\nLee el cambio con su unidad: dólares por euro permite multiplicar tus euros para obtener dólares. El tipo aplicado puede incluir un margen respecto a una referencia de mercado.",
+          "body": "**Si tienes euros y quieres comprar acciones en dólares, tendrás que cambiar tu dinero de una moneda a otra.** Tu bróker puede cobrarte una comisión por hacerlo o aplicarte un tipo de cambio algo peor que el del mercado.\n\n**Por ejemplo:** si un euro equivale a 1,10 dólares, por cada 100 € deberías recibir 110 dólares. Sin embargo, si tu bróker aplica un cambio menos favorable, podrías recibir solo 108 dólares. Por eso, **lo importante es comprobar cuánto dinero recibes realmente después del cambio.**",
           "takeaway": "Lee el cambio con su unidad: dólares por euro permite multiplicar tus euros para obtener dólares.",
           "figure": {
             "kind": "flow",
@@ -11656,24 +11657,9 @@
         },
         {
           "type": "learn",
-          "title": "La cifra neta cuenta la historia completa",
-          "body": "Para convertir moneda compara lo que llega a la cuenta después de todos los cargos. Un proveedor puede anunciar más dólares y luego descontar una tarifa. Otro puede incluir su coste en un cambio menos favorable. No necesitas adivinar el mejor: fija el mismo importe enviado y comprueba el neto recibido.\n\nLa moneda no cambia la clase. Alphabet clase A aparece con el ISIN US02079K3059 en Borsa Italiana. Esa ficha europea no sustituye a la de Nasdaq: comprueba el mercado y la moneda de la operación, además de identificar la acción.\n\nEl resultado útil es lo que podrás utilizar para comprar después del cambio. Una tarifa visible y un cambio menos favorable son dos formas distintas de reducir ese importe; ninguna desaparece porque se anuncie «sin comisión».",
-          "takeaway": "La comparación usa igual dinero enviado y el importe final recibido.",
-          "sources": [
-            {
-              "title": "Borsa Italiana · Alphabet clase A, ISIN US02079K3059",
-              "url": "https://www.borsaitaliana.it/borsa/azioni/global-equity-market/listino-ufficiale.html?isin=US02079K3059&lang=it",
-              "period": "Identificación consultada el 12 de octubre de 2026",
-              "checkedAt": "2026-10-12"
-            }
-          ],
-          "realExample": {
-            "title": "La moneda no cambia la clase",
-            "sourceKeys": [
-              "borsa-a"
-            ],
-            "period": "Identificación consultada el 12 de octubre de 2026"
-          }
+          "title": "La moneda también influye en tu resultado",
+          "body": "Cuando compras acciones en dólares, **también debes tener en cuenta que el valor de ambas monedas cambia constantemente**. Esto significa que puedes ganar o perder dinero por el tipo de cambio, aunque el precio de tus acciones no se mueva.\n\n**Por ejemplo:** imagina que cambias 1.000 € por 1.100 dólares y compras acciones estadounidenses. Un tiempo después, tus acciones siguen valiendo 1.100 dólares, pero el dólar ha perdido valor frente al euro. Al convertir esos dólares de nuevo a euros, recibes solo 950 €.\n\nPor eso, al invertir en otra moneda, **tu rentabilidad depende tanto del precio de las acciones como de la evolución del tipo de cambio.**",
+          "takeaway": "Una acción puede mantener su valor en dólares y perder valor al convertirla a euros."
         },
         {
           "type": "choice",
@@ -11733,9 +11719,9 @@
         },
         {
           "type": "learn",
-          "title": "Obtén la cifra e interpreta su alcance",
-          "body": "Multiplica la cantidad por el importe o factor indicado.\n\nEjemplo resuelto: Cambiar 100 € a 1,10 dólares por euro produce 110 dólares antes de costes.\n\nAnota moneda de origen, moneda final y cantidad neta recibida. Incluye tarifas y diferencias de conversión antes de comparar proveedores.\n\nGuarda el mismo importe de partida en la comparación. Anota lo entregado, el cambio aplicado, la tarifa y lo recibido. Así puedes explicar por qué una oferta aparentemente mejor deja menos dinero al final.",
-          "takeaway": "Anota moneda de origen, moneda final y cantidad neta recibida."
+          "title": "El cambio también puede costar al volver a euros",
+          "body": "Cuando compras acciones en otra moneda, **puedes tener que pagar por cambiar divisas más de una vez**. Primero, cuando conviertes tus euros en dólares para invertir y, después, cuando vendes las acciones y quieres recuperar tus euros.",
+          "takeaway": "Revisa los costes de conversión tanto al invertir como al recuperar tus euros."
         },
         {
           "type": "numeric",
@@ -11757,15 +11743,7 @@
       ],
       "editorialRevision": "stocks-clarity-variety-2026-10-11",
       "qualitativeRevision": "early-reasoning-2026-10-10",
-      "practiceContext": "simulation",
-      "sources": [
-        {
-          "title": "Borsa Italiana · Alphabet clase A, ISIN US02079K3059",
-          "url": "https://www.borsaitaliana.it/borsa/azioni/global-equity-market/listino-ufficiale.html?isin=US02079K3059&lang=it",
-          "period": "Identificación consultada el 12 de octubre de 2026",
-          "checkedAt": "2026-10-12"
-        }
-      ]
+      "practiceContext": "simulation"
     },
     {
       "id": 508,

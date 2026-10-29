@@ -9,7 +9,7 @@ import {lateTeaching} from '../scripts/stocks-editorial/late-teaching.mjs';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 const outline=JSON.parse(read('src/content/stocks-outline-v2.json'));
 const records=parseAuthoring(Array.from({length:5},(_,i)=>read(`src/content/stocks-v2-authoring/part-${i+1}.txt`)),500);
-const original=refineStocks(compileRevision({outline,records,start:450,sources:[]}),records,{depthTeaching:false,secondCorrections:false,compoundNotes:false,riskNotes:false,clearWriting:false});
+const original=refineStocks(compileRevision({outline,records,start:450,sources:[]}),records,{depthTeaching:false,secondCorrections:false,compoundNotes:false,riskNotes:false,clearWriting:false,orderNotes:false});
 const result=refineLateWorlds(structuredClone(original),records);
 const lessons=result.lessons.filter(l=>l.id>=700);
 const exams=result.exams.filter(e=>e.id>=70);

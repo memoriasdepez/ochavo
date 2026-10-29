@@ -21,6 +21,7 @@ import {refineMarketEdits} from './market-edits.mjs';
 import {refineCompoundNotes} from './compound-notes.mjs';
 import {refineRiskNotes} from './risk-notes.mjs';
 import {refineClearWriting} from './clear-writing.mjs';
+import {refineOrderNotes} from './order-notes.mjs';
 import {cases as early} from './cases-2-20.mjs';
 import {cases as middle} from './cases-21-40.mjs';
 import {cases as advanced} from './cases-41-50.mjs';
@@ -119,7 +120,7 @@ function newCase(c,id,kind){
 }
 // Orders differ between adjacent lessons, while every test remains attached to its explanation.
 const orders=[[0,1,2,3],[0,2,1,3],[0,1,3,2],[0,3,1,2],[0,2,3,1],[0,3,2,1]];
-export function refineStocks(result,records,{clarity=true,openingEdits=true,depthTeaching=true,secondCorrections=true,lessonNotes=true,marketEdits=true,compoundNotes=true,riskNotes=true,clearWriting=true}={}){
+export function refineStocks(result,records,{clarity=true,openingEdits=true,depthTeaching=true,secondCorrections=true,lessonNotes=true,marketEdits=true,compoundNotes=true,riskNotes=true,clearWriting=true,orderNotes=true}={}){
  const missing=result.lessons.slice(10).filter(l=>!cases[l.id]);
  if(missing.length)throw Error('Missing editorial cases: '+missing.map(l=>l.id).join(','));
  firstWorld(result.lessons,result.exams[0]);
@@ -205,5 +206,6 @@ export function refineStocks(result,records,{clarity=true,openingEdits=true,dept
  if(clarity&&compoundNotes)refineCompoundNotes(result);
  if(clarity&&riskNotes)refineRiskNotes(result);
  if(clarity&&clearWriting)refineClearWriting(result);
+ if(clarity&&orderNotes)refineOrderNotes(result);
  return result;
 }

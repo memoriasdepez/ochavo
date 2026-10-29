@@ -1,3 +1,4 @@
+import {beforeOrderNotes} from './order-notes-utils.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -7,6 +8,7 @@ import {emptySnapshot,makeEnvelope,mergeProgress} from '../src/progress.js';
 import {mount,openLesson} from './current-course-harness.js';
 const read=f=>JSON.parse(readFileSync(new URL('../'+f,import.meta.url)));
 const course=read('src/content/stocks-curriculum-v2.json'),old=read('tests/fixtures/stocks-clear-writing-baseline.json');
+course.lessons=course.lessons.map(beforeOrderNotes);
 const hash=v=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
 const compact=t=>t.replace(/\s+/g,' ').trim();
 const omitTeaching=l=>{const copy=structuredClone(l);delete copy.summary;for(const s of copy.steps)if(s.type==='learn')delete s.body;return copy;};

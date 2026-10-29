@@ -13,7 +13,7 @@ export function beforeSecondCorrections(lesson){
  if(!SECOND_CORRECTIONS_IDS.includes(lesson.id))return lesson;
  if(!previous){
   const records=parseAuthoring(Array.from({length:5},(_,i)=>read(`src/content/stocks-v2-authoring/part-${i+1}.txt`)),500);
-  previous=refineStocks(compileRevision({outline:JSON.parse(read('src/content/stocks-outline-v2.json')),records,start:450,sources:[]}),records,{secondCorrections:false,lessonNotes:false,marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false}).lessons;
+  previous=refineStocks(compileRevision({outline:JSON.parse(read('src/content/stocks-outline-v2.json')),records,start:450,sources:[]}),records,{secondCorrections:false,lessonNotes:false,marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false,orderNotes:false}).lessons;
  }
  return previous.find(l=>l.id===lesson.id);
 }

@@ -61,3 +61,23 @@ build/
 *.dpapi
 local.properties
 *.log
+
+# Keep only the audited operational source files; never upload local payment state.
+/work/*
+!/work/payments/
+/work/payments/*
+!/work/payments/cap-cloud-billing-services.mjs
+!/work/payments/cloud-billing-audit.mjs
+!/work/payments/diagnose-billing-cap-conflict.mjs
+!/work/payments/diagnose-secret-manager.mjs
+!/work/payments/enable-secret-manager.mjs
+!/work/payments/ensure-cleanup-run-invoker.mjs
+!/work/payments/qa-receipt-replay.mjs
+!/work/payments/runtime-iam-plan.json
+!/work/payments/runtime-iam.mjs
+!/work/payments/store-server-secrets.mjs
+.browser-temp/
+*.apk
+*.aab
+*.ipa
+.secret.local

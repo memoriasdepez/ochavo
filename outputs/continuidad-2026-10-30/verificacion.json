@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-30",
+  "repository": "https://github.com/memoriasdepez/ochavo",
+  "baseCommit": "1fee52957a2a21dcaf9ae371aaf197966788ea2a",
+  "productVersion": "0.35.5",
+  "courses": {
+    "stocks-curriculum-v2.json": {
+      "sha256": "9a9430a734a63f4bf9d8cff1e4279357e4d25a7f1c354f257634fec1e7b8a230",
+      "bytes": 6212957
+    },
+    "etfs-curriculum-v2.json": {
+      "sha256": "33a2b66015893aee6c1121a12be9b4bd9b4d3bf517bedb5fa24995c40f696940",
+      "bytes": 2026213
+    },
+    "crypto-curriculum-v2.json": {
+      "sha256": "26763b1cacaffe70a082217fbfb7a25aee6c2c0de7c658ad01bd608b106002e4",
+      "bytes": 3038095
+    },
+    "technical-curriculum-v1.json": {
+      "sha256": "6552ad6cd1a046d5f94b979f7688d43066cb5abf31e55d0c5ee383db682bc093",
+      "bytes": 12102059
+    },
+    "game-catalog.json": {
+      "sha256": "03793ecccf3887489abbbc9c576d7b818358fbdb867a9e51fe10318833f3a682",
+      "bytes": 666908
+    }
+  },
+  "retainedRemoteWelcomeAndRules": [
+    "src/welcome.js",
+    "src/cloud.js",
+    "src/main.js",
+    "src/product-ui.js",
+    "firestore.rules",
+    "tests/welcome.test.js"
+  ],
+  "checks": {
+    "appTestsPassed": 928,
+    "appTestsFailed": 0,
+    "operationalTestsPassed": 64,
+    "backendTestsPassed": 62,
+    "emulatorRuleTestsNotExecutedHere": 40,
+    "webBuild": true
+  },
+  "portability": {
+    "gitLfs": true,
+    "textEol": "lf",
+    "androidWrapperIncluded": true,
+    "ruleFixtureInsideRepository": true,
+    "operationalModulesAndPlanIncluded": true,
+    "iosHandoffDocsInsideRepository": true
+  },
+  "native": {
+    "androidSourceCode": 73,
+    "iosSourceBuild": 72,
+    "newNativeBuild": false,
+    "newStoreUpload": false
+  },
+  "noDeployOrDataExport": true,
+  "privateCredentialsIncluded": false
+}

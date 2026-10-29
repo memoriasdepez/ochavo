@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared-not-applied",
+  "review": {
+    "status": "passed",
+    "independent": true,
+    "scope": "runtime-identities-and-iam-deployment-plan",
+    "cloudApplication": "pending"
+  },
+  "projectId": "brote-62d26",
+  "region": "europe-west1",
+  "accounts": [
+    {
+      "accountId": "ochavo-billing-read",
+      "displayName": "Ochavo billing verification",
+      "function": "billing",
+      "projectRoles": ["roles/firebaseauth.viewer", "roles/datastore.user"],
+      "secretAccess": ["REVENUECAT_SECRET_API_KEY_V2"]
+    },
+    {
+      "accountId": "ochavo-billing-webhook",
+      "displayName": "Ochavo RevenueCat webhook",
+      "function": "revenuecatWebhook",
+      "projectRoles": ["roles/firebaseauth.viewer", "roles/datastore.user"],
+      "secretAccess": ["REVENUECAT_SECRET_API_KEY_V2", "REVENUECAT_WEBHOOK_SIGNING_SECRET"]
+    },
+    {
+      "accountId": "ochavo-billing-cleanup",
+      "displayName": "Ochavo billing account cleanup",
+      "function": "billingAccountDeleted",
+      "projectRoles": ["roles/datastore.user", "roles/eventarc.eventReceiver"],
+      "secretAccess": ["REVENUECAT_SECRET_API_KEY_CLEANUP_V2"],
+      "runInvoker": {"role": "roles/run.invoker", "targetFunction": "billingAccountDeleted", "scope": "resolved-target-service-only"}
+    }
+  ],
+  "secretRole": "roles/secretmanager.secretAccessor",
+  "secretRoleScope": "individual-secret-only",
+  "deployerAccountRole": "roles/iam.serviceAccountUser",
+  "deployerAccountRoleScope": "three-runtime-accounts-only",
+  "createKeys": false,
+  "defaultComputeAccount": {
+    "accountTemplate": "{verifiedProjectNumber}-compute@developer.gserviceaccount.com",
+    "requestedProjectRoles": [],
+    "observedFirebaseCliVersion": "15.32.1",
+    "automaticCliProjectRolesOnFirstEventDeploy": ["roles/run.invoker", "roles/eventarc.eventReceiver"],
+    "prePostPolicyDiffRequired": true,
+    "removeOnlyNewCliBindingsAfterUseReview": true,
+    "automaticRemoval": false
+  },
+  "iamPolicyUpdates": {
+    "requestedPolicyVersion": 3,
+    "preserveCurrentEtag": true,
+    "preserveConditionsMembersAndAuditConfigs": true,
+    "reReadAndReviewAfterConflict": true,
+    "restoreWholeOldPolicy": false
+  },
+  "enablePurchases": false
+}

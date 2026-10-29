@@ -1,9 +1,10 @@
-import {calculationMethod} from '../course-authoring.mjs';
 import {applyPublishedProse} from './published-prose.mjs';
+import {calculationMethod} from '../course-authoring.mjs';
 import {ETF_CASES} from './etfs-cases.mjs';
 import {ETF_TRANSFERS} from './etfs-transfers.mjs';
 import {etfsFirstWorld} from './etfs-first-world.mjs';
 import {cryptoFirstWorld} from './crypto-first-world.mjs';
+import {refineFundsCryptoClearWriting} from './clear-writing.mjs';
 import {pair,choice,multi,match,truth,rows,numeric,activity,table,usePairs,rotate} from './helpers.mjs';
 
 export const REVISIONS={etfs:'etfs-reasoning-2026-10-10',crypto:'crypto-reasoning-2026-10-10'};
@@ -122,7 +123,7 @@ function transferExercise(r,t,id,reserved){
  return step;
 }
 
-export function refineFundsCrypto(result,records,{track,cases,transfers={},publishedProse=true}){
+export function refineFundsCrypto(result,records,{track,cases,transfers={},clearWriting=true,publishedProse=false}){
  const revision=REVISIONS[track],start=track==='etfs'?950:1150,quant=track==='etfs'?ETF_NUMERIC:CRYPTO_NUMERIC;
  cases ||= track==='etfs'?ETF_CASES:undefined;
  if(!revision||!cases||cases.length!==result.lessons.length)throw Error('Missing complete topic-specific editorial cases for '+track);
@@ -174,6 +175,7 @@ export function refineFundsCrypto(result,records,{track,cases,transfers={},publi
   exam.editorialRevision=revision;
  }
  result.editorialRevision=revision;
+ if(clearWriting)refineFundsCryptoClearWriting(result,track);
  return publishedProse?applyPublishedProse(result):result;
 }
 

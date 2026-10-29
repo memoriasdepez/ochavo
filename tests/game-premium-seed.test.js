@@ -2,6 +2,7 @@ import test,{before,after} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,mkdtemp,unlink,rmdir} from 'node:fs/promises';
 import {join} from 'node:path';
+import {tmpdir} from 'node:os';
 import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 import {initializeTestEnvironment,assertFails} from '@firebase/rules-unit-testing';
@@ -21,7 +22,7 @@ function nestedRows(value){
 before(async()=>{
   if(!enabled)return;
   assert.match(host,/^(127\.0\.0\.1|localhost):\d+$/,'This test may use only a local emulator.');
-  directory=await mkdtemp(fileURLToPath(new URL('../../../work/premium-seed-qa-',import.meta.url)));
+  directory=await mkdtemp(join(tmpdir(),'ochavo-premium-seed-qa-'));
   const output=join(directory,'seed.json');
   execFileSync(process.execPath,[fileURLToPath(new URL('../scripts/seed-premium-cases.mjs',import.meta.url)),'--out',output],{stdio:'pipe'});
   ({records}=JSON.parse(await readFile(output,'utf8')));

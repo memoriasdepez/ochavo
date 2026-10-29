@@ -1,5 +1,7 @@
 # OCHAVO: trabajar desde cualquier ordenador
 
+Actualización del 30 de octubre de 2026: leer primero ESTADO-ACTUAL.md y CONTINUAR-EN-OTRO-EQUIPO.md. Se han conciliado las correcciones editoriales locales con los cambios ya guardados en main. La autoría actual de ETFs/Cripto vuelve a ser la etapa individual clear-writing; publishedProse:true mantiene la recuperación histórica como opción explícita. La referencia del 21 de octubre se conserva para 174 mundos; el mundo 50 y los metadatos 504 tienen la revisión autorizada en referencias/continuidad-2026-10-30/. Los apartados inferiores de recuperación 0.35.4 describen el estado histórico anterior, no instrucciones para revertir esta conciliación. El usuario ha pospuesto las subidas a las tiendas.
+
 Repositorio privado: https://github.com/memoriasdepez/ochavo
 Proyecto con contexto e historiales recuperados: https://chatgpt.com/g/g-p-6ac0e3d29f18819194125344163ccf8e/project
 
@@ -25,7 +27,7 @@ Fuera de Cloud, un checkout local solo se guarda automáticamente mientras el pr
 
 Leer CONTEXTO-RECUPERADO.txt para retomar las decisiones y el trabajo de las conversaciones recuperadas. Es un archivo histórico; las instrucciones actuales están en AGENTS.md y en el chat activo.
 
-## Referencia publicada de OCHAVO
+## Referencia publicada de OCHAVO (recuperación histórica del 21 de octubre)
 
 El usuario ha pedido tomar ochavo.app como autoridad y sustituir la copia recuperada por esa versión. La captura del 21-10-2026 está en referencias/ochavo-app-2026-10-21/. comparison.json conserva la auditoría inicial, que encontró 50 mundos diferentes. Los textos publicados de las 500 lecciones de ETFs y Cripto están recuperados como autoría editable en scripts/funds-crypto-editorial/published-prose.json; refine.mjs los aplica como etapa final, conservando ejercicios, exámenes, IDs y revisiones compatibles. pnpm build reconstruye la versión 0.35.4: HTML, seis assets principales y los 175 mundos idénticos a la publicación. tests/published-reference.test.js protege esa referencia. alignment.json recoge la comprobación final.
 

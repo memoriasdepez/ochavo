@@ -19,7 +19,7 @@ export function beforePublishedFile(path){
     const outline=JSON.parse(read(`src/content/${track}-outline-v2.json`));
     const records=parseAuthoring(Array.from({length:parts},(_,i)=>read(`src/content/${track}-v2-authoring/part-${i+1}.txt`).toString()),outline.worlds.length*10);
     const base=compileRevision({outline,records,start,sources:current.sources});
-    const historical=track==='etfs'?refineEtfs(base,records,{publishedProse:false}):refineFundsCrypto(base,records,{track,cases:CRYPTO_CASES,transfers:CRYPTO_TRANSFER_LATE,publishedProse:false});
+    const historical=track==='etfs'?refineEtfs(base,records,{publishedProse:false,clearWriting:false}):refineFundsCrypto(base,records,{track,cases:CRYPTO_CASES,transfers:CRYPTO_TRANSFER_LATE,publishedProse:false,clearWriting:false});
     cache.set(path,Buffer.from(JSON.stringify(historical,null,2)+'\n'));
   }
   return cache.get(path);

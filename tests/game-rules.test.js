@@ -12,7 +12,7 @@ let environment;
 const day=dayKeyAt(),yesterday=new Date((dayOrdinal(day)-1)*86400000).toISOString().slice(0,10);
 before(async()=>{
   if(!enabled)return;
-  const [base,proposal]=await Promise.all([readFile(new URL('../firestore.rules',import.meta.url),'utf8'),readFile(new URL('../../../work/game-rules-proposal.txt',import.meta.url),'utf8')]);
+  const [base,proposal]=await Promise.all([readFile(new URL('../firestore.rules',import.meta.url),'utf8'),readFile(new URL('./fixtures/game-rules-proposal.txt',import.meta.url),'utf8')]);
   const block=proposal.split('BEGIN GAME RULES\n')[1].split('\nEND GAME RULES')[0];
   const isolated=`rules_version = '2'; service cloud.firestore { match /databases/{database}/documents {
     function verifiedOwner(uid) { return request.auth != null && request.auth.uid == uid && request.auth.token.email_verified == true; }

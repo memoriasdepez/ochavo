@@ -19,7 +19,7 @@ import { mount, openLesson, openExam, lessons, exams } from './current-course-ha
 const read = file => readFileSync(new URL('../' + file, import.meta.url), 'utf8');
 const outline = JSON.parse(read('src/content/stocks-outline-v2.json'));
 const records = parseAuthoring(Array.from({ length: 5 }, (_, i) => read(`src/content/stocks-v2-authoring/part-${i + 1}.txt`)), 500);
-const authored = refineStocks(compileRevision({ outline, records, start: 450, sources: [] }), records, {marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false});
+const authored = refineStocks(compileRevision({ outline, records, start: 450, sources: [] }), records, {marketEdits:false,compoundNotes:false,riskNotes:false,clearWriting:false,orderNotes:false});
 const cases = { ...earlyCases, ...middleCases, ...advancedCases };
 const copy = value => JSON.parse(JSON.stringify(value));
 const kind = step => step.activity?.kind || step.type;
